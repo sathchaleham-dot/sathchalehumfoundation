@@ -1,1 +1,1645 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>About Us | Sath Chale Hum Foundation</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --blue:#064b91;
+    --blue2:#1260a8;
+    --orange:#ff7a00;
+    --gold:#d97706;
+    --gold-dark:#b45309;
+    --text:#263238;
+    --muted:#667085;
+    --border:#eadfce;
+    --white:#ffffff;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+        "Noto Sans Devanagari",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fffaf3 0%,
+            #f7f9fc 48%,
+            #ffffff 100%
+        );
+
+    color:var(--text);
+    line-height:1.8;
+}
+
+
+/* ==================================================
+   COMMON HEADER
+================================================== */
+
+.header{
+    position:relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--blue),
+            var(--blue2)
+        );
+
+    color:white;
+
+    padding:25px 30px 35px;
+
+    min-height:210px;
+
+    overflow:hidden;
+}
+
+.header::after{
+    content:"";
+
+    position:absolute;
+
+    width:280px;
+    height:280px;
+
+    border-radius:50%;
+
+    right:-120px;
+    top:-150px;
+
+    background:rgba(255,255,255,.06);
+}
+
+.brand{
+    position:relative;
+    z-index:2;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    display:flex;
+    align-items:center;
+
+    gap:22px;
+
+    padding-right:360px;
+}
+
+.logo{
+    width:105px;
+    height:105px;
+
+    object-fit:contain;
+
+    background:white;
+
+    border-radius:12px;
+
+    padding:5px;
+
+    flex-shrink:0;
+}
+
+.brand-text{
+    text-align:left;
+}
+
+.brand-text h1{
+    font-size:38px;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+    white-space:nowrap;
+}
+
+.brand-text h1 .foundation{
+    color:var(--orange);
+}
+
+.tagline{
+    margin-top:10px;
+
+    font-size:21px;
+
+    font-weight:700;
+
+    white-space:nowrap;
+}
+
+
+/* ==================================================
+   HEADER BUTTONS
+================================================== */
+
+.buttons{
+    position:absolute;
+
+    z-index:5;
+
+    top:50%;
+    right:30px;
+
+    transform:translateY(-50%);
+
+    display:flex;
+
+    gap:12px;
+
+    width:340px;
+}
+
+.btn{
+    flex:1;
+
+    padding:16px 9px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:800;
+
+    text-align:center;
+
+    white-space:nowrap;
+
+    box-shadow:
+        0 7px 18px rgba(0,0,0,.20);
+
+    transition:.25s ease;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.donate{
+    background:
+        linear-gradient(
+            135deg,
+            #ffb000,
+            #ff6500
+        );
+}
+
+.join{
+    background:
+        linear-gradient(
+            135deg,
+            #00b85a,
+            #00a34a
+        );
+}
+
+
+/* ==================================================
+   PAGE WRAPPER
+================================================== */
+
+.wrapper{
+    width:100%;
+
+    max-width:1180px;
+
+    margin:0 auto;
+
+    padding:38px 18px 45px;
+}
+
+
+/* ==================================================
+   SECTION HEADER
+================================================== */
+
+.section-header{
+    text-align:center;
+
+    margin-bottom:32px;
+}
+
+.section-header h1{
+    font-size:38px;
+
+    line-height:1.35;
+
+    font-weight:800;
+
+    color:#222;
+}
+
+.section-header h1 span{
+    color:var(--gold);
+}
+
+.section-line{
+    width:65px;
+
+    height:4px;
+
+    background:var(--gold);
+
+    border-radius:20px;
+
+    margin:14px auto 0;
+}
+
+
+/* ==================================================
+   ABOUT CARD
+================================================== */
+
+.about-card{
+    position:relative;
+
+    background:
+        rgba(255,255,255,.97);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:42px;
+
+    margin-bottom:38px;
+
+    box-shadow:
+        0 15px 45px rgba(54,38,15,.08);
+
+    overflow:hidden;
+}
+
+.about-card::before{
+    content:"";
+
+    position:absolute;
+
+    width:190px;
+    height:190px;
+
+    border-radius:50%;
+
+    background:
+        rgba(217,119,6,.055);
+
+    right:-80px;
+    top:-80px;
+}
+
+.about-card::after{
+    content:"";
+
+    position:absolute;
+
+    width:110px;
+    height:110px;
+
+    border-radius:50%;
+
+    background:
+        rgba(217,119,6,.035);
+
+    left:-50px;
+    bottom:-50px;
+}
+
+.about-content{
+    position:relative;
+
+    z-index:2;
+}
+
+.about-content p{
+    font-size:17px;
+
+    color:#3f4852;
+
+    margin-bottom:20px;
+
+    text-align:justify;
+}
+
+.about-content strong{
+    color:var(--gold-dark);
+}
+
+
+/* ==================================================
+   HIGHLIGHT
+================================================== */
+
+.highlight{
+    margin:28px 0;
+
+    padding:22px 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff8e8,
+            #fffdf9
+        );
+
+    border:1px solid #f0dfbd;
+
+    border-left:5px solid var(--gold);
+
+    border-radius:16px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    color:#4a3a23;
+}
+
+
+/* ==================================================
+   QUOTE
+================================================== */
+
+.quote{
+    max-width:850px;
+
+    margin:28px auto;
+
+    padding:23px 20px;
+
+    text-align:center;
+
+    background:#fff9ef;
+
+    border:1px solid #f1dfbd;
+
+    border-radius:18px;
+
+    color:var(--gold-dark);
+
+    font-size:24px;
+
+    font-weight:800;
+}
+
+
+/* ==================================================
+   MISSION & VISION
+================================================== */
+
+.mv-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:25px;
+
+    margin-bottom:38px;
+}
+
+.mv-card{
+    position:relative;
+
+    background:
+        rgba(255,255,255,.97);
+
+    border:1px solid var(--border);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    box-shadow:
+        0 12px 35px rgba(54,38,15,.07);
+
+    overflow:hidden;
+
+    transition:.3s ease;
+}
+
+.mv-card:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 18px 42px rgba(54,38,15,.11);
+}
+
+.mv-card::before{
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:5px;
+
+    background:var(--gold);
+}
+
+.mv-icon{
+    font-size:28px;
+
+    margin-bottom:8px;
+}
+
+.mv-card h2{
+    font-size:24px;
+
+    line-height:1.5;
+
+    color:var(--gold-dark);
+
+    margin-bottom:20px;
+}
+
+.hindi{
+    font-size:17px;
+
+    font-weight:600;
+
+    color:#303942;
+
+    margin-bottom:18px;
+}
+
+.english{
+    font-size:15.5px;
+
+    line-height:1.75;
+
+    color:var(--muted);
+}
+
+
+/* ==================================================
+   CORE VALUES
+================================================== */
+
+.values-section{
+    background:
+        rgba(255,255,255,.96);
+
+    border:1px solid var(--border);
+
+    border-radius:28px;
+
+    padding:42px;
+
+    box-shadow:
+        0 15px 45px rgba(54,38,15,.07);
+}
+
+.values-header{
+    text-align:center;
+
+    margin-bottom:32px;
+}
+
+.values-header h2{
+    font-size:31px;
+
+    color:#222;
+
+    line-height:1.4;
+}
+
+.values-header h2 span{
+    color:var(--gold);
+}
+
+.values-header p{
+    color:var(--muted);
+
+    font-size:15px;
+
+    margin-top:4px;
+}
+
+.values-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:20px;
+}
+
+.value-card{
+    position:relative;
+
+    min-height:290px;
+
+    padding:26px 23px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff 0%,
+            #fbfaf7 100%
+        );
+
+    border:1px solid #e6e1d8;
+
+    border-radius:21px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    transition:.3s ease;
+}
+
+.value-card:hover{
+    transform:translateY(-5px);
+
+    border-color:#e4c47e;
+
+    box-shadow:
+        0 14px 30px rgba(54,38,15,.09);
+}
+
+.value-number{
+    width:44px;
+    height:44px;
+
+    min-width:44px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff3d9,
+            #ffe8b5
+        );
+
+    color:var(--gold-dark);
+
+    font-size:14px;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+}
+
+.value-card h3{
+    color:#a85405;
+
+    font-size:17px;
+
+    line-height:1.55;
+
+    margin-bottom:12px;
+}
+
+.value-hi{
+    font-size:14.5px;
+
+    line-height:1.7;
+
+    color:#4b5563;
+
+    margin-bottom:10px;
+}
+
+.value-en{
+    font-size:14px;
+
+    line-height:1.65;
+
+    color:#737b85;
+
+    font-style:italic;
+}
+
+
+/* ==================================================
+   07 CENTER
+================================================== */
+
+.value-card:nth-child(5){
+    grid-column:1;
+}
+
+.value-card:nth-child(6){
+    grid-column:2;
+}
+
+.value-card:nth-child(7){
+    grid-column:3;
+}
+
+
+/* ==================================================
+   FINAL MESSAGE
+================================================== */
+
+.final-message{
+    margin-top:35px;
+
+    padding:38px 25px;
+
+    text-align:center;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            135deg,
+            #d97706,
+            #b45309
+        );
+
+    border-radius:27px;
+
+    box-shadow:
+        0 15px 35px rgba(180,83,9,.22);
+}
+
+.final-message h2{
+    font-size:28px;
+
+    line-height:1.4;
+
+    margin-bottom:7px;
+}
+
+.final-message p{
+    font-size:16px;
+
+    line-height:1.7;
+
+    opacity:.95;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer{
+    margin-top:45px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #064b91,
+            #1260a8
+        );
+
+    color:white;
+
+    padding:35px 20px 25px;
+
+    text-align:center;
+}
+
+.footer-logo{
+    width:75px;
+    height:75px;
+
+    object-fit:contain;
+
+    background:white;
+
+    border-radius:10px;
+
+    padding:4px;
+
+    margin-bottom:12px;
+}
+
+.footer-name{
+    font-size:23px;
+
+    font-weight:800;
+
+    margin-bottom:4px;
+}
+
+.footer-name .foundation{
+    color:var(--orange);
+}
+
+.footer-tagline{
+    font-size:15px;
+
+    margin-bottom:20px;
+
+    opacity:.95;
+}
+
+.footer-links{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:8px 22px;
+
+    margin-bottom:20px;
+}
+
+.footer-links a{
+    color:white;
+
+    text-decoration:none;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:.2s;
+}
+
+.footer-links a:hover{
+    color:#ffd08a;
+}
+
+.footer-divider{
+    max-width:700px;
+
+    height:1px;
+
+    background:
+        rgba(255,255,255,.22);
+
+    margin:0 auto 15px;
+}
+
+.copyright{
+    font-size:13px;
+
+    opacity:.85;
+}
+
+
+/* ==================================================
+   TABLET
+================================================== */
+
+@media(max-width:1000px){
+
+    .brand{
+        padding-right:300px;
+    }
+
+    .brand-text h1{
+        font-size:30px;
+    }
+
+    .tagline{
+        font-size:18px;
+    }
+
+    .logo{
+        width:90px;
+        height:90px;
+    }
+
+    .buttons{
+        width:280px;
+
+        right:20px;
+    }
+
+    .btn{
+        font-size:16px;
+    }
+
+    .values-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .value-card:nth-child(5),
+    .value-card:nth-child(6),
+    .value-card:nth-child(7){
+        grid-column:auto;
+    }
+
+    .value-card:nth-child(7){
+        grid-column:1 / span 2;
+
+        width:50%;
+
+        margin:0 auto;
+    }
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width:700px){
+
+    .header{
+        min-height:auto;
+
+        padding:16px 12px 25px;
+    }
+
+    /*
+       BUTTONS ARE NOW ABOVE BRAND.
+       NO OVERLAPPING.
+    */
+
+    .buttons{
+        position:static;
+
+        transform:none;
+
+        width:100%;
+
+        display:flex;
+
+        gap:8px;
+
+        margin-bottom:20px;
+    }
+
+    .btn{
+        flex:1;
+
+        min-width:0;
+
+        padding:13px 5px;
+
+        font-size:15px;
+    }
+
+    .brand{
+        padding-right:0;
+
+        gap:11px;
+
+        align-items:center;
+    }
+
+    .logo{
+        width:76px;
+        height:76px;
+    }
+
+    .brand-text{
+        min-width:0;
+    }
+
+    .brand-text h1{
+        font-size:24px;
+
+        line-height:1.25;
+
+        white-space:normal;
+    }
+
+    .tagline{
+        font-size:15px;
+
+        line-height:1.5;
+
+        white-space:normal;
+
+        margin-top:6px;
+    }
+
+    .wrapper{
+        padding:25px 10px 35px;
+    }
+
+    .section-header h1{
+        font-size:29px;
+    }
+
+    .about-card,
+    .values-section{
+        padding:28px 18px;
+
+        border-radius:21px;
+    }
+
+    .about-content p{
+        text-align:left;
+
+        font-size:16px;
+    }
+
+    .mv-grid{
+        grid-template-columns:1fr;
+    }
+
+    .values-grid{
+        grid-template-columns:1fr;
+    }
+
+    .value-card:nth-child(5),
+    .value-card:nth-child(6),
+    .value-card:nth-child(7){
+        grid-column:auto;
+
+        width:100%;
+
+        margin:0;
+    }
+
+    .value-card{
+        min-height:auto;
+    }
+
+    .quote{
+        font-size:20px;
+    }
+
+    .final-message{
+        border-radius:20px;
+
+        padding:30px 18px;
+    }
+
+    .final-message h2{
+        font-size:23px;
+    }
+
+    .footer{
+        margin-top:30px;
+
+        padding:30px 15px 22px;
+    }
+}
+
+
+/* ==================================================
+   SMALL MOBILE
+================================================== */
+
+@media(max-width:420px){
+
+    .header{
+        padding:14px 10px 22px;
+    }
+
+    .buttons{
+        gap:7px;
+    }
+
+    .btn{
+        font-size:13px;
+
+        padding:12px 4px;
+    }
+
+    .brand{
+        gap:9px;
+    }
+
+    .logo{
+        width:68px;
+        height:68px;
+    }
+
+    .brand-text h1{
+        font-size:21px;
+    }
+
+    .tagline{
+        font-size:13px;
+    }
+
+    .section-header h1{
+        font-size:25px;
+    }
+
+    .about-card{
+        padding:23px 16px;
+    }
+
+    .mv-card{
+        padding:27px 20px;
+    }
+
+    .values-section{
+        padding:25px 15px;
+    }
+
+    .values-header h2{
+        font-size:25px;
+    }
+
+    .value-card{
+        padding:22px 18px;
+    }
+
+    .footer-name{
+        font-size:20px;
+    }
+}
+
+
+/* ==================================================
+   VERY SMALL PHONES
+================================================== */
+
+@media(max-width:350px){
+
+    .btn{
+        font-size:12px;
+
+        padding:11px 3px;
+    }
+
+    .logo{
+        width:60px;
+        height:60px;
+    }
+
+    .brand-text h1{
+        font-size:18px;
+    }
+
+    .tagline{
+        font-size:12px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- ==================================================
+     COMMON HEADER
+================================================== -->
+
+<header class="header">
+
+    <div class="buttons">
+
+        <a
+        class="btn donate"
+        href="https://docs.google.com/forms/d/e/1FAIpQLScG-TEGF_xYakoTV7FBTVFpQiYr2KmP3vmuv2ilzCHVmV689Q/viewform?usp=header"
+        target="_blank">
+        💝 DONATE US
+        </a>
+
+        <a
+        class="btn join"
+        href="https://docs.google.com/forms/d/e/1FAIpQLSefr5zPNIurZ1-ldth7YpYyiCc3yYWu8u9esuPPMTQ11fb3PA/viewform?usp=header"
+        target="_blank">
+        🤝 JOIN US
+        </a>
+
+    </div>
+
+
+    <div class="brand">
+
+        <img
+        class="logo"
+        src="https://raw.githubusercontent.com/sathchaleham-dot/sathchalehum/main/sath_chale_ham_logo_HD-1.png"
+        alt="साथ चले हम फाउंडेशन Logo">
+
+        <div class="brand-text">
+
+            <h1>
+                साथ चले हम
+                <span class="foundation">फाउंडेशन</span>
+            </h1>
+
+            <div class="tagline">
+                साथ चले हम, बदलाव की ओर
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ==================================================
+     ABOUT PAGE CONTENT
+================================================== -->
+
+<div class="wrapper">
+
+
+<div class="section-header">
+
+    <h1>
+        About Us
+        <span>| हमारे बारे में</span>
+    </h1>
+
+    <div class="section-line"></div>
+
+</div>
+
+
+<div class="about-card">
+
+<div class="about-content">
+
+
+<p>
+<strong>साथ चले हम फाउंडेशन</strong> एक सामाजिक संस्था है, जो समाज के
+जरूरतमंद, वंचित और कमजोर वर्गों के जीवन में सकारात्मक बदलाव लाने के लिए
+समर्पित है। हमारा उद्देश्य केवल सहायता प्रदान करना नहीं, बल्कि लोगों को
+शिक्षा, स्वास्थ्य, कौशल, रोजगार, जागरूकता और अवसरों के माध्यम से सशक्त
+बनाकर आत्मनिर्भर बनने में सहयोग करना है।
+</p>
+
+
+<p>
+हम बच्चों और युवाओं की शिक्षा एवं विकास, महिला सशक्तिकरण, स्वास्थ्य एवं
+चिकित्सा, गरीब एवं जरूरतमंदों की सहायता, दिव्यांगजन एवं वृद्धजन कल्याण,
+कौशल एवं आजीविका, ग्रामीण विकास, कृषि एवं किसान कल्याण, पर्यावरण एवं जल
+संरक्षण, स्वच्छता एवं पोषण, पशु कल्याण, आपदा राहत तथा सामाजिक न्याय और
+मानव अधिकार जैसे विभिन्न क्षेत्रों में कार्य करने के लिए प्रतिबद्ध हैं।
+</p>
+
+
+<p>
+हम <strong>समुदाय की भागीदारी, सहयोग, पारदर्शिता और समानता</strong> को
+अपने कार्य का आधार मानते हैं। हमारा प्रयास है कि हर जरूरतमंद व्यक्ति तक
+सही समय पर सही सहायता पहुँचे और हर समुदाय को अपने विकास में सक्रिय भूमिका
+निभाने का अवसर मिले।
+</p>
+
+
+<div class="highlight">
+
+हमारा विश्वास है कि बदलाव किसी एक व्यक्ति के प्रयास से नहीं,
+बल्कि सबके साथ चलने से आता है।
+
+</div>
+
+
+<div class="quote">
+
+“साथ चले हम – बदलाव की ओर”
+
+</div>
+
+
+<p style="text-align:center;">
+
+हम साथ चलेंगे, लोगों को जोड़ेंगे, अवसर पैदा करेंगे और मिलकर एक बेहतर,
+समान, सशक्त एवं आत्मनिर्भर समाज के निर्माण की दिशा में आगे बढ़ेंगे।
+
+</p>
+
+
+<p style="margin-top:35px;">
+
+<strong>Sath Chale Hum Foundation</strong> is a social organization dedicated
+to bringing positive change to the lives of vulnerable, underserved, and
+needy communities. Our purpose is not only to provide support, but also to
+empower people through education, healthcare, skills, livelihoods,
+awareness, and opportunities, helping them move towards a more dignified
+and self-reliant life.
+
+</p>
+
+
+<p>
+
+We are committed to working across areas such as education and child
+development, women empowerment, healthcare, support for the poor and needy,
+disability and senior citizen welfare, skill development and livelihoods,
+rural development, agriculture and farmer welfare, environmental and water
+conservation, sanitation and nutrition, animal welfare, disaster relief,
+social justice, and human rights.
+
+</p>
+
+
+<p>
+
+We believe in <strong>community participation, collaboration, transparency,
+and equality</strong> as the foundation of our work. Our aim is to reach
+people in need with timely support while creating opportunities for
+individuals and communities to actively participate in their own development.
+
+</p>
+
+
+<div class="highlight">
+
+We believe that meaningful change does not come from one person alone—
+it begins when we all walk together.
+
+</div>
+
+
+<div class="quote">
+
+“Sath Chale Hum – Towards Change”
+
+</div>
+
+
+<p style="text-align:center;">
+
+Together, we will connect people, create opportunities, support communities,
+and move forward towards building a better, equal, empowered, and
+self-reliant society.
+
+</p>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     MISSION & VISION
+================================================== -->
+
+<div class="section-header">
+
+    <h1>
+        Our Mission & Our Vision
+        <span>| हमारा मिशन एवं हमारा विज़न</span>
+    </h1>
+
+    <div class="section-line"></div>
+
+</div>
+
+
+<div class="mv-grid">
+
+
+<div class="mv-card">
+
+    <div class="mv-icon">🌱</div>
+
+    <h2>
+        Our Mission | हमारा मिशन
+    </h2>
+
+    <div class="hindi">
+
+        “शिक्षा, स्वास्थ्य, कौशल, रोजगार, सहायता और जागरूकता के माध्यम से
+        जरूरतमंद एवं वंचित लोगों को सशक्त बनाना, अवसर प्रदान करना और उनके
+        जीवन में सकारात्मक एवं स्थायी बदलाव लाना।”
+
+    </div>
+
+    <div class="english">
+
+        “To empower vulnerable and underserved people through education,
+        healthcare, skills, livelihoods, support, and awareness, while
+        creating opportunities and bringing positive and lasting change
+        to their lives.”
+
+    </div>
+
+</div>
+
+
+<div class="mv-card">
+
+    <div class="mv-icon">🌍</div>
+
+    <h2>
+        Our Vision | हमारा विज़न
+    </h2>
+
+    <div class="hindi">
+
+        “एक ऐसे समावेशी, समान, सशक्त और आत्मनिर्भर समाज का निर्माण करना,
+        जहाँ हर व्यक्ति को सम्मान, समान अवसर और बेहतर जीवन मिले तथा कोई भी
+        व्यक्ति या समुदाय विकास की यात्रा में पीछे न छूटे।”
+
+    </div>
+
+    <div class="english">
+
+        “To build an inclusive, equal, empowered, and self-reliant society
+        where every individual has dignity, equal opportunities, and a better
+        life, ensuring that no person or community is left behind in the
+        journey of development.”
+
+    </div>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     CORE VALUES
+================================================== -->
+
+<div class="values-section">
+
+<div class="values-header">
+
+    <h2>
+        Our Core Values
+        <span>| हमारे मूल मूल्य</span>
+    </h2>
+
+    <p>
+        The principles that guide our work, decisions and actions
+    </p>
+
+</div>
+
+
+<div class="values-grid">
+
+
+<div class="value-card">
+
+    <div class="value-number">01</div>
+
+    <h3>
+        सेवा एवं समर्पण | Service & Dedication
+    </h3>
+
+    <div class="value-hi">
+
+        जरूरतमंदों की निस्वार्थ सेवा करना और समाज के प्रति अपनी जिम्मेदारी
+        को समर्पण के साथ निभाना।
+
+    </div>
+
+    <div class="value-en">
+
+        Serving people in need with selflessness and fulfilling our
+        responsibility towards society with dedication.
+
+    </div>
+
+</div>
+
+
+<div class="value-card">
+
+    <div class="value-number">02</div>
+
+    <h3>
+        समानता एवं सम्मान | Equality & Respect
+    </h3>
+
+    <div class="value-hi">
+
+        हर व्यक्ति के साथ बिना किसी भेदभाव के समान व्यवहार करना और उसकी
+        गरिमा का सम्मान करना।
+
+    </div>
+
+    <div class="value-en">
+
+        Treating everyone equally without discrimination and respecting
+        the dignity of every individual.
+
+    </div>
+
+</div>
+
+
+<div class="value-card">
+
+    <div class="value-number">03</div>
+
+    <h3>
+        ईमानदारी एवं पारदर्शिता | Integrity & Transparency
+    </h3>
+
+    <div class="value-hi">
+
+        अपने कार्यों और संसाधनों के उपयोग में ईमानदारी, निष्पक्षता और
+        पारदर्शिता बनाए रखना।
+
+    </div>
+
+    <div class="value-en">
+
+        Maintaining honesty, fairness, and transparency in our work
+        and use of resources.
+
+    </div>
+
+</div>
+
+
+<div class="value-card">
+
+    <div class="value-number">04</div>
+
+    <h3>
+        करुणा एवं संवेदनशीलता | Compassion & Empathy
+    </h3>
+
+    <div class="value-hi">
+
+        जरूरतमंद लोगों की परिस्थितियों को समझना और संवेदनशीलता के साथ
+        उनका सहयोग करना।
+
+    </div>
+
+    <div class="value-en">
+
+        Understanding the circumstances of people in need and supporting
+        them with compassion and empathy.
+
+    </div>
+
+</div>
+
+
+<div class="value-card">
+
+    <div class="value-number">05</div>
+
+    <h3>
+        सशक्तिकरण एवं आत्मनिर्भरता | Empowerment & Self-Reliance
+    </h3>
+
+    <div class="value-hi">
+
+        लोगों को शिक्षा, कौशल और अवसरों के माध्यम से आत्मनिर्भर और
+        सशक्त बनने में सहयोग करना।
+
+    </div>
+
+    <div class="value-en">
+
+        Helping people become empowered and self-reliant through
+        education, skills, and opportunities.
+
+    </div>
+
+</div>
+
+
+<div class="value-card">
+
+    <div class="value-number">06</div>
+
+    <h3>
+        सहयोग एवं सामुदायिक भागीदारी |
+        Collaboration & Community Participation
+    </h3>
+
+    <div class="value-hi">
+
+        समुदाय, स्वयंसेवकों और सहयोगियों के साथ मिलकर सकारात्मक और
+        स्थायी बदलाव के लिए कार्य करना।
+
+    </div>
+
+    <div class="value-en">
+
+        Working together with communities, volunteers, and partners
+        to create positive and lasting change.
+
+    </div>
+
+</div>
+
+
+<div class="value-card">
+
+    <div class="value-number">07</div>
+
+    <h3>
+        जिम्मेदारी एवं जवाबदेही |
+        Responsibility & Accountability
+    </h3>
+
+    <div class="value-hi">
+
+        अपने कार्यों के प्रति जिम्मेदार रहना और समाज, सहयोगियों एवं
+        लाभार्थियों के प्रति जवाबदेह होना।
+
+    </div>
+
+    <div class="value-en">
+
+        Taking responsibility for our actions and remaining accountable
+        to society, partners, and the people we serve.
+
+    </div>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     CLOSING
+================================================== -->
+
+<div class="final-message">
+
+    <h2>
+        साथ चले हम – बदलाव की ओर
+    </h2>
+
+    <p>
+        Together, we can connect people, create opportunities,
+        empower communities, and build a better future for everyone.
+    </p>
+
+</div>
+
+</div>
+
+
+<!-- ==================================================
+     COMMON FOOTER
+================================================== -->
+
+<footer class="footer">
+
+    <img
+    class="footer-logo"
+    src="https://raw.githubusercontent.com/sathchaleham-dot/sathchalehum/main/sath_chale_ham_logo_HD-1.png"
+    alt="Sath Chale Hum Foundation Logo">
+
+    <div class="footer-name">
+        साथ चले हम
+        <span class="foundation">फाउंडेशन</span>
+    </div>
+
+    <div class="footer-tagline">
+        साथ चले हम, बदलाव की ओर
+    </div>
+
+
+    <div class="footer-links">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About Us</a>
+
+        <a href="team.html">Our Team</a>
+
+        <a href="work.html">Our Work</a>
+
+        <a href="donate.html">Donate</a>
+
+        <a href="join.html">Join Us</a>
+
+        <a href="download.html">Download</a>
+
+        <a href="privacy.html">Privacy Policy</a>
+
+        <a href="terms.html">Terms &amp; Conditions</a>
+
+    </div>
+
+
+    <div class="footer-divider"></div>
+
+    <div class="copyright">
+        © 2026 Sath Chale Hum Foundation. All Rights Reserved.
+    </div>
+
+</footer>
+
+</body>
+</html>
