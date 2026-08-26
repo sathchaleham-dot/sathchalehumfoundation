@@ -1,1 +1,451 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Our Team | Sath Chale Hum Foundation</title>
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --primary:#d97706;
+    --primary-dark:#b45309;
+    --text:#263238;
+    --muted:#667085;
+    --border:#dfe6ef;
+}
+
+body{
+    font-family:"Noto Sans Devanagari","Segoe UI",Arial,sans-serif;
+    background:linear-gradient(180deg,#fffaf3 0%,#f7f9fc 48%,#ffffff 100%);
+    color:var(--text);
+}
+
+.team-section{
+    max-width:1180px;
+    margin:auto;
+    padding:38px 18px 70px;
+}
+
+/* ABOUT US SAME HEADING */
+
+.section-header{
+    text-align:center;
+    margin-bottom:42px;
+}
+
+.section-header h1{
+    font-size:38px;
+    line-height:1.3;
+    font-weight:800;
+    color:#222;
+}
+
+.section-header h1 span{
+    color:var(--primary);
+}
+
+.section-line{
+    width:65px;
+    height:4px;
+    background:var(--primary);
+    border-radius:20px;
+    margin:14px auto 0;
+}
+
+/* CATEGORY */
+
+.team-category{
+    margin-bottom:48px;
+}
+
+.category-title{
+    text-align:center;
+    margin-bottom:24px;
+}
+
+.category-title h2{
+    color:#12366f;
+    font-size:25px;
+    font-weight:900;
+}
+
+.category-title p{
+    color:#7b8798;
+    font-size:14px;
+    margin-top:5px;
+}
+
+.category-line{
+    width:50px;
+    height:3px;
+    background:#e48713;
+    margin:10px auto;
+    border-radius:10px;
+}
+
+/* GRID */
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+/* CARD */
+
+.member-card{
+    position:relative;
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:22px;
+    padding:26px 20px 21px;
+    text-align:center;
+    box-shadow:0 8px 28px rgba(16,42,86,.07);
+    transition:.3s;
+    overflow:hidden;
+}
+
+.member-card:before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:4px;
+    background:linear-gradient(90deg,#12366f,#e48713,#12366f);
+}
+
+.member-card:hover{
+    transform:translateY(-6px);
+}
+
+/* AVATAR */
+
+.member-photo-placeholder{
+    width:112px;
+    height:112px;
+    border-radius:50%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:linear-gradient(135deg,#12366f,#0b2856);
+    color:#fff;
+    border:5px solid #f4d79f;
+    font-size:34px;
+    font-weight:900;
+    margin-bottom:15px;
+}
+
+/* TEXT */
+
+.member-name{
+    font-size:19px;
+    font-weight:900;
+    color:#172c50;
+}
+
+.member-name-hi{
+    font-size:13px;
+    color:#7a8595;
+    margin-top:3px;
+}
+
+.designation{
+    display:inline-block;
+    margin-top:11px;
+    padding:7px 13px;
+    border-radius:30px;
+    background:#fff5e3;
+    border:1px solid #f0d49f;
+    color:#a45b05;
+    font-size:12px;
+    font-weight:800;
+}
+
+.about-title{
+    margin-top:18px;
+    font-size:13px;
+    font-weight:900;
+    color:#243b62;
+    text-align:left;
+}
+
+.about{
+    margin-top:5px;
+    font-size:12.5px;
+    line-height:1.65;
+    color:#687487;
+    text-align:left;
+}
+
+.profile-btn{
+    margin-top:17px;
+    width:100%;
+    padding:11px;
+    border:none;
+    border-radius:11px;
+    background:linear-gradient(135deg,#12366f,#0d2a5a);
+    color:#fff;
+    font-size:13px;
+    font-weight:800;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:950px){
+.team-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media(max-width:600px){
+
+.team-section{
+padding:28px 12px 50px;
+}
+
+.section-header h1{
+font-size:29px;
+}
+
+.team-grid{
+grid-template-columns:1fr;
+}
+
+.member-card{
+max-width:430px;
+margin:auto;
+}
+
+.category-title h2{
+font-size:22px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="team-section">
+
+<!-- ONLY OUR TEAM HEADING -->
+
+<div class="section-header">
+
+<h1>
+Our Team <span>| हमारी टीम</span>
+</h1>
+
+<div class="section-line"></div>
+
+</div>
+
+<!-- A -->
+
+<div class="team-category">
+
+<div class="category-title">
+
+<h2>A. Executive Leadership</h2>
+
+<p>कार्यकारी नेतृत्व</p>
+
+<div class="category-line"></div>
+
+</div>
+
+<div class="team-grid">
+
+<div class="member-card">
+<div class="member-photo-placeholder">AK</div>
+<div class="member-name">Ajay Kumar Prajapati</div>
+<div class="member-name-hi">अजय कुमार प्रजापति</div>
+<div class="designation">President | अध्यक्ष</div>
+<div class="about-title">About | परिचय</div>
+<div class="about">Sath Chale Hum Foundation के अध्यक्ष के रूप में Ajay Kumar Prajapati संस्था को नेतृत्व और दिशा प्रदान करते हैं। वे सामाजिक कार्यक्रमों की योजना, संगठनात्मक विकास और समुदाय-केंद्रित पहलों को आगे बढ़ाने में महत्वपूर्ण भूमिका निभाते हैं।</div>
+<button class="profile-btn">View Profile</button>
+</div>
+
+<div class="member-card">
+<div class="member-photo-placeholder">SK</div>
+<div class="member-name">S K Yadav</div>
+<div class="member-name-hi">एस. के. यादव</div>
+<div class="designation">Vice President | उपाध्यक्ष</div>
+<div class="about-title">About | परिचय</div>
+<div class="about">S K Yadav संस्था के नेतृत्व और कार्यक्रमों के प्रभावी संचालन में अध्यक्ष के साथ सक्रिय रूप से सहयोग करते हैं। वे संगठनात्मक गतिविधियों में समन्वय बनाए रखते हैं।</div>
+<button class="profile-btn">View Profile</button>
+</div>
+
+<div class="member-card">
+<div class="member-photo-placeholder">MR</div>
+<div class="member-name">M R Ojha</div>
+<div class="member-name-hi">एम. आर. ओझा</div>
+<div class="designation">Secretary | सचिव</div>
+<div class="about-title">About | परिचय</div>
+<div class="about">M R Ojha संस्था के प्रशासनिक एवं संगठनात्मक कार्यों, बैठकों और दस्तावेजों के समन्वय में महत्वपूर्ण भूमिका निभाते हैं।</div>
+<button class="profile-btn">View Profile</button>
+</div>
+
+<div class="member-card">
+<div class="member-photo-placeholder">DS</div>
+<div class="member-name">Divesh Soren</div>
+<div class="member-name-hi">दिवेश सोरेन</div>
+<div class="designation">Joint Secretary | संयुक्त सचिव</div>
+<div class="about-title">About | परिचय</div>
+<div class="about">Divesh Soren सचिवालय और संगठनात्मक गतिविधियों में सहयोग प्रदान करते हैं तथा टीम समन्वय में योगदान देते हैं।</div>
+<button class="profile-btn">View Profile</button>
+</div>
+
+<div class="member-card">
+<div class="member-photo-placeholder">PS</div>
+<div class="member-name">Priyam Singh</div>
+<div class="member-name-hi">प्रियम सिंह</div>
+<div class="designation">Treasurer | कोषाध्यक्ष</div>
+<div class="about-title">About | परिचय</div>
+<div class="about">Priyam Singh संस्था के वित्तीय प्रबंधन, रिकॉर्ड और संसाधनों के पारदर्शी उपयोग से जुड़े कार्यों में सहयोग करते हैं।</div>
+<button class="profile-btn">View Profile</button>
+</div>
+
+</div>
+</div>
+
+<!-- B -->
+
+<div class="team-category">
+
+<div class="category-title">
+<h2>B. Executive & Membership</h2>
+<p>कार्यकारिणी एवं सदस्य</p>
+<div class="category-line"></div>
+</div>
+
+<div class="team-grid">
+
+<div class="member-card">
+<div class="member-photo-placeholder">JM</div>
+<div class="member-name">Jitendra Mistri</div>
+<div class="member-name-hi">जितेंद्र मिस्त्री</div>
+<div class="designation">Executive Member | कार्यकारिणी सदस्य</div>
+<div class="about-title">About | परिचय</div>
+<div class="about">Jitendra Mistri संस्था की कार्यकारिणी का हिस्सा रहते हुए सामाजिक गतिविधियों और संगठनात्मक निर्णयों में सक्रिय योगदान देते हैं।</div>
+<button class="profile-btn">View Profile</button>
+</div>
+
+<div class="member-card">
+<div class="member-photo-placeholder">CK</div>
+<div class="member-name">Dr. Chandan Kumar</div>
+<div class="member-name-hi">डॉ. चंदन कुमार</div>
+<div class="designation">Senior Member | वरिष्ठ सदस्य</div>
+<div class="about-title">About | परिचय</div>
+<div class="about">Dr. Chandan Kumar अपने अनुभव और मार्गदर्शन के माध्यम से संस्था की गतिविधियों को मजबूत बनाने में योगदान देते हैं।</div>
+<button class="profile-btn">View Profile</button>
+</div>
+
+</div>
+</div>
+
+<!-- C -->
+
+<div class="team-category">
+
+<div class="category-title">
+<h2>C. Program & Operations</h2>
+<p>कार्यक्रम एवं संचालन</p>
+<div class="category-line"></div>
+</div>
+
+<div class="team-grid">
+
+<div class="member-card">
+<div class="member-photo-placeholder">KP</div>
+<div class="member-name">Kumar Puskar</div>
+<div class="member-name-hi">कुमार पुष्कर</div>
+<div class="designation">Program Coordinator</div>
+<div class="about-title">About | परिचय</div>
+<div class="about">Kumar Puskar संस्था के सामाजिक कार्यक्रमों की योजना, संचालन और समन्वय में महत्वपूर्ण भूमिका निभाते हैं।</div>
+<button class="profile-btn">View Profile</button>
+</div>
+
+<div class="member-card">
+<div class="member-photo-placeholder">PK</div>
+<div class="member-name">P K Prabhakar</div>
+<div class="member-name-hi">पी. के. प्रभाकर</div>
+<div class="designation">Volunteer Coordinator</div>
+<div class="about-title">About | परिचय</div>
+<div class="about">P K Prabhakar स्वयंसेवकों को सामाजिक गतिविधियों से जोड़ने और उनका समन्वय करने में योगदान देते हैं।</div>
+<button class="profile-btn">View Profile</button>
+</div>
+
+<div class="member-card">
+<div class="member-photo-placeholder">DS</div>
+<div class="member-name">D Sarraf</div>
+<div class="member-name-hi">डी. सर्राफ</div>
+<div class="designation">Women & Child Development Coordinator</div>
+<div class="about-title">About | परिचय</div>
+<div class="about">D Sarraf महिलाओं और बच्चों से जुड़े सामाजिक विकास एवं जागरूकता कार्यक्रमों के समन्वय में योगदान देते हैं।</div>
+<button class="profile-btn">View Profile</button>
+</div>
+
+<div class="member-card">
+<div class="member-photo-placeholder">SS</div>
+<div class="member-name">Sujeet Suman</div>
+<div class="member-name-hi">सुजीत सुमन</div>
+<div class="designation">Youth Coordinator | युवा समन्वयक</div>
+<div class="about-title">About | परिचय</div>
+<div class="about">Sujeet Suman युवाओं को सामाजिक विकास और स्वयंसेवा गतिविधियों से जोड़ने के लिए कार्य करते हैं।</div>
+<button class="profile-btn">View Profile</button>
+</div>
+
+</div>
+</div>
+
+<!-- D -->
+
+<div class="team-category">
+
+<div class="category-title">
+<h2>D. Advisory & Compliance</h2>
+<p>सलाहकार एवं अनुपालन</p>
+<div class="category-line"></div>
+</div>
+
+<div class="team-grid">
+
+<div class="member-card">
+<div class="member-photo-placeholder">AA</div>
+<div class="member-name">A Amin</div>
+<div class="member-name-hi">ए. अमीन</div>
+<div class="designation">Advisory Member | सलाहकार सदस्य</div>
+<div class="about-title">About | परिचय</div>
+<div class="about">A Amin संस्था को रणनीतिक एवं संगठनात्मक विषयों में आवश्यक सलाह और मार्गदर्शन प्रदान करते हैं।</div>
+<button class="profile-btn">View Profile</button>
+</div>
+
+<div class="member-card">
+<div class="member-photo-placeholder">SS</div>
+<div class="member-name">S Singh</div>
+<div class="member-name-hi">एस. सिंह</div>
+<div class="designation">Legal & Compliance Advisor</div>
+<div class="about-title">About | परिचय</div>
+<div class="about">S Singh संस्था को कानूनी, दस्तावेजी और अनुपालन से संबंधित विषयों में आवश्यक मार्गदर्शन प्रदान करते हैं।</div>
+<button class="profile-btn">View Profile</button>
+</div>
+
+</div>
+</div>
+
+</section>
+
+</body>
+</html>
