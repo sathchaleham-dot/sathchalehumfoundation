@@ -1,1 +1,1004 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Our Key Areas of Work</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background:#f7f8fa;
+    color:#222;
+    font-family:"Noto Sans Devanagari","Segoe UI",Arial,sans-serif;
+}
+
+/* MAIN */
+.key-area-wrapper{
+    width:100%;
+    max-width:1100px;
+    margin:auto;
+    padding:25px 15px 45px;
+}
+
+/* ABOUT US STYLE HEADING */
+.section-heading{
+    text-align:center;
+    margin:5px auto 30px;
+}
+
+.section-heading h1{
+    margin:0;
+    font-size:32px;
+    line-height:1.35;
+    font-weight:800;
+    color:#222;
+}
+
+.section-heading h1::after{
+    content:"";
+    display:block;
+    width:75px;
+    height:4px;
+    margin:12px auto 0;
+    border-radius:10px;
+    background:linear-gradient(90deg,#f39c12,#e67e22);
+}
+
+.section-heading p{
+    margin:10px 0 0;
+    font-size:17px;
+    color:#777;
+    font-weight:500;
+}
+
+/* ACCORDION */
+.accordion{
+    background:#fff;
+    border:1px solid #e9e9e9;
+    border-radius:17px;
+    margin-bottom:14px;
+    overflow:hidden;
+    box-shadow:0 5px 18px rgba(0,0,0,.06);
+    transition:.3s ease;
+}
+
+.accordion:hover{
+    box-shadow:0 9px 25px rgba(0,0,0,.10);
+}
+
+/* BUTTON */
+.accordion-btn{
+    width:100%;
+    border:0;
+    outline:0;
+    background:#fff;
+    padding:17px 20px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    cursor:pointer;
+    text-align:left;
+    font-family:inherit;
+    transition:.3s ease;
+}
+
+.accordion.active .accordion-btn{
+    background:linear-gradient(90deg,#fff8ef,#fff);
+}
+
+/* NUMBER */
+.number{
+    min-width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:13px;
+    background:linear-gradient(135deg,#f39c12,#e67e22);
+    color:white;
+    font-size:15px;
+    font-weight:800;
+    box-shadow:0 5px 12px rgba(230,126,34,.25);
+}
+
+/* TITLE */
+.title{
+    flex:1;
+    font-size:18px;
+    font-weight:750;
+    line-height:1.45;
+    color:#222;
+}
+
+.title small{
+    display:block;
+    margin-top:2px;
+    font-size:14px;
+    font-weight:500;
+    color:#777;
+}
+
+/* ARROW */
+.arrow{
+    width:38px;
+    height:38px;
+    min-width:38px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#f5f5f5;
+    color:#555;
+    font-size:22px;
+    transition:.35s ease;
+}
+
+.accordion.active .arrow{
+    transform:rotate(180deg);
+    background:#fff0df;
+    color:#e67e22;
+}
+
+/* CONTENT */
+.accordion-content{
+    max-height:0;
+    overflow:hidden;
+    transition:max-height .45s ease;
+}
+
+.content{
+    padding:5px 25px 25px 85px;
+    border-top:1px solid #eee;
+}
+
+.content ul{
+    list-style:none;
+    padding:0;
+    margin:15px 0 0;
+}
+
+.content li{
+    position:relative;
+    padding:8px 0 8px 25px;
+    font-size:15px;
+    line-height:1.65;
+    color:#444;
+    border-bottom:1px dashed #eee;
+}
+
+.content li:last-child{
+    border-bottom:none;
+}
+
+.content li::before{
+    content:"✓";
+    position:absolute;
+    left:0;
+    top:8px;
+    color:#e67e22;
+    font-weight:800;
+}
+
+.en{
+    color:#777;
+}
+
+/* CLOSING SECTION */
+.closing{
+    margin-top:35px;
+    padding:35px 25px;
+    text-align:center;
+    border-radius:20px;
+    background:linear-gradient(135deg,#fff8ef,#ffffff);
+    border:1px solid #f0dfcc;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.closing h2{
+    margin:0;
+    font-size:26px;
+    color:#222;
+    font-weight:800;
+}
+
+.closing h2::after{
+    content:"";
+    display:block;
+    width:55px;
+    height:3px;
+    background:#e67e22;
+    border-radius:10px;
+    margin:11px auto 15px;
+}
+
+.closing .english{
+    font-size:16px;
+    color:#777;
+    margin-bottom:15px;
+    font-weight:500;
+}
+
+.closing p{
+    max-width:800px;
+    margin:8px auto;
+    font-size:15px;
+    line-height:1.8;
+    color:#555;
+}
+
+.closing .quote{
+    margin-top:18px;
+    font-size:17px;
+    font-weight:700;
+    color:#e67e22;
+}
+
+/* MOBILE */
+@media(max-width:700px){
+
+    .key-area-wrapper{
+        padding:18px 10px 35px;
+    }
+
+    .section-heading{
+        margin-bottom:22px;
+    }
+
+    .section-heading h1{
+        font-size:25px;
+        line-height:1.4;
+    }
+
+    .section-heading p{
+        font-size:15px;
+    }
+
+    .accordion{
+        border-radius:14px;
+        margin-bottom:10px;
+    }
+
+    .accordion-btn{
+        padding:13px;
+        gap:10px;
+    }
+
+    .number{
+        min-width:42px;
+        height:42px;
+        border-radius:10px;
+        font-size:13px;
+    }
+
+    .title{
+        font-size:15px;
+    }
+
+    .title small{
+        font-size:12px;
+    }
+
+    .arrow{
+        width:32px;
+        height:32px;
+        min-width:32px;
+        font-size:18px;
+    }
+
+    .content{
+        padding:5px 15px 20px 20px;
+    }
+
+    .content li{
+        font-size:13.5px;
+        padding:7px 0 7px 23px;
+    }
+
+    .closing{
+        padding:27px 17px;
+        margin-top:25px;
+        border-radius:17px;
+    }
+
+    .closing h2{
+        font-size:22px;
+    }
+
+    .closing .english{
+        font-size:14px;
+    }
+
+    .closing p{
+        font-size:14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="key-area-wrapper">
+
+<!-- HEADING -->
+<div class="section-heading">
+    <h1>हमारे प्रमुख कार्य क्षेत्र</h1>
+    <p>Our Key Areas of Work</p>
+</div>
+
+
+<!-- 01 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">01</div>
+    <div class="title">
+        शिक्षा एवं बाल विकास
+        <small>Education & Child Development</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>गरीब बच्चों की शिक्षा में सहायता — <span class="en">Educational assistance for underprivileged children</span></li>
+<li>स्कूल से बाहर बच्चों को शिक्षा से जोड़ना — <span class="en">Connecting out-of-school children with education</span></li>
+<li>निःशुल्क शिक्षा एवं कोचिंग — <span class="en">Free education and coaching</span></li>
+<li>किताब-कॉपी एवं शैक्षणिक सामग्री वितरण — <span class="en">Distribution of books, notebooks and educational materials</span></li>
+<li>छात्रवृत्ति एवं शैक्षणिक सहायता — <span class="en">Scholarships and educational assistance</span></li>
+<li>डिजिटल एवं कंप्यूटर शिक्षा — <span class="en">Digital and computer education</span></li>
+<li>पुस्तकालय एवं ज्ञान केंद्र — <span class="en">Libraries and knowledge centers</span></li>
+<li>बाल प्रतिभा विकास — <span class="en">Child talent development</span></li>
+<li>करियर एवं शिक्षा मार्गदर्शन — <span class="en">Career and educational guidance</span></li>
+<li>स्कूल ड्रॉपआउट रोकथाम — <span class="en">Prevention of school dropouts</span></li>
+<li>बाल श्रम से बच्चों को शिक्षा की ओर जोड़ना — <span class="en">Connecting children engaged in child labour with education</span></li>
+<li>वयस्क एवं निरक्षरता उन्मूलन — <span class="en">Adult education and eradication of illiteracy</span></li>
+<li>ग्रामीण एवं वंचित क्षेत्रों में शिक्षा — <span class="en">Education in rural and underserved areas</span></li>
+<li>व्यावसायिक एवं कौशल शिक्षा — <span class="en">Vocational and skill education</span></li>
+<li>बाल अधिकारों के प्रति जागरूकता — <span class="en">Awareness of child rights</span></li>
+<li>शिक्षा के प्रति जन-जागरूकता अभियान — <span class="en">Public awareness campaigns for education</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 02 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">02</div>
+    <div class="title">
+        महिला सशक्तिकरण एवं विकास
+        <small>Women Empowerment & Development</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>महिला शिक्षा एवं साक्षरता — <span class="en">Women’s education and literacy</span></li>
+<li>महिला कौशल विकास — <span class="en">Women’s skill development</span></li>
+<li>रोजगार एवं स्वरोजगार प्रशिक्षण — <span class="en">Employment and self-employment training</span></li>
+<li>महिला उद्यमिता विकास — <span class="en">Women entrepreneurship development</span></li>
+<li>स्वयं सहायता समूहों को सहयोग — <span class="en">Support to Self-Help Groups</span></li>
+<li>सिलाई-कढ़ाई एवं हस्तकला प्रशिक्षण — <span class="en">Tailoring, embroidery and handicraft training</span></li>
+<li>डिजिटल एवं कंप्यूटर शिक्षा — <span class="en">Digital and computer education</span></li>
+<li>महिला अधिकारों की जानकारी — <span class="en">Awareness of women’s rights</span></li>
+<li>घरेलू हिंसा के विरुद्ध जागरूकता — <span class="en">Awareness against domestic violence</span></li>
+<li>दहेज प्रथा के विरुद्ध अभियान — <span class="en">Campaigns against the dowry system</span></li>
+<li>बाल विवाह रोकथाम — <span class="en">Prevention of child marriage</span></li>
+<li>महिलाओं की आर्थिक आत्मनिर्भरता — <span class="en">Economic self-reliance of women</span></li>
+<li>स्वास्थ्य एवं पोषण जागरूकता — <span class="en">Health and nutrition awareness</span></li>
+<li>नेतृत्व एवं व्यक्तित्व विकास — <span class="en">Leadership and personality development</span></li>
+<li>सरकारी योजनाओं की जानकारी — <span class="en">Awareness of government schemes</span></li>
+<li>महिला सुरक्षा एवं सम्मान के प्रति जागरूकता — <span class="en">Awareness for women’s safety and dignity</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 03 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">03</div>
+    <div class="title">
+        स्वास्थ्य एवं चिकित्सा
+        <small>Health & Medical Care</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>निःशुल्क स्वास्थ्य जांच शिविर — <span class="en">Free health check-up camps</span></li>
+<li>ग्रामीण स्वास्थ्य जागरूकता — <span class="en">Rural health awareness</span></li>
+<li>नेत्र जांच एवं सहायता शिविर — <span class="en">Eye check-up and assistance camps</span></li>
+<li>दंत स्वास्थ्य जांच शिविर — <span class="en">Dental health check-up camps</span></li>
+<li>सामान्य स्वास्थ्य जागरूकता — <span class="en">General health awareness</span></li>
+<li>मातृ स्वास्थ्य जागरूकता — <span class="en">Maternal health awareness</span></li>
+<li>किशोर स्वास्थ्य जागरूकता — <span class="en">Adolescent health awareness</span></li>
+<li>पोषण एवं संतुलित आहार जागरूकता — <span class="en">Nutrition and balanced diet awareness</span></li>
+<li>स्वच्छता एवं व्यक्तिगत स्वास्थ्य शिक्षा — <span class="en">Hygiene and personal health education</span></li>
+<li>जरूरतमंद मरीजों को सहायता — <span class="en">Assistance to needy patients</span></li>
+<li>स्वास्थ्य सेवाओं तक पहुंच का मार्गदर्शन — <span class="en">Guidance for accessing healthcare services</span></li>
+<li>रक्तदान जागरूकता — <span class="en">Blood donation awareness</span></li>
+<li>रोगों की रोकथाम संबंधी जागरूकता — <span class="en">Awareness about disease prevention</span></li>
+<li>स्वास्थ्य विशेषज्ञों के साथ जागरूकता कार्यक्रम — <span class="en">Awareness programs with health professionals</span></li>
+<li>दूरदराज क्षेत्रों में स्वास्थ्य कार्यक्रम — <span class="en">Health programs in remote areas</span></li>
+<li>स्वस्थ जीवनशैली के प्रति जागरूकता — <span class="en">Awareness for a healthy lifestyle</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 04 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">04</div>
+    <div class="title">
+        गरीब एवं जरूरतमंद कल्याण
+        <small>Welfare of Poor & Needy</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>गरीब परिवारों की सहायता — <span class="en">Assistance to poor families</span></li>
+<li>राशन एवं खाद्य सामग्री वितरण — <span class="en">Distribution of ration and food materials</span></li>
+<li>कपड़े वितरण — <span class="en">Distribution of clothing</span></li>
+<li>कंबल एवं मौसमी सामग्री वितरण — <span class="en">Distribution of blankets and seasonal essentials</span></li>
+<li>जूते-चप्पल एवं आवश्यक वस्तु सहायता — <span class="en">Assistance with footwear and essential items</span></li>
+<li>गरीब बच्चों की शिक्षा सहायता — <span class="en">Educational assistance for poor children</span></li>
+<li>जरूरतमंद परिवारों की पहचान — <span class="en">Identification of needy families</span></li>
+<li>सामुदायिक भोजन कार्यक्रम — <span class="en">Community meal programs</span></li>
+<li>बेघर लोगों की सहायता — <span class="en">Assistance to homeless people</span></li>
+<li>आर्थिक रूप से कमजोर लोगों को सहायता — <span class="en">Assistance to economically weaker people</span></li>
+<li>जरूरतमंदों को सरकारी योजनाओं से जोड़ना — <span class="en">Connecting needy people with government schemes</span></li>
+<li>दैनिक जीवन की आवश्यक वस्तुओं की सहायता — <span class="en">Assistance with daily essential items</span></li>
+<li>संकटग्रस्त परिवारों की सहायता — <span class="en">Assistance to families in distress</span></li>
+<li>गरीब बस्तियों में सेवा कार्यक्रम — <span class="en">Service programs in underprivileged communities</span></li>
+<li>सामुदायिक सहायता केंद्र — <span class="en">Community assistance centers</span></li>
+<li>जरूरतमंदों के लिए जन-सहयोग अभियान — <span class="en">Public support campaigns for needy people</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 05 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">05</div>
+    <div class="title">
+        दिव्यांगजन कल्याण एवं सशक्तिकरण
+        <small>Disability Welfare & Empowerment</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>दिव्यांगजनों की सहायता — <span class="en">Assistance to persons with disabilities</span></li>
+<li>सहायक उपकरण उपलब्ध कराने में सहयोग — <span class="en">Support in providing assistive devices</span></li>
+<li>व्हीलचेयर एवं आवश्यक उपकरण सहायता — <span class="en">Wheelchair and essential equipment assistance</span></li>
+<li>दिव्यांग बच्चों की शिक्षा — <span class="en">Education for children with disabilities</span></li>
+<li>कौशल विकास प्रशिक्षण — <span class="en">Skill development training</span></li>
+<li>रोजगार एवं स्वरोजगार मार्गदर्शन — <span class="en">Employment and self-employment guidance</span></li>
+<li>सरकारी योजनाओं की जानकारी — <span class="en">Awareness of government schemes</span></li>
+<li>दिव्यांग अधिकार जागरूकता — <span class="en">Disability rights awareness</span></li>
+<li>डिजिटल शिक्षा — <span class="en">Digital education</span></li>
+<li>सामाजिक समावेशन — <span class="en">Social inclusion</span></li>
+<li>प्रतिभा एवं खेल विकास — <span class="en">Talent and sports development</span></li>
+<li>परिवारों को मार्गदर्शन — <span class="en">Guidance for families</span></li>
+<li>स्वास्थ्य एवं पुनर्वास सेवाओं तक पहुंच में सहयोग — <span class="en">Support in accessing healthcare and rehabilitation services</span></li>
+<li>रोजगारदाताओं के साथ अवसरों के लिए समन्वय — <span class="en">Coordination with employers for opportunities</span></li>
+<li>दिव्यांगजनों के लिए जागरूकता अभियान — <span class="en">Awareness campaigns for persons with disabilities</span></li>
+<li>सम्मानजनक एवं आत्मनिर्भर जीवन के लिए सहयोग — <span class="en">Support for a dignified and self-reliant life</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 06 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">06</div>
+    <div class="title">
+        वृद्धजन कल्याण
+        <small>Senior Citizen Welfare</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>जरूरतमंद बुजुर्गों की सहायता — <span class="en">Assistance to needy senior citizens</span></li>
+<li>भोजन सहायता — <span class="en">Food assistance</span></li>
+<li>कपड़े एवं कंबल सहायता — <span class="en">Clothing and blanket assistance</span></li>
+<li>स्वास्थ्य जांच शिविर — <span class="en">Health check-up camps</span></li>
+<li>स्वास्थ्य एवं दवा संबंधी मार्गदर्शन — <span class="en">Health and medication guidance</span></li>
+<li>अकेले रहने वाले बुजुर्गों की सामुदायिक सहायता — <span class="en">Community support for elderly people living alone</span></li>
+<li>सरकारी पेंशन एवं योजनाओं की जानकारी — <span class="en">Awareness of government pensions and schemes</span></li>
+<li>वरिष्ठ नागरिक अधिकार जागरूकता — <span class="en">Senior citizen rights awareness</span></li>
+<li>सामाजिक सुरक्षा जागरूकता — <span class="en">Social security awareness</span></li>
+<li>वृद्धाश्रमों में सहयोग — <span class="en">Support to old-age homes</span></li>
+<li>मानसिक एवं सामाजिक सहयोग — <span class="en">Emotional and social support</span></li>
+<li>आवश्यक वस्तुओं की सहायता — <span class="en">Assistance with essential items</span></li>
+<li>डिजिटल साक्षरता — <span class="en">Digital literacy</span></li>
+<li>परिवार एवं समुदाय में सम्मान के प्रति जागरूकता — <span class="en">Awareness for dignity and respect in family and community</span></li>
+<li>वरिष्ठ नागरिक मिलन एवं सामुदायिक कार्यक्रम — <span class="en">Senior citizen gatherings and community programs</span></li>
+<li>वृद्धजन सहायता एवं जन-जागरूकता अभियान — <span class="en">Senior citizen assistance and public awareness campaigns</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 07 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">07</div>
+    <div class="title">
+        युवा विकास एवं कौशल विकास
+        <small>Youth Development & Skill Development</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>युवाओं के लिए कौशल प्रशिक्षण — <span class="en">Skill training for youth</span></li>
+<li>कंप्यूटर एवं डिजिटल शिक्षा — <span class="en">Computer and digital education</span></li>
+<li>करियर मार्गदर्शन — <span class="en">Career guidance</span></li>
+<li>रोजगार मार्गदर्शन — <span class="en">Employment guidance</span></li>
+<li>प्रतियोगी परीक्षा मार्गदर्शन — <span class="en">Competitive examination guidance</span></li>
+<li>व्यक्तित्व विकास — <span class="en">Personality development</span></li>
+<li>संचार कौशल विकास — <span class="en">Communication skill development</span></li>
+<li>नेतृत्व विकास — <span class="en">Leadership development</span></li>
+<li>उद्यमिता प्रशिक्षण — <span class="en">Entrepreneurship training</span></li>
+<li>स्वरोजगार मार्गदर्शन — <span class="en">Self-employment guidance</span></li>
+<li>व्यावसायिक प्रशिक्षण — <span class="en">Vocational training</span></li>
+<li>खेल एवं प्रतिभा विकास — <span class="en">Sports and talent development</span></li>
+<li>युवा स्वयंसेवक कार्यक्रम — <span class="en">Youth volunteer programs</span></li>
+<li>वित्तीय एवं डिजिटल साक्षरता — <span class="en">Financial and digital literacy</span></li>
+<li>सामाजिक नेतृत्व एवं जिम्मेदारी — <span class="en">Social leadership and responsibility</span></li>
+<li>युवा जागरूकता एवं विकास अभियान — <span class="en">Youth awareness and development campaigns</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 08 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">08</div>
+    <div class="title">
+        रोजगार, स्वरोजगार एवं आजीविका
+        <small>Employment, Self-Employment & Livelihood</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>रोजगार मार्गदर्शन — <span class="en">Employment guidance</span></li>
+<li>कौशल प्रशिक्षण — <span class="en">Skill training</span></li>
+<li>स्वरोजगार प्रशिक्षण — <span class="en">Self-employment training</span></li>
+<li>छोटे व्यवसाय के लिए मार्गदर्शन — <span class="en">Guidance for small businesses</span></li>
+<li>उद्यमिता विकास — <span class="en">Entrepreneurship development</span></li>
+<li>रोजगार मेले एवं अवसरों की जानकारी — <span class="en">Job fairs and employment opportunity awareness</span></li>
+<li>डिजिटल कौशल प्रशिक्षण — <span class="en">Digital skill training</span></li>
+<li>वित्तीय साक्षरता — <span class="en">Financial literacy</span></li>
+<li>बैंकिंग एवं डिजिटल भुगतान जागरूकता — <span class="en">Banking and digital payment awareness</span></li>
+<li>स्वयं सहायता समूहों को सहयोग — <span class="en">Support to Self-Help Groups</span></li>
+<li>घरेलू उद्योग को बढ़ावा — <span class="en">Promotion of home-based industries</span></li>
+<li>हस्तशिल्प एवं कुटीर उद्योग प्रशिक्षण — <span class="en">Handicraft and cottage industry training</span></li>
+<li>ग्रामीण आजीविका विकास — <span class="en">Rural livelihood development</span></li>
+<li>महिला स्वरोजगार कार्यक्रम — <span class="en">Women’s self-employment programs</span></li>
+<li>युवा उद्यमिता कार्यक्रम — <span class="en">Youth entrepreneurship programs</span></li>
+<li>रोजगार एवं आत्मनिर्भरता जागरूकता — <span class="en">Employment and self-reliance awareness</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 09 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">09</div>
+    <div class="title">
+        ग्रामीण विकास एवं ग्राम उत्थान
+        <small>Rural Development & Village Upliftment</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>ग्रामीण शिक्षा विकास — <span class="en">Rural education development</span></li>
+<li>ग्रामीण स्वास्थ्य कार्यक्रम — <span class="en">Rural health programs</span></li>
+<li>स्वच्छता अभियान — <span class="en">Sanitation campaigns</span></li>
+<li>पेयजल जागरूकता — <span class="en">Drinking water awareness</span></li>
+<li>महिला सशक्तिकरण — <span class="en">Women empowerment</span></li>
+<li>युवा विकास — <span class="en">Youth development</span></li>
+<li>कौशल प्रशिक्षण — <span class="en">Skill training</span></li>
+<li>रोजगार एवं आजीविका विकास — <span class="en">Employment and livelihood development</span></li>
+<li>डिजिटल साक्षरता — <span class="en">Digital literacy</span></li>
+<li>किसान जागरूकता — <span class="en">Farmer awareness</span></li>
+<li>पर्यावरण संरक्षण — <span class="en">Environmental protection</span></li>
+<li>जल संरक्षण — <span class="en">Water conservation</span></li>
+<li>सरकारी योजनाओं की जानकारी — <span class="en">Awareness of government schemes</span></li>
+<li>सामुदायिक विकास कार्यक्रम — <span class="en">Community development programs</span></li>
+<li>ग्राम स्तर पर जन-जागरूकता — <span class="en">Village-level public awareness</span></li>
+<li>ग्रामीण आत्मनिर्भरता को बढ़ावा — <span class="en">Promotion of rural self-reliance</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 10 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">10</div>
+    <div class="title">
+        कृषि एवं किसान कल्याण
+        <small>Agriculture & Farmer Welfare</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>किसानों को कृषि संबंधी जानकारी — <span class="en">Agricultural information for farmers</span></li>
+<li>आधुनिक कृषि तकनीक की जानकारी — <span class="en">Awareness of modern agricultural techniques</span></li>
+<li>प्राकृतिक खेती जागरूकता — <span class="en">Natural farming awareness</span></li>
+<li>जैविक खेती जागरूकता — <span class="en">Organic farming awareness</span></li>
+<li>बीज एवं कृषि सामग्री संबंधी जानकारी — <span class="en">Information on seeds and agricultural inputs</span></li>
+<li>मृदा स्वास्थ्य जागरूकता — <span class="en">Soil health awareness</span></li>
+<li>जल संरक्षण आधारित कृषि — <span class="en">Water-conservation-based agriculture</span></li>
+<li>बागवानी एवं फल-सब्जी उत्पादन — <span class="en">Horticulture and fruit and vegetable production</span></li>
+<li>पशुपालन संबंधी प्रशिक्षण — <span class="en">Livestock management training</span></li>
+<li>किसान कौशल विकास — <span class="en">Farmer skill development</span></li>
+<li>किसान समूहों को सहयोग — <span class="en">Support to farmer groups</span></li>
+<li>कृषि आधारित स्वरोजगार — <span class="en">Agriculture-based self-employment</span></li>
+<li>कृषि बाजार संबंधी जागरूकता — <span class="en">Agricultural market awareness</span></li>
+<li>सरकारी कृषि योजनाओं की जानकारी — <span class="en">Awareness of government agricultural schemes</span></li>
+<li>कृषि नवाचार एवं तकनीकी जागरूकता — <span class="en">Agricultural innovation and technology awareness</span></li>
+<li>किसान आत्मनिर्भरता एवं आय-विविधीकरण जागरूकता — <span class="en">Farmer self-reliance and income diversification awareness</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 11 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">11</div>
+    <div class="title">
+        पर्यावरण एवं जल संरक्षण
+        <small>Environment & Water Conservation</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>वृक्षारोपण अभियान — <span class="en">Tree plantation campaigns</span></li>
+<li>पौध वितरण — <span class="en">Distribution of saplings</span></li>
+<li>वन संरक्षण जागरूकता — <span class="en">Forest conservation awareness</span></li>
+<li>जल संरक्षण अभियान — <span class="en">Water conservation campaigns</span></li>
+<li>वर्षा जल संचयन जागरूकता — <span class="en">Rainwater harvesting awareness</span></li>
+<li>तालाब एवं जल स्रोत संरक्षण — <span class="en">Protection of ponds and water sources</span></li>
+<li>प्लास्टिक प्रदूषण के विरुद्ध अभियान — <span class="en">Campaigns against plastic pollution</span></li>
+<li>कचरा प्रबंधन जागरूकता — <span class="en">Waste management awareness</span></li>
+<li>जैव विविधता संरक्षण — <span class="en">Biodiversity conservation</span></li>
+<li>जलवायु परिवर्तन जागरूकता — <span class="en">Climate change awareness</span></li>
+<li>ऊर्जा बचत जागरूकता — <span class="en">Energy conservation awareness</span></li>
+<li>पर्यावरण शिक्षा — <span class="en">Environmental education</span></li>
+<li>स्कूल पर्यावरण कार्यक्रम — <span class="en">School environmental programs</span></li>
+<li>हरित एवं स्वच्छ गांव अभियान — <span class="en">Green and clean village campaigns</span></li>
+<li>जल प्रदूषण रोकथाम जागरूकता — <span class="en">Water pollution prevention awareness</span></li>
+<li>पर्यावरण संरक्षण में जनभागीदारी — <span class="en">Public participation in environmental protection</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 12 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">12</div>
+    <div class="title">
+        स्वच्छता, पेयजल एवं पोषण
+        <small>Sanitation, Drinking Water & Nutrition</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>स्वच्छता जागरूकता अभियान — <span class="en">Sanitation awareness campaigns</span></li>
+<li>स्वच्छ गांव अभियान — <span class="en">Clean village campaigns</span></li>
+<li>व्यक्तिगत स्वच्छता शिक्षा — <span class="en">Personal hygiene education</span></li>
+<li>हाथ धोने की जागरूकता — <span class="en">Handwashing awareness</span></li>
+<li>शौचालय उपयोग जागरूकता — <span class="en">Toilet-use awareness</span></li>
+<li>स्वच्छ पेयजल जागरूकता — <span class="en">Safe drinking water awareness</span></li>
+<li>जल स्रोतों की स्वच्छता — <span class="en">Cleanliness of water sources</span></li>
+<li>कचरा पृथक्करण जागरूकता — <span class="en">Waste segregation awareness</span></li>
+<li>प्लास्टिक कम करने का अभियान — <span class="en">Campaigns to reduce plastic use</span></li>
+<li>बच्चों में स्वच्छता शिक्षा — <span class="en">Hygiene education for children</span></li>
+<li>पोषण जागरूकता — <span class="en">Nutrition awareness</span></li>
+<li>कुपोषण के प्रति जागरूकता — <span class="en">Awareness about malnutrition</span></li>
+<li>संतुलित आहार संबंधी शिक्षा — <span class="en">Education on balanced diets</span></li>
+<li>बच्चों के पोषण कार्यक्रम — <span class="en">Nutrition programs for children</span></li>
+<li>महिलाओं एवं माताओं में पोषण जागरूकता — <span class="en">Nutrition awareness among women and mothers</span></li>
+<li>स्वच्छता एवं पोषण जन-जागरूकता अभियान — <span class="en">Public awareness campaigns on sanitation and nutrition</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 13 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">13</div>
+    <div class="title">
+        पशु कल्याण एवं संरक्षण
+        <small>Animal Welfare & Protection</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>बेसहारा पशुओं की सहायता — <span class="en">Assistance to stray and abandoned animals</span></li>
+<li>पशु स्वास्थ्य जागरूकता — <span class="en">Animal health awareness</span></li>
+<li>पशु चिकित्सा शिविरों में सहयोग — <span class="en">Support for veterinary camps</span></li>
+<li>पशु संरक्षण अभियान — <span class="en">Animal protection campaigns</span></li>
+<li>पशु क्रूरता के विरुद्ध जागरूकता — <span class="en">Awareness against animal cruelty</span></li>
+<li>पशुपालकों को जागरूक करना — <span class="en">Awareness among livestock owners</span></li>
+<li>पशुओं के लिए भोजन एवं पानी की व्यवस्था में सहयोग — <span class="en">Support for providing food and water to animals</span></li>
+<li>पक्षी संरक्षण — <span class="en">Bird conservation</span></li>
+<li>घायल पशुओं को सहायता सेवाओं तक पहुंचाने में सहयोग — <span class="en">Support in connecting injured animals with appropriate care services</span></li>
+<li>पशु-पक्षी संरक्षण शिक्षा — <span class="en">Animal and bird conservation education</span></li>
+<li>ग्रामीण पशुपालन जागरूकता — <span class="en">Rural livestock awareness</span></li>
+<li>पशु टीकाकरण संबंधी जागरूकता — <span class="en">Awareness about animal vaccination</span></li>
+<li>जिम्मेदार पशुपालन के प्रति जागरूकता — <span class="en">Awareness of responsible animal care</span></li>
+<li>जैव विविधता संरक्षण — <span class="en">Biodiversity conservation</span></li>
+<li>पशु कल्याण स्वयंसेवक कार्यक्रम — <span class="en">Animal welfare volunteer programs</span></li>
+<li>पशु-पक्षी संरक्षण जन-जागरूकता अभियान — <span class="en">Public awareness campaigns for animal and bird protection</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 14 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">14</div>
+    <div class="title">
+        आपदा राहत एवं पुनर्वास
+        <small>Disaster Relief & Rehabilitation</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>बाढ़ राहत कार्य — <span class="en">Flood relief work</span></li>
+<li>सूखा प्रभावित क्षेत्रों में सहायता — <span class="en">Assistance in drought-affected areas</span></li>
+<li>चक्रवात एवं तूफान राहत — <span class="en">Cyclone and storm relief</span></li>
+<li>भूकंप जैसी आपदाओं में सहायता — <span class="en">Assistance during disasters such as earthquakes</span></li>
+<li>राहत सामग्री वितरण — <span class="en">Distribution of relief materials</span></li>
+<li>खाद्य सामग्री वितरण — <span class="en">Distribution of food supplies</span></li>
+<li>कपड़े एवं कंबल वितरण — <span class="en">Distribution of clothing and blankets</span></li>
+<li>आवश्यक वस्तुओं की सहायता — <span class="en">Assistance with essential items</span></li>
+<li>राहत शिविरों में सहयोग — <span class="en">Support at relief camps</span></li>
+<li>प्रभावित परिवारों की सहायता — <span class="en">Assistance to affected families</span></li>
+<li>बच्चों एवं बुजुर्गों की विशेष सहायता — <span class="en">Special assistance to children and senior citizens</span></li>
+<li>स्वास्थ्य एवं स्वच्छता सहायता — <span class="en">Health and sanitation assistance</span></li>
+<li>आपदा पूर्व जागरूकता — <span class="en">Pre-disaster awareness</span></li>
+<li>आपदा प्रबंधन प्रशिक्षण — <span class="en">Disaster management training</span></li>
+<li>पुनर्वास एवं पुनर्स्थापन में सहयोग — <span class="en">Support for rehabilitation and resettlement</span></li>
+<li>आपदा प्रभावित क्षेत्रों में जन-सहयोग अभियान — <span class="en">Public support campaigns in disaster-affected areas</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 15 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">15</div>
+    <div class="title">
+        सामाजिक न्याय, मानव अधिकार एवं कानूनी जागरूकता
+        <small>Social Justice, Human Rights & Legal Awareness</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>मानव अधिकार जागरूकता — <span class="en">Human rights awareness</span></li>
+<li>समानता एवं सामाजिक न्याय — <span class="en">Equality and social justice</span></li>
+<li>भेदभाव के विरुद्ध अभियान — <span class="en">Campaigns against discrimination</span></li>
+<li>कमजोर वर्गों के अधिकारों की जानकारी — <span class="en">Awareness of the rights of vulnerable groups</span></li>
+<li>महिला अधिकार जागरूकता — <span class="en">Women’s rights awareness</span></li>
+<li>बाल अधिकार जागरूकता — <span class="en">Child rights awareness</span></li>
+<li>दिव्यांग अधिकार जागरूकता — <span class="en">Disability rights awareness</span></li>
+<li>वरिष्ठ नागरिक अधिकार जागरूकता — <span class="en">Senior citizen rights awareness</span></li>
+<li>श्रमिक अधिकार जागरूकता — <span class="en">Workers’ rights awareness</span></li>
+<li>नागरिक अधिकारों की जानकारी — <span class="en">Awareness of citizens’ rights</span></li>
+<li>सरकारी योजनाओं की जानकारी — <span class="en">Awareness of government schemes</span></li>
+<li>कानूनी अधिकारों की सामान्य जानकारी — <span class="en">General awareness of legal rights</span></li>
+<li>उपलब्ध विधिक सहायता सेवाओं तक मार्गदर्शन — <span class="en">Guidance on accessing available legal aid services</span></li>
+<li>सामाजिक कुरीतियों के विरुद्ध अभियान — <span class="en">Campaigns against social evils</span></li>
+<li>बाल विवाह एवं दहेज के विरुद्ध जागरूकता — <span class="en">Awareness against child marriage and dowry</span></li>
+<li>सामाजिक समानता एवं सद्भाव को बढ़ावा देना — <span class="en">Promotion of social equality and harmony</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- 16 -->
+<div class="accordion">
+<button class="accordion-btn">
+    <div class="number">16</div>
+    <div class="title">
+        डिजिटल शिक्षा, जन-जागरूकता एवं सामाजिक विकास
+        <small>Digital Education, Public Awareness & Social Development</small>
+    </div>
+    <div class="arrow">⌄</div>
+</button>
+
+<div class="accordion-content">
+<div class="content">
+<ul>
+<li>कंप्यूटर शिक्षा — <span class="en">Computer education</span></li>
+<li>डिजिटल साक्षरता — <span class="en">Digital literacy</span></li>
+<li>इंटरनेट के सुरक्षित उपयोग की जागरूकता — <span class="en">Awareness of safe internet use</span></li>
+<li>साइबर सुरक्षा जागरूकता — <span class="en">Cybersecurity awareness</span></li>
+<li>ऑनलाइन सरकारी सेवाओं की जानकारी — <span class="en">Awareness of online government services</span></li>
+<li>डिजिटल भुगतान की जानकारी — <span class="en">Digital payment awareness</span></li>
+<li>ऑनलाइन आवेदन एवं सेवाओं की जानकारी — <span class="en">Awareness of online applications and services</span></li>
+<li>डिजिटल दस्तावेज संबंधी जागरूकता — <span class="en">Awareness of digital documents</span></li>
+<li>सोशल मीडिया का जिम्मेदार उपयोग — <span class="en">Responsible use of social media</span></li>
+<li>स्वास्थ्य जागरूकता अभियान — <span class="en">Health awareness campaigns</span></li>
+<li>शिक्षा जागरूकता अभियान — <span class="en">Education awareness campaigns</span></li>
+<li>पर्यावरण जागरूकता अभियान — <span class="en">Environmental awareness campaigns</span></li>
+<li>सामाजिक कुरीतियों के विरुद्ध अभियान — <span class="en">Campaigns against social evils</span></li>
+<li>नागरिक जिम्मेदारी एवं कर्तव्य जागरूकता — <span class="en">Awareness of civic responsibilities and duties</span></li>
+<li>स्वयंसेवा एवं सामाजिक भागीदारी — <span class="en">Volunteering and social participation</span></li>
+<li>सामाजिक एकता, सद्भाव एवं सामुदायिक विकास — <span class="en">Social unity, harmony and community development</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<!-- CLOSING -->
+<div class="closing">
+
+<h2>साथ मिलकर, बेहतर समाज की ओर</h2>
+
+<div class="english">
+Together, Towards a Better Society
+</div>
+
+<p>
+हमारा प्रयास है कि समाज के हर व्यक्ति तक अवसर, सहायता और सम्मान पहुँच सके।
+हम समुदायों को जोड़कर, लोगों को सशक्त बनाकर और सकारात्मक बदलाव के लिए मिलकर कार्य करने में विश्वास रखते हैं।
+</p>
+
+<p>
+We strive to ensure that every individual has access to opportunities, support and dignity.
+Together, we connect communities, empower people and work towards positive and lasting change.
+</p>
+
+<div class="quote">
+“साथ चले हम – बदलाव की ओर”
+</div>
+
+</div>
+
+</div>
+
+
+<script>
+
+/* SINGLE OPEN ACCORDION */
+
+const accordions = document.querySelectorAll(".accordion");
+
+accordions.forEach(function(item){
+
+    const button = item.querySelector(".accordion-btn");
+    const content = item.querySelector(".accordion-content");
+
+    button.addEventListener("click", function(){
+
+        const alreadyOpen = item.classList.contains("active");
+
+        /* Close all */
+        accordions.forEach(function(other){
+
+            other.classList.remove("active");
+
+            const otherContent =
+                other.querySelector(".accordion-content");
+
+            otherContent.style.maxHeight = null;
+
+        });
+
+        /* Open clicked one */
+        if(!alreadyOpen){
+
+            item.classList.add("active");
+
+            content.style.maxHeight =
+                content.scrollHeight + "px";
+
+        }
+
+    });
+
+});
+
+
+/* Responsive height adjustment */
+
+window.addEventListener("resize", function(){
+
+    const active =
+        document.querySelector(".accordion.active");
+
+    if(active){
+
+        const content =
+            active.querySelector(".accordion-content");
+
+        content.style.maxHeight =
+            content.scrollHeight + "px";
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
