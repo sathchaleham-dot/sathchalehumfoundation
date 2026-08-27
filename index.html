@@ -12,7 +12,7 @@ content="Sath Chale Hum Foundation - Service, Support and Awareness for Positive
 <style>
 
 /* =========================================================
-   RESET
+   RESET + ROOT
 ========================================================= */
 
 *{
@@ -49,7 +49,6 @@ body{
     --green-dark:#0d7b39;
 
     --white:#ffffff;
-
     --light-blue:#edf6ff;
     --light-green:#effbf4;
 
@@ -175,8 +174,8 @@ section{
 }
 
 .brand-logo{
-    width:78px;
-    height:78px;
+    width:82px;
+    height:82px;
 
     object-fit:contain;
 
@@ -191,7 +190,7 @@ section{
 }
 
 .brand-text h1{
-    font-size:27px;
+    font-size:30px;
     line-height:1.2;
     font-weight:900;
 }
@@ -202,51 +201,15 @@ section{
     color:#fff;
 }
 
-
-/* =========================================================
-   HEADER BUTTONS
-   DESKTOP = SAME LINE
-========================================================= */
-
 .header-buttons{
     display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:flex-end;
-
     gap:12px;
-
     flex-shrink:0;
-
-    white-space:nowrap;
 }
 
 .header-buttons .btn{
-    width:150px;
-    min-width:150px;
-    height:46px;
-
-    padding:0 10px;
-
+    min-width:145px;
     white-space:nowrap;
-
-    font-size:14px;
-}
-
-.header-buttons .btn-orange{
-    background:linear-gradient(
-        135deg,
-        #ff9d18,
-        #e85d05
-    );
-}
-
-.header-buttons .btn-green{
-    background:linear-gradient(
-        135deg,
-        #18a957,
-        #08783a
-    );
 }
 
 
@@ -417,7 +380,7 @@ section{
 }
 
 
-/* HERO LOGO */
+/* HERO LOGO BOX */
 
 .hero-logo-box{
     min-height:390px;
@@ -500,6 +463,353 @@ section{
 
 
 /* =========================================================
+   ₹1 DAILY SUPPORTER
+========================================================= */
+
+.daily-supporter{
+    background:
+        linear-gradient(
+            135deg,
+            #fff8ee,
+            #ffffff
+        );
+}
+
+.daily-box{
+    width:min(1180px,92%);
+    margin:auto;
+
+    background:#fff;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:
+        0 15px 40px rgba(0,45,90,.12);
+
+    border:1px solid #e5eaf0;
+}
+
+.daily-head{
+    text-align:center;
+
+    padding:32px 20px 28px;
+
+    color:#fff;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff8a00,
+            #e65b05
+        );
+}
+
+.daily-badge{
+    display:inline-block;
+
+    padding:9px 20px;
+
+    background:#fff;
+
+    color:#d95300;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+    font-weight:900;
+
+    margin-bottom:13px;
+}
+
+.daily-head h2{
+    font-size:36px;
+
+    line-height:1.2;
+
+    font-weight:900;
+}
+
+.daily-head p{
+    margin-top:8px;
+
+    font-size:16px;
+}
+
+.daily-content{
+    padding:30px;
+}
+
+.daily-intro{
+    text-align:center;
+
+    color:#53697b;
+
+    font-size:18px;
+
+    max-width:850px;
+
+    margin:0 auto 27px;
+}
+
+.daily-impact{
+    display:grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    gap:13px;
+}
+
+.daily-impact-card{
+    text-align:center;
+
+    padding:20px 12px;
+
+    border:1px solid #e1e7ef;
+
+    border-radius:17px;
+
+    background:#fff;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,.05);
+}
+
+.daily-icon{
+    width:52px;
+    height:52px;
+
+    margin:0 auto 10px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#fff1df;
+
+    font-size:25px;
+}
+
+.daily-impact-card h3{
+    color:var(--blue);
+
+    font-size:17px;
+
+    margin:5px 0;
+}
+
+.daily-impact-card p{
+    color:var(--muted);
+
+    font-size:13px;
+
+    line-height:1.4;
+}
+
+
+/* PLANS */
+
+.daily-plans{
+    margin-top:28px;
+
+    padding:24px;
+
+    background:#f5f8fc;
+
+    border:1px solid #dce5f1;
+
+    border-radius:21px;
+}
+
+.daily-plan-title{
+    text-align:center;
+
+    margin-bottom:18px;
+}
+
+.daily-plan-title strong{
+    display:block;
+
+    color:var(--blue);
+
+    font-size:25px;
+
+    font-weight:900;
+}
+
+.daily-plan-title span{
+    color:var(--muted);
+
+    font-size:14px;
+}
+
+.daily-grid{
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:13px;
+}
+
+.daily-plan{
+    position:relative;
+
+    padding:20px 10px;
+
+    text-align:center;
+
+    background:#fff;
+
+    border:2px solid #e7ebf2;
+
+    border-radius:17px;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    transition:.2s;
+}
+
+.daily-plan input{
+    position:absolute;
+
+    opacity:0;
+
+    pointer-events:none;
+}
+
+.daily-amount{
+    display:inline-block;
+
+    color:var(--blue);
+
+    font-size:38px;
+
+    font-weight:900;
+
+    line-height:1;
+}
+
+.daily-plan.selected{
+    border-color:#16a34a;
+
+    background:#f0fdf4;
+
+    box-shadow:
+        0 8px 20px rgba(22,163,74,.18);
+
+    transform:translateY(-3px);
+}
+
+.daily-plan.selected .daily-amount{
+    color:#16a34a;
+}
+
+.daily-every{
+    margin:9px 0 12px;
+
+    color:#566174;
+
+    font-size:14px;
+}
+
+.daily-month{
+    display:inline-block;
+
+    padding:6px 12px;
+
+    border-radius:30px;
+
+    background:#edf3fb;
+
+    color:var(--blue);
+
+    font-size:13px;
+
+    font-weight:800;
+}
+
+.daily-selected{
+    display:block;
+
+    margin-top:8px;
+
+    color:#16a34a;
+
+    font-size:13px;
+
+    font-weight:900;
+}
+
+
+/* DAILY CTA */
+
+.daily-cta{
+    margin-top:25px;
+
+    text-align:center;
+
+    padding:25px 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ff8a00,
+            #e65b05
+        );
+
+    border-radius:20px;
+
+    color:#fff;
+}
+
+.daily-cta h3{
+    font-size:28px;
+
+    margin-bottom:7px;
+}
+
+.daily-cta p{
+    font-size:16px;
+
+    margin-bottom:17px;
+}
+
+.daily-button{
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:13px 28px;
+
+    border-radius:50px;
+
+    background:#fff;
+
+    color:#c94d00;
+
+    text-decoration:none;
+
+    font-size:19px;
+
+    font-weight:900;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,.12);
+}
+
+
+/* =========================================================
    ABOUT
 ========================================================= */
 
@@ -552,8 +862,7 @@ section{
 
 
 /* =========================================================
-   VALUES
-   4 TOP + 3 CENTER
+   OUR VALUES — 4 TOP + 3 CENTER
 ========================================================= */
 
 .values-grid{
@@ -576,23 +885,19 @@ section{
 
     border-top:4px solid var(--blue);
 
-    min-height:150px;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
+    min-height:160px;
 }
 
 .value-card:nth-child(5){
-    grid-column:2 / 3;
+    grid-column:2;
 }
 
 .value-card:nth-child(6){
-    grid-column:3 / 4;
+    grid-column:3;
 }
 
 .value-card:nth-child(7){
-    grid-column:4 / 5;
+    grid-column:4;
 }
 
 .value-number{
@@ -708,6 +1013,8 @@ section{
     text-align:center;
 
     border-top:4px solid var(--green);
+
+    min-height:190px;
 }
 
 .five-card:nth-child(5){
@@ -804,7 +1111,13 @@ section{
 
     gap:11px;
 
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
+
+    align-items:center;
+}
+
+.cta-buttons .btn{
+    white-space:nowrap;
 }
 
 
@@ -835,6 +1148,9 @@ footer{
 
     gap:40px;
 }
+
+
+/* FOOTER LOGO */
 
 .footer-logo{
     width:90px;
@@ -895,23 +1211,20 @@ footer{
 
 
 /* =========================================================
-   SOCIAL MEDIA
-   ORIGINAL COLOUR ICONS
+   ORIGINAL COLOUR SOCIAL ICONS
 ========================================================= */
 
 .social-icons{
     display:flex;
 
-    gap:12px;
+    gap:10px;
 
     margin-top:18px;
-
-    align-items:center;
 }
 
 .social-icon{
-    width:44px;
-    height:44px;
+    width:42px;
+    height:42px;
 
     border-radius:50%;
 
@@ -923,24 +1236,18 @@ footer{
 
     text-decoration:none;
 
-    background:transparent;
+    transition:.25s;
 
-    transition:
-        transform .25s ease,
-        filter .25s ease;
+    background:#fff;
 }
 
 .social-icon:hover{
-    transform:translateY(-4px) scale(1.08);
-
-    filter:brightness(1.08);
+    transform:translateY(-4px);
 }
 
 .social-icon svg{
-    width:31px;
-    height:31px;
-
-    display:block;
+    width:22px;
+    height:22px;
 }
 
 
@@ -950,11 +1257,13 @@ footer{
     color:#1877F2;
 }
 
+
 /* INSTAGRAM */
 
 .instagram-icon{
     color:#E4405F;
 }
+
 
 /* YOUTUBE */
 
@@ -962,10 +1271,11 @@ footer{
     color:#FF0000;
 }
 
+
 /* EMAIL */
 
 .email-icon{
-    color:#FFB000;
+    color:#063b78;
 }
 
 
@@ -1016,14 +1326,27 @@ footer{
         grid-template-columns:
             repeat(2,1fr);
     }
+
+    .daily-impact{
+        grid-template-columns:
+            repeat(3,1fr);
+    }
 }
 
 
 /* =========================================================
-   TABLET / SMALL DESKTOP
+   TABLET / SMALL
 ========================================================= */
 
 @media(max-width:850px){
+
+    .top-header{
+        flex-wrap:wrap;
+    }
+
+    .header-buttons{
+        margin-left:auto;
+    }
 
     .hero-grid{
         grid-template-columns:1fr;
@@ -1038,6 +1361,11 @@ footer{
     }
 
     .work-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .daily-impact{
         grid-template-columns:
             repeat(2,1fr);
     }
@@ -1063,58 +1391,48 @@ footer{
 
         flex-direction:column;
 
-        gap:15px;
+        gap:14px;
+
+        text-align:center;
     }
 
     .brand{
-        width:100%;
-
         justify-content:center;
+
+        width:100%;
     }
 
     .brand-logo{
-        width:61px;
-        height:61px;
+        width:68px;
+        height:68px;
     }
 
     .brand-text h1{
-        font-size:20px;
+        font-size:24px;
     }
 
     .brand-text p{
-        font-size:11px;
+        font-size:12px;
     }
 
-
-    /* MOBILE HEADER BUTTONS
-       BOTH SAME ROW */
-
     .header-buttons{
-        width:100%;
-
         display:flex;
 
-        flex-direction:row;
+        width:100%;
 
         justify-content:center;
-
-        align-items:center;
 
         gap:8px;
     }
 
     .header-buttons .btn{
-        width:calc(50% - 4px);
+        flex:1;
 
         min-width:0;
 
-        height:44px;
+        padding:10px 8px;
 
-        padding:0 5px;
-
-        font-size:12px;
-
-        white-space:nowrap;
+        font-size:13px;
     }
 
 
@@ -1173,6 +1491,55 @@ footer{
     }
 
 
+    /* DAILY SUPPORTER */
+
+    .daily-box{
+        width:94%;
+    }
+
+    .daily-head{
+        padding:27px 15px;
+    }
+
+    .daily-head h2{
+        font-size:29px;
+    }
+
+    .daily-content{
+        padding:18px;
+    }
+
+    .daily-intro{
+        font-size:16px;
+    }
+
+    .daily-impact{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .daily-impact-card:last-child{
+        grid-column:1 / 3;
+    }
+
+    .daily-plans{
+        padding:17px;
+    }
+
+    .daily-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .daily-amount{
+        font-size:34px;
+    }
+
+    .daily-cta h3{
+        font-size:24px;
+    }
+
+
     /* VALUES */
 
     .values-grid{
@@ -1219,7 +1586,11 @@ footer{
     }
 
     .cta-buttons{
+        width:100%;
+
         justify-content:center;
+
+        flex-wrap:wrap;
     }
 
 
@@ -1278,20 +1649,22 @@ footer{
     </div>
 
 
-    <!-- DONATE + JOIN -->
-
     <div class="header-buttons">
 
         <a
-            href="donate.html"
+            href="https://docs.google.com/forms/d/e/1FAIpQLScG-TEGF_xYakoTV7FBTVFpQiYr2KmP3vmuv2ilzCHVmV689Q/viewform?usp=header"
             class="btn btn-orange"
+            target="_blank"
+            rel="noopener"
         >
             🧡 DONATE US
         </a>
 
         <a
-            href="join.html"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSefr5zPNIurZ1-ldth7YpYyiCc3yYWu8u9esuPPMTQ11fb3PA/viewform?usp=header"
             class="btn btn-green"
+            target="_blank"
+            rel="noopener"
         >
             💚 JOIN US
         </a>
@@ -1406,15 +1779,19 @@ footer{
             <div class="hero-buttons">
 
                 <a
-                    href="donate.html"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScG-TEGF_xYakoTV7FBTVFpQiYr2KmP3vmuv2ilzCHVmV689Q/viewform?usp=header"
                     class="btn btn-orange"
+                    target="_blank"
+                    rel="noopener"
                 >
                     🧡 Donate Us
                 </a>
 
                 <a
-                    href="join.html"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSefr5zPNIurZ1-ldth7YpYyiCc3yYWu8u9esuPPMTQ11fb3PA/viewform?usp=header"
                     class="btn btn-green"
+                    target="_blank"
+                    rel="noopener"
                 >
                     💚 Join Us
                 </a>
@@ -1423,8 +1800,6 @@ footer{
 
         </div>
 
-
-        <!-- HERO LOGO -->
 
         <div class="hero-logo-box">
 
@@ -1447,313 +1822,295 @@ footer{
 
 <!-- ========================================================
      ₹1 DAILY SUPPORTER
-     ABOVE ABOUT US
 ========================================================= -->
 
-<section id="daily-supporter">
+<section class="daily-supporter">
 
-    <div class="container">
+    <div class="daily-box">
 
-        <div class="section-heading">
+
+        <div class="daily-head">
+
+            <div class="daily-badge">
+                ₹1 DAILY SUPPORTER CAMPAIGN
+            </div>
 
             <h2>
-                🧡 ₹1 Daily Supporter Campaign
+                आपका ₹1, किसी की मुस्कान
             </h2>
 
             <p>
-                आपका ₹1, किसी की मुस्कान
+                छोटा योगदान • बड़ी उम्मीद
             </p>
 
         </div>
 
 
-        <div class="card"
-             style="
-             padding:40px 30px;
-             text-align:center;
-             max-width:1050px;
-             margin:auto;
-             background:linear-gradient(135deg,#fff8ef,#ffffff);
-             border:1px solid #ffe1c2;
-             ">
-
-            <h2
-                style="
-                color:#063b78;
-                font-size:42px;
-                font-weight:900;
-                margin-bottom:10px;
-                "
-            >
-                <span style="color:#e65100;">
-                    आपका ₹1,
-                </span>
-
-                <span style="color:#ff7900;">
-                    किसी की मुस्कान
-                </span>
-            </h2>
+        <div class="daily-content">
 
 
-            <div
-                style="
-                width:90px;
-                height:4px;
-                background:#ff8b00;
-                border-radius:10px;
-                margin:18px auto;
-                "
-            ></div>
+            <p class="daily-intro">
 
-
-            <p
-                style="
-                max-width:820px;
-                margin:auto;
-                color:#536a7c;
-                font-size:18px;
-                line-height:1.7;
-                "
-            >
                 रोज़ सिर्फ ₹1 से आप किसी जरूरतमंद के जीवन में
                 शिक्षा, स्वास्थ्य, भोजन और आत्मनिर्भरता की एक नई
                 उम्मीद जोड़ सकते हैं।
+
             </p>
 
 
             <!-- IMPACT -->
 
-            <div
-                style="
-                margin-top:35px;
-                display:grid;
-                grid-template-columns:repeat(5,1fr);
-                gap:14px;
-                "
-                class="daily-impact-grid"
-            >
+            <div class="daily-impact">
 
-                <div
-                    style="
-                    padding:20px 10px;
-                    background:#fff;
-                    border:1px solid #e1e7ef;
-                    border-radius:16px;
-                    "
-                >
-                    <div style="font-size:28px;">📚</div>
 
-                    <h3 style="color:#063b78;font-size:17px;">
+                <div class="daily-impact-card">
+
+                    <div class="daily-icon">
+                        📚
+                    </div>
+
+                    <h3>
                         शिक्षा
                     </h3>
 
-                    <p style="color:#687386;font-size:13px;">
+                    <p>
                         किसी बच्चे की पढ़ाई में मदद
                     </p>
+
                 </div>
 
 
-                <div
-                    style="
-                    padding:20px 10px;
-                    background:#fff;
-                    border:1px solid #e1e7ef;
-                    border-radius:16px;
-                    "
-                >
-                    <div style="font-size:28px;">🍲</div>
+                <div class="daily-impact-card">
 
-                    <h3 style="color:#063b78;font-size:17px;">
+                    <div class="daily-icon">
+                        🍲
+                    </div>
+
+                    <h3>
                         भोजन
                     </h3>
 
-                    <p style="color:#687386;font-size:13px;">
+                    <p>
                         जरूरतमंद तक भोजन का सहारा
                     </p>
+
                 </div>
 
 
-                <div
-                    style="
-                    padding:20px 10px;
-                    background:#fff;
-                    border:1px solid #e1e7ef;
-                    border-radius:16px;
-                    "
-                >
-                    <div style="font-size:28px;">✚</div>
+                <div class="daily-impact-card">
 
-                    <h3 style="color:#063b78;font-size:17px;">
+                    <div class="daily-icon">
+                        ✚
+                    </div>
+
+                    <h3>
                         स्वास्थ्य
                     </h3>
 
-                    <p style="color:#687386;font-size:13px;">
+                    <p>
                         जरूरतमंदों तक स्वास्थ्य सहायता
                     </p>
+
                 </div>
 
 
-                <div
-                    style="
-                    padding:20px 10px;
-                    background:#fff;
-                    border:1px solid #e1e7ef;
-                    border-radius:16px;
-                    "
-                >
-                    <div style="font-size:28px;">🤝</div>
+                <div class="daily-impact-card">
 
-                    <h3 style="color:#063b78;font-size:17px;">
+                    <div class="daily-icon">
+                        🤝
+                    </div>
+
+                    <h3>
                         सहायता
                     </h3>
 
-                    <p style="color:#687386;font-size:13px;">
+                    <p>
                         परिवारों को कठिन समय में सहारा
                     </p>
+
                 </div>
 
 
-                <div
-                    style="
-                    padding:20px 10px;
-                    background:#fff;
-                    border:1px solid #e1e7ef;
-                    border-radius:16px;
-                    "
-                >
-                    <div style="font-size:28px;">🌱</div>
+                <div class="daily-impact-card">
 
-                    <h3 style="color:#063b78;font-size:17px;">
+                    <div class="daily-icon">
+                        🌱
+                    </div>
+
+                    <h3>
                         सशक्तिकरण
                     </h3>
 
-                    <p style="color:#687386;font-size:13px;">
+                    <p>
                         बेहतर भविष्य की ओर एक कदम
                     </p>
+
                 </div>
+
 
             </div>
 
 
             <!-- DAILY PLANS -->
 
-            <div
-                style="
-                margin-top:30px;
-                padding:25px;
-                background:#f5f8fc;
-                border:1px solid #dce5f1;
-                border-radius:20px;
-                "
-            >
-
-                <h3
-                    style="
-                    color:#123f88;
-                    font-size:25px;
-                    margin-bottom:18px;
-                    "
-                >
-                    अपनी सुविधा के अनुसार सहयोग करें
-                </h3>
-
-                <p
-                    style="
-                    color:#687386;
-                    margin-bottom:20px;
-                    "
-                >
-                    दैनिक सहयोग योजना • Daily Support Plans
-                </p>
+            <div class="daily-plans">
 
 
-                <div
-                    style="
-                    display:grid;
-                    grid-template-columns:repeat(4,1fr);
-                    gap:13px;
-                    "
-                    class="daily-plans-grid"
-                >
+                <div class="daily-plan-title">
 
-                    <div class="daily-plan active-plan">
-                        <strong>₹1</strong>
-                        <span>हर दिन सहयोग</span>
-                        <small>लगभग ₹30 / माह</small>
-                    </div>
+                    <strong>
+                        अपनी सुविधा के अनुसार सहयोग करें
+                    </strong>
 
-                    <div class="daily-plan">
-                        <strong>₹2</strong>
-                        <span>हर दिन सहयोग</span>
-                        <small>लगभग ₹60 / माह</small>
-                    </div>
+                    <span>
+                        दैनिक सहयोग योजना • Daily Support Plans
+                    </span>
 
-                    <div class="daily-plan">
-                        <strong>₹5</strong>
-                        <span>हर दिन सहयोग</span>
-                        <small>लगभग ₹150 / माह</small>
-                    </div>
+                </div>
 
-                    <div class="daily-plan">
-                        <strong>₹10</strong>
-                        <span>हर दिन सहयोग</span>
-                        <small>लगभग ₹300 / माह</small>
-                    </div>
+
+                <div class="daily-grid">
+
+
+                    <label class="daily-plan selected">
+
+                        <input
+                            type="radio"
+                            name="dailyAmount"
+                            value="1"
+                            checked
+                        >
+
+                        <div class="daily-amount">
+                            ₹ 1
+                        </div>
+
+                        <div class="daily-every">
+                            हर दिन सहयोग
+                        </div>
+
+                        <div class="daily-month">
+                            लगभग ₹30 / माह
+                        </div>
+
+                        <span class="daily-selected">
+                            ✓ Selected
+                        </span>
+
+                    </label>
+
+
+                    <label class="daily-plan">
+
+                        <input
+                            type="radio"
+                            name="dailyAmount"
+                            value="2"
+                        >
+
+                        <div class="daily-amount">
+                            ₹ 2
+                        </div>
+
+                        <div class="daily-every">
+                            हर दिन सहयोग
+                        </div>
+
+                        <div class="daily-month">
+                            लगभग ₹60 / माह
+                        </div>
+
+                        <span class="daily-selected">
+                            ✓ Selected
+                        </span>
+
+                    </label>
+
+
+                    <label class="daily-plan">
+
+                        <input
+                            type="radio"
+                            name="dailyAmount"
+                            value="5"
+                        >
+
+                        <div class="daily-amount">
+                            ₹ 5
+                        </div>
+
+                        <div class="daily-every">
+                            हर दिन सहयोग
+                        </div>
+
+                        <div class="daily-month">
+                            लगभग ₹150 / माह
+                        </div>
+
+                        <span class="daily-selected">
+                            ✓ Selected
+                        </span>
+
+                    </label>
+
+
+                    <label class="daily-plan">
+
+                        <input
+                            type="radio"
+                            name="dailyAmount"
+                            value="10"
+                        >
+
+                        <div class="daily-amount">
+                            ₹ 10
+                        </div>
+
+                        <div class="daily-every">
+                            हर दिन सहयोग
+                        </div>
+
+                        <div class="daily-month">
+                            लगभग ₹300 / माह
+                        </div>
+
+                        <span class="daily-selected">
+                            ✓ Selected
+                        </span>
+
+                    </label>
+
 
                 </div>
 
             </div>
 
 
-            <!-- CTA -->
+            <!-- DAILY CTA -->
 
-            <div
-                style="
-                margin-top:25px;
-                padding:28px 20px;
-                background:linear-gradient(135deg,#ff8a00,#e65b05);
-                border-radius:20px;
-                color:#fff;
-                "
-            >
+            <div class="daily-cta">
 
-                <h3
-                    style="
-                    font-size:28px;
-                    margin-bottom:8px;
-                    "
-                >
+                <h3>
                     आज से बदलाव का हिस्सा बनें ❤️
                 </h3>
 
-                <p
-                    style="
-                    font-size:17px;
-                    margin-bottom:18px;
-                    "
-                >
+                <p>
                     छोटा योगदान समझकर इसे कम मत आंकिए।<br>
                     हजारों छोटे सहयोग मिलकर किसी की जिंदगी बदल सकते हैं।
                 </p>
 
-
                 <a
-                    href="donate.html"
-                    style="
-                    display:inline-block;
-                    padding:13px 30px;
-                    background:#fff;
-                    color:#c94d00;
-                    border-radius:50px;
-                    font-size:20px;
-                    font-weight:900;
-                    text-decoration:none;
-                    "
+                    id="dailyDonateButton"
+                    class="daily-button"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScG-TEGF_xYakoTV7FBTVFpQiYr2KmP3vmuv2ilzCHVmV689Q/viewform?usp=header"
+                    target="_blank"
+                    rel="noopener"
                 >
-                    🤝 ₹1 से सहयोग करें
+                    🤝 ₹ 1 से सहयोग करें
                 </a>
 
             </div>
+
 
         </div>
 
@@ -1888,6 +2245,7 @@ footer{
                 </p>
 
             </div>
+
 
         </div>
 
@@ -2071,113 +2429,177 @@ footer{
 
             <div class="work-card">
                 <span class="work-number">01</span>
-                <h3>Education & Child Development</h3>
-                <p>शिक्षा एवं बाल विकास</p>
+                <h3>
+                    Education & Child Development
+                </h3>
+                <p>
+                    शिक्षा एवं बाल विकास
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">02</span>
-                <h3>Health & Medical Care</h3>
-                <p>स्वास्थ्य एवं चिकित्सा</p>
+                <h3>
+                    Health & Medical Care
+                </h3>
+                <p>
+                    स्वास्थ्य एवं चिकित्सा
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">03</span>
-                <h3>Women Empowerment</h3>
-                <p>महिला सशक्तिकरण</p>
+                <h3>
+                    Women Empowerment
+                </h3>
+                <p>
+                    महिला सशक्तिकरण
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">04</span>
-                <h3>Welfare of Poor & Needy</h3>
-                <p>गरीब एवं जरूरतमंद कल्याण</p>
+                <h3>
+                    Welfare of Poor & Needy
+                </h3>
+                <p>
+                    गरीब एवं जरूरतमंद कल्याण
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">05</span>
-                <h3>Rural Development</h3>
-                <p>ग्रामीण विकास</p>
+                <h3>
+                    Rural Development
+                </h3>
+                <p>
+                    ग्रामीण विकास
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">06</span>
-                <h3>Skill Development & Livelihood</h3>
-                <p>कौशल विकास एवं आजीविका</p>
+                <h3>
+                    Skill Development & Livelihood
+                </h3>
+                <p>
+                    कौशल विकास एवं आजीविका
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">07</span>
-                <h3>Social Awareness</h3>
-                <p>सामाजिक जागरूकता</p>
+                <h3>
+                    Social Awareness
+                </h3>
+                <p>
+                    सामाजिक जागरूकता
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">08</span>
-                <h3>Environment Protection</h3>
-                <p>पर्यावरण संरक्षण</p>
+                <h3>
+                    Environment Protection
+                </h3>
+                <p>
+                    पर्यावरण संरक्षण
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">09</span>
-                <h3>Youth Development</h3>
-                <p>युवा विकास</p>
+                <h3>
+                    Youth Development
+                </h3>
+                <p>
+                    युवा विकास
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">10</span>
-                <h3>Senior Citizen Welfare</h3>
-                <p>वरिष्ठ नागरिक कल्याण</p>
+                <h3>
+                    Senior Citizen Welfare
+                </h3>
+                <p>
+                    वरिष्ठ नागरिक कल्याण
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">11</span>
-                <h3>Disability Support</h3>
-                <p>दिव्यांग सहायता</p>
+                <h3>
+                    Disability Support
+                </h3>
+                <p>
+                    दिव्यांग सहायता
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">12</span>
-                <h3>Disaster Relief</h3>
-                <p>आपदा राहत</p>
+                <h3>
+                    Disaster Relief
+                </h3>
+                <p>
+                    आपदा राहत
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">13</span>
-                <h3>Food & Nutrition</h3>
-                <p>भोजन एवं पोषण</p>
+                <h3>
+                    Food & Nutrition
+                </h3>
+                <p>
+                    भोजन एवं पोषण
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">14</span>
-                <h3>Sanitation & Drinking Water</h3>
-                <p>स्वच्छता एवं पेयजल</p>
+                <h3>
+                    Sanitation & Drinking Water
+                </h3>
+                <p>
+                    स्वच्छता एवं पेयजल
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">15</span>
-                <h3>Legal & Rights Awareness</h3>
-                <p>कानूनी एवं अधिकार जागरूकता</p>
+                <h3>
+                    Legal & Rights Awareness
+                </h3>
+                <p>
+                    कानूनी एवं अधिकार जागरूकता
+                </p>
             </div>
 
 
             <div class="work-card">
                 <span class="work-number">16</span>
-                <h3>Community Development</h3>
-                <p>सामुदायिक विकास</p>
+                <h3>
+                    Community Development
+                </h3>
+                <p>
+                    सामुदायिक विकास
+                </p>
             </div>
 
 
@@ -2210,7 +2632,9 @@ footer{
 
             <div class="card five-card">
 
-                <div class="card-number">01</div>
+                <div class="card-number">
+                    01
+                </div>
 
                 <h3>
                     सीधी मदद | Direct Help
@@ -2229,7 +2653,9 @@ footer{
 
             <div class="card five-card">
 
-                <div class="card-number">02</div>
+                <div class="card-number">
+                    02
+                </div>
 
                 <h3>
                     मिलकर काम करना | Working Together
@@ -2248,7 +2674,9 @@ footer{
 
             <div class="card five-card">
 
-                <div class="card-number">03</div>
+                <div class="card-number">
+                    03
+                </div>
 
                 <h3>
                     ईमानदारी और पारदर्शिता
@@ -2269,7 +2697,9 @@ footer{
 
             <div class="card five-card">
 
-                <div class="card-number">04</div>
+                <div class="card-number">
+                    04
+                </div>
 
                 <h3>
                     समुदाय की भागीदारी
@@ -2290,7 +2720,9 @@ footer{
 
             <div class="card five-card">
 
-                <div class="card-number">05</div>
+                <div class="card-number">
+                    05
+                </div>
 
                 <h3>
                     समानता और सम्मान
@@ -2337,7 +2769,9 @@ footer{
 
             <div class="card five-card">
 
-                <div class="card-number">01</div>
+                <div class="card-number">
+                    01
+                </div>
 
                 <h3>
                     अपना समय दें | Give Your Time
@@ -2352,7 +2786,9 @@ footer{
 
             <div class="card five-card">
 
-                <div class="card-number">02</div>
+                <div class="card-number">
+                    02
+                </div>
 
                 <h3>
                     दान दें | Donate
@@ -2368,7 +2804,9 @@ footer{
 
             <div class="card five-card">
 
-                <div class="card-number">03</div>
+                <div class="card-number">
+                    03
+                </div>
 
                 <h3>
                     सहयोग करें | Support Us
@@ -2384,7 +2822,9 @@ footer{
 
             <div class="card five-card">
 
-                <div class="card-number">04</div>
+                <div class="card-number">
+                    04
+                </div>
 
                 <h3>
                     जागरूकता फैलाएँ | Spread Awareness
@@ -2400,7 +2840,9 @@ footer{
 
             <div class="card five-card">
 
-                <div class="card-number">05</div>
+                <div class="card-number">
+                    05
+                </div>
 
                 <h3>
                     अपनी आवाज़ बनें | Be a Voice for Change
@@ -2447,15 +2889,19 @@ footer{
         <div class="cta-buttons">
 
             <a
-                href="join.html"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSefr5zPNIurZ1-ldth7YpYyiCc3yYWu8u9esuPPMTQ11fb3PA/viewform?usp=header"
                 class="btn btn-green"
+                target="_blank"
+                rel="noopener"
             >
                 🟢 Join Us
             </a>
 
             <a
-                href="donate.html"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScG-TEGF_xYakoTV7FBTVFpQiYr2KmP3vmuv2ilzCHVmV689Q/viewform?usp=header"
                 class="btn btn-orange"
+                target="_blank"
+                rel="noopener"
             >
                 🟠 Donate Us
             </a>
@@ -2508,7 +2954,7 @@ footer{
             </p>
 
 
-            <!-- SOCIAL MEDIA -->
+            <!-- ORIGINAL COLOUR SOCIAL ICONS -->
 
             <div class="social-icons">
 
@@ -2517,16 +2963,13 @@ footer{
 
                 <a
                     class="social-icon facebook-icon"
-                    href="https://www.facebook.com/share/1EUrBuoqbL/"
+                    href="https://www.facebook.com/share/1DekhrWVDh/"
                     target="_blank"
                     rel="noopener"
                     aria-label="Facebook"
                 >
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
+                    <svg viewBox="0 0 24 24">
 
                         <path
                             fill="currentColor"
@@ -2548,10 +2991,7 @@ footer{
                     aria-label="Instagram"
                 >
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
+                    <svg viewBox="0 0 24 24">
 
                         <path
                             fill="currentColor"
@@ -2567,16 +3007,13 @@ footer{
 
                 <a
                     class="social-icon youtube-icon"
-                    href="https://www.youtube.com/@sathchaleham"
+                    href="https://youtube.com/@sathchaleham?si=kc1xt7w_4tuItYub"
                     target="_blank"
                     rel="noopener"
                     aria-label="YouTube"
                 >
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
+                    <svg viewBox="0 0 24 24">
 
                         <path
                             fill="currentColor"
@@ -2596,10 +3033,7 @@ footer{
                     aria-label="Email"
                 >
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
+                    <svg viewBox="0 0 24 24">
 
                         <path
                             fill="currentColor"
@@ -2710,7 +3144,7 @@ footer{
         </div>
 
 
-        <!-- LEGAL -->
+        <!-- LEGAL - QUICK LINKS KE RIGHT SIDE -->
 
         <div>
 
@@ -2790,133 +3224,81 @@ document
     });
 
 
-/* DAILY SUPPORTER PLAN */
+/* =========================================================
+   DAILY SUPPORTER SELECTION
+========================================================= */
 
-document
-    .querySelectorAll(".daily-plan")
-    .forEach(function(plan){
+(function(){
+
+    const plans =
+        document.querySelectorAll(".daily-plan");
+
+    const button =
+        document.getElementById("dailyDonateButton");
+
+
+    plans.forEach(function(plan){
 
         plan.addEventListener(
             "click",
             function(){
 
-                document
-                    .querySelectorAll(".daily-plan")
-                    .forEach(function(item){
+                plans.forEach(
+                    function(item){
 
                         item.classList.remove(
-                            "active-plan"
+                            "selected"
                         );
 
-                    });
+                        const radio =
+                            item.querySelector(
+                                "input"
+                            );
+
+                        if(radio){
+
+                            radio.checked=false;
+
+                        }
+
+                    }
+                );
+
 
                 plan.classList.add(
-                    "active-plan"
+                    "selected"
                 );
+
+
+                const radio =
+                    plan.querySelector(
+                        "input"
+                    );
+
+
+                if(radio){
+
+                    radio.checked=true;
+
+                    const amount =
+                        radio.value;
+
+                    button.innerHTML =
+                        "🤝 ₹ "
+                        + amount
+                        + " से सहयोग करें";
+
+                }
 
             }
         );
 
     });
 
+})();
+
 </script>
 
-
-<!-- ========================================================
-     DAILY PLAN EXTRA CSS
-========================================================= -->
-
-<style>
-
-.daily-plan{
-    padding:20px 10px;
-
-    background:#fff;
-
-    border:2px solid #e7ebf2;
-
-    border-radius:17px;
-
-    text-align:center;
-
-    cursor:pointer;
-
-    transition:.2s;
-}
-
-.daily-plan strong{
-    display:block;
-
-    color:#123f88;
-
-    font-size:38px;
-
-    line-height:1;
-
-    font-weight:900;
-}
-
-.daily-plan span{
-    display:block;
-
-    margin:9px 0;
-
-    color:#566174;
-
-    font-size:14px;
-}
-
-.daily-plan small{
-    display:inline-block;
-
-    padding:6px 12px;
-
-    border-radius:30px;
-
-    background:#edf3fb;
-
-    color:#123f88;
-
-    font-size:13px;
-
-    font-weight:800;
-}
-
-.daily-plan.active-plan{
-    border-color:#16a34a;
-
-    background:#f0fdf4;
-
-    box-shadow:
-        0 8px 20px rgba(22,163,74,.18);
-
-    transform:translateY(-3px);
-}
-
-.daily-plan.active-plan strong{
-    color:#16a34a;
-}
-
-
-/* DAILY CAMPAIGN MOBILE */
-
-@media(max-width:700px){
-
-    .daily-impact-grid{
-        grid-template-columns:repeat(2,1fr) !important;
-    }
-
-    .daily-impact-grid > div:last-child{
-        grid-column:1 / 3;
-    }
-
-    .daily-plans-grid{
-        grid-template-columns:repeat(2,1fr) !important;
-    }
-
-}
-
-</style>
 
 </body>
 </html>
