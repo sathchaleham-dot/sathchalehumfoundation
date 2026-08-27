@@ -7,10 +7,9 @@
 <title>Donate Us | Sath Chale Hum Foundation</title>
 
 <style>
+
 *{
   box-sizing:border-box;
-  margin:0;
-  padding:0;
 }
 
 html{
@@ -18,14 +17,11 @@ html{
 }
 
 body{
+  margin:0;
   font-family:Arial,"Noto Sans Devanagari",sans-serif;
   background:#f5f8fc;
   color:#13254a;
 }
-
-/* ================================
-   MAIN CONTAINER
-================================ */
 
 .scf-page{
   width:100%;
@@ -36,13 +32,14 @@ body{
   box-shadow:0 8px 35px rgba(10,40,90,.12);
 }
 
-/* ================================
+
+/* =========================
    HEADER
-================================ */
+========================= */
 
 .scf-header{
-  background:linear-gradient(135deg,#082c65,#12458f);
   padding:18px 30px 20px;
+  background:linear-gradient(135deg,#082c65,#12458f);
   color:#fff;
 }
 
@@ -53,8 +50,6 @@ body{
   gap:25px;
 }
 
-/* LOGO */
-
 .scf-logo-area{
   display:flex;
   align-items:center;
@@ -62,8 +57,8 @@ body{
 }
 
 .scf-logo{
-  width:75px;
-  height:75px;
+  width:78px;
+  height:78px;
   object-fit:contain;
   background:#fff;
   border-radius:50%;
@@ -71,12 +66,10 @@ body{
   box-shadow:0 4px 15px rgba(0,0,0,.20);
 }
 
-.scf-brand-name{
-  line-height:1.15;
-}
-
 .scf-brand-name h1{
+  margin:0;
   font-size:30px;
+  line-height:1.15;
   font-weight:900;
 }
 
@@ -85,12 +78,10 @@ body{
 }
 
 .scf-brand-name p{
-  margin-top:7px;
+  margin:7px 0 0;
   font-size:15px;
   font-weight:700;
 }
-
-/* HEADER BUTTONS */
 
 .scf-header-buttons{
   display:flex;
@@ -104,16 +95,16 @@ body{
   min-width:135px;
   padding:12px 20px;
   border-radius:50px;
-  text-decoration:none;
   color:#fff;
-  font-weight:900;
+  text-decoration:none;
   font-size:14px;
+  font-weight:900;
   box-shadow:0 5px 16px rgba(0,0,0,.22);
   transition:.25s;
 }
 
 .scf-header-btn:hover{
-  transform:translateY(-3px) scale(1.03);
+  transform:translateY(-3px);
 }
 
 .scf-donate{
@@ -124,31 +115,34 @@ body{
   background:linear-gradient(135deg,#16ad58,#087a3c);
 }
 
-/* ================================
+
+/* =========================
    NAVIGATION
-================================ */
+========================= */
 
 .scf-nav{
+  padding:12px 20px;
   background:#fff;
   border-bottom:1px solid #e2e8f0;
-  padding:12px 25px;
 }
 
 .scf-nav ul{
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:8px;
+  gap:5px;
+  margin:0;
+  padding:0;
   list-style:none;
   flex-wrap:wrap;
 }
 
 .scf-nav a{
   display:block;
-  padding:10px 17px;
-  border-radius:30px;
+  padding:10px 15px;
   color:#123f88;
   text-decoration:none;
+  border-radius:30px;
   font-size:14px;
   font-weight:800;
   transition:.2s;
@@ -160,24 +154,25 @@ body{
   color:#fff;
 }
 
-/* ================================
-   PAGE HERO
-================================ */
+
+/* =========================
+   HERO
+========================= */
 
 .scf-hero{
   padding:55px 25px 45px;
   text-align:center;
   background:
-    radial-gradient(circle at top left,#fff3dc,transparent 35%),
-    linear-gradient(180deg,#fff,#fff8ef);
+  radial-gradient(circle at top left,#fff3dc,transparent 35%),
+  linear-gradient(#fff,#fff8ef);
 }
 
-.scf-hero-badge{
+.scf-badge{
   display:inline-block;
   padding:10px 23px;
   border-radius:40px;
-  background:linear-gradient(135deg,#ff9c18,#e85d05);
   color:#fff;
+  background:linear-gradient(135deg,#ff9c18,#e85d05);
   font-size:14px;
   font-weight:900;
   letter-spacing:.5px;
@@ -215,9 +210,10 @@ body{
   line-height:1.7;
 }
 
-/* ================================
-   IMPACT CARDS
-================================ */
+
+/* =========================
+   IMPACT
+========================= */
 
 .scf-section{
   padding:20px 30px 35px;
@@ -249,7 +245,6 @@ body{
 
 .scf-impact-card:hover{
   transform:translateY(-5px);
-  box-shadow:0 10px 25px rgba(16,42,86,.12);
 }
 
 .scf-impact-icon{
@@ -271,14 +266,16 @@ body{
 }
 
 .scf-impact-card p{
+  margin:0;
   color:#687386;
   font-size:13px;
   line-height:1.4;
 }
 
-/* ================================
+
+/* =========================
    DAILY PLANS
-================================ */
+========================= */
 
 .scf-plans{
   margin:0 30px 35px;
@@ -290,18 +287,19 @@ body{
 }
 
 .scf-plan-heading{
-  text-align:center;
   margin-bottom:22px;
+  text-align:center;
 }
 
 .scf-plan-heading h2{
+  margin:0;
   color:#123f88;
   font-size:28px;
   font-weight:900;
 }
 
 .scf-plan-heading p{
-  margin-top:6px;
+  margin:6px 0 0;
   color:#687386;
   font-size:14px;
 }
@@ -312,26 +310,34 @@ body{
   gap:15px;
 }
 
+
+/* IMPORTANT:
+   पूरा card clickable है
+*/
+
 .scf-plan{
   position:relative;
-  padding:24px 12px;
+  padding:25px 12px;
   text-align:center;
   border:2px solid #f0c98f;
   background:#fff;
   border-radius:19px;
   cursor:pointer;
+  user-select:none;
+  -webkit-tap-highlight-color:transparent;
   transition:.25s;
-}
-
-.scf-plan input{
-  position:absolute;
-  opacity:0;
-  pointer-events:none;
 }
 
 .scf-plan:hover{
   transform:translateY(-4px);
   box-shadow:0 9px 22px rgba(230,93,5,.12);
+}
+
+.scf-plan input{
+  position:absolute;
+  width:1px;
+  height:1px;
+  opacity:0;
 }
 
 .scf-amount{
@@ -340,17 +346,6 @@ body{
   font-weight:900;
   line-height:1;
   transition:.2s;
-}
-
-.scf-plan.selected{
-  border-color:#16a34a;
-  background:#f0fdf4;
-  box-shadow:0 8px 24px rgba(22,163,74,.18);
-  transform:translateY(-4px);
-}
-
-.scf-plan.selected .scf-amount{
-  color:#16a34a;
 }
 
 .scf-daily{
@@ -369,11 +364,6 @@ body{
   font-weight:800;
 }
 
-.scf-plan.selected .scf-month{
-  background:#dcfce7;
-  color:#16a34a;
-}
-
 .scf-selected{
   display:none;
   margin-top:10px;
@@ -382,13 +372,34 @@ body{
   font-weight:900;
 }
 
+
+/* SELECTED */
+
+.scf-plan.selected{
+  border-color:#16a34a;
+  background:#f0fdf4;
+  box-shadow:0 8px 24px rgba(22,163,74,.20);
+  transform:translateY(-4px);
+}
+
+.scf-plan.selected .scf-amount{
+  color:#16a34a !important;
+  font-weight:900;
+}
+
+.scf-plan.selected .scf-month{
+  background:#dcfce7;
+  color:#16a34a;
+}
+
 .scf-plan.selected .scf-selected{
   display:block;
 }
 
-/* ================================
+
+/* =========================
    DONATE CTA
-================================ */
+========================= */
 
 .scf-donate-cta{
   margin:0 30px 35px;
@@ -401,6 +412,7 @@ body{
 }
 
 .scf-donate-cta h2{
+  margin:0;
   font-size:31px;
   font-weight:900;
 }
@@ -416,7 +428,7 @@ body{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  min-width:240px;
+  min-width:250px;
   padding:14px 30px;
   border-radius:50px;
   background:#fff;
@@ -432,9 +444,10 @@ body{
   transform:scale(1.05);
 }
 
-/* ================================
-   PAYMENT SECTION
-================================ */
+
+/* =========================
+   PAYMENT
+========================= */
 
 .scf-payment{
   margin:0 30px 35px;
@@ -453,6 +466,7 @@ body{
 }
 
 .scf-payment-head h2{
+  margin:0;
   font-size:31px;
   font-weight:900;
 }
@@ -462,7 +476,7 @@ body{
 }
 
 .scf-payment-head p{
-  margin-top:8px;
+  margin:8px 0 0;
   font-size:16px;
 }
 
@@ -486,6 +500,7 @@ body{
 }
 
 .scf-payment-card h3{
+  margin:0;
   color:#123f88;
   font-size:23px;
   font-weight:900;
@@ -497,8 +512,6 @@ body{
   font-size:14px;
   line-height:1.5;
 }
-
-/* UPI */
 
 .scf-detail{
   margin-top:12px;
@@ -514,14 +527,12 @@ body{
 }
 
 .scf-value{
-  margin-top:4px;
   min-height:22px;
+  margin-top:4px;
   color:#123f88;
   font-size:17px;
   font-weight:900;
 }
-
-/* BANK */
 
 .scf-bank{
   margin-top:22px;
@@ -530,7 +541,7 @@ body{
 }
 
 .scf-bank h4{
-  margin-bottom:12px;
+  margin:0 0 12px;
   color:#123f88;
   font-size:20px;
 }
@@ -556,7 +567,10 @@ body{
   font-weight:800;
 }
 
-/* QR */
+
+/* =========================
+   QR
+========================= */
 
 .scf-qr{
   text-align:center;
@@ -594,9 +608,10 @@ body{
   line-height:1.5;
 }
 
-/* ================================
+
+/* =========================
    THANK YOU
-================================ */
+========================= */
 
 .scf-thanks{
   margin-top:25px;
@@ -608,12 +623,12 @@ body{
 }
 
 .scf-thanks h3{
+  margin:0;
   font-size:27px;
-  font-weight:900;
 }
 
 .scf-thanks p{
-  margin-top:8px;
+  margin:8px 0 0;
   font-size:16px;
   line-height:1.5;
 }
@@ -623,14 +638,15 @@ body{
   font-weight:800;
 }
 
-/* ================================
+
+/* =========================
    FOOTER
-================================ */
+========================= */
 
 .scf-footer{
+  padding:45px 30px 20px;
   background:#102d60;
   color:#fff;
-  padding:45px 30px 20px;
 }
 
 .scf-footer-grid{
@@ -650,7 +666,7 @@ body{
 }
 
 .scf-footer h3{
-  margin-bottom:14px;
+  margin:0 0 14px;
   font-size:20px;
 }
 
@@ -674,6 +690,8 @@ body{
 }
 
 .scf-footer-links{
+  margin:0;
+  padding:0;
   list-style:none;
 }
 
@@ -685,12 +703,14 @@ body{
   color:#d9e3f2;
   text-decoration:none;
   font-size:14px;
-  transition:.2s;
 }
 
 .scf-footer-links a:hover{
   color:#ffb34c;
 }
+
+
+/* SOCIAL ICONS */
 
 .scf-social{
   display:flex;
@@ -706,9 +726,9 @@ body{
   justify-content:center;
   border-radius:50%;
   background:#fff;
-  color:#123f88;
   text-decoration:none;
-  font-size:17px;
+  color:#123f88;
+  font-size:18px;
   font-weight:900;
   transition:.2s;
 }
@@ -728,9 +748,10 @@ body{
   font-size:13px;
 }
 
-/* ================================
+
+/* =========================
    MOBILE
-================================ */
+========================= */
 
 @media(max-width:800px){
 
@@ -772,7 +793,7 @@ body{
   }
 
   .scf-nav{
-    padding:9px 10px;
+    padding:9px 8px;
   }
 
   .scf-nav ul{
@@ -780,7 +801,7 @@ body{
   }
 
   .scf-nav a{
-    padding:8px 10px;
+    padding:8px 9px;
     font-size:12px;
   }
 
@@ -807,8 +828,7 @@ body{
 
   .scf-impact-card:last-child{
     grid-column:1/3;
-    max-width:50%;
-    width:100%;
+    width:50%;
     margin:auto;
   }
 
@@ -843,7 +863,9 @@ body{
   .scf-social{
     justify-content:center;
   }
+
 }
+
 
 @media(max-width:450px){
 
@@ -866,13 +888,17 @@ body{
   .scf-impact-card{
     padding:16px 6px;
   }
+
 }
+
 </style>
 </head>
+
 
 <body>
 
 <div class="scf-page">
+
 
 <!-- =====================================
      HEADER
@@ -903,6 +929,7 @@ alt="Sath Chale Hum Foundation Logo"
 </div>
 
 </div>
+
 
 <div class="scf-header-buttons">
 
@@ -935,19 +962,47 @@ href="join.html"
 
 <ul>
 
-<li><a href="index.html">Home</a></li>
+<li>
+<a href="index.html">
+Home
+</a>
+</li>
 
-<li><a href="about.html">About Us</a></li>
+<li>
+<a href="about.html">
+About Us
+</a>
+</li>
 
-<li><a href="team.html">Our Team</a></li>
+<li>
+<a href="team.html">
+Our Team
+</a>
+</li>
 
-<li><a href="work.html">Our Work</a></li>
+<li>
+<a href="work.html">
+Our Work
+</a>
+</li>
 
-<li><a class="active" href="donate.html">Donate Us</a></li>
+<li>
+<a class="active" href="donate.html">
+Donate Us
+</a>
+</li>
 
-<li><a href="join.html">Join Us</a></li>
+<li>
+<a href="join.html">
+Join Us
+</a>
+</li>
 
-<li><a href="download.html">Download</a></li>
+<li>
+<a href="download.html">
+Download
+</a>
+</li>
 
 </ul>
 
@@ -960,7 +1015,7 @@ href="join.html"
 
 <section class="scf-hero">
 
-<div class="scf-hero-badge">
+<div class="scf-badge">
 ₹1 DAILY SUPPORTER CAMPAIGN
 </div>
 
@@ -998,35 +1053,91 @@ href="join.html"
 
 <div class="scf-impact-grid">
 
-<div class="scf-impact-card">
-<div class="scf-impact-icon">📚</div>
-<h3>शिक्षा</h3>
-<p>किसी बच्चे की पढ़ाई में मदद</p>
-</div>
 
 <div class="scf-impact-card">
-<div class="scf-impact-icon">🍲</div>
-<h3>भोजन</h3>
-<p>जरूरतमंद तक भोजन का सहारा</p>
+
+<div class="scf-impact-icon">
+📚
 </div>
 
-<div class="scf-impact-card">
-<div class="scf-impact-icon">✚</div>
-<h3>स्वास्थ्य</h3>
-<p>जरूरतमंदों तक स्वास्थ्य सहायता</p>
+<h3>
+शिक्षा
+</h3>
+
+<p>
+किसी बच्चे की पढ़ाई में मदद
+</p>
+
 </div>
 
-<div class="scf-impact-card">
-<div class="scf-impact-icon">🤝</div>
-<h3>सहायता</h3>
-<p>परिवारों को कठिन समय में सहारा</p>
-</div>
 
 <div class="scf-impact-card">
-<div class="scf-impact-icon">🌱</div>
-<h3>सशक्तिकरण</h3>
-<p>बेहतर भविष्य की ओर एक कदम</p>
+
+<div class="scf-impact-icon">
+🍲
 </div>
+
+<h3>
+भोजन
+</h3>
+
+<p>
+जरूरतमंद तक भोजन का सहारा
+</p>
+
+</div>
+
+
+<div class="scf-impact-card">
+
+<div class="scf-impact-icon">
+✚
+</div>
+
+<h3>
+स्वास्थ्य
+</h3>
+
+<p>
+जरूरतमंदों तक स्वास्थ्य सहायता
+</p>
+
+</div>
+
+
+<div class="scf-impact-card">
+
+<div class="scf-impact-icon">
+🤝
+</div>
+
+<h3>
+सहायता
+</h3>
+
+<p>
+परिवारों को कठिन समय में सहारा
+</p>
+
+</div>
+
+
+<div class="scf-impact-card">
+
+<div class="scf-impact-icon">
+🌱
+</div>
+
+<h3>
+सशक्तिकरण
+</h3>
+
+<p>
+बेहतर भविष्य की ओर एक कदम
+</p>
+
+</div>
+
 
 </div>
 
@@ -1054,7 +1165,11 @@ href="join.html"
 
 <div class="scf-plan-grid">
 
-<label class="scf-plan selected">
+
+<!-- ₹1 -->
+
+<label class="scf-plan selected"
+data-amount="1">
 
 <input
 type="radio"
@@ -1082,7 +1197,10 @@ checked
 </label>
 
 
-<label class="scf-plan">
+<!-- ₹2 -->
+
+<label class="scf-plan"
+data-amount="2">
 
 <input
 type="radio"
@@ -1109,7 +1227,10 @@ value="2"
 </label>
 
 
-<label class="scf-plan">
+<!-- ₹5 -->
+
+<label class="scf-plan"
+data-amount="5">
 
 <input
 type="radio"
@@ -1136,7 +1257,10 @@ value="5"
 </label>
 
 
-<label class="scf-plan">
+<!-- ₹10 -->
+
+<label class="scf-plan"
+data-amount="10">
 
 <input
 type="radio"
@@ -1162,6 +1286,7 @@ value="10"
 
 </label>
 
+
 </div>
 
 </section>
@@ -1182,6 +1307,7 @@ value="10"
 हजारों छोटे सहयोग मिलकर किसी की जिंदगी बदल सकते हैं।
 </p>
 
+
 <a
 id="scfDonateButton"
 class="scf-main-donate-btn"
@@ -1201,6 +1327,7 @@ Donate ₹1
 
 <section class="scf-payment">
 
+
 <div class="scf-payment-head">
 
 <h2>
@@ -1217,10 +1344,11 @@ Donate ₹1
 
 <div class="scf-payment-body">
 
+
 <div class="scf-payment-grid">
 
 
-<!-- UPI / BANK -->
+<!-- UPI + BANK -->
 
 <div class="scf-payment-card">
 
@@ -1240,7 +1368,7 @@ UPI ID
 </div>
 
 <div class="scf-value">
-<!-- अपनी UPI ID यहाँ डालें -->
+<!-- यहाँ अपनी UPI ID डालें -->
 </div>
 
 </div>
@@ -1286,7 +1414,7 @@ IFSC Code
 </div>
 
 <div class="scf-bank-value">
-<!-- IFSC -->
+<!-- IFSC Code -->
 </div>
 
 </div>
@@ -1303,6 +1431,7 @@ Bank Name
 </div>
 
 </div>
+
 
 </div>
 
@@ -1338,6 +1467,7 @@ QR Code Scan करके तुरंत सहयोग करें
 
 </div>
 
+
 </div>
 
 
@@ -1359,6 +1489,7 @@ QR Code Scan करके तुरंत सहयोग करें
 
 </div>
 
+
 </div>
 
 </section>
@@ -1369,6 +1500,7 @@ QR Code Scan करके तुरंत सहयोग करें
 ===================================== -->
 
 <footer class="scf-footer">
+
 
 <div class="scf-footer-grid">
 
@@ -1383,15 +1515,21 @@ src="https://raw.githubusercontent.com/sathchaleham-dot/sathchalehumfoundation/m
 alt="Sath Chale Hum Foundation"
 >
 
+
 <div class="scf-footer-brand">
+
 Sath Chale Hum
 <span>Foundation</span>
+
 </div>
+
 
 <p class="scf-footer-tagline">
 साथ चले हम, बदलाव की ओर
 </p>
 
+
+<!-- SOCIAL -->
 
 <div class="scf-social">
 
@@ -1405,7 +1543,7 @@ f
 </a>
 
 <a
-href="https://www.instagram.com/sathchaleham?igsi=MWFzanhuYjFpcGhrZg=="
+href="https://www.instagram.com/sathchaleham"
 target="_blank"
 rel="noopener"
 title="Instagram"
@@ -1444,13 +1582,33 @@ Quick Links
 
 <ul class="scf-footer-links">
 
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About Us</a></li>
-<li><a href="team.html">Our Team</a></li>
-<li><a href="work.html">Our Work</a></li>
-<li><a href="donate.html">Donate Us</a></li>
-<li><a href="join.html">Join Us</a></li>
-<li><a href="download.html">Download</a></li>
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="about.html">About Us</a>
+</li>
+
+<li>
+<a href="team.html">Our Team</a>
+</li>
+
+<li>
+<a href="work.html">Our Work</a>
+</li>
+
+<li>
+<a href="donate.html">Donate Us</a>
+</li>
+
+<li>
+<a href="join.html">Join Us</a>
+</li>
+
+<li>
+<a href="download.html">Download</a>
+</li>
 
 </ul>
 
@@ -1506,6 +1664,7 @@ Terms & Conditions
 
 </div>
 
+
 </div>
 
 
@@ -1517,60 +1676,139 @@ Terms & Conditions
 
 </footer>
 
+
 </div>
 
 
 <!-- =====================================
-     JAVASCRIPT
+     AMOUNT SELECTION JAVASCRIPT
 ===================================== -->
 
 <script>
 
-(function(){
+document.addEventListener("DOMContentLoaded", function(){
 
-const plans =
-document.querySelectorAll(".scf-plan");
+  const plans =
+    document.querySelectorAll(".scf-plan");
 
-const donateButton =
-document.getElementById("scfDonateButton");
+  const donateButton =
+    document.getElementById("scfDonateButton");
+
+  const googleForm =
+    "https://docs.google.com/forms/d/e/1FAIpQLScG-TEGF_xYakoTV7FBTVFpQiYr2KmP3vmuv2ilzCHVmV689Q/viewform?usp=header";
 
 
-plans.forEach(function(plan){
+  function selectAmount(plan){
 
-plan.addEventListener("click",function(){
+    /* Remove selection from every card */
 
-plans.forEach(function(item){
+    plans.forEach(function(item){
 
-item.classList.remove("selected");
+      item.classList.remove("selected");
 
-const oldRadio =
-item.querySelector("input");
+      const radio =
+        item.querySelector("input[type='radio']");
 
-if(oldRadio){
-oldRadio.checked = false;
-}
+      if(radio){
+        radio.checked = false;
+      }
+
+    });
+
+
+    /* Select clicked card */
+
+    plan.classList.add("selected");
+
+
+    const radio =
+      plan.querySelector("input[type='radio']");
+
+    const amount =
+      plan.getAttribute("data-amount");
+
+
+    if(radio){
+      radio.checked = true;
+    }
+
+
+    /* Change Donate button */
+
+    donateButton.textContent =
+      "Donate ₹" + amount;
+
+
+    /*
+      Selected amount को URL में भी रखा जा रहा है।
+      इससे आगे payment/form integration करना आसान रहेगा।
+    */
+
+    donateButton.href =
+      googleForm +
+      "&amount=" +
+      encodeURIComponent("₹" + amount);
+
+  }
+
+
+  /* पूरे card पर click */
+
+  plans.forEach(function(plan){
+
+    plan.addEventListener("click", function(){
+
+      selectAmount(plan);
+
+    });
+
+
+    /*
+      Keyboard accessibility
+    */
+
+    plan.addEventListener("keydown", function(event){
+
+      if(
+        event.key === "Enter" ||
+        event.key === " "
+      ){
+
+        event.preventDefault();
+
+        selectAmount(plan);
+
+      }
+
+    });
+
+  });
+
+
+  /* Initial amount */
+
+  const firstPlan =
+    document.querySelector(".scf-plan.selected");
+
+  if(firstPlan){
+
+    const amount =
+      firstPlan.getAttribute("data-amount");
+
+    donateButton.textContent =
+      "Donate ₹" + amount;
+
+    donateButton.href =
+      googleForm +
+      "&amount=" +
+      encodeURIComponent("₹" + amount);
+
+  }
 
 });
 
-
-plan.classList.add("selected");
-
-const radio =
-plan.querySelector("input");
-
-if(radio){
-
-radio.checked = true;
-
-const amount =
-radio.value;
+</script>
 
 
-donateButton.innerHTML =
-"Donate ₹" + amount;
-
-
-/*
-   Selected amount Google Form में
-   भी भेजने के लिए URL में amount
-  
+</body>
+</html>
