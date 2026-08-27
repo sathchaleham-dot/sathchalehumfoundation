@@ -1,0 +1,2714 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Work | Sath Chale Hum Foundation</title>
+
+<meta name="description"
+content="Our Work - Sath Chale Hum Foundation | Our Key Areas of Work and Our Way of Working.">
+
+<style>
+
+/* =========================================================
+   RESET + ROOT
+========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+        Arial,
+        "Noto Sans Devanagari",
+        "Segoe UI",
+        sans-serif;
+
+    background:#f5f8fc;
+    color:#17324d;
+    line-height:1.6;
+}
+
+:root{
+    --blue:#063b78;
+    --dark-blue:#032b5c;
+    --blue2:#0a67b8;
+
+    --orange:#ff7900;
+    --orange-dark:#e85d00;
+
+    --green:#159447;
+    --green-dark:#0d7b39;
+
+    --white:#ffffff;
+
+    --light-blue:#edf6ff;
+    --light-green:#effbf4;
+    --light-orange:#fff8ee;
+
+    --text:#17324d;
+    --muted:#63768a;
+
+    --shadow:
+        0 12px 35px rgba(0,45,90,.11);
+}
+
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+.container{
+    width:min(1250px,92%);
+    margin:auto;
+}
+
+section{
+    padding:75px 0;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:42px;
+}
+
+.section-heading h2{
+    color:var(--blue);
+    font-size:32px;
+    font-weight:900;
+}
+
+.section-heading p{
+    color:var(--muted);
+    margin-top:6px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:46px;
+    padding:11px 23px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:800;
+    border:2px solid transparent;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn-orange{
+    background:var(--orange);
+    color:#fff;
+    box-shadow:0 7px 20px rgba(255,121,0,.28);
+}
+
+.btn-green{
+    background:var(--green);
+    color:#fff;
+    box-shadow:0 7px 20px rgba(21,148,71,.25);
+}
+
+.btn-white{
+    background:#fff;
+    color:var(--blue);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.top-header{
+    background:
+        linear-gradient(
+            135deg,
+            #022b5c 0%,
+            #075aa8 50%,
+            #063b78 100%
+        );
+
+    color:#fff;
+    padding:15px 4%;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.brand-logo{
+    width:82px;
+    height:82px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:50%;
+    padding:4px;
+    box-shadow:0 5px 18px rgba(0,0,0,.18);
+}
+
+.brand-text h1{
+    font-size:30px;
+    line-height:1.2;
+    font-weight:900;
+}
+
+.brand-text p{
+    font-size:14px;
+    margin-top:3px;
+    color:#fff;
+}
+
+.header-buttons{
+    display:flex;
+    gap:12px;
+    flex-shrink:0;
+}
+
+.header-buttons .btn{
+    min-width:145px;
+    white-space:nowrap;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar{
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:9999;
+    box-shadow:0 4px 18px rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:min(1250px,92%);
+    margin:auto;
+    display:flex;
+    justify-content:center;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    align-items:center;
+}
+
+.nav-links a{
+    display:block;
+    padding:16px 21px;
+    color:var(--blue);
+    text-decoration:none;
+    font-weight:800;
+    position:relative;
+    transition:.25s;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:20px;
+    right:20px;
+    bottom:8px;
+    height:2px;
+    background:var(--orange);
+    transform:scaleX(0);
+    transition:.25s;
+}
+
+.nav-links a:hover{
+    color:var(--orange);
+}
+
+.nav-links a:hover::after{
+    transform:scaleX(1);
+}
+
+.nav-links a.active{
+    color:var(--orange);
+}
+
+.nav-links a.active::after{
+    transform:scaleX(1);
+}
+
+.menu-toggle{
+    display:none;
+    padding:12px 4%;
+    text-align:right;
+    color:var(--blue);
+    font-size:29px;
+    cursor:pointer;
+}
+
+
+/* =========================================================
+   PAGE HERO
+========================================================= */
+
+.page-hero{
+    background:
+        linear-gradient(
+            135deg,
+            #eaf5ff 0%,
+            #ffffff 55%,
+            #fff7ed 100%
+        );
+
+    padding:75px 0 70px;
+    position:relative;
+    overflow:hidden;
+}
+
+.page-hero::before{
+    content:"";
+    position:absolute;
+    width:330px;
+    height:330px;
+    border-radius:50%;
+    background:
+        radial-gradient(
+            circle,
+            rgba(10,103,184,.10),
+            transparent 70%
+        );
+    top:-130px;
+    right:-80px;
+}
+
+.page-hero::after{
+    content:"";
+    position:absolute;
+    width:260px;
+    height:260px;
+    border-radius:50%;
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,121,0,.08),
+            transparent 70%
+        );
+    bottom:-130px;
+    left:-70px;
+}
+
+.page-hero-inner{
+    width:min(1100px,92%);
+    margin:auto;
+    text-align:center;
+    position:relative;
+    z-index:2;
+}
+
+.page-hero h2{
+    color:var(--blue);
+    font-size:48px;
+    line-height:1.15;
+    font-weight:900;
+}
+
+.page-hero h2 span{
+    color:var(--orange);
+}
+
+.page-hero p{
+    max-width:850px;
+    margin:13px auto 0;
+    color:#536a7c;
+    font-size:17px;
+}
+
+
+/* =========================================================
+   OUR WORK
+========================================================= */
+
+.work-section{
+    background:#fff;
+}
+
+.work-intro{
+    max-width:1000px;
+    margin:0 auto 35px;
+    text-align:center;
+    color:#53697b;
+    font-size:17px;
+    padding:30px;
+}
+
+
+/* =========================================================
+   ACCORDION
+========================================================= */
+
+.work-accordion{
+    max-width:1100px;
+    margin:auto;
+}
+
+.work-item{
+    background:#fff;
+    border-radius:17px;
+    margin-bottom:15px;
+
+    box-shadow:
+        0 7px 24px rgba(0,45,90,.09);
+
+    overflow:hidden;
+
+    border:1px solid #e5edf5;
+}
+
+.work-item summary{
+    list-style:none;
+    cursor:pointer;
+
+    padding:20px 23px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:15px;
+
+    color:var(--blue);
+
+    font-size:18px;
+    font-weight:900;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f4f9ff
+        );
+
+    transition:.25s;
+}
+
+.work-item summary::-webkit-details-marker{
+    display:none;
+}
+
+.work-item summary:hover{
+    color:var(--orange);
+    background:#f8fbff;
+}
+
+.work-number{
+    display:inline-flex;
+
+    align-items:center;
+    justify-content:center;
+
+    min-width:39px;
+    height:39px;
+
+    border-radius:50%;
+
+    background:var(--blue);
+    color:#fff;
+
+    font-size:14px;
+    font-weight:900;
+
+    flex-shrink:0;
+}
+
+.work-title{
+    display:flex;
+    align-items:center;
+    gap:13px;
+
+    flex:1;
+}
+
+.arrow{
+    width:12px;
+    height:12px;
+
+    border-right:3px solid var(--blue);
+    border-bottom:3px solid var(--blue);
+
+    transform:rotate(45deg);
+
+    transition:.25s;
+
+    margin-right:5px;
+
+    flex-shrink:0;
+}
+
+.work-item[open] summary{
+    color:var(--orange);
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf6ff,
+            #fff8ee
+        );
+
+    border-bottom:1px solid #e5edf5;
+}
+
+.work-item[open] .arrow{
+    transform:rotate(225deg);
+    border-color:var(--orange);
+}
+
+.work-item[open] .work-number{
+    background:var(--orange);
+}
+
+.work-content{
+    padding:22px 25px 25px;
+
+    background:#fff;
+
+    animation:
+        accordionOpen .3s ease;
+}
+
+@keyframes accordionOpen{
+
+    from{
+        opacity:0;
+        transform:translateY(-5px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.work-content p{
+    color:var(--muted);
+    margin-bottom:13px;
+    font-size:15px;
+}
+
+.work-list{
+    list-style:none;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap:9px 25px;
+}
+
+.work-list li{
+    position:relative;
+    padding-left:22px;
+
+    color:#53697b;
+
+    font-size:14px;
+}
+
+.work-list li::before{
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    color:var(--green);
+
+    font-weight:900;
+}
+
+
+/* =========================================================
+   WAY OF WORKING
+========================================================= */
+
+.way-section{
+    background:
+        linear-gradient(
+            135deg,
+            #edf6ff,
+            #ffffff
+        );
+}
+
+.way-grid{
+    max-width:1100px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(5,1fr);
+
+    gap:18px;
+}
+
+.way-card{
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:25px 18px;
+
+    text-align:center;
+
+    box-shadow:
+        0 9px 26px rgba(0,45,90,.09);
+
+    border-top:5px solid var(--blue);
+
+    transition:.25s;
+}
+
+.way-card:hover{
+    transform:translateY(-6px);
+}
+
+.way-card:nth-child(2){
+    border-top-color:var(--orange);
+}
+
+.way-card:nth-child(3){
+    border-top-color:var(--green);
+}
+
+.way-card:nth-child(4){
+    border-top-color:#6b5bd2;
+}
+
+.way-card:nth-child(5){
+    border-top-color:#1594a8;
+}
+
+.way-icon{
+    width:60px;
+    height:60px;
+
+    margin:0 auto 14px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:#edf6ff;
+
+    font-size:27px;
+}
+
+.way-card h3{
+    color:var(--blue);
+
+    font-size:17px;
+
+    line-height:1.35;
+}
+
+.way-card p{
+    color:var(--muted);
+
+    font-size:13px;
+
+    margin-top:9px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta{
+    background:
+        linear-gradient(
+            135deg,
+            #063b78,
+            #075aa8
+        );
+
+    color:#fff;
+}
+
+.cta-inner{
+    width:min(1250px,92%);
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:space-between;
+
+    gap:30px;
+}
+
+.cta h2{
+    font-size:31px;
+}
+
+.cta p{
+    color:#dcecff;
+    margin-top:5px;
+}
+
+.cta-buttons{
+    display:flex;
+    gap:11px;
+    flex-wrap:nowrap;
+    align-items:center;
+}
+
+.cta-buttons .btn{
+    white-space:nowrap;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+    background:#062c59;
+    color:#fff;
+}
+
+.footer-main{
+    width:min(1250px,92%);
+    margin:auto;
+
+    padding:60px 0;
+
+    display:grid;
+
+    grid-template-columns:
+        1.35fr
+        1fr
+        1fr
+        1fr;
+
+    gap:40px;
+
+    align-items:start;
+}
+
+.footer-logo{
+    width:90px;
+    height:90px;
+
+    object-fit:contain;
+
+    background:#fff;
+    border-radius:50%;
+    padding:4px;
+
+    margin-bottom:15px;
+}
+
+.footer-brand-title{
+    font-size:21px;
+    font-weight:900;
+}
+
+.footer-brand-title span{
+    color:var(--orange);
+}
+
+.footer-tagline{
+    color:#d7e5f4;
+    margin-top:5px;
+}
+
+.footer-main h3{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.footer-main ul{
+    list-style:none;
+}
+
+.footer-main li{
+    margin:8px 0;
+}
+
+.footer-main a{
+    color:#d7e5f4;
+    text-decoration:none;
+    transition:.2s;
+}
+
+.footer-main a:hover{
+    color:#ff9a3c;
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+
+.social-icons{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:18px;
+}
+
+.social-icon{
+    width:42px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:transparent !important;
+    border:none !important;
+
+    border-radius:50%;
+
+    text-decoration:none;
+
+    transition:
+        transform .25s ease,
+        opacity .25s ease;
+}
+
+.social-icon:hover{
+    transform:
+        translateY(-4px)
+        scale(1.06);
+
+    opacity:.88;
+}
+
+.social-icon svg{
+    width:25px;
+    height:25px;
+    display:block;
+}
+
+.facebook-icon{
+    color:#1877F2 !important;
+}
+
+.instagram-icon{
+    color:#E4405F !important;
+}
+
+.youtube-icon{
+    color:#FF0000 !important;
+}
+
+.email-icon{
+    color:#ffffff !important;
+}
+
+
+/* =========================================================
+   LEGAL
+========================================================= */
+
+.footer-legal{
+    margin-top:28px;
+    padding-top:20px;
+    border-top:
+        1px solid rgba(255,255,255,.15);
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.footer-bottom{
+    border-top:
+        1px solid rgba(255,255,255,.15);
+
+    text-align:center;
+
+    padding:18px 5%;
+
+    color:#d7e5f4;
+
+    font-size:14px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:1100px){
+
+    .way-grid{
+        grid-template-columns:
+            repeat(3,1fr);
+    }
+
+    .footer-main{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media(max-width:850px){
+
+    .top-header{
+        flex-wrap:wrap;
+    }
+
+    .header-buttons{
+        margin-left:auto;
+    }
+
+    .way-grid{
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .cta-inner{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .cta-buttons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:700px){
+
+    section{
+        padding:55px 0;
+    }
+
+
+    /* HEADER */
+
+    .top-header{
+        padding:14px 4%;
+
+        flex-direction:column;
+
+        gap:14px;
+
+        text-align:center;
+    }
+
+    .brand{
+        justify-content:center;
+        width:100%;
+    }
+
+    .brand-logo{
+        width:68px;
+        height:68px;
+    }
+
+    .brand-text h1{
+        font-size:24px;
+    }
+
+    .brand-text p{
+        font-size:12px;
+    }
+
+    .header-buttons{
+        display:flex;
+        width:100%;
+        justify-content:center;
+        gap:8px;
+    }
+
+    .header-buttons .btn{
+        flex:1;
+        min-width:0;
+        padding:10px 8px;
+        font-size:13px;
+    }
+
+
+    /* NAVIGATION */
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-container{
+        width:100%;
+    }
+
+    .nav-links{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links a{
+        padding:14px 5%;
+        border-top:
+            1px solid #edf1f5;
+    }
+
+    .nav-links a::after{
+        display:none;
+    }
+
+
+    /* HERO */
+
+    .page-hero{
+        padding:55px 0;
+    }
+
+    .page-hero h2{
+        font-size:37px;
+    }
+
+    .page-hero p{
+        font-size:15px;
+    }
+
+
+    /* WORK */
+
+    .work-intro{
+        padding:24px 18px;
+        font-size:15px;
+    }
+
+    .work-item summary{
+        padding:17px 15px;
+        font-size:15px;
+    }
+
+    .work-number{
+        min-width:34px;
+        height:34px;
+        font-size:12px;
+    }
+
+    .work-title{
+        gap:9px;
+    }
+
+    .work-content{
+        padding:19px 17px 22px;
+    }
+
+    .work-list{
+        grid-template-columns:1fr;
+        gap:8px;
+    }
+
+    .work-list li{
+        font-size:13px;
+    }
+
+
+    /* WAY */
+
+    .way-grid{
+        grid-template-columns:1fr;
+        max-width:500px;
+    }
+
+
+    /* CTA */
+
+    .cta-buttons{
+        width:100%;
+        justify-content:center;
+    }
+
+
+    /* FOOTER */
+
+    .footer-main{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+    .footer-logo{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .footer-legal{
+        text-align:center;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ========================================================
+     HEADER
+========================================================= -->
+
+<header class="top-header">
+
+    <div class="brand">
+
+        <img
+            class="brand-logo"
+            src="sath_chale_ham_logo_HD-1.png"
+            alt="Sath Chale Hum Foundation Original Logo"
+        >
+
+        <div class="brand-text">
+
+            <h1>
+                साथ चले हम फाउंडेशन
+            </h1>
+
+            <p>
+                साथ चले हम, बदलाव की ओर
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="header-buttons">
+
+        <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScG-TEGF_xYakoTV7FBTVFpQiYr2KmP3vmuv2ilzCHVmV689Q/viewform?usp=header"
+            class="btn btn-orange"
+            target="_blank"
+            rel="noopener"
+        >
+            🧡 DONATE US
+        </a>
+
+        <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSefr5zPNIurZ1-ldth7YpYyiCc3yYWu8u9esuPPMTQ11fb3PA/viewform?usp=header"
+            class="btn btn-green"
+            target="_blank"
+            rel="noopener"
+        >
+            💚 JOIN US
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ========================================================
+     NAVIGATION
+========================================================= -->
+
+<nav class="navbar">
+
+    <div
+        class="menu-toggle"
+        onclick="toggleMenu()"
+        aria-label="Open Navigation"
+    >
+        ☰
+    </div>
+
+    <div class="nav-container">
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="team.html">
+                    Our Team
+                </a>
+            </li>
+
+            <li>
+                <a href="work.html" class="active">
+                    Our Work
+                </a>
+            </li>
+
+            <li>
+                <a href="donate.html">
+                    Donate Us
+                </a>
+            </li>
+
+            <li>
+                <a href="join.html">
+                    Join Us
+                </a>
+            </li>
+
+            <li>
+                <a href="download.html">
+                    Download
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+<!-- ========================================================
+     PAGE HERO
+========================================================= -->
+
+<section class="page-hero">
+
+    <div class="page-hero-inner">
+
+        <h2>
+            Our <span>Work</span> || हमारा काम
+        </h2>
+
+        <p>
+            We work together across different areas to support
+            people, communities and create positive social change.
+            <br>
+            हम समाज के विभिन्न क्षेत्रों में लोगों और समुदायों के
+            सहयोग एवं सकारात्मक बदलाव के लिए मिलकर कार्य करते हैं।
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================
+     OUR KEY AREAS
+========================================================= -->
+
+<section class="work-section" id="key-areas">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                Our Key Areas of Work
+            </h2>
+
+            <p>
+                हमारे प्रमुख कार्य क्षेत्र
+            </p>
+
+        </div>
+
+
+        <div class="card work-intro">
+
+            <p>
+                Sath Chale Hum Foundation समाज के विभिन्न वर्गों
+                के लिए शिक्षा, स्वास्थ्य, महिला सशक्तिकरण,
+                आजीविका, पर्यावरण, सामाजिक न्याय और सामुदायिक
+                विकास सहित विभिन्न क्षेत्रों में कार्य करने का
+                प्रयास करता है।
+            </p>
+
+            <br>
+
+            <p>
+                नीचे दिए गए 16 कार्य क्षेत्रों में से किसी एक पर
+                क्लिक करके उस क्षेत्र से संबंधित प्रमुख गतिविधियों
+                को देखा जा सकता है।
+            </p>
+
+        </div>
+
+
+        <div class="work-accordion">
+
+
+            <!-- 01 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">01</span>
+
+                        <span>
+                            शिक्षा एवं बाल विकास — Education & Child Development
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+
+                <div class="work-content">
+
+                    <p>
+                        बच्चों को शिक्षा से जोड़ने, उनकी प्रतिभा विकसित करने
+                        और शिक्षा के अवसरों को बढ़ावा देने के लिए कार्य।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>गरीब बच्चों की शिक्षा में सहायता — Educational assistance for underprivileged children</li>
+                        <li>स्कूल से बाहर बच्चों को शिक्षा से जोड़ना — Connecting out-of-school children with education</li>
+                        <li>निःशुल्क शिक्षा एवं कोचिंग — Free education and coaching</li>
+                        <li>किताब-कॉपी एवं शैक्षणिक सामग्री वितरण — Distribution of books, notebooks and educational materials</li>
+                        <li>छात्रवृत्ति एवं शैक्षणिक सहायता — Scholarships and educational assistance</li>
+                        <li>डिजिटल एवं कंप्यूटर शिक्षा — Digital and computer education</li>
+                        <li>पुस्तकालय एवं ज्ञान केंद्र — Libraries and knowledge centers</li>
+                        <li>बाल प्रतिभा विकास — Child talent development</li>
+                        <li>करियर एवं शिक्षा मार्गदर्शन — Career and educational guidance</li>
+                        <li>स्कूल ड्रॉपआउट रोकथाम — Prevention of school dropouts</li>
+                        <li>बाल श्रम से बच्चों को शिक्षा की ओर जोड़ना — Connecting children engaged in child labour with education</li>
+                        <li>वयस्क एवं निरक्षरता उन्मूलन — Adult education and eradication of illiteracy</li>
+                        <li>ग्रामीण एवं वंचित क्षेत्रों में शिक्षा — Education in rural and underserved areas</li>
+                        <li>व्यावसायिक एवं कौशल शिक्षा — Vocational and skill education</li>
+                        <li>बाल अधिकारों के प्रति जागरूकता — Awareness of child rights</li>
+                        <li>शिक्षा के प्रति जन-जागरूकता अभियान — Public awareness campaigns for education</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 02 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">02</span>
+
+                        <span>
+                            महिला सशक्तिकरण एवं विकास — Women Empowerment & Development
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        महिलाओं की शिक्षा, कौशल, सुरक्षा, अधिकार और आर्थिक आत्मनिर्भरता
+                        को बढ़ावा देने के लिए कार्य।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>महिला शिक्षा एवं साक्षरता — Women’s education and literacy</li>
+                        <li>महिला कौशल विकास — Women’s skill development</li>
+                        <li>रोजगार एवं स्वरोजगार प्रशिक्षण — Employment and self-employment training</li>
+                        <li>महिला उद्यमिता विकास — Women entrepreneurship development</li>
+                        <li>स्वयं सहायता समूहों को सहयोग — Support to Self-Help Groups</li>
+                        <li>सिलाई-कढ़ाई एवं हस्तकला प्रशिक्षण — Tailoring, embroidery and handicraft training</li>
+                        <li>डिजिटल एवं कंप्यूटर शिक्षा — Digital and computer education</li>
+                        <li>महिला अधिकारों की जानकारी — Awareness of women’s rights</li>
+                        <li>घरेलू हिंसा के विरुद्ध जागरूकता — Awareness against domestic violence</li>
+                        <li>दहेज प्रथा के विरुद्ध अभियान — Campaigns against the dowry system</li>
+                        <li>बाल विवाह रोकथाम — Prevention of child marriage</li>
+                        <li>महिलाओं की आर्थिक आत्मनिर्भरता — Economic self-reliance of women</li>
+                        <li>स्वास्थ्य एवं पोषण जागरूकता — Health and nutrition awareness</li>
+                        <li>नेतृत्व एवं व्यक्तित्व विकास — Leadership and personality development</li>
+                        <li>सरकारी योजनाओं की जानकारी — Awareness of government schemes</li>
+                        <li>महिला सुरक्षा एवं सम्मान के प्रति जागरूकता — Awareness for women’s safety and dignity</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 03 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">03</span>
+
+                        <span>
+                            स्वास्थ्य एवं चिकित्सा — Health & Medical Care
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        स्वास्थ्य जागरूकता, जांच शिविर और जरूरतमंद लोगों को
+                        स्वास्थ्य सेवाओं तक पहुंचने में सहयोग।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>निःशुल्क स्वास्थ्य जांच शिविर — Free health check-up camps</li>
+                        <li>ग्रामीण स्वास्थ्य जागरूकता — Rural health awareness</li>
+                        <li>नेत्र जांच एवं सहायता शिविर — Eye check-up and assistance camps</li>
+                        <li>दंत स्वास्थ्य जांच शिविर — Dental health check-up camps</li>
+                        <li>सामान्य स्वास्थ्य जागरूकता — General health awareness</li>
+                        <li>मातृ स्वास्थ्य जागरूकता — Maternal health awareness</li>
+                        <li>किशोर स्वास्थ्य जागरूकता — Adolescent health awareness</li>
+                        <li>पोषण एवं संतुलित आहार जागरूकता — Nutrition and balanced diet awareness</li>
+                        <li>स्वच्छता एवं व्यक्तिगत स्वास्थ्य शिक्षा — Hygiene and personal health education</li>
+                        <li>जरूरतमंद मरीजों को सहायता — Assistance to needy patients</li>
+                        <li>स्वास्थ्य सेवाओं तक पहुंच का मार्गदर्शन — Guidance for accessing healthcare services</li>
+                        <li>रक्तदान जागरूकता — Blood donation awareness</li>
+                        <li>रोगों की रोकथाम संबंधी जागरूकता — Awareness about disease prevention</li>
+                        <li>स्वास्थ्य विशेषज्ञों के साथ जागरूकता कार्यक्रम — Awareness programs with health professionals</li>
+                        <li>दूरदराज क्षेत्रों में स्वास्थ्य कार्यक्रम — Health programs in remote areas</li>
+                        <li>स्वस्थ जीवनशैली के प्रति जागरूकता — Awareness for a healthy lifestyle</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 04 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">04</span>
+
+                        <span>
+                            गरीब एवं जरूरतमंद कल्याण — Welfare of Poor & Needy
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        जरूरतमंद परिवारों और कमजोर वर्गों को आवश्यक सहायता
+                        तथा सरकारी योजनाओं से जोड़ने की दिशा में कार्य।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>गरीब परिवारों की सहायता — Assistance to poor families</li>
+                        <li>राशन एवं खाद्य सामग्री वितरण — Distribution of ration and food materials</li>
+                        <li>कपड़े वितरण — Distribution of clothing</li>
+                        <li>कंबल एवं मौसमी सामग्री वितरण — Distribution of blankets and seasonal essentials</li>
+                        <li>जूते-चप्पल एवं आवश्यक वस्तु सहायता — Assistance with footwear and essential items</li>
+                        <li>गरीब बच्चों की शिक्षा सहायता — Educational assistance for poor children</li>
+                        <li>जरूरतमंद परिवारों की पहचान — Identification of needy families</li>
+                        <li>सामुदायिक भोजन कार्यक्रम — Community meal programs</li>
+                        <li>बेघर लोगों की सहायता — Assistance to homeless people</li>
+                        <li>आर्थिक रूप से कमजोर लोगों को सहायता — Assistance to economically weaker people</li>
+                        <li>जरूरतमंदों को सरकारी योजनाओं से जोड़ना — Connecting needy people with government schemes</li>
+                        <li>दैनिक जीवन की आवश्यक वस्तुओं की सहायता — Assistance with daily essential items</li>
+                        <li>संकटग्रस्त परिवारों की सहायता — Assistance to families in distress</li>
+                        <li>गरीब बस्तियों में सेवा कार्यक्रम — Service programs in underprivileged communities</li>
+                        <li>सामुदायिक सहायता केंद्र — Community assistance centers</li>
+                        <li>जरूरतमंदों के लिए जन-सहयोग अभियान — Public support campaigns for needy people</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 05 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">05</span>
+
+                        <span>
+                            दिव्यांगजन कल्याण एवं सशक्तिकरण — Disability Welfare & Empowerment
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        दिव्यांगजनों की सहायता, शिक्षा, कौशल, अधिकार और
+                        सामाजिक समावेशन को बढ़ावा देने के लिए कार्य।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>दिव्यांगजनों की सहायता — Assistance to persons with disabilities</li>
+                        <li>सहायक उपकरण उपलब्ध कराने में सहयोग — Support in providing assistive devices</li>
+                        <li>व्हीलचेयर एवं आवश्यक उपकरण सहायता — Wheelchair and essential equipment assistance</li>
+                        <li>दिव्यांग बच्चों की शिक्षा — Education for children with disabilities</li>
+                        <li>कौशल विकास प्रशिक्षण — Skill development training</li>
+                        <li>रोजगार एवं स्वरोजगार मार्गदर्शन — Employment and self-employment guidance</li>
+                        <li>सरकारी योजनाओं की जानकारी — Awareness of government schemes</li>
+                        <li>दिव्यांग अधिकार जागरूकता — Disability rights awareness</li>
+                        <li>डिजिटल शिक्षा — Digital education</li>
+                        <li>सामाजिक समावेशन — Social inclusion</li>
+                        <li>प्रतिभा एवं खेल विकास — Talent and sports development</li>
+                        <li>परिवारों को मार्गदर्शन — Guidance for families</li>
+                        <li>स्वास्थ्य एवं पुनर्वास सेवाओं तक पहुंच में सहयोग — Support in accessing healthcare and rehabilitation services</li>
+                        <li>रोजगारदाताओं के साथ अवसरों के लिए समन्वय — Coordination with employers for opportunities</li>
+                        <li>दिव्यांगजनों के लिए जागरूकता अभियान — Awareness campaigns for persons with disabilities</li>
+                        <li>सम्मानजनक एवं आत्मनिर्भर जीवन के लिए सहयोग — Support for a dignified and self-reliant life</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 06 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">06</span>
+
+                        <span>
+                            वृद्धजन कल्याण — Senior Citizen Welfare
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        जरूरतमंद बुजुर्गों के सम्मान, सहायता, स्वास्थ्य और
+                        सामाजिक सुरक्षा के लिए सहयोग।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>जरूरतमंद बुजुर्गों की सहायता — Assistance to needy senior citizens</li>
+                        <li>भोजन सहायता — Food assistance</li>
+                        <li>कपड़े एवं कंबल सहायता — Clothing and blanket assistance</li>
+                        <li>स्वास्थ्य जांच शिविर — Health check-up camps</li>
+                        <li>स्वास्थ्य एवं दवा संबंधी मार्गदर्शन — Health and medication guidance</li>
+                        <li>अकेले रहने वाले बुजुर्गों की सामुदायिक सहायता — Community support for elderly people living alone</li>
+                        <li>सरकारी पेंशन एवं योजनाओं की जानकारी — Awareness of government pensions and schemes</li>
+                        <li>वरिष्ठ नागरिक अधिकार जागरूकता — Senior citizen rights awareness</li>
+                        <li>सामाजिक सुरक्षा जागरूकता — Social security awareness</li>
+                        <li>वृद्धाश्रमों में सहयोग — Support to old-age homes</li>
+                        <li>मानसिक एवं सामाजिक सहयोग — Emotional and social support</li>
+                        <li>आवश्यक वस्तुओं की सहायता — Assistance with essential items</li>
+                        <li>डिजिटल साक्षरता — Digital literacy</li>
+                        <li>परिवार एवं समुदाय में सम्मान के प्रति जागरूकता — Awareness for dignity and respect</li>
+                        <li>वरिष्ठ नागरिक मिलन एवं सामुदायिक कार्यक्रम — Senior citizen gatherings and community programs</li>
+                        <li>वृद्धजन सहायता एवं जन-जागरूकता अभियान — Senior citizen assistance and public awareness campaigns</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 07 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">07</span>
+
+                        <span>
+                            युवा विकास एवं कौशल विकास — Youth Development & Skill Development
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        युवाओं में कौशल, नेतृत्व, शिक्षा, रोजगार और
+                        सामाजिक भागीदारी को बढ़ावा देना।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>युवाओं के लिए कौशल प्रशिक्षण — Skill training for youth</li>
+                        <li>कंप्यूटर एवं डिजिटल शिक्षा — Computer and digital education</li>
+                        <li>करियर मार्गदर्शन — Career guidance</li>
+                        <li>रोजगार मार्गदर्शन — Employment guidance</li>
+                        <li>प्रतियोगी परीक्षा मार्गदर्शन — Competitive examination guidance</li>
+                        <li>व्यक्तित्व विकास — Personality development</li>
+                        <li>संचार कौशल विकास — Communication skill development</li>
+                        <li>नेतृत्व विकास — Leadership development</li>
+                        <li>उद्यमिता प्रशिक्षण — Entrepreneurship training</li>
+                        <li>स्वरोजगार मार्गदर्शन — Self-employment guidance</li>
+                        <li>व्यावसायिक प्रशिक्षण — Vocational training</li>
+                        <li>खेल एवं प्रतिभा विकास — Sports and talent development</li>
+                        <li>युवा स्वयंसेवक कार्यक्रम — Youth volunteer programs</li>
+                        <li>वित्तीय एवं डिजिटल साक्षरता — Financial and digital literacy</li>
+                        <li>सामाजिक नेतृत्व एवं जिम्मेदारी — Social leadership and responsibility</li>
+                        <li>युवा जागरूकता एवं विकास अभियान — Youth awareness and development campaigns</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 08 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">08</span>
+
+                        <span>
+                            रोजगार, स्वरोजगार एवं आजीविका — Employment, Self-Employment & Livelihood
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        रोजगार, कौशल, उद्यमिता और आत्मनिर्भर आजीविका के
+                        अवसरों के लिए मार्गदर्शन और प्रशिक्षण।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>रोजगार मार्गदर्शन — Employment guidance</li>
+                        <li>कौशल प्रशिक्षण — Skill training</li>
+                        <li>स्वरोजगार प्रशिक्षण — Self-employment training</li>
+                        <li>छोटे व्यवसाय के लिए मार्गदर्शन — Guidance for small businesses</li>
+                        <li>उद्यमिता विकास — Entrepreneurship development</li>
+                        <li>रोजगार मेले एवं अवसरों की जानकारी — Job fairs and employment opportunity awareness</li>
+                        <li>डिजिटल कौशल प्रशिक्षण — Digital skill training</li>
+                        <li>वित्तीय साक्षरता — Financial literacy</li>
+                        <li>बैंकिंग एवं डिजिटल भुगतान जागरूकता — Banking and digital payment awareness</li>
+                        <li>स्वयं सहायता समूहों को सहयोग — Support to Self-Help Groups</li>
+                        <li>घरेलू उद्योग को बढ़ावा — Promotion of home-based industries</li>
+                        <li>हस्तशिल्प एवं कुटीर उद्योग प्रशिक्षण — Handicraft and cottage industry training</li>
+                        <li>ग्रामीण आजीविका विकास — Rural livelihood development</li>
+                        <li>महिला स्वरोजगार कार्यक्रम — Women’s self-employment programs</li>
+                        <li>युवा उद्यमिता कार्यक्रम — Youth entrepreneurship programs</li>
+                        <li>रोजगार एवं आत्मनिर्भरता जागरूकता — Employment and self-reliance awareness</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 09 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">09</span>
+
+                        <span>
+                            ग्रामीण विकास एवं ग्राम उत्थान — Rural Development & Village Upliftment
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        ग्रामीण क्षेत्रों में शिक्षा, स्वास्थ्य, स्वच्छता,
+                        कौशल और सामुदायिक आत्मनिर्भरता को बढ़ावा देना।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>ग्रामीण शिक्षा विकास — Rural education development</li>
+                        <li>ग्रामीण स्वास्थ्य कार्यक्रम — Rural health programs</li>
+                        <li>स्वच्छता अभियान — Sanitation campaigns</li>
+                        <li>पेयजल जागरूकता — Drinking water awareness</li>
+                        <li>महिला सशक्तिकरण — Women empowerment</li>
+                        <li>युवा विकास — Youth development</li>
+                        <li>कौशल प्रशिक्षण — Skill training</li>
+                        <li>रोजगार एवं आजीविका विकास — Employment and livelihood development</li>
+                        <li>डिजिटल साक्षरता — Digital literacy</li>
+                        <li>किसान जागरूकता — Farmer awareness</li>
+                        <li>पर्यावरण संरक्षण — Environmental protection</li>
+                        <li>जल संरक्षण — Water conservation</li>
+                        <li>सरकारी योजनाओं की जानकारी — Awareness of government schemes</li>
+                        <li>सामुदायिक विकास कार्यक्रम — Community development programs</li>
+                        <li>ग्राम स्तर पर जन-जागरूकता — Village-level public awareness</li>
+                        <li>ग्रामीण आत्मनिर्भरता को बढ़ावा — Promotion of rural self-reliance</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 10 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">10</span>
+
+                        <span>
+                            कृषि एवं किसान कल्याण — Agriculture & Farmer Welfare
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        किसानों को आधुनिक कृषि, प्राकृतिक संसाधन संरक्षण,
+                        कौशल और कृषि आधारित आजीविका से जुड़ी जानकारी।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>किसानों को कृषि संबंधी जानकारी — Agricultural information for farmers</li>
+                        <li>आधुनिक कृषि तकनीक की जानकारी — Awareness of modern agricultural techniques</li>
+                        <li>प्राकृतिक खेती जागरूकता — Natural farming awareness</li>
+                        <li>जैविक खेती जागरूकता — Organic farming awareness</li>
+                        <li>बीज एवं कृषि सामग्री संबंधी जानकारी — Information on seeds and agricultural inputs</li>
+                        <li>मृदा स्वास्थ्य जागरूकता — Soil health awareness</li>
+                        <li>जल संरक्षण आधारित कृषि — Water-conservation-based agriculture</li>
+                        <li>बागवानी एवं फल-सब्जी उत्पादन — Horticulture and fruit and vegetable production</li>
+                        <li>पशुपालन संबंधी प्रशिक्षण — Livestock management training</li>
+                        <li>किसान कौशल विकास — Farmer skill development</li>
+                        <li>किसान समूहों को सहयोग — Support to farmer groups</li>
+                        <li>कृषि आधारित स्वरोजगार — Agriculture-based self-employment</li>
+                        <li>कृषि बाजार संबंधी जागरूकता — Agricultural market awareness</li>
+                        <li>सरकारी कृषि योजनाओं की जानकारी — Awareness of government agricultural schemes</li>
+                        <li>कृषि नवाचार एवं तकनीकी जागरूकता — Agricultural innovation and technology awareness</li>
+                        <li>किसान आत्मनिर्भरता एवं आय-विविधीकरण जागरूकता — Farmer self-reliance and income diversification awareness</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 11 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">11</span>
+
+                        <span>
+                            पर्यावरण एवं जल संरक्षण — Environment & Water Conservation
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        पर्यावरण संरक्षण, जल संरक्षण, स्वच्छता और
+                        प्रकृति के प्रति जनभागीदारी को बढ़ावा देना।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>वृक्षारोपण अभियान — Tree plantation campaigns</li>
+                        <li>पौध वितरण — Distribution of saplings</li>
+                        <li>वन संरक्षण जागरूकता — Forest conservation awareness</li>
+                        <li>जल संरक्षण अभियान — Water conservation campaigns</li>
+                        <li>वर्षा जल संचयन जागरूकता — Rainwater harvesting awareness</li>
+                        <li>तालाब एवं जल स्रोत संरक्षण — Protection of ponds and water sources</li>
+                        <li>प्लास्टिक प्रदूषण के विरुद्ध अभियान — Campaigns against plastic pollution</li>
+                        <li>कचरा प्रबंधन जागरूकता — Waste management awareness</li>
+                        <li>जैव विविधता संरक्षण — Biodiversity conservation</li>
+                        <li>जलवायु परिवर्तन जागरूकता — Climate change awareness</li>
+                        <li>ऊर्जा बचत जागरूकता — Energy conservation awareness</li>
+                        <li>पर्यावरण शिक्षा — Environmental education</li>
+                        <li>स्कूल पर्यावरण कार्यक्रम — School environmental programs</li>
+                        <li>हरित एवं स्वच्छ गांव अभियान — Green and clean village campaigns</li>
+                        <li>जल प्रदूषण रोकथाम जागरूकता — Water pollution prevention awareness</li>
+                        <li>पर्यावरण संरक्षण में जनभागीदारी — Public participation in environmental protection</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 12 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">12</span>
+
+                        <span>
+                            स्वच्छता, पेयजल एवं पोषण — Sanitation, Drinking Water & Nutrition
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        स्वच्छता, सुरक्षित पेयजल, व्यक्तिगत स्वास्थ्य और
+                        पोषण के प्रति जागरूकता बढ़ाने के लिए कार्य।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>स्वच्छता जागरूकता अभियान — Sanitation awareness campaigns</li>
+                        <li>स्वच्छ गांव अभियान — Clean village campaigns</li>
+                        <li>व्यक्तिगत स्वच्छता शिक्षा — Personal hygiene education</li>
+                        <li>हाथ धोने की जागरूकता — Handwashing awareness</li>
+                        <li>शौचालय उपयोग जागरूकता — Toilet-use awareness</li>
+                        <li>स्वच्छ पेयजल जागरूकता — Safe drinking water awareness</li>
+                        <li>जल स्रोतों की स्वच्छता — Cleanliness of water sources</li>
+                        <li>कचरा पृथक्करण जागरूकता — Waste segregation awareness</li>
+                        <li>प्लास्टिक कम करने का अभियान — Campaigns to reduce plastic use</li>
+                        <li>बच्चों में स्वच्छता शिक्षा — Hygiene education for children</li>
+                        <li>पोषण जागरूकता — Nutrition awareness</li>
+                        <li>कुपोषण के प्रति जागरूकता — Awareness about malnutrition</li>
+                        <li>संतुलित आहार संबंधी शिक्षा — Education on balanced diets</li>
+                        <li>बच्चों के पोषण कार्यक्रम — Nutrition programs for children</li>
+                        <li>महिलाओं एवं माताओं में पोषण जागरूकता — Nutrition awareness among women and mothers</li>
+                        <li>स्वच्छता एवं पोषण जन-जागरूकता अभियान — Public awareness campaigns on sanitation and nutrition</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 13 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">13</span>
+
+                        <span>
+                            पशु कल्याण एवं संरक्षण — Animal Welfare & Protection
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        पशु-पक्षियों की सुरक्षा, कल्याण और जिम्मेदार
+                        पशुपालन के प्रति जागरूकता को बढ़ावा देना।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>बेसहारा पशुओं की सहायता — Assistance to stray and abandoned animals</li>
+                        <li>पशु स्वास्थ्य जागरूकता — Animal health awareness</li>
+                        <li>पशु चिकित्सा शिविरों में सहयोग — Support for veterinary camps</li>
+                        <li>पशु संरक्षण अभियान — Animal protection campaigns</li>
+                        <li>पशु क्रूरता के विरुद्ध जागरूकता — Awareness against animal cruelty</li>
+                        <li>पशुपालकों को जागरूक करना — Awareness among livestock owners</li>
+                        <li>पशुओं के लिए भोजन एवं पानी की व्यवस्था में सहयोग — Support for providing food and water to animals</li>
+                        <li>पक्षी संरक्षण — Bird conservation</li>
+                        <li>घायल पशुओं को सहायता सेवाओं तक पहुंचाने में सहयोग — Support in connecting injured animals with appropriate care services</li>
+                        <li>पशु-पक्षी संरक्षण शिक्षा — Animal and bird conservation education</li>
+                        <li>ग्रामीण पशुपालन जागरूकता — Rural livestock awareness</li>
+                        <li>पशु टीकाकरण संबंधी जागरूकता — Awareness about animal vaccination</li>
+                        <li>जिम्मेदार पशुपालन के प्रति जागरूकता — Awareness of responsible animal care</li>
+                        <li>जैव विविधता संरक्षण — Biodiversity conservation</li>
+                        <li>पशु कल्याण स्वयंसेवक कार्यक्रम — Animal welfare volunteer programs</li>
+                        <li>पशु-पक्षी संरक्षण जन-जागरूकता अभियान — Public awareness campaigns for animal and bird protection</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 14 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">14</span>
+
+                        <span>
+                            आपदा राहत एवं पुनर्वास — Disaster Relief & Rehabilitation
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        प्राकृतिक या अन्य आपदाओं के दौरान राहत, आवश्यक
+                        सामग्री और पुनर्वास सहयोग की दिशा में कार्य।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>बाढ़ राहत कार्य — Flood relief work</li>
+                        <li>सूखा प्रभावित क्षेत्रों में सहायता — Assistance in drought-affected areas</li>
+                        <li>चक्रवात एवं तूफान राहत — Cyclone and storm relief</li>
+                        <li>भूकंप जैसी आपदाओं में सहायता — Assistance during disasters such as earthquakes</li>
+                        <li>राहत सामग्री वितरण — Distribution of relief materials</li>
+                        <li>खाद्य सामग्री वितरण — Distribution of food supplies</li>
+                        <li>कपड़े एवं कंबल वितरण — Distribution of clothing and blankets</li>
+                        <li>आवश्यक वस्तुओं की सहायता — Assistance with essential items</li>
+                        <li>राहत शिविरों में सहयोग — Support at relief camps</li>
+                        <li>प्रभावित परिवारों की सहायता — Assistance to affected families</li>
+                        <li>बच्चों एवं बुजुर्गों की विशेष सहायता — Special assistance to children and senior citizens</li>
+                        <li>स्वास्थ्य एवं स्वच्छता सहायता — Health and sanitation assistance</li>
+                        <li>आपदा पूर्व जागरूकता — Pre-disaster awareness</li>
+                        <li>आपदा प्रबंधन प्रशिक्षण — Disaster management training</li>
+                        <li>पुनर्वास एवं पुनर्स्थापन में सहयोग — Support for rehabilitation and resettlement</li>
+                        <li>आपदा प्रभावित क्षेत्रों में जन-सहयोग अभियान — Public support campaigns in disaster-affected areas</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 15 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">15</span>
+
+                        <span>
+                            सामाजिक न्याय, मानव अधिकार एवं कानूनी जागरूकता — Social Justice, Human Rights & Legal Awareness
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        समानता, मानवाधिकार, सामाजिक न्याय और उपलब्ध
+                        कानूनी सहायता के प्रति सामान्य जागरूकता को बढ़ावा देना।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>मानव अधिकार जागरूकता — Human rights awareness</li>
+                        <li>समानता एवं सामाजिक न्याय — Equality and social justice</li>
+                        <li>भेदभाव के विरुद्ध अभियान — Campaigns against discrimination</li>
+                        <li>कमजोर वर्गों के अधिकारों की जानकारी — Awareness of the rights of vulnerable groups</li>
+                        <li>महिला अधिकार जागरूकता — Women’s rights awareness</li>
+                        <li>बाल अधिकार जागरूकता — Child rights awareness</li>
+                        <li>दिव्यांग अधिकार जागरूकता — Disability rights awareness</li>
+                        <li>वरिष्ठ नागरिक अधिकार जागरूकता — Senior citizen rights awareness</li>
+                        <li>श्रमिक अधिकार जागरूकता — Workers’ rights awareness</li>
+                        <li>नागरिक अधिकारों की जानकारी — Awareness of citizens’ rights</li>
+                        <li>सरकारी योजनाओं की जानकारी — Awareness of government schemes</li>
+                        <li>कानूनी अधिकारों की सामान्य जानकारी — General awareness of legal rights</li>
+                        <li>उपलब्ध विधिक सहायता सेवाओं तक मार्गदर्शन — Guidance on accessing available legal aid services</li>
+                        <li>सामाजिक कुरीतियों के विरुद्ध अभियान — Campaigns against social evils</li>
+                        <li>बाल विवाह एवं दहेज के विरुद्ध जागरूकता — Awareness against child marriage and dowry</li>
+                        <li>सामाजिक समानता एवं सद्भाव को बढ़ावा देना — Promotion of social equality and harmony</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+            <!-- 16 -->
+
+            <details class="work-item">
+
+                <summary>
+
+                    <div class="work-title">
+
+                        <span class="work-number">16</span>
+
+                        <span>
+                            डिजिटल शिक्षा, जन-जागरूकता एवं सामाजिक विकास — Digital Education, Public Awareness & Social Development
+                        </span>
+
+                    </div>
+
+                    <span class="arrow"></span>
+
+                </summary>
+
+                <div class="work-content">
+
+                    <p>
+                        डिजिटल साक्षरता, सुरक्षित इंटरनेट उपयोग, नागरिक
+                        जिम्मेदारी और सामाजिक जागरूकता को बढ़ावा देना।
+                    </p>
+
+                    <ul class="work-list">
+
+                        <li>कंप्यूटर शिक्षा — Computer education</li>
+                        <li>डिजिटल साक्षरता — Digital literacy</li>
+                        <li>इंटरनेट के सुरक्षित उपयोग की जागरूकता — Awareness of safe internet use</li>
+                        <li>साइबर सुरक्षा जागरूकता — Cybersecurity awareness</li>
+                        <li>ऑनलाइन सरकारी सेवाओं की जानकारी — Awareness of online government services</li>
+                        <li>डिजिटल भुगतान की जानकारी — Digital payment awareness</li>
+                        <li>ऑनलाइन आवेदन एवं सेवाओं की जानकारी — Awareness of online applications and services</li>
+                        <li>डिजिटल दस्तावेज संबंधी जागरूकता — Awareness of digital documents</li>
+                        <li>सोशल मीडिया का जिम्मेदार उपयोग — Responsible use of social media</li>
+                        <li>स्वास्थ्य जागरूकता अभियान — Health awareness campaigns</li>
+                        <li>शिक्षा जागरूकता अभियान — Education awareness campaigns</li>
+                        <li>पर्यावरण जागरूकता अभियान — Environmental awareness campaigns</li>
+                        <li>सामाजिक कुरीतियों के विरुद्ध अभियान — Campaigns against social evils</li>
+                        <li>नागरिक जिम्मेदारी एवं कर्तव्य जागरूकता — Awareness of civic responsibilities and duties</li>
+                        <li>स्वयंसेवा एवं सामाजिक भागीदारी — Volunteering and social participation</li>
+                        <li>सामाजिक एकता, सद्भाव एवं सामुदायिक विकास — Social unity, harmony and community development</li>
+
+                    </ul>
+
+                </div>
+
+            </details>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================
+     OUR WAY OF WORKING
+========================================================= -->
+
+<section class="way-section" id="way-of-working">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                हमारा काम करने का तरीका | Our Way of Working
+            </h2>
+
+            <p>
+                सेवा, सहयोग और पारदर्शिता के साथ
+            </p>
+
+        </div>
+
+
+        <div class="way-grid">
+
+
+            <div class="way-card">
+
+                <div class="way-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Direct Help
+                </h3>
+
+                <p>
+                    जरूरतमंद लोगों तक सीधे सहायता और
+                    सहयोग पहुंचाने का प्रयास।
+                </p>
+
+            </div>
+
+
+            <div class="way-card">
+
+                <div class="way-icon">
+                    👥
+                </div>
+
+                <h3>
+                    Working Together
+                </h3>
+
+                <p>
+                    टीम, स्वयंसेवकों और समुदाय के साथ
+                    मिलकर कार्य करना।
+                </p>
+
+            </div>
+
+
+            <div class="way-card">
+
+                <div class="way-icon">
+                    🔎
+                </div>
+
+                <h3>
+                    Honesty & Transparency
+                </h3>
+
+                <p>
+                    कार्यों में ईमानदारी, जवाबदेही और
+                    पारदर्शिता को महत्व देना।
+                </p>
+
+            </div>
+
+
+            <div class="way-card">
+
+                <div class="way-icon">
+                    🏘️
+                </div>
+
+                <h3>
+                    Community Participation
+                </h3>
+
+                <p>
+                    स्थानीय समुदाय को योजनाओं और
+                    गतिविधियों में सहभागी बनाना।
+                </p>
+
+            </div>
+
+
+            <div class="way-card">
+
+                <div class="way-icon">
+                    ⚖️
+                </div>
+
+                <h3>
+                    Equality & Respect
+                </h3>
+
+                <p>
+                    सभी लोगों के साथ समानता, सम्मान और
+                    गरिमा के साथ व्यवहार करना।
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================
+     CTA
+========================================================= -->
+
+<section class="cta">
+
+    <div class="cta-inner">
+
+        <div>
+
+            <h2>
+                साथ चले हम से जुड़ें
+            </h2>
+
+            <p>
+                Join Sath Chale Hum and be a part of
+                positive social change.
+            </p>
+
+        </div>
+
+
+        <div class="cta-buttons">
+
+            <a
+                href="join.html"
+                class="btn btn-green"
+            >
+                🟢 Join Us
+            </a>
+
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScG-TEGF_xYakoTV7FBTVFpQiYr2KmP3vmuv2ilzCHVmV689Q/viewform?usp=header"
+                class="btn btn-orange"
+                target="_blank"
+                rel="noopener"
+            >
+                🟠 Donate Us
+            </a>
+
+            <a
+                href="download.html"
+                class="btn btn-white"
+            >
+                ⚪ Download
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-main">
+
+
+        <!-- ORGANIZATION -->
+
+        <div>
+
+            <img
+                class="footer-logo"
+                src="sath_chale_ham_logo_HD-1.png"
+                alt="Original Sath Chale Hum Foundation Logo"
+            >
+
+            <div class="footer-brand-title">
+
+                Sath Chale Hum —
+                <span>Foundation</span>
+
+            </div>
+
+            <p class="footer-tagline">
+                साथ चले हम, बदलाव की ओर
+            </p>
+
+
+            <!-- SOCIAL ICONS -->
+
+            <div class="social-icons">
+
+
+                <!-- FACEBOOK -->
+
+                <a
+                    class="social-icon facebook-icon"
+                    href="https://www.facebook.com/share/1DekhrWVDh/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M14 8h3V4h-3c-3.3 0-5 1.9-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1z"
+                        />
+
+                    </svg>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    class="social-icon instagram-icon"
+                    href="https://www.instagram.com/sathchaleham?igsi=MWFzanhuYjFpcGhrZg=="
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Instagram"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                        />
+
+                    </svg>
+
+                </a>
+
+
+                <!-- YOUTUBE -->
+
+                <a
+                    class="social-icon youtube-icon"
+                    href="https://youtube.com/@sathchaleham?si=kc1xt7w_4tuItYub"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="YouTube"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M23 12s0-3.4-.4-5a2.7 2.7 0 0 0-1.9-1.9C18.9 4.7 12 4.7 12 4.7s-6.9 0-8.7.4A2.7 2.7 0 0 0 1.4 7C1 8.6 1 12 1 12s0 3.4.4 5a2.7 2.7 0 0 0 1.9 1.9c1.8.4 8.7.4 8.7.4s6.9 0 8.7-.4a2.7 2.7 0 0 0 1.9-1.9c.4-1.6.4-5 .4-5zM10 15.5v-7l6 3.5-6 3.5z"
+                        />
+
+                    </svg>
+
+                </a>
+
+
+                <!-- EMAIL -->
+
+                <a
+                    class="social-icon email-icon"
+                    href="mailto:sathchaleham@gmail.com"
+                    aria-label="Email"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.5l9 5.6 9-5.6V7H3zm18 10V9.9l-8.5 5.3a1 1 0 0 1-1 0L3 9.9V17h18z"
+                        />
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div>
+
+            <h3>
+                Contact Us
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="mailto:sathchaleham@gmail.com">
+                        📧 sathchaleham@gmail.com
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tel:+917011893028">
+                        ☎️ +91 7011893028
+                    </a>
+                </li>
+
+                <li>
+                    📍 Saharsa, Bihar, India
+                </li>
+
+            </ul>
+
+
+            <div class="footer-legal">
+
+                <h3>
+                    Legal
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="privacy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms.html">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="team.html">
+                        Our Team
+                    </a>
+                </li>
+
+                <li>
+                    <a href="work.html">
+                        Our Work
+                    </a>
+                </li>
+
+                <li>
+                    <a href="join.html">
+                        Join Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="donate.html">
+                        Donate Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="download.html">
+                        Download
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- OUR WORK -->
+
+        <div>
+
+            <h3>
+                Our Work
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="#key-areas">
+                        Key Areas of Work
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#way-of-working">
+                        Our Way of Working
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#key-areas">
+                        Education & Child Development
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#key-areas">
+                        Women Empowerment
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#key-areas">
+                        Health & Medical Care
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#key-areas">
+                        Rural & Community Development
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        © 2026 Sath Chale Hum Foundation. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+function toggleMenu(){
+
+    const nav =
+        document.getElementById("navLinks");
+
+    nav.classList.toggle("active");
+
+}
+
+
+/* =========================================================
+   CLOSE MOBILE MENU
+========================================================= */
+
+document
+    .querySelectorAll(".nav-links a")
+    .forEach(function(link){
+
+        link.addEventListener(
+            "click",
+            function(){
+
+                document
+                    .getElementById("navLinks")
+                    .classList
+                    .remove("active");
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   ONLY ONE WORK DROPDOWN OPEN AT A TIME
+========================================================= */
+
+const workItems =
+    document.querySelectorAll(".work-item");
+
+workItems.forEach(function(item){
+
+    item.addEventListener(
+        "toggle",
+        function(){
+
+            if(item.open){
+
+                workItems.forEach(function(otherItem){
+
+                    if(otherItem !== item){
+
+                        otherItem.open = false;
+
+                    }
+
+                });
+
+            }
+
+        }
+    );
+
+});
+
+</script>
+
+
+</body>
+</html>
