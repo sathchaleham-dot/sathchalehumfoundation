@@ -1141,12 +1141,14 @@ footer{
     display:grid;
 
     grid-template-columns:
-        1.3fr
+        1.35fr
         1fr
         1fr
         1fr;
 
     gap:40px;
+
+    align-items:start;
 }
 
 
@@ -1211,13 +1213,17 @@ footer{
 
 
 /* =========================================================
-   ORIGINAL COLOUR SOCIAL ICONS
+   SOCIAL ICONS
+   ORIGINAL COLOURS
+   NO WHITE BACKGROUND
 ========================================================= */
 
 .social-icons{
     display:flex;
 
-    gap:10px;
+    align-items:center;
+
+    gap:12px;
 
     margin-top:18px;
 }
@@ -1226,60 +1232,84 @@ footer{
     width:42px;
     height:42px;
 
-    border-radius:50%;
-
     display:flex;
 
     align-items:center;
-
     justify-content:center;
+
+    background:transparent !important;
+
+    border:none !important;
+
+    border-radius:50%;
 
     text-decoration:none;
 
-    transition:.25s;
-
-    background:#fff;
+    transition:
+        transform .25s ease,
+        opacity .25s ease;
 }
 
 .social-icon:hover{
-    transform:translateY(-4px);
+    transform:translateY(-4px) scale(1.06);
+
+    opacity:.88;
 }
 
 .social-icon svg{
-    width:22px;
-    height:22px;
+    width:25px;
+    height:25px;
+
+    display:block;
 }
 
 
 /* FACEBOOK */
 
 .facebook-icon{
-    color:#1877F2;
+    color:#1877F2 !important;
 }
 
 
 /* INSTAGRAM */
 
 .instagram-icon{
-    color:#E4405F;
+    color:#E4405F !important;
 }
 
 
 /* YOUTUBE */
 
 .youtube-icon{
-    color:#FF0000;
+    color:#FF0000 !important;
 }
 
 
 /* EMAIL */
 
 .email-icon{
-    color:#063b78;
+    color:#ffffff !important;
 }
 
 
-/* FOOTER BOTTOM */
+/* =========================================================
+   LEGAL
+   LEGAL WILL BE UNDER CONTACT US
+========================================================= */
+
+.footer-legal{
+    margin-top:28px;
+
+    padding-top:20px;
+
+    border-top:
+        1px solid rgba(255,255,255,.15);
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
 
 .footer-bottom{
     border-top:
@@ -1609,6 +1639,10 @@ footer{
     .footer-logo{
         margin-left:auto;
         margin-right:auto;
+    }
+
+    .footer-legal{
+        text-align:center;
     }
 
 }
@@ -2930,7 +2964,9 @@ footer{
     <div class="footer-main">
 
 
-        <!-- ORGANIZATION -->
+        <!-- =================================================
+             ORGANIZATION
+        ================================================== -->
 
         <div>
 
@@ -2954,7 +2990,10 @@ footer{
             </p>
 
 
-            <!-- ORIGINAL COLOUR SOCIAL ICONS -->
+            <!-- =================================================
+                 SOCIAL MEDIA ICONS
+                 NO WHITE BACKGROUND
+            ================================================== -->
 
             <div class="social-icons">
 
@@ -3050,7 +3089,74 @@ footer{
         </div>
 
 
-        <!-- QUICK LINKS -->
+
+        <!-- =================================================
+             CONTACT US
+             LEGAL IS UNDER THIS SECTION
+        ================================================== -->
+
+        <div>
+
+            <h3>
+                Contact Us
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="mailto:sathchaleham@gmail.com">
+                        📧 sathchaleham@gmail.com
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tel:+917011893028">
+                        ☎️ +91 7011893028
+                    </a>
+                </li>
+
+                <li>
+                    📍 Saharsa, Bihar, India
+                </li>
+
+            </ul>
+
+
+            <!-- =================================================
+                 LEGAL — CONTACT US KE NICHE
+            ================================================== -->
+
+            <div class="footer-legal">
+
+                <h3>
+                    Legal
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="privacy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms.html">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             QUICK LINKS — RIGHT SIDE
+        ================================================== -->
 
         <div>
 
@@ -3113,60 +3219,11 @@ footer{
         </div>
 
 
-        <!-- CONTACT -->
+        <!-- =================================================
+             FOURTH COLUMN
+        ================================================== -->
 
         <div>
-
-            <h3>
-                Contact Us
-            </h3>
-
-            <ul>
-
-                <li>
-                    <a href="mailto:sathchaleham@gmail.com">
-                        📧 sathchaleham@gmail.com
-                    </a>
-                </li>
-
-                <li>
-                    <a href="tel:+917011893028">
-                        ☎️ +91 7011893028
-                    </a>
-                </li>
-
-                <li>
-                    📍 Saharsa, Bihar, India
-                </li>
-
-            </ul>
-
-        </div>
-
-
-        <!-- LEGAL - QUICK LINKS KE RIGHT SIDE -->
-
-        <div>
-
-            <h3>
-                Legal
-            </h3>
-
-            <ul>
-
-                <li>
-                    <a href="privacy.html">
-                        Privacy Policy
-                    </a>
-                </li>
-
-                <li>
-                    <a href="terms.html">
-                        Terms & Conditions
-                    </a>
-                </li>
-
-            </ul>
 
         </div>
 
@@ -3174,7 +3231,9 @@ footer{
     </div>
 
 
-    <!-- FOOTER BOTTOM -->
+    <!-- =================================================
+         FOOTER BOTTOM
+    ================================================== -->
 
     <div class="footer-bottom">
 
