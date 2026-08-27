@@ -1,1 +1,1576 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Donate Us | Sath Chale Hum Foundation</title>
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,"Noto Sans Devanagari",sans-serif;
+  background:#f5f8fc;
+  color:#13254a;
+}
+
+/* ================================
+   MAIN CONTAINER
+================================ */
+
+.scf-page{
+  width:100%;
+  max-width:1200px;
+  margin:auto;
+  background:#fff;
+  overflow:hidden;
+  box-shadow:0 8px 35px rgba(10,40,90,.12);
+}
+
+/* ================================
+   HEADER
+================================ */
+
+.scf-header{
+  background:linear-gradient(135deg,#082c65,#12458f);
+  padding:18px 30px 20px;
+  color:#fff;
+}
+
+.scf-header-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:25px;
+}
+
+/* LOGO */
+
+.scf-logo-area{
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+.scf-logo{
+  width:75px;
+  height:75px;
+  object-fit:contain;
+  background:#fff;
+  border-radius:50%;
+  padding:5px;
+  box-shadow:0 4px 15px rgba(0,0,0,.20);
+}
+
+.scf-brand-name{
+  line-height:1.15;
+}
+
+.scf-brand-name h1{
+  font-size:30px;
+  font-weight:900;
+}
+
+.scf-brand-name h1 span{
+  color:#ff9d1c;
+}
+
+.scf-brand-name p{
+  margin-top:7px;
+  font-size:15px;
+  font-weight:700;
+}
+
+/* HEADER BUTTONS */
+
+.scf-header-buttons{
+  display:flex;
+  gap:10px;
+}
+
+.scf-header-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:135px;
+  padding:12px 20px;
+  border-radius:50px;
+  text-decoration:none;
+  color:#fff;
+  font-weight:900;
+  font-size:14px;
+  box-shadow:0 5px 16px rgba(0,0,0,.22);
+  transition:.25s;
+}
+
+.scf-header-btn:hover{
+  transform:translateY(-3px) scale(1.03);
+}
+
+.scf-donate{
+  background:linear-gradient(135deg,#ff9d18,#e65c05);
+}
+
+.scf-join{
+  background:linear-gradient(135deg,#16ad58,#087a3c);
+}
+
+/* ================================
+   NAVIGATION
+================================ */
+
+.scf-nav{
+  background:#fff;
+  border-bottom:1px solid #e2e8f0;
+  padding:12px 25px;
+}
+
+.scf-nav ul{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  list-style:none;
+  flex-wrap:wrap;
+}
+
+.scf-nav a{
+  display:block;
+  padding:10px 17px;
+  border-radius:30px;
+  color:#123f88;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:800;
+  transition:.2s;
+}
+
+.scf-nav a:hover,
+.scf-nav a.active{
+  background:#123f88;
+  color:#fff;
+}
+
+/* ================================
+   PAGE HERO
+================================ */
+
+.scf-hero{
+  padding:55px 25px 45px;
+  text-align:center;
+  background:
+    radial-gradient(circle at top left,#fff3dc,transparent 35%),
+    linear-gradient(180deg,#fff,#fff8ef);
+}
+
+.scf-hero-badge{
+  display:inline-block;
+  padding:10px 23px;
+  border-radius:40px;
+  background:linear-gradient(135deg,#ff9c18,#e85d05);
+  color:#fff;
+  font-size:14px;
+  font-weight:900;
+  letter-spacing:.5px;
+  box-shadow:0 7px 20px rgba(230,93,5,.22);
+}
+
+.scf-hero h2{
+  margin:20px 0 10px;
+  font-size:52px;
+  line-height:1.1;
+  font-weight:900;
+}
+
+.scf-blue{
+  color:#082f6b;
+}
+
+.scf-orange{
+  color:#e85d05;
+}
+
+.scf-hero-line{
+  width:85px;
+  height:4px;
+  margin:18px auto;
+  border-radius:10px;
+  background:#ff8a00;
+}
+
+.scf-hero p{
+  max-width:850px;
+  margin:auto;
+  color:#596579;
+  font-size:18px;
+  line-height:1.7;
+}
+
+/* ================================
+   IMPACT CARDS
+================================ */
+
+.scf-section{
+  padding:20px 30px 35px;
+}
+
+.scf-title{
+  margin-bottom:22px;
+  text-align:center;
+  color:#123f88;
+  font-size:28px;
+  font-weight:900;
+}
+
+.scf-impact-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:13px;
+}
+
+.scf-impact-card{
+  padding:20px 10px;
+  text-align:center;
+  background:#fff;
+  border:1px solid #e1e7ef;
+  border-radius:18px;
+  box-shadow:0 5px 15px rgba(0,0,0,.05);
+  transition:.25s;
+}
+
+.scf-impact-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 10px 25px rgba(16,42,86,.12);
+}
+
+.scf-impact-icon{
+  width:55px;
+  height:55px;
+  margin:0 auto 10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#fff0dc;
+  font-size:27px;
+}
+
+.scf-impact-card h3{
+  margin:6px 0;
+  color:#123f88;
+  font-size:17px;
+}
+
+.scf-impact-card p{
+  color:#687386;
+  font-size:13px;
+  line-height:1.4;
+}
+
+/* ================================
+   DAILY PLANS
+================================ */
+
+.scf-plans{
+  margin:0 30px 35px;
+  padding:28px;
+  border-radius:25px;
+  background:linear-gradient(135deg,#fff7e9,#fff);
+  border:1px solid #f1d7ad;
+  box-shadow:0 8px 25px rgba(16,42,86,.07);
+}
+
+.scf-plan-heading{
+  text-align:center;
+  margin-bottom:22px;
+}
+
+.scf-plan-heading h2{
+  color:#123f88;
+  font-size:28px;
+  font-weight:900;
+}
+
+.scf-plan-heading p{
+  margin-top:6px;
+  color:#687386;
+  font-size:14px;
+}
+
+.scf-plan-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.scf-plan{
+  position:relative;
+  padding:24px 12px;
+  text-align:center;
+  border:2px solid #f0c98f;
+  background:#fff;
+  border-radius:19px;
+  cursor:pointer;
+  transition:.25s;
+}
+
+.scf-plan input{
+  position:absolute;
+  opacity:0;
+  pointer-events:none;
+}
+
+.scf-plan:hover{
+  transform:translateY(-4px);
+  box-shadow:0 9px 22px rgba(230,93,5,.12);
+}
+
+.scf-amount{
+  color:#e85d05;
+  font-size:42px;
+  font-weight:900;
+  line-height:1;
+  transition:.2s;
+}
+
+.scf-plan.selected{
+  border-color:#16a34a;
+  background:#f0fdf4;
+  box-shadow:0 8px 24px rgba(22,163,74,.18);
+  transform:translateY(-4px);
+}
+
+.scf-plan.selected .scf-amount{
+  color:#16a34a;
+}
+
+.scf-daily{
+  margin:10px 0;
+  color:#566174;
+  font-size:14px;
+}
+
+.scf-month{
+  display:inline-block;
+  padding:6px 12px;
+  border-radius:30px;
+  background:#fff0dc;
+  color:#e85d05;
+  font-size:13px;
+  font-weight:800;
+}
+
+.scf-plan.selected .scf-month{
+  background:#dcfce7;
+  color:#16a34a;
+}
+
+.scf-selected{
+  display:none;
+  margin-top:10px;
+  color:#16a34a;
+  font-size:13px;
+  font-weight:900;
+}
+
+.scf-plan.selected .scf-selected{
+  display:block;
+}
+
+/* ================================
+   DONATE CTA
+================================ */
+
+.scf-donate-cta{
+  margin:0 30px 35px;
+  padding:35px 25px;
+  text-align:center;
+  color:#fff;
+  border-radius:25px;
+  background:linear-gradient(135deg,#ff8a00,#e65b05);
+  box-shadow:0 10px 25px rgba(230,91,5,.18);
+}
+
+.scf-donate-cta h2{
+  font-size:31px;
+  font-weight:900;
+}
+
+.scf-donate-cta p{
+  margin:10px auto 20px;
+  max-width:750px;
+  font-size:17px;
+  line-height:1.6;
+}
+
+.scf-main-donate-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:240px;
+  padding:14px 30px;
+  border-radius:50px;
+  background:#fff;
+  color:#c94d00;
+  text-decoration:none;
+  font-size:21px;
+  font-weight:900;
+  box-shadow:0 7px 20px rgba(0,0,0,.15);
+  transition:.25s;
+}
+
+.scf-main-donate-btn:hover{
+  transform:scale(1.05);
+}
+
+/* ================================
+   PAYMENT SECTION
+================================ */
+
+.scf-payment{
+  margin:0 30px 35px;
+  border-radius:27px;
+  overflow:hidden;
+  background:#fff;
+  border:1px solid #dce5f1;
+  box-shadow:0 10px 30px rgba(16,42,86,.09);
+}
+
+.scf-payment-head{
+  padding:30px 20px;
+  text-align:center;
+  color:#fff;
+  background:linear-gradient(135deg,#0b2f68,#123f88);
+}
+
+.scf-payment-head h2{
+  font-size:31px;
+  font-weight:900;
+}
+
+.scf-payment-head h2 span{
+  color:#ff9d1c;
+}
+
+.scf-payment-head p{
+  margin-top:8px;
+  font-size:16px;
+}
+
+.scf-payment-body{
+  padding:30px;
+  background:linear-gradient(#fff,#fff9f1);
+}
+
+.scf-payment-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:22px;
+}
+
+.scf-payment-card{
+  padding:25px;
+  border:1px solid #e0e6ef;
+  border-radius:21px;
+  background:#fff;
+  box-shadow:0 5px 18px rgba(16,42,86,.06);
+}
+
+.scf-payment-card h3{
+  color:#123f88;
+  font-size:23px;
+  font-weight:900;
+}
+
+.scf-payment-sub{
+  margin:8px 0 18px;
+  color:#687386;
+  font-size:14px;
+  line-height:1.5;
+}
+
+/* UPI */
+
+.scf-detail{
+  margin-top:12px;
+  padding:14px 16px;
+  border-radius:14px;
+  background:#f5f8fc;
+  border:1px solid #dce5f1;
+}
+
+.scf-label{
+  color:#687386;
+  font-size:12px;
+}
+
+.scf-value{
+  margin-top:4px;
+  min-height:22px;
+  color:#123f88;
+  font-size:17px;
+  font-weight:900;
+}
+
+/* BANK */
+
+.scf-bank{
+  margin-top:22px;
+  padding-top:20px;
+  border-top:1px solid #e1e7ef;
+}
+
+.scf-bank h4{
+  margin-bottom:12px;
+  color:#123f88;
+  font-size:20px;
+}
+
+.scf-bank-row{
+  padding:10px 0;
+  border-bottom:1px dashed #dce3ec;
+}
+
+.scf-bank-row:last-child{
+  border-bottom:0;
+}
+
+.scf-bank-label{
+  color:#687386;
+  font-size:12px;
+}
+
+.scf-bank-value{
+  margin-top:3px;
+  color:#123f88;
+  font-size:15px;
+  font-weight:800;
+}
+
+/* QR */
+
+.scf-qr{
+  text-align:center;
+}
+
+.scf-qr-box{
+  width:205px;
+  height:205px;
+  margin:22px auto;
+  padding:12px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fff;
+  border:3px solid #123f88;
+  border-radius:19px;
+}
+
+.scf-qr-placeholder{
+  width:150px;
+  height:150px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:3px dashed #ff8a00;
+  border-radius:12px;
+  color:#123f88;
+  font-size:18px;
+  font-weight:900;
+}
+
+.scf-qr-note{
+  color:#687386;
+  font-size:14px;
+  line-height:1.5;
+}
+
+/* ================================
+   THANK YOU
+================================ */
+
+.scf-thanks{
+  margin-top:25px;
+  padding:28px 20px;
+  text-align:center;
+  color:#fff;
+  border-radius:21px;
+  background:linear-gradient(135deg,#ff8a00,#e65b05);
+}
+
+.scf-thanks h3{
+  font-size:27px;
+  font-weight:900;
+}
+
+.scf-thanks p{
+  margin-top:8px;
+  font-size:16px;
+  line-height:1.5;
+}
+
+.scf-thanks .hindi{
+  font-size:18px;
+  font-weight:800;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+.scf-footer{
+  background:#102d60;
+  color:#fff;
+  padding:45px 30px 20px;
+}
+
+.scf-footer-grid{
+  display:grid;
+  grid-template-columns:1.3fr 1fr 1fr 1.2fr;
+  gap:30px;
+}
+
+.scf-footer-logo{
+  width:78px;
+  height:78px;
+  object-fit:contain;
+  background:#fff;
+  border-radius:50%;
+  padding:5px;
+  margin-bottom:12px;
+}
+
+.scf-footer h3{
+  margin-bottom:14px;
+  font-size:20px;
+}
+
+.scf-footer p{
+  color:#d9e3f2;
+  font-size:14px;
+  line-height:1.7;
+}
+
+.scf-footer-brand{
+  font-size:18px;
+  font-weight:900;
+}
+
+.scf-footer-brand span{
+  color:#ff9d1c;
+}
+
+.scf-footer-tagline{
+  margin-top:6px;
+}
+
+.scf-footer-links{
+  list-style:none;
+}
+
+.scf-footer-links li{
+  margin:8px 0;
+}
+
+.scf-footer-links a{
+  color:#d9e3f2;
+  text-decoration:none;
+  font-size:14px;
+  transition:.2s;
+}
+
+.scf-footer-links a:hover{
+  color:#ffb34c;
+}
+
+.scf-social{
+  display:flex;
+  gap:9px;
+  margin-top:15px;
+}
+
+.scf-social a{
+  width:38px;
+  height:38px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+  background:#fff;
+  color:#123f88;
+  text-decoration:none;
+  font-size:17px;
+  font-weight:900;
+  transition:.2s;
+}
+
+.scf-social a:hover{
+  transform:translateY(-3px);
+  background:#ff9d1c;
+  color:#fff;
+}
+
+.scf-footer-bottom{
+  margin-top:30px;
+  padding-top:18px;
+  border-top:1px solid rgba(255,255,255,.18);
+  text-align:center;
+  color:#cbd7e8;
+  font-size:13px;
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media(max-width:800px){
+
+  .scf-header{
+    padding:18px 15px;
+  }
+
+  .scf-header-top{
+    flex-direction:column;
+    gap:17px;
+  }
+
+  .scf-logo-area{
+    justify-content:center;
+  }
+
+  .scf-logo{
+    width:65px;
+    height:65px;
+  }
+
+  .scf-brand-name h1{
+    font-size:25px;
+  }
+
+  .scf-brand-name p{
+    font-size:13px;
+  }
+
+  .scf-header-buttons{
+    width:100%;
+  }
+
+  .scf-header-btn{
+    flex:1;
+    min-width:0;
+    padding:11px 8px;
+    font-size:12px;
+  }
+
+  .scf-nav{
+    padding:9px 10px;
+  }
+
+  .scf-nav ul{
+    gap:3px;
+  }
+
+  .scf-nav a{
+    padding:8px 10px;
+    font-size:12px;
+  }
+
+  .scf-hero{
+    padding:40px 18px;
+  }
+
+  .scf-hero h2{
+    font-size:36px;
+  }
+
+  .scf-hero p{
+    font-size:16px;
+  }
+
+  .scf-section{
+    padding-left:15px;
+    padding-right:15px;
+  }
+
+  .scf-impact-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .scf-impact-card:last-child{
+    grid-column:1/3;
+    max-width:50%;
+    width:100%;
+    margin:auto;
+  }
+
+  .scf-plans,
+  .scf-donate-cta,
+  .scf-payment{
+    margin-left:15px;
+    margin-right:15px;
+  }
+
+  .scf-plan-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .scf-payment-grid{
+    grid-template-columns:1fr;
+  }
+
+  .scf-payment-body{
+    padding:15px;
+  }
+
+  .scf-footer{
+    padding:35px 20px 18px;
+  }
+
+  .scf-footer-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .scf-social{
+    justify-content:center;
+  }
+}
+
+@media(max-width:450px){
+
+  .scf-hero h2{
+    font-size:31px;
+  }
+
+  .scf-plan-grid{
+    gap:9px;
+  }
+
+  .scf-amount{
+    font-size:34px;
+  }
+
+  .scf-impact-grid{
+    gap:9px;
+  }
+
+  .scf-impact-card{
+    padding:16px 6px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="scf-page">
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
+<header class="scf-header">
+
+<div class="scf-header-top">
+
+<div class="scf-logo-area">
+
+<img
+class="scf-logo"
+src="https://raw.githubusercontent.com/sathchaleham-dot/sathchalehumfoundation/main/sath_chale_ham_logo_HD-1.png"
+alt="Sath Chale Hum Foundation Logo"
+>
+
+<div class="scf-brand-name">
+
+<h1>
+साथ चले हम <span>फाउंडेशन</span>
+</h1>
+
+<p>
+साथ चले हम, बदलाव की ओर
+</p>
+
+</div>
+
+</div>
+
+<div class="scf-header-buttons">
+
+<a
+class="scf-header-btn scf-donate"
+href="donate.html"
+>
+🧡 DONATE US
+</a>
+
+<a
+class="scf-header-btn scf-join"
+href="join.html"
+>
+💚 JOIN US
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- =====================================
+     NAVIGATION
+===================================== -->
+
+<nav class="scf-nav">
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About Us</a></li>
+
+<li><a href="team.html">Our Team</a></li>
+
+<li><a href="work.html">Our Work</a></li>
+
+<li><a class="active" href="donate.html">Donate Us</a></li>
+
+<li><a href="join.html">Join Us</a></li>
+
+<li><a href="download.html">Download</a></li>
+
+</ul>
+
+</nav>
+
+
+<!-- =====================================
+     HERO
+===================================== -->
+
+<section class="scf-hero">
+
+<div class="scf-hero-badge">
+₹1 DAILY SUPPORTER CAMPAIGN
+</div>
+
+<h2>
+
+<span class="scf-blue">
+आपका ₹1,
+</span>
+
+<span class="scf-orange">
+किसी की मुस्कान
+</span>
+
+</h2>
+
+<div class="scf-hero-line"></div>
+
+<p>
+रोज़ का छोटा-सा सहयोग जरूरतमंद लोगों के लिए
+शिक्षा, स्वास्थ्य, भोजन और बेहतर भविष्य की उम्मीद बन सकता है।
+</p>
+
+</section>
+
+
+<!-- =====================================
+     IMPACT
+===================================== -->
+
+<section class="scf-section">
+
+<div class="scf-title">
+आपका ₹1 क्या कर सकता है?
+</div>
+
+<div class="scf-impact-grid">
+
+<div class="scf-impact-card">
+<div class="scf-impact-icon">📚</div>
+<h3>शिक्षा</h3>
+<p>किसी बच्चे की पढ़ाई में मदद</p>
+</div>
+
+<div class="scf-impact-card">
+<div class="scf-impact-icon">🍲</div>
+<h3>भोजन</h3>
+<p>जरूरतमंद तक भोजन का सहारा</p>
+</div>
+
+<div class="scf-impact-card">
+<div class="scf-impact-icon">✚</div>
+<h3>स्वास्थ्य</h3>
+<p>जरूरतमंदों तक स्वास्थ्य सहायता</p>
+</div>
+
+<div class="scf-impact-card">
+<div class="scf-impact-icon">🤝</div>
+<h3>सहायता</h3>
+<p>परिवारों को कठिन समय में सहारा</p>
+</div>
+
+<div class="scf-impact-card">
+<div class="scf-impact-icon">🌱</div>
+<h3>सशक्तिकरण</h3>
+<p>बेहतर भविष्य की ओर एक कदम</p>
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+     DAILY PLANS
+===================================== -->
+
+<section class="scf-plans">
+
+<div class="scf-plan-heading">
+
+<h2>
+अपनी सुविधा के अनुसार सहयोग करें
+</h2>
+
+<p>
+दैनिक सहयोग योजना • Daily Support Plans
+</p>
+
+</div>
+
+
+<div class="scf-plan-grid">
+
+<label class="scf-plan selected">
+
+<input
+type="radio"
+name="scfAmount"
+value="1"
+checked
+>
+
+<div class="scf-amount">
+₹1
+</div>
+
+<div class="scf-daily">
+हर दिन सहयोग
+</div>
+
+<div class="scf-month">
+लगभग ₹30 / माह
+</div>
+
+<span class="scf-selected">
+✓ Selected
+</span>
+
+</label>
+
+
+<label class="scf-plan">
+
+<input
+type="radio"
+name="scfAmount"
+value="2"
+>
+
+<div class="scf-amount">
+₹2
+</div>
+
+<div class="scf-daily">
+हर दिन सहयोग
+</div>
+
+<div class="scf-month">
+लगभग ₹60 / माह
+</div>
+
+<span class="scf-selected">
+✓ Selected
+</span>
+
+</label>
+
+
+<label class="scf-plan">
+
+<input
+type="radio"
+name="scfAmount"
+value="5"
+>
+
+<div class="scf-amount">
+₹5
+</div>
+
+<div class="scf-daily">
+हर दिन सहयोग
+</div>
+
+<div class="scf-month">
+लगभग ₹150 / माह
+</div>
+
+<span class="scf-selected">
+✓ Selected
+</span>
+
+</label>
+
+
+<label class="scf-plan">
+
+<input
+type="radio"
+name="scfAmount"
+value="10"
+>
+
+<div class="scf-amount">
+₹10
+</div>
+
+<div class="scf-daily">
+हर दिन सहयोग
+</div>
+
+<div class="scf-month">
+लगभग ₹300 / माह
+</div>
+
+<span class="scf-selected">
+✓ Selected
+</span>
+
+</label>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+     DONATE CTA
+===================================== -->
+
+<section class="scf-donate-cta">
+
+<h2>
+आज से बदलाव का हिस्सा बनें ❤️
+</h2>
+
+<p>
+छोटा योगदान समझकर इसे कम मत आंकिए।<br>
+हजारों छोटे सहयोग मिलकर किसी की जिंदगी बदल सकते हैं।
+</p>
+
+<a
+id="scfDonateButton"
+class="scf-main-donate-btn"
+href="https://docs.google.com/forms/d/e/1FAIpQLScG-TEGF_xYakoTV7FBTVFpQiYr2KmP3vmuv2ilzCHVmV689Q/viewform?usp=header"
+target="_blank"
+rel="noopener"
+>
+Donate ₹1
+</a>
+
+</section>
+
+
+<!-- =====================================
+     PAYMENT METHODS
+===================================== -->
+
+<section class="scf-payment">
+
+<div class="scf-payment-head">
+
+<h2>
+अपने सुविधाजनक माध्यम से
+<span>सहयोग करें</span>
+</h2>
+
+<p>
+आपका हर सहयोग किसी के लिए उम्मीद बन सकता है।
+</p>
+
+</div>
+
+
+<div class="scf-payment-body">
+
+<div class="scf-payment-grid">
+
+
+<!-- UPI / BANK -->
+
+<div class="scf-payment-card">
+
+<h3>
+📱 UPI से सहयोग करें
+</h3>
+
+<div class="scf-payment-sub">
+किसी भी UPI App से आसानी से सहयोग करें।
+</div>
+
+
+<div class="scf-detail">
+
+<div class="scf-label">
+UPI ID
+</div>
+
+<div class="scf-value">
+<!-- अपनी UPI ID यहाँ डालें -->
+</div>
+
+</div>
+
+
+<div class="scf-bank">
+
+<h4>
+🏦 Bank Account
+</h4>
+
+
+<div class="scf-bank-row">
+
+<div class="scf-bank-label">
+Account Name
+</div>
+
+<div class="scf-bank-value">
+Sath Chale Ham Foundation
+</div>
+
+</div>
+
+
+<div class="scf-bank-row">
+
+<div class="scf-bank-label">
+Account Number
+</div>
+
+<div class="scf-bank-value">
+<!-- Account Number -->
+</div>
+
+</div>
+
+
+<div class="scf-bank-row">
+
+<div class="scf-bank-label">
+IFSC Code
+</div>
+
+<div class="scf-bank-value">
+<!-- IFSC -->
+</div>
+
+</div>
+
+
+<div class="scf-bank-row">
+
+<div class="scf-bank-label">
+Bank Name
+</div>
+
+<div class="scf-bank-value">
+<!-- Bank Name -->
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- QR -->
+
+<div class="scf-payment-card scf-qr">
+
+<h3>
+📲 Scan & Donate
+</h3>
+
+<div class="scf-payment-sub">
+किसी भी UPI App से QR Code Scan करके
+आसानी से सहयोग करें।
+</div>
+
+
+<div class="scf-qr-box">
+
+<div class="scf-qr-placeholder">
+QR CODE
+</div>
+
+</div>
+
+
+<div class="scf-qr-note">
+QR Code Scan करके तुरंत सहयोग करें
+</div>
+
+</div>
+
+</div>
+
+
+<!-- THANK YOU -->
+
+<div class="scf-thanks">
+
+<h3>
+❤️ Thank You For Your Support
+</h3>
+
+<p class="hindi">
+“आपका छोटा सा सहयोग, किसी के जीवन में बड़ी उम्मीद बन सकता है।”
+</p>
+
+<p>
+“Your small contribution can become a great hope in someone's life.”
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =====================================
+     FOOTER
+===================================== -->
+
+<footer class="scf-footer">
+
+<div class="scf-footer-grid">
+
+
+<!-- ORGANIZATION -->
+
+<div>
+
+<img
+class="scf-footer-logo"
+src="https://raw.githubusercontent.com/sathchaleham-dot/sathchalehumfoundation/main/sath_chale_ham_logo_HD-1.png"
+alt="Sath Chale Hum Foundation"
+>
+
+<div class="scf-footer-brand">
+Sath Chale Hum
+<span>Foundation</span>
+</div>
+
+<p class="scf-footer-tagline">
+साथ चले हम, बदलाव की ओर
+</p>
+
+
+<div class="scf-social">
+
+<a
+href="https://www.facebook.com/share/1EUrBuoqbL/"
+target="_blank"
+rel="noopener"
+title="Facebook"
+>
+f
+</a>
+
+<a
+href="https://www.instagram.com/sathchaleham?igsi=MWFzanhuYjFpcGhrZg=="
+target="_blank"
+rel="noopener"
+title="Instagram"
+>
+◎
+</a>
+
+<a
+href="https://www.youtube.com/@sathchaleham"
+target="_blank"
+rel="noopener"
+title="YouTube"
+>
+▶
+</a>
+
+<a
+href="mailto:sathchaleham@gmail.com"
+title="Email"
+>
+✉
+</a>
+
+</div>
+
+</div>
+
+
+<!-- QUICK LINKS -->
+
+<div>
+
+<h3>
+Quick Links
+</h3>
+
+<ul class="scf-footer-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="team.html">Our Team</a></li>
+<li><a href="work.html">Our Work</a></li>
+<li><a href="donate.html">Donate Us</a></li>
+<li><a href="join.html">Join Us</a></li>
+<li><a href="download.html">Download</a></li>
+
+</ul>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<div>
+
+<h3>
+Contact
+</h3>
+
+<p>
+📧 sathchaleham@gmail.com
+</p>
+
+<p>
+☎️ +91 7011893028
+</p>
+
+<p>
+📍 Saharsa, Bihar, India
+</p>
+
+</div>
+
+
+<!-- LEGAL -->
+
+<div>
+
+<h3>
+Legal
+</h3>
+
+<ul class="scf-footer-links">
+
+<li>
+<a href="privacy.html">
+Privacy Policy
+</a>
+</li>
+
+<li>
+<a href="terms.html">
+Terms & Conditions
+</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+
+<div class="scf-footer-bottom">
+
+© 2026 Sath Chale Hum Foundation. All Rights Reserved.
+
+</div>
+
+</footer>
+
+</div>
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script>
+
+(function(){
+
+const plans =
+document.querySelectorAll(".scf-plan");
+
+const donateButton =
+document.getElementById("scfDonateButton");
+
+
+plans.forEach(function(plan){
+
+plan.addEventListener("click",function(){
+
+plans.forEach(function(item){
+
+item.classList.remove("selected");
+
+const oldRadio =
+item.querySelector("input");
+
+if(oldRadio){
+oldRadio.checked = false;
+}
+
+});
+
+
+plan.classList.add("selected");
+
+const radio =
+plan.querySelector("input");
+
+if(radio){
+
+radio.checked = true;
+
+const amount =
+radio.value;
+
+
+donateButton.innerHTML =
+"Donate ₹" + amount;
+
+
+/*
+   Selected amount Google Form में
+   भी भेजने के लिए URL में amount
+  
