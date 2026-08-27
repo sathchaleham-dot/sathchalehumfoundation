@@ -1,0 +1,2680 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Team | Sath Chale Hum Foundation</title>
+
+<meta name="description"
+content="Our Team | Sath Chale Hum Foundation - Board of Trustees, Advisory Board and Program Team.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+        Arial,
+        "Noto Sans Devanagari",
+        "Segoe UI",
+        sans-serif;
+
+    background:#f5f8fc;
+    color:#17324d;
+    line-height:1.6;
+}
+
+:root{
+
+    --blue:#063b78;
+    --dark-blue:#032b5c;
+    --blue2:#0a67b8;
+
+    --orange:#ff7900;
+    --orange-dark:#e85d00;
+
+    --green:#159447;
+    --green-dark:#0d7b39;
+
+    --white:#ffffff;
+
+    --light-blue:#edf6ff;
+    --light-green:#effbf4;
+    --light-orange:#fff8ee;
+
+    --text:#17324d;
+    --muted:#63768a;
+
+    --shadow:
+        0 12px 35px rgba(0,45,90,.11);
+}
+
+
+/* =========================================================
+   COMMON
+========================================================= */
+
+.container{
+    width:min(1250px,92%);
+    margin:auto;
+}
+
+section{
+    padding:75px 0;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:42px;
+}
+
+.section-heading h2{
+    color:var(--blue);
+    font-size:32px;
+    font-weight:900;
+}
+
+.section-heading p{
+    color:var(--muted);
+    margin-top:6px;
+}
+
+.card{
+    background:#fff;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    min-height:46px;
+
+    padding:11px 23px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:800;
+
+    border:2px solid transparent;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn-orange{
+    background:var(--orange);
+    color:#fff;
+
+    box-shadow:
+        0 7px 20px rgba(255,121,0,.28);
+}
+
+.btn-green{
+    background:var(--green);
+    color:#fff;
+
+    box-shadow:
+        0 7px 20px rgba(21,148,71,.25);
+}
+
+.btn-white{
+    background:#fff;
+    color:var(--blue);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.top-header{
+
+    background:
+        linear-gradient(
+            135deg,
+            #022b5c 0%,
+            #075aa8 50%,
+            #063b78 100%
+        );
+
+    color:#fff;
+
+    padding:15px 4%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:25px;
+}
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+}
+
+.brand-logo{
+
+    width:82px;
+    height:82px;
+
+    object-fit:contain;
+
+    background:#fff;
+
+    border-radius:50%;
+
+    padding:4px;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,.18);
+}
+
+.brand-text h1{
+
+    font-size:30px;
+
+    line-height:1.2;
+
+    font-weight:900;
+}
+
+.brand-text p{
+
+    font-size:14px;
+
+    margin-top:3px;
+
+    color:#fff;
+}
+
+.header-buttons{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-shrink:0;
+}
+
+.header-buttons .btn{
+
+    min-width:145px;
+
+    white-space:nowrap;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar{
+
+    background:#fff;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:9999;
+
+    box-shadow:
+        0 4px 18px rgba(0,0,0,.08);
+}
+
+.nav-container{
+
+    width:min(1250px,92%);
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+}
+
+.nav-links{
+
+    list-style:none;
+
+    display:flex;
+
+    align-items:center;
+}
+
+.nav-links a{
+
+    display:block;
+
+    padding:16px 21px;
+
+    color:var(--blue);
+
+    text-decoration:none;
+
+    font-weight:800;
+
+    position:relative;
+
+    transition:.25s;
+}
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:20px;
+
+    right:20px;
+
+    bottom:8px;
+
+    height:2px;
+
+    background:var(--orange);
+
+    transform:scaleX(0);
+
+    transition:.25s;
+}
+
+.nav-links a:hover{
+
+    color:var(--orange);
+}
+
+.nav-links a:hover::after{
+
+    transform:scaleX(1);
+}
+
+.nav-links a.active{
+
+    color:var(--orange);
+}
+
+.nav-links a.active::after{
+
+    transform:scaleX(1);
+}
+
+.menu-toggle{
+
+    display:none;
+
+    padding:12px 4%;
+
+    text-align:right;
+
+    color:var(--blue);
+
+    font-size:29px;
+
+    cursor:pointer;
+}
+
+
+/* =========================================================
+   PAGE HERO
+========================================================= */
+
+.page-hero{
+
+    background:
+        linear-gradient(
+            135deg,
+            #eaf5ff 0%,
+            #ffffff 55%,
+            #fff7ed 100%
+        );
+
+    padding:75px 0 70px;
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+.page-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:330px;
+
+    height:330px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(10,103,184,.10),
+            transparent 70%
+        );
+
+    top:-130px;
+
+    right:-80px;
+}
+
+.page-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,121,0,.08),
+            transparent 70%
+        );
+
+    bottom:-130px;
+
+    left:-70px;
+}
+
+.page-hero-inner{
+
+    width:min(1100px,92%);
+
+    margin:auto;
+
+    text-align:center;
+
+    position:relative;
+
+    z-index:2;
+}
+
+.page-hero h2{
+
+    color:var(--blue);
+
+    font-size:48px;
+
+    line-height:1.15;
+
+    font-weight:900;
+}
+
+.page-hero h2 span{
+
+    color:var(--orange);
+}
+
+.page-hero p{
+
+    max-width:800px;
+
+    margin:13px auto 0;
+
+    color:#536a7c;
+
+    font-size:17px;
+}
+
+
+/* =========================================================
+   TEAM INTRO
+========================================================= */
+
+.team-intro{
+
+    max-width:950px;
+
+    margin:auto;
+
+    text-align:center;
+
+    color:#53697b;
+
+    font-size:17px;
+
+    padding:32px;
+}
+
+
+/* =========================================================
+   TEAM SECTION
+========================================================= */
+
+.team-section{
+
+    background:#fff;
+}
+
+
+/* =========================================================
+   PROFILE CARDS
+========================================================= */
+
+.profile-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:22px;
+
+    max-width:1150px;
+
+    margin:auto;
+}
+
+.team-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:28px 22px;
+
+    text-align:center;
+
+    box-shadow:
+        0 10px 28px rgba(0,45,90,.10);
+
+    border-top:5px solid var(--blue);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.team-card:hover{
+
+    transform:translateY(-7px);
+
+    box-shadow:
+        0 17px 35px rgba(0,45,90,.15);
+}
+
+
+/* =========================================================
+   PROFILE ICON
+========================================================= */
+
+.profile-icon{
+
+    width:88px;
+
+    height:88px;
+
+    margin:0 auto 16px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #edf6ff,
+            #dceeff
+        );
+
+    border:4px solid #fff;
+
+    box-shadow:
+        0 5px 18px rgba(0,65,130,.13);
+
+    color:var(--blue);
+
+    font-size:36px;
+}
+
+.team-card:nth-child(3n+2){
+
+    border-top-color:var(--orange);
+}
+
+.team-card:nth-child(3n+2) .profile-icon{
+
+    background:#fff2e5;
+
+    color:var(--orange);
+}
+
+.team-card:nth-child(3n){
+
+    border-top-color:var(--green);
+}
+
+.team-card:nth-child(3n) .profile-icon{
+
+    background:#eaf9f0;
+
+    color:var(--green);
+}
+
+.team-card h3{
+
+    color:var(--blue);
+
+    font-size:21px;
+
+    font-weight:900;
+
+    line-height:1.3;
+}
+
+.team-role{
+
+    display:inline-block;
+
+    margin-top:7px;
+
+    padding:6px 13px;
+
+    border-radius:30px;
+
+    background:#edf3fb;
+
+    color:var(--blue);
+
+    font-size:13px;
+
+    font-weight:900;
+}
+
+.team-card p{
+
+    color:var(--muted);
+
+    font-size:14px;
+
+    margin-top:13px;
+}
+
+.skill-box{
+
+    margin-top:16px;
+
+    padding-top:13px;
+
+    border-top:1px solid #e5edf5;
+
+    text-align:left;
+}
+
+.skill-title{
+
+    color:var(--orange);
+
+    font-size:13px;
+
+    font-weight:900;
+
+    margin-bottom:6px;
+}
+
+.skill-text{
+
+    color:#53697b;
+
+    font-size:13px;
+
+    line-height:1.55;
+}
+
+
+/* =========================================================
+   BOARD / ADVISORY / PROGRAM
+========================================================= */
+
+.team-light{
+
+    background:#f8fbfe;
+}
+
+.team-green{
+
+    background:var(--light-green);
+}
+
+.team-orange{
+
+    background:var(--light-orange);
+}
+
+.role-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:20px;
+
+    max-width:1150px;
+
+    margin:auto;
+}
+
+.role-card{
+
+    background:#fff;
+
+    padding:25px 22px;
+
+    border-radius:18px;
+
+    box-shadow:
+        0 8px 24px rgba(0,45,90,.08);
+
+    border-left:5px solid var(--blue);
+
+    transition:.25s;
+}
+
+.role-card:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(0,45,90,.12);
+}
+
+.role-card.orange{
+
+    border-left-color:var(--orange);
+}
+
+.role-card.green{
+
+    border-left-color:var(--green);
+}
+
+.role-card h3{
+
+    color:var(--blue);
+
+    font-size:19px;
+
+    line-height:1.35;
+
+    margin-bottom:7px;
+}
+
+.role-card .role-title{
+
+    color:var(--orange);
+
+    font-size:13px;
+
+    font-weight:900;
+
+    margin-bottom:9px;
+}
+
+.role-card p{
+
+    color:var(--muted);
+
+    font-size:14px;
+
+    margin-bottom:12px;
+}
+
+.role-skill{
+
+    padding-top:11px;
+
+    border-top:1px solid #e7edf4;
+
+    color:#53697b;
+
+    font-size:13px;
+}
+
+.role-skill strong{
+
+    color:var(--green);
+
+}
+
+
+/* =========================================================
+   MEMBERS
+========================================================= */
+
+.members-section{
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #edf6ff
+        );
+}
+
+.member-box{
+
+    width:min(1000px,92%);
+
+    margin:auto;
+
+    background:#fff;
+
+    border-radius:23px;
+
+    padding:38px;
+
+    box-shadow:
+        0 12px 35px rgba(0,45,90,.10);
+
+    text-align:center;
+}
+
+.member-box h3{
+
+    color:var(--blue);
+
+    font-size:25px;
+
+    margin-bottom:10px;
+}
+
+.member-box p{
+
+    color:var(--muted);
+
+    font-size:16px;
+
+    max-width:750px;
+
+    margin:0 auto 22px;
+}
+
+.member-points{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:25px;
+}
+
+.member-point{
+
+    padding:20px 14px;
+
+    border-radius:16px;
+
+    background:#f5f8fc;
+
+    border:1px solid #e0e8f2;
+}
+
+.member-point strong{
+
+    display:block;
+
+    color:var(--blue);
+
+    font-size:17px;
+
+    margin-bottom:5px;
+}
+
+.member-point span{
+
+    color:var(--muted);
+
+    font-size:13px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta{
+
+    background:
+        linear-gradient(
+            135deg,
+            #063b78,
+            #075aa8
+        );
+
+    color:#fff;
+}
+
+.cta-inner{
+
+    width:min(1250px,92%);
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:30px;
+}
+
+.cta h2{
+
+    font-size:31px;
+}
+
+.cta p{
+
+    color:#dcecff;
+
+    margin-top:5px;
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    gap:11px;
+
+    flex-wrap:nowrap;
+
+    align-items:center;
+}
+
+.cta-buttons .btn{
+
+    white-space:nowrap;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer{
+
+    background:#062c59;
+
+    color:#fff;
+}
+
+.footer-main{
+
+    width:min(1250px,92%);
+
+    margin:auto;
+
+    padding:60px 0;
+
+    display:grid;
+
+    grid-template-columns:
+        1.35fr
+        1fr
+        1fr
+        1fr;
+
+    gap:40px;
+
+    align-items:start;
+}
+
+.footer-logo{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
+    background:#fff;
+
+    border-radius:50%;
+
+    padding:4px;
+
+    margin-bottom:15px;
+}
+
+.footer-brand-title{
+
+    font-size:21px;
+
+    font-weight:900;
+}
+
+.footer-brand-title span{
+
+    color:var(--orange);
+}
+
+.footer-tagline{
+
+    color:#d7e5f4;
+
+    margin-top:5px;
+}
+
+.footer-main h3{
+
+    margin-bottom:15px;
+
+    font-size:18px;
+}
+
+.footer-main ul{
+
+    list-style:none;
+}
+
+.footer-main li{
+
+    margin:8px 0;
+}
+
+.footer-main a{
+
+    color:#d7e5f4;
+
+    text-decoration:none;
+
+    transition:.2s;
+}
+
+.footer-main a:hover{
+
+    color:#ff9a3c;
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+========================================================= */
+
+.social-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:18px;
+}
+
+.social-icon{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:transparent !important;
+
+    border:none !important;
+
+    border-radius:50%;
+
+    text-decoration:none;
+
+    transition:
+        transform .25s ease,
+        opacity .25s ease;
+}
+
+.social-icon:hover{
+
+    transform:
+        translateY(-4px)
+        scale(1.06);
+
+    opacity:.88;
+}
+
+.social-icon svg{
+
+    width:25px;
+
+    height:25px;
+
+    display:block;
+}
+
+.facebook-icon{
+
+    color:#1877F2 !important;
+}
+
+.instagram-icon{
+
+    color:#E4405F !important;
+}
+
+.youtube-icon{
+
+    color:#FF0000 !important;
+}
+
+.email-icon{
+
+    color:#ffffff !important;
+}
+
+
+/* =========================================================
+   LEGAL
+========================================================= */
+
+.footer-legal{
+
+    margin-top:28px;
+
+    padding-top:20px;
+
+    border-top:
+        1px solid rgba(255,255,255,.15);
+}
+
+
+/* =========================================================
+   FOOTER BOTTOM
+========================================================= */
+
+.footer-bottom{
+
+    border-top:
+        1px solid rgba(255,255,255,.15);
+
+    text-align:center;
+
+    padding:18px 5%;
+
+    color:#d7e5f4;
+
+    font-size:14px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media(max-width:1100px){
+
+    .profile-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .role-grid{
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .member-points{
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+
+    .footer-main{
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+
+/* =========================================================
+   SMALL TABLET
+========================================================= */
+
+@media(max-width:850px){
+
+    .top-header{
+
+        flex-wrap:wrap;
+    }
+
+    .header-buttons{
+
+        margin-left:auto;
+    }
+
+    .cta-inner{
+
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+    .cta-buttons{
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:700px){
+
+    section{
+
+        padding:55px 0;
+    }
+
+
+    /* HEADER */
+
+    .top-header{
+
+        padding:14px 4%;
+
+        flex-direction:column;
+
+        gap:14px;
+
+        text-align:center;
+    }
+
+    .brand{
+
+        justify-content:center;
+
+        width:100%;
+    }
+
+    .brand-logo{
+
+        width:68px;
+
+        height:68px;
+    }
+
+    .brand-text h1{
+
+        font-size:24px;
+    }
+
+    .brand-text p{
+
+        font-size:12px;
+    }
+
+    .header-buttons{
+
+        display:flex;
+
+        width:100%;
+
+        justify-content:center;
+
+        gap:8px;
+    }
+
+    .header-buttons .btn{
+
+        flex:1;
+
+        min-width:0;
+
+        padding:10px 8px;
+
+        font-size:13px;
+    }
+
+
+    /* NAVIGATION */
+
+    .menu-toggle{
+
+        display:block;
+    }
+
+    .nav-container{
+
+        width:100%;
+    }
+
+    .nav-links{
+
+        display:none;
+
+        width:100%;
+
+        flex-direction:column;
+
+        align-items:stretch;
+    }
+
+    .nav-links.active{
+
+        display:flex;
+    }
+
+    .nav-links a{
+
+        padding:14px 5%;
+
+        border-top:
+            1px solid #edf1f5;
+    }
+
+    .nav-links a::after{
+
+        display:none;
+    }
+
+
+    /* PAGE HERO */
+
+    .page-hero{
+
+        padding:55px 0;
+    }
+
+    .page-hero h2{
+
+        font-size:37px;
+    }
+
+    .page-hero p{
+
+        font-size:15px;
+    }
+
+
+    /* INTRO */
+
+    .team-intro{
+
+        padding:25px 20px;
+
+        font-size:15px;
+    }
+
+
+    /* PROFILE */
+
+    .profile-grid{
+
+        grid-template-columns:1fr;
+
+        max-width:500px;
+    }
+
+
+    /* ROLES */
+
+    .role-grid{
+
+        grid-template-columns:1fr;
+
+        max-width:550px;
+    }
+
+
+    /* MEMBERS */
+
+    .member-box{
+
+        padding:28px 20px;
+    }
+
+    .member-points{
+
+        grid-template-columns:1fr;
+    }
+
+
+    /* CTA */
+
+    .cta-buttons{
+
+        width:100%;
+
+        justify-content:center;
+    }
+
+
+    /* FOOTER */
+
+    .footer-main{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+    }
+
+    .social-icons{
+
+        justify-content:center;
+    }
+
+    .footer-logo{
+
+        margin-left:auto;
+
+        margin-right:auto;
+    }
+
+    .footer-legal{
+
+        text-align:center;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- ========================================================
+     HEADER
+========================================================= -->
+
+<header class="top-header">
+
+    <div class="brand">
+
+        <img
+            class="brand-logo"
+            src="sath_chale_ham_logo_HD-1.png"
+            alt="Sath Chale Hum Foundation Original Logo"
+        >
+
+        <div class="brand-text">
+
+            <h1>
+                साथ चले हम फाउंडेशन
+            </h1>
+
+            <p>
+                साथ चले हम, बदलाव की ओर
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="header-buttons">
+
+        <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScG-TEGF_xYakoTV7FBTVFpQiYr2KmP3vmuv2ilzCHVmV689Q/viewform?usp=header"
+            class="btn btn-orange"
+            target="_blank"
+            rel="noopener"
+        >
+            🧡 DONATE US
+        </a>
+
+        <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSefr5zPNIurZ1-ldth7YpYyiCc3yYWu8u9esuPPMTQ11fb3PA/viewform?usp=header"
+            class="btn btn-green"
+            target="_blank"
+            rel="noopener"
+        >
+            💚 JOIN US
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ========================================================
+     NAVIGATION
+========================================================= -->
+
+<nav class="navbar">
+
+    <div
+        class="menu-toggle"
+        onclick="toggleMenu()"
+        aria-label="Open Navigation"
+    >
+        ☰
+    </div>
+
+    <div class="nav-container">
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="team.html" class="active">
+                    Our Team
+                </a>
+            </li>
+
+            <li>
+                <a href="work.html">
+                    Our Work
+                </a>
+            </li>
+
+            <li>
+                <a href="donate.html">
+                    Donate Us
+                </a>
+            </li>
+
+            <li>
+                <a href="join.html">
+                    Join Us
+                </a>
+            </li>
+
+            <li>
+                <a href="download.html">
+                    Download
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+<!-- ========================================================
+     PAGE HERO
+========================================================= -->
+
+<section class="page-hero">
+
+    <div class="page-hero-inner">
+
+        <h2>
+            Our <span>Team</span> | हमारी टीम
+        </h2>
+
+        <p>
+            Together we serve, support and work towards
+            positive change in society.
+            <br>
+            मिलकर सेवा, सहयोग और सकारात्मक बदलाव की दिशा में कार्य।
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================
+     TEAM INTRO
+========================================================= -->
+
+<section class="team-section">
+
+    <div class="container">
+
+        <div class="team-intro card">
+
+            <p>
+                <strong>Sath Chale Hum Foundation</strong>
+                में टीमवर्क, सेवा, ईमानदारी और सामुदायिक भागीदारी
+                हमारे कार्यों का आधार हैं।
+            </p>
+
+            <br>
+
+            <p>
+                हमारी टीम के सदस्य अपनी जिम्मेदारियों, अनुभव और
+                कौशल के अनुसार संस्था के उद्देश्यों को आगे बढ़ाने
+                के लिए मिलकर कार्य करते हैं।
+            </p>
+
+            <br>
+
+            <p>
+                Our team works together with commitment,
+                transparency and respect to create meaningful
+                and positive change in society.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================
+     BOARD OF TRUSTEES
+========================================================= -->
+
+<section class="team-light" id="trustees">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                Board of Trustees
+            </h2>
+
+            <p>
+                ट्रस्टी बोर्ड | Governance & Leadership
+            </p>
+
+        </div>
+
+
+        <div class="profile-grid">
+
+
+            <!-- AJAY -->
+
+            <div class="team-card">
+
+                <div class="profile-icon">
+                    👤
+                </div>
+
+                <h3>
+                    Ajay Kumar Prajapati
+                </h3>
+
+                <span class="team-role">
+                    President
+                </span>
+
+                <p>
+                    संस्था के समग्र नेतृत्व, दिशा और
+                    महत्वपूर्ण निर्णयों में प्रमुख भूमिका।
+                </p>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+                        Skills
+                    </div>
+
+                    <div class="skill-text">
+                        Leadership • Decision Making •
+                        Organization Management • Community Development
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- S K YADAV -->
+
+            <div class="team-card">
+
+                <div class="profile-icon">
+                    👤
+                </div>
+
+                <h3>
+                    S K Yadav
+                </h3>
+
+                <span class="team-role">
+                    Vice President
+                </span>
+
+                <p>
+                    संस्था के नेतृत्व और कार्यक्रमों में
+                    सहयोग तथा संगठनात्मक मार्गदर्शन।
+                </p>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+                        Skills
+                    </div>
+
+                    <div class="skill-text">
+                        Leadership • Coordination •
+                        Team Management • Social Service
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- M R OJHA -->
+
+            <div class="team-card">
+
+                <div class="profile-icon">
+                    👤
+                </div>
+
+                <h3>
+                    M R Ojha
+                </h3>
+
+                <span class="team-role">
+                    Secretary
+                </span>
+
+                <p>
+                    प्रशासनिक कार्यों, अभिलेखों और
+                    संगठनात्मक समन्वय की जिम्मेदारी।
+                </p>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+                        Skills
+                    </div>
+
+                    <div class="skill-text">
+                        Administration • Documentation •
+                        Communication • Coordination
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- D K SOREN -->
+
+            <div class="team-card">
+
+                <div class="profile-icon">
+                    👤
+                </div>
+
+                <h3>
+                    D K Soren
+                </h3>
+
+                <span class="team-role">
+                    Joint Secretary
+                </span>
+
+                <p>
+                    सचिव के कार्यों में सहयोग तथा
+                    संगठनात्मक गतिविधियों के समन्वय में भूमिका।
+                </p>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+                        Skills
+                    </div>
+
+                    <div class="skill-text">
+                        Coordination • Teamwork •
+                        Administration • Communication
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- PRIYAM SINGH -->
+
+            <div class="team-card">
+
+                <div class="profile-icon">
+                    👤
+                </div>
+
+                <h3>
+                    Priyam Singh
+                </h3>
+
+                <span class="team-role">
+                    Treasurer
+                </span>
+
+                <p>
+                    संस्था के वित्तीय रिकॉर्ड, वित्तीय अनुशासन
+                    और पारदर्शिता से जुड़े कार्यों की देखरेख।
+                </p>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+                        Skills
+                    </div>
+
+                    <div class="skill-text">
+                        Financial Management • Record Keeping •
+                        Transparency • Accountability
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================
+     ADVISORY BOARD
+========================================================= -->
+
+<section class="team-orange" id="advisory">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                Advisory Board
+            </h2>
+
+            <p>
+                सलाहकार मंडल | Guidance & Expertise
+            </p>
+
+        </div>
+
+
+        <div class="profile-grid">
+
+
+            <!-- DR CHANDAN -->
+
+            <div class="team-card">
+
+                <div class="profile-icon">
+                    🎓
+                </div>
+
+                <h3>
+                    Dr. Chandan Kumar
+                </h3>
+
+                <span class="team-role">
+                    Senior Member
+                </span>
+
+                <p>
+                    अनुभव, ज्ञान और मार्गदर्शन के माध्यम से
+                    संस्था की योजनाओं एवं सामाजिक कार्यों में सहयोग।
+                </p>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+                        Skills
+                    </div>
+
+                    <div class="skill-text">
+                        Professional Guidance • Strategic Thinking •
+                        Mentoring • Community Service
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- JITENDRA -->
+
+            <div class="team-card">
+
+                <div class="profile-icon">
+                    👤
+                </div>
+
+                <h3>
+                    Jitendra Mistri
+                </h3>
+
+                <span class="team-role">
+                    Executive Member
+                </span>
+
+                <p>
+                    संस्था की कार्यकारिणी गतिविधियों और
+                    कार्यक्रमों में सक्रिय भागीदारी।
+                </p>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+                        Skills
+                    </div>
+
+                    <div class="skill-text">
+                        Teamwork • Field Coordination •
+                        Problem Solving • Social Engagement
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- AFSAR AMIN -->
+
+            <div class="team-card">
+
+                <div class="profile-icon">
+                    💡
+                </div>
+
+                <h3>
+                    Afsar Amin
+                </h3>
+
+                <span class="team-role">
+                    Advisory Member
+                </span>
+
+                <p>
+                    संस्था की योजनाओं और कार्यक्रमों के लिए
+                    उपयोगी सलाह एवं मार्गदर्शन प्रदान करना।
+                </p>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+                        Skills
+                    </div>
+
+                    <div class="skill-text">
+                        Advisory Support • Planning •
+                        Communication • Strategic Guidance
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SUMIT -->
+
+            <div class="team-card">
+
+                <div class="profile-icon">
+                    ⚖️
+                </div>
+
+                <h3>
+                    Sumit Singh
+                </h3>
+
+                <span class="team-role">
+                    Legal & Compliance Advisor
+                </span>
+
+                <p>
+                    कानूनी, नीतिगत और अनुपालन से जुड़े
+                    मामलों में संस्था को मार्गदर्शन।
+                </p>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+                        Skills
+                    </div>
+
+                    <div class="skill-text">
+                        Legal Guidance • Compliance •
+                        Policy Review • Documentation
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================
+     PROGRAM TEAM
+========================================================= -->
+
+<section class="team-light" id="program">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                Program Team
+            </h2>
+
+            <p>
+                कार्यक्रम टीम | Field & Program Coordination
+            </p>
+
+        </div>
+
+
+        <div class="profile-grid">
+
+
+            <!-- KUMAR PUSKAR -->
+
+            <div class="team-card">
+
+                <div class="profile-icon">
+                    📋
+                </div>
+
+                <h3>
+                    Kumar Puskar
+                </h3>
+
+                <span class="team-role">
+                    Program Coordinator
+                </span>
+
+                <p>
+                    संस्था के विभिन्न कार्यक्रमों की योजना,
+                    संचालन और समन्वय में प्रमुख भूमिका।
+                </p>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+                        Skills
+                    </div>
+
+                    <div class="skill-text">
+                        Program Planning • Project Coordination •
+                        Team Management • Field Operations
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SUJEET -->
+
+            <div class="team-card">
+
+                <div class="profile-icon">
+                    🚀
+                </div>
+
+                <h3>
+                    Sujeet Suman
+                </h3>
+
+                <span class="team-role">
+                    Youth Coordinator
+                </span>
+
+                <p>
+                    युवाओं की भागीदारी, नेतृत्व और विकास से जुड़े
+                    कार्यक्रमों का समन्वय।
+                </p>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+                        Skills
+                    </div>
+
+                    <div class="skill-text">
+                        Youth Engagement • Leadership Development •
+                        Communication • Team Building
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- S KUMARI -->
+
+            <div class="team-card">
+
+                <div class="profile-icon">
+                    👩‍👧
+                </div>
+
+                <h3>
+                    S Kumari
+                </h3>
+
+                <span class="team-role">
+                    Women & Child Development Coordinator
+                </span>
+
+                <p>
+                    महिलाओं और बच्चों से जुड़े कार्यक्रमों,
+                    जागरूकता और विकास गतिविधियों का समन्वय।
+                </p>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+                        Skills
+                    </div>
+
+                    <div class="skill-text">
+                        Women Empowerment • Child Development •
+                        Awareness • Community Outreach
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- P K PRABHKAR -->
+
+            <div class="team-card">
+
+                <div class="profile-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    P K Prabhkar
+                </h3>
+
+                <span class="team-role">
+                    Volunteer Coordinator
+                </span>
+
+                <p>
+                    स्वयंसेवकों को जोड़ना, मार्गदर्शन देना और
+                    कार्यक्रमों में प्रभावी समन्वय करना।
+                </p>
+
+                <div class="skill-box">
+
+                    <div class="skill-title">
+                        Skills
+                    </div>
+
+                    <div class="skill-text">
+                        Volunteer Management • Team Coordination •
+                        Community Outreach • Event Support
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================
+     MEMBERS
+========================================================= -->
+
+<section class="members-section" id="members">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                Members
+            </h2>
+
+            <p>
+                सदस्य | Our Community of Supporters
+            </p>
+
+        </div>
+
+
+        <div class="member-box">
+
+            <h3>
+                साथ मिलकर बदलाव की ओर
+            </h3>
+
+            <p>
+                Sath Chale Hum Foundation के सदस्य संस्था के
+                सामाजिक उद्देश्यों को आगे बढ़ाने में अपनी
+                भागीदारी, समय, कौशल और सहयोग प्रदान करते हैं।
+            </p>
+
+
+            <div class="member-points">
+
+
+                <div class="member-point">
+
+                    <strong>
+                        Volunteers
+                    </strong>
+
+                    <span>
+                        सेवा और सामाजिक कार्यों में समय दें।
+                    </span>
+
+                </div>
+
+
+                <div class="member-point">
+
+                    <strong>
+                        Active Members
+                    </strong>
+
+                    <span>
+                        संस्था की गतिविधियों में सक्रिय भागीदारी।
+                    </span>
+
+                </div>
+
+
+                <div class="member-point">
+
+                    <strong>
+                        Community Supporters
+                    </strong>
+
+                    <span>
+                        समाज में जागरूकता और सहयोग को बढ़ावा दें।
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+            <br>
+
+
+            <a
+                href="join.html"
+                class="btn btn-green"
+            >
+                💚 Join Our Team
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================
+     CTA
+========================================================= -->
+
+<section class="cta">
+
+    <div class="cta-inner">
+
+
+        <div>
+
+            <h2>
+                साथ चले हम से जुड़ें
+            </h2>
+
+            <p>
+                Join Sath Chale Hum and be a part of
+                positive social change.
+            </p>
+
+        </div>
+
+
+        <div class="cta-buttons">
+
+            <a
+                href="join.html"
+                class="btn btn-green"
+            >
+                🟢 Join Us
+            </a>
+
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScG-TEGF_xYakoTV7FBTVFpQiYr2KmP3vmuv2ilzCHVmV689Q/viewform?usp=header"
+                class="btn btn-orange"
+                target="_blank"
+                rel="noopener"
+            >
+                🟠 Donate Us
+            </a>
+
+            <a
+                href="download.html"
+                class="btn btn-white"
+            >
+                ⚪ Download
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-main">
+
+
+        <!-- ORGANIZATION -->
+
+        <div>
+
+            <img
+                class="footer-logo"
+                src="sath_chale_ham_logo_HD-1.png"
+                alt="Original Sath Chale Hum Foundation Logo"
+            >
+
+
+            <div class="footer-brand-title">
+
+                Sath Chale Hum —
+                <span>Foundation</span>
+
+            </div>
+
+
+            <p class="footer-tagline">
+                साथ चले हम, बदलाव की ओर
+            </p>
+
+
+            <!-- SOCIAL ICONS -->
+
+            <div class="social-icons">
+
+
+                <!-- FACEBOOK -->
+
+                <a
+                    class="social-icon facebook-icon"
+                    href="https://www.facebook.com/share/1DekhrWVDh/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M14 8h3V4h-3c-3.3 0-5 1.9-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1z"
+                        />
+
+                    </svg>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    class="social-icon instagram-icon"
+                    href="https://www.instagram.com/sathchaleham?igsi=MWFzanhuYjFpcGhrZg=="
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Instagram"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                        />
+
+                    </svg>
+
+                </a>
+
+
+                <!-- YOUTUBE -->
+
+                <a
+                    class="social-icon youtube-icon"
+                    href="https://youtube.com/@sathchaleham?si=kc1xt7w_4tuItYub"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="YouTube"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M23 12s0-3.4-.4-5a2.7 2.7 0 0 0-1.9-1.9C18.9 4.7 12 4.7 12 4.7s-6.9 0-8.7.4A2.7 2.7 0 0 0 1.4 7C1 8.6 1 12 1 12s0 3.4.4 5a2.7 2.7 0 0 0 1.9 1.9c1.8.4 8.7.4 8.7.4s6.9 0 8.7-.4a2.7 2.7 0 0 0 1.9-1.9c.4-1.6.4-5 .4-5zM10 15.5v-7l6 3.5-6 3.5z"
+                        />
+
+                    </svg>
+
+                </a>
+
+
+                <!-- EMAIL -->
+
+                <a
+                    class="social-icon email-icon"
+                    href="mailto:sathchaleham@gmail.com"
+                    aria-label="Email"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.5l9 5.6 9-5.6V7H3zm18 10V9.9l-8.5 5.3a1 1 0 0 1-1 0L3 9.9V17h18z"
+                        />
+
+                    </svg>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div>
+
+            <h3>
+                Contact Us
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="mailto:sathchaleham@gmail.com">
+                        📧 sathchaleham@gmail.com
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tel:+917011893028">
+                        ☎️ +91 7011893028
+                    </a>
+                </li>
+
+                <li>
+                    📍 Saharsa, Bihar, India
+                </li>
+
+            </ul>
+
+
+            <div class="footer-legal">
+
+                <h3>
+                    Legal
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="privacy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms.html">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="team.html">
+                        Our Team
+                    </a>
+                </li>
+
+                <li>
+                    <a href="work.html">
+                        Our Work
+                    </a>
+                </li>
+
+                <li>
+                    <a href="join.html">
+                        Join Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="donate.html">
+                        Donate Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="download.html">
+                        Download
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- TEAM LINKS -->
+
+        <div>
+
+            <h3>
+                Team Sections
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="#trustees">
+                        Board of Trustees
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#advisory">
+                        Advisory Board
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#program">
+                        Program Team
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#members">
+                        Members
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        © 2026 Sath Chale Hum Foundation. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+function toggleMenu(){
+
+    const nav =
+        document.getElementById("navLinks");
+
+    nav.classList.toggle("active");
+
+}
+
+
+document
+    .querySelectorAll(".nav-links a")
+    .forEach(function(link){
+
+        link.addEventListener(
+            "click",
+            function(){
+
+                document
+                    .getElementById("navLinks")
+                    .classList
+                    .remove("active");
+
+            }
+        );
+
+    });
+
+</script>
+
+
+</body>
+</html>
