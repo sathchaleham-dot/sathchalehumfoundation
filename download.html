@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Download | Sath Chale Hum Foundation</title>
+
+<meta name="description"
+content="Download official documents, forms and resources of Sath Chale Hum Foundation.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial,"Noto Sans Devanagari","Segoe UI",sans-serif;
+    background:#f5f8fc;
+    color:#17324d;
+    line-height:1.6;
+}
+
+:root{
+    --blue:#063b78;
+    --dark-blue:#032b5c;
+    --blue2:#0a67b8;
+    --orange:#ff7900;
+    --green:#159447;
+    --white:#fff;
+    --muted:#63768a;
+    --shadow:0 12px 35px rgba(0,45,90,.11);
+}
+
+.container{
+    width:min(1250px,92%);
+    margin:auto;
+}
+
+section{
+    padding:70px 0;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:46px;
+    padding:11px 23px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:800;
+    border:2px solid transparent;
+    transition:.25s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.btn-orange{
+    background:var(--orange);
+    color:#fff;
+    box-shadow:0 7px 20px rgba(255,121,0,.28);
+}
+
+.btn-green{
+    background:var(--green);
+    color:#fff;
+    box-shadow:0 7px 20px rgba(21,148,71,.25);
+}
+
+.btn-white{
+    background:#fff;
+    color:var(--blue);
+}
+
+
+/* ================= HEADER ================= */
+
+.top-header{
+    background:linear-gradient(135deg,#022b5c 0%,#075aa8 50%,#063b78 100%);
+    color:#fff;
+    padding:15px 4%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:25px;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.brand-logo{
+    width:82px;
+    height:82px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:50%;
+    padding:4px;
+    box-shadow:0 5px 18px rgba(0,0,0,.18);
+}
+
+.brand-text h1{
+    font-size:30px;
+    line-height:1.2;
+    font-weight:900;
+}
+
+.brand-text p{
+    font-size:14px;
+    margin-top:3px;
+}
+
+.header-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.header-buttons .btn{
+    min-width:145px;
+    white-space:nowrap;
+}
+
+
+/* ================= NAVIGATION ================= */
+
+.navbar{
+    background:#fff;
+    position:sticky;
+    top:0;
+    z-index:9999;
+    box-shadow:0 4px 18px rgba(0,0,0,.08);
+}
+
+.nav-container{
+    width:min(1250px,92%);
+    margin:auto;
+    display:flex;
+    justify-content:center;
+}
+
+.nav-links{
+    list-style:none;
+    display:flex;
+    align-items:center;
+}
+
+.nav-links a{
+    display:block;
+    padding:16px 21px;
+    color:var(--blue);
+    text-decoration:none;
+    font-weight:800;
+    position:relative;
+    transition:.25s;
+}
+
+.nav-links a::after{
+    content:"";
+    position:absolute;
+    left:20px;
+    right:20px;
+    bottom:8px;
+    height:2px;
+    background:var(--orange);
+    transform:scaleX(0);
+    transition:.25s;
+}
+
+.nav-links a:hover{
+    color:var(--orange);
+}
+
+.nav-links a:hover::after{
+    transform:scaleX(1);
+}
+
+.menu-toggle{
+    display:none;
+    padding:12px 4%;
+    text-align:right;
+    color:var(--blue);
+    font-size:29px;
+    cursor:pointer;
+}
+
+
+/* ================= PAGE HERO ================= */
+
+.download-hero{
+    background:linear-gradient(135deg,#eaf5ff,#fff);
+    padding:70px 0 60px;
+    text-align:center;
+}
+
+.download-hero .icon{
+    width:78px;
+    height:78px;
+    margin:0 auto 18px;
+    border-radius:22px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:39px;
+    box-shadow:var(--shadow);
+}
+
+.download-hero h2{
+    color:var(--blue);
+    font-size:44px;
+    font-weight:900;
+    line-height:1.2;
+}
+
+.download-hero h2 span{
+    color:var(--orange);
+}
+
+.download-hero p{
+    max-width:760px;
+    margin:12px auto 0;
+    color:var(--muted);
+    font-size:17px;
+}
+
+
+/* ================= DOWNLOAD CENTER ================= */
+
+.download-section{
+    background:#f5f8fc;
+}
+
+.section-heading{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.section-heading h2{
+    color:var(--blue);
+    font-size:32px;
+    font-weight:900;
+}
+
+.section-heading p{
+    color:var(--muted);
+    margin-top:5px;
+}
+
+
+/* DOWNLOAD GRID */
+
+.download-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
+    max-width:1100px;
+    margin:auto;
+}
+
+.download-card{
+    background:#fff;
+    border-radius:20px;
+    padding:28px 22px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    border:1px solid #e2e9f1;
+    transition:.25s;
+    position:relative;
+    overflow:hidden;
+}
+
+.download-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:5px;
+    background:var(--blue2);
+}
+
+.download-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 18px 40px rgba(0,45,90,.15);
+}
+
+.file-icon{
+    width:70px;
+    height:70px;
+    margin:8px auto 17px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#edf6ff;
+    font-size:34px;
+}
+
+.download-card h3{
+    color:var(--blue);
+    font-size:20px;
+    margin-bottom:7px;
+}
+
+.download-card .hindi{
+    color:#516a7e;
+    font-weight:700;
+    font-size:15px;
+}
+
+.download-card p{
+    color:var(--muted);
+    font-size:13px;
+    margin:10px 0 18px;
+}
+
+.download-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+    background:var(--blue);
+    color:#fff;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:30px;
+    font-weight:800;
+    transition:.25s;
+}
+
+.download-btn:hover{
+    background:var(--orange);
+    transform:translateY(-2px);
+}
+
+
+/* ================= INFO BOX ================= */
+
+.download-info{
+    max-width:1000px;
+    margin:45px auto 0;
+    padding:30px;
+    border-radius:22px;
+    background:linear-gradient(135deg,#fff8ee,#fff);
+    border:1px solid #f1dfca;
+    box-shadow:0 8px 25px rgba(0,45,90,.07);
+    text-align:center;
+}
+
+.download-info h3{
+    color:var(--orange);
+    font-size:25px;
+    margin-bottom:8px;
+}
+
+.download-info p{
+    color:#5a6e7e;
+    font-size:15px;
+}
+
+
+/* ================= CTA ================= */
+
+.cta{
+    background:linear-gradient(135deg,#063b78,#075aa8);
+    color:#fff;
+}
+
+.cta-inner{
+    width:min(1250px,92%);
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:30px;
+}
+
+.cta h2{
+    font-size:31px;
+}
+
+.cta p{
+    color:#dcecff;
+    margin-top:5px;
+}
+
+.cta-buttons{
+    display:flex;
+    gap:11px;
+    flex-wrap:wrap;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#062c59;
+    color:#fff;
+}
+
+.footer-main{
+    width:min(1250px,92%);
+    margin:auto;
+    padding:60px 0;
+    display:grid;
+    grid-template-columns:1.35fr 1fr 1fr 1fr;
+    gap:40px;
+    align-items:start;
+}
+
+.footer-logo{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:50%;
+    padding:4px;
+    margin-bottom:15px;
+}
+
+.footer-brand-title{
+    font-size:21px;
+    font-weight:900;
+}
+
+.footer-brand-title span{
+    color:var(--orange);
+}
+
+.footer-tagline{
+    color:#d7e5f4;
+    margin-top:5px;
+}
+
+.footer-main h3{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.footer-main ul{
+    list-style:none;
+}
+
+.footer-main li{
+    margin:8px 0;
+}
+
+.footer-main a{
+    color:#d7e5f4;
+    text-decoration:none;
+    transition:.2s;
+}
+
+.footer-main a:hover{
+    color:#ff9a3c;
+}
+
+.social-icons{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-top:18px;
+}
+
+.social-icon{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:transparent;
+    border:none;
+    border-radius:50%;
+    text-decoration:none;
+    transition:.25s;
+}
+
+.social-icon:hover{
+    transform:translateY(-4px) scale(1.06);
+    opacity:.88;
+}
+
+.social-icon svg{
+    width:25px;
+    height:25px;
+}
+
+.facebook-icon{
+    color:#1877F2!important;
+}
+
+.instagram-icon{
+    color:#E4405F!important;
+}
+
+.youtube-icon{
+    color:#FF0000!important;
+}
+
+.email-icon{
+    color:#fff!important;
+}
+
+.footer-legal{
+    margin-top:28px;
+    padding-top:20px;
+    border-top:1px solid rgba(255,255,255,.15);
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,.15);
+    text-align:center;
+    padding:18px 5%;
+    color:#d7e5f4;
+    font-size:14px;
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:1100px){
+
+    .download-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .footer-main{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:700px){
+
+    section{
+        padding:55px 0;
+    }
+
+    .top-header{
+        padding:14px 4%;
+        flex-direction:column;
+        gap:14px;
+        text-align:center;
+    }
+
+    .brand{
+        justify-content:center;
+        width:100%;
+    }
+
+    .brand-logo{
+        width:68px;
+        height:68px;
+    }
+
+    .brand-text h1{
+        font-size:24px;
+    }
+
+    .brand-text p{
+        font-size:12px;
+    }
+
+    .header-buttons{
+        width:100%;
+        justify-content:center;
+        gap:8px;
+    }
+
+    .header-buttons .btn{
+        flex:1;
+        min-width:0;
+        padding:10px 8px;
+        font-size:13px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-container{
+        width:100%;
+    }
+
+    .nav-links{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links a{
+        padding:14px 5%;
+        border-top:1px solid #edf1f5;
+    }
+
+    .nav-links a::after{
+        display:none;
+    }
+
+    .download-hero{
+        padding:55px 5%;
+    }
+
+    .download-hero h2{
+        font-size:35px;
+    }
+
+    .download-hero p{
+        font-size:15px;
+    }
+
+    .download-grid{
+        grid-template-columns:1fr;
+        width:94%;
+    }
+
+    .download-card{
+        padding:26px 20px;
+    }
+
+    .download-info{
+        width:94%;
+        padding:25px 18px;
+    }
+
+    .cta-inner{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .cta-buttons{
+        justify-content:center;
+    }
+
+    .footer-main{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+    .footer-logo{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .footer-legal{
+        text-align:center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- ======================================================
+     HEADER
+====================================================== -->
+
+<header class="top-header">
+
+    <div class="brand">
+
+        <img
+            class="brand-logo"
+            src="sath_chale_ham_logo_HD-1.png"
+            alt="Sath Chale Hum Foundation Logo"
+        >
+
+        <div class="brand-text">
+
+            <h1>
+                साथ चले हम फाउंडेशन
+            </h1>
+
+            <p>
+                साथ चले हम, बदलाव की ओर
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="header-buttons">
+
+        <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScG-TEGF_xYakoTV7FBTVFpQiYr2KmP3vmuv2ilzCHVmV689Q/viewform?usp=header"
+            class="btn btn-orange"
+            target="_blank"
+            rel="noopener"
+        >
+            🧡 DONATE US
+        </a>
+
+        <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSefr5zPNIurZ1-ldth7YpYyiCc3yYWu8u9esuPPMTQ11fb3PA/viewform?usp=header"
+            class="btn btn-green"
+            target="_blank"
+            rel="noopener"
+        >
+            💚 JOIN US
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ======================================================
+     NAVIGATION
+====================================================== -->
+
+<nav class="navbar">
+
+    <div
+        class="menu-toggle"
+        onclick="toggleMenu()"
+        aria-label="Open Navigation"
+    >
+        ☰
+    </div>
+
+    <div class="nav-container">
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="team.html">
+                    Our Team
+                </a>
+            </li>
+
+            <li>
+                <a href="work.html">
+                    Our Work
+                </a>
+            </li>
+
+            <li>
+                <a href="donate.html">
+                    Donate Us
+                </a>
+            </li>
+
+            <li>
+                <a href="join.html">
+                    Join Us
+                </a>
+            </li>
+
+            <li>
+                <a href="download.html">
+                    Download
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+<!-- ======================================================
+     DOWNLOAD HERO
+====================================================== -->
+
+<section class="download-hero">
+
+    <div class="container">
+
+        <div class="icon">
+            📥
+        </div>
+
+        <h2>
+            Download <span>Center</span>
+        </h2>
+
+        <p>
+            आवश्यक दस्तावेज़, फॉर्म और संस्था से संबंधित
+            महत्वपूर्ण संसाधन यहाँ से आसानी से प्राप्त करें।
+        </p>
+
+        <p>
+            Download official documents, forms and useful
+            resources of Sath Chale Hum Foundation.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     DOWNLOAD CENTER
+====================================================== -->
+
+<section class="download-section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <h2>
+                📂 हमारे दस्तावेज़ | Our Documents
+            </h2>
+
+            <p>
+                Official Resources & Downloads
+            </p>
+
+        </div>
+
+
+        <div class="download-grid">
+
+
+            <!-- PROFILE -->
+
+            <div class="download-card">
+
+                <div class="file-icon">
+                    📄
+                </div>
+
+                <h3>
+                    Organization Profile
+                </h3>
+
+                <div class="hindi">
+                    संस्था परिचय
+                </div>
+
+                <p>
+                    संस्था के उद्देश्य, मिशन, विज़न,
+                    कार्य क्षेत्र और परिचय से संबंधित जानकारी।
+                </p>
+
+                <a
+                    href="#"
+                    class="download-btn"
+                >
+                    ⬇ Download PDF
+                </a>
+
+            </div>
+
+
+            <!-- BROCHURE -->
+
+            <div class="download-card">
+
+                <div class="file-icon">
+                    📘
+                </div>
+
+                <h3>
+                    Foundation Brochure
+                </h3>
+
+                <div class="hindi">
+                    फाउंडेशन ब्रोशर
+                </div>
+
+                <p>
+                    Sath Chale Hum Foundation की
+                    प्रमुख गतिविधियों और कार्यों की जानकारी।
+                </p>
+
+                <a
+                    href="#"
+                    class="download-btn"
+                >
+                    ⬇ Download PDF
+                </a>
+
+            </div>
+
+
+            <!-- VOLUNTEER -->
+
+            <div class="download-card">
+
+                <div class="file-icon">
+                    🤝
+                </div>
+
+                <h3>
+                    Volunteer Information
+                </h3>
+
+                <div class="hindi">
+                    स्वयंसेवक जानकारी
+                </div>
+
+                <p>
+                    स्वयंसेवक के रूप में जुड़ने और
+                    योगदान देने से संबंधित जानकारी।
+                </p>
+
+                <a
+                    href="join.html"
+                    class="download-btn"
+                >
+                    🤝 Join Us
+                </a>
+
+            </div>
+
+
+            <!-- DONATION -->
+
+            <div class="download-card">
+
+                <div class="file-icon">
+                    ❤️
+                </div>
+
+                <h3>
+                    Donation Information
+                </h3>
+
+                <div class="hindi">
+                    सहयोग एवं दान जानकारी
+                </div>
+
+                <p>
+                    संस्था को सहयोग करने और
+                    ₹1 Daily Supporter Campaign से जुड़ने की जानकारी।
+                </p>
+
+                <a
+                    href="donate.html"
+                    class="download-btn"
+                >
+                    ❤️ Donate Us
+                </a>
+
+            </div>
+
+
+            <!-- TERMS -->
+
+            <div class="download-card">
+
+                <div class="file-icon">
+                    📋
+                </div>
+
+                <h3>
+                    Terms & Conditions
+                </h3>
+
+                <div class="hindi">
+                    नियम एवं शर्तें
+                </div>
+
+                <p>
+                    वेबसाइट और संस्था की सेवाओं से संबंधित
+                    नियम एवं शर्तें पढ़ें।
+                </p>
+
+                <a
+                    href="terms.html"
+                    class="download-btn"
+                >
+                    📋 View Terms
+                </a>
+
+            </div>
+
+
+            <!-- PRIVACY -->
+
+            <div class="download-card">
+
+                <div class="file-icon">
+                    🔐
+                </div>
+
+                <h3>
+                    Privacy Policy
+                </h3>
+
+                <div class="hindi">
+                    गोपनीयता नीति
+                </div>
+
+                <p>
+                    आपकी जानकारी और गोपनीयता की सुरक्षा
+                    से संबंधित हमारी नीति।
+                </p>
+
+                <a
+                    href="privacy.html"
+                    class="download-btn"
+                >
+                    🔐 View Policy
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- INFORMATION BOX -->
+
+        <div class="download-info">
+
+            <h3>
+                📌 महत्वपूर्ण सूचना | Important Information
+            </h3>
+
+            <p>
+                इस Download Center में उपलब्ध दस्तावेज़
+                Sath Chale Hum Foundation के आधिकारिक
+                उपयोग के लिए हैं। नए दस्तावेज़ और संसाधन
+                उपलब्ध होने पर इस पेज को अपडेट किया जाएगा।
+            </p>
+
+            <p style="margin-top:8px;">
+                Documents and resources will be updated
+                whenever new official materials become available.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     CTA
+====================================================== -->
+
+<section class="cta">
+
+    <div class="cta-inner">
+
+        <div>
+
+            <h2>
+                साथ चले हम से जुड़ें
+            </h2>
+
+            <p>
+                Join us and be a part of positive social change.
+            </p>
+
+        </div>
+
+
+        <div class="cta-buttons">
+
+            <a
+                href="join.html"
+                class="btn btn-green"
+            >
+                🟢 Join Us
+            </a>
+
+            <a
+                href="donate.html"
+                class="btn btn-orange"
+            >
+                🟠 Donate Us
+            </a>
+
+            <a
+                href="index.html"
+                class="btn btn-white"
+            >
+                🏠 Home
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="footer-main">
+
+
+        <!-- ORGANIZATION -->
+
+        <div>
+
+            <img
+                class="footer-logo"
+                src="sath_chale_ham_logo_HD-1.png"
+                alt="Sath Chale Hum Foundation Logo"
+            >
+
+            <div class="footer-brand-title">
+                Sath Chale Hum —
+                <span>Foundation</span>
+            </div>
+
+            <p class="footer-tagline">
+                साथ चले हम, बदलाव की ओर
+            </p>
+
+
+            <div class="social-icons">
+
+
+                <!-- FACEBOOK -->
+
+                <a
+                    class="social-icon facebook-icon"
+                    href="https://www.facebook.com/share/1DekhrWVDh/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M14 8h3V4h-3c-3.3 0-5 1.9-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1z"
+                        />
+
+                    </svg>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    class="social-icon instagram-icon"
+                    href="https://www.instagram.com/sathchaleham?igsi=MWFzanhuYjFpcGhrZg=="
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Instagram"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                        />
+
+                    </svg>
+
+                </a>
+
+
+                <!-- YOUTUBE -->
+
+                <a
+                    class="social-icon youtube-icon"
+                    href="https://youtube.com/@sathchaleham?si=kc1xt7w_4tuItYub"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="YouTube"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M23 12s0-3.4-.4-5a2.7 2.7 0 0 0-1.9-1.9C18.9 4.7 12 4.7 12 4.7s-6.9 0-8.7.4A2.7 2.7 0 0 0 1.4 7C1 8.6 1 12 1 12s0 3.4.4 5a2.7 2.7 0 0 0 1.9 1.9c1.8.4 8.7.4 8.7.4s6.9 0 8.7-.4a2.7 2.7 0 0 0 1.9-1.9c.4-1.6.4-5 .4-5zM10 15.5v-7l6 3.5-6 3.5z"
+                        />
+
+                    </svg>
+
+                </a>
+
+
+                <!-- EMAIL -->
+
+                <a
+                    class="social-icon email-icon"
+                    href="mailto:sathchaleham@gmail.com"
+                    aria-label="Email"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.5l9 5.6 9-5.6V7H3zm18 10V9.9l-8.5 5.3a1 1 0 0 1-1 0L3 9.9V17h18z"
+                        />
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div>
+
+            <h3>
+                Contact Us
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="mailto:sathchaleham@gmail.com">
+                        📧 sathchaleham@gmail.com
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tel:+917011893028">
+                        ☎️ +91 7011893028
+                    </a>
+                </li>
+
+                <li>
+                    📍 Saharsa, Bihar, India
+                </li>
+
+            </ul>
+
+
+            <div class="footer-legal">
+
+                <h3>
+                    Legal
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="privacy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms.html">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="team.html">
+                        Our Team
+                    </a>
+                </li>
+
+                <li>
+                    <a href="work.html">
+                        Our Work
+                    </a>
+                </li>
+
+                <li>
+                    <a href="donate.html">
+                        Donate Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="join.html">
+                        Join Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="download.html">
+                        Download
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- FOURTH COLUMN -->
+
+        <div>
+
+            <h3>
+                Sath Chale Hum
+            </h3>
+
+            <p style="color:#d7e5f4;font-size:14px;">
+                सेवा • सहयोग • जागरूकता
+            </p>
+
+            <p style="color:#d7e5f4;font-size:14px;margin-top:10px;">
+                Together towards positive change.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        © 2026 Sath Chale Hum Foundation.
+        All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script>
+
+function toggleMenu(){
+
+    const nav =
+        document.getElementById("navLinks");
+
+    nav.classList.toggle("active");
+
+}
+
+
+document
+    .querySelectorAll(".nav-links a")
+    .forEach(function(link){
+
+        link.addEventListener(
+            "click",
+            function(){
+
+                document
+                    .getElementById("navLinks")
+                    .classList
+                    .remove("active");
+
+            }
+        );
+
+    });
+
+</script>
+
+</body>
+</html>
