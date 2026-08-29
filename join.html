@@ -1654,7 +1654,7 @@ footer{
         </div>
 
         <!-- ===== FORM ===== -->
-        <form class="registration-form" id="registrationForm">
+        <form class="registration-form" id="registrationForm" onsubmit="submitForm(event)">
 
             <!-- 1. Membership Type -->
             <div class="form-group">
@@ -1765,4 +1765,833 @@ footer{
                     <span class="hi">पूरा पता <span class="required">*</span></span>
                     <span class="en">Full Address <span class="required">*</span></span>
                 </label>
-                <textarea id="address" rows="2" placeholder="घर का नंबर, गली, मोहल्ला / House no, street
+                <textarea id="address" rows="2" placeholder="घर का नंबर, गली, मोहल्ला / House no, street, locality..." required></textarea>
+            </div>
+
+            <!-- 8. District + State + PIN -->
+            <div class="row-3">
+                <div class="form-group">
+                    <label>
+                        <span class="hi">जिला <span class="required">*</span></span>
+                        <span class="en">District <span class="required">*</span></span>
+                    </label>
+                    <input type="text" id="district" placeholder="जिला / District" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <span class="hi">राज्य <span class="required">*</span></span>
+                        <span class="en">State <span class="required">*</span></span>
+                    </label>
+                    <select id="state" required>
+                        <option value="">-- चुनें / Select --</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Other">Other / अन्य</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <span class="hi">पिन कोड <span class="required">*</span></span>
+                        <span class="en">PIN Code <span class="required">*</span></span>
+                        <span class="hint">(6 अंक / 6 digits)</span>
+                    </label>
+                    <input type="text" id="pincode" placeholder="110001" maxlength="6" required>
+                </div>
+            </div>
+
+            <!-- 9. Education -->
+            <div class="form-group">
+                <label>
+                    <span class="hi">शैक्षणिक योग्यता <span class="required">*</span></span>
+                    <span class="en">Educational Qualification <span class="required">*</span></span>
+                </label>
+                <select id="education" required>
+                    <option value="">-- चुनें / Select --</option>
+                    <option value="10वीं से कम">10वीं से कम / Below 10th</option>
+                    <option value="10वीं उत्तीर्ण">10वीं उत्तीर्ण / 10th Pass</option>
+                    <option value="12वीं उत्तीर्ण">12वीं उत्तीर्ण / 12th Pass</option>
+                    <option value="स्नातकोत्तर">स्नातकोत्तर / Post Graduate</option>
+                    <option value="व्यावसायिक / तकनीकी">व्यावसायिक / तकनीकी / Professional</option>
+                    <option value="अन्य">अन्य / Other</option>
+                </select>
+            </div>
+
+            <!-- 10. Profession -->
+            <div class="form-group">
+                <label>
+                    <span class="hi">व्यवसाय / पेशा</span>
+                    <span class="en">Profession / Occupation</span>
+                </label>
+                <input type="text" id="profession" placeholder="जैसे: शिक्षक, डॉक्टर, छात्र... / Teacher, Doctor, Student...">
+            </div>
+
+            <!-- 11. Skills (Multiple Select) -->
+            <div class="form-group">
+                <label>
+                    <span class="hi">आपके पास कौन-कौन से कौशल हैं? <span class="required">*</span></span>
+                    <span class="en">What skills do you have? <span class="required">*</span></span>
+                    <span class="hint">(Ctrl+Click से एक से अधिक चुनें / Ctrl+Click to select multiple)</span>
+                </label>
+                <select id="skills" multiple size="4" required>
+                    <option value="शिक्षण / Teaching">शिक्षण / Teaching</option>
+                    <option value="लेखन / Writing">लेखन / Writing</option>
+                    <option value="फंड जुटाना / Fundraising">फंड जुटाना / Fundraising</option>
+                    <option value="स्वास्थ्य सेवा / Healthcare">स्वास्थ्य सेवा / Healthcare</option>
+                    <option value="सामाजिक मीडिया / Social Media">सामाजिक मीडिया / Social Media</option>
+                    <option value="कंप्यूटर / Computer Skills">कंप्यूटर / Computer Skills</option>
+                    <option value="फोटोग्राफी / Photography">फोटोग्राफी / Photography</option>
+                    <option value="वकालत / Advocacy">वकालत / Advocacy</option>
+                    <option value="अन्य / Other">अन्य / Other</option>
+                </select>
+            </div>
+
+            <!-- 12. Languages (Multiple Select) -->
+            <div class="form-group">
+                <label>
+                    <span class="hi">आप किन भाषाओं में सहज हैं? <span class="required">*</span></span>
+                    <span class="en">Which languages are you comfortable with? <span class="required">*</span></span>
+                    <span class="hint">(Ctrl+Click से एक से अधिक चुनें / Ctrl+Click to select multiple)</span>
+                </label>
+                <select id="languages" multiple size="4" required>
+                    <option value="हिन्दी">हिन्दी / Hindi</option>
+                    <option value="English">English</option>
+                    <option value="उर्दू">उर्दू / Urdu</option>
+                    <option value="मैथिली">मैथिली / Maithili</option>
+                    <option value="भोजपुरी">भोजपुरी / Bhojpuri</option>
+                    <option value="बांग्ला">बांग्ला / Bengali</option>
+                    <option value="मराठी">मराठी / Marathi</option>
+                    <option value="अन्य / Other">अन्य / Other</option>
+                </select>
+            </div>
+
+            <!-- 13. Work Areas (Multiple Select) -->
+            <div class="form-group">
+                <label>
+                    <span class="hi">आप "साथ चले हम" के किन क्षेत्रों में सहयोग करना चाहते हैं? <span class="required">*</span></span>
+                    <span class="en">Which areas of work would you like to contribute to? <span class="required">*</span></span>
+                    <span class="hint">(Ctrl+Click से एक से अधिक चुनें / Ctrl+Click to select multiple)</span>
+                </label>
+                <select id="workAreas" multiple size="5" required>
+                    <option value="शिक्षा / Education">📚 शिक्षा / Education</option>
+                    <option value="स्वास्थ्य / Health">🏥 स्वास्थ्य / Health</option>
+                    <option value="पर्यावरण / Environment">🌳 पर्यावरण / Environment</option>
+                    <option value="महिला सशक्तिकरण / Women Empowerment">💪 महिला सशक्तिकरण</option>
+                    <option value="बाल अधिकार / Child Rights">👶 बाल अधिकार / Child Rights</option>
+                    <option value="फंड जुटाना / Fundraising">💰 फंड जुटाना / Fundraising</option>
+                    <option value="कानूनी सहायता / Legal Aid">⚖️ कानूनी सहायता / Legal Aid</option>
+                    <option value="डिजिटल साक्षरता / Digital Literacy">💻 डिजिटल साक्षरता</option>
+                    <option value="अन्य / Other">🔹 अन्य / Other</option>
+                </select>
+            </div>
+
+            <!-- 14. Time + Contribution Type -->
+            <div class="row-2">
+                <div class="form-group">
+                    <label>
+                        <span class="hi">सप्ताह में समय <span class="required">*</span></span>
+                        <span class="en">Time per week <span class="required">*</span></span>
+                    </label>
+                    <select id="timeCommitment" required>
+                        <option value="">-- चुनें / Select --</option>
+                        <option value="1-2 घंटे">1-2 घंटे / hours</option>
+                        <option value="3-5 घंटे">3-5 घंटे / hours</option>
+                        <option value="6-10 घंटे">6-10 घंटे / hours</option>
+                        <option value="10+ घंटे">10+ घंटे / hours</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <span class="hi">योगदान का प्रकार <span class="required">*</span></span>
+                        <span class="en">Contribution Type <span class="required">*</span></span>
+                    </label>
+                    <select id="contributionType" required>
+                        <option value="">-- चुनें / Select --</option>
+                        <option value="ऑनलाइन">ऑनलाइन / Online</option>
+                        <option value="ऑफलाइन">ऑफलाइन / Offline</option>
+                        <option value="दोनों">दोनों / Both</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- 15. How did you hear -->
+            <div class="form-group">
+                <label>
+                    <span class="hi">आपको "साथ चले हम" के बारे में कैसे पता चला? <span class="required">*</span></span>
+                    <span class="en">How did you hear about "Sath Chale Hum"? <span class="required">*</span></span>
+                </label>
+                <select id="heardFrom" required>
+                    <option value="">-- चुनें / Select --</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="WhatsApp">WhatsApp</option>
+                    <option value="YouTube">YouTube</option>
+                    <option value="समाचार पत्र / Newspaper">समाचार पत्र / Newspaper</option>
+                    <option value="मित्र / Friend">मित्र / Friend</option>
+                    <option value="कार्यक्रम / Event">कार्यक्रम / Event</option>
+                    <option value="स्कूल / कॉलेज / School/College">स्कूल / कॉलेज / School/College</option>
+                    <option value="अन्य / Other">अन्य / Other</option>
+                </select>
+            </div>
+
+            <!-- 16. Previous Experience -->
+            <div class="form-group">
+                <label>
+                    <span class="hi">क्या आपको किसी NGO में पहले का अनुभव है? <span class="required">*</span></span>
+                    <span class="en">Previous NGO experience? <span class="required">*</span></span>
+                </label>
+                <select id="previousExperience" required onchange="toggleExperience()">
+                    <option value="">-- चुनें / Select --</option>
+                    <option value="हाँ">हाँ / Yes</option>
+                    <option value="नहीं">नहीं / No</option>
+                </select>
+            </div>
+
+            <!-- Experience Details (hidden) -->
+            <div id="expDetails" class="hide" style="background:#f8faff; padding:15px; border-radius:12px; margin-bottom:16px; border:1px solid #dce1e8;">
+                <div class="form-group">
+                    <label>
+                        <span class="hi">संस्था का नाम</span>
+                        <span class="en">Organization Name</span>
+                    </label>
+                    <input type="text" id="orgName" placeholder="संस्था का नाम / Organization name">
+                </div>
+                <div class="form-group">
+                    <label>
+                        <span class="hi">आपकी भूमिका</span>
+                        <span class="en">Your Role</span>
+                    </label>
+                    <input type="text" id="role" placeholder="भूमिका / Role">
+                </div>
+                <div class="form-group">
+                    <label>
+                        <span class="hi">कितने समय तक जुड़े रहे?</span>
+                        <span class="en">Duration</span>
+                    </label>
+                    <input type="text" id="duration" placeholder="जैसे: 2 साल / e.g., 2 years">
+                </div>
+            </div>
+
+            <!-- 17. Describe Experience -->
+            <div class="form-group">
+                <label>
+                    <span class="hi">अपने सामाजिक कार्य के अनुभव के बारे में बताएं।</span>
+                    <span class="en">Describe your social work experience.</span>
+                </label>
+                <textarea id="experienceDesc" rows="2" placeholder="संक्षेप में अनुभव लिखें / Briefly describe your experience..."></textarea>
+            </div>
+
+            <!-- 18. Emergency Contact -->
+            <div class="section-title">
+                <span class="hi">🚨 आपातकालीन संपर्क / Emergency Contact</span>
+                <span class="en">🚨 Emergency Contact</span>
+            </div>
+            <div class="row-2">
+                <div class="form-group">
+                    <label>
+                        <span class="hi">संपर्क व्यक्ति का नाम <span class="required">*</span></span>
+                        <span class="en">Contact Person Name <span class="required">*</span></span>
+                    </label>
+                    <input type="text" id="emergencyName" placeholder="पूरा नाम / Full name" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <span class="hi">संपर्क नंबर <span class="required">*</span></span>
+                        <span class="en">Contact Number <span class="required">*</span></span>
+                    </label>
+                    <input type="tel" id="emergencyPhone" placeholder="9876543210" maxlength="10" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>
+                    <span class="hi">आपका उनसे संबंध <span class="required">*</span></span>
+                    <span class="en">Relationship with You <span class="required">*</span></span>
+                </label>
+                <input type="text" id="relationship" placeholder="जैसे: पिता, माता, भाई / Father, Mother, Brother..." required>
+            </div>
+
+            <!-- 19. Declaration -->
+            <div class="form-group">
+                <label>
+                    <span class="hi">घोषणा एवं सहमति <span class="required">*</span></span>
+                    <span class="en">Declaration & Consent <span class="required">*</span></span>
+                </label>
+                <select id="declaration" required>
+                    <option value="">-- चुनें / Select --</option>
+                    <option value="सहमत">मैं सहमत हूँ / I Agree</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-submit" id="submitBtn">
+                <span class="hi">✅ पंजीकरण करें</span>
+                <span class="en">✅ Register Now</span>
+            </button>
+
+            <!-- Message Box -->
+            <div id="messageBox" class="message"></div>
+
+        </form>
+
+        <div class="join-note">
+            🔒 आपकी जानकारी सुरक्षित है / Your information is secure • 
+            📊 LocalStorage में सेव होगी / Saved to LocalStorage
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================
+     CTA
+========================================================= -->
+
+<section class="cta">
+
+    <div class="cta-inner">
+
+
+        <div>
+
+            <h2>
+                बदलाव की इस यात्रा में साथ चलें
+            </h2>
+
+            <p>
+                Together, let's work for a better society.
+            </p>
+
+        </div>
+
+
+        <div class="cta-buttons">
+
+            <a
+                href="#registrationForm"
+                class="btn btn-green"
+            >
+                🟢 Join Us
+            </a>
+
+
+            <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScG-TEGF_xYakoTV7FBTVFpQiYr2KmP3vmuv2ilzCHVmV689Q/viewform?usp=header"
+                class="btn btn-orange"
+                target="_blank"
+                rel="noopener"
+            >
+                🟠 Donate Us
+            </a>
+
+
+            <a
+                href="download.html"
+                class="btn btn-white"
+            >
+                ⚪ Download
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div class="footer-main">
+
+
+        <!-- ORGANIZATION -->
+
+        <div>
+
+            <img
+                class="footer-logo"
+                src="sath_chale_ham_logo_HD-1.png"
+                alt="Original Sath Chale Hum Foundation Logo"
+            >
+
+
+            <div class="footer-brand-title">
+
+                Sath Chale Hum —
+                <span>Foundation</span>
+
+            </div>
+
+
+            <p class="footer-tagline">
+                साथ चले हम, बदलाव की ओर
+            </p>
+
+
+            <!-- SOCIAL -->
+
+            <div class="social-icons">
+
+
+                <!-- FACEBOOK -->
+
+                <a
+                    class="social-icon facebook-icon"
+                    href="https://www.facebook.com/share/1DekhrWVDh/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Facebook"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M14 8h3V4h-3c-3.3 0-5 1.9-5 5v3H6v4h3v4h4v-4h3l1-4h-4V9c0-.7.3-1 1-1z"
+                        />
+
+                    </svg>
+
+                </a>
+
+
+                <!-- INSTAGRAM -->
+
+                <a
+                    class="social-icon instagram-icon"
+                    href="https://www.instagram.com/sathchaleham?igsi=MWFzanhuYjFpcGhrZg=="
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Instagram"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5zM17.5 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                        />
+
+                    </svg>
+
+                </a>
+
+
+                <!-- YOUTUBE -->
+
+                <a
+                    class="social-icon youtube-icon"
+                    href="https://youtube.com/@sathchaleham?si=kc1xt7w_4tuItYub"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="YouTube"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M23 12s0-3.4-.4-5a2.7 2.7 0 0 0-1.9-1.9C18.9 4.7 12 4.7 12 4.7s-6.9 0-8.7.4A2.7 2.7 0 0 0 1.4 7C1 8.6 1 12 1 12s0 3.4.4 5a2.7 2.7 0 0 0 1.9 1.9c1.8.4 8.7.4 8.7.4s6.9 0 8.7-.4a2.7 2.7 0 0 0 1.9-1.9c.4-1.6.4-5 .4-5zM10 15.5v-7l6 3.5-6 3.5z"
+                        />
+
+                    </svg>
+
+                </a>
+
+
+                <!-- EMAIL -->
+
+                <a
+                    class="social-icon email-icon"
+                    href="mailto:sathchaleham@gmail.com"
+                    aria-label="Email"
+                >
+
+                    <svg viewBox="0 0 24 24">
+
+                        <path
+                            fill="currentColor"
+                            d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm0 2v.5l9 5.6 9-5.6V7H3zm18 10V9.9l-8.5 5.3a1 1 0 0 1-1 0L3 9.9V17h18z"
+                        />
+
+                    </svg>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div>
+
+            <h3>
+                Contact Us
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="mailto:sathchaleham@gmail.com">
+                        📧 sathchaleham@gmail.com
+                    </a>
+                </li>
+
+                <li>
+                    <a href="tel:+917011893028">
+                        ☎️ +91 7011893028
+                    </a>
+                </li>
+
+                <li>
+                    📍 Saharsa, Bihar, India
+                </li>
+
+            </ul>
+
+
+            <!-- LEGAL -->
+
+            <div class="footer-legal">
+
+                <h3>
+                    Legal
+                </h3>
+
+                <ul>
+
+                    <li>
+                        <a href="privacy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="terms.html">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+
+        <div>
+
+            <h3>
+                Quick Links
+            </h3>
+
+            <ul>
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="team.html">
+                        Our Team
+                    </a>
+                </li>
+
+                <li>
+                    <a href="work.html">
+                        Our Work
+                    </a>
+                </li>
+
+                <li>
+                    <a href="donate.html">
+                        Donate Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="join.html">
+                        Join Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="download.html">
+                        Download
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- EMPTY FOURTH COLUMN -->
+
+        <div></div>
+
+
+    </div>
+
+
+    <!-- FOOTER BOTTOM -->
+
+    <div class="footer-bottom">
+
+        © 2026 Sath Chale Hum Foundation. All Rights Reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- ========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+function toggleMenu(){
+
+    const nav =
+        document.getElementById("navLinks");
+
+    nav.classList.toggle("active");
+
+}
+
+
+/* CLOSE MOBILE MENU */
+
+document
+    .querySelectorAll(".nav-links a")
+    .forEach(function(link){
+
+        link.addEventListener(
+            "click",
+            function(){
+
+                document
+                    .getElementById("navLinks")
+                    .classList
+                    .remove("active");
+
+            }
+        );
+
+    });
+
+
+/* =========================================================
+   LANGUAGE TOGGLE
+========================================================= */
+
+let currentLang = 'hi';
+
+function setLang(lang) {
+    currentLang = lang;
+    
+    document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+    if (lang === 'hi') {
+        document.getElementById('langHi').classList.add('active');
+    } else {
+        document.getElementById('langEn').classList.add('active');
+    }
+
+    document.querySelectorAll('.hi').forEach(el => el.style.display = lang === 'hi' ? 'inline' : 'none');
+    document.querySelectorAll('.en').forEach(el => el.style.display = lang === 'en' ? 'inline' : 'none');
+
+    const btn = document.getElementById('submitBtn');
+    if (btn) {
+        btn.querySelector('.hi').style.display = lang === 'hi' ? 'inline' : 'none';
+        btn.querySelector('.en').style.display = lang === 'en' ? 'inline' : 'none';
+    }
+}
+
+// Default: Show Hindi
+document.querySelectorAll('.en').forEach(el => el.style.display = 'none');
+
+
+/* =========================================================
+   TOGGLE PREVIOUS EXPERIENCE
+========================================================= */
+
+function toggleExperience() {
+    const val = document.getElementById('previousExperience').value;
+    document.getElementById('expDetails').style.display = val === 'हाँ' ? 'block' : 'none';
+}
+
+
+/* =========================================================
+   FORM SUBMIT
+========================================================= */
+
+function submitForm(e) {
+    e.preventDefault();
+    
+    const btn = document.getElementById('submitBtn');
+    const msgBox = document.getElementById('messageBox');
+
+    // Get form values
+    const getSelectMultiple = (id) => {
+        const sel = document.getElementById(id);
+        return Array.from(sel.selectedOptions).map(o => o.value).join(', ');
+    };
+
+    const data = {
+        membershipType: document.getElementById('membershipType').value,
+        whyJoin: document.getElementById('whyJoin').value.trim(),
+        firstName: document.getElementById('firstName').value.trim(),
+        middleName: document.getElementById('middleName').value.trim(),
+        lastName: document.getElementById('lastName').value.trim(),
+        guardianName: document.getElementById('guardianName').value.trim(),
+        dob: document.getElementById('dob').value,
+        gender: document.getElementById('gender').value,
+        mobile: document.getElementById('mobile').value.trim(),
+        email: document.getElementById('email').value.trim(),
+        address: document.getElementById('address').value.trim(),
+        district: document.getElementById('district').value.trim(),
+        state: document.getElementById('state').value,
+        pincode: document.getElementById('pincode').value.trim(),
+        education: document.getElementById('education').value,
+        profession: document.getElementById('profession').value.trim(),
+        skills: getSelectMultiple('skills'),
+        languages: getSelectMultiple('languages'),
+        workAreas: getSelectMultiple('workAreas'),
+        timeCommitment: document.getElementById('timeCommitment').value,
+        contributionType: document.getElementById('contributionType').value,
+        heardFrom: document.getElementById('heardFrom').value,
+        previousExperience: document.getElementById('previousExperience').value,
+        orgName: document.getElementById('orgName').value.trim(),
+        role: document.getElementById('role').value.trim(),
+        duration: document.getElementById('duration').value.trim(),
+        experienceDesc: document.getElementById('experienceDesc').value.trim(),
+        emergencyName: document.getElementById('emergencyName').value.trim(),
+        emergencyPhone: document.getElementById('emergencyPhone').value.trim(),
+        relationship: document.getElementById('relationship').value.trim(),
+        declaration: document.getElementById('declaration').value,
+        timestamp: new Date().toLocaleString('hi-IN')
+    };
+
+    // Validation
+    const required = ['membershipType', 'whyJoin', 'firstName', 'lastName', 'guardianName', 
+                      'dob', 'gender', 'mobile', 'address', 'district', 'state', 'pincode', 
+                      'education', 'skills', 'languages', 'workAreas', 'timeCommitment', 
+                      'contributionType', 'heardFrom', 'previousExperience', 
+                      'emergencyName', 'emergencyPhone', 'relationship', 'declaration'];
+    
+    for (let key of required) {
+        if (!data[key]) {
+            showMessage(
+                currentLang === 'hi' 
+                    ? 'कृपया सभी आवश्यक (*) फील्ड भरें।' 
+                    : 'Please fill all required fields.',
+                'error'
+            );
+            return;
+        }
+    }
+
+    // Validate mobile (10 digits)
+    if (!/^[0-9]{10}$/.test(data.mobile)) {
+        showMessage(
+            currentLang === 'hi' 
+                ? 'मोबाइल नंबर 10 अंकों का होना चाहिए।' 
+                : 'Mobile number must be 10 digits.',
+            'error'
+        );
+        return;
+    }
+
+    // Validate pincode (6 digits)
+    if (!/^[0-9]{6}$/.test(data.pincode)) {
+        showMessage(
+            currentLang === 'hi' 
+                ? 'पिन कोड 6 अंकों का होना चाहिए।' 
+                : 'PIN code must be 6 digits.',
+            'error'
+        );
+        return;
+    }
+
+    // Save to LocalStorage
+    try {
+        btn.disabled = true;
+        btn.textContent = currentLang === 'hi' ? '⏳ भेज रहे हैं...' : '⏳ Sending...';
+        showMessage(
+            currentLang === 'hi' 
+                ? 'डेटा सेव हो रहा है...' 
+                : 'Saving data...',
+            'loading'
+        );
+
+        // Save to localStorage
+        let members = JSON.parse(localStorage.getItem('sathChaleHumMembers')) || [];
+        members.push(data);
+        localStorage.setItem('sathChaleHumMembers', JSON.stringify(members));
+
+        showMessage(
+            currentLang === 'hi' 
+                ? '✅ पंजीकरण सफल! धन्यवाद, आपका डेटा सुरक्षित हो गया है।' 
+                : '✅ Registration successful! Thank you, your data is saved.',
+            'success'
+        );
+        
+        // Reset form
+        document.getElementById('registrationForm').reset();
+        document.getElementById('expDetails').style.display = 'none';
+
+    } catch (error) {
+        showMessage(
+            currentLang === 'hi' 
+                ? '⚠️ कुछ गलत हो गया। कृपया पुनः प्रयास करें।' 
+                : '⚠️ Something went wrong. Please try again.',
+            'error'
+        );
+    } finally {
+        btn.disabled = false;
+        btn.innerHTML = currentLang === 'hi' 
+            ? '<span class="hi">✅ पंजीकरण करें</span><span class="en">✅ Register Now</span>' 
+            : '<span class="hi">✅ पंजीकरण करें</span><span class="en">✅ Register Now</span>';
+    }
+}
+
+
+/* =========================================================
+   SHOW MESSAGE
+========================================================= */
+
+function showMessage(text, type) {
+    const box = document.getElementById('messageBox');
+    box.textContent = text;
+    box.className = 'message ' + type;
+    
+    clearTimeout(box._timeout);
+    box._timeout = setTimeout(() => {
+        box.className = 'message';
+    }, 6000);
+}
+
+</script>
+
+
+</body>
+</html>
