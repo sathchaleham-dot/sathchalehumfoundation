@@ -631,7 +631,7 @@
       top:0; left:0; right:0; height:1px;
       background:linear-gradient(90deg,transparent,rgba(251,191,36,.6),transparent); }
     .footer-grid{ display:grid;
-      grid-template-columns:1fr 1fr 1fr 1fr 1.8fr;
+      grid-template-columns:repeat(5,1fr);
       gap:32px; padding-bottom:60px; position:relative; z-index:2; }
     .footer-brand-head{ display:flex; align-items:center;
       gap:10px; margin-bottom:20px; }
@@ -706,16 +706,8 @@
       font-size:.7rem; margin-bottom:2px;
       letter-spacing:.3px; text-transform:uppercase; }
     .contact-info li a{ color:#93C5FD; }
-
-    /* CONTACT + NEWSLETTER SIDE-BY-SIDE */
-    .contact-newsletter-wrap{
-      display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:18px;
-      align-items:start;
-    }
-    .footer-newsletter{ margin-top:0; padding-top:0;
-      border-top:none; }
+    .footer-newsletter{ margin-top:6px; padding-top:16px;
+      border-top:1px solid rgba(59,130,246,.2); }
     .footer-newsletter label{ display:block; color:#93C5FD;
       font-size:.68rem; font-weight:800; letter-spacing:.5px;
       text-transform:uppercase; margin-bottom:10px; }
@@ -772,10 +764,7 @@
     @media(max-width:1200px){
       .desktop-nav > a{ padding:10px 7px; font-size:.72rem; }
       .donate-nav{ padding:10px 13px!important; }
-      .footer-grid{ grid-template-columns:1fr 1fr 1fr; gap:32px; }
-      .footer-grid > div:nth-child(4){ display:none; }
-      .contact-newsletter-wrap{ grid-template-columns:1fr;
-        gap:14px; }
+      .footer-grid{ grid-template-columns:repeat(3,1fr); gap:32px; }
       .upcoming-grid{ grid-template-columns:repeat(2,1fr); }
     }
     @media(max-width:1000px){
@@ -797,12 +786,7 @@
       .contact-grid{ grid-template-columns:1fr; }
       .daily-boxes{ grid-template-columns:repeat(2,1fr); }
       .footer-grid{ grid-template-columns:1fr 1fr; gap:36px 24px; }
-      .footer-grid > div:nth-child(4){ display:block; }
       .downloads-home-grid{ grid-template-columns:1fr; }
-      .contact-newsletter-wrap{ grid-template-columns:1fr;
-        gap:14px; }
-      .footer-newsletter{ margin-top:6px; padding-top:14px;
-        border-top:1px solid rgba(59,130,246,.2); }
     }
     @media(max-width:700px){
       .section{ padding:70px 0; }
@@ -1784,53 +1768,48 @@
         </ul>
       </div>
 
-      <div class="footer-contact-col">
+      <div>
         <h4 class="footer-heading">Contact Us | संपर्क</h4>
+        <ul class="contact-info">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Address | पता</strong>
+              भारतीय नगर, वार्ड नं. 26/35, सहरसा, बिहार – 852201
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Helpline | हेल्पलाइन</strong>
+              <a href="tel:+917011893028" style="color:#93C5FD;">+91 7011893028</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Email | ईमेल</strong>
+              <a href="mailto:sathchaleham@gmail.com" style="color:#93C5FD;">sathchaleham@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <strong>Office Hours | समय</strong>
+              सोम – शनि · 10:00 AM – 6:00 PM
+            </div>
+          </li>
+        </ul>
 
-        <div class="contact-newsletter-wrap">
-
-          <ul class="contact-info">
-            <li>
-              <i class="fa-solid fa-location-dot"></i>
-              <div>
-                <strong>Address | पता</strong>
-                भारतीय नगर, वार्ड नं. 26/35, सहरसा, बिहार – 852201
-              </div>
-            </li>
-            <li>
-              <i class="fa-solid fa-phone"></i>
-              <div>
-                <strong>Helpline | हेल्पलाइन</strong>
-                <a href="tel:+917011893028" style="color:#93C5FD;">+91 7011893028</a>
-              </div>
-            </li>
-            <li>
-              <i class="fa-solid fa-envelope"></i>
-              <div>
-                <strong>Email | ईमेल</strong>
-                <a href="mailto:sathchaleham@gmail.com" style="color:#93C5FD;">sathchaleham@gmail.com</a>
-              </div>
-            </li>
-            <li>
-              <i class="fa-solid fa-clock"></i>
-              <div>
-                <strong>Office Hours | समय</strong>
-                सोम – शनि · 10:00 AM – 6:00 PM
-              </div>
-            </li>
-          </ul>
-
-          <div class="footer-newsletter">
-            <label>Newsletter | न्यूज़लेटर</label>
-            <form class="newsletter-form"
-                  onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
-              <input type="email" placeholder="your@email.com" required>
-              <button type="submit" aria-label="Subscribe">
-                <i class="fa-solid fa-paper-plane"></i>
-              </button>
-            </form>
-          </div>
-
+        <div class="footer-newsletter">
+          <label>Newsletter | न्यूज़लेटर</label>
+          <form class="newsletter-form"
+                onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
+            <input type="email" placeholder="your@email.com" required>
+            <button type="submit" aria-label="Subscribe">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
         </div>
       </div>
 
