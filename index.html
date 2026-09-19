@@ -8,53 +8,34 @@
   <meta name="description" content="साथ चले हम फाउंडेशन – साथ चले हम, बदलाव की ओर। शिक्षा, स्वास्थ्य, महिला सशक्तिकरण एवं समाज कल्याण हेतु कार्यरत सामाजिक संस्था।">
   <meta name="theme-color" content="#0A2540">
 
+  <meta property="og:title" content="साथ चले हम फाउंडेशन | Sath Chale Hum Foundation">
+  <meta property="og:description" content="शिक्षा, स्वास्थ्य, महिला सशक्तिकरण एवं समाज कल्याण हेतु कार्यरत सामाजिक संस्था।">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="sath_chale_ham_logo_HD-1.png">
+  <link rel="canonical" href="https://sathchaleham.org/">
+  <link rel="icon" type="image/png" href="sath_chale_ham_logo_HD-1.png">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <style>
-
-    /* =========================================================
-       ROOT
-    ========================================================= */
-
     *{ margin:0; padding:0; box-sizing:border-box; }
     html{ scroll-behavior:smooth; overflow-x:hidden; }
 
     :root{
-      --navy:#0A2540;
-      --navy-2:#0F2E4F;
-      --blue:#1E40AF;
-      --blue-2:#2563EB;
-      --blue-light:#3B82F6;
-      --blue-pale:#EFF6FF;
-      --blue-soft:#DBEAFE;
-
-      --gold:#FBBF24;
-      --gold-dark:#D97706;
-      --gold-pale:#FEF3C7;
-
-      --red:#DC2626;
-      --red-dark:#991B1B;
-      --green:#059669;
-
-      --white:#FFFFFF;
-      --text:#0F172A;
-      --text-soft:#475569;
-      --muted:#64748B;
-      --border:#E2E8F0;
-      --bg:#F8FAFC;
+      --navy:#0A2540; --navy-2:#0F2E4F;
+      --blue:#1E40AF; --blue-2:#2563EB; --blue-light:#3B82F6;
+      --blue-pale:#EFF6FF; --blue-soft:#DBEAFE;
+      --gold:#FBBF24; --gold-dark:#D97706; --gold-pale:#FEF3C7;
+      --red:#DC2626; --red-dark:#991B1B; --green:#059669;
+      --white:#FFFFFF; --text:#0F172A; --text-soft:#475569;
+      --muted:#64748B; --border:#E2E8F0; --bg:#F8FAFC;
     }
 
-    body{
-      font-family:"Poppins","Tiro Devanagari Hindi",sans-serif;
-      background:var(--bg);
-      color:var(--text);
-      overflow-x:hidden;
-      line-height:1.6;
-    }
-
+    body{ font-family:"Poppins","Tiro Devanagari Hindi",sans-serif;
+      background:var(--bg); color:var(--text); overflow-x:hidden; line-height:1.6; }
     a{ text-decoration:none; color:inherit; }
     img{ max-width:100%; display:block; }
     button{ font-family:inherit; cursor:pointer; border:none; }
@@ -65,1801 +46,710 @@
     .section{ padding:90px 0; position:relative; overflow:hidden; }
     .section-title{ text-align:center; margin-bottom:55px; }
     .section-title .small-title{
-      display:inline-block;
-      color:var(--blue);
-      font-size:.9rem; font-weight:800;
-      letter-spacing:2.5px; text-transform:uppercase;
-      margin-bottom:12px;
-    }
-    .section-title h2{
-      font-size:clamp(1.9rem,3.8vw,3rem);
-      line-height:1.2; font-weight:900;
-      color:var(--navy);
-    }
+      display:inline-block; color:var(--blue); font-size:.9rem; font-weight:800;
+      letter-spacing:2.5px; text-transform:uppercase; margin-bottom:12px; }
+    .section-title h2{ font-size:clamp(1.9rem,3.8vw,3rem); line-height:1.2;
+      font-weight:900; color:var(--navy); }
     .section-title h2 span{ color:var(--blue-2); }
-    .section-title p{
-      max-width:800px; margin:18px auto 0;
-      color:var(--muted); line-height:1.8; font-size:1rem;
-    }
+    .section-title p{ max-width:800px; margin:18px auto 0;
+      color:var(--muted); line-height:1.8; font-size:1rem; }
 
-    /* =========================================================
-       HEADER
-    ========================================================= */
-
+    /* HEADER */
     .site-header{
       position:fixed; left:0; top:0; width:100%; z-index:9999;
       background:linear-gradient(135deg,#0A2540 0%,#0F2E4F 50%,#0A2540 100%);
-      backdrop-filter:blur(20px);
-      -webkit-backdrop-filter:blur(20px);
+      backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
       border-bottom:1px solid rgba(59,130,246,.15);
       box-shadow:0 8px 32px rgba(10,37,64,.18);
     }
-
-    .header-inner{
-      min-height:92px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-    }
-
-    .brand{
-      display:flex; align-items:center; gap:14px;
-      min-width:0; flex-shrink:0;
-    }
-
-    .logo-box{
-      width:66px;
-      height:66px;
-      border-radius:16px;
+    .header-inner{ min-height:92px; display:flex; align-items:center;
+      justify-content:space-between; gap:20px; }
+    .brand{ display:flex; align-items:center; gap:14px;
+      min-width:0; flex-shrink:0; }
+    .logo-box{ width:66px; height:66px; border-radius:16px;
       background:linear-gradient(145deg,#FFFFFF,#EFF6FF);
-      display:grid;
-      place-items:center;
-      padding:3px;
-      box-shadow:
-        0 8px 24px rgba(59,130,246,.35),
+      display:grid; place-items:center; padding:4px;
+      box-shadow:0 8px 24px rgba(59,130,246,.35),
         inset 0 2px 0 rgba(255,255,255,.9);
       border:2px solid rgba(251,191,36,.4);
-      transition:.35s ease;
-      flex-shrink:0;
-      overflow:hidden;
-    }
-
-    .logo-box:hover{
-      transform:translateY(-2px) rotate(-3deg);
-      box-shadow:
-        0 14px 34px rgba(59,130,246,.5),
-        inset 0 2px 0 rgba(255,255,255,.9);
-      border-color:var(--gold);
-    }
-
-    .logo-box img{
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      transform:scale(1.15);
-    }
-
+      transition:.35s ease; flex-shrink:0; overflow:hidden;
+      position:relative; }
+    .logo-box:hover{ transform:translateY(-2px) rotate(-3deg);
+      box-shadow:0 14px 34px rgba(59,130,246,.5),
+        inset 0 2px 0 rgba(255,255,255,.9); border-color:var(--gold); }
+    .logo-box img{ width:100%; height:100%; object-fit:contain;
+      display:block; }
     .brand-text{ min-width:0; }
-
-    .brand-name{
-      color:#fff;
-      font-size:clamp(1.2rem,2.4vw,1.7rem);
-      font-weight:900;
-      line-height:1.1;
-      white-space:nowrap;
-      letter-spacing:-.5px;
+    .brand-name{ color:#fff;
+      font-size:clamp(1.2rem,2.4vw,1.7rem); font-weight:900;
+      line-height:1.1; white-space:nowrap; letter-spacing:-.5px;
       font-family:"Tiro Devanagari Hindi",serif;
-      text-shadow:0 2px 10px rgba(0,0,0,.3);
-    }
+      text-shadow:0 2px 10px rgba(0,0,0,.3); }
+    .brand-name .gold{ color:var(--gold); font-weight:900; }
+    .brand-tagline{ color:#93C5FD; font-size:.7rem; font-weight:600;
+      margin-top:3px; white-space:nowrap; letter-spacing:.4px; }
 
-    .brand-name .gold{
-      color:var(--gold);
-      font-weight:900;
-    }
+    .desktop-nav{ display:flex; align-items:center; gap:2px;
+      flex-wrap:nowrap; }
+    .desktop-nav > a{ color:#E0F2FE; font-size:.78rem; font-weight:700;
+      padding:11px 10px; border-radius:10px; transition:.25s ease;
+      white-space:nowrap; position:relative; }
+    .desktop-nav > a:hover{ color:var(--gold);
+      background:rgba(59,130,246,.15); transform:translateY(-1px); }
+    .desktop-nav > a.active{ color:var(--gold);
+      background:rgba(59,130,246,.2); }
+    .desktop-nav > a.active::after{ content:""; position:absolute;
+      bottom:4px; left:50%; transform:translateX(-50%);
+      width:20px; height:2px; border-radius:2px; background:var(--gold); }
 
-    .brand-tagline{
-      color:#93C5FD;
-      font-size:.7rem;
-      font-weight:600;
-      margin-top:3px;
-      white-space:nowrap;
-      letter-spacing:.4px;
-    }
-
-    .desktop-nav{
-      display:flex; align-items:center; gap:2px;
-      flex-wrap:nowrap;
-    }
-
-    .desktop-nav > a{
-      color:#E0F2FE;
-      font-size:.78rem;
-      font-weight:700;
-      padding:11px 10px;
-      border-radius:10px;
-      transition:.25s ease;
-      white-space:nowrap;
-      position:relative;
-    }
-
-    .desktop-nav > a:hover{
-      color:var(--gold);
-      background:rgba(59,130,246,.15);
-      transform:translateY(-1px);
-    }
-
-    .desktop-nav > a.active{
-      color:var(--gold);
-      background:rgba(59,130,246,.2);
-    }
-
-    .desktop-nav > a.active::after{
-      content:"";
-      position:absolute;
-      bottom:4px; left:50%;
-      transform:translateX(-50%);
-      width:20px; height:2px;
-      border-radius:2px;
-      background:var(--gold);
-    }
-
-    .donate-nav{
-      display:inline-flex; align-items:center; gap:7px;
+    .donate-nav{ display:inline-flex; align-items:center; gap:7px;
       background:linear-gradient(135deg,#DC2626,#991B1B)!important;
-      padding:11px 17px!important;
-      color:#fff!important;
-      font-weight:900!important;
-      border-radius:11px!important;
-      box-shadow:
-        0 6px 20px rgba(220,38,38,.45),
+      padding:11px 17px!important; color:#fff!important;
+      font-weight:900!important; border-radius:11px!important;
+      box-shadow:0 6px 20px rgba(220,38,38,.45),
         inset 0 1px 0 rgba(255,255,255,.2);
-      animation:pulseDonate 2s infinite;
-      margin-left:6px;
-      letter-spacing:.3px;
-    }
-
-    .donate-nav:hover{
-      color:#fff!important;
+      animation:pulseDonate 2s infinite; margin-left:6px;
+      letter-spacing:.3px; }
+    .donate-nav:hover{ color:#fff!important;
       background:linear-gradient(135deg,#EF4444,#DC2626)!important;
-      transform:translateY(-2px)!important;
-    }
-
+      transform:translateY(-2px)!important; }
     @keyframes pulseDonate{
-      0%,100%{
-        transform:scale(1);
-        box-shadow:0 6px 20px rgba(220,38,38,.4), inset 0 1px 0 rgba(255,255,255,.2);
-      }
-      50%{
-        transform:scale(1.04);
-        box-shadow:0 10px 30px rgba(220,38,38,.7), inset 0 1px 0 rgba(255,255,255,.2);
-      }
-    }
+      0%,100%{ transform:scale(1);
+        box-shadow:0 6px 20px rgba(220,38,38,.4),
+          inset 0 1px 0 rgba(255,255,255,.2); }
+      50%{ transform:scale(1.04);
+        box-shadow:0 10px 30px rgba(220,38,38,.7),
+          inset 0 1px 0 rgba(255,255,255,.2); } }
 
-    .menu-toggle{
-      display:none;
-      width:46px; height:46px;
-      border-radius:12px;
-      background:rgba(59,130,246,.15);
-      border:1px solid rgba(59,130,246,.3);
-      padding:11px;
-      transition:.3s;
-    }
-
-    .menu-toggle span{
-      display:block;
-      width:100%; height:2.5px;
-      background:#fff;
-      margin:4.5px 0;
-      border-radius:5px;
-      transition:.3s;
-    }
-
-    .menu-toggle.active span:nth-child(1){ transform:rotate(45deg) translate(6px,6px); }
+    .menu-toggle{ display:none; width:46px; height:46px;
+      border-radius:12px; background:rgba(59,130,246,.15);
+      border:1px solid rgba(59,130,246,.3); padding:11px;
+      transition:.3s; }
+    .menu-toggle span{ display:block; width:100%; height:2.5px;
+      background:#fff; margin:4.5px 0; border-radius:5px;
+      transition:.3s; }
+    .menu-toggle.active span:nth-child(1){
+      transform:rotate(45deg) translate(6px,6px); }
     .menu-toggle.active span:nth-child(2){ opacity:0; }
-    .menu-toggle.active span:nth-child(3){ transform:rotate(-45deg) translate(6px,-6px); }
+    .menu-toggle.active span:nth-child(3){
+      transform:rotate(-45deg) translate(6px,-6px); }
 
-    .mobile-nav{
-      display:none;
+    .mobile-nav{ display:none;
       background:linear-gradient(180deg,#0A2540,#0F2E4F);
       border-top:1px solid rgba(59,130,246,.2);
       padding:14px 4% 20px;
-      box-shadow:0 20px 40px rgba(0,0,0,.3);
-    }
-
-    .mobile-nav a{
-      display:block;
-      color:#E0F2FE;
-      padding:14px 16px;
-      border-radius:10px;
-      font-weight:700;
-      font-size:.9rem;
-      margin:4px 0;
-      transition:.25s;
-      border:1px solid transparent;
-    }
-
-    .mobile-nav a:hover,
-    .mobile-nav a.active{
-      background:rgba(59,130,246,.15);
-      color:var(--gold);
-      border-color:rgba(59,130,246,.3);
-    }
-
-    .mobile-nav .donate-nav{
-      text-align:center;
-      margin-top:12px;
-      justify-content:center;
-    }
-
+      box-shadow:0 20px 40px rgba(0,0,0,.3); }
+    .mobile-nav a{ display:block; color:#E0F2FE;
+      padding:14px 16px; border-radius:10px; font-weight:700;
+      font-size:.9rem; margin:4px 0; transition:.25s;
+      border:1px solid transparent; }
+    .mobile-nav a:hover, .mobile-nav a.active{
+      background:rgba(59,130,246,.15); color:var(--gold);
+      border-color:rgba(59,130,246,.3); }
+    .mobile-nav .donate-nav{ text-align:center;
+      margin-top:12px; justify-content:center; }
     .mobile-nav.active{ display:block; }
 
-    /* =========================================================
-       HERO
-    ========================================================= */
-
-    .hero{
-      height:100vh;
-      height:100svh;
-      min-height:700px;
-      position:relative;
-      overflow:hidden;
-      color:#fff;
-    }
-
-    .hero-slide{
-      position:absolute; inset:0;
-      opacity:0;
-      transition:opacity 1.2s ease;
-      background-size:cover;
-      background-position:center;
-    }
-
+    /* HERO */
+    .hero{ height:100vh; height:100svh; min-height:640px;
+      position:relative; overflow:hidden; color:#fff; }
+    .hero-slide{ position:absolute; inset:0; opacity:0;
+      transition:opacity 1.2s ease; background-size:cover;
+      background-position:center; }
     .hero-slide.active{ opacity:1; }
-
-    .hero-slide::before{
-      content:"";
-      position:absolute; inset:0;
-      background:linear-gradient(
-        90deg,
-        rgba(10,37,64,.94) 0%,
-        rgba(15,46,79,.78) 42%,
-        rgba(10,37,64,.35) 100%
-      );
-    }
-
-    .hero-content{
-      position:relative; z-index:3; height:100%;
-      display:flex; align-items:center;
-    }
-
+    .hero-slide::before{ content:""; position:absolute; inset:0;
+      background:linear-gradient(90deg,
+        rgba(10,37,64,.94) 0%, rgba(15,46,79,.78) 42%,
+        rgba(10,37,64,.35) 100%); }
+    .hero-content{ position:relative; z-index:3; height:100%;
+      display:flex; align-items:center; }
     .hero-copy{ max-width:760px; padding-top:65px; }
-
-    .hero-badge{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:9px 18px;
-      border:1px solid rgba(251,191,36,.4);
-      background:rgba(251,191,36,.12);
-      backdrop-filter:blur(10px);
-      border-radius:100px;
-      font-size:.82rem;
-      font-weight:800;
-      color:var(--gold);
-      margin-bottom:24px;
-      letter-spacing:.5px;
-    }
-
-    .hero h1{
-      font-size:clamp(2.8rem,7vw,5.5rem);
-      font-weight:900;
-      line-height:1;
-      letter-spacing:-2px;
-      margin-bottom:25px;
+    .hero-badge{ display:inline-flex; align-items:center; gap:10px;
+      padding:9px 18px; border:1px solid rgba(251,191,36,.4);
+      background:rgba(251,191,36,.12); backdrop-filter:blur(10px);
+      border-radius:100px; font-size:.82rem; font-weight:800;
+      color:var(--gold); margin-bottom:24px; letter-spacing:.5px; }
+    .hero h1{ font-size:clamp(2.8rem,7vw,5.5rem); font-weight:900;
+      line-height:1; letter-spacing:-2px; margin-bottom:25px;
       text-shadow:0 8px 30px rgba(0,0,0,.3);
-      font-family:"Tiro Devanagari Hindi",serif;
-    }
-
+      font-family:"Tiro Devanagari Hindi",serif; }
     .hero h1 .gold{ color:var(--gold); }
-
-    .hero-main{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-size:clamp(1.4rem,3vw,2rem);
-      line-height:1.5;
-      font-weight:700;
-      color:#E0F2FE;
-      margin-bottom:8px;
-    }
-
-    .hero-english{
-      font-size:1rem;
-      color:#93C5FD;
-      margin-bottom:34px;
-      font-weight:600;
-    }
-
+    .hero-main{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(1.4rem,3vw,2rem); line-height:1.5;
+      font-weight:700; color:#E0F2FE; margin-bottom:8px; }
+    .hero-english{ font-size:1rem; color:#93C5FD;
+      margin-bottom:34px; font-weight:600; }
     .hero-buttons{ display:flex; flex-wrap:wrap; gap:14px; }
-
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:10px;
-      min-height:54px;
-      padding:15px 30px;
-      border-radius:13px;
-      font-size:.9rem;
-      font-weight:800;
-      transition:.3s ease;
-      letter-spacing:.3px;
-      border:none;
-      cursor:pointer;
-      font-family:inherit;
-    }
-
+    .btn{ display:inline-flex; align-items:center; justify-content:center;
+      gap:10px; min-height:54px; padding:15px 30px;
+      border-radius:13px; font-size:.9rem; font-weight:800;
+      transition:.3s ease; letter-spacing:.3px; border:none;
+      cursor:pointer; font-family:inherit; }
     .btn:hover{ transform:translateY(-4px); }
-
-    .btn-red{
-      color:#fff;
+    .btn-red{ color:#fff;
       background:linear-gradient(135deg,#DC2626,#991B1B);
-      box-shadow:0 12px 32px rgba(220,38,38,.45);
-    }
-
+      box-shadow:0 12px 32px rgba(220,38,38,.45); }
     .btn-red:hover{ box-shadow:0 18px 42px rgba(220,38,38,.65); }
-
-    .btn-gold{
-      color:#0A2540;
+    .btn-gold{ color:#0A2540;
       background:linear-gradient(135deg,#FBBF24,#F59E0B);
-      box-shadow:0 12px 32px rgba(251,191,36,.45);
-    }
-
+      box-shadow:0 12px 32px rgba(251,191,36,.45); }
     .btn-gold:hover{ box-shadow:0 18px 42px rgba(251,191,36,.65); }
-
-    .btn-blue{
-      color:#fff;
+    .btn-blue{ color:#fff;
       background:linear-gradient(135deg,#2563EB,#1E40AF);
-      box-shadow:0 12px 32px rgba(37,99,235,.45);
-    }
-
+      box-shadow:0 12px 32px rgba(37,99,235,.45); }
     .btn-blue:hover{ box-shadow:0 18px 42px rgba(37,99,235,.65); }
-
-    .btn-outline{
-      color:#fff;
-      background:rgba(255,255,255,.06);
+    .btn-outline{ color:#fff; background:rgba(255,255,255,.06);
       border:1.5px solid rgba(255,255,255,.3);
-      backdrop-filter:blur(8px);
-    }
-
-    .btn-outline:hover{
-      background:rgba(255,255,255,.14);
-      border-color:var(--gold);
-      color:var(--gold);
-    }
-
+      backdrop-filter:blur(8px); }
+    .btn-outline:hover{ background:rgba(255,255,255,.14);
+      border-color:var(--gold); color:var(--gold); }
     .btn-pulse-red{ animation:pulseRed 1.8s infinite; }
-
     @keyframes pulseRed{
       0%,100%{ box-shadow:0 12px 32px rgba(220,38,38,.4); }
-      50%{ box-shadow:0 16px 42px rgba(220,38,38,.75); }
-    }
+      50%{ box-shadow:0 16px 42px rgba(220,38,38,.75); } }
 
-    .hero-dots{
-      position:absolute; z-index:5;
-      bottom:35px; left:50%;
-      transform:translateX(-50%);
-      display:flex; gap:9px;
-    }
+    .hero-dots{ position:absolute; z-index:5; bottom:35px;
+      left:50%; transform:translateX(-50%);
+      display:flex; gap:9px; }
+    .hero-dot{ width:10px; height:10px; border-radius:50%;
+      cursor:pointer; background:rgba(255,255,255,.4);
+      transition:.3s; border:none; }
+    .hero-dot.active{ width:32px; border-radius:20px;
+      background:var(--gold); }
 
-    .hero-dot{
-      width:10px; height:10px;
-      border-radius:50%;
-      cursor:pointer;
-      background:rgba(255,255,255,.4);
-      transition:.3s;
-      border:none;
-    }
-
-    .hero-dot.active{
-      width:32px;
-      border-radius:20px;
-      background:var(--gold);
-    }
-
-    /* =========================================================
-       SMILE STRIP — NO BORDER, SMILEY AT END
-    ========================================================= */
-
-    .smile-strip{
-      padding:70px 0;
-      background:
-        radial-gradient(circle at 15% 30%,rgba(251,191,36,.12),transparent 30%),
+    /* SMILE STRIP */
+    .smile-strip{ padding:70px 0;
+      background:radial-gradient(circle at 15% 30%,rgba(251,191,36,.12),transparent 30%),
         radial-gradient(circle at 85% 70%,rgba(37,99,235,.22),transparent 35%),
         linear-gradient(135deg,#0A2540,#1E40AF);
-      color:#fff;
-      position:relative;
-      overflow:hidden;
-      text-align:center;
-    }
-
-    .smile-strip::before{
-      content:"";
-      position:absolute; inset:0;
+      color:#fff; position:relative; overflow:hidden; text-align:center; }
+    .smile-strip::before{ content:""; position:absolute; inset:0;
       background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
-      background-size:24px 24px;
-      opacity:.6;
-      pointer-events:none;
-    }
-
+      background-size:24px 24px; opacity:.6; pointer-events:none; }
     .smile-strip .container{ position:relative; z-index:2; }
 
-    /* ===== UPDATED FINAL BANNER CSS START ===== */
-    .banner {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-weight: 800;
-        font-family: "Tiro Devanagari Hindi", serif;
-        /* यहाँ साइज़ को "About Us" वाले टाइटल के बराबर कर दिया गया है */
-        font-size: clamp(1.9rem, 3.8vw, 3rem); 
-        line-height: 1.2;
-        max-width: 100%;
-        white-space: nowrap;
-        margin: 0 auto 15px;
-    }
-    .red-text {
-        color: #FF3B3B; /* बैनर का रेड कलर */
-        margin-right: 0.4em; 
-        display: flex;
-        align-items: center;
-        text-shadow: 0 2px 8px rgba(0,0,0,.35);
-    }
-    .blue-text {
-        color: #FFFFFF; /* डार्क बैकग्राउंड पर सफेद रंग */
-        position: relative;
-        display: inline-block;
-        text-shadow: 0 2px 8px rgba(0,0,0,.35);
-    }
-    .smile-svg {
-        position: absolute;
-        bottom: -0.05em; 
-        right: 0.2em;    
-        width: 1.6em;    
-        height: 0.35em;  
-        overflow: visible;
-    }
-    /* ===== UPDATED FINAL BANNER CSS END ===== */
+    .banner{ display:flex; align-items:center; justify-content:center;
+      font-weight:800; font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(1.9rem,3.8vw,3rem); line-height:1.2;
+      max-width:100%; white-space:nowrap; margin:0 auto 15px; }
+    .red-text{ color:#FF3B3B; margin-right:.4em;
+      display:flex; align-items:center;
+      text-shadow:0 2px 8px rgba(0,0,0,.35); }
+    .blue-text{ color:#FFFFFF; position:relative;
+      display:inline-block; text-shadow:0 2px 8px rgba(0,0,0,.35); }
+    .smile-svg{ position:absolute; bottom:-.05em; right:.2em;
+      width:1.6em; height:.35em; overflow:visible; }
 
-    .smile-english{
-      margin-top:8px;
-      font-size:clamp(.85rem,1.6vw,1.05rem);
-      font-weight:800;
-      color:#93C5FD;
-      letter-spacing:.5px;
-    }
-
-    .smile-msg{
-      margin-top:14px;
-      color:var(--gold);
+    .smile-english{ margin-top:8px;
+      font-size:clamp(.85rem,1.6vw,1.05rem); font-weight:800;
+      color:#93C5FD; letter-spacing:.5px; }
+    .smile-msg{ margin-top:14px; color:var(--gold);
       font-family:"Tiro Devanagari Hindi",serif;
-      font-size:clamp(.95rem,2vw,1.2rem);
-      font-weight:900;
-    }
+      font-size:clamp(.95rem,2vw,1.2rem); font-weight:900; }
 
-    /* =========================================================
-       DAILY SUPPORTER
-    ========================================================= */
-
+    /* DAILY SUPPORTER */
     .daily-section{ background:#fff; }
-
-    .daily-intro{
-      max-width:900px;
-      margin:0 auto 40px;
-      text-align:center;
-    }
-
-    .daily-intro p{
-      color:var(--text-soft);
-      line-height:1.9;
-      margin-bottom:14px;
-    }
-
-    .daily-boxes{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:18px;
-      margin-top:35px;
-    }
-
-    .daily-box{
-      border:2px solid var(--border);
-      background:#fff;
-      border-radius:22px;
-      padding:28px 16px;
-      text-align:center;
-      cursor:pointer;
-      transition:.35s ease;
-      box-shadow:0 10px 28px rgba(15,23,42,.05);
-    }
-
-    .daily-box:hover{
-      transform:translateY(-7px);
+    .daily-intro{ max-width:900px; margin:0 auto 40px; text-align:center; }
+    .daily-intro p{ color:var(--text-soft); line-height:1.9;
+      margin-bottom:14px; }
+    .daily-boxes{ display:grid; grid-template-columns:repeat(4,1fr);
+      gap:18px; margin-top:35px; }
+    .daily-box{ border:2px solid var(--border); background:#fff;
+      border-radius:22px; padding:28px 16px; text-align:center;
+      cursor:pointer; transition:.35s ease;
+      box-shadow:0 10px 28px rgba(15,23,42,.05); }
+    .daily-box:hover{ transform:translateY(-7px);
       border-color:var(--blue-light);
-      box-shadow:0 20px 40px rgba(37,99,235,.15);
-    }
-
-    .daily-box.selected{
-      border-color:var(--blue);
+      box-shadow:0 20px 40px rgba(37,99,235,.15); }
+    .daily-box.selected{ border-color:var(--blue);
       background:linear-gradient(145deg,#1E40AF,#2563EB);
-      color:#fff;
-      transform:translateY(-5px);
-      box-shadow:0 20px 45px rgba(30,64,175,.35);
-    }
-
-    .daily-box .amount{
-      font-family:"Poppins",sans-serif;
-      font-size:3rem;
-      font-weight:900;
-      line-height:1;
-      letter-spacing:-1.5px;
-      font-variant-numeric:tabular-nums;
-      text-shadow:0 2px 4px rgba(0,0,0,.08);
-    }
-
-    .daily-box .supporter{
-      font-size:.75rem; letter-spacing:1.5px;
-      font-weight:900; margin:12px 0 8px;
-    }
-
-    .daily-box .daily{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-weight:800; font-size:1rem;
-    }
-
+      color:#fff; transform:translateY(-5px);
+      box-shadow:0 20px 45px rgba(30,64,175,.35); }
+    .daily-box .amount{ font-family:"Poppins",sans-serif;
+      font-size:3rem; font-weight:900; line-height:1;
+      letter-spacing:-1.5px; font-variant-numeric:tabular-nums;
+      text-shadow:0 2px 4px rgba(0,0,0,.08); }
+    .daily-box .supporter{ font-size:.75rem; letter-spacing:1.5px;
+      font-weight:900; margin:12px 0 8px; }
+    .daily-box .daily{ font-family:"Tiro Devanagari Hindi",serif;
+      font-weight:800; font-size:1rem; }
     .daily-box .monthly{ font-size:.8rem; margin-top:5px; font-weight:700; }
-
     .daily-action{ text-align:center; margin-top:30px; }
 
-    /* =========================================================
-       ABOUT
-    ========================================================= */
-
-    .about-section{
-      background:linear-gradient(180deg,#F8FAFC,#EFF6FF);
-    }
-
-    .about-text{
-      max-width:950px;
-      margin:auto;
-      text-align:center;
-    }
-
-    .about-text p{
-      color:var(--text-soft);
-      line-height:1.95;
-      margin-bottom:18px;
-    }
-
-    .mission-grid{
-      margin-top:50px;
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:25px;
-    }
-
-    .mission-card{
-      background:#fff;
-      padding:38px;
-      border-radius:25px;
+    /* ABOUT */
+    .about-section{ background:linear-gradient(180deg,#F8FAFC,#EFF6FF); }
+    .about-text{ max-width:950px; margin:auto; text-align:center; }
+    .about-text p{ color:var(--text-soft); line-height:1.95;
+      margin-bottom:18px; }
+    .mission-grid{ margin-top:50px; display:grid;
+      grid-template-columns:repeat(2,1fr); gap:25px; }
+    .mission-card{ background:#fff; padding:38px; border-radius:25px;
       box-shadow:0 20px 45px rgba(15,23,42,.08);
-      border-top:5px solid var(--blue-2);
-      position:relative;
-    }
-
+      border-top:5px solid var(--blue-2); position:relative; }
     .mission-card:nth-child(2){ border-top-color:var(--gold); }
+    .mission-icon{ width:60px; height:60px;
+      display:grid; place-items:center; border-radius:18px;
+      background:var(--blue-pale); color:var(--blue-2);
+      font-size:1.5rem; margin-bottom:18px; }
+    .mission-card:nth-child(2) .mission-icon{ background:var(--gold-pale);
+      color:var(--gold-dark); }
+    .mission-card h3{ font-size:1.3rem; color:var(--navy);
+      margin-bottom:14px; font-weight:900; }
+    .mission-card .hindi{ color:var(--text-soft); line-height:1.8;
+      font-size:.95rem; margin-bottom:0; }
+    .mission-card .en-desc{ color:#94A3B8; font-size:.88rem;
+      line-height:1.75; font-style:italic; padding-top:12px;
+      margin-top:12px; border-top:1px dashed #E2E8F0; }
 
-    .mission-icon{
-      width:60px; height:60px;
-      display:grid; place-items:center;
-      border-radius:18px;
-      background:var(--blue-pale);
-      color:var(--blue-2);
-      font-size:1.5rem;
-      margin-bottom:18px;
-    }
-
-    .mission-card:nth-child(2) .mission-icon{
-      background:var(--gold-pale);
-      color:var(--gold-dark);
-    }
-
-    .mission-card h3{
-      font-size:1.3rem;
-      color:var(--navy);
-      margin-bottom:14px;
-      font-weight:900;
-    }
-
-    .mission-card .hindi{
-      color:var(--text-soft);
-      line-height:1.8;
-      font-size:.95rem;
-      margin-bottom:0;
-    }
-
-    .mission-card .en-desc{
-      color:#94A3B8;
-      font-size:.88rem;
-      line-height:1.75;
-      font-style:italic;
-      padding-top:12px;
-      margin-top:12px;
-      border-top:1px dashed #E2E8F0;
-    }
-
-    /* =========================================================
-       VALUES
-    ========================================================= */
-
-    .values-section{
-      background:linear-gradient(135deg,#0A2540,#1E40AF);
-      color:#fff;
-    }
-
+    /* VALUES */
+    .values-section{ background:linear-gradient(135deg,#0A2540,#1E40AF);
+      color:#fff; }
     .values-section .section-title h2{ color:#fff; }
     .values-section .section-title h2 span{ color:var(--gold); }
     .values-section .section-title .small-title{ color:var(--gold); }
     .values-section .section-title p{ color:#93C5FD; }
-
-    .value-slider{
-      position:relative;
-      max-width:850px;
-      margin:auto;
-      min-height:250px;
-    }
-
+    .value-slider{ position:relative; max-width:850px;
+      margin:auto; min-height:250px; }
     .value-slide{ display:none; animation:fadeSlide .6s ease; }
     .value-slide.active{ display:block; }
-
-    @keyframes fadeSlide{
-      from{ opacity:0; transform:translateX(20px); }
-      to{ opacity:1; transform:translateX(0); }
-    }
-
-    .value-card{
-      background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.04));
-      border:1px solid rgba(255,255,255,.15);
-      border-radius:28px;
-      padding:50px 30px;
-      text-align:center;
-      box-shadow:0 20px 50px rgba(0,0,0,.2);
-    }
-
-    .value-icon{
-      width:80px; height:80px;
-      border-radius:25px;
-      margin:0 auto 22px;
-      display:grid; place-items:center;
+    @keyframes fadeSlide{ from{ opacity:0; transform:translateX(20px); }
+      to{ opacity:1; transform:translateX(0); } }
+    .value-card{ background:linear-gradient(145deg,rgba(255,255,255,.1),rgba(255,255,255,.04));
+      border:1px solid rgba(255,255,255,.15); border-radius:28px;
+      padding:50px 30px; text-align:center;
+      box-shadow:0 20px 50px rgba(0,0,0,.2); }
+    .value-icon{ width:80px; height:80px; border-radius:25px;
+      margin:0 auto 22px; display:grid; place-items:center;
       background:linear-gradient(145deg,#FBBF24,#F59E0B);
-      color:#0A2540;
-      font-size:2rem;
-    }
-
-    .value-card h3{
-      font-size:1.7rem;
-      font-weight:900;
-      margin-bottom:12px;
-      font-family:"Tiro Devanagari Hindi",serif;
-    }
-
+      color:#0A2540; font-size:2rem; }
+    .value-card h3{ font-size:1.7rem; font-weight:900;
+      margin-bottom:12px; font-family:"Tiro Devanagari Hindi",serif; }
     .value-card p{ color:#93C5FD; font-size:1rem; }
+    .slider-controls{ display:flex; align-items:center;
+      justify-content:center; gap:9px; margin-top:25px; }
+    .slider-dot{ width:10px; height:10px;
+      background:rgba(255,255,255,.3); border-radius:50%;
+      cursor:pointer; transition:.3s; border:none; }
+    .slider-dot.active{ width:30px; border-radius:20px;
+      background:var(--gold); }
 
-    .slider-controls{
-      display:flex; align-items:center;
-      justify-content:center; gap:9px;
-      margin-top:25px;
-    }
-
-    .slider-dot{
-      width:10px; height:10px;
-      background:rgba(255,255,255,.3);
-      border-radius:50%;
-      cursor:pointer;
-      transition:.3s;
-      border:none;
-    }
-
-    .slider-dot.active{
-      width:30px;
-      border-radius:20px;
-      background:var(--gold);
-    }
-
-    /* =========================================================
-       WORK
-    ========================================================= */
-
+    /* WORK */
     .work-section{ background:#fff; }
-
     .work-slider{ max-width:1000px; margin:auto; position:relative; }
     .work-slide{ display:none; animation:fadeSlide .6s ease; }
     .work-slide.active{ display:block; }
+    .work-card{ background:linear-gradient(145deg,#F8FAFC,#EFF6FF);
+      border:1px solid #DBEAFE; border-radius:28px; padding:45px 35px;
+      text-align:center; box-shadow:0 20px 45px rgba(15,23,42,.08);
+      min-height:270px; }
+    .work-icon{ width:78px; height:78px; border-radius:23px;
+      background:linear-gradient(145deg,#2563EB,#1E40AF); color:#fff;
+      display:grid; place-items:center; font-size:2rem;
+      margin:0 auto 20px; box-shadow:0 12px 30px rgba(37,99,235,.3); }
+    .work-number{ font-size:.75rem; color:var(--gold-dark);
+      font-weight:900; letter-spacing:2px; margin-bottom:8px; }
+    .work-card h3{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(1.3rem,3vw,1.9rem); color:var(--navy);
+      font-weight:900; line-height:1.5; }
 
-    .work-card{
-      background:linear-gradient(145deg,#F8FAFC,#EFF6FF);
-      border:1px solid #DBEAFE;
-      border-radius:28px;
-      padding:45px 35px;
-      text-align:center;
-      box-shadow:0 20px 45px rgba(15,23,42,.08);
-      min-height:270px;
-    }
-
-    .work-icon{
-      width:78px; height:78px;
-      border-radius:23px;
-      background:linear-gradient(145deg,#2563EB,#1E40AF);
-      color:#fff;
-      display:grid; place-items:center;
-      font-size:2rem;
-      margin:0 auto 20px;
-      box-shadow:0 12px 30px rgba(37,99,235,.3);
-    }
-
-    .work-number{
-      font-size:.75rem;
-      color:var(--gold-dark);
-      font-weight:900;
-      letter-spacing:2px;
-      margin-bottom:8px;
-    }
-
-    .work-card h3{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-size:clamp(1.3rem,3vw,1.9rem);
-      color:var(--navy);
-      font-weight:900;
-      line-height:1.5;
-    }
-
-    /* =========================================================
-       TEAM
-    ========================================================= */
-
+    /* TEAM */
     .team-section{ background:linear-gradient(180deg,#EFF6FF,#F8FAFC); }
-
-    .team-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:22px;
-    }
-
-    .team-card{
-      background:#fff;
-      padding:38px 25px;
-      border-radius:25px;
-      text-align:center;
+    .team-grid{ display:grid; grid-template-columns:repeat(3,1fr);
+      gap:22px; }
+    .team-card{ background:#fff; padding:38px 25px;
+      border-radius:25px; text-align:center;
       box-shadow:0 20px 45px rgba(15,23,42,.08);
-      border-bottom:5px solid var(--blue-2);
-    }
-
+      border-bottom:5px solid var(--blue-2); }
     .team-card:nth-child(2){ border-bottom-color:var(--gold); }
     .team-card:nth-child(3){ border-bottom-color:var(--blue-light); }
-
-    .team-icon{
-      width:72px; height:72px;
-      margin:0 auto 20px;
-      display:grid; place-items:center;
-      border-radius:22px;
-      color:#fff;
-      background:linear-gradient(145deg,#2563EB,#1E40AF);
-      font-size:1.8rem;
-    }
-
+    .team-icon{ width:72px; height:72px; margin:0 auto 20px;
+      display:grid; place-items:center; border-radius:22px;
+      color:#fff; background:linear-gradient(145deg,#2563EB,#1E40AF);
+      font-size:1.8rem; }
     .team-card:nth-child(2) .team-icon{
-      background:linear-gradient(145deg,#FBBF24,#F59E0B);
-      color:#0A2540;
-    }
-
+      background:linear-gradient(145deg,#FBBF24,#F59E0B); color:#0A2540; }
     .team-card:nth-child(3) .team-icon{
-      background:linear-gradient(145deg,#3B82F6,#2563EB);
-    }
+      background:linear-gradient(145deg,#3B82F6,#2563EB); }
+    .team-card h3{ font-size:1.05rem; color:var(--navy);
+      line-height:1.6; font-weight:900; }
 
-    .team-card h3{
-      font-size:1.05rem;
-      color:var(--navy);
-      line-height:1.6;
-      font-weight:900;
-    }
-
-    /* =========================================================
-       METHOD
-    ========================================================= */
-
-    .dark-slider-section{
-      background:linear-gradient(135deg,#0A2540,#0F2E4F);
-      color:#fff;
-    }
-
+    /* METHOD */
+    .dark-slider-section{ background:linear-gradient(135deg,#0A2540,#0F2E4F);
+      color:#fff; }
     .dark-slider-section .section-title h2{ color:#fff; }
     .dark-slider-section .section-title h2 span{ color:var(--gold); }
     .dark-slider-section .section-title .small-title{ color:var(--gold); }
     .dark-slider-section .section-title p{ color:#93C5FD; }
-
-    .method-card{
-      max-width:850px;
-      margin:auto;
-      min-height:220px;
-      border-radius:28px;
-      padding:45px;
-      text-align:center;
+    .method-card{ max-width:850px; margin:auto; min-height:220px;
+      border-radius:28px; padding:45px; text-align:center;
       background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.15);
-      backdrop-filter:blur(12px);
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-    }
-
-    .method-card i{
-      font-size:2.5rem;
-      color:var(--gold);
-      margin-bottom:20px;
-    }
-
-    .method-card h3{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-size:1.7rem;
-      line-height:1.5;
-    }
-
+      border:1px solid rgba(255,255,255,.15); backdrop-filter:blur(12px);
+      display:flex; flex-direction:column; align-items:center;
+      justify-content:center; }
+    .method-card i{ font-size:2.5rem; color:var(--gold);
+      margin-bottom:20px; }
+    .method-card h3{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.7rem; line-height:1.5; }
     .method-slider{ max-width:900px; margin:auto; }
     .method-slide{ display:none; animation:fadeSlide .6s ease; }
     .method-slide.active{ display:block; }
 
-    /* =========================================================
-       HELP
-    ========================================================= */
-
+    /* HELP */
     .help-section{ background:#fff; }
-
-    .help-card{
-      max-width:900px;
-      margin:auto;
-      min-height:220px;
-      padding:45px;
-      border-radius:28px;
+    .help-card{ max-width:900px; margin:auto; min-height:220px;
+      padding:45px; border-radius:28px;
       background:linear-gradient(145deg,#FEF3C7,#FFF7DD);
       border:1px solid #FDE68A;
       box-shadow:0 20px 45px rgba(217,119,6,.1);
-      text-align:center;
-      display:flex;
-      flex-direction:column;
-      align-items:center;
-      justify-content:center;
-    }
-
-    .help-card i{
-      font-size:2.5rem;
-      color:var(--gold-dark);
-      margin-bottom:20px;
-    }
-
-    .help-card h3{
-      font-family:"Tiro Devanagari Hindi",serif;
-      color:#78350F;
-      font-size:1.7rem;
-      line-height:1.5;
-    }
-
+      text-align:center; display:flex; flex-direction:column;
+      align-items:center; justify-content:center; }
+    .help-card i{ font-size:2.5rem; color:var(--gold-dark);
+      margin-bottom:20px; }
+    .help-card h3{ font-family:"Tiro Devanagari Hindi",serif;
+      color:#78350F; font-size:1.7rem; line-height:1.5; }
     .help-slide{ display:none; animation:fadeSlide .6s ease; }
     .help-slide.active{ display:block; }
 
-    /* =========================================================
-       EVENTS PREVIEW
-    ========================================================= */
-
+    /* EVENTS */
     .events-section{ background:linear-gradient(180deg,#EFF6FF,#F8FAFC); }
-
-    .event-card{
-      max-width:950px;
-      margin:auto;
-      background:#fff;
-      border-radius:28px;
-      padding:45px;
+    .event-card{ max-width:950px; margin:auto; background:#fff;
+      border-radius:28px; padding:45px;
       box-shadow:0 20px 45px rgba(15,23,42,.08);
-      text-align:center;
-      border-left:6px solid var(--blue-2);
-    }
+      text-align:center; border-left:6px solid var(--blue-2); }
+    .event-icon{ width:75px; height:75px; margin:0 auto 20px;
+      display:grid; place-items:center; border-radius:22px;
+      background:var(--blue-pale); color:var(--blue-2);
+      font-size:2rem; }
+    .event-card h3{ color:var(--navy); font-size:1.6rem;
+      font-weight:900; margin-bottom:15px; }
+    .event-card p{ color:var(--text-soft); line-height:1.9; }
 
-    .event-icon{
-      width:75px; height:75px;
-      margin:0 auto 20px;
-      display:grid; place-items:center;
-      border-radius:22px;
-      background:var(--blue-pale);
-      color:var(--blue-2);
-      font-size:2rem;
-    }
-
-    .event-card h3{
-      color:var(--navy);
-      font-size:1.6rem;
-      font-weight:900;
-      margin-bottom:15px;
-    }
-
-    .event-card p{
-      color:var(--text-soft);
-      line-height:1.9;
-    }
-
-    /* =========================================================
-       UPCOMING EVENTS
-    ========================================================= */
-
+    /* UPCOMING EVENTS */
     .upcoming-events-section{
-      background:
-        radial-gradient(circle at 12% 15%,rgba(251,191,36,.06),transparent 30%),
+      background:radial-gradient(circle at 12% 15%,rgba(251,191,36,.06),transparent 30%),
         radial-gradient(circle at 88% 85%,rgba(37,99,235,.08),transparent 35%),
         linear-gradient(160deg,#F8FAFC,#EFF6FF);
-      position:relative;
-      overflow:hidden;
-    }
-
-    .upcoming-events-section::before{
-      content:"";
-      position:absolute; inset:0;
-      background-image:radial-gradient(circle,rgba(37,99,235,.05) 1px,transparent 1px);
-      background-size:28px 28px;
-      pointer-events:none;
-    }
-
+      position:relative; overflow:hidden; }
+    .upcoming-events-section::before{ content:""; position:absolute;
+      inset:0; background-image:radial-gradient(circle,rgba(37,99,235,.05) 1px,transparent 1px);
+      background-size:28px 28px; pointer-events:none; }
     .upcoming-events-section .container{ position:relative; z-index:2; }
-
-    .upcoming-grid{
-      display:grid;
-      grid-template-columns:repeat(4,1fr);
-      gap:22px;
-    }
-
-    .upcoming-card{
-      background:#fff;
-      border-radius:22px;
-      overflow:hidden;
-      box-shadow:0 12px 34px rgba(15,23,42,.08);
-      border:1px solid var(--border);
-      transition:.35s ease;
-      display:flex;
-      flex-direction:column;
-      position:relative;
-    }
-
-    .upcoming-card::before{
-      content:"";
-      position:absolute;
-      top:0; left:0; right:0;
-      height:4px;
-      background:linear-gradient(90deg,#2563EB,#1E40AF);
-    }
-
+    .upcoming-grid{ display:grid;
+      grid-template-columns:repeat(4,1fr); gap:22px; }
+    .upcoming-card{ background:#fff; border-radius:22px;
+      overflow:hidden; box-shadow:0 12px 34px rgba(15,23,42,.08);
+      border:1px solid var(--border); transition:.35s ease;
+      display:flex; flex-direction:column; position:relative; }
+    .upcoming-card::before{ content:""; position:absolute;
+      top:0; left:0; right:0; height:4px;
+      background:linear-gradient(90deg,#2563EB,#1E40AF); }
     .upcoming-card[data-tone="gold"]::before{
-      background:linear-gradient(90deg,#FBBF24,#F59E0B);
-    }
-
-    .upcoming-card:hover{
-      transform:translateY(-8px);
+      background:linear-gradient(90deg,#FBBF24,#F59E0B); }
+    .upcoming-card:hover{ transform:translateY(-8px);
       box-shadow:0 22px 55px rgba(37,99,235,.18);
-      border-color:var(--blue-light);
-    }
-
-    .uc-date{
-      padding:24px 20px 20px;
-      text-align:center;
+      border-color:var(--blue-light); }
+    .uc-date{ padding:24px 20px 20px; text-align:center;
       background:linear-gradient(160deg,#EFF6FF,#DBEAFE);
-      border-bottom:1px dashed #BFDBFE;
-    }
-
+      border-bottom:1px dashed #BFDBFE; }
     .upcoming-card[data-tone="gold"] .uc-date{
       background:linear-gradient(160deg,#FEF3C7,#FFF7DD);
-      border-bottom-color:#FDE68A;
-    }
-
-    .uc-day{
-      font-size:.68rem;
-      font-weight:900;
-      color:var(--blue);
-      letter-spacing:2.5px;
-      text-transform:uppercase;
-      margin-bottom:6px;
-    }
-
+      border-bottom-color:#FDE68A; }
+    .uc-day{ font-size:.68rem; font-weight:900; color:var(--blue);
+      letter-spacing:2.5px; text-transform:uppercase; margin-bottom:6px; }
     .upcoming-card[data-tone="gold"] .uc-day{ color:var(--gold-dark); }
-
-    .uc-num{
-      font-size:2.6rem;
-      font-weight:900;
-      line-height:1;
-      color:var(--navy);
-      margin-bottom:6px;
-    }
-
+    .uc-num{ font-size:2.6rem; font-weight:900; line-height:1;
+      color:var(--navy); margin-bottom:6px; }
     .upcoming-card[data-tone="gold"] .uc-num{ color:var(--gold-dark); }
-
-    .uc-month{
-      font-size:.75rem;
-      font-weight:900;
-      letter-spacing:1.2px;
-      text-transform:uppercase;
-      color:var(--blue);
-      padding-top:10px;
-      border-top:1px solid rgba(37,99,235,.15);
-      margin-top:4px;
-      width:70%;
-      margin-left:auto;
-      margin-right:auto;
-    }
-
-    .upcoming-card[data-tone="gold"] .uc-month{
-      color:var(--gold-dark);
-      border-top-color:rgba(251,191,36,.3);
-    }
-
-    .uc-body{
-      padding:20px 20px 22px;
-      display:flex;
-      flex-direction:column;
-      flex:1;
-    }
-
-    .uc-badge{
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-      padding:5px 11px;
-      border-radius:100px;
-      background:var(--blue-pale);
-      border:1px solid #BFDBFE;
-      color:var(--blue);
-      font-size:.62rem;
-      font-weight:900;
-      letter-spacing:1px;
-      text-transform:uppercase;
-      margin-bottom:12px;
-      align-self:flex-start;
-    }
-
+    .uc-month{ font-size:.75rem; font-weight:900; letter-spacing:1.2px;
+      text-transform:uppercase; color:var(--blue); padding-top:10px;
+      border-top:1px solid rgba(37,99,235,.15); margin-top:4px;
+      width:70%; margin-left:auto; margin-right:auto; }
+    .upcoming-card[data-tone="gold"] .uc-month{ color:var(--gold-dark);
+      border-top-color:rgba(251,191,36,.3); }
+    .uc-body{ padding:20px 20px 22px; display:flex;
+      flex-direction:column; flex:1; }
+    .uc-badge{ display:inline-flex; align-items:center; gap:6px;
+      padding:5px 11px; border-radius:100px;
+      background:var(--blue-pale); border:1px solid #BFDBFE;
+      color:var(--blue); font-size:.62rem; font-weight:900;
+      letter-spacing:1px; text-transform:uppercase;
+      margin-bottom:12px; align-self:flex-start; }
     .upcoming-card[data-tone="gold"] .uc-badge{
-      background:var(--gold-pale);
-      border-color:#FDE68A;
-      color:var(--gold-dark);
-    }
-
+      background:var(--gold-pale); border-color:#FDE68A;
+      color:var(--gold-dark); }
     .uc-badge i{ font-size:.65rem; }
-
-    .uc-body h3{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-size:1.05rem;
-      font-weight:900;
-      color:var(--navy);
-      line-height:1.4;
-      margin-bottom:14px;
-      flex:1;
-    }
-
-    .uc-meta{
-      display:flex;
-      flex-direction:column;
-      gap:7px;
-      margin-bottom:16px;
-    }
-
-    .uc-meta span{
-      display:inline-flex;
-      align-items:center;
-      gap:7px;
-      font-size:.78rem;
-      font-weight:700;
-      color:var(--text-soft);
-    }
-
-    .uc-meta i{
-      font-size:.72rem;
-      color:var(--blue-2);
-      width:14px;
-      text-align:center;
-    }
-
+    .uc-body h3{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.05rem; font-weight:900; color:var(--navy);
+      line-height:1.4; margin-bottom:14px; flex:1; }
+    .uc-meta{ display:flex; flex-direction:column; gap:7px;
+      margin-bottom:16px; }
+    .uc-meta span{ display:inline-flex; align-items:center; gap:7px;
+      font-size:.78rem; font-weight:700; color:var(--text-soft); }
+    .uc-meta i{ font-size:.72rem; color:var(--blue-2);
+      width:14px; text-align:center; }
     .upcoming-card[data-tone="gold"] .uc-meta i{ color:var(--gold-dark); }
-
-    .uc-btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:8px;
-      min-height:48px;
-      padding:13px 18px;
-      border-radius:13px;
-      font-size:.82rem;
-      font-weight:900;
-      letter-spacing:.4px;
-      color:#fff;
+    .uc-btn{ display:inline-flex; align-items:center;
+      justify-content:center; gap:8px; min-height:48px;
+      padding:13px 18px; border-radius:13px; font-size:.82rem;
+      font-weight:900; letter-spacing:.4px; color:#fff;
       background:linear-gradient(135deg,#2563EB,#1E40AF);
       box-shadow:0 10px 24px rgba(37,99,235,.3);
-      transition:.35s ease;
-      text-align:center;
-    }
-
+      transition:.35s ease; text-align:center; }
     .upcoming-card[data-tone="gold"] .uc-btn{
       background:linear-gradient(135deg,#FBBF24,#F59E0B);
       color:#0A2540;
-      box-shadow:0 10px 24px rgba(251,191,36,.35);
-    }
-
+      box-shadow:0 10px 24px rgba(251,191,36,.35); }
     .uc-btn:hover{ transform:translateY(-3px); }
 
-    /* =========================================================
-       DOWNLOADS PREVIEW
-    ========================================================= */
-
-    .downloads-home-section{
-      background:#fff;
-      position:relative;
-      overflow:hidden;
-    }
-
-    .downloads-home-grid{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:20px;
-    }
-
-    .dh-card{
-      display:flex;
-      align-items:center;
-      gap:20px;
-      padding:24px 26px;
-      border-radius:22px;
-      background:#F8FAFC;
-      border:1px solid var(--border);
-      transition:.35s ease;
-      position:relative;
-      overflow:hidden;
-    }
-
-    .dh-card::before{
-      content:"";
-      position:absolute;
-      top:0; left:0; bottom:0;
-      width:4px;
-      background:linear-gradient(180deg,#2563EB,#1E40AF);
-    }
-
-    .dh-card[data-tone="red"]::before{ background:linear-gradient(180deg,#DC2626,#991B1B); }
-    .dh-card[data-tone="gold"]::before{ background:linear-gradient(180deg,#FBBF24,#F59E0B); }
-    .dh-card[data-tone="teal"]::before{ background:linear-gradient(180deg,#059669,#047857); }
-
-    .dh-card:hover{
-      transform:translateY(-6px);
+    /* DOWNLOADS */
+    .downloads-home-section{ background:#fff;
+      position:relative; overflow:hidden; }
+    .downloads-home-grid{ display:grid;
+      grid-template-columns:repeat(2,1fr); gap:20px; }
+    .dh-card{ display:flex; align-items:center; gap:20px;
+      padding:24px 26px; border-radius:22px; background:#F8FAFC;
+      border:1px solid var(--border); transition:.35s ease;
+      position:relative; overflow:hidden; }
+    .dh-card::before{ content:""; position:absolute;
+      top:0; left:0; bottom:0; width:4px;
+      background:linear-gradient(180deg,#2563EB,#1E40AF); }
+    .dh-card[data-tone="red"]::before{
+      background:linear-gradient(180deg,#DC2626,#991B1B); }
+    .dh-card[data-tone="gold"]::before{
+      background:linear-gradient(180deg,#FBBF24,#F59E0B); }
+    .dh-card[data-tone="teal"]::before{
+      background:linear-gradient(180deg,#059669,#047857); }
+    .dh-card:hover{ transform:translateY(-6px);
       box-shadow:0 22px 50px rgba(37,99,235,.15);
-      border-color:var(--blue-light);
-    }
-
-    .dh-icon{
-      flex-shrink:0;
-      width:64px; height:64px;
-      border-radius:18px;
-      display:grid; place-items:center;
-      font-size:1.5rem;
-      color:#fff;
+      border-color:var(--blue-light); }
+    .dh-icon{ flex-shrink:0; width:64px; height:64px;
+      border-radius:18px; display:grid; place-items:center;
+      font-size:1.5rem; color:#fff;
       background:linear-gradient(145deg,#2563EB,#1E40AF);
-      box-shadow:0 10px 24px rgba(37,99,235,.3);
-    }
-
+      box-shadow:0 10px 24px rgba(37,99,235,.3); }
     .dh-card[data-tone="red"] .dh-icon{
       background:linear-gradient(145deg,#DC2626,#991B1B);
-      box-shadow:0 10px 24px rgba(220,38,38,.3);
-    }
+      box-shadow:0 10px 24px rgba(220,38,38,.3); }
     .dh-card[data-tone="gold"] .dh-icon{
       background:linear-gradient(145deg,#FBBF24,#F59E0B);
       color:#0A2540;
-      box-shadow:0 10px 24px rgba(251,191,36,.35);
-    }
+      box-shadow:0 10px 24px rgba(251,191,36,.35); }
     .dh-card[data-tone="teal"] .dh-icon{
       background:linear-gradient(145deg,#059669,#047857);
-      box-shadow:0 10px 24px rgba(5,150,105,.3);
-    }
-
+      box-shadow:0 10px 24px rgba(5,150,105,.3); }
     .dh-info{ flex:1; min-width:0; }
+    .dh-count{ display:inline-flex; align-items:center; gap:5px;
+      padding:3px 10px; border-radius:100px; background:var(--blue-pale);
+      color:var(--blue); font-size:.62rem; font-weight:900;
+      letter-spacing:1.2px; text-transform:uppercase; margin-bottom:8px; }
+    .dh-card[data-tone="red"] .dh-count{ background:#FEE2E2;
+      color:var(--red); }
+    .dh-card[data-tone="gold"] .dh-count{ background:var(--gold-pale);
+      color:var(--gold-dark); }
+    .dh-card[data-tone="teal"] .dh-count{ background:#D1FAE5;
+      color:#047857; }
+    .dh-info h3{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.1rem; font-weight:900; color:var(--navy);
+      line-height:1.35; margin-bottom:6px; }
+    .dh-info p{ font-size:.82rem; color:var(--text-soft);
+      line-height:1.6; margin:0; }
+    .dh-arrow{ flex-shrink:0; width:42px; height:42px;
+      border-radius:50%; display:grid; place-items:center;
+      background:var(--blue-pale); color:var(--blue);
+      font-size:.85rem; transition:.35s; }
+    .dh-card:hover .dh-arrow{ transform:translateX(5px) scale(1.06); }
 
-    .dh-count{
-      display:inline-flex;
-      align-items:center;
-      gap:5px;
-      padding:3px 10px;
-      border-radius:100px;
-      background:var(--blue-pale);
-      color:var(--blue);
-      font-size:.62rem;
-      font-weight:900;
-      letter-spacing:1.2px;
-      text-transform:uppercase;
-      margin-bottom:8px;
-    }
-
-    .dh-card[data-tone="red"] .dh-count{ background:#FEE2E2; color:var(--red); }
-    .dh-card[data-tone="gold"] .dh-count{ background:var(--gold-pale); color:var(--gold-dark); }
-    .dh-card[data-tone="teal"] .dh-count{ background:#D1FAE5; color:#047857; }
-
-    .dh-info h3{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-size:1.1rem;
-      font-weight:900;
-      color:var(--navy);
-      line-height:1.35;
-      margin-bottom:6px;
-    }
-
-    .dh-info p{
-      font-size:.82rem;
-      color:var(--text-soft);
-      line-height:1.6;
-      margin:0;
-    }
-
-    .dh-arrow{
-      flex-shrink:0;
-      width:42px; height:42px;
-      border-radius:50%;
-      display:grid; place-items:center;
-      background:var(--blue-pale);
-      color:var(--blue);
-      font-size:.85rem;
-      transition:.35s;
-    }
-
-    .dh-card:hover .dh-arrow{
-      transform:translateX(5px) scale(1.06);
-    }
-
-    /* =========================================================
-       JOIN
-    ========================================================= */
-
-    .join-section{
-      background:
-        linear-gradient(135deg,rgba(10,37,64,.95),rgba(30,64,175,.94)),
-        url("https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1800&q=85")
-        center/cover;
-      color:#fff;
-    }
-
+    /* JOIN */
+    .join-section{ background:linear-gradient(135deg,rgba(10,37,64,.95),rgba(30,64,175,.94)),
+      url("https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1800&q=85") center/cover;
+      color:#fff; }
     .join-content{ max-width:900px; margin:auto; text-align:center; }
-
-    .join-content h2{
-      font-size:clamp(2rem,4vw,3rem);
-      font-weight:900;
-      margin-bottom:20px;
-    }
-
+    .join-content h2{ font-size:clamp(2rem,4vw,3rem); font-weight:900;
+      margin-bottom:20px; }
     .join-content h2 span{ color:var(--gold); }
+    .join-content p{ color:#93C5FD; line-height:1.9;
+      margin-bottom:14px; }
+    .join-buttons{ display:flex; justify-content:center;
+      flex-wrap:wrap; gap:14px; margin-top:30px; }
 
-    .join-content p{
-      color:#93C5FD;
-      line-height:1.9;
-      margin-bottom:14px;
-    }
-
-    .join-buttons{
-      display:flex;
-      justify-content:center;
-      flex-wrap:wrap;
-      gap:14px;
-      margin-top:30px;
-    }
-
-    /* =========================================================
-       CONTACT
-    ========================================================= */
-
+    /* CONTACT */
     .contact-section{ background:#fff; }
-
-    .contact-grid{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:20px;
-    }
-
-    .contact-card{
-      background:#F8FAFC;
-      border-radius:24px;
-      padding:32px 20px;
-      text-align:center;
-      border:1px solid var(--border);
-      transition:.3s;
-    }
-
-    .contact-card:hover{
-      transform:translateY(-5px);
-      box-shadow:0 20px 45px rgba(37,99,235,.12);
-    }
-
-    .contact-icon{
-      width:60px; height:60px;
-      margin:0 auto 17px;
-      display:grid; place-items:center;
-      border-radius:19px;
+    .contact-grid{ display:grid;
+      grid-template-columns:repeat(3,1fr); gap:20px; }
+    .contact-card{ background:#F8FAFC; border-radius:24px;
+      padding:32px 20px; text-align:center;
+      border:1px solid var(--border); transition:.3s; }
+    .contact-card:hover{ transform:translateY(-5px);
+      box-shadow:0 20px 45px rgba(37,99,235,.12); }
+    .contact-icon{ width:60px; height:60px; margin:0 auto 17px;
+      display:grid; place-items:center; border-radius:19px;
       background:linear-gradient(145deg,#2563EB,#1E40AF);
-      color:#fff;
-      font-size:1.35rem;
-    }
-
+      color:#fff; font-size:1.35rem; }
     .contact-card:nth-child(2) .contact-icon{
-      background:linear-gradient(145deg,#FBBF24,#F59E0B);
-      color:#0A2540;
-    }
-
+      background:linear-gradient(145deg,#FBBF24,#F59E0B); color:#0A2540; }
     .contact-card:nth-child(3) .contact-icon{
-      background:linear-gradient(145deg,#DC2626,#991B1B);
-    }
+      background:linear-gradient(145deg,#DC2626,#991B1B); }
+    .contact-card h3{ color:var(--navy); font-size:1rem;
+      margin-bottom:10px; font-weight:900; }
+    .contact-card p{ color:var(--text-soft); font-size:.9rem;
+      line-height:1.7; }
+    .contact-card a{ color:var(--blue); font-weight:700; }
 
-    .contact-card h3{
-      color:var(--navy);
-      font-size:1rem;
-      margin-bottom:10px;
-      font-weight:900;
-    }
-
-    .contact-card p{
-      color:var(--text-soft);
-      font-size:.9rem;
-      line-height:1.7;
-    }
-
-    .contact-card a{
-      color:var(--blue);
-      font-weight:700;
-    }
-
-    /* =========================================================
-       CTA STRIP
-    ========================================================= */
-
-    .cta-strip{
-      position:relative;
-      padding:85px 0;
-      background:
-        radial-gradient(circle at 15% 20%,rgba(251,191,36,.15),transparent 35%),
+    /* CTA */
+    .cta-strip{ position:relative; padding:85px 0;
+      background:radial-gradient(circle at 15% 20%,rgba(251,191,36,.15),transparent 35%),
         radial-gradient(circle at 85% 80%,rgba(59,130,246,.2),transparent 40%),
         linear-gradient(135deg,#0A2540 0%,#1E40AF 50%,#0A2540 100%);
-      color:#fff;
-      overflow:hidden;
-      text-align:center;
-    }
-
-    .cta-strip::before{
-      content:"";
-      position:absolute; inset:0;
+      color:#fff; overflow:hidden; text-align:center; }
+    .cta-strip::before{ content:""; position:absolute; inset:0;
       background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
-      background-size:24px 24px;
-      opacity:.7;
-      pointer-events:none;
-    }
-
+      background-size:24px 24px; opacity:.7; pointer-events:none; }
     .cta-strip .container{ position:relative; z-index:2; }
-
-    .cta-badge{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:8px 20px;
-      border-radius:100px;
+    .cta-badge{ display:inline-flex; align-items:center; gap:8px;
+      padding:8px 20px; border-radius:100px;
       background:rgba(251,191,36,.15);
-      border:1px solid rgba(251,191,36,.4);
-      color:var(--gold);
-      font-size:.72rem;
-      font-weight:900;
-      letter-spacing:2.5px;
-      text-transform:uppercase;
-      margin-bottom:22px;
-    }
-
-    .cta-strip h2{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-size:clamp(2rem,4.5vw,3.2rem);
-      font-weight:900;
-      line-height:1.25;
-      margin-bottom:16px;
-      letter-spacing:-.5px;
-    }
-
+      border:1px solid rgba(251,191,36,.4); color:var(--gold);
+      font-size:.72rem; font-weight:900; letter-spacing:2.5px;
+      text-transform:uppercase; margin-bottom:22px; }
+    .cta-strip h2{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(2rem,4.5vw,3.2rem); font-weight:900;
+      line-height:1.25; margin-bottom:16px; letter-spacing:-.5px; }
     .cta-strip h2 span{ color:var(--gold); }
+    .cta-strip p{ color:#93C5FD; font-size:1.05rem;
+      max-width:640px; margin:0 auto 34px; line-height:1.8; }
+    .cta-buttons{ display:flex; justify-content:center;
+      flex-wrap:wrap; gap:14px; }
 
-    .cta-strip p{
-      color:#93C5FD;
-      font-size:1.05rem;
-      max-width:640px;
-      margin:0 auto 34px;
-      line-height:1.8;
-    }
-
-    .cta-buttons{
-      display:flex;
-      justify-content:center;
-      flex-wrap:wrap;
-      gap:14px;
-    }
-
-    /* =========================================================
-       FOOTER
-    ========================================================= */
-
-    footer{
-      background:
-        radial-gradient(circle at 10% 20%,rgba(59,130,246,.1),transparent 40%),
+    /* FOOTER */
+    footer{ background:radial-gradient(circle at 10% 20%,rgba(59,130,246,.1),transparent 40%),
         radial-gradient(circle at 90% 80%,rgba(251,191,36,.06),transparent 40%),
         linear-gradient(160deg,#0A2540 0%,#0F2E4F 60%,#0A2540 100%);
-      color:#fff;
-      padding-top:80px;
-      position:relative;
-      overflow:hidden;
-    }
-
-    footer::before{
-      content:"";
-      position:absolute;
-      top:0; left:0; right:0;
-      height:1px;
-      background:linear-gradient(90deg,transparent,rgba(251,191,36,.6),transparent);
-    }
-
-    .footer-grid{
-      display:grid;
+      color:#fff; padding-top:80px; position:relative; overflow:hidden; }
+    footer::before{ content:""; position:absolute;
+      top:0; left:0; right:0; height:1px;
+      background:linear-gradient(90deg,transparent,rgba(251,191,36,.6),transparent); }
+    .footer-grid{ display:grid;
       grid-template-columns:1.4fr 1fr 1fr 1fr 1.3fr;
-      gap:40px;
-      padding-bottom:60px;
-      position:relative;
-      z-index:2;
-    }
-
-    .footer-brand-head{
-      display:flex;
-      align-items:center;
-      gap:14px;
-      margin-bottom:20px;
-    }
-
-    .footer-logo-box{
-      width:62px;
-      height:62px;
-      border-radius:15px;
+      gap:40px; padding-bottom:60px; position:relative; z-index:2; }
+    .footer-brand-head{ display:flex; align-items:center;
+      gap:14px; margin-bottom:20px; }
+    .footer-logo-box{ width:62px; height:62px; border-radius:15px;
       background:linear-gradient(145deg,#fff,#EFF6FF);
-      display:grid;
-      place-items:center;
-      padding:3px;
+      display:grid; place-items:center; padding:4px;
       border:2px solid rgba(251,191,36,.4);
       box-shadow:0 8px 22px rgba(59,130,246,.3);
-      flex-shrink:0;
-      overflow:hidden;
-    }
-
-    .footer-logo-box img{
-      width:100%;
-      height:100%;
-      object-fit:contain;
-      transform:scale(1.15);
-    }
-
+      flex-shrink:0; overflow:hidden; position:relative; }
+    .footer-logo-box img{ width:100%; height:100%;
+      object-fit:contain; display:block; }
     .footer-brand-text{ min-width:0; }
+    .footer-brand-text h3{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.2rem; font-weight:900; color:#fff;
+      line-height:1.15; margin-bottom:4px; }
+    .footer-tagline-text{ color:#93C5FD; font-size:.7rem;
+      font-weight:600; letter-spacing:.4px;
+      font-family:"Tiro Devanagari Hindi",serif; line-height:1.3; }
+    .footer-desc{ color:#93C5FD; font-size:.85rem; line-height:1.75;
+      margin-bottom:20px; max-width:320px; }
+    .footer-badge{ display:inline-flex; align-items:center; gap:8px;
+      padding:7px 14px; background:rgba(251,191,36,.1);
+      border:1px solid rgba(251,191,36,.3); border-radius:100px;
+      color:var(--gold); font-size:.72rem; font-weight:900;
+      letter-spacing:.5px; margin-bottom:22px; }
 
-    .footer-brand-text h3{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-size:1.2rem;
-      font-weight:900;
-      color:#fff;
-      line-height:1.15;
-      margin-bottom:4px;
-    }
-
-    .footer-tagline-text{
-      color:#93C5FD;
-      font-size:.7rem;
-      font-weight:600;
-      letter-spacing:.4px;
-      font-family:"Tiro Devanagari Hindi",serif;
-      line-height:1.3;
-    }
-
-    .footer-desc{
-      color:#93C5FD;
-      font-size:.85rem;
-      line-height:1.75;
-      margin-bottom:20px;
-      max-width:320px;
-    }
-
-    .footer-badge{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:7px 14px;
-      background:rgba(251,191,36,.1);
-      border:1px solid rgba(251,191,36,.3);
-      border-radius:100px;
-      color:var(--gold);
-      font-size:.72rem;
-      font-weight:900;
-      letter-spacing:.5px;
-      margin-bottom:22px;
-    }
-
-    /* SOCIAL MEDIA HEADING */
-    .footer-social-heading{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-size:.98rem;
-      font-weight:900;
-      color:#fff;
-      margin-bottom:24px;
-      padding-bottom:12px;
-      position:relative;
-      letter-spacing:.2px;
-    }
-
-    .footer-social-heading::after{
-      content:"";
-      position:absolute;
-      bottom:0; left:0;
+    .footer-heading, .footer-social-heading{
+      font-family:"Tiro Devanagari Hindi",serif; font-size:.98rem;
+      font-weight:900; color:#fff; margin-bottom:24px;
+      padding-bottom:12px; position:relative; letter-spacing:.2px; }
+    .footer-heading::after, .footer-social-heading::after{
+      content:""; position:absolute; bottom:0; left:0;
       width:32px; height:2px;
       background:linear-gradient(90deg,#FBBF24,#F59E0B);
-      border-radius:2px;
-    }
+      border-radius:2px; }
 
-    .social-icons{
-      display:flex;
-      gap:10px;
-      flex-wrap:wrap;
-    }
-
-    .social-icon{
-      width:44px;
-      height:44px;
-      display:grid;
-      place-items:center;
-      border-radius:12px;
-      background:rgba(59,130,246,.12);
-      color:#93C5FD;
-      font-size:1.05rem;
-      transition:.3s;
-      border:1px solid rgba(59,130,246,.25);
-    }
-
-    .social-icon:hover{
-      transform:translateY(-4px);
+    .social-icons{ display:flex; gap:10px; flex-wrap:wrap; }
+    .social-icon{ width:44px; height:44px; display:grid;
+      place-items:center; border-radius:12px;
+      background:rgba(59,130,246,.12); color:#93C5FD;
+      font-size:1.05rem; transition:.3s;
+      border:1px solid rgba(59,130,246,.25); }
+    .social-icon:hover{ transform:translateY(-4px);
       background:linear-gradient(135deg,#FBBF24,#F59E0B);
-      color:#0A2540;
-      border-color:var(--gold);
-      box-shadow:0 8px 22px rgba(251,191,36,.4);
-    }
-
-    .footer-heading{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-size:.98rem;
-      font-weight:900;
-      color:#fff;
-      margin-bottom:24px;
-      padding-bottom:12px;
-      position:relative;
-    }
-
-    .footer-heading::after{
-      content:"";
-      position:absolute;
-      bottom:0; left:0;
-      width:32px; height:2px;
-      background:linear-gradient(90deg,#FBBF24,#F59E0B);
-      border-radius:2px;
-    }
+      color:#0A2540; border-color:var(--gold);
+      box-shadow:0 8px 22px rgba(251,191,36,.4); }
 
     .footer-links{ list-style:none; }
-
     .footer-links li{ margin-bottom:11px; }
-
-    .footer-links a{
-      color:#93C5FD;
-      font-size:.83rem;
-      font-weight:600;
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      transition:.25s;
-      line-height:1.5;
-    }
-
-    .footer-links a i{
-      font-size:.6rem;
-      color:#FBBF24;
-      transition:.25s;
-    }
-
-    .footer-links a:hover{
-      color:var(--gold);
-      transform:translateX(4px);
-    }
+    .footer-links a{ color:#93C5FD; font-size:.83rem;
+      font-weight:600; display:inline-flex; align-items:center;
+      gap:8px; transition:.25s; line-height:1.5; }
+    .footer-links a i{ font-size:.6rem; color:#FBBF24;
+      transition:.25s; }
+    .footer-links a:hover{ color:var(--gold);
+      transform:translateX(4px); }
 
     .contact-info{ list-style:none; }
-
-    .contact-info li{
-      display:flex;
-      gap:12px;
-      align-items:flex-start;
-      margin-bottom:16px;
-      color:#93C5FD;
-      font-size:.83rem;
-      line-height:1.7;
-    }
-
-    .contact-info li i{
-      flex-shrink:0;
-      width:32px;
-      height:32px;
-      display:grid;
-      place-items:center;
-      border-radius:9px;
+    .contact-info li{ display:flex; gap:12px;
+      align-items:flex-start; margin-bottom:16px;
+      color:#93C5FD; font-size:.83rem; line-height:1.7; }
+    .contact-info li i{ flex-shrink:0; width:32px; height:32px;
+      display:grid; place-items:center; border-radius:9px;
       background:rgba(59,130,246,.15);
-      border:1px solid rgba(59,130,246,.25);
-      color:#FBBF24;
-      font-size:.8rem;
-      margin-top:1px;
-    }
-
-    .contact-info li strong{
-      display:block;
-      color:#fff;
-      font-size:.75rem;
-      margin-bottom:3px;
-      letter-spacing:.3px;
-      text-transform:uppercase;
-    }
-
-    .footer-newsletter{
-      margin-top:6px;
-      padding-top:18px;
-      border-top:1px solid rgba(59,130,246,.2);
-    }
-
-    .footer-newsletter label{
-      display:block;
-      color:#93C5FD;
-      font-size:.72rem;
-      font-weight:800;
-      letter-spacing:.5px;
-      text-transform:uppercase;
-      margin-bottom:10px;
-    }
-
-    .newsletter-form{
-      display:flex;
-      gap:8px;
+      border:1px solid rgba(59,130,246,.25); color:#FBBF24;
+      font-size:.8rem; margin-top:1px; }
+    .contact-info li strong{ display:block; color:#fff;
+      font-size:.75rem; margin-bottom:3px;
+      letter-spacing:.3px; text-transform:uppercase; }
+    .footer-newsletter{ margin-top:6px; padding-top:18px;
+      border-top:1px solid rgba(59,130,246,.2); }
+    .footer-newsletter label{ display:block; color:#93C5FD;
+      font-size:.72rem; font-weight:800; letter-spacing:.5px;
+      text-transform:uppercase; margin-bottom:10px; }
+    .newsletter-form{ display:flex; gap:8px;
       background:rgba(255,255,255,.06);
       border:1px solid rgba(59,130,246,.25);
-      border-radius:12px;
-      padding:5px;
-      transition:.3s;
-    }
-
-    .newsletter-form:focus-within{
-      border-color:var(--gold);
-      box-shadow:0 0 0 4px rgba(251,191,36,.1);
-    }
-
-    .newsletter-form input{
-      flex:1;
-      background:transparent;
-      border:none;
-      outline:none;
-      padding:9px 12px;
-      color:#fff;
-      font-family:inherit;
-      font-size:.82rem;
-      min-width:0;
-    }
-
+      border-radius:12px; padding:5px; transition:.3s; }
+    .newsletter-form:focus-within{ border-color:var(--gold);
+      box-shadow:0 0 0 4px rgba(251,191,36,.1); }
+    .newsletter-form input{ flex:1; background:transparent;
+      border:none; outline:none; padding:9px 12px; color:#fff;
+      font-family:inherit; font-size:.82rem; min-width:0; }
     .newsletter-form input::placeholder{ color:#6B8CAE; }
-
-    .newsletter-form button{
-      flex-shrink:0;
-      width:40px;
-      height:40px;
+    .newsletter-form button{ flex-shrink:0; width:40px; height:40px;
       border-radius:9px;
       background:linear-gradient(135deg,#FBBF24,#F59E0B);
-      color:#0A2540;
-      font-size:.9rem;
-      display:grid;
-      place-items:center;
-      transition:.3s;
-    }
+      color:#0A2540; font-size:.9rem; display:grid;
+      place-items:center; transition:.3s; }
 
-    .footer-bottom{
-      border-top:1px solid rgba(59,130,246,.15);
-      padding:24px 0;
-      position:relative;
-      z-index:2;
-    }
-
-    .footer-bottom-inner{
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:20px;
-      flex-wrap:wrap;
-    }
-
-    .footer-copy{
-      color:#6B8CAE;
-      font-size:.78rem;
-      font-weight:600;
-    }
-
+    .footer-bottom{ border-top:1px solid rgba(59,130,246,.15);
+      padding:24px 0; position:relative; z-index:2; }
+    .footer-bottom-inner{ display:flex; align-items:center;
+      justify-content:space-between; gap:20px; flex-wrap:wrap; }
+    .footer-copy{ color:#6B8CAE; font-size:.78rem; font-weight:600; }
     .footer-copy strong{ color:#93C5FD; font-weight:800; }
-
-    .footer-legal{
-      display:flex;
-      gap:6px;
-      flex-wrap:wrap;
-      align-items:center;
-    }
-
-    .footer-legal a{
-      color:#93C5FD;
-      font-size:.78rem;
-      font-weight:700;
-      padding:6px 12px;
-      border-radius:8px;
-      transition:.25s;
-    }
-
-    .footer-legal a:hover{
-      color:var(--gold);
-      background:rgba(59,130,246,.15);
-    }
-
+    .footer-legal{ display:flex; gap:6px; flex-wrap:wrap;
+      align-items:center; }
+    .footer-legal a{ color:#93C5FD; font-size:.78rem;
+      font-weight:700; padding:6px 12px; border-radius:8px;
+      transition:.25s; }
+    .footer-legal a:hover{ color:var(--gold);
+      background:rgba(59,130,246,.15); }
     .footer-legal span{ color:rgba(59,130,246,.5); }
-
-    .footer-made{
-      color:#6B8CAE;
-      font-size:.75rem;
-      font-weight:600;
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-    }
-
+    .footer-made{ color:#6B8CAE; font-size:.75rem; font-weight:600;
+      display:inline-flex; align-items:center; gap:6px; }
     .footer-made i{ color:#DC2626; font-size:.72rem; }
 
-    /* =========================================================
-       BACK TO TOP
-    ========================================================= */
-
-    .back-top{
-      position:fixed;
-      right:22px; bottom:22px;
-      width:48px; height:48px;
-      border-radius:14px;
+    /* BACK TOP */
+    .back-top{ position:fixed; right:22px; bottom:22px;
+      width:48px; height:48px; border-radius:14px;
       background:linear-gradient(135deg,#2563EB,#1E40AF);
-      color:#fff;
-      cursor:pointer;
-      z-index:1000;
-      display:grid;
-      place-items:center;
-      opacity:0;
-      visibility:hidden;
-      transition:.3s;
-      box-shadow:0 10px 28px rgba(37,99,235,.45);
-    }
-
+      color:#fff; cursor:pointer; z-index:1000;
+      display:grid; place-items:center; opacity:0;
+      visibility:hidden; transition:.3s;
+      box-shadow:0 10px 28px rgba(37,99,235,.45); }
     .back-top.show{ opacity:1; visibility:visible; }
     .back-top:hover{ transform:translateY(-4px); }
 
-    /* =========================================================
-       RESPONSIVE
-    ========================================================= */
-
+    /* RESPONSIVE */
     @media(max-width:1200px){
       .desktop-nav > a{ padding:10px 7px; font-size:.72rem; }
       .donate-nav{ padding:10px 13px!important; }
@@ -1867,121 +757,96 @@
       .footer-grid > div:nth-child(4){ display:none; }
       .upcoming-grid{ grid-template-columns:repeat(2,1fr); }
     }
-
     @media(max-width:1000px){
       .desktop-nav > a{ padding:10px 6px; font-size:.68rem; }
       .logo-box{ width:62px; height:62px; }
     }
-
     @media(max-width:900px){
       .desktop-nav{ display:none; }
       .menu-toggle{ display:block; }
       .header-inner{ min-height:78px; }
-
       .brand-name{ font-size:clamp(1.1rem,3vw,1.4rem); }
       .brand-tagline{ font-size:.66rem; }
       .logo-box{ width:60px; height:60px; }
-
-      .hero{ min-height:640px; }
+      .hero{ min-height:600px; }
       .hero-copy{ padding-top:75px; }
       .hero h1{ font-size:clamp(2.6rem,10vw,4.5rem); }
-
       .mission-grid{ grid-template-columns:1fr; }
       .team-grid{ grid-template-columns:1fr; }
       .contact-grid{ grid-template-columns:1fr; }
       .daily-boxes{ grid-template-columns:repeat(2,1fr); }
-
-      .footer-grid{
-        grid-template-columns:1fr 1fr;
-        gap:40px 30px;
-      }
+      .footer-grid{ grid-template-columns:1fr 1fr; gap:40px 30px; }
       .footer-grid > div:nth-child(4){ display:block; }
-
       .downloads-home-grid{ grid-template-columns:1fr; }
     }
-
     @media(max-width:700px){
       .section{ padding:70px 0; }
       .smile-strip{ padding:55px 0; }
-
       .upcoming-grid{ grid-template-columns:1fr; gap:18px; }
       .uc-num{ font-size:2.2rem; }
-
       .dh-card{ padding:20px 20px; gap:14px; align-items:flex-start; }
-      .dh-icon{ width:52px; height:52px; font-size:1.25rem; border-radius:14px; }
+      .dh-icon{ width:52px; height:52px; font-size:1.25rem;
+        border-radius:14px; }
       .dh-info h3{ font-size:1rem; }
-      .dh-arrow{ width:36px; height:36px; font-size:.75rem; align-self:center; }
-
-      .footer-grid{ grid-template-columns:1fr; gap:36px; padding-bottom:44px; }
-      .footer-bottom-inner{ flex-direction:column; text-align:center; gap:14px; }
+      .dh-arrow{ width:36px; height:36px; font-size:.75rem;
+        align-self:center; }
+      .footer-grid{ grid-template-columns:1fr; gap:36px;
+        padding-bottom:44px; }
+      .footer-bottom-inner{ flex-direction:column;
+        text-align:center; gap:14px; }
       .footer-legal{ justify-content:center; }
-
       .cta-strip{ padding:65px 0; }
       .cta-buttons{ flex-direction:column; }
       .cta-buttons .btn{ width:100%; }
-
       .hero-buttons .btn{ flex:1; min-width:140px; }
     }
-
     @media(max-width:600px){
-      .brand-name{
-        font-size:clamp(1rem,4vw,1.15rem);
-        white-space:normal;
-        line-height:1.15;
-        letter-spacing:-.2px;
-      }
+      .brand-name{ font-size:clamp(1rem,4vw,1.15rem);
+        white-space:normal; line-height:1.15; letter-spacing:-.2px; }
       .brand-tagline{ font-size:.62rem; white-space:normal; }
-      .logo-box{ width:54px; height:54px; padding:2px; border-radius:13px; }
+      .logo-box{ width:54px; height:54px; padding:3px;
+        border-radius:13px; }
       .brand{ gap:11px; }
-
       .hero h1{ font-size:2.5rem; }
-
       .daily-boxes{ gap:10px; }
       .daily-box{ padding:22px 10px; }
       .daily-box .amount{ font-size:2.3rem; }
-
       .cta-strip h2{ font-size:1.55rem; }
       .cta-strip p{ font-size:.92rem; }
-
       .social-icon{ width:40px; height:40px; font-size:.95rem; }
-
       .footer-brand-head{ flex-direction:row; align-items:center; }
       .footer-brand-text h3{ font-size:1.05rem; }
     }
-
+    @media(max-width:420px){
+      .banner{ white-space:normal; flex-wrap:wrap;
+        justify-content:center; font-size:1.6rem; }
+    }
     @media(max-width:380px){
       .brand-name{ font-size:1rem; }
       .brand-tagline{ font-size:.6rem; }
       .logo-box{ width:50px; height:50px; }
       .hero h1{ font-size:2.25rem; }
-
       .smile-english{ font-size:.7rem; }
       .smile-msg{ font-size:.8rem; }
     }
-
     @media (prefers-reduced-motion: reduce){
       *,*::before,*::after{
         animation-duration:.01ms!important;
         animation-iteration-count:1!important;
-        transition-duration:.01ms!important;
-      }
-    }
-
+        transition-duration:.01ms!important; } }
   </style>
 </head>
 
 <body>
 
-<!-- =========================================================
-     HEADER
-========================================================= -->
-
+<!-- ================= HEADER ================= -->
 <header class="site-header">
   <div class="container header-inner">
 
     <a href="index.html" class="brand">
       <div class="logo-box">
-        <img src="https://raw.githubusercontent.com/sathchaleham-dot/sath-chale-ham-/main/sath_chale_ham_logo_HD-1.png" alt="साथ चले हम फाउंडेशन Logo">
+        <img src="sath_chale_ham_logo_HD-1.png"
+             alt="साथ चले हम फाउंडेशन Logo">
       </div>
       <div class="brand-text">
         <div class="brand-name">साथ चले हम <span class="gold">फाउंडेशन</span></div>
@@ -1995,6 +860,7 @@
       <a href="work.html">Our Work</a>
       <a href="team.html">Team</a>
       <a href="events.html">Events</a>
+      <a href="gallery.html">Gallery</a>
       <a href="join-us.html">Join Us</a>
       <a href="downloads.html">Downloads</a>
       <a href="contact.html">Contact</a>
@@ -2008,7 +874,6 @@
             aria-controls="mobileNav" type="button">
       <span></span><span></span><span></span>
     </button>
-
   </div>
 
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
@@ -2017,8 +882,12 @@
     <a href="work.html">Our Work | हमारे कार्य</a>
     <a href="team.html">Team | हमारी टीम</a>
     <a href="events.html">Events | कार्यक्रम</a>
+    <a href="gallery.html">Gallery | गैलरी</a>
+    <a href="videos.html">Videos | वीडियो</a>
     <a href="join-us.html">Join Us | जुड़ें</a>
     <a href="downloads.html">Downloads | डाउनलोड</a>
+    <a href="impact.html">Impact | प्रभाव</a>
+    <a href="faq.html">FAQ | सामान्य प्रश्न</a>
     <a href="contact.html">Contact | संपर्क</a>
     <a href="donate.html" class="donate-nav">
       <i class="fa-solid fa-heart"></i> Donate Us
@@ -2027,10 +896,7 @@
 </header>
 
 
-<!-- =========================================================
-     HERO
-========================================================= -->
-
+<!-- ================= HERO ================= -->
 <section class="hero" id="home">
 
   <div class="hero-slide active"
@@ -2067,6 +933,9 @@
         <a href="join-us.html" class="btn btn-gold">
           <i class="fa-solid fa-users"></i> Join Us
         </a>
+        <a href="about.html" class="btn btn-outline">
+          <i class="fa-solid fa-circle-info"></i> Know More
+        </a>
       </div>
 
     </div>
@@ -2083,35 +952,26 @@
 </section>
 
 
-<!-- =========================================================
-     SMILE STRIP — NO BORDER, SMILEY AT END
-========================================================= -->
-
+<!-- ================= SMILE STRIP ================= -->
 <section class="smile-strip">
   <div class="container">
-
     <div class="banner">
         <div class="red-text">आपका ₹1,</div>
         <div class="blue-text">
             किसी की मुस्कान
-            <!-- रेड स्माइल कर्व (Round Ends) -->
             <svg class="smile-svg" viewBox="0 0 100 25" preserveAspectRatio="none">
-                <path d="M 6 8 Q 50 26 94 8" fill="none" stroke="#FF3B3B" stroke-width="7" stroke-linecap="round"/>
+                <path d="M 6 8 Q 50 26 94 8" fill="none"
+                      stroke="#FF3B3B" stroke-width="7" stroke-linecap="round"/>
             </svg>
         </div>
     </div>
-
     <div class="smile-english">Your ₹1, Someone's Smile</div>
     <div class="smile-msg">रोज ₹1 – बदलाव की ओर साथ चले हम!</div>
-
   </div>
 </section>
 
 
-<!-- =========================================================
-     DAILY SUPPORTER
-========================================================= -->
-
+<!-- ================= DAILY SUPPORTER ================= -->
 <section class="section daily-section" id="donate">
   <div class="container">
 
@@ -2134,39 +994,35 @@
     </div>
 
     <div class="daily-boxes">
-
       <div class="daily-box selected" data-amount="1">
         <div class="amount">₹1</div>
         <div class="supporter">DAILY SUPPORTER</div>
         <div class="daily">₹1 प्रतिदिन</div>
         <div class="monthly">लगभग ₹30 / माह</div>
       </div>
-
       <div class="daily-box" data-amount="2">
         <div class="amount">₹2</div>
         <div class="supporter">DAILY SUPPORTER</div>
         <div class="daily">₹2 प्रतिदिन</div>
         <div class="monthly">लगभग ₹60 / माह</div>
       </div>
-
       <div class="daily-box" data-amount="5">
         <div class="amount">₹5</div>
         <div class="supporter">DAILY SUPPORTER</div>
         <div class="daily">₹5 प्रतिदिन</div>
         <div class="monthly">लगभग ₹150 / माह</div>
       </div>
-
       <div class="daily-box" data-amount="10">
         <div class="amount">₹10</div>
         <div class="supporter">DAILY SUPPORTER</div>
         <div class="daily">₹10 प्रतिदिन</div>
         <div class="monthly">लगभग ₹300 / माह</div>
       </div>
-
     </div>
 
     <div class="daily-action">
-      <a href="donate.html" class="btn btn-red btn-pulse-red">
+      <a href="donate.html?amount=1" id="dailyDonateBtn"
+         class="btn btn-red btn-pulse-red">
         <i class="fa-solid fa-heart"></i> DONATE NOW
       </a>
     </div>
@@ -2175,10 +1031,7 @@
 </section>
 
 
-<!-- =========================================================
-     ABOUT
-========================================================= -->
-
+<!-- ================= ABOUT ================= -->
 <section class="section about-section" id="about">
   <div class="container">
 
@@ -2207,7 +1060,6 @@
     </div>
 
     <div class="mission-grid">
-
       <div class="mission-card">
         <div class="mission-icon"><i class="fa-solid fa-bullseye"></i></div>
         <h3>Our Mission | हमारा मिशन</h3>
@@ -2221,7 +1073,6 @@
           underserved communities.
         </p>
       </div>
-
       <div class="mission-card">
         <div class="mission-icon"><i class="fa-solid fa-eye"></i></div>
         <h3>Our Vision | हमारा विज़न</h3>
@@ -2236,7 +1087,6 @@
           opportunities, and the chance to move forward.
         </p>
       </div>
-
     </div>
 
     <div style="text-align:center;margin-top:40px;">
@@ -2249,10 +1099,7 @@
 </section>
 
 
-<!-- =========================================================
-     VALUES
-========================================================= -->
-
+<!-- ================= VALUES ================= -->
 <section class="section values-section">
   <div class="container">
 
@@ -2263,7 +1110,6 @@
     </div>
 
     <div class="value-slider" id="valueSlider">
-
       <div class="value-slide active">
         <div class="value-card">
           <div class="value-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
@@ -2271,7 +1117,6 @@
           <p>सेवा के माध्यम से समाज के जरूरतमंद लोगों तक सहयोग पहुँचाना।</p>
         </div>
       </div>
-
       <div class="value-slide">
         <div class="value-card">
           <div class="value-icon"><i class="fa-solid fa-scale-balanced"></i></div>
@@ -2279,7 +1124,6 @@
           <p>सभी के साथ समानता और सम्मान का व्यवहार।</p>
         </div>
       </div>
-
       <div class="value-slide">
         <div class="value-card">
           <div class="value-icon"><i class="fa-solid fa-shield-heart"></i></div>
@@ -2287,7 +1131,6 @@
           <p>हर कार्य में ईमानदारी और जिम्मेदारी।</p>
         </div>
       </div>
-
       <div class="value-slide">
         <div class="value-card">
           <div class="value-icon"><i class="fa-solid fa-eye"></i></div>
@@ -2295,7 +1138,6 @@
           <p>कार्यों और सहयोग में पारदर्शिता बनाए रखना।</p>
         </div>
       </div>
-
       <div class="value-slide">
         <div class="value-card">
           <div class="value-icon"><i class="fa-solid fa-heart"></i></div>
@@ -2303,7 +1145,6 @@
           <p>जरूरतमंद लोगों के प्रति संवेदनशीलता और करुणा।</p>
         </div>
       </div>
-
       <div class="value-slide">
         <div class="value-card">
           <div class="value-icon"><i class="fa-solid fa-bolt"></i></div>
@@ -2311,7 +1152,6 @@
           <p>लोगों को आत्मनिर्भर और सशक्त बनाने की दिशा में प्रयास।</p>
         </div>
       </div>
-
       <div class="value-slide">
         <div class="value-card">
           <div class="value-icon"><i class="fa-solid fa-people-group"></i></div>
@@ -2319,7 +1159,6 @@
           <p>समुदाय की सक्रिय भागीदारी के साथ सकारात्मक बदलाव।</p>
         </div>
       </div>
-
     </div>
 
     <div class="slider-controls" id="valueDots"></div>
@@ -2328,10 +1167,7 @@
 </section>
 
 
-<!-- =========================================================
-     WORK AREAS
-========================================================= -->
-
+<!-- ================= WORK ================= -->
 <section class="section work-section" id="work">
   <div class="container">
 
@@ -2341,135 +1177,86 @@
     </div>
 
     <div class="work-slider">
-
-      <div class="work-slide active">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-book-open"></i></div>
-          <div class="work-number">01 / 16</div>
-          <h3>शिक्षा एवं बाल विकास — Education &amp; Child Development</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-person-dress"></i></div>
-          <div class="work-number">02 / 16</div>
-          <h3>महिला सशक्तिकरण एवं विकास — Women Empowerment &amp; Development</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-          <div class="work-number">03 / 16</div>
-          <h3>स्वास्थ्य एवं चिकित्सा — Health &amp; Medical Care</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
-          <div class="work-number">04 / 16</div>
-          <h3>गरीब एवं जरूरतमंद कल्याण — Welfare of Poor &amp; Needy</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-wheelchair"></i></div>
-          <div class="work-number">05 / 16</div>
-          <h3>दिव्यांगजन कल्याण एवं सशक्तिकरण — Disability Welfare</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-person-cane"></i></div>
-          <div class="work-number">06 / 16</div>
-          <h3>वृद्धजन कल्याण — Senior Citizen Welfare</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-user-graduate"></i></div>
-          <div class="work-number">07 / 16</div>
-          <h3>युवा विकास एवं कौशल विकास — Youth &amp; Skill Development</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-briefcase"></i></div>
-          <div class="work-number">08 / 16</div>
-          <h3>रोजगार, स्वरोजगार एवं आजीविका — Employment &amp; Livelihood</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-house-chimney"></i></div>
-          <div class="work-number">09 / 16</div>
-          <h3>ग्रामीण विकास एवं ग्राम उत्थान — Rural Development</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-wheat-awn"></i></div>
-          <div class="work-number">10 / 16</div>
-          <h3>कृषि एवं किसान कल्याण — Agriculture &amp; Farmer Welfare</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-leaf"></i></div>
-          <div class="work-number">11 / 16</div>
-          <h3>पर्यावरण एवं जल संरक्षण — Environment &amp; Water Conservation</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-faucet-drip"></i></div>
-          <div class="work-number">12 / 16</div>
-          <h3>स्वच्छता, पेयजल एवं पोषण — Sanitation, Water &amp; Nutrition</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-paw"></i></div>
-          <div class="work-number">13 / 16</div>
-          <h3>पशु कल्याण एवं संरक्षण — Animal Welfare &amp; Protection</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-house-flood-water"></i></div>
-          <div class="work-number">14 / 16</div>
-          <h3>आपदा राहत एवं पुनर्वास — Disaster Relief &amp; Rehabilitation</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-scale-balanced"></i></div>
-          <div class="work-number">15 / 16</div>
-          <h3>सामाजिक न्याय एवं कानूनी जागरूकता — Social Justice &amp; Legal Awareness</h3>
-        </div>
-      </div>
-
-      <div class="work-slide">
-        <div class="work-card">
-          <div class="work-icon"><i class="fa-solid fa-laptop"></i></div>
-          <div class="work-number">16 / 16</div>
-          <h3>डिजिटल शिक्षा एवं जन-जागरूकता — Digital Education &amp; Awareness</h3>
-        </div>
-      </div>
-
+      <div class="work-slide active"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-book-open"></i></div>
+        <div class="work-number">01 / 16</div>
+        <h3>शिक्षा एवं बाल विकास — Education &amp; Child Development</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-person-dress"></i></div>
+        <div class="work-number">02 / 16</div>
+        <h3>महिला सशक्तिकरण एवं विकास — Women Empowerment</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+        <div class="work-number">03 / 16</div>
+        <h3>स्वास्थ्य एवं चिकित्सा — Health &amp; Medical Care</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+        <div class="work-number">04 / 16</div>
+        <h3>गरीब एवं जरूरतमंद कल्याण — Welfare of Poor &amp; Needy</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-wheelchair"></i></div>
+        <div class="work-number">05 / 16</div>
+        <h3>दिव्यांगजन कल्याण — Disability Welfare</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-person-cane"></i></div>
+        <div class="work-number">06 / 16</div>
+        <h3>वृद्धजन कल्याण — Senior Citizen Welfare</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-user-graduate"></i></div>
+        <div class="work-number">07 / 16</div>
+        <h3>युवा एवं कौशल विकास — Youth &amp; Skill Development</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="work-number">08 / 16</div>
+        <h3>रोजगार एवं आजीविका — Employment &amp; Livelihood</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-house-chimney"></i></div>
+        <div class="work-number">09 / 16</div>
+        <h3>ग्रामीण विकास — Rural Development</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+        <div class="work-number">10 / 16</div>
+        <h3>कृषि एवं किसान कल्याण — Agriculture &amp; Farmer Welfare</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-leaf"></i></div>
+        <div class="work-number">11 / 16</div>
+        <h3>पर्यावरण एवं जल संरक्षण — Environment &amp; Water</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-faucet-drip"></i></div>
+        <div class="work-number">12 / 16</div>
+        <h3>स्वच्छता, पेयजल एवं पोषण — Sanitation &amp; Nutrition</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-paw"></i></div>
+        <div class="work-number">13 / 16</div>
+        <h3>पशु कल्याण — Animal Welfare &amp; Protection</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-house-flood-water"></i></div>
+        <div class="work-number">14 / 16</div>
+        <h3>आपदा राहत एवं पुनर्वास — Disaster Relief</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+        <div class="work-number">15 / 16</div>
+        <h3>सामाजिक न्याय एवं कानूनी जागरूकता — Social Justice</h3>
+      </div></div>
+      <div class="work-slide"><div class="work-card">
+        <div class="work-icon"><i class="fa-solid fa-laptop"></i></div>
+        <div class="work-number">16 / 16</div>
+        <h3>डिजिटल शिक्षा एवं जन-जागरूकता — Digital Education</h3>
+      </div></div>
     </div>
 
     <div class="slider-controls" id="workDots"></div>
@@ -2484,10 +1271,7 @@
 </section>
 
 
-<!-- =========================================================
-     TEAM
-========================================================= -->
-
+<!-- ================= TEAM ================= -->
 <section class="section team-section" id="team">
   <div class="container">
 
@@ -2521,127 +1305,81 @@
 </section>
 
 
-<!-- =========================================================
-     WAY OF WORKING
-========================================================= -->
-
+<!-- ================= METHOD ================= -->
 <section class="section dark-slider-section">
   <div class="container">
-
     <div class="section-title">
       <span class="small-title">Our Way of Working</span>
       <h2>Our Way of Working | <span>हमारा काम करने का तरीका</span></h2>
     </div>
 
     <div class="method-slider">
-
-      <div class="method-slide active">
-        <div class="method-card">
-          <i class="fa-solid fa-hand-holding-heart"></i>
-          <h3>सीधी मदद | Direct Help</h3>
-        </div>
-      </div>
-
-      <div class="method-slide">
-        <div class="method-card">
-          <i class="fa-solid fa-people-arrows"></i>
-          <h3>मिलकर काम करना | Working Together</h3>
-        </div>
-      </div>
-
-      <div class="method-slide">
-        <div class="method-card">
-          <i class="fa-solid fa-shield-heart"></i>
-          <h3>ईमानदारी और पारदर्शिता | Honesty &amp; Transparency</h3>
-        </div>
-      </div>
-
-      <div class="method-slide">
-        <div class="method-card">
-          <i class="fa-solid fa-people-group"></i>
-          <h3>समुदाय की भागीदारी | Community Participation</h3>
-        </div>
-      </div>
-
-      <div class="method-slide">
-        <div class="method-card">
-          <i class="fa-solid fa-scale-balanced"></i>
-          <h3>समानता और सम्मान | Equality &amp; Respect</h3>
-        </div>
-      </div>
-
+      <div class="method-slide active"><div class="method-card">
+        <i class="fa-solid fa-hand-holding-heart"></i>
+        <h3>सीधी मदद | Direct Help</h3>
+      </div></div>
+      <div class="method-slide"><div class="method-card">
+        <i class="fa-solid fa-people-arrows"></i>
+        <h3>मिलकर काम करना | Working Together</h3>
+      </div></div>
+      <div class="method-slide"><div class="method-card">
+        <i class="fa-solid fa-shield-heart"></i>
+        <h3>ईमानदारी और पारदर्शिता | Honesty &amp; Transparency</h3>
+      </div></div>
+      <div class="method-slide"><div class="method-card">
+        <i class="fa-solid fa-people-group"></i>
+        <h3>समुदाय की भागीदारी | Community Participation</h3>
+      </div></div>
+      <div class="method-slide"><div class="method-card">
+        <i class="fa-solid fa-scale-balanced"></i>
+        <h3>समानता और सम्मान | Equality &amp; Respect</h3>
+      </div></div>
     </div>
 
     <div class="slider-controls" id="methodDots"></div>
-
   </div>
 </section>
 
 
-<!-- =========================================================
-     HOW YOU CAN HELP
-========================================================= -->
-
+<!-- ================= HELP ================= -->
 <section class="section help-section">
   <div class="container">
-
     <div class="section-title">
       <span class="small-title">How You Can Help</span>
       <h2>How You Can Help | <span class="hindi">आप हमारी मदद कैसे कर सकते हैं?</span></h2>
     </div>
 
     <div class="help-slider">
-
-      <div class="help-slide active">
-        <div class="help-card">
-          <i class="fa-solid fa-clock"></i>
-          <h3>अपना समय दें | Give Your Time</h3>
-        </div>
-      </div>
-
-      <div class="help-slide">
-        <div class="help-card">
-          <i class="fa-solid fa-hand-holding-heart"></i>
-          <h3>दान दें | Donate</h3>
-        </div>
-      </div>
-
-      <div class="help-slide">
-        <div class="help-card">
-          <i class="fa-solid fa-handshake"></i>
-          <h3>सहयोग करें | Support Us</h3>
-        </div>
-      </div>
-
-      <div class="help-slide">
-        <div class="help-card">
-          <i class="fa-solid fa-bullhorn"></i>
-          <h3>जागरूकता फैलाएँ | Spread Awareness</h3>
-        </div>
-      </div>
-
-      <div class="help-slide">
-        <div class="help-card">
-          <i class="fa-solid fa-microphone"></i>
-          <h3>अपनी आवाज़ बनें | Be a Voice for Change</h3>
-        </div>
-      </div>
-
+      <div class="help-slide active"><div class="help-card">
+        <i class="fa-solid fa-clock"></i>
+        <h3>अपना समय दें | Give Your Time</h3>
+      </div></div>
+      <div class="help-slide"><div class="help-card">
+        <i class="fa-solid fa-hand-holding-heart"></i>
+        <h3>दान दें | Donate</h3>
+      </div></div>
+      <div class="help-slide"><div class="help-card">
+        <i class="fa-solid fa-handshake"></i>
+        <h3>सहयोग करें | Support Us</h3>
+      </div></div>
+      <div class="help-slide"><div class="help-card">
+        <i class="fa-solid fa-bullhorn"></i>
+        <h3>जागरूकता फैलाएँ | Spread Awareness</h3>
+      </div></div>
+      <div class="help-slide"><div class="help-card">
+        <i class="fa-solid fa-microphone"></i>
+        <h3>अपनी आवाज़ बनें | Be a Voice for Change</h3>
+      </div></div>
     </div>
 
     <div class="slider-controls" id="helpDots"></div>
-
   </div>
 </section>
 
 
-<!-- =========================================================
-     EVENTS PREVIEW
-========================================================= -->
-
+<!-- ================= EVENTS PREVIEW ================= -->
 <section class="section events-section" id="events">
   <div class="container">
-
     <div class="section-title">
       <span class="small-title">Events</span>
       <h2>Events | <span class="hindi">कार्यक्रम</span></h2>
@@ -2661,15 +1399,11 @@
         <i class="fa-solid fa-calendar-check"></i> View All Events | सभी कार्यक्रम देखें
       </a>
     </div>
-
   </div>
 </section>
 
 
-<!-- =========================================================
-     UPCOMING EVENTS
-========================================================= -->
-
+<!-- ================= UPCOMING EVENTS ================= -->
 <section class="section upcoming-events-section" id="register">
   <div class="container">
 
@@ -2677,7 +1411,9 @@
       <span class="small-title">Register Now</span>
       <h2>आगामी कार्यक्रम | <span>Upcoming Events</span></h2>
       <p class="hindi">
-        नीचे दिए गए कार्यक्रमों में <strong style="color:var(--blue-2);">"Register"</strong> बटन पर क्लिक करके अभी पंजीकरण करें।
+        नीचे दिए गए कार्यक्रमों में
+        <strong style="color:var(--blue-2);">"Register"</strong>
+        बटन पर क्लिक करके अभी पंजीकरण करें।
       </p>
     </div>
 
@@ -2696,7 +1432,7 @@
             <span><i class="fa-solid fa-location-dot"></i> पटना, बिहार</span>
             <span><i class="fa-regular fa-clock"></i> 10:00 AM – 3:00 PM</span>
           </div>
-          <a href="events.html#event-01" class="uc-btn">
+          <a href="events.html" class="uc-btn">
             <i class="fa-solid fa-user-plus"></i> Register Now
           </a>
         </div>
@@ -2715,7 +1451,7 @@
             <span><i class="fa-solid fa-location-dot"></i> मुज़फ़्फ़रपुर, बिहार</span>
             <span><i class="fa-regular fa-clock"></i> 10:00 AM – 3:00 PM</span>
           </div>
-          <a href="events.html#event-02" class="uc-btn">
+          <a href="events.html" class="uc-btn">
             <i class="fa-solid fa-user-plus"></i> Register Now
           </a>
         </div>
@@ -2734,7 +1470,7 @@
             <span><i class="fa-solid fa-location-dot"></i> गया, बिहार</span>
             <span><i class="fa-regular fa-clock"></i> 9:00 AM – 4:00 PM</span>
           </div>
-          <a href="events.html#event-03" class="uc-btn">
+          <a href="events.html" class="uc-btn">
             <i class="fa-solid fa-user-plus"></i> Register Now
           </a>
         </div>
@@ -2753,7 +1489,7 @@
             <span><i class="fa-solid fa-location-dot"></i> भागलपुर, बिहार</span>
             <span><i class="fa-regular fa-clock"></i> 10:00 AM – 3:00 PM</span>
           </div>
-          <a href="events.html#event-04" class="uc-btn">
+          <a href="events.html" class="uc-btn">
             <i class="fa-solid fa-user-plus"></i> Register Now
           </a>
         </div>
@@ -2763,7 +1499,7 @@
 
     <div style="text-align:center;margin-top:45px;">
       <a href="events.html" class="btn btn-blue">
-        <i class="fa-solid fa-calendar-days"></i> View All 16 Events | सभी कार्यक्रम देखें
+        <i class="fa-solid fa-calendar-days"></i> View All Events | सभी कार्यक्रम देखें
       </a>
     </div>
 
@@ -2771,10 +1507,7 @@
 </section>
 
 
-<!-- =========================================================
-     DOWNLOADS PREVIEW
-========================================================= -->
-
+<!-- ================= DOWNLOADS ================= -->
 <section class="section downloads-home-section">
   <div class="container">
 
@@ -2788,7 +1521,7 @@
 
     <div class="downloads-home-grid">
 
-      <a href="downloads.html#forms" class="dh-card">
+      <a href="downloads.html" class="dh-card">
         <div class="dh-icon"><i class="fa-solid fa-file-lines"></i></div>
         <div class="dh-info">
           <div class="dh-count">9 Files</div>
@@ -2798,7 +1531,7 @@
         <div class="dh-arrow"><i class="fa-solid fa-arrow-right"></i></div>
       </a>
 
-      <a href="downloads.html#documents" class="dh-card" data-tone="red">
+      <a href="downloads.html" class="dh-card" data-tone="red">
         <div class="dh-icon"><i class="fa-solid fa-file-contract"></i></div>
         <div class="dh-info">
           <div class="dh-count">11 Files</div>
@@ -2808,7 +1541,7 @@
         <div class="dh-arrow"><i class="fa-solid fa-arrow-right"></i></div>
       </a>
 
-      <a href="downloads.html#reports" class="dh-card" data-tone="gold">
+      <a href="downloads.html" class="dh-card" data-tone="gold">
         <div class="dh-icon"><i class="fa-solid fa-chart-line"></i></div>
         <div class="dh-info">
           <div class="dh-count">8 Files</div>
@@ -2818,7 +1551,7 @@
         <div class="dh-arrow"><i class="fa-solid fa-arrow-right"></i></div>
       </a>
 
-      <a href="downloads.html#media" class="dh-card" data-tone="teal">
+      <a href="downloads.html" class="dh-card" data-tone="teal">
         <div class="dh-icon"><i class="fa-solid fa-photo-film"></i></div>
         <div class="dh-info">
           <div class="dh-count">12 Files</div>
@@ -2840,21 +1573,15 @@
 </section>
 
 
-<!-- =========================================================
-     JOIN US
-========================================================= -->
-
+<!-- ================= JOIN ================= -->
 <section class="section join-section" id="join">
   <div class="container">
     <div class="join-content">
-
       <h2>Join Us | <span>हमारे साथ जुड़ें!</span></h2>
-
       <p class="hindi">
         हमसे जुड़ें और समाज में सकारात्मक बदलाव लाने की इस यात्रा का हिस्सा बनें।
         आपका समय, सहयोग और प्रयास किसी के जीवन में नई उम्मीद जगा सकता है।
       </p>
-
       <p>
         Join us and be part of our journey towards positive change in society.
         Your time, support, and efforts can bring new hope into someone's life.
@@ -2871,16 +1598,12 @@
           <i class="fa-solid fa-download"></i> Downloads
         </a>
       </div>
-
     </div>
   </div>
 </section>
 
 
-<!-- =========================================================
-     CONTACT
-========================================================= -->
-
+<!-- ================= CONTACT ================= -->
 <section class="section contact-section" id="contact">
   <div class="container">
 
@@ -2914,18 +1637,19 @@
 
     </div>
 
+    <div style="text-align:center;margin-top:35px;">
+      <a href="contact.html" class="btn btn-blue">
+        <i class="fa-solid fa-address-book"></i> Full Contact Page | संपर्क पेज
+      </a>
+    </div>
+
   </div>
 </section>
 
 
-<!-- =========================================================
-     CTA STRIP
-========================================================= -->
-
+<!-- ================= CTA ================= -->
 <section class="cta-strip">
-
   <div class="container">
-
     <div class="cta-badge">
       <i class="fa-solid fa-hands-holding-heart"></i>
       Join Our Mission
@@ -2949,16 +1673,11 @@
         <i class="fa-solid fa-phone"></i> Contact Us
       </a>
     </div>
-
   </div>
-
 </section>
 
 
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
+<!-- ================= FOOTER ================= -->
 <footer>
   <div class="container">
 
@@ -2967,7 +1686,8 @@
       <div>
         <div class="footer-brand-head">
           <div class="footer-logo-box">
-            <img src="https://raw.githubusercontent.com/sathchaleham-dot/sath-chale-ham-/main/sath_chale_ham_logo_HD-1.png" alt="Sath Chale Hum Foundation Logo">
+            <img src="sath_chale_ham_logo_HD-1.png"
+                 alt="Sath Chale Hum Foundation Logo">
           </div>
           <div class="footer-brand-text">
             <h3>साथ चले हम फाउंडेशन</h3>
@@ -2988,10 +1708,18 @@
         <h4 class="footer-social-heading">Our Social Media | हमारे सोशल मीडिया</h4>
 
         <div class="social-icons">
-          <a href="https://www.facebook.com/share/1PUUzvUfoo/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/sathchaleham" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://youtube.com/@sathchaleham" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://wa.me/917011893028" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/share/1PUUzvUfoo/" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sathchaleham" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com/@sathchaleham" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/917011893028" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
 
@@ -3003,6 +1731,9 @@
           <li><a href="work.html"><i class="fa-solid fa-chevron-right"></i> Our Work | हमारे कार्य</a></li>
           <li><a href="team.html"><i class="fa-solid fa-chevron-right"></i> Our Team | हमारी टीम</a></li>
           <li><a href="events.html"><i class="fa-solid fa-chevron-right"></i> Events | कार्यक्रम</a></li>
+          <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery | गैलरी</a></li>
+          <li><a href="videos.html"><i class="fa-solid fa-chevron-right"></i> Videos | वीडियो</a></li>
+          <li><a href="impact.html"><i class="fa-solid fa-chevron-right"></i> Impact | प्रभाव</a></li>
           <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Downloads | डाउनलोड</a></li>
           <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact | संपर्क</a></li>
         </ul>
@@ -3012,23 +1743,23 @@
         <h4 class="footer-heading">Get Involved | जुड़ें</h4>
         <ul class="footer-links">
           <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Volunteer | स्वयंसेवक</a></li>
-          <li><a href="join-us.html#internship"><i class="fa-solid fa-chevron-right"></i> Internship | इंटर्नशिप</a></li>
-          <li><a href="join-us.html#csr"><i class="fa-solid fa-chevron-right"></i> CSR Partnership | CSR</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Internship | इंटर्नशिप</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> CSR Partnership | CSR</a></li>
           <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Donate | दान करें</a></li>
-          <li><a href="donate.html#fundraise"><i class="fa-solid fa-chevron-right"></i> Fundraise | फंडरेज़िंग</a></li>
-          <li><a href="join-us.html#careers"><i class="fa-solid fa-chevron-right"></i> Careers | करियर</a></li>
+          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Fundraise | फंडरेज़िंग</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Careers | करियर</a></li>
         </ul>
       </div>
 
       <div>
         <h4 class="footer-heading">Resources | संसाधन</h4>
         <ul class="footer-links">
-          <li><a href="downloads.html#reports"><i class="fa-solid fa-chevron-right"></i> Reports | रिपोर्ट</a></li>
-          <li><a href="downloads.html#documents"><i class="fa-solid fa-chevron-right"></i> Certificates | प्रमाण पत्र</a></li>
-          <li><a href="events.html#gallery"><i class="fa-solid fa-chevron-right"></i> Gallery | गैलरी</a></li>
-          <li><a href="events.html#videos"><i class="fa-solid fa-chevron-right"></i> Videos | वीडियो</a></li>
-          <li><a href="contact.html#faq"><i class="fa-solid fa-chevron-right"></i> FAQ | सामान्य प्रश्न</a></li>
-          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> All Downloads | सभी</a></li>
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Reports | रिपोर्ट</a></li>
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Certificates | प्रमाण पत्र</a></li>
+          <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery | गैलरी</a></li>
+          <li><a href="videos.html"><i class="fa-solid fa-chevron-right"></i> Videos | वीडियो</a></li>
+          <li><a href="faq.html"><i class="fa-solid fa-chevron-right"></i> FAQ | सामान्य प्रश्न</a></li>
+          <li><a href="sitemap.html"><i class="fa-solid fa-chevron-right"></i> Sitemap | साइटमैप</a></li>
         </ul>
       </div>
 
@@ -3067,9 +1798,12 @@
 
         <div class="footer-newsletter">
           <label>Newsletter | न्यूज़लेटर</label>
-          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
+          <form class="newsletter-form"
+                onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
             <input type="email" placeholder="your@email.com" required>
-            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+            <button type="submit" aria-label="Subscribe">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
           </form>
         </div>
       </div>
@@ -3082,12 +1816,9 @@
           © 2026 <strong>Sath Chale Hum Foundation</strong> · All Rights Reserved
         </div>
         <div class="footer-legal">
-          <a href="terms.html">Terms</a>
-          <span>·</span>
-          <a href="privacy.html">Privacy</a>
-          <span>·</span>
-          <a href="downloads.html">Sitemap</a>
-          <span>·</span>
+          <a href="terms.html">Terms</a><span>·</span>
+          <a href="privacy.html">Privacy</a><span>·</span>
+          <a href="sitemap.html">Sitemap</a><span>·</span>
           <a href="disclaimer.html">Disclaimer</a>
         </div>
         <div class="footer-made">
@@ -3100,24 +1831,19 @@
 </footer>
 
 
-<!-- BACK TO TOP -->
+<!-- ================= BACK TO TOP ================= -->
 <button class="back-top" id="backTop" aria-label="Back to Top" type="button">
   <i class="fa-solid fa-arrow-up"></i>
 </button>
 
 
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
-
+<!-- ================= JAVASCRIPT ================= -->
 <script>
-
 document.addEventListener("DOMContentLoaded", function(){
 
   /* MOBILE MENU */
   var menuToggle = document.getElementById("menuToggle");
   var mobileNav = document.getElementById("mobileNav");
-
   if(menuToggle && mobileNav){
     menuToggle.addEventListener("click", function(){
       mobileNav.classList.toggle("active");
@@ -3140,42 +1866,39 @@ document.addEventListener("DOMContentLoaded", function(){
   var heroIndex = 0;
   var heroTimer = null;
 
-  function showHeroSlide(index){
-    if(!heroSlides.length) return;
+  function goToHero(index){
     heroSlides.forEach(function(s){ s.classList.remove("active"); });
     heroDots.forEach(function(d){ d.classList.remove("active"); });
     if(heroSlides[index]) heroSlides[index].classList.add("active");
     if(heroDots[index]) heroDots[index].classList.add("active");
     heroIndex = index;
+  }
+  function startHeroTimer(){
     if(heroTimer) clearInterval(heroTimer);
     if(heroSlides.length > 1){
       heroTimer = setInterval(function(){
         heroIndex = (heroIndex + 1) % heroSlides.length;
-        showHeroSlide(heroIndex);
+        goToHero(heroIndex);
       }, 5000);
     }
   }
-
   heroDots.forEach(function(dot){
     dot.addEventListener("click", function(){
-      showHeroSlide(parseInt(dot.getAttribute("data-slide"), 10));
+      goToHero(parseInt(dot.getAttribute("data-slide"), 10));
+      startHeroTimer();
     });
   });
+  startHeroTimer();
 
-  if(heroSlides.length > 1){
-    heroTimer = setInterval(function(){
-      heroIndex = (heroIndex + 1) % heroSlides.length;
-      showHeroSlide(heroIndex);
-    }, 5000);
-  }
-
-  /* DAILY BOX SELECTION */
-  document.querySelectorAll(".daily-box").forEach(function(box){
+  /* DAILY BOX — amount passed to donate page */
+  var dailyBoxes = document.querySelectorAll(".daily-box");
+  var dailyBtn = document.getElementById("dailyDonateBtn");
+  dailyBoxes.forEach(function(box){
     box.addEventListener("click", function(){
-      document.querySelectorAll(".daily-box").forEach(function(b){
-        b.classList.remove("selected");
-      });
+      dailyBoxes.forEach(function(b){ b.classList.remove("selected"); });
       box.classList.add("selected");
+      var amt = box.getAttribute("data-amount");
+      if(dailyBtn) dailyBtn.href = "donate.html?amount=" + amt;
     });
   });
 
@@ -3193,7 +1916,10 @@ document.addEventListener("DOMContentLoaded", function(){
       dot.type = "button";
       dot.className = "slider-dot" + (index === 0 ? " active" : "");
       dot.setAttribute("aria-label", "Slide " + (index + 1));
-      dot.addEventListener("click", function(){ show(index); });
+      dot.addEventListener("click", function(){
+        show(index);
+        restart();
+      });
       dotContainer.appendChild(dot);
     });
 
@@ -3205,6 +1931,8 @@ document.addEventListener("DOMContentLoaded", function(){
       if(slides[index]) slides[index].classList.add("active");
       if(dots[index]) dots[index].classList.add("active");
       current = index;
+    }
+    function restart(){
       if(timer) clearInterval(timer);
       if(slides.length > 1){
         timer = setInterval(function(){
@@ -3213,13 +1941,7 @@ document.addEventListener("DOMContentLoaded", function(){
         }, interval);
       }
     }
-
-    if(slides.length > 1){
-      timer = setInterval(function(){
-        current = (current + 1) % slides.length;
-        show(current);
-      }, interval);
-    }
+    restart();
   }
 
   createSlider(".value-slide", "valueDots", 3500);
@@ -3243,7 +1965,6 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
 });
-
 </script>
 
 </body>
