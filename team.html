@@ -7,11 +7,6 @@
   <title>Our Team | हमारी टीम | Sath Chale Hum Foundation</title>
   <meta name="description" content="साथ चले हम फाउंडेशन की टीम — Board of Trustees, Advisory Board, Program Team के समर्पित सदस्य।">
   <meta name="theme-color" content="#0A2540">
-  <meta property="og:title" content="Our Team | Sath Chale Hum Foundation">
-  <meta property="og:description" content="हमारी टीम — समर्पित सदस्यों से मिलें जो समाज सेवा में जुटे हैं।">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="sath_chale_ham_logo_HD-1.png">
-  <link rel="canonical" href="https://sathchaleham.org/team.html">
   <link rel="icon" type="image/png" href="sath_chale_ham_logo_HD-1.png">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,8 +45,6 @@
     .section-title h2{ font-size:clamp(1.9rem,3.8vw,3rem); line-height:1.2;
       font-weight:900; color:var(--navy); }
     .section-title h2 span{ color:var(--blue-2); }
-    .section-title p{ max-width:800px; margin:18px auto 0;
-      color:var(--muted); line-height:1.8; font-size:1rem; }
 
     /* HEADER */
     .site-header{
@@ -66,37 +59,30 @@
     .brand{ display:flex; align-items:center; gap:14px;
       min-width:0; flex-shrink:0; }
     .logo-box{ width:66px; height:66px; border-radius:16px;
-      background:#FFFFFF;
-      display:block; padding:0;
+      background:#FFFFFF; display:block; padding:0;
       box-shadow:0 8px 24px rgba(59,130,246,.35);
       border:2px solid rgba(251,191,36,.4);
       transition:.35s ease; flex-shrink:0; overflow:hidden;
       position:relative; line-height:0; }
     .logo-box:hover{ transform:translateY(-2px) rotate(-3deg);
-      box-shadow:0 14px 34px rgba(59,130,246,.5);
       border-color:var(--gold); }
     .logo-box img{ width:100%; height:100%;
-      object-fit:cover; object-position:center;
-      display:block; margin:0; padding:0;
-      border:0; transform:scale(1.02);
-      transform-origin:center center; }
+      object-fit:cover; object-position:center; }
     .brand-text{ min-width:0; }
     .brand-name{ color:#fff;
       font-size:clamp(1.2rem,2.4vw,1.7rem); font-weight:900;
       line-height:1.1; white-space:nowrap; letter-spacing:-.5px;
-      font-family:"Tiro Devanagari Hindi",serif;
-      text-shadow:0 2px 10px rgba(0,0,0,.3); }
-    .brand-name .gold{ color:var(--gold); font-weight:900; }
+      font-family:"Tiro Devanagari Hindi",serif; }
+    .brand-name .gold{ color:var(--gold); }
     .brand-tagline{ color:#93C5FD; font-size:.7rem; font-weight:600;
       margin-top:3px; white-space:nowrap; letter-spacing:.4px; }
 
-    .desktop-nav{ display:flex; align-items:center; gap:2px;
-      flex-wrap:nowrap; }
+    .desktop-nav{ display:flex; align-items:center; gap:2px; flex-wrap:nowrap; }
     .desktop-nav > a{ color:#E0F2FE; font-size:.78rem; font-weight:700;
       padding:11px 10px; border-radius:10px; transition:.25s ease;
       white-space:nowrap; position:relative; }
     .desktop-nav > a:hover{ color:var(--gold);
-      background:rgba(59,130,246,.15); transform:translateY(-1px); }
+      background:rgba(59,130,246,.15); }
     .desktop-nav > a.active{ color:var(--gold);
       background:rgba(59,130,246,.2); }
     .desktop-nav > a.active::after{ content:""; position:absolute;
@@ -107,25 +93,18 @@
       background:linear-gradient(135deg,#DC2626,#991B1B)!important;
       padding:11px 17px!important; color:#fff!important;
       font-weight:900!important; border-radius:11px!important;
-      box-shadow:0 6px 20px rgba(220,38,38,.45),
-        inset 0 1px 0 rgba(255,255,255,.2);
-      animation:pulseDonate 2s infinite; margin-left:6px;
-      letter-spacing:.3px; }
+      box-shadow:0 6px 20px rgba(220,38,38,.45);
+      animation:pulseDonate 2s infinite; margin-left:6px; }
     .donate-nav:hover{ color:#fff!important;
       background:linear-gradient(135deg,#EF4444,#DC2626)!important;
       transform:translateY(-2px)!important; }
     @keyframes pulseDonate{
-      0%,100%{ transform:scale(1);
-        box-shadow:0 6px 20px rgba(220,38,38,.4),
-          inset 0 1px 0 rgba(255,255,255,.2); }
-      50%{ transform:scale(1.04);
-        box-shadow:0 10px 30px rgba(220,38,38,.7),
-          inset 0 1px 0 rgba(255,255,255,.2); } }
+      0%,100%{ transform:scale(1); }
+      50%{ transform:scale(1.04); } }
 
     .menu-toggle{ display:none; width:46px; height:46px;
       border-radius:12px; background:rgba(59,130,246,.15);
-      border:1px solid rgba(59,130,246,.3); padding:11px;
-      transition:.3s; }
+      border:1px solid rgba(59,130,246,.3); padding:11px; }
     .menu-toggle span{ display:block; width:100%; height:2.5px;
       background:#fff; margin:4.5px 0; border-radius:5px;
       transition:.3s; }
@@ -138,8 +117,7 @@
     .mobile-nav{ display:none;
       background:linear-gradient(180deg,#0A2540,#0F2E4F);
       border-top:1px solid rgba(59,130,246,.2);
-      padding:14px 4% 20px;
-      box-shadow:0 20px 40px rgba(0,0,0,.3); }
+      padding:14px 4% 20px; }
     .mobile-nav a{ display:block; color:#E0F2FE;
       padding:14px 16px; border-radius:10px; font-weight:700;
       font-size:.9rem; margin:4px 0; transition:.25s;
@@ -174,41 +152,32 @@
       letter-spacing:1.5px; text-transform:uppercase;
       margin-bottom:22px;
     }
-    .breadcrumb a{ color:#93C5FD; transition:.25s; }
+    .breadcrumb a{ color:#93C5FD; }
     .breadcrumb a:hover{ color:var(--gold); }
     .breadcrumb i{ font-size:.6rem; color:var(--gold); }
     .page-hero h1{
       font-size:clamp(2rem,5vw,3.5rem);
       font-weight:900; line-height:1.15;
       font-family:"Tiro Devanagari Hindi",serif;
-      margin-bottom:18px; letter-spacing:-1px;
-      text-shadow:0 8px 30px rgba(0,0,0,.35);
-    }
+      margin-bottom:18px; letter-spacing:-1px; }
     .page-hero h1 span{ color:var(--gold); }
     .page-hero p{
       max-width:760px; margin:auto;
-      color:#93C5FD; font-size:1rem; line-height:1.85;
-    }
+      color:#93C5FD; font-size:1rem; line-height:1.85; }
 
     /* BUTTONS */
     .btn{ display:inline-flex; align-items:center; justify-content:center;
       gap:10px; min-height:54px; padding:15px 30px;
       border-radius:13px; font-size:.9rem; font-weight:800;
-      transition:.3s ease; letter-spacing:.3px; border:none;
+      transition:.3s ease; letter-spacing:.3px;
       cursor:pointer; font-family:inherit; }
     .btn:hover{ transform:translateY(-4px); }
     .btn-red{ color:#fff;
       background:linear-gradient(135deg,#DC2626,#991B1B);
       box-shadow:0 12px 32px rgba(220,38,38,.45); }
-    .btn-red:hover{ box-shadow:0 18px 42px rgba(220,38,38,.65); }
     .btn-gold{ color:#0A2540;
       background:linear-gradient(135deg,#FBBF24,#F59E0B);
       box-shadow:0 12px 32px rgba(251,191,36,.45); }
-    .btn-gold:hover{ box-shadow:0 18px 42px rgba(251,191,36,.65); }
-    .btn-blue{ color:#fff;
-      background:linear-gradient(135deg,#2563EB,#1E40AF);
-      box-shadow:0 12px 32px rgba(37,99,235,.45); }
-    .btn-blue:hover{ box-shadow:0 18px 42px rgba(37,99,235,.65); }
     .btn-outline{ color:#fff; background:rgba(255,255,255,.06);
       border:1.5px solid rgba(255,255,255,.3);
       backdrop-filter:blur(8px); }
@@ -225,8 +194,7 @@
         radial-gradient(circle at 12% 15%,rgba(251,191,36,.06),transparent 32%),
         radial-gradient(circle at 88% 85%,rgba(37,99,235,.08),transparent 35%),
         linear-gradient(160deg,#F8FAFC,#EFF6FF);
-      position:relative; overflow:hidden;
-      padding:80px 0;
+      position:relative; overflow:hidden; padding:80px 0;
     }
     .team-group-section.alt{
       background:linear-gradient(160deg,#EFF6FF,#F8FAFC);
@@ -240,14 +208,12 @@
 
     .group-header{
       display:flex; align-items:center; gap:18px;
-      margin-bottom:45px;
-      padding:22px 28px;
+      margin-bottom:45px; padding:22px 28px;
       border-radius:22px;
       background:linear-gradient(135deg,#0A2540,#1E40AF);
       color:#fff;
       box-shadow:0 20px 50px rgba(30,64,175,.35);
-      position:relative;
-      overflow:hidden;
+      position:relative; overflow:hidden;
     }
     .group-header::before{
       content:""; position:absolute; inset:0;
@@ -255,14 +221,11 @@
       background-size:20px 20px; opacity:.5; pointer-events:none;
     }
     .group-header-icon{
-      position:relative; z-index:2;
-      flex-shrink:0;
-      width:64px; height:64px;
-      border-radius:18px;
+      position:relative; z-index:2; flex-shrink:0;
+      width:64px; height:64px; border-radius:18px;
       display:grid; place-items:center;
       background:linear-gradient(145deg,#FBBF24,#F59E0B);
-      color:#0A2540;
-      font-size:1.6rem;
+      color:#0A2540; font-size:1.6rem;
       box-shadow:0 12px 28px rgba(251,191,36,.45);
     }
     .group-header-text{ position:relative; z-index:2; min-width:0; }
@@ -270,142 +233,185 @@
       font-family:"Tiro Devanagari Hindi",serif;
       font-size:clamp(1.25rem,2.6vw,1.7rem);
       font-weight:900; line-height:1.3;
-      margin:0 0 4px;
-    }
+      margin:0 0 4px; }
     .group-header-text p{
-      color:#93C5FD; font-size:.85rem;
-      margin:0; line-height:1.5;
-    }
+      color:#93C5FD; font-size:.85rem; margin:0; line-height:1.5; }
     .group-header-count{
-      position:relative; z-index:2;
-      margin-left:auto;
-      flex-shrink:0;
-      padding:8px 16px;
+      position:relative; z-index:2; margin-left:auto;
+      flex-shrink:0; padding:8px 16px;
       border-radius:100px;
       background:rgba(251,191,36,.15);
       border:1px solid rgba(251,191,36,.4);
-      color:var(--gold);
-      font-size:.72rem;
-      font-weight:900;
-      letter-spacing:1.5px;
-      text-transform:uppercase;
-      white-space:nowrap;
-    }
+      color:var(--gold); font-size:.72rem; font-weight:900;
+      letter-spacing:1.5px; text-transform:uppercase;
+      white-space:nowrap; }
 
     /* MEMBER GRID */
     .member-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:22px;
+      gap:24px;
     }
 
+    /* ============ PREMIUM MEMBER CARD ============ */
     .member-card{
       background:#fff;
-      border-radius:24px;
-      padding:32px 24px 28px;
-      text-align:center;
+      border-radius:26px;
+      overflow:hidden;
       border:1px solid var(--border);
-      box-shadow:0 12px 34px rgba(15,23,42,.08);
-      transition:.4s cubic-bezier(.2,.8,.3,1);
+      box-shadow:0 14px 40px rgba(15,23,42,.08);
+      transition:.45s cubic-bezier(.2,.8,.3,1);
       cursor:pointer;
       position:relative;
-      overflow:hidden;
-    }
-    .member-card::before{
-      content:""; position:absolute;
-      top:0; left:0; right:0; height:5px;
-      background:linear-gradient(90deg,#2563EB,#1E40AF);
-      transition:.35s;
-    }
-    .member-card[data-tone="gold"]::before{
-      background:linear-gradient(90deg,#FBBF24,#F59E0B);
-    }
-    .member-card[data-tone="red"]::before{
-      background:linear-gradient(90deg,#DC2626,#991B1B);
-    }
-    .member-card[data-tone="teal"]::before{
-      background:linear-gradient(90deg,#059669,#047857);
     }
     .member-card:hover{
-      transform:translateY(-8px);
-      box-shadow:0 26px 60px rgba(37,99,235,.2);
+      transform:translateY(-10px);
+      box-shadow:0 30px 70px rgba(37,99,235,.22);
       border-color:var(--blue-light);
     }
 
-    .member-avatar{
-      width:88px; height:88px;
+    /* ===== CARD TOP BANNER (Premium Graphic) ===== */
+    .member-banner{
+      height:120px;
+      position:relative;
+      overflow:hidden;
+      background:
+        radial-gradient(circle at 20% 30%,rgba(255,255,255,.25),transparent 40%),
+        linear-gradient(135deg,#0A2540,#1E40AF 60%,#2563EB);
+    }
+    .member-card[data-tone="gold"] .member-banner{
+      background:
+        radial-gradient(circle at 20% 30%,rgba(255,255,255,.3),transparent 40%),
+        linear-gradient(135deg,#B45309,#F59E0B 60%,#FBBF24);
+    }
+    .member-card[data-tone="red"] .member-banner{
+      background:
+        radial-gradient(circle at 20% 30%,rgba(255,255,255,.25),transparent 40%),
+        linear-gradient(135deg,#7F1D1D,#DC2626 60%,#EF4444);
+    }
+    .member-card[data-tone="teal"] .member-banner{
+      background:
+        radial-gradient(circle at 20% 30%,rgba(255,255,255,.25),transparent 40%),
+        linear-gradient(135deg,#065F46,#059669 60%,#10B981);
+    }
+
+    /* Decorative pattern on banner */
+    .member-banner::before{
+      content:"";
+      position:absolute; inset:0;
+      background-image:
+        radial-gradient(circle,rgba(255,255,255,.14) 1.5px,transparent 1.5px);
+      background-size:22px 22px;
+      opacity:.65;
+    }
+    /* Decorative circle */
+    .member-banner::after{
+      content:"";
+      position:absolute;
+      top:-40px; right:-40px;
+      width:140px; height:140px;
       border-radius:50%;
-      margin:0 auto 20px;
-      display:grid; place-items:center;
+      background:rgba(255,255,255,.1);
+      border:1px solid rgba(255,255,255,.15);
+    }
+
+    /* ===== PHOTO ===== */
+    .member-photo-wrap{
+      position:absolute;
+      left:50%;
+      bottom:-46px;
+      transform:translateX(-50%);
+      z-index:3;
+    }
+    .member-photo{
+      width:92px; height:92px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
       background:linear-gradient(145deg,#2563EB,#1E40AF);
       color:#fff;
       font-family:"Poppins",sans-serif;
       font-size:1.9rem;
       font-weight:900;
       letter-spacing:1px;
-      box-shadow:0 14px 32px rgba(37,99,235,.4),
-              inset 0 3px 0 rgba(255,255,255,.25);
-      transition:.35s;
+      border:4px solid #fff;
+      box-shadow:
+        0 12px 30px rgba(37,99,235,.4),
+        0 4px 10px rgba(15,23,42,.15);
+      transition:.4s;
       position:relative;
+      overflow:hidden;
+      background-size:cover;
+      background-position:center;
     }
-    .member-card[data-tone="gold"] .member-avatar{
+    .member-card[data-tone="gold"] .member-photo{
       background:linear-gradient(145deg,#FBBF24,#F59E0B);
       color:#0A2540;
-      box-shadow:0 14px 32px rgba(251,191,36,.45),
-              inset 0 3px 0 rgba(255,255,255,.4);
+      box-shadow:
+        0 12px 30px rgba(251,191,36,.45),
+        0 4px 10px rgba(15,23,42,.15);
     }
-    .member-card[data-tone="red"] .member-avatar{
+    .member-card[data-tone="red"] .member-photo{
       background:linear-gradient(145deg,#DC2626,#991B1B);
-      box-shadow:0 14px 32px rgba(220,38,38,.4),
-              inset 0 3px 0 rgba(255,255,255,.25);
+      box-shadow:
+        0 12px 30px rgba(220,38,38,.4),
+        0 4px 10px rgba(15,23,42,.15);
     }
-    .member-card[data-tone="teal"] .member-avatar{
+    .member-card[data-tone="teal"] .member-photo{
       background:linear-gradient(145deg,#059669,#047857);
-      box-shadow:0 14px 32px rgba(5,150,105,.4),
-              inset 0 3px 0 rgba(255,255,255,.25);
+      box-shadow:
+        0 12px 30px rgba(5,150,105,.4),
+        0 4px 10px rgba(15,23,42,.15);
     }
-    .member-card:hover .member-avatar{
-      transform:scale(1.06) rotate(-4deg);
+    /* Ring animation on hover */
+    .member-card:hover .member-photo{
+      transform:scale(1.08) rotate(-3deg);
     }
-
-    .member-avatar::after{
-      content:""; position:absolute;
-      inset:-6px;
+    .member-photo::after{
+      content:"";
+      position:absolute;
+      inset:-5px;
       border-radius:50%;
-      border:2px dashed rgba(251,191,36,.6);
+      border:2px dashed rgba(255,255,255,.6);
       opacity:0;
-      transition:.35s;
+      transition:.4s;
     }
-    .member-card:hover .member-avatar::after{
+    .member-card:hover .member-photo::after{
       opacity:1;
-      animation:avatarSpin 8s linear infinite;
+      animation:photoSpin 12s linear infinite;
     }
-    @keyframes avatarSpin{
-      to{ transform:rotate(360deg); }
+    @keyframes photoSpin{ to{ transform:rotate(360deg); } }
+
+    /* ===== CARD BODY ===== */
+    .member-content{
+      padding:60px 22px 24px;
+      text-align:center;
     }
 
-    .member-role{
-      display:inline-block;
-      padding:5px 12px;
+    .member-role-tag{
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      padding:5px 13px;
       border-radius:100px;
       background:var(--blue-pale);
       border:1px solid #BFDBFE;
       color:var(--blue);
-      font-size:.66rem;
+      font-size:.64rem;
       font-weight:900;
-      letter-spacing:1.5px;
+      letter-spacing:1.4px;
       text-transform:uppercase;
-      margin-bottom:12px;
+      margin-bottom:10px;
     }
-    .member-card[data-tone="gold"] .member-role{
+    .member-card[data-tone="gold"] .member-role-tag{
       background:var(--gold-pale); border-color:#FDE68A;
       color:var(--gold-dark);
     }
-    .member-card[data-tone="red"] .member-role{
+    .member-card[data-tone="red"] .member-role-tag{
       background:#FEE2E2; border-color:#FECACA;
       color:var(--red);
     }
-    .member-card[data-tone="teal"] .member-role{
+    .member-card[data-tone="teal"] .member-role-tag{
       background:#D1FAE5; border-color:#A7F3D0;
       color:#047857;
     }
@@ -415,30 +421,55 @@
       font-size:1.15rem;
       font-weight:900;
       color:var(--navy);
-      line-height:1.35;
-      margin-bottom:8px;
+      line-height:1.3;
+      margin-bottom:6px;
+    }
+    .member-name-small{
+      font-size:.78rem;
+      color:var(--muted);
+      font-weight:600;
+      margin-bottom:14px;
     }
 
-    .member-hint{
+    .member-view-btn{
       display:inline-flex;
       align-items:center;
       gap:7px;
-      color:var(--muted);
-      font-size:.76rem;
-      font-weight:700;
-      margin-top:6px;
-      transition:.25s;
+      padding:9px 18px;
+      border-radius:100px;
+      background:linear-gradient(135deg,#0A2540,#1E40AF);
+      color:#fff;
+      font-size:.72rem;
+      font-weight:900;
+      letter-spacing:.6px;
+      transition:.35s;
+      border:none;
     }
-    .member-card:hover .member-hint{
-      color:var(--blue-2);
+    .member-card:hover .member-view-btn{
+      background:linear-gradient(135deg,#1E40AF,#2563EB);
+      transform:translateY(-2px);
+      box-shadow:0 10px 24px rgba(37,99,235,.4);
+    }
+    .member-card[data-tone="gold"]:hover .member-view-btn{
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      box-shadow:0 10px 24px rgba(251,191,36,.5);
+    }
+    .member-card[data-tone="red"]:hover .member-view-btn{
+      background:linear-gradient(135deg,#DC2626,#EF4444);
+      box-shadow:0 10px 24px rgba(220,38,38,.5);
+    }
+    .member-card[data-tone="teal"]:hover .member-view-btn{
+      background:linear-gradient(135deg,#059669,#10B981);
+      box-shadow:0 10px 24px rgba(5,150,105,.5);
     }
 
-    /* MODAL */
+    /* ===== MODAL ===== */
     .modal-overlay{
       position:fixed; inset:0;
-      background:rgba(10,37,64,.85);
-      backdrop-filter:blur(8px);
-      -webkit-backdrop-filter:blur(8px);
+      background:rgba(10,37,64,.88);
+      backdrop-filter:blur(10px);
+      -webkit-backdrop-filter:blur(10px);
       z-index:10000;
       display:none;
       align-items:center; justify-content:center;
@@ -447,19 +478,18 @@
       transition:opacity .35s;
     }
     .modal-overlay.active{
-      display:flex;
-      opacity:1;
+      display:flex; opacity:1;
     }
     .modal-box{
       background:#fff;
-      border-radius:28px;
-      max-width:720px;
+      border-radius:30px;
+      max-width:640px;
       width:100%;
-      max-height:90vh;
+      max-height:92vh;
       overflow-y:auto;
-      box-shadow:0 40px 100px rgba(0,0,0,.6);
-      transform:scale(.92) translateY(20px);
-      transition:transform .35s cubic-bezier(.2,.8,.3,1);
+      box-shadow:0 40px 120px rgba(0,0,0,.7);
+      transform:scale(.9) translateY(30px);
+      transition:transform .4s cubic-bezier(.2,.8,.3,1);
       position:relative;
     }
     .modal-overlay.active .modal-box{
@@ -468,89 +498,142 @@
 
     .modal-close{
       position:absolute;
-      top:18px; right:18px;
-      width:42px; height:42px;
+      top:16px; right:16px;
+      width:44px; height:44px;
       border-radius:12px;
-      background:rgba(255,255,255,.15);
+      background:rgba(255,255,255,.18);
+      backdrop-filter:blur(10px);
       color:#fff;
       display:grid; place-items:center;
-      font-size:1rem;
-      z-index:10;
+      font-size:1.05rem;
+      z-index:20;
       transition:.3s;
       cursor:pointer;
+      border:1px solid rgba(255,255,255,.25);
     }
     .modal-close:hover{
       background:#DC2626;
       transform:rotate(90deg) scale(1.1);
     }
 
+    /* ===== MODAL HEADER ===== */
     .modal-header{
-      padding:44px 38px 32px;
-      background:linear-gradient(135deg,#0A2540,#1E40AF);
+      padding:48px 32px 60px;
       color:#fff;
       text-align:center;
       position:relative;
       overflow:hidden;
-      border-radius:28px 28px 0 0;
+      background:
+        radial-gradient(circle at 20% 30%,rgba(255,255,255,.2),transparent 45%),
+        linear-gradient(135deg,#0A2540,#1E40AF 60%,#2563EB);
+    }
+    .modal-header[data-tone="gold"]{
+      background:
+        radial-gradient(circle at 20% 30%,rgba(255,255,255,.3),transparent 45%),
+        linear-gradient(135deg,#B45309,#F59E0B 60%,#FBBF24);
+    }
+    .modal-header[data-tone="red"]{
+      background:
+        radial-gradient(circle at 20% 30%,rgba(255,255,255,.2),transparent 45%),
+        linear-gradient(135deg,#7F1D1D,#DC2626 60%,#EF4444);
+    }
+    .modal-header[data-tone="teal"]{
+      background:
+        radial-gradient(circle at 20% 30%,rgba(255,255,255,.2),transparent 45%),
+        linear-gradient(135deg,#065F46,#059669 60%,#10B981);
     }
     .modal-header::before{
-      content:""; position:absolute; inset:0;
-      background-image:radial-gradient(circle,rgba(255,255,255,.06) 1px,transparent 1px);
-      background-size:20px 20px; opacity:.55; pointer-events:none;
+      content:"";
+      position:absolute; inset:0;
+      background-image:
+        radial-gradient(circle,rgba(255,255,255,.14) 1.5px,transparent 1.5px);
+      background-size:22px 22px;
+      opacity:.6;
+      pointer-events:none;
     }
+    .modal-header::after{
+      content:"";
+      position:absolute;
+      top:-60px; right:-60px;
+      width:220px; height:220px;
+      border-radius:50%;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+    }
+
     .modal-header-content{ position:relative; z-index:2; }
 
-    .modal-avatar{
-      width:110px; height:110px;
+    .modal-photo{
+      width:130px; height:130px;
       border-radius:50%;
       margin:0 auto 20px;
       display:grid; place-items:center;
-      background:linear-gradient(145deg,#FBBF24,#F59E0B);
-      color:#0A2540;
+      background:linear-gradient(145deg,#2563EB,#1E40AF);
+      color:#fff;
       font-family:"Poppins",sans-serif;
-      font-size:2.4rem;
+      font-size:2.6rem;
       font-weight:900;
-      letter-spacing:1px;
-      box-shadow:0 20px 50px rgba(251,191,36,.5),
-              inset 0 4px 0 rgba(255,255,255,.4);
+      letter-spacing:2px;
+      border:5px solid rgba(255,255,255,.9);
+      box-shadow:
+        0 20px 50px rgba(0,0,0,.35),
+        0 6px 20px rgba(0,0,0,.2);
+      background-size:cover;
+      background-position:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .modal-photo::after{
+      content:"";
+      position:absolute;
+      inset:-6px;
+      border-radius:50%;
+      border:2px dashed rgba(255,255,255,.55);
+      animation:photoSpin 18s linear infinite;
     }
 
     .modal-header h3{
       font-family:"Tiro Devanagari Hindi",serif;
-      font-size:clamp(1.35rem,3vw,1.9rem);
+      font-size:clamp(1.4rem,3vw,1.9rem);
       font-weight:900;
       line-height:1.3;
-      margin-bottom:10px;
+      margin-bottom:6px;
       color:#fff;
+      text-shadow:0 3px 20px rgba(0,0,0,.4);
+    }
+    .modal-header .modal-subname{
+      color:rgba(255,255,255,.85);
+      font-size:.9rem;
+      font-weight:600;
+      margin-bottom:14px;
     }
 
     .modal-role-badge{
       display:inline-flex;
       align-items:center;
       gap:8px;
-      padding:8px 18px;
+      padding:9px 20px;
       border-radius:100px;
-      background:rgba(251,191,36,.18);
-      border:1px solid rgba(251,191,36,.45);
-      color:var(--gold);
+      background:rgba(255,255,255,.16);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,.35);
+      color:#fff;
       font-size:.72rem;
       font-weight:900;
       letter-spacing:1.8px;
       text-transform:uppercase;
     }
 
-    .modal-body{
-      padding:36px 38px 40px;
-    }
+    /* ===== MODAL BODY ===== */
+    .modal-body{ padding:36px 32px 40px; }
 
     .modal-detail-list{
       list-style:none;
-      display:flex; flex-direction:column;
-      gap:14px;
+      display:flex; flex-direction:column; gap:12px;
     }
     .modal-detail-list li{
       display:flex; align-items:flex-start; gap:14px;
-      padding:16px 18px;
+      padding:15px 17px;
       border-radius:14px;
       background:#F8FAFC;
       border:1px solid var(--border);
@@ -559,24 +642,22 @@
     .modal-detail-list li:hover{
       background:var(--blue-pale);
       border-color:var(--blue-light);
+      transform:translateX(4px);
     }
     .modal-detail-list li i{
       flex-shrink:0;
-      width:36px; height:36px;
+      width:38px; height:38px;
       display:grid; place-items:center;
-      border-radius:10px;
+      border-radius:11px;
       background:linear-gradient(145deg,#2563EB,#1E40AF);
       color:#fff;
-      font-size:.85rem;
+      font-size:.9rem;
     }
-    .modal-detail-list li > div{
-      flex:1;
-      min-width:0;
-    }
+    .modal-detail-list li > div{ flex:1; min-width:0; }
     .modal-detail-list li strong{
       display:block;
       color:var(--navy);
-      font-size:.72rem;
+      font-size:.68rem;
       font-weight:900;
       letter-spacing:1.2px;
       text-transform:uppercase;
@@ -600,13 +681,12 @@
       border-radius:18px;
       background:linear-gradient(135deg,#EFF6FF,#DBEAFE);
       border-left:5px solid var(--blue-2);
-      color:var(--navy);
-      font-size:.92rem;
-      line-height:1.85;
     }
     .modal-about strong{
-      display:block;
-      margin-bottom:8px;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      margin-bottom:10px;
       color:var(--blue-2);
       font-size:.72rem;
       font-weight:900;
@@ -616,6 +696,8 @@
     .modal-about p{
       margin:0;
       color:var(--text-soft);
+      font-size:.94rem;
+      line-height:1.85;
     }
 
     /* CTA STRIP */
@@ -657,24 +739,20 @@
     .footer-brand-head{ display:flex; align-items:center;
       gap:10px; margin-bottom:20px; }
     .footer-logo-box{ width:60px; height:60px; border-radius:15px;
-      background:#FFFFFF;
-      display:block; padding:0;
+      background:#FFFFFF; display:block; padding:0;
       border:2px solid rgba(251,191,36,.4);
       box-shadow:0 8px 22px rgba(59,130,246,.3);
       flex-shrink:0; overflow:hidden;
       position:relative; line-height:0; }
     .footer-logo-box img{ width:100%; height:100%;
-      object-fit:cover; object-position:center;
-      display:block; margin:0; padding:0;
-      border:0; transform:scale(1.02);
-      transform-origin:center center; }
+      object-fit:cover; object-position:center; }
     .footer-brand-text{ min-width:0; }
     .footer-brand-text h3{ font-family:"Tiro Devanagari Hindi",serif;
       font-size:1.05rem; font-weight:900; color:#fff;
       line-height:1.15; margin-bottom:4px; }
     .footer-tagline-text{ color:#93C5FD; font-size:.66rem;
       font-weight:600; letter-spacing:.4px;
-      font-family:"Tiro Devanagari Hindi",serif; line-height:1.3; }
+      font-family:"Tiro Devanagari Hindi",serif; }
     .footer-desc{ color:#93C5FD; font-size:.8rem; line-height:1.7;
       margin-bottom:20px; max-width:100%; }
     .footer-badge{ display:inline-flex; align-items:center; gap:7px;
@@ -686,7 +764,7 @@
     .footer-heading, .footer-social-heading{
       font-family:"Tiro Devanagari Hindi",serif; font-size:.92rem;
       font-weight:900; color:#fff; margin-bottom:22px;
-      padding-bottom:12px; position:relative; letter-spacing:.2px; }
+      padding-bottom:12px; position:relative; }
     .footer-heading::after, .footer-social-heading::after{
       content:""; position:absolute; bottom:0; left:0;
       width:32px; height:2px;
@@ -709,10 +787,8 @@
     .footer-links a{ color:#93C5FD; font-size:.78rem;
       font-weight:600; display:inline-flex; align-items:center;
       gap:7px; transition:.25s; line-height:1.5; }
-    .footer-links a i{ font-size:.56rem; color:#FBBF24;
-      transition:.25s; }
-    .footer-links a:hover{ color:var(--gold);
-      transform:translateX(4px); }
+    .footer-links a i{ font-size:.56rem; color:#FBBF24; }
+    .footer-links a:hover{ color:var(--gold); transform:translateX(4px); }
 
     .contact-info{ list-style:none; }
     .contact-info li{ display:flex; gap:10px;
@@ -735,7 +811,7 @@
     .newsletter-form{ display:flex; gap:6px;
       background:rgba(255,255,255,.06);
       border:1px solid rgba(59,130,246,.25);
-      border-radius:12px; padding:5px; transition:.3s; }
+      border-radius:12px; padding:5px; }
     .newsletter-form:focus-within{ border-color:var(--gold);
       box-shadow:0 0 0 4px rgba(251,191,36,.1); }
     .newsletter-form input{ flex:1; background:transparent;
@@ -746,7 +822,7 @@
       border-radius:8px;
       background:linear-gradient(135deg,#FBBF24,#F59E0B);
       color:#0A2540; font-size:.82rem; display:grid;
-      place-items:center; transition:.3s; }
+      place-items:center; }
 
     .footer-bottom{ border-top:1px solid rgba(59,130,246,.15);
       padding:22px 0; position:relative; z-index:2; }
@@ -757,8 +833,7 @@
       order:1; }
     .footer-copy strong{ color:#93C5FD; font-weight:800; }
     .footer-legal{ display:flex; gap:4px; flex-wrap:nowrap;
-      align-items:center; justify-content:center;
-      order:2; }
+      align-items:center; justify-content:center; order:2; }
     .footer-legal a{ color:#93C5FD; font-size:.72rem;
       font-weight:700; padding:5px 8px; border-radius:8px;
       transition:.25s; white-space:nowrap; }
@@ -766,8 +841,7 @@
       background:rgba(59,130,246,.15); }
     .footer-legal span{ color:rgba(59,130,246,.5); font-size:.72rem; }
     .footer-made{ color:#6B8CAE; font-size:.72rem; font-weight:600;
-      display:inline-flex; align-items:center; gap:6px;
-      order:3; }
+      display:inline-flex; align-items:center; gap:6px; order:3; }
     .footer-made i{ color:#DC2626; font-size:.68rem; }
 
     /* BACK TOP */
@@ -816,21 +890,23 @@
       .cta-strip{ padding:65px 0; }
       .cta-buttons{ flex-direction:column; }
       .cta-buttons .btn{ width:100%; }
-      .member-grid{ grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
-      .member-card{ padding:26px 18px 24px; border-radius:20px; }
-      .member-avatar{ width:72px; height:72px; font-size:1.55rem; }
+      .member-grid{ grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; }
+      .member-banner{ height:100px; }
+      .member-photo{ width:80px; height:80px; font-size:1.6rem; }
+      .member-photo-wrap{ bottom:-40px; }
+      .member-content{ padding:54px 18px 22px; }
       .member-name{ font-size:1rem; }
-      .modal-header{ padding:34px 24px 26px; }
-      .modal-avatar{ width:90px; height:90px; font-size:1.9rem; }
+      .modal-header{ padding:38px 22px 50px; }
+      .modal-photo{ width:110px; height:110px; font-size:2.2rem; }
       .modal-body{ padding:26px 22px 30px; }
-      .modal-detail-list li{ padding:14px 14px; gap:12px; }
-      .modal-detail-list li i{ width:32px; height:32px; font-size:.78rem; }
+      .modal-detail-list li{ padding:13px 14px; gap:12px; }
+      .modal-detail-list li i{ width:34px; height:34px; font-size:.82rem; }
       .group-header{ flex-wrap:wrap; }
       .group-header-count{ margin-left:0; margin-top:8px; width:100%; text-align:center; }
     }
     @media(max-width:600px){
       .brand-name{ font-size:clamp(1rem,4vw,1.15rem);
-        white-space:normal; line-height:1.15; letter-spacing:-.2px; }
+        white-space:normal; line-height:1.15; }
       .brand-tagline{ font-size:.62rem; white-space:normal; }
       .logo-box{ width:54px; height:54px; border-radius:13px; }
       .brand{ gap:11px; }
@@ -838,13 +914,25 @@
       .cta-strip p{ font-size:.92rem; }
       .social-icon{ width:38px; height:38px; font-size:.9rem; }
       .footer-brand-text h3{ font-size:1rem; }
-      .member-grid{ grid-template-columns:repeat(2,1fr); }
+      .member-grid{ grid-template-columns:repeat(2,1fr); gap:14px; }
+      .member-banner{ height:88px; }
+      .member-photo{ width:70px; height:70px; font-size:1.4rem; border-width:3px; }
+      .member-photo-wrap{ bottom:-36px; }
+      .member-content{ padding:48px 14px 20px; }
+      .member-name{ font-size:.95rem; }
+      .member-name-small{ font-size:.72rem; }
+      .member-role-tag{ font-size:.58rem; padding:4px 10px; letter-spacing:1px; }
+      .member-view-btn{ font-size:.66rem; padding:7px 14px; }
     }
     @media(max-width:420px){
       .footer-legal a{ font-size:.62rem; padding:3px 4px; }
       .footer-legal span{ font-size:.62rem; }
       .member-grid{ grid-template-columns:1fr; }
-      .member-avatar{ width:64px; height:64px; font-size:1.4rem; }
+      .member-banner{ height:110px; }
+      .member-photo{ width:88px; height:88px; font-size:1.7rem; }
+      .member-photo-wrap{ bottom:-44px; }
+      .member-content{ padding:58px 20px 22px; }
+      .member-name{ font-size:1.05rem; }
     }
     @media(max-width:380px){
       .brand-name{ font-size:1rem; }
@@ -869,8 +957,7 @@
 
     <a href="index.html" class="brand">
       <div class="logo-box">
-        <img src="sath_chale_ham_logo_HD-1.png"
-             alt="साथ चले हम फाउंडेशन Logo">
+        <img src="sath_chale_ham_logo_HD-1.png" alt="साथ चले हम फाउंडेशन Logo">
       </div>
       <div class="brand-text">
         <div class="brand-name">साथ चले हम <span class="gold">फाउंडेशन</span></div>
@@ -918,20 +1005,16 @@
 <!-- ================= PAGE HERO ================= -->
 <section class="page-hero">
   <div class="container">
-
     <div class="breadcrumb">
       <a href="index.html">Home</a>
       <i class="fa-solid fa-chevron-right"></i>
       <span>Our Team</span>
     </div>
-
     <h1>Our Team | <span>हमारी टीम</span></h1>
-
     <p class="hindi">
       समर्पित सदस्यों की एक टीम जो समाज सेवा के प्रति पूरी निष्ठा के साथ
       कार्यरत है — न्यास मंडल, सलाहकार मंडल एवं कार्यक्रम संचालन टीम।
     </p>
-
   </div>
 </section>
 
@@ -941,9 +1024,7 @@
   <div class="container">
 
     <div class="group-header">
-      <div class="group-header-icon">
-        <i class="fa-solid fa-landmark"></i>
-      </div>
+      <div class="group-header-icon"><i class="fa-solid fa-landmark"></i></div>
       <div class="group-header-text">
         <h2>Board of Trustees | न्यास मंडल</h2>
         <p>संस्था का मार्गदर्शन एवं नेतृत्व करने वाला मंडल</p>
@@ -953,7 +1034,6 @@
 
     <div class="member-grid">
 
-      <!-- President -->
       <div class="member-card" data-tone="blue"
            data-name="Ajay Kumar Prajapati"
            data-name-hindi="अजय कुमार प्रजापति"
@@ -963,15 +1043,21 @@
            data-location="सहरसा, बिहार"
            data-joined="Founding Member"
            data-about="संस्था के संस्थापक एवं अध्यक्ष के रूप में श्री अजय कुमार प्रजापति जी संस्था की समग्र दिशा, नीतियों एवं दीर्घकालिक रणनीति का निर्धारण करते हैं। वे संस्था के प्रत्येक कार्यक्रम में सक्रिय भागीदारी सुनिश्चित करते हैं।">
-        <div class="member-avatar">AK</div>
-        <div class="member-role">President</div>
-        <div class="member-name">Ajay Kumar Prajapati</div>
-        <div class="member-hint">
-          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        <div class="member-banner">
+          <div class="member-photo-wrap">
+            <div class="member-photo">AK</div>
+          </div>
+        </div>
+        <div class="member-content">
+          <span class="member-role-tag"><i class="fa-solid fa-star"></i> President</span>
+          <div class="member-name">Ajay Kumar Prajapati</div>
+          <div class="member-name-small hindi">अजय कुमार प्रजापति</div>
+          <button class="member-view-btn" type="button">
+            <i class="fa-solid fa-id-card"></i> View Profile
+          </button>
         </div>
       </div>
 
-      <!-- Vice President -->
       <div class="member-card" data-tone="gold"
            data-name="S K Yadav"
            data-name-hindi="एस के यादव"
@@ -981,15 +1067,21 @@
            data-location="पटना, बिहार"
            data-joined="Founding Member"
            data-about="श्री एस के यादव जी उपाध्यक्ष के रूप में संस्था के प्रशासनिक कार्यों, कार्यक्रमों के संचालन एवं अध्यक्ष के साथ मिलकर निर्णय लेने की प्रक्रिया में महत्वपूर्ण भूमिका निभाते हैं।">
-        <div class="member-avatar">SK</div>
-        <div class="member-role">Vice President</div>
-        <div class="member-name">S K Yadav</div>
-        <div class="member-hint">
-          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        <div class="member-banner">
+          <div class="member-photo-wrap">
+            <div class="member-photo">SK</div>
+          </div>
+        </div>
+        <div class="member-content">
+          <span class="member-role-tag"><i class="fa-solid fa-star"></i> Vice President</span>
+          <div class="member-name">S K Yadav</div>
+          <div class="member-name-small hindi">एस के यादव</div>
+          <button class="member-view-btn" type="button">
+            <i class="fa-solid fa-id-card"></i> View Profile
+          </button>
         </div>
       </div>
 
-      <!-- Secretary -->
       <div class="member-card" data-tone="red"
            data-name="M R Ojha"
            data-name-hindi="एम आर ओझा"
@@ -999,15 +1091,21 @@
            data-location="मुज़फ़्फ़रपुर, बिहार"
            data-joined="Founding Member"
            data-about="श्री एम आर ओझा जी सचिव के रूप में संस्था की बैठकों, रिकॉर्ड, दस्तावेज़ एवं सरकारी पत्राचार की जिम्मेदारी निभाते हैं।">
-        <div class="member-avatar">MO</div>
-        <div class="member-role">Secretary</div>
-        <div class="member-name">M R Ojha</div>
-        <div class="member-hint">
-          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        <div class="member-banner">
+          <div class="member-photo-wrap">
+            <div class="member-photo">MO</div>
+          </div>
+        </div>
+        <div class="member-content">
+          <span class="member-role-tag"><i class="fa-solid fa-star"></i> Secretary</span>
+          <div class="member-name">M R Ojha</div>
+          <div class="member-name-small hindi">एम आर ओझा</div>
+          <button class="member-view-btn" type="button">
+            <i class="fa-solid fa-id-card"></i> View Profile
+          </button>
         </div>
       </div>
 
-      <!-- Joint Secretary -->
       <div class="member-card" data-tone="teal"
            data-name="D K Soren"
            data-name-hindi="डी के सोरेन"
@@ -1017,15 +1115,21 @@
            data-location="गया, बिहार"
            data-joined="Founding Member"
            data-about="श्री डी के सोरेन जी संयुक्त सचिव के रूप में सचिव के कार्यों में सहयोग एवं कार्यक्रम स्थलों पर समन्वय की भूमिका निभाते हैं।">
-        <div class="member-avatar">DS</div>
-        <div class="member-role">Joint Secretary</div>
-        <div class="member-name">D K Soren</div>
-        <div class="member-hint">
-          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        <div class="member-banner">
+          <div class="member-photo-wrap">
+            <div class="member-photo">DS</div>
+          </div>
+        </div>
+        <div class="member-content">
+          <span class="member-role-tag"><i class="fa-solid fa-star"></i> Joint Secretary</span>
+          <div class="member-name">D K Soren</div>
+          <div class="member-name-small hindi">डी के सोरेन</div>
+          <button class="member-view-btn" type="button">
+            <i class="fa-solid fa-id-card"></i> View Profile
+          </button>
         </div>
       </div>
 
-      <!-- Treasurer -->
       <div class="member-card" data-tone="gold"
            data-name="Priyam Singh"
            data-name-hindi="प्रियम सिंह"
@@ -1035,11 +1139,18 @@
            data-location="भागलपुर, बिहार"
            data-joined="Founding Member"
            data-about="श्रीमती प्रियम सिंह जी कोषाध्यक्ष के रूप में संस्था की आर्थिक गतिविधियों, दान राशि के उचित उपयोग एवं वित्तीय पारदर्शिता की जिम्मेदारी निभाती हैं।">
-        <div class="member-avatar">PS</div>
-        <div class="member-role">Treasurer</div>
-        <div class="member-name">Priyam Singh</div>
-        <div class="member-hint">
-          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        <div class="member-banner">
+          <div class="member-photo-wrap">
+            <div class="member-photo">PS</div>
+          </div>
+        </div>
+        <div class="member-content">
+          <span class="member-role-tag"><i class="fa-solid fa-star"></i> Treasurer</span>
+          <div class="member-name">Priyam Singh</div>
+          <div class="member-name-small hindi">प्रियम सिंह</div>
+          <button class="member-view-btn" type="button">
+            <i class="fa-solid fa-id-card"></i> View Profile
+          </button>
         </div>
       </div>
 
@@ -1054,9 +1165,7 @@
   <div class="container">
 
     <div class="group-header">
-      <div class="group-header-icon">
-        <i class="fa-solid fa-user-tie"></i>
-      </div>
+      <div class="group-header-icon"><i class="fa-solid fa-user-tie"></i></div>
       <div class="group-header-text">
         <h2>Advisory Board | सलाहकार मंडल</h2>
         <p>विशेषज्ञ मार्गदर्शन एवं सलाह प्रदान करने वाला मंडल</p>
@@ -1066,7 +1175,6 @@
 
     <div class="member-grid">
 
-      <!-- Senior Member -->
       <div class="member-card" data-tone="blue"
            data-name="Dr. Chandan Kumar"
            data-name-hindi="डॉ. चंदन कुमार"
@@ -1076,15 +1184,21 @@
            data-location="सहरसा, बिहार"
            data-joined="Advisory Member"
            data-about="डॉ. चंदन कुमार जी वरिष्ठ सदस्य के रूप में संस्था को चिकित्सा, स्वास्थ्य एवं शैक्षणिक क्षेत्रों में मार्गदर्शन प्रदान करते हैं।">
-        <div class="member-avatar">CK</div>
-        <div class="member-role">Senior Member</div>
-        <div class="member-name">Dr. Chandan Kumar</div>
-        <div class="member-hint">
-          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        <div class="member-banner">
+          <div class="member-photo-wrap">
+            <div class="member-photo">CK</div>
+          </div>
+        </div>
+        <div class="member-content">
+          <span class="member-role-tag"><i class="fa-solid fa-user-tie"></i> Senior Member</span>
+          <div class="member-name">Dr. Chandan Kumar</div>
+          <div class="member-name-small hindi">डॉ. चंदन कुमार</div>
+          <button class="member-view-btn" type="button">
+            <i class="fa-solid fa-id-card"></i> View Profile
+          </button>
         </div>
       </div>
 
-      <!-- Executive Member -->
       <div class="member-card" data-tone="gold"
            data-name="Jitendra Mistri"
            data-name-hindi="जितेंद्र मिस्त्री"
@@ -1094,15 +1208,21 @@
            data-location="पटना, बिहार"
            data-joined="Advisory Member"
            data-about="श्री जितेंद्र मिस्त्री जी कार्यकारी सदस्य के रूप में संस्था की कार्यकारी गतिविधियों के संचालन में सक्रिय सहयोग प्रदान करते हैं।">
-        <div class="member-avatar">JM</div>
-        <div class="member-role">Executive Member</div>
-        <div class="member-name">Jitendra Mistri</div>
-        <div class="member-hint">
-          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        <div class="member-banner">
+          <div class="member-photo-wrap">
+            <div class="member-photo">JM</div>
+          </div>
+        </div>
+        <div class="member-content">
+          <span class="member-role-tag"><i class="fa-solid fa-user-tie"></i> Executive Member</span>
+          <div class="member-name">Jitendra Mistri</div>
+          <div class="member-name-small hindi">जितेंद्र मिस्त्री</div>
+          <button class="member-view-btn" type="button">
+            <i class="fa-solid fa-id-card"></i> View Profile
+          </button>
         </div>
       </div>
 
-      <!-- Advisory Member -->
       <div class="member-card" data-tone="teal"
            data-name="Afsar Amin"
            data-name-hindi="अफ़सर अमीन"
@@ -1112,15 +1232,21 @@
            data-location="भागलपुर, बिहार"
            data-joined="Advisory Member"
            data-about="श्री अफ़सर अमीन जी सलाहकार सदस्य के रूप में संस्था की विभिन्न परियोजनाओं एवं कार्यक्रमों पर विशेषज्ञ सलाह प्रदान करते हैं।">
-        <div class="member-avatar">AA</div>
-        <div class="member-role">Advisory Member</div>
-        <div class="member-name">Afsar Amin</div>
-        <div class="member-hint">
-          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        <div class="member-banner">
+          <div class="member-photo-wrap">
+            <div class="member-photo">AA</div>
+          </div>
+        </div>
+        <div class="member-content">
+          <span class="member-role-tag"><i class="fa-solid fa-user-tie"></i> Advisory Member</span>
+          <div class="member-name">Afsar Amin</div>
+          <div class="member-name-small hindi">अफ़सर अमीन</div>
+          <button class="member-view-btn" type="button">
+            <i class="fa-solid fa-id-card"></i> View Profile
+          </button>
         </div>
       </div>
 
-      <!-- Legal Advisor -->
       <div class="member-card" data-tone="red"
            data-name="Sumit Singh"
            data-name-hindi="सुमित सिंह"
@@ -1130,11 +1256,18 @@
            data-location="गया, बिहार"
            data-joined="Advisory Member"
            data-about="श्री सुमित सिंह जी कानूनी एवं अनुपालन सलाहकार के रूप में संस्था को कानूनी मामलों, दस्तावेज़ीकरण एवं सरकारी अनुपालन में सहयोग प्रदान करते हैं।">
-        <div class="member-avatar">SS</div>
-        <div class="member-role">Legal Advisor</div>
-        <div class="member-name">Sumit Singh</div>
-        <div class="member-hint">
-          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        <div class="member-banner">
+          <div class="member-photo-wrap">
+            <div class="member-photo">SS</div>
+          </div>
+        </div>
+        <div class="member-content">
+          <span class="member-role-tag"><i class="fa-solid fa-scale-balanced"></i> Legal Advisor</span>
+          <div class="member-name">Sumit Singh</div>
+          <div class="member-name-small hindi">सुमित सिंह</div>
+          <button class="member-view-btn" type="button">
+            <i class="fa-solid fa-id-card"></i> View Profile
+          </button>
         </div>
       </div>
 
@@ -1149,9 +1282,7 @@
   <div class="container">
 
     <div class="group-header">
-      <div class="group-header-icon">
-        <i class="fa-solid fa-people-group"></i>
-      </div>
+      <div class="group-header-icon"><i class="fa-solid fa-people-group"></i></div>
       <div class="group-header-text">
         <h2>Program Team | कार्यक्रम संचालन टीम</h2>
         <p>जमीनी स्तर पर कार्यक्रमों के संचालन का दायित्व निभाने वाली टीम</p>
@@ -1161,7 +1292,6 @@
 
     <div class="member-grid">
 
-      <!-- Program Coordinator -->
       <div class="member-card" data-tone="blue"
            data-name="Kumar Puskar"
            data-name-hindi="कुमार पुष्कर"
@@ -1171,15 +1301,21 @@
            data-location="सहरसा, बिहार"
            data-joined="Program Team"
            data-about="श्री कुमार पुष्कर जी कार्यक्रम समन्वयक के रूप में संस्था के सभी कार्यक्रमों की योजना, संचालन एवं समन्वय की जिम्मेदारी निभाते हैं।">
-        <div class="member-avatar">KP</div>
-        <div class="member-role">Program Coordinator</div>
-        <div class="member-name">Kumar Puskar</div>
-        <div class="member-hint">
-          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        <div class="member-banner">
+          <div class="member-photo-wrap">
+            <div class="member-photo">KP</div>
+          </div>
+        </div>
+        <div class="member-content">
+          <span class="member-role-tag"><i class="fa-solid fa-diagram-project"></i> Program Coordinator</span>
+          <div class="member-name">Kumar Puskar</div>
+          <div class="member-name-small hindi">कुमार पुष्कर</div>
+          <button class="member-view-btn" type="button">
+            <i class="fa-solid fa-id-card"></i> View Profile
+          </button>
         </div>
       </div>
 
-      <!-- Youth Coordinator -->
       <div class="member-card" data-tone="gold"
            data-name="Sujeet Suman"
            data-name-hindi="सुजीत सुमन"
@@ -1189,15 +1325,21 @@
            data-location="मुज़फ़्फ़रपुर, बिहार"
            data-joined="Program Team"
            data-about="श्री सुजीत सुमन जी युवा समन्वयक के रूप में संस्था के युवा विकास एवं कौशल विकास कार्यक्रमों की जिम्मेदारी निभाते हैं।">
-        <div class="member-avatar">SS</div>
-        <div class="member-role">Youth Coordinator</div>
-        <div class="member-name">Sujeet Suman</div>
-        <div class="member-hint">
-          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        <div class="member-banner">
+          <div class="member-photo-wrap">
+            <div class="member-photo">SS</div>
+          </div>
+        </div>
+        <div class="member-content">
+          <span class="member-role-tag"><i class="fa-solid fa-person-running"></i> Youth Coordinator</span>
+          <div class="member-name">Sujeet Suman</div>
+          <div class="member-name-small hindi">सुजीत सुमन</div>
+          <button class="member-view-btn" type="button">
+            <i class="fa-solid fa-id-card"></i> View Profile
+          </button>
         </div>
       </div>
 
-      <!-- Women & Child Development Coordinator -->
       <div class="member-card" data-tone="red"
            data-name="S Kumari"
            data-name-hindi="एस कुमारी"
@@ -1207,15 +1349,21 @@
            data-location="भागलपुर, बिहार"
            data-joined="Program Team"
            data-about="श्रीमती एस कुमारी जी महिला एवं बाल विकास समन्वयक के रूप में महिला सशक्तिकरण एवं बाल विकास से जुड़े सभी कार्यक्रमों की जिम्मेदारी निभाती हैं।">
-        <div class="member-avatar">SK</div>
-        <div class="member-role">Women &amp; Child Coordinator</div>
-        <div class="member-name">S Kumari</div>
-        <div class="member-hint">
-          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        <div class="member-banner">
+          <div class="member-photo-wrap">
+            <div class="member-photo">SK</div>
+          </div>
+        </div>
+        <div class="member-content">
+          <span class="member-role-tag"><i class="fa-solid fa-person-dress"></i> Women &amp; Child</span>
+          <div class="member-name">S Kumari</div>
+          <div class="member-name-small hindi">एस कुमारी</div>
+          <button class="member-view-btn" type="button">
+            <i class="fa-solid fa-id-card"></i> View Profile
+          </button>
         </div>
       </div>
 
-      <!-- Volunteer Coordinator -->
       <div class="member-card" data-tone="teal"
            data-name="P K Prabhkar"
            data-name-hindi="पी के प्रभाकर"
@@ -1225,11 +1373,18 @@
            data-location="गया, बिहार"
            data-joined="Program Team"
            data-about="श्री पी के प्रभाकर जी स्वयंसेवक समन्वयक के रूप में संस्था से जुड़े सभी स्वयंसेवकों के प्रबंधन, प्रशिक्षण एवं कार्यक्रमों में उनकी भागीदारी सुनिश्चित करते हैं।">
-        <div class="member-avatar">PP</div>
-        <div class="member-role">Volunteer Coordinator</div>
-        <div class="member-name">P K Prabhkar</div>
-        <div class="member-hint">
-          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        <div class="member-banner">
+          <div class="member-photo-wrap">
+            <div class="member-photo">PP</div>
+          </div>
+        </div>
+        <div class="member-content">
+          <span class="member-role-tag"><i class="fa-solid fa-hands-helping"></i> Volunteer Coordinator</span>
+          <div class="member-name">P K Prabhkar</div>
+          <div class="member-name-small hindi">पी के प्रभाकर</div>
+          <button class="member-view-btn" type="button">
+            <i class="fa-solid fa-id-card"></i> View Profile
+          </button>
         </div>
       </div>
 
@@ -1246,14 +1401,11 @@
       <i class="fa-solid fa-hands-holding-heart"></i>
       Join Our Mission
     </div>
-
     <h2>साथ चले हम, <span>बदलाव की ओर</span></h2>
-
     <p>
       आप भी हमारी टीम का हिस्सा बन सकते हैं — स्वयंसेवक, इंटर्न या सहयोगी
       के रूप में जुड़कर समाज सेवा की इस यात्रा में योगदान दें।
     </p>
-
     <div class="cta-buttons">
       <a href="join-us.html" class="btn btn-gold btn-pulse-red">
         <i class="fa-solid fa-users"></i> Join as Volunteer
@@ -1272,46 +1424,31 @@
 <!-- ================= FOOTER ================= -->
 <footer>
   <div class="container">
-
     <div class="footer-grid">
 
       <div>
         <div class="footer-brand-head">
           <div class="footer-logo-box">
-            <img src="sath_chale_ham_logo_HD-1.png"
-                 alt="Sath Chale Hum Foundation Logo">
+            <img src="sath_chale_ham_logo_HD-1.png" alt="Sath Chale Hum Foundation Logo">
           </div>
           <div class="footer-brand-text">
             <h3>साथ चले हम फाउंडेशन</h3>
             <div class="footer-tagline-text">साथ चले हम, बदलाव की ओर</div>
           </div>
         </div>
-
         <p class="footer-desc">
           एक सामाजिक संस्था जो शिक्षा, स्वास्थ्य, महिला सशक्तिकरण और
           समाज के सर्वांगीण विकास के लिए समर्पित है।
         </p>
-
         <div class="footer-badge">
-          <i class="fa-solid fa-award"></i>
-          12A &amp; 80G Certified NGO
+          <i class="fa-solid fa-award"></i> 12A &amp; 80G Certified NGO
         </div>
-
         <h4 class="footer-social-heading">Our Social Media | हमारे सोशल मीडिया</h4>
-
         <div class="social-icons">
-          <a href="https://www.facebook.com/share/1PUUzvUfoo/" target="_blank"
-             rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
-            <i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/sathchaleham" target="_blank"
-             rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
-            <i class="fa-brands fa-instagram"></i></a>
-          <a href="https://youtube.com/@sathchaleham" target="_blank"
-             rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
-            <i class="fa-brands fa-youtube"></i></a>
-          <a href="https://wa.me/917011893028" target="_blank"
-             rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
-            <i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/share/1PUUzvUfoo/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sathchaleham" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com/@sathchaleham" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/917011893028" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
 
@@ -1355,44 +1492,16 @@
       <div>
         <h4 class="footer-heading">Contact Us | संपर्क</h4>
         <ul class="contact-info">
-          <li>
-            <i class="fa-solid fa-location-dot"></i>
-            <div>
-              <strong>Address | पता</strong>
-              भारतीय नगर, वार्ड नं. 26/35, सहरसा, बिहार – 852201
-            </div>
-          </li>
-          <li>
-            <i class="fa-solid fa-phone"></i>
-            <div>
-              <strong>Helpline | हेल्पलाइन</strong>
-              <a href="tel:+917011893028" style="color:#93C5FD;">+91 7011893028</a>
-            </div>
-          </li>
-          <li>
-            <i class="fa-solid fa-envelope"></i>
-            <div>
-              <strong>Email | ईमेल</strong>
-              <a href="mailto:sathchaleham@gmail.com" style="color:#93C5FD;">sathchaleham@gmail.com</a>
-            </div>
-          </li>
-          <li>
-            <i class="fa-solid fa-clock"></i>
-            <div>
-              <strong>Office Hours | समय</strong>
-              सोम – शनि · 10:00 AM – 6:00 PM
-            </div>
-          </li>
+          <li><i class="fa-solid fa-location-dot"></i><div><strong>Address | पता</strong>भारतीय नगर, वार्ड नं. 26/35, सहरसा, बिहार – 852201</div></li>
+          <li><i class="fa-solid fa-phone"></i><div><strong>Helpline | हेल्पलाइन</strong><a href="tel:+917011893028" style="color:#93C5FD;">+91 7011893028</a></div></li>
+          <li><i class="fa-solid fa-envelope"></i><div><strong>Email | ईमेल</strong><a href="mailto:sathchaleham@gmail.com" style="color:#93C5FD;">sathchaleham@gmail.com</a></div></li>
+          <li><i class="fa-solid fa-clock"></i><div><strong>Office Hours | समय</strong>सोम – शनि · 10:00 AM – 6:00 PM</div></li>
         </ul>
-
         <div class="footer-newsletter">
           <label>Newsletter | न्यूज़लेटर</label>
-          <form class="newsletter-form"
-                onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
             <input type="email" placeholder="your@email.com" required>
-            <button type="submit" aria-label="Subscribe">
-              <i class="fa-solid fa-paper-plane"></i>
-            </button>
+            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
           </form>
         </div>
       </div>
@@ -1401,22 +1510,14 @@
 
     <div class="footer-bottom">
       <div class="footer-bottom-inner">
-
-        <div class="footer-copy">
-          © 2026 <strong>Sath Chale Hum Foundation</strong> · All Rights Reserved
-        </div>
-
+        <div class="footer-copy">© 2026 <strong>Sath Chale Hum Foundation</strong> · All Rights Reserved</div>
         <div class="footer-legal">
           <a href="terms.html">Terms</a><span>·</span>
           <a href="privacy.html">Privacy</a><span>·</span>
           <a href="sitemap.html">Sitemap</a><span>·</span>
           <a href="disclaimer.html">Disclaimer</a>
         </div>
-
-        <div class="footer-made">
-          Made with <i class="fa-solid fa-heart"></i> in Bihar
-        </div>
-
+        <div class="footer-made">Made with <i class="fa-solid fa-heart"></i> in Bihar</div>
       </div>
     </div>
 
@@ -1432,12 +1533,13 @@
       <i class="fa-solid fa-xmark"></i>
     </button>
 
-    <div class="modal-header">
+    <div class="modal-header" id="modalHeader" data-tone="blue">
       <div class="modal-header-content">
 
-        <div class="modal-avatar" id="modalAvatar">AK</div>
+        <div class="modal-photo" id="modalPhoto">AK</div>
 
         <h3 id="modalName">Member Name</h3>
+        <div class="modal-subname hindi" id="modalNameHindi">—</div>
 
         <span class="modal-role-badge">
           <i class="fa-solid fa-briefcase"></i>
@@ -1454,7 +1556,7 @@
           <i class="fa-solid fa-user"></i>
           <div>
             <strong>Full Name | पूरा नाम</strong>
-            <span class="hindi" id="modalNameHindi">—</span>
+            <span class="hindi" id="modalNameHindi2">—</span>
           </div>
         </li>
         <li>
@@ -1505,7 +1607,6 @@
 </div>
 
 
-<!-- ================= BACK TO TOP ================= -->
 <button class="back-top" id="backTop" aria-label="Back to Top" type="button">
   <i class="fa-solid fa-arrow-up"></i>
 </button>
@@ -1534,14 +1635,16 @@ document.addEventListener("DOMContentLoaded", function(){
     });
   }
 
-  /* ========== MEMBER MODAL ========== */
+  /* MEMBER MODAL */
   var memberCards = document.querySelectorAll(".member-card");
   var modalOverlay = document.getElementById("memberModal");
   var modalClose = document.getElementById("modalClose");
+  var modalHeader = document.getElementById("modalHeader");
 
-  var modalAvatar = document.getElementById("modalAvatar");
+  var modalPhoto = document.getElementById("modalPhoto");
   var modalName = document.getElementById("modalName");
   var modalNameHindi = document.getElementById("modalNameHindi");
+  var modalNameHindi2 = document.getElementById("modalNameHindi2");
   var modalRole = document.getElementById("modalRole");
   var modalRoleDetail = document.getElementById("modalRoleDetail");
   var modalEmail = document.getElementById("modalEmail");
@@ -1569,10 +1672,12 @@ document.addEventListener("DOMContentLoaded", function(){
       var location = card.getAttribute("data-location") || "—";
       var joined = card.getAttribute("data-joined") || "—";
       var about = card.getAttribute("data-about") || "—";
+      var tone = card.getAttribute("data-tone") || "blue";
 
-      modalAvatar.textContent = getInitials(name);
+      modalPhoto.textContent = getInitials(name);
       modalName.textContent = name;
       modalNameHindi.textContent = nameHindi || name;
+      modalNameHindi2.textContent = nameHindi || name;
       modalRole.textContent = role.split("|")[0].trim() || role;
       modalRoleDetail.textContent = role;
       modalEmail.textContent = email;
@@ -1580,6 +1685,8 @@ document.addEventListener("DOMContentLoaded", function(){
       modalLocation.textContent = location;
       modalJoined.textContent = joined;
       modalAbout.textContent = about;
+
+      modalHeader.setAttribute("data-tone", tone);
 
       modalOverlay.classList.add("active");
       document.body.style.overflow = "hidden";
@@ -1591,14 +1698,10 @@ document.addEventListener("DOMContentLoaded", function(){
     document.body.style.overflow = "";
   }
 
-  if(modalClose){
-    modalClose.addEventListener("click", closeModal);
-  }
+  if(modalClose){ modalClose.addEventListener("click", closeModal); }
 
   modalOverlay.addEventListener("click", function(e){
-    if(e.target === modalOverlay){
-      closeModal();
-    }
+    if(e.target === modalOverlay){ closeModal(); }
   });
 
   document.addEventListener("keydown", function(e){
@@ -1611,11 +1714,8 @@ document.addEventListener("DOMContentLoaded", function(){
   var backTop = document.getElementById("backTop");
   if(backTop){
     window.addEventListener("scroll", function(){
-      if(window.scrollY > 500){
-        backTop.classList.add("show");
-      } else {
-        backTop.classList.remove("show");
-      }
+      if(window.scrollY > 500){ backTop.classList.add("show"); }
+      else { backTop.classList.remove("show"); }
     });
     backTop.addEventListener("click", function(){
       window.scrollTo({ top: 0, behavior: "smooth" });
