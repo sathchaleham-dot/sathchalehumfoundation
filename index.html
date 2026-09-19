@@ -66,19 +66,22 @@
       justify-content:space-between; gap:20px; }
     .brand{ display:flex; align-items:center; gap:14px;
       min-width:0; flex-shrink:0; }
+    /* LOGO - White space bilkul nahi */
     .logo-box{ width:66px; height:66px; border-radius:16px;
-      background:linear-gradient(145deg,#FFFFFF,#EFF6FF);
-      display:grid; place-items:center; padding:0;
-      box-shadow:0 8px 24px rgba(59,130,246,.35),
-        inset 0 2px 0 rgba(255,255,255,.9);
+      background:#FFFFFF;
+      display:block; padding:0;
+      box-shadow:0 8px 24px rgba(59,130,246,.35);
       border:2px solid rgba(251,191,36,.4);
       transition:.35s ease; flex-shrink:0; overflow:hidden;
-      position:relative; }
+      position:relative; line-height:0; }
     .logo-box:hover{ transform:translateY(-2px) rotate(-3deg);
-      box-shadow:0 14px 34px rgba(59,130,246,.5),
-        inset 0 2px 0 rgba(255,255,255,.9); border-color:var(--gold); }
-    .logo-box img{ width:100%; height:100%; object-fit:cover;
-      object-position:center; display:block; transform:scale(1.06); }
+      box-shadow:0 14px 34px rgba(59,130,246,.5);
+      border-color:var(--gold); }
+    .logo-box img{ width:100%; height:100%;
+      object-fit:cover; object-position:center;
+      display:block; margin:0; padding:0;
+      border:0; transform:scale(1.02);
+      transform-origin:center center; }
     .brand-text{ min-width:0; }
     .brand-name{ color:#fff;
       font-size:clamp(1.2rem,2.4vw,1.7rem); font-weight:900;
@@ -633,15 +636,19 @@
       gap:32px; padding-bottom:60px; position:relative; z-index:2; }
     .footer-brand-head{ display:flex; align-items:center;
       gap:10px; margin-bottom:20px; }
+    /* FOOTER LOGO - White space bilkul nahi */
     .footer-logo-box{ width:60px; height:60px; border-radius:15px;
-      background:linear-gradient(145deg,#fff,#EFF6FF);
-      display:grid; place-items:center; padding:0;
+      background:#FFFFFF;
+      display:block; padding:0;
       border:2px solid rgba(251,191,36,.4);
       box-shadow:0 8px 22px rgba(59,130,246,.3);
-      flex-shrink:0; overflow:hidden; position:relative; }
+      flex-shrink:0; overflow:hidden;
+      position:relative; line-height:0; }
     .footer-logo-box img{ width:100%; height:100%;
       object-fit:cover; object-position:center;
-      display:block; transform:scale(1.06); }
+      display:block; margin:0; padding:0;
+      border:0; transform:scale(1.02);
+      transform-origin:center center; }
     .footer-brand-text{ min-width:0; }
     .footer-brand-text h3{ font-family:"Tiro Devanagari Hindi",serif;
       font-size:1.05rem; font-weight:900; color:#fff;
@@ -722,22 +729,27 @@
       color:#0A2540; font-size:.82rem; display:grid;
       place-items:center; transition:.3s; }
 
+    /* FOOTER BOTTOM - Copyright upar, Legal neeche */
     .footer-bottom{ border-top:1px solid rgba(59,130,246,.15);
       padding:22px 0; position:relative; z-index:2; }
-    .footer-bottom-inner{ display:flex; align-items:center;
-      justify-content:space-between; gap:20px; flex-wrap:wrap; }
-    .footer-copy{ color:#6B8CAE; font-size:.74rem; font-weight:600; }
+    .footer-bottom-inner{ display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      gap:12px; text-align:center; }
+    .footer-copy{ color:#6B8CAE; font-size:.76rem; font-weight:600;
+      order:1; }
     .footer-copy strong{ color:#93C5FD; font-weight:800; }
     .footer-legal{ display:flex; gap:4px; flex-wrap:nowrap;
-      align-items:center; justify-content:center; }
-    .footer-legal a{ color:#93C5FD; font-size:.7rem;
-      font-weight:700; padding:5px 6px; border-radius:8px;
+      align-items:center; justify-content:center;
+      order:2; }
+    .footer-legal a{ color:#93C5FD; font-size:.72rem;
+      font-weight:700; padding:5px 8px; border-radius:8px;
       transition:.25s; white-space:nowrap; }
     .footer-legal a:hover{ color:var(--gold);
       background:rgba(59,130,246,.15); }
-    .footer-legal span{ color:rgba(59,130,246,.5); font-size:.7rem; }
+    .footer-legal span{ color:rgba(59,130,246,.5); font-size:.72rem; }
     .footer-made{ color:#6B8CAE; font-size:.72rem; font-weight:600;
-      display:inline-flex; align-items:center; gap:6px; }
+      display:inline-flex; align-items:center; gap:6px;
+      order:3; }
     .footer-made i{ color:#DC2626; font-size:.68rem; }
 
     /* BACK TOP */
@@ -792,12 +804,10 @@
         align-self:center; }
       .footer-grid{ grid-template-columns:1fr; gap:32px;
         padding-bottom:40px; }
-      .footer-bottom-inner{ flex-direction:column;
-        text-align:center; gap:14px; }
-      .footer-legal{ justify-content:center; flex-wrap:nowrap;
-        gap:1px; }
-      .footer-legal a{ font-size:.66rem; padding:3px 5px; }
-      .footer-legal span{ font-size:.66rem; }
+      .footer-bottom-inner{ gap:10px; }
+      .footer-legal{ flex-wrap:nowrap; gap:1px; }
+      .footer-legal a{ font-size:.68rem; padding:4px 6px; }
+      .footer-legal span{ font-size:.68rem; }
       .cta-strip{ padding:65px 0; }
       .cta-buttons{ flex-direction:column; }
       .cta-buttons .btn{ width:100%; }
@@ -807,8 +817,7 @@
       .brand-name{ font-size:clamp(1rem,4vw,1.15rem);
         white-space:normal; line-height:1.15; letter-spacing:-.2px; }
       .brand-tagline{ font-size:.62rem; white-space:normal; }
-      .logo-box{ width:54px; height:54px; padding:0;
-        border-radius:13px; }
+      .logo-box{ width:54px; height:54px; border-radius:13px; }
       .brand{ gap:11px; }
       .hero h1{ font-size:2.5rem; }
       .daily-boxes{ gap:10px; }
@@ -823,6 +832,8 @@
     @media(max-width:420px){
       .banner{ white-space:normal; flex-wrap:wrap;
         justify-content:center; font-size:1.6rem; }
+      .footer-legal a{ font-size:.62rem; padding:3px 4px; }
+      .footer-legal span{ font-size:.62rem; }
     }
     @media(max-width:380px){
       .brand-name{ font-size:1rem; }
@@ -831,8 +842,8 @@
       .hero h1{ font-size:2.25rem; }
       .smile-english{ font-size:.7rem; }
       .smile-msg{ font-size:.8rem; }
-      .footer-legal a{ font-size:.6rem; padding:3px 4px; }
-      .footer-legal span{ font-size:.6rem; }
+      .footer-legal a{ font-size:.58rem; padding:3px 3px; }
+      .footer-legal span{ font-size:.58rem; }
     }
     @media (prefers-reduced-motion: reduce){
       *,*::before,*::after{
@@ -1815,20 +1826,25 @@
 
     </div>
 
+    <!-- Copyright upar, Legal links neeche -->
     <div class="footer-bottom">
       <div class="footer-bottom-inner">
+
         <div class="footer-copy">
           © 2026 <strong>Sath Chale Hum Foundation</strong> · All Rights Reserved
         </div>
+
         <div class="footer-legal">
           <a href="terms.html">Terms</a><span>·</span>
           <a href="privacy.html">Privacy</a><span>·</span>
           <a href="sitemap.html">Sitemap</a><span>·</span>
           <a href="disclaimer.html">Disclaimer</a>
         </div>
+
         <div class="footer-made">
           Made with <i class="fa-solid fa-heart"></i> in Bihar
         </div>
+
       </div>
     </div>
 
