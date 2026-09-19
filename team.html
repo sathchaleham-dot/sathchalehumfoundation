@@ -1,1 +1,1629 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Our Team | हमारी टीम | Sath Chale Hum Foundation</title>
+  <meta name="description" content="साथ चले हम फाउंडेशन की टीम — Board of Trustees, Advisory Board, Program Team के समर्पित सदस्य।">
+  <meta name="theme-color" content="#0A2540">
+  <meta property="og:title" content="Our Team | Sath Chale Hum Foundation">
+  <meta property="og:description" content="हमारी टीम — समर्पित सदस्यों से मिलें जो समाज सेवा में जुटे हैं।">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="sath_chale_ham_logo_HD-1.png">
+  <link rel="canonical" href="https://sathchaleham.org/team.html">
+  <link rel="icon" type="image/png" href="sath_chale_ham_logo_HD-1.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    *{ margin:0; padding:0; box-sizing:border-box; }
+    html{ scroll-behavior:smooth; overflow-x:hidden; }
+
+    :root{
+      --navy:#0A2540; --navy-2:#0F2E4F;
+      --blue:#1E40AF; --blue-2:#2563EB; --blue-light:#3B82F6;
+      --blue-pale:#EFF6FF; --blue-soft:#DBEAFE;
+      --gold:#FBBF24; --gold-dark:#D97706; --gold-pale:#FEF3C7;
+      --red:#DC2626; --red-dark:#991B1B; --green:#059669;
+      --white:#FFFFFF; --text:#0F172A; --text-soft:#475569;
+      --muted:#64748B; --border:#E2E8F0; --bg:#F8FAFC;
+    }
+
+    body{ font-family:"Poppins","Tiro Devanagari Hindi",sans-serif;
+      background:var(--bg); color:var(--text); overflow-x:hidden; line-height:1.6; }
+    a{ text-decoration:none; color:inherit; }
+    img{ max-width:100%; display:block; }
+    button{ font-family:inherit; cursor:pointer; border:none; }
+
+    .container{ width:min(1240px,92%); margin:auto; }
+    .hindi{ font-family:"Tiro Devanagari Hindi",serif; }
+
+    .section{ padding:90px 0; position:relative; overflow:hidden; }
+    .section-title{ text-align:center; margin-bottom:55px; }
+    .section-title .small-title{
+      display:inline-block; color:var(--blue); font-size:.9rem; font-weight:800;
+      letter-spacing:2.5px; text-transform:uppercase; margin-bottom:12px; }
+    .section-title h2{ font-size:clamp(1.9rem,3.8vw,3rem); line-height:1.2;
+      font-weight:900; color:var(--navy); }
+    .section-title h2 span{ color:var(--blue-2); }
+    .section-title p{ max-width:800px; margin:18px auto 0;
+      color:var(--muted); line-height:1.8; font-size:1rem; }
+
+    /* HEADER */
+    .site-header{
+      position:fixed; left:0; top:0; width:100%; z-index:9999;
+      background:linear-gradient(135deg,#0A2540 0%,#0F2E4F 50%,#0A2540 100%);
+      backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+      border-bottom:1px solid rgba(59,130,246,.15);
+      box-shadow:0 8px 32px rgba(10,37,64,.18);
+    }
+    .header-inner{ min-height:92px; display:flex; align-items:center;
+      justify-content:space-between; gap:20px; }
+    .brand{ display:flex; align-items:center; gap:14px;
+      min-width:0; flex-shrink:0; }
+    .logo-box{ width:66px; height:66px; border-radius:16px;
+      background:#FFFFFF;
+      display:block; padding:0;
+      box-shadow:0 8px 24px rgba(59,130,246,.35);
+      border:2px solid rgba(251,191,36,.4);
+      transition:.35s ease; flex-shrink:0; overflow:hidden;
+      position:relative; line-height:0; }
+    .logo-box:hover{ transform:translateY(-2px) rotate(-3deg);
+      box-shadow:0 14px 34px rgba(59,130,246,.5);
+      border-color:var(--gold); }
+    .logo-box img{ width:100%; height:100%;
+      object-fit:cover; object-position:center;
+      display:block; margin:0; padding:0;
+      border:0; transform:scale(1.02);
+      transform-origin:center center; }
+    .brand-text{ min-width:0; }
+    .brand-name{ color:#fff;
+      font-size:clamp(1.2rem,2.4vw,1.7rem); font-weight:900;
+      line-height:1.1; white-space:nowrap; letter-spacing:-.5px;
+      font-family:"Tiro Devanagari Hindi",serif;
+      text-shadow:0 2px 10px rgba(0,0,0,.3); }
+    .brand-name .gold{ color:var(--gold); font-weight:900; }
+    .brand-tagline{ color:#93C5FD; font-size:.7rem; font-weight:600;
+      margin-top:3px; white-space:nowrap; letter-spacing:.4px; }
+
+    .desktop-nav{ display:flex; align-items:center; gap:2px;
+      flex-wrap:nowrap; }
+    .desktop-nav > a{ color:#E0F2FE; font-size:.78rem; font-weight:700;
+      padding:11px 10px; border-radius:10px; transition:.25s ease;
+      white-space:nowrap; position:relative; }
+    .desktop-nav > a:hover{ color:var(--gold);
+      background:rgba(59,130,246,.15); transform:translateY(-1px); }
+    .desktop-nav > a.active{ color:var(--gold);
+      background:rgba(59,130,246,.2); }
+    .desktop-nav > a.active::after{ content:""; position:absolute;
+      bottom:4px; left:50%; transform:translateX(-50%);
+      width:20px; height:2px; border-radius:2px; background:var(--gold); }
+
+    .donate-nav{ display:inline-flex; align-items:center; gap:7px;
+      background:linear-gradient(135deg,#DC2626,#991B1B)!important;
+      padding:11px 17px!important; color:#fff!important;
+      font-weight:900!important; border-radius:11px!important;
+      box-shadow:0 6px 20px rgba(220,38,38,.45),
+        inset 0 1px 0 rgba(255,255,255,.2);
+      animation:pulseDonate 2s infinite; margin-left:6px;
+      letter-spacing:.3px; }
+    .donate-nav:hover{ color:#fff!important;
+      background:linear-gradient(135deg,#EF4444,#DC2626)!important;
+      transform:translateY(-2px)!important; }
+    @keyframes pulseDonate{
+      0%,100%{ transform:scale(1);
+        box-shadow:0 6px 20px rgba(220,38,38,.4),
+          inset 0 1px 0 rgba(255,255,255,.2); }
+      50%{ transform:scale(1.04);
+        box-shadow:0 10px 30px rgba(220,38,38,.7),
+          inset 0 1px 0 rgba(255,255,255,.2); } }
+
+    .menu-toggle{ display:none; width:46px; height:46px;
+      border-radius:12px; background:rgba(59,130,246,.15);
+      border:1px solid rgba(59,130,246,.3); padding:11px;
+      transition:.3s; }
+    .menu-toggle span{ display:block; width:100%; height:2.5px;
+      background:#fff; margin:4.5px 0; border-radius:5px;
+      transition:.3s; }
+    .menu-toggle.active span:nth-child(1){
+      transform:rotate(45deg) translate(6px,6px); }
+    .menu-toggle.active span:nth-child(2){ opacity:0; }
+    .menu-toggle.active span:nth-child(3){
+      transform:rotate(-45deg) translate(6px,-6px); }
+
+    .mobile-nav{ display:none;
+      background:linear-gradient(180deg,#0A2540,#0F2E4F);
+      border-top:1px solid rgba(59,130,246,.2);
+      padding:14px 4% 20px;
+      box-shadow:0 20px 40px rgba(0,0,0,.3); }
+    .mobile-nav a{ display:block; color:#E0F2FE;
+      padding:14px 16px; border-radius:10px; font-weight:700;
+      font-size:.9rem; margin:4px 0; transition:.25s;
+      border:1px solid transparent; }
+    .mobile-nav a:hover, .mobile-nav a.active{
+      background:rgba(59,130,246,.15); color:var(--gold);
+      border-color:rgba(59,130,246,.3); }
+    .mobile-nav .donate-nav{ text-align:center;
+      margin-top:12px; justify-content:center; }
+    .mobile-nav.active{ display:block; }
+
+    /* PAGE HERO */
+    .page-hero{
+      padding:170px 0 80px;
+      background:linear-gradient(135deg,rgba(10,37,64,.94),rgba(30,64,175,.88)),
+        url("https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      color:#fff; text-align:center; position:relative;
+    }
+    .page-hero::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
+      background-size:24px 24px; opacity:.5; pointer-events:none;
+    }
+    .page-hero .container{ position:relative; z-index:2; }
+    .breadcrumb{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:8px 18px; border-radius:100px;
+      background:rgba(251,191,36,.12);
+      border:1px solid rgba(251,191,36,.35);
+      color:var(--gold); font-size:.78rem; font-weight:800;
+      letter-spacing:1.5px; text-transform:uppercase;
+      margin-bottom:22px;
+    }
+    .breadcrumb a{ color:#93C5FD; transition:.25s; }
+    .breadcrumb a:hover{ color:var(--gold); }
+    .breadcrumb i{ font-size:.6rem; color:var(--gold); }
+    .page-hero h1{
+      font-size:clamp(2rem,5vw,3.5rem);
+      font-weight:900; line-height:1.15;
+      font-family:"Tiro Devanagari Hindi",serif;
+      margin-bottom:18px; letter-spacing:-1px;
+      text-shadow:0 8px 30px rgba(0,0,0,.35);
+    }
+    .page-hero h1 span{ color:var(--gold); }
+    .page-hero p{
+      max-width:760px; margin:auto;
+      color:#93C5FD; font-size:1rem; line-height:1.85;
+    }
+
+    /* BUTTONS */
+    .btn{ display:inline-flex; align-items:center; justify-content:center;
+      gap:10px; min-height:54px; padding:15px 30px;
+      border-radius:13px; font-size:.9rem; font-weight:800;
+      transition:.3s ease; letter-spacing:.3px; border:none;
+      cursor:pointer; font-family:inherit; }
+    .btn:hover{ transform:translateY(-4px); }
+    .btn-red{ color:#fff;
+      background:linear-gradient(135deg,#DC2626,#991B1B);
+      box-shadow:0 12px 32px rgba(220,38,38,.45); }
+    .btn-red:hover{ box-shadow:0 18px 42px rgba(220,38,38,.65); }
+    .btn-gold{ color:#0A2540;
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      box-shadow:0 12px 32px rgba(251,191,36,.45); }
+    .btn-gold:hover{ box-shadow:0 18px 42px rgba(251,191,36,.65); }
+    .btn-blue{ color:#fff;
+      background:linear-gradient(135deg,#2563EB,#1E40AF);
+      box-shadow:0 12px 32px rgba(37,99,235,.45); }
+    .btn-blue:hover{ box-shadow:0 18px 42px rgba(37,99,235,.65); }
+    .btn-outline{ color:#fff; background:rgba(255,255,255,.06);
+      border:1.5px solid rgba(255,255,255,.3);
+      backdrop-filter:blur(8px); }
+    .btn-outline:hover{ background:rgba(255,255,255,.14);
+      border-color:var(--gold); color:var(--gold); }
+    .btn-pulse-red{ animation:pulseRed 1.8s infinite; }
+    @keyframes pulseRed{
+      0%,100%{ box-shadow:0 12px 32px rgba(220,38,38,.4); }
+      50%{ box-shadow:0 16px 42px rgba(220,38,38,.75); } }
+
+    /* TEAM GROUP SECTION */
+    .team-group-section{
+      background:
+        radial-gradient(circle at 12% 15%,rgba(251,191,36,.06),transparent 32%),
+        radial-gradient(circle at 88% 85%,rgba(37,99,235,.08),transparent 35%),
+        linear-gradient(160deg,#F8FAFC,#EFF6FF);
+      position:relative; overflow:hidden;
+      padding:80px 0;
+    }
+    .team-group-section.alt{
+      background:linear-gradient(160deg,#EFF6FF,#F8FAFC);
+    }
+    .team-group-section::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(37,99,235,.05) 1px,transparent 1px);
+      background-size:28px 28px; pointer-events:none;
+    }
+    .team-group-section .container{ position:relative; z-index:2; }
+
+    .group-header{
+      display:flex; align-items:center; gap:18px;
+      margin-bottom:45px;
+      padding:22px 28px;
+      border-radius:22px;
+      background:linear-gradient(135deg,#0A2540,#1E40AF);
+      color:#fff;
+      box-shadow:0 20px 50px rgba(30,64,175,.35);
+      position:relative;
+      overflow:hidden;
+    }
+    .group-header::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);
+      background-size:20px 20px; opacity:.5; pointer-events:none;
+    }
+    .group-header-icon{
+      position:relative; z-index:2;
+      flex-shrink:0;
+      width:64px; height:64px;
+      border-radius:18px;
+      display:grid; place-items:center;
+      background:linear-gradient(145deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      font-size:1.6rem;
+      box-shadow:0 12px 28px rgba(251,191,36,.45);
+    }
+    .group-header-text{ position:relative; z-index:2; min-width:0; }
+    .group-header-text h2{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(1.25rem,2.6vw,1.7rem);
+      font-weight:900; line-height:1.3;
+      margin:0 0 4px;
+    }
+    .group-header-text p{
+      color:#93C5FD; font-size:.85rem;
+      margin:0; line-height:1.5;
+    }
+    .group-header-count{
+      position:relative; z-index:2;
+      margin-left:auto;
+      flex-shrink:0;
+      padding:8px 16px;
+      border-radius:100px;
+      background:rgba(251,191,36,.15);
+      border:1px solid rgba(251,191,36,.4);
+      color:var(--gold);
+      font-size:.72rem;
+      font-weight:900;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      white-space:nowrap;
+    }
+
+    /* MEMBER GRID */
+    .member-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:22px;
+    }
+
+    .member-card{
+      background:#fff;
+      border-radius:24px;
+      padding:32px 24px 28px;
+      text-align:center;
+      border:1px solid var(--border);
+      box-shadow:0 12px 34px rgba(15,23,42,.08);
+      transition:.4s cubic-bezier(.2,.8,.3,1);
+      cursor:pointer;
+      position:relative;
+      overflow:hidden;
+    }
+    .member-card::before{
+      content:""; position:absolute;
+      top:0; left:0; right:0; height:5px;
+      background:linear-gradient(90deg,#2563EB,#1E40AF);
+      transition:.35s;
+    }
+    .member-card[data-tone="gold"]::before{
+      background:linear-gradient(90deg,#FBBF24,#F59E0B);
+    }
+    .member-card[data-tone="red"]::before{
+      background:linear-gradient(90deg,#DC2626,#991B1B);
+    }
+    .member-card[data-tone="teal"]::before{
+      background:linear-gradient(90deg,#059669,#047857);
+    }
+    .member-card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 26px 60px rgba(37,99,235,.2);
+      border-color:var(--blue-light);
+    }
+
+    .member-avatar{
+      width:88px; height:88px;
+      border-radius:50%;
+      margin:0 auto 20px;
+      display:grid; place-items:center;
+      background:linear-gradient(145deg,#2563EB,#1E40AF);
+      color:#fff;
+      font-family:"Poppins",sans-serif;
+      font-size:1.9rem;
+      font-weight:900;
+      letter-spacing:1px;
+      box-shadow:0 14px 32px rgba(37,99,235,.4),
+              inset 0 3px 0 rgba(255,255,255,.25);
+      transition:.35s;
+      position:relative;
+    }
+    .member-card[data-tone="gold"] .member-avatar{
+      background:linear-gradient(145deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      box-shadow:0 14px 32px rgba(251,191,36,.45),
+              inset 0 3px 0 rgba(255,255,255,.4);
+    }
+    .member-card[data-tone="red"] .member-avatar{
+      background:linear-gradient(145deg,#DC2626,#991B1B);
+      box-shadow:0 14px 32px rgba(220,38,38,.4),
+              inset 0 3px 0 rgba(255,255,255,.25);
+    }
+    .member-card[data-tone="teal"] .member-avatar{
+      background:linear-gradient(145deg,#059669,#047857);
+      box-shadow:0 14px 32px rgba(5,150,105,.4),
+              inset 0 3px 0 rgba(255,255,255,.25);
+    }
+    .member-card:hover .member-avatar{
+      transform:scale(1.06) rotate(-4deg);
+    }
+
+    .member-avatar::after{
+      content:""; position:absolute;
+      inset:-6px;
+      border-radius:50%;
+      border:2px dashed rgba(251,191,36,.6);
+      opacity:0;
+      transition:.35s;
+    }
+    .member-card:hover .member-avatar::after{
+      opacity:1;
+      animation:avatarSpin 8s linear infinite;
+    }
+    @keyframes avatarSpin{
+      to{ transform:rotate(360deg); }
+    }
+
+    .member-role{
+      display:inline-block;
+      padding:5px 12px;
+      border-radius:100px;
+      background:var(--blue-pale);
+      border:1px solid #BFDBFE;
+      color:var(--blue);
+      font-size:.66rem;
+      font-weight:900;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      margin-bottom:12px;
+    }
+    .member-card[data-tone="gold"] .member-role{
+      background:var(--gold-pale); border-color:#FDE68A;
+      color:var(--gold-dark);
+    }
+    .member-card[data-tone="red"] .member-role{
+      background:#FEE2E2; border-color:#FECACA;
+      color:var(--red);
+    }
+    .member-card[data-tone="teal"] .member-role{
+      background:#D1FAE5; border-color:#A7F3D0;
+      color:#047857;
+    }
+
+    .member-name{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.15rem;
+      font-weight:900;
+      color:var(--navy);
+      line-height:1.35;
+      margin-bottom:8px;
+    }
+
+    .member-hint{
+      display:inline-flex;
+      align-items:center;
+      gap:7px;
+      color:var(--muted);
+      font-size:.76rem;
+      font-weight:700;
+      margin-top:6px;
+      transition:.25s;
+    }
+    .member-card:hover .member-hint{
+      color:var(--blue-2);
+    }
+
+    /* MODAL */
+    .modal-overlay{
+      position:fixed; inset:0;
+      background:rgba(10,37,64,.85);
+      backdrop-filter:blur(8px);
+      -webkit-backdrop-filter:blur(8px);
+      z-index:10000;
+      display:none;
+      align-items:center; justify-content:center;
+      padding:24px;
+      opacity:0;
+      transition:opacity .35s;
+    }
+    .modal-overlay.active{
+      display:flex;
+      opacity:1;
+    }
+    .modal-box{
+      background:#fff;
+      border-radius:28px;
+      max-width:720px;
+      width:100%;
+      max-height:90vh;
+      overflow-y:auto;
+      box-shadow:0 40px 100px rgba(0,0,0,.6);
+      transform:scale(.92) translateY(20px);
+      transition:transform .35s cubic-bezier(.2,.8,.3,1);
+      position:relative;
+    }
+    .modal-overlay.active .modal-box{
+      transform:scale(1) translateY(0);
+    }
+
+    .modal-close{
+      position:absolute;
+      top:18px; right:18px;
+      width:42px; height:42px;
+      border-radius:12px;
+      background:rgba(255,255,255,.15);
+      color:#fff;
+      display:grid; place-items:center;
+      font-size:1rem;
+      z-index:10;
+      transition:.3s;
+      cursor:pointer;
+    }
+    .modal-close:hover{
+      background:#DC2626;
+      transform:rotate(90deg) scale(1.1);
+    }
+
+    .modal-header{
+      padding:44px 38px 32px;
+      background:linear-gradient(135deg,#0A2540,#1E40AF);
+      color:#fff;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+      border-radius:28px 28px 0 0;
+    }
+    .modal-header::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.06) 1px,transparent 1px);
+      background-size:20px 20px; opacity:.55; pointer-events:none;
+    }
+    .modal-header-content{ position:relative; z-index:2; }
+
+    .modal-avatar{
+      width:110px; height:110px;
+      border-radius:50%;
+      margin:0 auto 20px;
+      display:grid; place-items:center;
+      background:linear-gradient(145deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      font-family:"Poppins",sans-serif;
+      font-size:2.4rem;
+      font-weight:900;
+      letter-spacing:1px;
+      box-shadow:0 20px 50px rgba(251,191,36,.5),
+              inset 0 4px 0 rgba(255,255,255,.4);
+    }
+
+    .modal-header h3{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(1.35rem,3vw,1.9rem);
+      font-weight:900;
+      line-height:1.3;
+      margin-bottom:10px;
+      color:#fff;
+    }
+
+    .modal-role-badge{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 18px;
+      border-radius:100px;
+      background:rgba(251,191,36,.18);
+      border:1px solid rgba(251,191,36,.45);
+      color:var(--gold);
+      font-size:.72rem;
+      font-weight:900;
+      letter-spacing:1.8px;
+      text-transform:uppercase;
+    }
+
+    .modal-body{
+      padding:36px 38px 40px;
+    }
+
+    .modal-detail-list{
+      list-style:none;
+      display:flex; flex-direction:column;
+      gap:14px;
+    }
+    .modal-detail-list li{
+      display:flex; align-items:flex-start; gap:14px;
+      padding:16px 18px;
+      border-radius:14px;
+      background:#F8FAFC;
+      border:1px solid var(--border);
+      transition:.25s;
+    }
+    .modal-detail-list li:hover{
+      background:var(--blue-pale);
+      border-color:var(--blue-light);
+    }
+    .modal-detail-list li i{
+      flex-shrink:0;
+      width:36px; height:36px;
+      display:grid; place-items:center;
+      border-radius:10px;
+      background:linear-gradient(145deg,#2563EB,#1E40AF);
+      color:#fff;
+      font-size:.85rem;
+    }
+    .modal-detail-list li > div{
+      flex:1;
+      min-width:0;
+    }
+    .modal-detail-list li strong{
+      display:block;
+      color:var(--navy);
+      font-size:.72rem;
+      font-weight:900;
+      letter-spacing:1.2px;
+      text-transform:uppercase;
+      margin-bottom:4px;
+    }
+    .modal-detail-list li span{
+      color:var(--text);
+      font-size:.92rem;
+      line-height:1.6;
+      word-wrap:break-word;
+      overflow-wrap:break-word;
+    }
+    .modal-detail-list li span.hindi{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1rem;
+    }
+
+    .modal-about{
+      margin-top:22px;
+      padding:22px 24px;
+      border-radius:18px;
+      background:linear-gradient(135deg,#EFF6FF,#DBEAFE);
+      border-left:5px solid var(--blue-2);
+      color:var(--navy);
+      font-size:.92rem;
+      line-height:1.85;
+    }
+    .modal-about strong{
+      display:block;
+      margin-bottom:8px;
+      color:var(--blue-2);
+      font-size:.72rem;
+      font-weight:900;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+    }
+    .modal-about p{
+      margin:0;
+      color:var(--text-soft);
+    }
+
+    /* CTA STRIP */
+    .cta-strip{ position:relative; padding:85px 0;
+      background:radial-gradient(circle at 15% 20%,rgba(251,191,36,.15),transparent 35%),
+        radial-gradient(circle at 85% 80%,rgba(59,130,246,.2),transparent 40%),
+        linear-gradient(135deg,#0A2540 0%,#1E40AF 50%,#0A2540 100%);
+      color:#fff; overflow:hidden; text-align:center; }
+    .cta-strip::before{ content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
+      background-size:24px 24px; opacity:.7; pointer-events:none; }
+    .cta-strip .container{ position:relative; z-index:2; }
+    .cta-badge{ display:inline-flex; align-items:center; gap:8px;
+      padding:8px 20px; border-radius:100px;
+      background:rgba(251,191,36,.15);
+      border:1px solid rgba(251,191,36,.4); color:var(--gold);
+      font-size:.72rem; font-weight:900; letter-spacing:2.5px;
+      text-transform:uppercase; margin-bottom:22px; }
+    .cta-strip h2{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(2rem,4.5vw,3.2rem); font-weight:900;
+      line-height:1.25; margin-bottom:16px; letter-spacing:-.5px; }
+    .cta-strip h2 span{ color:var(--gold); }
+    .cta-strip p{ color:#93C5FD; font-size:1.05rem;
+      max-width:640px; margin:0 auto 34px; line-height:1.8; }
+    .cta-buttons{ display:flex; justify-content:center;
+      flex-wrap:wrap; gap:14px; }
+
+    /* FOOTER */
+    footer{ background:radial-gradient(circle at 10% 20%,rgba(59,130,246,.1),transparent 40%),
+        radial-gradient(circle at 90% 80%,rgba(251,191,36,.06),transparent 40%),
+        linear-gradient(160deg,#0A2540 0%,#0F2E4F 60%,#0A2540 100%);
+      color:#fff; padding-top:80px; position:relative; overflow:hidden; }
+    footer::before{ content:""; position:absolute;
+      top:0; left:0; right:0; height:1px;
+      background:linear-gradient(90deg,transparent,rgba(251,191,36,.6),transparent); }
+    .footer-grid{ display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:32px; padding-bottom:60px; position:relative; z-index:2; }
+    .footer-brand-head{ display:flex; align-items:center;
+      gap:10px; margin-bottom:20px; }
+    .footer-logo-box{ width:60px; height:60px; border-radius:15px;
+      background:#FFFFFF;
+      display:block; padding:0;
+      border:2px solid rgba(251,191,36,.4);
+      box-shadow:0 8px 22px rgba(59,130,246,.3);
+      flex-shrink:0; overflow:hidden;
+      position:relative; line-height:0; }
+    .footer-logo-box img{ width:100%; height:100%;
+      object-fit:cover; object-position:center;
+      display:block; margin:0; padding:0;
+      border:0; transform:scale(1.02);
+      transform-origin:center center; }
+    .footer-brand-text{ min-width:0; }
+    .footer-brand-text h3{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.05rem; font-weight:900; color:#fff;
+      line-height:1.15; margin-bottom:4px; }
+    .footer-tagline-text{ color:#93C5FD; font-size:.66rem;
+      font-weight:600; letter-spacing:.4px;
+      font-family:"Tiro Devanagari Hindi",serif; line-height:1.3; }
+    .footer-desc{ color:#93C5FD; font-size:.8rem; line-height:1.7;
+      margin-bottom:20px; max-width:100%; }
+    .footer-badge{ display:inline-flex; align-items:center; gap:7px;
+      padding:6px 12px; background:rgba(251,191,36,.1);
+      border:1px solid rgba(251,191,36,.3); border-radius:100px;
+      color:var(--gold); font-size:.68rem; font-weight:900;
+      letter-spacing:.4px; margin-bottom:20px; }
+
+    .footer-heading, .footer-social-heading{
+      font-family:"Tiro Devanagari Hindi",serif; font-size:.92rem;
+      font-weight:900; color:#fff; margin-bottom:22px;
+      padding-bottom:12px; position:relative; letter-spacing:.2px; }
+    .footer-heading::after, .footer-social-heading::after{
+      content:""; position:absolute; bottom:0; left:0;
+      width:32px; height:2px;
+      background:linear-gradient(90deg,#FBBF24,#F59E0B);
+      border-radius:2px; }
+
+    .social-icons{ display:flex; gap:8px; flex-wrap:wrap; }
+    .social-icon{ width:38px; height:38px; display:grid;
+      place-items:center; border-radius:10px;
+      background:rgba(59,130,246,.12); color:#93C5FD;
+      font-size:.9rem; transition:.3s;
+      border:1px solid rgba(59,130,246,.25); }
+    .social-icon:hover{ transform:translateY(-4px);
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      color:#0A2540; border-color:var(--gold);
+      box-shadow:0 8px 22px rgba(251,191,36,.4); }
+
+    .footer-links{ list-style:none; }
+    .footer-links li{ margin-bottom:10px; }
+    .footer-links a{ color:#93C5FD; font-size:.78rem;
+      font-weight:600; display:inline-flex; align-items:center;
+      gap:7px; transition:.25s; line-height:1.5; }
+    .footer-links a i{ font-size:.56rem; color:#FBBF24;
+      transition:.25s; }
+    .footer-links a:hover{ color:var(--gold);
+      transform:translateX(4px); }
+
+    .contact-info{ list-style:none; }
+    .contact-info li{ display:flex; gap:10px;
+      align-items:flex-start; margin-bottom:14px;
+      color:#93C5FD; font-size:.78rem; line-height:1.65; }
+    .contact-info li i{ flex-shrink:0; width:28px; height:28px;
+      display:grid; place-items:center; border-radius:8px;
+      background:rgba(59,130,246,.15);
+      border:1px solid rgba(59,130,246,.25); color:#FBBF24;
+      font-size:.72rem; margin-top:1px; }
+    .contact-info li strong{ display:block; color:#fff;
+      font-size:.7rem; margin-bottom:2px;
+      letter-spacing:.3px; text-transform:uppercase; }
+    .contact-info li a{ color:#93C5FD; }
+    .footer-newsletter{ margin-top:6px; padding-top:16px;
+      border-top:1px solid rgba(59,130,246,.2); }
+    .footer-newsletter label{ display:block; color:#93C5FD;
+      font-size:.68rem; font-weight:800; letter-spacing:.5px;
+      text-transform:uppercase; margin-bottom:10px; }
+    .newsletter-form{ display:flex; gap:6px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(59,130,246,.25);
+      border-radius:12px; padding:5px; transition:.3s; }
+    .newsletter-form:focus-within{ border-color:var(--gold);
+      box-shadow:0 0 0 4px rgba(251,191,36,.1); }
+    .newsletter-form input{ flex:1; background:transparent;
+      border:none; outline:none; padding:8px 10px; color:#fff;
+      font-family:inherit; font-size:.76rem; min-width:0; }
+    .newsletter-form input::placeholder{ color:#6B8CAE; }
+    .newsletter-form button{ flex-shrink:0; width:36px; height:36px;
+      border-radius:8px;
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      color:#0A2540; font-size:.82rem; display:grid;
+      place-items:center; transition:.3s; }
+
+    .footer-bottom{ border-top:1px solid rgba(59,130,246,.15);
+      padding:22px 0; position:relative; z-index:2; }
+    .footer-bottom-inner{ display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      gap:12px; text-align:center; }
+    .footer-copy{ color:#6B8CAE; font-size:.76rem; font-weight:600;
+      order:1; }
+    .footer-copy strong{ color:#93C5FD; font-weight:800; }
+    .footer-legal{ display:flex; gap:4px; flex-wrap:nowrap;
+      align-items:center; justify-content:center;
+      order:2; }
+    .footer-legal a{ color:#93C5FD; font-size:.72rem;
+      font-weight:700; padding:5px 8px; border-radius:8px;
+      transition:.25s; white-space:nowrap; }
+    .footer-legal a:hover{ color:var(--gold);
+      background:rgba(59,130,246,.15); }
+    .footer-legal span{ color:rgba(59,130,246,.5); font-size:.72rem; }
+    .footer-made{ color:#6B8CAE; font-size:.72rem; font-weight:600;
+      display:inline-flex; align-items:center; gap:6px;
+      order:3; }
+    .footer-made i{ color:#DC2626; font-size:.68rem; }
+
+    /* BACK TOP */
+    .back-top{ position:fixed; right:22px; bottom:22px;
+      width:48px; height:48px; border-radius:14px;
+      background:linear-gradient(135deg,#2563EB,#1E40AF);
+      color:#fff; cursor:pointer; z-index:1000;
+      display:grid; place-items:center; opacity:0;
+      visibility:hidden; transition:.3s;
+      box-shadow:0 10px 28px rgba(37,99,235,.45); }
+    .back-top.show{ opacity:1; visibility:visible; }
+    .back-top:hover{ transform:translateY(-4px); }
+
+    /* RESPONSIVE */
+    @media(max-width:1200px){
+      .desktop-nav > a{ padding:10px 7px; font-size:.72rem; }
+      .donate-nav{ padding:10px 13px!important; }
+      .footer-grid{ grid-template-columns:repeat(3,1fr); gap:32px; }
+    }
+    @media(max-width:1000px){
+      .desktop-nav > a{ padding:10px 6px; font-size:.68rem; }
+      .logo-box{ width:62px; height:62px; }
+    }
+    @media(max-width:900px){
+      .desktop-nav{ display:none; }
+      .menu-toggle{ display:block; }
+      .header-inner{ min-height:78px; }
+      .brand-name{ font-size:clamp(1.1rem,3vw,1.4rem); }
+      .brand-tagline{ font-size:.66rem; }
+      .logo-box{ width:60px; height:60px; }
+      .page-hero{ padding:140px 0 65px; }
+      .footer-grid{ grid-template-columns:1fr 1fr; gap:36px 24px; }
+      .group-header{ padding:18px 22px; gap:14px; }
+      .group-header-icon{ width:54px; height:54px; font-size:1.35rem; }
+    }
+    @media(max-width:700px){
+      .section{ padding:70px 0; }
+      .page-hero{ padding:130px 0 55px; }
+      .page-hero h1{ font-size:1.75rem; }
+      .footer-grid{ grid-template-columns:1fr; gap:32px;
+        padding-bottom:40px; }
+      .footer-bottom-inner{ gap:10px; }
+      .footer-legal{ flex-wrap:nowrap; gap:1px; }
+      .footer-legal a{ font-size:.68rem; padding:4px 6px; }
+      .footer-legal span{ font-size:.68rem; }
+      .cta-strip{ padding:65px 0; }
+      .cta-buttons{ flex-direction:column; }
+      .cta-buttons .btn{ width:100%; }
+      .member-grid{ grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; }
+      .member-card{ padding:26px 18px 24px; border-radius:20px; }
+      .member-avatar{ width:72px; height:72px; font-size:1.55rem; }
+      .member-name{ font-size:1rem; }
+      .modal-header{ padding:34px 24px 26px; }
+      .modal-avatar{ width:90px; height:90px; font-size:1.9rem; }
+      .modal-body{ padding:26px 22px 30px; }
+      .modal-detail-list li{ padding:14px 14px; gap:12px; }
+      .modal-detail-list li i{ width:32px; height:32px; font-size:.78rem; }
+      .group-header{ flex-wrap:wrap; }
+      .group-header-count{ margin-left:0; margin-top:8px; width:100%; text-align:center; }
+    }
+    @media(max-width:600px){
+      .brand-name{ font-size:clamp(1rem,4vw,1.15rem);
+        white-space:normal; line-height:1.15; letter-spacing:-.2px; }
+      .brand-tagline{ font-size:.62rem; white-space:normal; }
+      .logo-box{ width:54px; height:54px; border-radius:13px; }
+      .brand{ gap:11px; }
+      .cta-strip h2{ font-size:1.55rem; }
+      .cta-strip p{ font-size:.92rem; }
+      .social-icon{ width:38px; height:38px; font-size:.9rem; }
+      .footer-brand-text h3{ font-size:1rem; }
+      .member-grid{ grid-template-columns:repeat(2,1fr); }
+    }
+    @media(max-width:420px){
+      .footer-legal a{ font-size:.62rem; padding:3px 4px; }
+      .footer-legal span{ font-size:.62rem; }
+      .member-grid{ grid-template-columns:1fr; }
+      .member-avatar{ width:64px; height:64px; font-size:1.4rem; }
+    }
+    @media(max-width:380px){
+      .brand-name{ font-size:1rem; }
+      .brand-tagline{ font-size:.6rem; }
+      .logo-box{ width:50px; height:50px; }
+      .footer-legal a{ font-size:.58rem; padding:3px 3px; }
+      .footer-legal span{ font-size:.58rem; }
+    }
+    @media (prefers-reduced-motion: reduce){
+      *,*::before,*::after{
+        animation-duration:.01ms!important;
+        animation-iteration-count:1!important;
+        transition-duration:.01ms!important; } }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="index.html" class="brand">
+      <div class="logo-box">
+        <img src="sath_chale_ham_logo_HD-1.png"
+             alt="साथ चले हम फाउंडेशन Logo">
+      </div>
+      <div class="brand-text">
+        <div class="brand-name">साथ चले हम <span class="gold">फाउंडेशन</span></div>
+        <div class="brand-tagline">साथ चले हम, बदलाव की ओर</div>
+      </div>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="work.html">Our Work</a>
+      <a href="team.html" class="active">Team</a>
+      <a href="events.html">Events</a>
+      <a href="join-us.html">Join Us</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html" class="donate-nav">
+        <i class="fa-solid fa-heart"></i> Donate Us
+      </a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Open Menu" aria-expanded="false"
+            aria-controls="mobileNav" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html">Home | होम</a>
+    <a href="about.html">About Us | हमारे बारे में</a>
+    <a href="work.html">Our Work | हमारे कार्य</a>
+    <a href="team.html" class="active">Team | हमारी टीम</a>
+    <a href="events.html">Events | कार्यक्रम</a>
+    <a href="join-us.html">Join Us | जुड़ें</a>
+    <a href="downloads.html">Downloads | डाउनलोड</a>
+    <a href="contact.html">Contact | संपर्क</a>
+    <a href="donate.html" class="donate-nav">
+      <i class="fa-solid fa-heart"></i> Donate Us
+    </a>
+  </nav>
+</header>
+
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="container">
+
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span>Our Team</span>
+    </div>
+
+    <h1>Our Team | <span>हमारी टीम</span></h1>
+
+    <p class="hindi">
+      समर्पित सदस्यों की एक टीम जो समाज सेवा के प्रति पूरी निष्ठा के साथ
+      कार्यरत है — न्यास मंडल, सलाहकार मंडल एवं कार्यक्रम संचालन टीम।
+    </p>
+
+  </div>
+</section>
+
+
+<!-- ================= BOARD OF TRUSTEES ================= -->
+<section class="section team-group-section">
+  <div class="container">
+
+    <div class="group-header">
+      <div class="group-header-icon">
+        <i class="fa-solid fa-landmark"></i>
+      </div>
+      <div class="group-header-text">
+        <h2>Board of Trustees | न्यास मंडल</h2>
+        <p>संस्था का मार्गदर्शन एवं नेतृत्व करने वाला मंडल</p>
+      </div>
+      <div class="group-header-count">5 Members</div>
+    </div>
+
+    <div class="member-grid">
+
+      <!-- President -->
+      <div class="member-card" data-tone="blue"
+           data-name="Ajay Kumar Prajapati"
+           data-name-hindi="अजय कुमार प्रजापति"
+           data-role="President | अध्यक्ष"
+           data-email="president@sathchaleham.org"
+           data-phone="+91 XXXXXXXXXX"
+           data-location="सहरसा, बिहार"
+           data-joined="Founding Member"
+           data-about="संस्था के संस्थापक एवं अध्यक्ष के रूप में श्री अजय कुमार प्रजापति जी संस्था की समग्र दिशा, नीतियों एवं दीर्घकालिक रणनीति का निर्धारण करते हैं। वे संस्था के प्रत्येक कार्यक्रम में सक्रिय भागीदारी सुनिश्चित करते हैं।">
+        <div class="member-avatar">AK</div>
+        <div class="member-role">President</div>
+        <div class="member-name">Ajay Kumar Prajapati</div>
+        <div class="member-hint">
+          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        </div>
+      </div>
+
+      <!-- Vice President -->
+      <div class="member-card" data-tone="gold"
+           data-name="S K Yadav"
+           data-name-hindi="एस के यादव"
+           data-role="Vice President | उपाध्यक्ष"
+           data-email="vp@sathchaleham.org"
+           data-phone="+91 XXXXXXXXXX"
+           data-location="पटना, बिहार"
+           data-joined="Founding Member"
+           data-about="श्री एस के यादव जी उपाध्यक्ष के रूप में संस्था के प्रशासनिक कार्यों, कार्यक्रमों के संचालन एवं अध्यक्ष के साथ मिलकर निर्णय लेने की प्रक्रिया में महत्वपूर्ण भूमिका निभाते हैं।">
+        <div class="member-avatar">SK</div>
+        <div class="member-role">Vice President</div>
+        <div class="member-name">S K Yadav</div>
+        <div class="member-hint">
+          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        </div>
+      </div>
+
+      <!-- Secretary -->
+      <div class="member-card" data-tone="red"
+           data-name="M R Ojha"
+           data-name-hindi="एम आर ओझा"
+           data-role="Secretary | सचिव"
+           data-email="secretary@sathchaleham.org"
+           data-phone="+91 XXXXXXXXXX"
+           data-location="मुज़फ़्फ़रपुर, बिहार"
+           data-joined="Founding Member"
+           data-about="श्री एम आर ओझा जी सचिव के रूप में संस्था की बैठकों, रिकॉर्ड, दस्तावेज़ एवं सरकारी पत्राचार की जिम्मेदारी निभाते हैं।">
+        <div class="member-avatar">MO</div>
+        <div class="member-role">Secretary</div>
+        <div class="member-name">M R Ojha</div>
+        <div class="member-hint">
+          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        </div>
+      </div>
+
+      <!-- Joint Secretary -->
+      <div class="member-card" data-tone="teal"
+           data-name="D K Soren"
+           data-name-hindi="डी के सोरेन"
+           data-role="Joint Secretary | संयुक्त सचिव"
+           data-email="js@sathchaleham.org"
+           data-phone="+91 XXXXXXXXXX"
+           data-location="गया, बिहार"
+           data-joined="Founding Member"
+           data-about="श्री डी के सोरेन जी संयुक्त सचिव के रूप में सचिव के कार्यों में सहयोग एवं कार्यक्रम स्थलों पर समन्वय की भूमिका निभाते हैं।">
+        <div class="member-avatar">DS</div>
+        <div class="member-role">Joint Secretary</div>
+        <div class="member-name">D K Soren</div>
+        <div class="member-hint">
+          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        </div>
+      </div>
+
+      <!-- Treasurer -->
+      <div class="member-card" data-tone="gold"
+           data-name="Priyam Singh"
+           data-name-hindi="प्रियम सिंह"
+           data-role="Treasurer | कोषाध्यक्ष"
+           data-email="treasurer@sathchaleham.org"
+           data-phone="+91 XXXXXXXXXX"
+           data-location="भागलपुर, बिहार"
+           data-joined="Founding Member"
+           data-about="श्रीमती प्रियम सिंह जी कोषाध्यक्ष के रूप में संस्था की आर्थिक गतिविधियों, दान राशि के उचित उपयोग एवं वित्तीय पारदर्शिता की जिम्मेदारी निभाती हैं।">
+        <div class="member-avatar">PS</div>
+        <div class="member-role">Treasurer</div>
+        <div class="member-name">Priyam Singh</div>
+        <div class="member-hint">
+          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= ADVISORY BOARD ================= -->
+<section class="section team-group-section alt">
+  <div class="container">
+
+    <div class="group-header">
+      <div class="group-header-icon">
+        <i class="fa-solid fa-user-tie"></i>
+      </div>
+      <div class="group-header-text">
+        <h2>Advisory Board | सलाहकार मंडल</h2>
+        <p>विशेषज्ञ मार्गदर्शन एवं सलाह प्रदान करने वाला मंडल</p>
+      </div>
+      <div class="group-header-count">4 Members</div>
+    </div>
+
+    <div class="member-grid">
+
+      <!-- Senior Member -->
+      <div class="member-card" data-tone="blue"
+           data-name="Dr. Chandan Kumar"
+           data-name-hindi="डॉ. चंदन कुमार"
+           data-role="Senior Member | वरिष्ठ सदस्य"
+           data-email="chandan@sathchaleham.org"
+           data-phone="+91 XXXXXXXXXX"
+           data-location="सहरसा, बिहार"
+           data-joined="Advisory Member"
+           data-about="डॉ. चंदन कुमार जी वरिष्ठ सदस्य के रूप में संस्था को चिकित्सा, स्वास्थ्य एवं शैक्षणिक क्षेत्रों में मार्गदर्शन प्रदान करते हैं।">
+        <div class="member-avatar">CK</div>
+        <div class="member-role">Senior Member</div>
+        <div class="member-name">Dr. Chandan Kumar</div>
+        <div class="member-hint">
+          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        </div>
+      </div>
+
+      <!-- Executive Member -->
+      <div class="member-card" data-tone="gold"
+           data-name="Jitendra Mistri"
+           data-name-hindi="जितेंद्र मिस्त्री"
+           data-role="Executive Member | कार्यकारी सदस्य"
+           data-email="jitendra@sathchaleham.org"
+           data-phone="+91 XXXXXXXXXX"
+           data-location="पटना, बिहार"
+           data-joined="Advisory Member"
+           data-about="श्री जितेंद्र मिस्त्री जी कार्यकारी सदस्य के रूप में संस्था की कार्यकारी गतिविधियों के संचालन में सक्रिय सहयोग प्रदान करते हैं।">
+        <div class="member-avatar">JM</div>
+        <div class="member-role">Executive Member</div>
+        <div class="member-name">Jitendra Mistri</div>
+        <div class="member-hint">
+          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        </div>
+      </div>
+
+      <!-- Advisory Member -->
+      <div class="member-card" data-tone="teal"
+           data-name="Afsar Amin"
+           data-name-hindi="अफ़सर अमीन"
+           data-role="Advisory Member | सलाहकार सदस्य"
+           data-email="afsar@sathchaleham.org"
+           data-phone="+91 XXXXXXXXXX"
+           data-location="भागलपुर, बिहार"
+           data-joined="Advisory Member"
+           data-about="श्री अफ़सर अमीन जी सलाहकार सदस्य के रूप में संस्था की विभिन्न परियोजनाओं एवं कार्यक्रमों पर विशेषज्ञ सलाह प्रदान करते हैं।">
+        <div class="member-avatar">AA</div>
+        <div class="member-role">Advisory Member</div>
+        <div class="member-name">Afsar Amin</div>
+        <div class="member-hint">
+          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        </div>
+      </div>
+
+      <!-- Legal Advisor -->
+      <div class="member-card" data-tone="red"
+           data-name="Sumit Singh"
+           data-name-hindi="सुमित सिंह"
+           data-role="Legal &amp; Compliance Advisor | कानूनी सलाहकार"
+           data-email="legal@sathchaleham.org"
+           data-phone="+91 XXXXXXXXXX"
+           data-location="गया, बिहार"
+           data-joined="Advisory Member"
+           data-about="श्री सुमित सिंह जी कानूनी एवं अनुपालन सलाहकार के रूप में संस्था को कानूनी मामलों, दस्तावेज़ीकरण एवं सरकारी अनुपालन में सहयोग प्रदान करते हैं।">
+        <div class="member-avatar">SS</div>
+        <div class="member-role">Legal Advisor</div>
+        <div class="member-name">Sumit Singh</div>
+        <div class="member-hint">
+          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= PROGRAM TEAM ================= -->
+<section class="section team-group-section">
+  <div class="container">
+
+    <div class="group-header">
+      <div class="group-header-icon">
+        <i class="fa-solid fa-people-group"></i>
+      </div>
+      <div class="group-header-text">
+        <h2>Program Team | कार्यक्रम संचालन टीम</h2>
+        <p>जमीनी स्तर पर कार्यक्रमों के संचालन का दायित्व निभाने वाली टीम</p>
+      </div>
+      <div class="group-header-count">4 Members</div>
+    </div>
+
+    <div class="member-grid">
+
+      <!-- Program Coordinator -->
+      <div class="member-card" data-tone="blue"
+           data-name="Kumar Puskar"
+           data-name-hindi="कुमार पुष्कर"
+           data-role="Program Coordinator | कार्यक्रम समन्वयक"
+           data-email="program@sathchaleham.org"
+           data-phone="+91 XXXXXXXXXX"
+           data-location="सहरसा, बिहार"
+           data-joined="Program Team"
+           data-about="श्री कुमार पुष्कर जी कार्यक्रम समन्वयक के रूप में संस्था के सभी कार्यक्रमों की योजना, संचालन एवं समन्वय की जिम्मेदारी निभाते हैं।">
+        <div class="member-avatar">KP</div>
+        <div class="member-role">Program Coordinator</div>
+        <div class="member-name">Kumar Puskar</div>
+        <div class="member-hint">
+          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        </div>
+      </div>
+
+      <!-- Youth Coordinator -->
+      <div class="member-card" data-tone="gold"
+           data-name="Sujeet Suman"
+           data-name-hindi="सुजीत सुमन"
+           data-role="Youth Coordinator | युवा समन्वयक"
+           data-email="youth@sathchaleham.org"
+           data-phone="+91 XXXXXXXXXX"
+           data-location="मुज़फ़्फ़रपुर, बिहार"
+           data-joined="Program Team"
+           data-about="श्री सुजीत सुमन जी युवा समन्वयक के रूप में संस्था के युवा विकास एवं कौशल विकास कार्यक्रमों की जिम्मेदारी निभाते हैं।">
+        <div class="member-avatar">SS</div>
+        <div class="member-role">Youth Coordinator</div>
+        <div class="member-name">Sujeet Suman</div>
+        <div class="member-hint">
+          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        </div>
+      </div>
+
+      <!-- Women & Child Development Coordinator -->
+      <div class="member-card" data-tone="red"
+           data-name="S Kumari"
+           data-name-hindi="एस कुमारी"
+           data-role="Women &amp; Child Development Coordinator"
+           data-email="womenchild@sathchaleham.org"
+           data-phone="+91 XXXXXXXXXX"
+           data-location="भागलपुर, बिहार"
+           data-joined="Program Team"
+           data-about="श्रीमती एस कुमारी जी महिला एवं बाल विकास समन्वयक के रूप में महिला सशक्तिकरण एवं बाल विकास से जुड़े सभी कार्यक्रमों की जिम्मेदारी निभाती हैं।">
+        <div class="member-avatar">SK</div>
+        <div class="member-role">Women &amp; Child Coordinator</div>
+        <div class="member-name">S Kumari</div>
+        <div class="member-hint">
+          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        </div>
+      </div>
+
+      <!-- Volunteer Coordinator -->
+      <div class="member-card" data-tone="teal"
+           data-name="P K Prabhkar"
+           data-name-hindi="पी के प्रभाकर"
+           data-role="Volunteer Coordinator | स्वयंसेवक समन्वयक"
+           data-email="volunteer@sathchaleham.org"
+           data-phone="+91 XXXXXXXXXX"
+           data-location="गया, बिहार"
+           data-joined="Program Team"
+           data-about="श्री पी के प्रभाकर जी स्वयंसेवक समन्वयक के रूप में संस्था से जुड़े सभी स्वयंसेवकों के प्रबंधन, प्रशिक्षण एवं कार्यक्रमों में उनकी भागीदारी सुनिश्चित करते हैं।">
+        <div class="member-avatar">PP</div>
+        <div class="member-role">Volunteer Coordinator</div>
+        <div class="member-name">P K Prabhkar</div>
+        <div class="member-hint">
+          <i class="fa-solid fa-circle-info"></i> पूरा विवरण देखें
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= CTA ================= -->
+<section class="cta-strip">
+  <div class="container">
+    <div class="cta-badge">
+      <i class="fa-solid fa-hands-holding-heart"></i>
+      Join Our Mission
+    </div>
+
+    <h2>साथ चले हम, <span>बदलाव की ओर</span></h2>
+
+    <p>
+      आप भी हमारी टीम का हिस्सा बन सकते हैं — स्वयंसेवक, इंटर्न या सहयोगी
+      के रूप में जुड़कर समाज सेवा की इस यात्रा में योगदान दें।
+    </p>
+
+    <div class="cta-buttons">
+      <a href="join-us.html" class="btn btn-gold btn-pulse-red">
+        <i class="fa-solid fa-users"></i> Join as Volunteer
+      </a>
+      <a href="donate.html" class="btn btn-red">
+        <i class="fa-solid fa-heart"></i> Donate Now
+      </a>
+      <a href="contact.html" class="btn btn-outline">
+        <i class="fa-solid fa-phone"></i> Contact Us
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <div class="footer-brand-head">
+          <div class="footer-logo-box">
+            <img src="sath_chale_ham_logo_HD-1.png"
+                 alt="Sath Chale Hum Foundation Logo">
+          </div>
+          <div class="footer-brand-text">
+            <h3>साथ चले हम फाउंडेशन</h3>
+            <div class="footer-tagline-text">साथ चले हम, बदलाव की ओर</div>
+          </div>
+        </div>
+
+        <p class="footer-desc">
+          एक सामाजिक संस्था जो शिक्षा, स्वास्थ्य, महिला सशक्तिकरण और
+          समाज के सर्वांगीण विकास के लिए समर्पित है।
+        </p>
+
+        <div class="footer-badge">
+          <i class="fa-solid fa-award"></i>
+          12A &amp; 80G Certified NGO
+        </div>
+
+        <h4 class="footer-social-heading">Our Social Media | हमारे सोशल मीडिया</h4>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1PUUzvUfoo/" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sathchaleham" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com/@sathchaleham" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/917011893028" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Links | त्वरित लिंक</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home | होम</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us | हमारे बारे में</a></li>
+          <li><a href="work.html"><i class="fa-solid fa-chevron-right"></i> Our Work | हमारे कार्य</a></li>
+          <li><a href="team.html"><i class="fa-solid fa-chevron-right"></i> Our Team | हमारी टीम</a></li>
+          <li><a href="events.html"><i class="fa-solid fa-chevron-right"></i> Events | कार्यक्रम</a></li>
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Downloads | डाउनलोड</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact | संपर्क</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Get Involved | जुड़ें</h4>
+        <ul class="footer-links">
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Volunteer | स्वयंसेवक</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Internship | इंटर्नशिप</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> CSR Partnership | CSR</a></li>
+          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Donate | दान करें</a></li>
+          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Fundraise | फंडरेज़िंग</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Careers | करियर</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Resources | संसाधन</h4>
+        <ul class="footer-links">
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Reports | रिपोर्ट</a></li>
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Certificates | प्रमाण पत्र</a></li>
+          <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery | गैलरी</a></li>
+          <li><a href="videos.html"><i class="fa-solid fa-chevron-right"></i> Videos | वीडियो</a></li>
+          <li><a href="faq.html"><i class="fa-solid fa-chevron-right"></i> FAQ | सामान्य प्रश्न</a></li>
+          <li><a href="sitemap.html"><i class="fa-solid fa-chevron-right"></i> Sitemap | साइटमैप</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Contact Us | संपर्क</h4>
+        <ul class="contact-info">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Address | पता</strong>
+              भारतीय नगर, वार्ड नं. 26/35, सहरसा, बिहार – 852201
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Helpline | हेल्पलाइन</strong>
+              <a href="tel:+917011893028" style="color:#93C5FD;">+91 7011893028</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Email | ईमेल</strong>
+              <a href="mailto:sathchaleham@gmail.com" style="color:#93C5FD;">sathchaleham@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <strong>Office Hours | समय</strong>
+              सोम – शनि · 10:00 AM – 6:00 PM
+            </div>
+          </li>
+        </ul>
+
+        <div class="footer-newsletter">
+          <label>Newsletter | न्यूज़लेटर</label>
+          <form class="newsletter-form"
+                onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
+            <input type="email" placeholder="your@email.com" required>
+            <button type="submit" aria-label="Subscribe">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+
+        <div class="footer-copy">
+          © 2026 <strong>Sath Chale Hum Foundation</strong> · All Rights Reserved
+        </div>
+
+        <div class="footer-legal">
+          <a href="terms.html">Terms</a><span>·</span>
+          <a href="privacy.html">Privacy</a><span>·</span>
+          <a href="sitemap.html">Sitemap</a><span>·</span>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+
+        <div class="footer-made">
+          Made with <i class="fa-solid fa-heart"></i> in Bihar
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ================= MODAL ================= -->
+<div class="modal-overlay" id="memberModal">
+  <div class="modal-box">
+
+    <button class="modal-close" id="modalClose" aria-label="Close" type="button">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="modal-header">
+      <div class="modal-header-content">
+
+        <div class="modal-avatar" id="modalAvatar">AK</div>
+
+        <h3 id="modalName">Member Name</h3>
+
+        <span class="modal-role-badge">
+          <i class="fa-solid fa-briefcase"></i>
+          <span id="modalRole">Role</span>
+        </span>
+
+      </div>
+    </div>
+
+    <div class="modal-body">
+
+      <ul class="modal-detail-list">
+        <li>
+          <i class="fa-solid fa-user"></i>
+          <div>
+            <strong>Full Name | पूरा नाम</strong>
+            <span class="hindi" id="modalNameHindi">—</span>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-briefcase"></i>
+          <div>
+            <strong>Position | पद</strong>
+            <span id="modalRoleDetail">—</span>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <strong>Email | ईमेल</strong>
+            <span id="modalEmail">—</span>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <strong>Contact | संपर्क</strong>
+            <span id="modalPhone">—</span>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <strong>Location | स्थान</strong>
+            <span class="hindi" id="modalLocation">—</span>
+          </div>
+        </li>
+        <li>
+          <i class="fa-solid fa-calendar-check"></i>
+          <div>
+            <strong>Association | संबद्धता</strong>
+            <span id="modalJoined">—</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="modal-about">
+        <strong><i class="fa-solid fa-circle-info"></i> About | परिचय</strong>
+        <p class="hindi" id="modalAbout">—</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ================= BACK TO TOP ================= -->
+<button class="back-top" id="backTop" aria-label="Back to Top" type="button">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+  /* MOBILE MENU */
+  var menuToggle = document.getElementById("menuToggle");
+  var mobileNav = document.getElementById("mobileNav");
+  if(menuToggle && mobileNav){
+    menuToggle.addEventListener("click", function(){
+      mobileNav.classList.toggle("active");
+      menuToggle.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded",
+        mobileNav.classList.contains("active") ? "true" : "false");
+    });
+    mobileNav.querySelectorAll("a").forEach(function(link){
+      link.addEventListener("click", function(){
+        mobileNav.classList.remove("active");
+        menuToggle.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  /* ========== MEMBER MODAL ========== */
+  var memberCards = document.querySelectorAll(".member-card");
+  var modalOverlay = document.getElementById("memberModal");
+  var modalClose = document.getElementById("modalClose");
+
+  var modalAvatar = document.getElementById("modalAvatar");
+  var modalName = document.getElementById("modalName");
+  var modalNameHindi = document.getElementById("modalNameHindi");
+  var modalRole = document.getElementById("modalRole");
+  var modalRoleDetail = document.getElementById("modalRoleDetail");
+  var modalEmail = document.getElementById("modalEmail");
+  var modalPhone = document.getElementById("modalPhone");
+  var modalLocation = document.getElementById("modalLocation");
+  var modalJoined = document.getElementById("modalJoined");
+  var modalAbout = document.getElementById("modalAbout");
+
+  function getInitials(name){
+    var parts = name.trim().split(/\s+/);
+    var initials = "";
+    parts.forEach(function(p){
+      if(p.length > 0) initials += p[0].toUpperCase();
+    });
+    return initials.slice(0,2);
+  }
+
+  memberCards.forEach(function(card){
+    card.addEventListener("click", function(){
+      var name = card.getAttribute("data-name") || "";
+      var nameHindi = card.getAttribute("data-name-hindi") || "";
+      var role = card.getAttribute("data-role") || "";
+      var email = card.getAttribute("data-email") || "—";
+      var phone = card.getAttribute("data-phone") || "—";
+      var location = card.getAttribute("data-location") || "—";
+      var joined = card.getAttribute("data-joined") || "—";
+      var about = card.getAttribute("data-about") || "—";
+
+      modalAvatar.textContent = getInitials(name);
+      modalName.textContent = name;
+      modalNameHindi.textContent = nameHindi || name;
+      modalRole.textContent = role.split("|")[0].trim() || role;
+      modalRoleDetail.textContent = role;
+      modalEmail.textContent = email;
+      modalPhone.textContent = phone;
+      modalLocation.textContent = location;
+      modalJoined.textContent = joined;
+      modalAbout.textContent = about;
+
+      modalOverlay.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  function closeModal(){
+    modalOverlay.classList.remove("active");
+    document.body.style.overflow = "";
+  }
+
+  if(modalClose){
+    modalClose.addEventListener("click", closeModal);
+  }
+
+  modalOverlay.addEventListener("click", function(e){
+    if(e.target === modalOverlay){
+      closeModal();
+    }
+  });
+
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape" && modalOverlay.classList.contains("active")){
+      closeModal();
+    }
+  });
+
+  /* BACK TO TOP */
+  var backTop = document.getElementById("backTop");
+  if(backTop){
+    window.addEventListener("scroll", function(){
+      if(window.scrollY > 500){
+        backTop.classList.add("show");
+      } else {
+        backTop.classList.remove("show");
+      }
+    });
+    backTop.addEventListener("click", function(){
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+});
+</script>
+
+</body>
+</html>
