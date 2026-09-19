@@ -1,1 +1,1459 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>About Us | हमारे बारे में | Sath Chale Hum Foundation</title>
+  <meta name="description" content="साथ चले हम फाउंडेशन एक सामाजिक संस्था है — शिक्षा, स्वास्थ्य, महिला सशक्तिकरण, गरीब एवं जरूरतमंद लोगों की सहायता, ग्रामीण विकास, कौशल विकास, पर्यावरण संरक्षण और सामाजिक जागरूकता के क्षेत्र में कार्यरत।">
+  <meta name="theme-color" content="#0A2540">
+
+  <meta property="og:title" content="About Us | Sath Chale Hum Foundation">
+  <meta property="og:description" content="हमारा मिशन, विज़न, यात्रा और मूल्य — समाज में सकारात्मक बदलाव की ओर।">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="sath_chale_ham_logo_HD-1.png">
+  <link rel="canonical" href="https://sathchaleham.org/about.html">
+  <link rel="icon" type="image/png" href="sath_chale_ham_logo_HD-1.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    *{ margin:0; padding:0; box-sizing:border-box; }
+    html{ scroll-behavior:smooth; overflow-x:hidden; }
+
+    :root{
+      --navy:#0A2540; --navy-2:#0F2E4F;
+      --blue:#1E40AF; --blue-2:#2563EB; --blue-light:#3B82F6;
+      --blue-pale:#EFF6FF; --blue-soft:#DBEAFE;
+      --gold:#FBBF24; --gold-dark:#D97706; --gold-pale:#FEF3C7;
+      --red:#DC2626; --red-dark:#991B1B; --green:#059669;
+      --white:#FFFFFF; --text:#0F172A; --text-soft:#475569;
+      --muted:#64748B; --border:#E2E8F0; --bg:#F8FAFC;
+    }
+
+    body{ font-family:"Poppins","Tiro Devanagari Hindi",sans-serif;
+      background:var(--bg); color:var(--text); overflow-x:hidden; line-height:1.6; }
+    a{ text-decoration:none; color:inherit; }
+    img{ max-width:100%; display:block; }
+    button{ font-family:inherit; cursor:pointer; border:none; }
+
+    .container{ width:min(1240px,92%); margin:auto; }
+    .hindi{ font-family:"Tiro Devanagari Hindi",serif; }
+
+    .section{ padding:90px 0; position:relative; overflow:hidden; }
+    .section-title{ text-align:center; margin-bottom:55px; }
+    .section-title .small-title{
+      display:inline-block; color:var(--blue); font-size:.9rem; font-weight:800;
+      letter-spacing:2.5px; text-transform:uppercase; margin-bottom:12px; }
+    .section-title h2{ font-size:clamp(1.9rem,3.8vw,3rem); line-height:1.2;
+      font-weight:900; color:var(--navy); }
+    .section-title h2 span{ color:var(--blue-2); }
+    .section-title p{ max-width:800px; margin:18px auto 0;
+      color:var(--muted); line-height:1.8; font-size:1rem; }
+
+    /* HEADER */
+    .site-header{
+      position:fixed; left:0; top:0; width:100%; z-index:9999;
+      background:linear-gradient(135deg,#0A2540 0%,#0F2E4F 50%,#0A2540 100%);
+      backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+      border-bottom:1px solid rgba(59,130,246,.15);
+      box-shadow:0 8px 32px rgba(10,37,64,.18);
+    }
+    .header-inner{ min-height:92px; display:flex; align-items:center;
+      justify-content:space-between; gap:20px; }
+    .brand{ display:flex; align-items:center; gap:14px;
+      min-width:0; flex-shrink:0; }
+    .logo-box{ width:66px; height:66px; border-radius:16px;
+      background:#FFFFFF;
+      display:block; padding:0;
+      box-shadow:0 8px 24px rgba(59,130,246,.35);
+      border:2px solid rgba(251,191,36,.4);
+      transition:.35s ease; flex-shrink:0; overflow:hidden;
+      position:relative; line-height:0; }
+    .logo-box:hover{ transform:translateY(-2px) rotate(-3deg);
+      box-shadow:0 14px 34px rgba(59,130,246,.5);
+      border-color:var(--gold); }
+    .logo-box img{ width:100%; height:100%;
+      object-fit:cover; object-position:center;
+      display:block; margin:0; padding:0;
+      border:0; transform:scale(1.02);
+      transform-origin:center center; }
+    .brand-text{ min-width:0; }
+    .brand-name{ color:#fff;
+      font-size:clamp(1.2rem,2.4vw,1.7rem); font-weight:900;
+      line-height:1.1; white-space:nowrap; letter-spacing:-.5px;
+      font-family:"Tiro Devanagari Hindi",serif;
+      text-shadow:0 2px 10px rgba(0,0,0,.3); }
+    .brand-name .gold{ color:var(--gold); font-weight:900; }
+    .brand-tagline{ color:#93C5FD; font-size:.7rem; font-weight:600;
+      margin-top:3px; white-space:nowrap; letter-spacing:.4px; }
+
+    .desktop-nav{ display:flex; align-items:center; gap:2px;
+      flex-wrap:nowrap; }
+    .desktop-nav > a{ color:#E0F2FE; font-size:.78rem; font-weight:700;
+      padding:11px 10px; border-radius:10px; transition:.25s ease;
+      white-space:nowrap; position:relative; }
+    .desktop-nav > a:hover{ color:var(--gold);
+      background:rgba(59,130,246,.15); transform:translateY(-1px); }
+    .desktop-nav > a.active{ color:var(--gold);
+      background:rgba(59,130,246,.2); }
+    .desktop-nav > a.active::after{ content:""; position:absolute;
+      bottom:4px; left:50%; transform:translateX(-50%);
+      width:20px; height:2px; border-radius:2px; background:var(--gold); }
+
+    .donate-nav{ display:inline-flex; align-items:center; gap:7px;
+      background:linear-gradient(135deg,#DC2626,#991B1B)!important;
+      padding:11px 17px!important; color:#fff!important;
+      font-weight:900!important; border-radius:11px!important;
+      box-shadow:0 6px 20px rgba(220,38,38,.45),
+        inset 0 1px 0 rgba(255,255,255,.2);
+      animation:pulseDonate 2s infinite; margin-left:6px;
+      letter-spacing:.3px; }
+    .donate-nav:hover{ color:#fff!important;
+      background:linear-gradient(135deg,#EF4444,#DC2626)!important;
+      transform:translateY(-2px)!important; }
+    @keyframes pulseDonate{
+      0%,100%{ transform:scale(1);
+        box-shadow:0 6px 20px rgba(220,38,38,.4),
+          inset 0 1px 0 rgba(255,255,255,.2); }
+      50%{ transform:scale(1.04);
+        box-shadow:0 10px 30px rgba(220,38,38,.7),
+          inset 0 1px 0 rgba(255,255,255,.2); } }
+
+    .menu-toggle{ display:none; width:46px; height:46px;
+      border-radius:12px; background:rgba(59,130,246,.15);
+      border:1px solid rgba(59,130,246,.3); padding:11px;
+      transition:.3s; }
+    .menu-toggle span{ display:block; width:100%; height:2.5px;
+      background:#fff; margin:4.5px 0; border-radius:5px;
+      transition:.3s; }
+    .menu-toggle.active span:nth-child(1){
+      transform:rotate(45deg) translate(6px,6px); }
+    .menu-toggle.active span:nth-child(2){ opacity:0; }
+    .menu-toggle.active span:nth-child(3){
+      transform:rotate(-45deg) translate(6px,-6px); }
+
+    .mobile-nav{ display:none;
+      background:linear-gradient(180deg,#0A2540,#0F2E4F);
+      border-top:1px solid rgba(59,130,246,.2);
+      padding:14px 4% 20px;
+      box-shadow:0 20px 40px rgba(0,0,0,.3); }
+    .mobile-nav a{ display:block; color:#E0F2FE;
+      padding:14px 16px; border-radius:10px; font-weight:700;
+      font-size:.9rem; margin:4px 0; transition:.25s;
+      border:1px solid transparent; }
+    .mobile-nav a:hover, .mobile-nav a.active{
+      background:rgba(59,130,246,.15); color:var(--gold);
+      border-color:rgba(59,130,246,.3); }
+    .mobile-nav .donate-nav{ text-align:center;
+      margin-top:12px; justify-content:center; }
+    .mobile-nav.active{ display:block; }
+
+    /* PAGE HERO */
+    .page-hero{
+      padding:170px 0 80px;
+      background:linear-gradient(135deg,rgba(10,37,64,.94),rgba(30,64,175,.88)),
+        url("https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      color:#fff; text-align:center; position:relative;
+    }
+    .page-hero::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
+      background-size:24px 24px; opacity:.5; pointer-events:none;
+    }
+    .page-hero .container{ position:relative; z-index:2; }
+    .breadcrumb{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:8px 18px; border-radius:100px;
+      background:rgba(251,191,36,.12);
+      border:1px solid rgba(251,191,36,.35);
+      color:var(--gold); font-size:.78rem; font-weight:800;
+      letter-spacing:1.5px; text-transform:uppercase;
+      margin-bottom:22px;
+    }
+    .breadcrumb a{ color:#93C5FD; transition:.25s; }
+    .breadcrumb a:hover{ color:var(--gold); }
+    .breadcrumb i{ font-size:.6rem; color:var(--gold); }
+    .page-hero h1{
+      font-size:clamp(2rem,5vw,3.5rem);
+      font-weight:900; line-height:1.15;
+      font-family:"Tiro Devanagari Hindi",serif;
+      margin-bottom:0; letter-spacing:-1px;
+      text-shadow:0 8px 30px rgba(0,0,0,.35);
+    }
+    .page-hero h1 span{ color:var(--gold); }
+
+    /* BUTTONS */
+    .btn{ display:inline-flex; align-items:center; justify-content:center;
+      gap:10px; min-height:54px; padding:15px 30px;
+      border-radius:13px; font-size:.9rem; font-weight:800;
+      transition:.3s ease; letter-spacing:.3px; border:none;
+      cursor:pointer; font-family:inherit; }
+    .btn:hover{ transform:translateY(-4px); }
+    .btn-red{ color:#fff;
+      background:linear-gradient(135deg,#DC2626,#991B1B);
+      box-shadow:0 12px 32px rgba(220,38,38,.45); }
+    .btn-red:hover{ box-shadow:0 18px 42px rgba(220,38,38,.65); }
+    .btn-gold{ color:#0A2540;
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      box-shadow:0 12px 32px rgba(251,191,36,.45); }
+    .btn-gold:hover{ box-shadow:0 18px 42px rgba(251,191,36,.65); }
+    .btn-blue{ color:#fff;
+      background:linear-gradient(135deg,#2563EB,#1E40AF);
+      box-shadow:0 12px 32px rgba(37,99,235,.45); }
+    .btn-blue:hover{ box-shadow:0 18px 42px rgba(37,99,235,.65); }
+    .btn-outline{ color:#fff; background:rgba(255,255,255,.06);
+      border:1.5px solid rgba(255,255,255,.3);
+      backdrop-filter:blur(8px); }
+    .btn-outline:hover{ background:rgba(255,255,255,.14);
+      border-color:var(--gold); color:var(--gold); }
+    .btn-pulse-red{ animation:pulseRed 1.8s infinite; }
+    @keyframes pulseRed{
+      0%,100%{ box-shadow:0 12px 32px rgba(220,38,38,.4); }
+      50%{ box-shadow:0 16px 42px rgba(220,38,38,.75); } }
+
+    /* ABOUT INTRO */
+    .about-intro-section{ background:#fff; }
+    .about-intro-text{ max-width:980px; margin:auto; text-align:center; }
+    .about-intro-text p{ color:var(--text-soft); line-height:2;
+      margin-bottom:18px; font-size:1rem; }
+    .about-intro-text p:last-child{ margin-bottom:0; }
+    .about-intro-text p.hindi{ color:var(--text); }
+
+    /* MISSION & VISION */
+    .mv-section{ background:linear-gradient(180deg,#F8FAFC,#EFF6FF); }
+    .mv-grid{ display:grid; grid-template-columns:repeat(2,1fr);
+      gap:28px; }
+    .mv-card{ background:#fff; padding:45px 40px;
+      border-radius:25px;
+      box-shadow:0 20px 45px rgba(15,23,42,.08);
+      border-top:5px solid var(--blue-2); position:relative;
+      transition:.35s; }
+    .mv-card:hover{ transform:translateY(-6px);
+      box-shadow:0 28px 60px rgba(37,99,235,.15); }
+    .mv-card:nth-child(2){ border-top-color:var(--gold); }
+    .mv-icon{ width:70px; height:70px;
+      display:grid; place-items:center; border-radius:20px;
+      background:var(--blue-pale); color:var(--blue-2);
+      font-size:1.7rem; margin-bottom:22px; }
+    .mv-card:nth-child(2) .mv-icon{ background:var(--gold-pale);
+      color:var(--gold-dark); }
+    .mv-card h3{ font-size:1.5rem; color:var(--navy);
+      margin-bottom:18px; font-weight:900;
+      font-family:"Tiro Devanagari Hindi",serif; }
+    .mv-card p{ color:var(--text-soft); line-height:1.9;
+      font-size:.95rem; margin-bottom:14px; }
+    .mv-card p:last-child{ margin-bottom:0; }
+    .mv-card p.en-desc{ color:#94A3B8; font-size:.88rem;
+      line-height:1.85; font-style:italic; padding-top:16px;
+      margin-top:16px;
+      border-top:1px dashed #E2E8F0; }
+
+    /* OUR JOURNEY */
+    .journey-section{ background:#fff; position:relative; }
+    .journey-content{ max-width:1000px; margin:auto; }
+    .journey-block{ margin-bottom:38px; }
+    .journey-block h3{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.35rem; font-weight:900;
+      color:var(--navy); margin-bottom:10px;
+      padding-left:20px; position:relative;
+    }
+    .journey-block h3::before{
+      content:""; position:absolute;
+      left:0; top:10px; bottom:10px;
+      width:4px; border-radius:3px;
+      background:linear-gradient(180deg,#2563EB,#1E40AF);
+    }
+    .journey-block:nth-child(2) h3::before{
+      background:linear-gradient(180deg,#FBBF24,#F59E0B);
+    }
+    .journey-block p{
+      color:var(--text-soft); line-height:2;
+      font-size:.98rem; margin-bottom:14px;
+      padding-left:20px;
+    }
+    .journey-block p.en{
+      color:#94A3B8; font-style:italic;
+      padding-left:20px; line-height:1.9;
+      font-size:.92rem;
+    }
+    .journey-quote{
+      margin:45px auto 0; max-width:900px;
+      padding:34px 38px; border-radius:22px;
+      background:linear-gradient(135deg,#0A2540,#1E40AF);
+      color:#fff; position:relative;
+      box-shadow:0 22px 55px rgba(30,64,175,.35);
+      overflow:hidden;
+    }
+    .journey-quote::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.06) 1px,transparent 1px);
+      background-size:22px 22px; opacity:.55;
+      pointer-events:none;
+    }
+    .journey-quote-content{
+      position:relative; z-index:2;
+      display:flex; align-items:center; gap:22px;
+    }
+    .journey-quote i{
+      font-size:2.2rem; color:var(--gold);
+      flex-shrink:0;
+    }
+    .journey-quote p{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(1.05rem,2.2vw,1.4rem);
+      font-weight:900; line-height:1.6;
+      margin:0; color:#fff;
+    }
+    .journey-quote p span{ color:var(--gold); }
+
+    /* ========== PREMIUM VALUES SLIDESHOW ========== */
+    .values-section{
+      background:
+        radial-gradient(circle at 15% 25%,rgba(251,191,36,.14),transparent 35%),
+        radial-gradient(circle at 85% 75%,rgba(59,130,246,.24),transparent 40%),
+        linear-gradient(135deg,#0A2540 0%,#1E40AF 50%,#0A2540 100%);
+      color:#fff; position:relative; overflow:hidden;
+    }
+    .values-section::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
+      background-size:26px 26px; opacity:.65;
+      pointer-events:none;
+    }
+    .values-section .container{ position:relative; z-index:2; }
+    .values-section .section-title .small-title{ color:var(--gold); }
+    .values-section .section-title h2{ color:#fff; }
+    .values-section .section-title h2 span{ color:var(--gold); }
+    .values-section .section-title p{ color:#93C5FD; }
+
+    .values-slider-wrap{
+      max-width:1000px; margin:auto;
+      position:relative;
+    }
+    .values-slider{
+      position:relative;
+      min-height:360px;
+      perspective:1200px;
+    }
+    .value-slide{
+      display:none;
+      animation:valueSlideIn .7s cubic-bezier(.22,.9,.28,1);
+    }
+    .value-slide.active{ display:block; }
+    @keyframes valueSlideIn{
+      0%{ opacity:0; transform:translateY(30px) scale(.95); }
+      100%{ opacity:1; transform:translateY(0) scale(1); }
+    }
+
+    .value-premium-card{
+      background:linear-gradient(145deg,rgba(255,255,255,.14),rgba(255,255,255,.04));
+      backdrop-filter:blur(20px);
+      -webkit-backdrop-filter:blur(20px);
+      border:1.5px solid rgba(255,255,255,.22);
+      border-radius:34px;
+      padding:60px 55px;
+      text-align:center;
+      box-shadow:
+        0 30px 70px rgba(0,0,0,.35),
+        inset 0 1px 0 rgba(255,255,255,.25);
+      position:relative;
+      overflow:hidden;
+    }
+    .value-premium-card::before{
+      content:""; position:absolute;
+      top:-50%; left:-50%; width:200%; height:200%;
+      background:radial-gradient(circle,rgba(251,191,36,.16),transparent 45%);
+      pointer-events:none;
+      animation:valueGlow 8s linear infinite;
+    }
+    @keyframes valueGlow{
+      0%{ transform:rotate(0deg); }
+      100%{ transform:rotate(360deg); }
+    }
+    .value-premium-icon{
+      position:relative; z-index:2;
+      width:110px; height:110px;
+      border-radius:32px;
+      margin:0 auto 26px;
+      display:grid; place-items:center;
+      background:linear-gradient(145deg,#FBBF24,#F59E0B);
+      color:#0A2540; font-size:2.8rem;
+      box-shadow:
+        0 18px 40px rgba(251,191,36,.5),
+        inset 0 3px 0 rgba(255,255,255,.4);
+      transition:.4s;
+    }
+    .value-premium-card:hover .value-premium-icon{
+      transform:rotate(-6deg) scale(1.06);
+    }
+    .value-premium-number{
+      position:relative; z-index:2;
+      display:inline-block;
+      font-size:.72rem; font-weight:900;
+      color:var(--gold);
+      letter-spacing:3px;
+      padding:6px 16px;
+      background:rgba(251,191,36,.12);
+      border:1px solid rgba(251,191,36,.35);
+      border-radius:100px;
+      margin-bottom:18px;
+      text-transform:uppercase;
+    }
+    .value-premium-card h3{
+      position:relative; z-index:2;
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(1.7rem,3.4vw,2.4rem);
+      font-weight:900; line-height:1.3;
+      margin-bottom:16px;
+      color:#FFFFFF;
+      letter-spacing:-.3px;
+      text-shadow:
+        0 4px 22px rgba(251,191,36,.25),
+        0 2px 10px rgba(0,0,0,.4);
+    }
+    .value-premium-card h3 span{
+      color:var(--gold);
+    }
+    .value-premium-card p{
+      position:relative; z-index:2;
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(.95rem,1.8vw,1.15rem);
+      color:#E0F2FE; line-height:1.85;
+      font-weight:600;
+      max-width:620px; margin:0 auto 16px;
+    }
+    .value-premium-card p.en-line{
+      color:#93C5FD;
+      font-family:"Poppins",sans-serif;
+      font-style:italic;
+      font-size:.92rem;
+      font-weight:500;
+      padding-top:16px;
+      margin-top:16px;
+      border-top:1px dashed rgba(147,197,253,.35);
+      line-height:1.8;
+    }
+
+    .values-controls{
+      display:flex; align-items:center; justify-content:center;
+      gap:12px; margin-top:34px;
+      flex-wrap:wrap;
+    }
+    .values-arrow{
+      width:52px; height:52px;
+      border-radius:14px;
+      background:rgba(255,255,255,.08);
+      border:1.5px solid rgba(255,255,255,.22);
+      color:#fff; font-size:1rem;
+      display:grid; place-items:center;
+      transition:.3s;
+      cursor:pointer;
+    }
+    .values-arrow:hover{
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      border-color:var(--gold);
+      transform:translateY(-3px) scale(1.05);
+      box-shadow:0 12px 30px rgba(251,191,36,.4);
+    }
+    .values-dots{
+      display:flex; align-items:center; gap:8px;
+    }
+    .value-dot{
+      width:10px; height:10px;
+      border-radius:50%;
+      background:rgba(255,255,255,.35);
+      cursor:pointer; transition:.35s;
+      border:none; padding:0;
+    }
+    .value-dot:hover{ background:rgba(255,255,255,.6); }
+    .value-dot.active{
+      width:36px; border-radius:20px;
+      background:linear-gradient(90deg,#FBBF24,#F59E0B);
+      box-shadow:0 4px 12px rgba(251,191,36,.5);
+    }
+
+    /* CTA STRIP */
+    .cta-strip{ position:relative; padding:85px 0;
+      background:radial-gradient(circle at 15% 20%,rgba(251,191,36,.15),transparent 35%),
+        radial-gradient(circle at 85% 80%,rgba(59,130,246,.2),transparent 40%),
+        linear-gradient(135deg,#0A2540 0%,#1E40AF 50%,#0A2540 100%);
+      color:#fff; overflow:hidden; text-align:center; }
+    .cta-strip::before{ content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
+      background-size:24px 24px; opacity:.7; pointer-events:none; }
+    .cta-strip .container{ position:relative; z-index:2; }
+    .cta-badge{ display:inline-flex; align-items:center; gap:8px;
+      padding:8px 20px; border-radius:100px;
+      background:rgba(251,191,36,.15);
+      border:1px solid rgba(251,191,36,.4); color:var(--gold);
+      font-size:.72rem; font-weight:900; letter-spacing:2.5px;
+      text-transform:uppercase; margin-bottom:22px; }
+    .cta-strip h2{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(2rem,4.5vw,3.2rem); font-weight:900;
+      line-height:1.25; margin-bottom:16px; letter-spacing:-.5px; }
+    .cta-strip h2 span{ color:var(--gold); }
+    .cta-strip p{ color:#93C5FD; font-size:1.05rem;
+      max-width:640px; margin:0 auto 34px; line-height:1.8; }
+    .cta-buttons{ display:flex; justify-content:center;
+      flex-wrap:wrap; gap:14px; }
+
+    /* FOOTER */
+    footer{ background:radial-gradient(circle at 10% 20%,rgba(59,130,246,.1),transparent 40%),
+        radial-gradient(circle at 90% 80%,rgba(251,191,36,.06),transparent 40%),
+        linear-gradient(160deg,#0A2540 0%,#0F2E4F 60%,#0A2540 100%);
+      color:#fff; padding-top:80px; position:relative; overflow:hidden; }
+    footer::before{ content:""; position:absolute;
+      top:0; left:0; right:0; height:1px;
+      background:linear-gradient(90deg,transparent,rgba(251,191,36,.6),transparent); }
+    .footer-grid{ display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:32px; padding-bottom:60px; position:relative; z-index:2; }
+    .footer-brand-head{ display:flex; align-items:center;
+      gap:10px; margin-bottom:20px; }
+    .footer-logo-box{ width:60px; height:60px; border-radius:15px;
+      background:#FFFFFF;
+      display:block; padding:0;
+      border:2px solid rgba(251,191,36,.4);
+      box-shadow:0 8px 22px rgba(59,130,246,.3);
+      flex-shrink:0; overflow:hidden;
+      position:relative; line-height:0; }
+    .footer-logo-box img{ width:100%; height:100%;
+      object-fit:cover; object-position:center;
+      display:block; margin:0; padding:0;
+      border:0; transform:scale(1.02);
+      transform-origin:center center; }
+    .footer-brand-text{ min-width:0; }
+    .footer-brand-text h3{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.05rem; font-weight:900; color:#fff;
+      line-height:1.15; margin-bottom:4px; }
+    .footer-tagline-text{ color:#93C5FD; font-size:.66rem;
+      font-weight:600; letter-spacing:.4px;
+      font-family:"Tiro Devanagari Hindi",serif; line-height:1.3; }
+    .footer-desc{ color:#93C5FD; font-size:.8rem; line-height:1.7;
+      margin-bottom:20px; max-width:100%; }
+    .footer-badge{ display:inline-flex; align-items:center; gap:7px;
+      padding:6px 12px; background:rgba(251,191,36,.1);
+      border:1px solid rgba(251,191,36,.3); border-radius:100px;
+      color:var(--gold); font-size:.68rem; font-weight:900;
+      letter-spacing:.4px; margin-bottom:20px; }
+
+    .footer-heading, .footer-social-heading{
+      font-family:"Tiro Devanagari Hindi",serif; font-size:.92rem;
+      font-weight:900; color:#fff; margin-bottom:22px;
+      padding-bottom:12px; position:relative; letter-spacing:.2px; }
+    .footer-heading::after, .footer-social-heading::after{
+      content:""; position:absolute; bottom:0; left:0;
+      width:32px; height:2px;
+      background:linear-gradient(90deg,#FBBF24,#F59E0B);
+      border-radius:2px; }
+
+    .social-icons{ display:flex; gap:8px; flex-wrap:wrap; }
+    .social-icon{ width:38px; height:38px; display:grid;
+      place-items:center; border-radius:10px;
+      background:rgba(59,130,246,.12); color:#93C5FD;
+      font-size:.9rem; transition:.3s;
+      border:1px solid rgba(59,130,246,.25); }
+    .social-icon:hover{ transform:translateY(-4px);
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      color:#0A2540; border-color:var(--gold);
+      box-shadow:0 8px 22px rgba(251,191,36,.4); }
+
+    .footer-links{ list-style:none; }
+    .footer-links li{ margin-bottom:10px; }
+    .footer-links a{ color:#93C5FD; font-size:.78rem;
+      font-weight:600; display:inline-flex; align-items:center;
+      gap:7px; transition:.25s; line-height:1.5; }
+    .footer-links a i{ font-size:.56rem; color:#FBBF24;
+      transition:.25s; }
+    .footer-links a:hover{ color:var(--gold);
+      transform:translateX(4px); }
+
+    .contact-info{ list-style:none; }
+    .contact-info li{ display:flex; gap:10px;
+      align-items:flex-start; margin-bottom:14px;
+      color:#93C5FD; font-size:.78rem; line-height:1.65; }
+    .contact-info li i{ flex-shrink:0; width:28px; height:28px;
+      display:grid; place-items:center; border-radius:8px;
+      background:rgba(59,130,246,.15);
+      border:1px solid rgba(59,130,246,.25); color:#FBBF24;
+      font-size:.72rem; margin-top:1px; }
+    .contact-info li strong{ display:block; color:#fff;
+      font-size:.7rem; margin-bottom:2px;
+      letter-spacing:.3px; text-transform:uppercase; }
+    .contact-info li a{ color:#93C5FD; }
+    .footer-newsletter{ margin-top:6px; padding-top:16px;
+      border-top:1px solid rgba(59,130,246,.2); }
+    .footer-newsletter label{ display:block; color:#93C5FD;
+      font-size:.68rem; font-weight:800; letter-spacing:.5px;
+      text-transform:uppercase; margin-bottom:10px; }
+    .newsletter-form{ display:flex; gap:6px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(59,130,246,.25);
+      border-radius:12px; padding:5px; transition:.3s; }
+    .newsletter-form:focus-within{ border-color:var(--gold);
+      box-shadow:0 0 0 4px rgba(251,191,36,.1); }
+    .newsletter-form input{ flex:1; background:transparent;
+      border:none; outline:none; padding:8px 10px; color:#fff;
+      font-family:inherit; font-size:.76rem; min-width:0; }
+    .newsletter-form input::placeholder{ color:#6B8CAE; }
+    .newsletter-form button{ flex-shrink:0; width:36px; height:36px;
+      border-radius:8px;
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      color:#0A2540; font-size:.82rem; display:grid;
+      place-items:center; transition:.3s; }
+
+    .footer-bottom{ border-top:1px solid rgba(59,130,246,.15);
+      padding:22px 0; position:relative; z-index:2; }
+    .footer-bottom-inner{ display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      gap:12px; text-align:center; }
+    .footer-copy{ color:#6B8CAE; font-size:.76rem; font-weight:600;
+      order:1; }
+    .footer-copy strong{ color:#93C5FD; font-weight:800; }
+    .footer-legal{ display:flex; gap:4px; flex-wrap:nowrap;
+      align-items:center; justify-content:center;
+      order:2; }
+    .footer-legal a{ color:#93C5FD; font-size:.72rem;
+      font-weight:700; padding:5px 8px; border-radius:8px;
+      transition:.25s; white-space:nowrap; }
+    .footer-legal a:hover{ color:var(--gold);
+      background:rgba(59,130,246,.15); }
+    .footer-legal span{ color:rgba(59,130,246,.5); font-size:.72rem; }
+    .footer-made{ color:#6B8CAE; font-size:.72rem; font-weight:600;
+      display:inline-flex; align-items:center; gap:6px;
+      order:3; }
+    .footer-made i{ color:#DC2626; font-size:.68rem; }
+
+    /* BACK TOP */
+    .back-top{ position:fixed; right:22px; bottom:22px;
+      width:48px; height:48px; border-radius:14px;
+      background:linear-gradient(135deg,#2563EB,#1E40AF);
+      color:#fff; cursor:pointer; z-index:1000;
+      display:grid; place-items:center; opacity:0;
+      visibility:hidden; transition:.3s;
+      box-shadow:0 10px 28px rgba(37,99,235,.45); }
+    .back-top.show{ opacity:1; visibility:visible; }
+    .back-top:hover{ transform:translateY(-4px); }
+
+    /* RESPONSIVE */
+    @media(max-width:1200px){
+      .desktop-nav > a{ padding:10px 7px; font-size:.72rem; }
+      .donate-nav{ padding:10px 13px!important; }
+      .footer-grid{ grid-template-columns:repeat(3,1fr); gap:32px; }
+    }
+    @media(max-width:1000px){
+      .desktop-nav > a{ padding:10px 6px; font-size:.68rem; }
+      .logo-box{ width:62px; height:62px; }
+    }
+    @media(max-width:900px){
+      .desktop-nav{ display:none; }
+      .menu-toggle{ display:block; }
+      .header-inner{ min-height:78px; }
+      .brand-name{ font-size:clamp(1.1rem,3vw,1.4rem); }
+      .brand-tagline{ font-size:.66rem; }
+      .logo-box{ width:60px; height:60px; }
+      .page-hero{ padding:140px 0 65px; }
+      .mv-grid{ grid-template-columns:1fr; }
+      .footer-grid{ grid-template-columns:1fr 1fr; gap:36px 24px; }
+      .value-premium-card{ padding:45px 32px; }
+      .value-premium-icon{ width:90px; height:90px;
+        font-size:2.3rem; border-radius:26px; }
+      .values-slider{ min-height:auto; }
+    }
+    @media(max-width:700px){
+      .section{ padding:70px 0; }
+      .page-hero{ padding:130px 0 55px; }
+      .page-hero h1{ font-size:1.75rem; }
+      .footer-grid{ grid-template-columns:1fr; gap:32px;
+        padding-bottom:40px; }
+      .footer-bottom-inner{ gap:10px; }
+      .footer-legal{ flex-wrap:nowrap; gap:1px; }
+      .footer-legal a{ font-size:.68rem; padding:4px 6px; }
+      .footer-legal span{ font-size:.68rem; }
+      .cta-strip{ padding:65px 0; }
+      .cta-buttons{ flex-direction:column; }
+      .cta-buttons .btn{ width:100%; }
+      .mv-card{ padding:32px 26px; }
+      .journey-block h3{ font-size:1.15rem; }
+      .journey-block p{ font-size:.92rem; }
+      .journey-quote{ padding:26px 24px; }
+      .journey-quote-content{ flex-direction:column; text-align:center;
+        gap:14px; }
+      .journey-quote i{ font-size:1.8rem; }
+      .value-premium-card{ padding:38px 24px; border-radius:26px; }
+      .value-premium-icon{ width:78px; height:78px;
+        font-size:2rem; border-radius:22px; margin-bottom:20px; }
+      .value-premium-card h3{ font-size:1.5rem; }
+      .value-premium-card p{ font-size:.95rem; }
+      .value-premium-card p.en-line{ font-size:.85rem; }
+      .values-arrow{ width:44px; height:44px; font-size:.9rem; }
+    }
+    @media(max-width:600px){
+      .brand-name{ font-size:clamp(1rem,4vw,1.15rem);
+        white-space:normal; line-height:1.15; letter-spacing:-.2px; }
+      .brand-tagline{ font-size:.62rem; white-space:normal; }
+      .logo-box{ width:54px; height:54px; border-radius:13px; }
+      .brand{ gap:11px; }
+      .cta-strip h2{ font-size:1.55rem; }
+      .cta-strip p{ font-size:.92rem; }
+      .social-icon{ width:38px; height:38px; font-size:.9rem; }
+      .footer-brand-text h3{ font-size:1rem; }
+    }
+    @media(max-width:420px){
+      .footer-legal a{ font-size:.62rem; padding:3px 4px; }
+      .footer-legal span{ font-size:.62rem; }
+    }
+    @media(max-width:380px){
+      .brand-name{ font-size:1rem; }
+      .brand-tagline{ font-size:.6rem; }
+      .logo-box{ width:50px; height:50px; }
+      .footer-legal a{ font-size:.58rem; padding:3px 3px; }
+      .footer-legal span{ font-size:.58rem; }
+    }
+    @media (prefers-reduced-motion: reduce){
+      *,*::before,*::after{
+        animation-duration:.01ms!important;
+        animation-iteration-count:1!important;
+        transition-duration:.01ms!important; } }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="index.html" class="brand">
+      <div class="logo-box">
+        <img src="sath_chale_ham_logo_HD-1.png"
+             alt="साथ चले हम फाउंडेशन Logo">
+      </div>
+      <div class="brand-text">
+        <div class="brand-name">साथ चले हम <span class="gold">फाउंडेशन</span></div>
+        <div class="brand-tagline">साथ चले हम, बदलाव की ओर</div>
+      </div>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About Us</a>
+      <a href="work.html">Our Work</a>
+      <a href="team.html">Team</a>
+      <a href="events.html">Events</a>
+      <a href="join-us.html">Join Us</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html" class="donate-nav">
+        <i class="fa-solid fa-heart"></i> Donate Us
+      </a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Open Menu" aria-expanded="false"
+            aria-controls="mobileNav" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html">Home | होम</a>
+    <a href="about.html" class="active">About Us | हमारे बारे में</a>
+    <a href="work.html">Our Work | हमारे कार्य</a>
+    <a href="team.html">Team | हमारी टीम</a>
+    <a href="events.html">Events | कार्यक्रम</a>
+    <a href="join-us.html">Join Us | जुड़ें</a>
+    <a href="downloads.html">Downloads | डाउनलोड</a>
+    <a href="contact.html">Contact | संपर्क</a>
+    <a href="donate.html" class="donate-nav">
+      <i class="fa-solid fa-heart"></i> Donate Us
+    </a>
+  </nav>
+</header>
+
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="container">
+
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span>About Us</span>
+    </div>
+
+    <h1>About Us | <span>हमारे बारे में</span></h1>
+
+  </div>
+</section>
+
+
+<!-- ================= ABOUT INTRO ================= -->
+<section class="section about-intro-section">
+  <div class="container">
+
+    <div class="section-title">
+      <span class="small-title">Who We Are</span>
+      <h2>About Us | <span>हमारे बारे में</span></h2>
+    </div>
+
+    <div class="about-intro-text">
+
+      <p class="hindi">
+        साथ चले हम फाउंडेशन एक सामाजिक संस्था है, जिसका उद्देश्य शिक्षा, स्वास्थ्य,
+        महिला सशक्तिकरण, गरीब एवं जरूरतमंद लोगों की सहायता, ग्रामीण विकास,
+        कौशल विकास, पर्यावरण संरक्षण और सामाजिक जागरूकता जैसे क्षेत्रों में
+        सकारात्मक बदलाव लाना है।
+      </p>
+
+      <p class="hindi">
+        हम बच्चों, महिलाओं, युवाओं, बुजुर्गों, दिव्यांगजनों तथा जरूरतमंद परिवारों
+        के साथ मिलकर कार्य करने का प्रयास करते हैं। हमारा मानना है कि समाज में
+        स्थायी बदलाव तभी संभव है जब लोग एक-दूसरे का सहयोग करें और विकास की
+        प्रक्रिया में स्वयं भागीदार बनें।
+      </p>
+
+      <p class="hindi">
+        हमारा प्रयास जरूरतमंद लोगों तक सहायता, अवसर, शिक्षा, जागरूकता और
+        आत्मनिर्भरता के साधन पहुँचाना है।
+      </p>
+
+      <p>
+        Sath Chale Hum Foundation is a social organization committed to bringing
+        positive change in areas such as education, healthcare, women empowerment,
+        support for poor and needy people, rural development, skill development,
+        environmental protection, and social awareness.
+      </p>
+
+      <p>
+        We strive to work together with children, women, youth, senior citizens,
+        persons with disabilities, and families in need. We believe that lasting
+        change in society is possible when people support one another and actively
+        participate in the process of development.
+      </p>
+
+      <p>
+        Our effort is to provide people in need with support, opportunities,
+        education, awareness, and means to become self-reliant.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= MISSION & VISION ================= -->
+<section class="section mv-section">
+  <div class="container">
+
+    <div class="section-title">
+      <span class="small-title">Mission &amp; Vision</span>
+      <h2>Our Mission &amp; Our Vision | <span>हमारा मिशन और हमारा विज़न</span></h2>
+    </div>
+
+    <div class="mv-grid">
+
+      <div class="mv-card">
+        <div class="mv-icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h3>Our Mission | हमारा मिशन</h3>
+        <p class="hindi">
+          हमारा मिशन समाज के जरूरतमंद और वंचित लोगों तक शिक्षा, स्वास्थ्य,
+          सहायता, कौशल, जागरूकता और विकास के अवसर पहुँचाना है।
+        </p>
+        <p class="hindi">
+          हम विशेष रूप से बच्चों की शिक्षा एवं विकास, महिलाओं की आत्मनिर्भरता,
+          युवाओं के कौशल एवं रोजगार, ग्रामीण समुदायों के विकास, जरूरतमंद
+          परिवारों की सहायता तथा सामाजिक एवं पर्यावरणीय जागरूकता को बढ़ावा
+          देने के लिए कार्य करना चाहते हैं।
+        </p>
+        <p class="en-desc">
+          Our mission is to provide education, healthcare, support, skills,
+          awareness, and development opportunities to people in need and
+          underserved communities. We aim to work especially towards supporting
+          children's education and development, promoting women's self-reliance,
+          developing skills and employment opportunities for youth, supporting
+          rural community development, assisting families in need, and promoting
+          social and environmental awareness.
+        </p>
+      </div>
+
+      <div class="mv-card">
+        <div class="mv-icon"><i class="fa-solid fa-eye"></i></div>
+        <h3>Our Vision | हमारा विज़न</h3>
+        <p class="hindi">
+          हमारा विज़न एक ऐसे समावेशी, जागरूक, आत्मनिर्भर और सशक्त समाज का
+          निर्माण करना है, जहाँ हर व्यक्ति को सम्मान, अवसर और आगे बढ़ने का
+          अधिकार मिले।
+        </p>
+        <p class="hindi">
+          हम ऐसा समाज देखना चाहते हैं जहाँ बच्चे शिक्षा से जुड़े हों, महिलाएँ
+          आत्मनिर्भर हों, युवा कौशल और रोजगार से जुड़े हों, बुजुर्गों एवं
+          दिव्यांगजनों को सम्मान और सहयोग मिले तथा समुदाय मिलकर अपने विकास
+          की दिशा तय करे।
+        </p>
+        <p class="en-desc">
+          Our vision is to build an inclusive, aware, self-reliant, and empowered
+          society where every person has the right to dignity, opportunities,
+          and the chance to move forward. We envision a society where children
+          have access to education, women are self-reliant, youth are connected
+          with skills and employment opportunities, senior citizens and persons
+          with disabilities receive respect and support, and communities work
+          together to shape their own path of development.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= OUR JOURNEY ================= -->
+<section class="section journey-section">
+  <div class="container">
+
+    <div class="section-title">
+      <span class="small-title">Our Journey</span>
+      <h2>हमारी यात्रा | <span>Our Journey</span></h2>
+      <p class="hindi">
+        एक विचार से बदलाव की ओर बढ़ते कदम
+      </p>
+    </div>
+
+    <div class="journey-content">
+
+      <div class="journey-block">
+        <p class="hindi">
+          हर बड़े बदलाव की शुरुआत एक छोटे से विचार से होती है। एक ऐसा विचार,
+          जो समाज में सकारात्मक परिवर्तन लाने, जरूरतमंद लोगों के जीवन में
+          उम्मीद जगाने और हर व्यक्ति को सम्मान एवं अवसर प्रदान करने की
+          प्रेरणा देता है।
+        </p>
+        <p class="hindi">
+          साथ चले हम फाउंडेशन (Sath Chale Hum Foundation) की सोच भी इसी भावना
+          से जुड़ी है—एक ऐसा समाज बनाने की दिशा में प्रयास करना, जहाँ शिक्षा,
+          स्वास्थ्य, महिला सशक्तिकरण और समाज कल्याण के माध्यम से लोगों को
+          बेहतर जीवन की संभावनाएँ मिल सकें।
+        </p>
+        <p class="hindi">
+          हमारा मानना है कि समाज में वास्तविक बदलाव केवल किसी एक व्यक्ति या
+          संस्था के प्रयास से नहीं, बल्कि सामूहिक सहयोग, संवेदनशीलता और निरंतर
+          प्रयासों से संभव होता है। जब लोग एक-दूसरे का साथ देते हैं, तो छोटी-छोटी
+          पहल भी बड़े सकारात्मक परिवर्तन का आधार बन सकती है।
+        </p>
+        <p class="hindi">
+          इसी विश्वास के साथ हमारी यात्रा का उद्देश्य केवल सहायता प्रदान करना
+          नहीं, बल्कि लोगों को आत्मनिर्भर बनने, अपने अधिकारों एवं अवसरों के
+          प्रति जागरूक होने और अपने जीवन में सकारात्मक बदलाव लाने के लिए
+          प्रोत्साहित करना है।
+        </p>
+        <p class="hindi">
+          हमारी यात्रा एक निरंतर प्रयास है—समाज की जरूरतों को समझने, लोगों की
+          बात सुनने, सहयोग के नए अवसर खोजने और मिलकर एक बेहतर भविष्य की दिशा
+          में आगे बढ़ने का।
+        </p>
+        <p class="hindi">
+          हमारा विश्वास है कि जब हम साथ चलते हैं, तभी बदलाव की राह और मजबूत
+          बनती है।
+        </p>
+
+        <p class="en">
+          Every meaningful change begins with a simple idea—an idea that inspires
+          us to make a positive difference in society, bring hope into people's
+          lives, and create opportunities for everyone to live with dignity.
+        </p>
+        <p class="en">
+          The vision of Sath Chale Hum Foundation is rooted in this very belief:
+          to contribute towards building a society where education, healthcare,
+          women's empowerment, and social welfare help people move towards a
+          better and more fulfilling life.
+        </p>
+        <p class="en">
+          We believe that meaningful social change cannot be achieved by the
+          efforts of a single individual or organization alone. It requires
+          collective participation, compassion, commitment, and consistent
+          action. When people support one another, even small initiatives can
+          become the foundation of lasting positive change.
+        </p>
+        <p class="en">
+          With this belief, our journey is not limited to providing assistance.
+          It is also about encouraging people to become self-reliant, raising
+          awareness about opportunities and rights, and supporting individuals
+          in creating positive changes in their own lives.
+        </p>
+        <p class="en">
+          Our journey is an ongoing commitment to understanding community needs,
+          listening to people, exploring meaningful opportunities to serve,
+          and working together towards a better future.
+        </p>
+        <p class="en">
+          We believe that when we walk together, the path towards change
+          becomes stronger.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="journey-quote">
+      <div class="journey-quote-content">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>जब हम साथ चलते हैं, तभी <span>बदलाव की राह</span> और मजबूत बनती है।</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= OUR VALUES (PREMIUM SLIDESHOW) ================= -->
+<section class="section values-section">
+  <div class="container">
+
+    <div class="section-title">
+      <span class="small-title">Our Values</span>
+      <h2>Our Values | <span>हमारे मूल्य</span></h2>
+      <p>
+        सेवा, समानता, ईमानदारी, पारदर्शिता, करुणा, सशक्तिकरण और
+        सामुदायिक भागीदारी — ये हमारे मूल्यों का आधार हैं।
+      </p>
+    </div>
+
+    <div class="values-slider-wrap">
+
+      <div class="values-slider" id="valuesSlider">
+
+        <!-- 1 -->
+        <div class="value-slide active">
+          <div class="value-premium-card">
+            <div class="value-premium-icon">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <span class="value-premium-number">01 / 07</span>
+            <h3>सेवा | <span>Service</span></h3>
+            <p>जरूरतमंद लोगों तक सहायता और सहयोग पहुँचाना।</p>
+            <p class="en-line">Providing support and assistance to people in need.</p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="value-slide">
+          <div class="value-premium-card">
+            <div class="value-premium-icon">
+              <i class="fa-solid fa-scale-balanced"></i>
+            </div>
+            <span class="value-premium-number">02 / 07</span>
+            <h3>समानता | <span>Equality</span></h3>
+            <p>हर व्यक्ति के साथ समान और सम्मानजनक व्यवहार करना।</p>
+            <p class="en-line">Treating every person equally and with respect.</p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="value-slide">
+          <div class="value-premium-card">
+            <div class="value-premium-icon">
+              <i class="fa-solid fa-shield-heart"></i>
+            </div>
+            <span class="value-premium-number">03 / 07</span>
+            <h3>ईमानदारी | <span>Integrity</span></h3>
+            <p>अपने कार्यों में ईमानदारी और जिम्मेदारी बनाए रखना।</p>
+            <p class="en-line">Maintaining honesty and responsibility in our work.</p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="value-slide">
+          <div class="value-premium-card">
+            <div class="value-premium-icon">
+              <i class="fa-solid fa-eye"></i>
+            </div>
+            <span class="value-premium-number">04 / 07</span>
+            <h3>पारदर्शिता | <span>Transparency</span></h3>
+            <p>अपने कार्यों और गतिविधियों के बारे में स्पष्ट जानकारी साझा करना।</p>
+            <p class="en-line">Sharing clear information about our work and activities.</p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="value-slide">
+          <div class="value-premium-card">
+            <div class="value-premium-icon">
+              <i class="fa-solid fa-heart"></i>
+            </div>
+            <span class="value-premium-number">05 / 07</span>
+            <h3>करुणा | <span>Compassion</span></h3>
+            <p>जरूरतमंद लोगों की परिस्थितियों को समझकर सहयोग करना।</p>
+            <p class="en-line">Understanding the needs of people and supporting them with compassion.</p>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="value-slide">
+          <div class="value-premium-card">
+            <div class="value-premium-icon">
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+            <span class="value-premium-number">06 / 07</span>
+            <h3>सशक्तिकरण | <span>Empowerment</span></h3>
+            <p>लोगों को आत्मनिर्भर बनने के अवसर और साधन उपलब्ध कराना।</p>
+            <p class="en-line">Providing people with opportunities and resources to become self-reliant.</p>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="value-slide">
+          <div class="value-premium-card">
+            <div class="value-premium-icon">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <span class="value-premium-number">07 / 07</span>
+            <h3>सामुदायिक भागीदारी | <span>Community</span></h3>
+            <p>स्थानीय लोगों को विकास और सामाजिक कार्यों में शामिल करना।</p>
+            <p class="en-line">Involving local people in development and social activities.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="values-controls">
+        <button class="values-arrow" id="valuesPrev" aria-label="Previous Value" type="button">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div class="values-dots" id="valuesDots"></div>
+        <button class="values-arrow" id="valuesNext" aria-label="Next Value" type="button">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= CTA ================= -->
+<section class="cta-strip">
+  <div class="container">
+    <div class="cta-badge">
+      <i class="fa-solid fa-hands-holding-heart"></i>
+      Join Our Mission
+    </div>
+
+    <h2>साथ चले हम, <span>बदलाव की ओर</span></h2>
+
+    <p>
+      आइए, मिलकर एक ऐसे समाज का निर्माण करें जहाँ हर व्यक्ति को
+      शिक्षा, स्वास्थ्य, सम्मान और आगे बढ़ने का अवसर मिले।
+    </p>
+
+    <div class="cta-buttons">
+      <a href="donate.html" class="btn btn-red btn-pulse-red">
+        <i class="fa-solid fa-heart"></i> Donate Now
+      </a>
+      <a href="join-us.html" class="btn btn-gold">
+        <i class="fa-solid fa-users"></i> Join as Volunteer
+      </a>
+      <a href="contact.html" class="btn btn-outline">
+        <i class="fa-solid fa-phone"></i> Contact Us
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <div class="footer-brand-head">
+          <div class="footer-logo-box">
+            <img src="sath_chale_ham_logo_HD-1.png"
+                 alt="Sath Chale Hum Foundation Logo">
+          </div>
+          <div class="footer-brand-text">
+            <h3>साथ चले हम फाउंडेशन</h3>
+            <div class="footer-tagline-text">साथ चले हम, बदलाव की ओर</div>
+          </div>
+        </div>
+
+        <p class="footer-desc">
+          एक सामाजिक संस्था जो शिक्षा, स्वास्थ्य, महिला सशक्तिकरण और
+          समाज के सर्वांगीण विकास के लिए समर्पित है।
+        </p>
+
+        <div class="footer-badge">
+          <i class="fa-solid fa-award"></i>
+          12A &amp; 80G Certified NGO
+        </div>
+
+        <h4 class="footer-social-heading">Our Social Media | हमारे सोशल मीडिया</h4>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1PUUzvUfoo/" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sathchaleham" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com/@sathchaleham" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/917011893028" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Links | त्वरित लिंक</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home | होम</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us | हमारे बारे में</a></li>
+          <li><a href="work.html"><i class="fa-solid fa-chevron-right"></i> Our Work | हमारे कार्य</a></li>
+          <li><a href="team.html"><i class="fa-solid fa-chevron-right"></i> Our Team | हमारी टीम</a></li>
+          <li><a href="events.html"><i class="fa-solid fa-chevron-right"></i> Events | कार्यक्रम</a></li>
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Downloads | डाउनलोड</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact | संपर्क</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Get Involved | जुड़ें</h4>
+        <ul class="footer-links">
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Volunteer | स्वयंसेवक</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Internship | इंटर्नशिप</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> CSR Partnership | CSR</a></li>
+          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Donate | दान करें</a></li>
+          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Fundraise | फंडरेज़िंग</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Careers | करियर</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Resources | संसाधन</h4>
+        <ul class="footer-links">
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Reports | रिपोर्ट</a></li>
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Certificates | प्रमाण पत्र</a></li>
+          <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery | गैलरी</a></li>
+          <li><a href="videos.html"><i class="fa-solid fa-chevron-right"></i> Videos | वीडियो</a></li>
+          <li><a href="faq.html"><i class="fa-solid fa-chevron-right"></i> FAQ | सामान्य प्रश्न</a></li>
+          <li><a href="sitemap.html"><i class="fa-solid fa-chevron-right"></i> Sitemap | साइटमैप</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Contact Us | संपर्क</h4>
+        <ul class="contact-info">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Address | पता</strong>
+              भारतीय नगर, वार्ड नं. 26/35, सहरसा, बिहार – 852201
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Helpline | हेल्पलाइन</strong>
+              <a href="tel:+917011893028" style="color:#93C5FD;">+91 7011893028</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Email | ईमेल</strong>
+              <a href="mailto:sathchaleham@gmail.com" style="color:#93C5FD;">sathchaleham@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <strong>Office Hours | समय</strong>
+              सोम – शनि · 10:00 AM – 6:00 PM
+            </div>
+          </li>
+        </ul>
+
+        <div class="footer-newsletter">
+          <label>Newsletter | न्यूज़लेटर</label>
+          <form class="newsletter-form"
+                onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
+            <input type="email" placeholder="your@email.com" required>
+            <button type="submit" aria-label="Subscribe">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+
+        <div class="footer-copy">
+          © 2026 <strong>Sath Chale Hum Foundation</strong> · All Rights Reserved
+        </div>
+
+        <div class="footer-legal">
+          <a href="terms.html">Terms</a><span>·</span>
+          <a href="privacy.html">Privacy</a><span>·</span>
+          <a href="sitemap.html">Sitemap</a><span>·</span>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+
+        <div class="footer-made">
+          Made with <i class="fa-solid fa-heart"></i> in Bihar
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ================= BACK TO TOP ================= -->
+<button class="back-top" id="backTop" aria-label="Back to Top" type="button">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+  /* MOBILE MENU */
+  var menuToggle = document.getElementById("menuToggle");
+  var mobileNav = document.getElementById("mobileNav");
+  if(menuToggle && mobileNav){
+    menuToggle.addEventListener("click", function(){
+      mobileNav.classList.toggle("active");
+      menuToggle.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded",
+        mobileNav.classList.contains("active") ? "true" : "false");
+    });
+    mobileNav.querySelectorAll("a").forEach(function(link){
+      link.addEventListener("click", function(){
+        mobileNav.classList.remove("active");
+        menuToggle.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  /* ========== VALUES PREMIUM SLIDER ========== */
+  var valueSlides = document.querySelectorAll("#valuesSlider .value-slide");
+  var valueDotsContainer = document.getElementById("valuesDots");
+  var valuePrevBtn = document.getElementById("valuesPrev");
+  var valueNextBtn = document.getElementById("valuesNext");
+  var valueCurrent = 0;
+  var valueTimer = null;
+  var valueInterval = 5500;
+
+  /* Create dots */
+  valueSlides.forEach(function(_, i){
+    var dot = document.createElement("button");
+    dot.type = "button";
+    dot.className = "value-dot" + (i === 0 ? " active" : "");
+    dot.setAttribute("aria-label", "Value " + (i + 1));
+    dot.addEventListener("click", function(){
+      goToValue(i);
+      restartValueTimer();
+    });
+    valueDotsContainer.appendChild(dot);
+  });
+
+  var valueDots = valueDotsContainer.querySelectorAll(".value-dot");
+
+  function goToValue(index){
+    if(index < 0) index = valueSlides.length - 1;
+    if(index >= valueSlides.length) index = 0;
+
+    valueSlides.forEach(function(s){ s.classList.remove("active"); });
+    valueDots.forEach(function(d){ d.classList.remove("active"); });
+
+    valueSlides[index].classList.add("active");
+    valueDots[index].classList.add("active");
+    valueCurrent = index;
+  }
+
+  function restartValueTimer(){
+    if(valueTimer) clearInterval(valueTimer);
+    if(valueSlides.length > 1){
+      valueTimer = setInterval(function(){
+        goToValue((valueCurrent + 1) % valueSlides.length);
+      }, valueInterval);
+    }
+  }
+
+  if(valuePrevBtn){
+    valuePrevBtn.addEventListener("click", function(){
+      goToValue(valueCurrent - 1);
+      restartValueTimer();
+    });
+  }
+
+  if(valueNextBtn){
+    valueNextBtn.addEventListener("click", function(){
+      goToValue(valueCurrent + 1);
+      restartValueTimer();
+    });
+  }
+
+  /* Keyboard navigation */
+  document.addEventListener("keydown", function(e){
+    var valuesSection = document.querySelector(".values-section");
+    if(!valuesSection) return;
+    var rect = valuesSection.getBoundingClientRect();
+    if(rect.top < window.innerHeight && rect.bottom > 0){
+      if(e.key === "ArrowLeft"){ goToValue(valueCurrent - 1); restartValueTimer(); }
+      if(e.key === "ArrowRight"){ goToValue(valueCurrent + 1); restartValueTimer(); }
+    }
+  });
+
+  restartValueTimer();
+
+  /* Pause on hover */
+  var valuesSliderEl = document.getElementById("valuesSlider");
+  if(valuesSliderEl){
+    valuesSliderEl.addEventListener("mouseenter", function(){
+      if(valueTimer) clearInterval(valueTimer);
+    });
+    valuesSliderEl.addEventListener("mouseleave", function(){
+      restartValueTimer();
+    });
+  }
+
+  /* BACK TO TOP */
+  var backTop = document.getElementById("backTop");
+  if(backTop){
+    window.addEventListener("scroll", function(){
+      if(window.scrollY > 500){
+        backTop.classList.add("show");
+      } else {
+        backTop.classList.remove("show");
+      }
+    });
+    backTop.addEventListener("click", function(){
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+});
+</script>
+
+</body>
+</html>
