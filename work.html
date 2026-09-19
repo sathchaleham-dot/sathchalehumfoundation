@@ -1,1 +1,1608 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Our Work | हमारे कार्य क्षेत्र | Sath Chale Hum Foundation</title>
+  <meta name="description" content="साथ चले हम फाउंडेशन के 16 प्रमुख कार्य क्षेत्र — शिक्षा, स्वास्थ्य, महिला सशक्तिकरण, गरीब कल्याण, दिव्यांगजन, वृद्धजन, युवा विकास, कृषि, पर्यावरण, पशु कल्याण, आपदा राहत और सामाजिक न्याय।">
+  <meta name="theme-color" content="#0A2540">
+  <meta property="og:title" content="Our Work | Sath Chale Hum Foundation">
+  <meta property="og:description" content="16 प्रमुख कार्य क्षेत्र — शिक्षा से सशक्तिकरण तक।">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="sath_chale_ham_logo_HD-1.png">
+  <link rel="canonical" href="https://sathchaleham.org/work.html">
+  <link rel="icon" type="image/png" href="sath_chale_ham_logo_HD-1.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    *{ margin:0; padding:0; box-sizing:border-box; }
+    html{ scroll-behavior:smooth; overflow-x:hidden; }
+
+    :root{
+      --navy:#0A2540; --navy-2:#0F2E4F;
+      --blue:#1E40AF; --blue-2:#2563EB; --blue-light:#3B82F6;
+      --blue-pale:#EFF6FF; --blue-soft:#DBEAFE;
+      --gold:#FBBF24; --gold-dark:#D97706; --gold-pale:#FEF3C7;
+      --red:#DC2626; --red-dark:#991B1B; --green:#059669;
+      --white:#FFFFFF; --text:#0F172A; --text-soft:#475569;
+      --muted:#64748B; --border:#E2E8F0; --bg:#F8FAFC;
+    }
+
+    body{ font-family:"Poppins","Tiro Devanagari Hindi",sans-serif;
+      background:var(--bg); color:var(--text); overflow-x:hidden; line-height:1.6; }
+    a{ text-decoration:none; color:inherit; }
+    img{ max-width:100%; display:block; }
+    button{ font-family:inherit; cursor:pointer; border:none; }
+
+    .container{ width:min(1240px,92%); margin:auto; }
+    .hindi{ font-family:"Tiro Devanagari Hindi",serif; }
+
+    .section{ padding:90px 0; position:relative; overflow:hidden; }
+    .section-title{ text-align:center; margin-bottom:55px; }
+    .section-title .small-title{
+      display:inline-block; color:var(--blue); font-size:.9rem; font-weight:800;
+      letter-spacing:2.5px; text-transform:uppercase; margin-bottom:12px; }
+    .section-title h2{ font-size:clamp(1.9rem,3.8vw,3rem); line-height:1.2;
+      font-weight:900; color:var(--navy); }
+    .section-title h2 span{ color:var(--blue-2); }
+    .section-title p{ max-width:800px; margin:18px auto 0;
+      color:var(--muted); line-height:1.8; font-size:1rem; }
+
+    /* HEADER */
+    .site-header{
+      position:fixed; left:0; top:0; width:100%; z-index:9999;
+      background:linear-gradient(135deg,#0A2540 0%,#0F2E4F 50%,#0A2540 100%);
+      backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+      border-bottom:1px solid rgba(59,130,246,.15);
+      box-shadow:0 8px 32px rgba(10,37,64,.18);
+    }
+    .header-inner{ min-height:92px; display:flex; align-items:center;
+      justify-content:space-between; gap:20px; }
+    .brand{ display:flex; align-items:center; gap:14px;
+      min-width:0; flex-shrink:0; }
+    .logo-box{ width:66px; height:66px; border-radius:16px;
+      background:#FFFFFF;
+      display:block; padding:0;
+      box-shadow:0 8px 24px rgba(59,130,246,.35);
+      border:2px solid rgba(251,191,36,.4);
+      transition:.35s ease; flex-shrink:0; overflow:hidden;
+      position:relative; line-height:0; }
+    .logo-box:hover{ transform:translateY(-2px) rotate(-3deg);
+      box-shadow:0 14px 34px rgba(59,130,246,.5);
+      border-color:var(--gold); }
+    .logo-box img{ width:100%; height:100%;
+      object-fit:cover; object-position:center;
+      display:block; margin:0; padding:0;
+      border:0; transform:scale(1.02);
+      transform-origin:center center; }
+    .brand-text{ min-width:0; }
+    .brand-name{ color:#fff;
+      font-size:clamp(1.2rem,2.4vw,1.7rem); font-weight:900;
+      line-height:1.1; white-space:nowrap; letter-spacing:-.5px;
+      font-family:"Tiro Devanagari Hindi",serif;
+      text-shadow:0 2px 10px rgba(0,0,0,.3); }
+    .brand-name .gold{ color:var(--gold); font-weight:900; }
+    .brand-tagline{ color:#93C5FD; font-size:.7rem; font-weight:600;
+      margin-top:3px; white-space:nowrap; letter-spacing:.4px; }
+
+    .desktop-nav{ display:flex; align-items:center; gap:2px;
+      flex-wrap:nowrap; }
+    .desktop-nav > a{ color:#E0F2FE; font-size:.78rem; font-weight:700;
+      padding:11px 10px; border-radius:10px; transition:.25s ease;
+      white-space:nowrap; position:relative; }
+    .desktop-nav > a:hover{ color:var(--gold);
+      background:rgba(59,130,246,.15); transform:translateY(-1px); }
+    .desktop-nav > a.active{ color:var(--gold);
+      background:rgba(59,130,246,.2); }
+    .desktop-nav > a.active::after{ content:""; position:absolute;
+      bottom:4px; left:50%; transform:translateX(-50%);
+      width:20px; height:2px; border-radius:2px; background:var(--gold); }
+
+    .donate-nav{ display:inline-flex; align-items:center; gap:7px;
+      background:linear-gradient(135deg,#DC2626,#991B1B)!important;
+      padding:11px 17px!important; color:#fff!important;
+      font-weight:900!important; border-radius:11px!important;
+      box-shadow:0 6px 20px rgba(220,38,38,.45),
+        inset 0 1px 0 rgba(255,255,255,.2);
+      animation:pulseDonate 2s infinite; margin-left:6px;
+      letter-spacing:.3px; }
+    .donate-nav:hover{ color:#fff!important;
+      background:linear-gradient(135deg,#EF4444,#DC2626)!important;
+      transform:translateY(-2px)!important; }
+    @keyframes pulseDonate{
+      0%,100%{ transform:scale(1);
+        box-shadow:0 6px 20px rgba(220,38,38,.4),
+          inset 0 1px 0 rgba(255,255,255,.2); }
+      50%{ transform:scale(1.04);
+        box-shadow:0 10px 30px rgba(220,38,38,.7),
+          inset 0 1px 0 rgba(255,255,255,.2); } }
+
+    .menu-toggle{ display:none; width:46px; height:46px;
+      border-radius:12px; background:rgba(59,130,246,.15);
+      border:1px solid rgba(59,130,246,.3); padding:11px;
+      transition:.3s; }
+    .menu-toggle span{ display:block; width:100%; height:2.5px;
+      background:#fff; margin:4.5px 0; border-radius:5px;
+      transition:.3s; }
+    .menu-toggle.active span:nth-child(1){
+      transform:rotate(45deg) translate(6px,6px); }
+    .menu-toggle.active span:nth-child(2){ opacity:0; }
+    .menu-toggle.active span:nth-child(3){
+      transform:rotate(-45deg) translate(6px,-6px); }
+
+    .mobile-nav{ display:none;
+      background:linear-gradient(180deg,#0A2540,#0F2E4F);
+      border-top:1px solid rgba(59,130,246,.2);
+      padding:14px 4% 20px;
+      box-shadow:0 20px 40px rgba(0,0,0,.3); }
+    .mobile-nav a{ display:block; color:#E0F2FE;
+      padding:14px 16px; border-radius:10px; font-weight:700;
+      font-size:.9rem; margin:4px 0; transition:.25s;
+      border:1px solid transparent; }
+    .mobile-nav a:hover, .mobile-nav a.active{
+      background:rgba(59,130,246,.15); color:var(--gold);
+      border-color:rgba(59,130,246,.3); }
+    .mobile-nav .donate-nav{ text-align:center;
+      margin-top:12px; justify-content:center; }
+    .mobile-nav.active{ display:block; }
+
+    /* PAGE HERO */
+    .page-hero{
+      padding:170px 0 80px;
+      background:linear-gradient(135deg,rgba(10,37,64,.94),rgba(30,64,175,.88)),
+        url("https://images.unsplash.com/photo-1497486751825-1233686d5d80?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      color:#fff; text-align:center; position:relative;
+    }
+    .page-hero::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
+      background-size:24px 24px; opacity:.5; pointer-events:none;
+    }
+    .page-hero .container{ position:relative; z-index:2; }
+    .breadcrumb{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:8px 18px; border-radius:100px;
+      background:rgba(251,191,36,.12);
+      border:1px solid rgba(251,191,36,.35);
+      color:var(--gold); font-size:.78rem; font-weight:800;
+      letter-spacing:1.5px; text-transform:uppercase;
+      margin-bottom:22px;
+    }
+    .breadcrumb a{ color:#93C5FD; transition:.25s; }
+    .breadcrumb a:hover{ color:var(--gold); }
+    .breadcrumb i{ font-size:.6rem; color:var(--gold); }
+    .page-hero h1{
+      font-size:clamp(2rem,5vw,3.5rem);
+      font-weight:900; line-height:1.15;
+      font-family:"Tiro Devanagari Hindi",serif;
+      margin-bottom:18px; letter-spacing:-1px;
+      text-shadow:0 8px 30px rgba(0,0,0,.35);
+    }
+    .page-hero h1 span{ color:var(--gold); }
+    .page-hero p{
+      max-width:760px; margin:auto;
+      color:#93C5FD; font-size:1rem; line-height:1.85;
+    }
+
+    /* BUTTONS */
+    .btn{ display:inline-flex; align-items:center; justify-content:center;
+      gap:10px; min-height:54px; padding:15px 30px;
+      border-radius:13px; font-size:.9rem; font-weight:800;
+      transition:.3s ease; letter-spacing:.3px; border:none;
+      cursor:pointer; font-family:inherit; }
+    .btn:hover{ transform:translateY(-4px); }
+    .btn-red{ color:#fff;
+      background:linear-gradient(135deg,#DC2626,#991B1B);
+      box-shadow:0 12px 32px rgba(220,38,38,.45); }
+    .btn-red:hover{ box-shadow:0 18px 42px rgba(220,38,38,.65); }
+    .btn-gold{ color:#0A2540;
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      box-shadow:0 12px 32px rgba(251,191,36,.45); }
+    .btn-gold:hover{ box-shadow:0 18px 42px rgba(251,191,36,.65); }
+    .btn-blue{ color:#fff;
+      background:linear-gradient(135deg,#2563EB,#1E40AF);
+      box-shadow:0 12px 32px rgba(37,99,235,.45); }
+    .btn-blue:hover{ box-shadow:0 18px 42px rgba(37,99,235,.65); }
+    .btn-outline{ color:#fff; background:rgba(255,255,255,.06);
+      border:1.5px solid rgba(255,255,255,.3);
+      backdrop-filter:blur(8px); }
+    .btn-outline:hover{ background:rgba(255,255,255,.14);
+      border-color:var(--gold); color:var(--gold); }
+    .btn-pulse-red{ animation:pulseRed 1.8s infinite; }
+    @keyframes pulseRed{
+      0%,100%{ box-shadow:0 12px 32px rgba(220,38,38,.4); }
+      50%{ box-shadow:0 16px 42px rgba(220,38,38,.75); } }
+
+    /* WORK SECTION */
+    .work-areas-section{
+      background:
+        radial-gradient(circle at 12% 15%,rgba(251,191,36,.08),transparent 32%),
+        radial-gradient(circle at 88% 85%,rgba(37,99,235,.1),transparent 35%),
+        linear-gradient(160deg,#F8FAFC,#EFF6FF);
+      position:relative; overflow:hidden;
+    }
+    .work-areas-section::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(37,99,235,.05) 1px,transparent 1px);
+      background-size:28px 28px; pointer-events:none;
+    }
+    .work-areas-section .container{ position:relative; z-index:2; }
+
+    .work-areas-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:24px;
+      align-items:start;
+    }
+
+    /* WORK CARD */
+    .work-card{
+      background:#fff;
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow:0 14px 40px rgba(15,23,42,.08);
+      border:1px solid var(--border);
+      transition:.4s cubic-bezier(.2,.8,.3,1);
+      position:relative;
+    }
+    .work-card::before{
+      content:""; position:absolute;
+      top:0; left:0; right:0; height:5px;
+      background:linear-gradient(90deg,#2563EB,#1E40AF);
+      transition:.35s;
+    }
+    .work-card[data-tone="gold"]::before{
+      background:linear-gradient(90deg,#FBBF24,#F59E0B);
+    }
+    .work-card[data-tone="red"]::before{
+      background:linear-gradient(90deg,#DC2626,#991B1B);
+    }
+    .work-card[data-tone="teal"]::before{
+      background:linear-gradient(90deg,#059669,#047857);
+    }
+    .work-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 24px 60px rgba(37,99,235,.15);
+      border-color:var(--blue-light);
+    }
+
+    /* WORK HEADER (clickable) */
+    .work-header{
+      display:flex; align-items:center; gap:18px;
+      padding:26px 26px;
+      cursor:pointer;
+      transition:.3s;
+      user-select:none;
+    }
+    .work-card:hover .work-header{
+      background:linear-gradient(135deg,#F8FAFC,#EFF6FF);
+    }
+    .work-header-icon{
+      flex-shrink:0;
+      width:64px; height:64px;
+      border-radius:18px;
+      display:grid; place-items:center;
+      font-size:1.6rem; color:#fff;
+      background:linear-gradient(145deg,#2563EB,#1E40AF);
+      box-shadow:0 10px 26px rgba(37,99,235,.35);
+      transition:.35s;
+    }
+    .work-card[data-tone="gold"] .work-header-icon{
+      background:linear-gradient(145deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      box-shadow:0 10px 26px rgba(251,191,36,.4);
+    }
+    .work-card[data-tone="red"] .work-header-icon{
+      background:linear-gradient(145deg,#DC2626,#991B1B);
+      box-shadow:0 10px 26px rgba(220,38,38,.35);
+    }
+    .work-card[data-tone="teal"] .work-header-icon{
+      background:linear-gradient(145deg,#059669,#047857);
+      box-shadow:0 10px 26px rgba(5,150,105,.35);
+    }
+    .work-card:hover .work-header-icon{
+      transform:rotate(-6deg) scale(1.06);
+    }
+
+    .work-header-text{ flex:1; min-width:0; }
+    .work-number{
+      display:inline-block;
+      font-size:.68rem; font-weight:900;
+      letter-spacing:2.5px;
+      color:var(--gold-dark);
+      padding:4px 10px;
+      background:var(--gold-pale);
+      border:1px solid #FDE68A;
+      border-radius:100px;
+      margin-bottom:8px;
+      text-transform:uppercase;
+    }
+    .work-card[data-tone="teal"] .work-number{
+      color:#047857; background:#D1FAE5; border-color:#A7F3D0;
+    }
+    .work-card[data-tone="red"] .work-number{
+      color:var(--red); background:#FEE2E2; border-color:#FECACA;
+    }
+
+    .work-header-text h3{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(1.05rem,2vw,1.22rem);
+      font-weight:900;
+      color:var(--navy);
+      line-height:1.35;
+      margin:0;
+    }
+
+    .work-chevron{
+      flex-shrink:0;
+      width:40px; height:40px;
+      border-radius:12px;
+      background:var(--blue-pale);
+      color:var(--blue-2);
+      display:grid; place-items:center;
+      font-size:.9rem;
+      transition:.35s;
+    }
+    .work-card[data-tone="gold"] .work-chevron{
+      background:var(--gold-pale); color:var(--gold-dark);
+    }
+    .work-card[data-tone="red"] .work-chevron{
+      background:#FEE2E2; color:var(--red);
+    }
+    .work-card[data-tone="teal"] .work-chevron{
+      background:#D1FAE5; color:#047857;
+    }
+    .work-card.open .work-chevron{
+      transform:rotate(180deg);
+      background:linear-gradient(135deg,#2563EB,#1E40AF);
+      color:#fff;
+    }
+    .work-card[data-tone="gold"].open .work-chevron{
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+    }
+    .work-card[data-tone="red"].open .work-chevron{
+      background:linear-gradient(135deg,#DC2626,#991B1B);
+      color:#fff;
+    }
+    .work-card[data-tone="teal"].open .work-chevron{
+      background:linear-gradient(135deg,#059669,#047857);
+      color:#fff;
+    }
+
+    /* WORK BODY (dropdown) */
+    .work-body{
+      max-height:0;
+      overflow:hidden;
+      transition:max-height .55s cubic-bezier(.4,0,.2,1),
+                 padding .35s ease;
+      padding:0 26px;
+      background:#F8FAFC;
+      border-top:1px solid transparent;
+    }
+    .work-card.open .work-body{
+      max-height:2000px;
+      padding:22px 26px 26px;
+      border-top-color:var(--border);
+    }
+
+    .work-list{
+      list-style:none;
+      display:flex; flex-direction:column;
+      gap:11px;
+    }
+    .work-list li{
+      display:flex; align-items:flex-start; gap:12px;
+      padding:12px 14px;
+      border-radius:12px;
+      background:#fff;
+      border:1px solid var(--border);
+      font-size:.88rem;
+      line-height:1.55;
+      color:var(--text);
+      transition:.25s;
+    }
+    .work-list li:hover{
+      background:var(--blue-pale);
+      border-color:var(--blue-light);
+      transform:translateX(4px);
+    }
+    .work-list li i{
+      flex-shrink:0;
+      margin-top:3px;
+      color:var(--blue-2);
+      font-size:.85rem;
+    }
+    .work-card[data-tone="gold"] .work-list li i{
+      color:var(--gold-dark);
+    }
+    .work-card[data-tone="red"] .work-list li i{
+      color:var(--red);
+    }
+    .work-card[data-tone="teal"] .work-list li i{
+      color:var(--green);
+    }
+    .work-list li strong{
+      font-weight:700;
+      color:var(--navy);
+      display:block;
+      margin-bottom:2px;
+    }
+    .work-list li em{
+      color:#94A3B8;
+      font-style:italic;
+      font-size:.82rem;
+      display:block;
+      margin-top:3px;
+      line-height:1.5;
+    }
+
+    /* EXPAND ALL BUTTON */
+    .expand-controls{
+      display:flex; justify-content:center; gap:14px;
+      margin-bottom:40px; flex-wrap:wrap;
+    }
+    .expand-btn{
+      display:inline-flex; align-items:center; gap:9px;
+      padding:13px 24px;
+      border-radius:12px;
+      font-size:.85rem; font-weight:800;
+      transition:.3s;
+      letter-spacing:.3px;
+      background:#fff;
+      color:var(--navy);
+      border:2px solid var(--border);
+    }
+    .expand-btn:hover{
+      border-color:var(--blue-2);
+      color:var(--blue-2);
+      background:var(--blue-pale);
+      transform:translateY(-3px);
+    }
+    .expand-btn.primary{
+      background:linear-gradient(135deg,#2563EB,#1E40AF);
+      color:#fff;
+      border-color:transparent;
+      box-shadow:0 10px 26px rgba(37,99,235,.35);
+    }
+    .expand-btn.primary:hover{
+      color:#fff;
+      background:linear-gradient(135deg,#1E40AF,#1E3A8A);
+      box-shadow:0 16px 40px rgba(37,99,235,.5);
+    }
+
+    /* CTA STRIP */
+    .cta-strip{ position:relative; padding:85px 0;
+      background:radial-gradient(circle at 15% 20%,rgba(251,191,36,.15),transparent 35%),
+        radial-gradient(circle at 85% 80%,rgba(59,130,246,.2),transparent 40%),
+        linear-gradient(135deg,#0A2540 0%,#1E40AF 50%,#0A2540 100%);
+      color:#fff; overflow:hidden; text-align:center; }
+    .cta-strip::before{ content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
+      background-size:24px 24px; opacity:.7; pointer-events:none; }
+    .cta-strip .container{ position:relative; z-index:2; }
+    .cta-badge{ display:inline-flex; align-items:center; gap:8px;
+      padding:8px 20px; border-radius:100px;
+      background:rgba(251,191,36,.15);
+      border:1px solid rgba(251,191,36,.4); color:var(--gold);
+      font-size:.72rem; font-weight:900; letter-spacing:2.5px;
+      text-transform:uppercase; margin-bottom:22px; }
+    .cta-strip h2{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(2rem,4.5vw,3.2rem); font-weight:900;
+      line-height:1.25; margin-bottom:16px; letter-spacing:-.5px; }
+    .cta-strip h2 span{ color:var(--gold); }
+    .cta-strip p{ color:#93C5FD; font-size:1.05rem;
+      max-width:640px; margin:0 auto 34px; line-height:1.8; }
+    .cta-buttons{ display:flex; justify-content:center;
+      flex-wrap:wrap; gap:14px; }
+
+    /* FOOTER */
+    footer{ background:radial-gradient(circle at 10% 20%,rgba(59,130,246,.1),transparent 40%),
+        radial-gradient(circle at 90% 80%,rgba(251,191,36,.06),transparent 40%),
+        linear-gradient(160deg,#0A2540 0%,#0F2E4F 60%,#0A2540 100%);
+      color:#fff; padding-top:80px; position:relative; overflow:hidden; }
+    footer::before{ content:""; position:absolute;
+      top:0; left:0; right:0; height:1px;
+      background:linear-gradient(90deg,transparent,rgba(251,191,36,.6),transparent); }
+    .footer-grid{ display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:32px; padding-bottom:60px; position:relative; z-index:2; }
+    .footer-brand-head{ display:flex; align-items:center;
+      gap:10px; margin-bottom:20px; }
+    .footer-logo-box{ width:60px; height:60px; border-radius:15px;
+      background:#FFFFFF;
+      display:block; padding:0;
+      border:2px solid rgba(251,191,36,.4);
+      box-shadow:0 8px 22px rgba(59,130,246,.3);
+      flex-shrink:0; overflow:hidden;
+      position:relative; line-height:0; }
+    .footer-logo-box img{ width:100%; height:100%;
+      object-fit:cover; object-position:center;
+      display:block; margin:0; padding:0;
+      border:0; transform:scale(1.02);
+      transform-origin:center center; }
+    .footer-brand-text{ min-width:0; }
+    .footer-brand-text h3{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.05rem; font-weight:900; color:#fff;
+      line-height:1.15; margin-bottom:4px; }
+    .footer-tagline-text{ color:#93C5FD; font-size:.66rem;
+      font-weight:600; letter-spacing:.4px;
+      font-family:"Tiro Devanagari Hindi",serif; line-height:1.3; }
+    .footer-desc{ color:#93C5FD; font-size:.8rem; line-height:1.7;
+      margin-bottom:20px; max-width:100%; }
+    .footer-badge{ display:inline-flex; align-items:center; gap:7px;
+      padding:6px 12px; background:rgba(251,191,36,.1);
+      border:1px solid rgba(251,191,36,.3); border-radius:100px;
+      color:var(--gold); font-size:.68rem; font-weight:900;
+      letter-spacing:.4px; margin-bottom:20px; }
+
+    .footer-heading, .footer-social-heading{
+      font-family:"Tiro Devanagari Hindi",serif; font-size:.92rem;
+      font-weight:900; color:#fff; margin-bottom:22px;
+      padding-bottom:12px; position:relative; letter-spacing:.2px; }
+    .footer-heading::after, .footer-social-heading::after{
+      content:""; position:absolute; bottom:0; left:0;
+      width:32px; height:2px;
+      background:linear-gradient(90deg,#FBBF24,#F59E0B);
+      border-radius:2px; }
+
+    .social-icons{ display:flex; gap:8px; flex-wrap:wrap; }
+    .social-icon{ width:38px; height:38px; display:grid;
+      place-items:center; border-radius:10px;
+      background:rgba(59,130,246,.12); color:#93C5FD;
+      font-size:.9rem; transition:.3s;
+      border:1px solid rgba(59,130,246,.25); }
+    .social-icon:hover{ transform:translateY(-4px);
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      color:#0A2540; border-color:var(--gold);
+      box-shadow:0 8px 22px rgba(251,191,36,.4); }
+
+    .footer-links{ list-style:none; }
+    .footer-links li{ margin-bottom:10px; }
+    .footer-links a{ color:#93C5FD; font-size:.78rem;
+      font-weight:600; display:inline-flex; align-items:center;
+      gap:7px; transition:.25s; line-height:1.5; }
+    .footer-links a i{ font-size:.56rem; color:#FBBF24;
+      transition:.25s; }
+    .footer-links a:hover{ color:var(--gold);
+      transform:translateX(4px); }
+
+    .contact-info{ list-style:none; }
+    .contact-info li{ display:flex; gap:10px;
+      align-items:flex-start; margin-bottom:14px;
+      color:#93C5FD; font-size:.78rem; line-height:1.65; }
+    .contact-info li i{ flex-shrink:0; width:28px; height:28px;
+      display:grid; place-items:center; border-radius:8px;
+      background:rgba(59,130,246,.15);
+      border:1px solid rgba(59,130,246,.25); color:#FBBF24;
+      font-size:.72rem; margin-top:1px; }
+    .contact-info li strong{ display:block; color:#fff;
+      font-size:.7rem; margin-bottom:2px;
+      letter-spacing:.3px; text-transform:uppercase; }
+    .contact-info li a{ color:#93C5FD; }
+    .footer-newsletter{ margin-top:6px; padding-top:16px;
+      border-top:1px solid rgba(59,130,246,.2); }
+    .footer-newsletter label{ display:block; color:#93C5FD;
+      font-size:.68rem; font-weight:800; letter-spacing:.5px;
+      text-transform:uppercase; margin-bottom:10px; }
+    .newsletter-form{ display:flex; gap:6px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(59,130,246,.25);
+      border-radius:12px; padding:5px; transition:.3s; }
+    .newsletter-form:focus-within{ border-color:var(--gold);
+      box-shadow:0 0 0 4px rgba(251,191,36,.1); }
+    .newsletter-form input{ flex:1; background:transparent;
+      border:none; outline:none; padding:8px 10px; color:#fff;
+      font-family:inherit; font-size:.76rem; min-width:0; }
+    .newsletter-form input::placeholder{ color:#6B8CAE; }
+    .newsletter-form button{ flex-shrink:0; width:36px; height:36px;
+      border-radius:8px;
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      color:#0A2540; font-size:.82rem; display:grid;
+      place-items:center; transition:.3s; }
+
+    .footer-bottom{ border-top:1px solid rgba(59,130,246,.15);
+      padding:22px 0; position:relative; z-index:2; }
+    .footer-bottom-inner{ display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      gap:12px; text-align:center; }
+    .footer-copy{ color:#6B8CAE; font-size:.76rem; font-weight:600;
+      order:1; }
+    .footer-copy strong{ color:#93C5FD; font-weight:800; }
+    .footer-legal{ display:flex; gap:4px; flex-wrap:nowrap;
+      align-items:center; justify-content:center;
+      order:2; }
+    .footer-legal a{ color:#93C5FD; font-size:.72rem;
+      font-weight:700; padding:5px 8px; border-radius:8px;
+      transition:.25s; white-space:nowrap; }
+    .footer-legal a:hover{ color:var(--gold);
+      background:rgba(59,130,246,.15); }
+    .footer-legal span{ color:rgba(59,130,246,.5); font-size:.72rem; }
+    .footer-made{ color:#6B8CAE; font-size:.72rem; font-weight:600;
+      display:inline-flex; align-items:center; gap:6px;
+      order:3; }
+    .footer-made i{ color:#DC2626; font-size:.68rem; }
+
+    /* BACK TOP */
+    .back-top{ position:fixed; right:22px; bottom:22px;
+      width:48px; height:48px; border-radius:14px;
+      background:linear-gradient(135deg,#2563EB,#1E40AF);
+      color:#fff; cursor:pointer; z-index:1000;
+      display:grid; place-items:center; opacity:0;
+      visibility:hidden; transition:.3s;
+      box-shadow:0 10px 28px rgba(37,99,235,.45); }
+    .back-top.show{ opacity:1; visibility:visible; }
+    .back-top:hover{ transform:translateY(-4px); }
+
+    /* RESPONSIVE */
+    @media(max-width:1200px){
+      .desktop-nav > a{ padding:10px 7px; font-size:.72rem; }
+      .donate-nav{ padding:10px 13px!important; }
+      .footer-grid{ grid-template-columns:repeat(3,1fr); gap:32px; }
+    }
+    @media(max-width:1000px){
+      .desktop-nav > a{ padding:10px 6px; font-size:.68rem; }
+      .logo-box{ width:62px; height:62px; }
+      .work-areas-grid{ grid-template-columns:1fr; }
+    }
+    @media(max-width:900px){
+      .desktop-nav{ display:none; }
+      .menu-toggle{ display:block; }
+      .header-inner{ min-height:78px; }
+      .brand-name{ font-size:clamp(1.1rem,3vw,1.4rem); }
+      .brand-tagline{ font-size:.66rem; }
+      .logo-box{ width:60px; height:60px; }
+      .page-hero{ padding:140px 0 65px; }
+      .footer-grid{ grid-template-columns:1fr 1fr; gap:36px 24px; }
+    }
+    @media(max-width:700px){
+      .section{ padding:70px 0; }
+      .page-hero{ padding:130px 0 55px; }
+      .page-hero h1{ font-size:1.75rem; }
+      .footer-grid{ grid-template-columns:1fr; gap:32px;
+        padding-bottom:40px; }
+      .footer-bottom-inner{ gap:10px; }
+      .footer-legal{ flex-wrap:nowrap; gap:1px; }
+      .footer-legal a{ font-size:.68rem; padding:4px 6px; }
+      .footer-legal span{ font-size:.68rem; }
+      .cta-strip{ padding:65px 0; }
+      .cta-buttons{ flex-direction:column; }
+      .cta-buttons .btn{ width:100%; }
+      .work-header{ padding:20px 18px; gap:14px; }
+      .work-header-icon{ width:54px; height:54px;
+        font-size:1.35rem; border-radius:15px; }
+      .work-header-text h3{ font-size:1rem; }
+      .work-chevron{ width:36px; height:36px; font-size:.8rem; }
+      .work-card.open .work-body{ padding:18px 18px 20px; }
+      .work-body{ padding:0 18px; }
+      .work-list li{ padding:11px 12px; font-size:.83rem; gap:10px; }
+      .work-list li em{ font-size:.78rem; }
+    }
+    @media(max-width:600px){
+      .brand-name{ font-size:clamp(1rem,4vw,1.15rem);
+        white-space:normal; line-height:1.15; letter-spacing:-.2px; }
+      .brand-tagline{ font-size:.62rem; white-space:normal; }
+      .logo-box{ width:54px; height:54px; border-radius:13px; }
+      .brand{ gap:11px; }
+      .cta-strip h2{ font-size:1.55rem; }
+      .cta-strip p{ font-size:.92rem; }
+      .social-icon{ width:38px; height:38px; font-size:.9rem; }
+      .footer-brand-text h3{ font-size:1rem; }
+      .expand-controls{ flex-direction:column; align-items:stretch; }
+      .expand-btn{ justify-content:center; width:100%; }
+    }
+    @media(max-width:420px){
+      .footer-legal a{ font-size:.62rem; padding:3px 4px; }
+      .footer-legal span{ font-size:.62rem; }
+      .work-header{ padding:16px 14px; gap:12px; }
+      .work-header-icon{ width:48px; height:48px; font-size:1.15rem; }
+      .work-header-text h3{ font-size:.92rem; }
+      .work-number{ font-size:.62rem; padding:3px 8px; }
+    }
+    @media(max-width:380px){
+      .brand-name{ font-size:1rem; }
+      .brand-tagline{ font-size:.6rem; }
+      .logo-box{ width:50px; height:50px; }
+      .footer-legal a{ font-size:.58rem; padding:3px 3px; }
+      .footer-legal span{ font-size:.58rem; }
+    }
+    @media (prefers-reduced-motion: reduce){
+      *,*::before,*::after{
+        animation-duration:.01ms!important;
+        animation-iteration-count:1!important;
+        transition-duration:.01ms!important; } }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="index.html" class="brand">
+      <div class="logo-box">
+        <img src="sath_chale_ham_logo_HD-1.png"
+             alt="साथ चले हम फाउंडेशन Logo">
+      </div>
+      <div class="brand-text">
+        <div class="brand-name">साथ चले हम <span class="gold">फाउंडेशन</span></div>
+        <div class="brand-tagline">साथ चले हम, बदलाव की ओर</div>
+      </div>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="work.html" class="active">Our Work</a>
+      <a href="team.html">Team</a>
+      <a href="events.html">Events</a>
+      <a href="join-us.html">Join Us</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="contact.html">Contact</a>
+      <a href="donate.html" class="donate-nav">
+        <i class="fa-solid fa-heart"></i> Donate Us
+      </a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Open Menu" aria-expanded="false"
+            aria-controls="mobileNav" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html">Home | होम</a>
+    <a href="about.html">About Us | हमारे बारे में</a>
+    <a href="work.html" class="active">Our Work | हमारे कार्य</a>
+    <a href="team.html">Team | हमारी टीम</a>
+    <a href="events.html">Events | कार्यक्रम</a>
+    <a href="join-us.html">Join Us | जुड़ें</a>
+    <a href="downloads.html">Downloads | डाउनलोड</a>
+    <a href="contact.html">Contact | संपर्क</a>
+    <a href="donate.html" class="donate-nav">
+      <i class="fa-solid fa-heart"></i> Donate Us
+    </a>
+  </nav>
+</header>
+
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="container">
+
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span>Our Work</span>
+    </div>
+
+    <h1>Our Key Areas of Work | <span>हमारे प्रमुख कार्य क्षेत्र</span></h1>
+
+    <p class="hindi">
+      साथ चले हम फाउंडेशन 16 प्रमुख क्षेत्रों में समाज के जरूरतमंद वर्ग
+      के उत्थान के लिए निरंतर कार्यरत है — शिक्षा से लेकर सामाजिक न्याय,
+      पर्यावरण संरक्षण से लेकर आपदा राहत तक।
+    </p>
+
+  </div>
+</section>
+
+
+<!-- ================= WORK AREAS ================= -->
+<section class="section work-areas-section">
+  <div class="container">
+
+    <div class="section-title">
+      <span class="small-title">Our 16 Key Areas</span>
+      <h2>हमारे प्रमुख कार्य क्षेत्र | <span>Our Key Areas</span></h2>
+      <p class="hindi">
+        नीचे दिए गए प्रत्येक कार्य क्षेत्र पर क्लिक करके उससे जुड़ी
+        विस्तृत गतिविधियाँ देखें।
+      </p>
+    </div>
+
+    <div class="expand-controls">
+      <button class="expand-btn primary" id="expandAll" type="button">
+        <i class="fa-solid fa-angles-down"></i>
+        Expand All | सभी खोलें
+      </button>
+      <button class="expand-btn" id="collapseAll" type="button">
+        <i class="fa-solid fa-angles-up"></i>
+        Collapse All | सभी बंद करें
+      </button>
+    </div>
+
+    <div class="work-areas-grid" id="workAreasGrid">
+
+      <!-- ================= 1. Education ================= -->
+      <div class="work-card" data-tone="blue">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-book-open"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">01 / 16</span>
+            <h3>शिक्षा एवं बाल विकास — Education &amp; Child Development</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>गरीब बच्चों की शिक्षा में सहायता</strong><em>Educational assistance for underprivileged children</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्कूल से बाहर बच्चों को शिक्षा से जोड़ना</strong><em>Connecting out-of-school children with education</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>निःशुल्क शिक्षा एवं कोचिंग</strong><em>Free education and coaching</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>किताब-कॉपी एवं शैक्षणिक सामग्री वितरण</strong><em>Distribution of books, notebooks and educational materials</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>छात्रवृत्ति एवं शैक्षणिक सहायता</strong><em>Scholarships and educational assistance</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>डिजिटल एवं कंप्यूटर शिक्षा</strong><em>Digital and computer education</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पुस्तकालय एवं ज्ञान केंद्र</strong><em>Libraries and knowledge centers</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बाल प्रतिभा विकास</strong><em>Child talent development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>करियर एवं शिक्षा मार्गदर्शन</strong><em>Career and educational guidance</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्कूल ड्रॉपआउट रोकथाम</strong><em>Prevention of school dropouts</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बाल श्रम से बच्चों को शिक्षा की ओर जोड़ना</strong><em>Connecting children engaged in child labour with education</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>वयस्क एवं निरक्षरता उन्मूलन</strong><em>Adult education and eradication of illiteracy</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>ग्रामीण एवं वंचित क्षेत्रों में शिक्षा</strong><em>Education in rural and underserved areas</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>व्यावसायिक एवं कौशल शिक्षा</strong><em>Vocational and skill education</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बाल अधिकारों के प्रति जागरूकता</strong><em>Awareness of child rights</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>शिक्षा के प्रति जन-जागरूकता अभियान</strong><em>Public awareness campaigns for education</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 2. Women ================= -->
+      <div class="work-card" data-tone="gold">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-person-dress"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">02 / 16</span>
+            <h3>महिला सशक्तिकरण एवं विकास — Women Empowerment</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>महिला शिक्षा एवं साक्षरता</strong><em>Women’s education and literacy</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>महिला कौशल विकास</strong><em>Women’s skill development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>रोजगार एवं स्वरोजगार प्रशिक्षण</strong><em>Employment and self-employment training</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>महिला उद्यमिता विकास</strong><em>Women entrepreneurship development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वयं सहायता समूहों को सहयोग</strong><em>Support to Self-Help Groups</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सिलाई-कढ़ाई एवं हस्तकला प्रशिक्षण</strong><em>Tailoring, embroidery and handicraft training</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>डिजिटल एवं कंप्यूटर शिक्षा</strong><em>Digital and computer education</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>महिला अधिकारों की जानकारी</strong><em>Awareness of women’s rights</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>घरेलू हिंसा के विरुद्ध जागरूकता</strong><em>Awareness against domestic violence</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>दहेज प्रथा के विरुद्ध अभियान</strong><em>Campaigns against the dowry system</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बाल विवाह रोकथाम</strong><em>Prevention of child marriage</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>महिलाओं की आर्थिक आत्मनिर्भरता</strong><em>Economic self-reliance of women</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वास्थ्य एवं पोषण जागरूकता</strong><em>Health and nutrition awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>नेतृत्व एवं व्यक्तित्व विकास</strong><em>Leadership and personality development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सरकारी योजनाओं की जानकारी</strong><em>Awareness of government schemes</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>महिला सुरक्षा एवं सम्मान के प्रति जागरूकता</strong><em>Awareness for women’s safety and dignity</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 3. Health ================= -->
+      <div class="work-card" data-tone="red">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">03 / 16</span>
+            <h3>स्वास्थ्य एवं चिकित्सा — Health &amp; Medical Care</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>निःशुल्क स्वास्थ्य जांच शिविर</strong><em>Free health check-up camps</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>ग्रामीण स्वास्थ्य जागरूकता</strong><em>Rural health awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>नेत्र जांच एवं सहायता शिविर</strong><em>Eye check-up and assistance camps</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>दंत स्वास्थ्य जांच शिविर</strong><em>Dental health check-up camps</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सामान्य स्वास्थ्य जागरूकता</strong><em>General health awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>मातृ स्वास्थ्य जागरूकता</strong><em>Maternal health awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>किशोर स्वास्थ्य जागरूकता</strong><em>Adolescent health awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पोषण एवं संतुलित आहार जागरूकता</strong><em>Nutrition and balanced diet awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वच्छता एवं व्यक्तिगत स्वास्थ्य शिक्षा</strong><em>Hygiene and personal health education</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जरूरतमंद मरीजों को सहायता</strong><em>Assistance to needy patients</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वास्थ्य सेवाओं तक पहुंच का मार्गदर्शन</strong><em>Guidance for accessing healthcare services</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>रक्तदान जागरूकता</strong><em>Blood donation awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>रोगों की रोकथाम संबंधी जागरूकता</strong><em>Awareness about disease prevention</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वास्थ्य विशेषज्ञों के साथ जागरूकता कार्यक्रम</strong><em>Awareness programs with health professionals</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>दूरदराज क्षेत्रों में स्वास्थ्य कार्यक्रम</strong><em>Health programs in remote areas</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वस्थ जीवनशैली के प्रति जागरूकता</strong><em>Awareness for a healthy lifestyle</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 4. Poor & Needy ================= -->
+      <div class="work-card" data-tone="teal">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">04 / 16</span>
+            <h3>गरीब एवं जरूरतमंद कल्याण — Welfare of Poor &amp; Needy</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>गरीब परिवारों की सहायता</strong><em>Assistance to poor families</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>राशन एवं खाद्य सामग्री वितरण</strong><em>Distribution of ration and food materials</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कपड़े वितरण</strong><em>Distribution of clothing</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कंबल एवं मौसमी सामग्री वितरण</strong><em>Distribution of blankets and seasonal essentials</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जूते-चप्पल एवं आवश्यक वस्तु सहायता</strong><em>Assistance with footwear and essential items</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>गरीब बच्चों की शिक्षा सहायता</strong><em>Educational assistance for poor children</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जरूरतमंद परिवारों की पहचान</strong><em>Identification of needy families</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सामुदायिक भोजन कार्यक्रम</strong><em>Community meal programs</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बेघर लोगों की सहायता</strong><em>Assistance to homeless people</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>आर्थिक रूप से कमजोर लोगों को सहायता</strong><em>Assistance to economically weaker people</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जरूरतमंदों को सरकारी योजनाओं से जोड़ना</strong><em>Connecting needy people with government schemes</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>दैनिक जीवन की आवश्यक वस्तुओं की सहायता</strong><em>Assistance with daily essential items</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>संकटग्रस्त परिवारों की सहायता</strong><em>Assistance to families in distress</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>गरीब बस्तियों में सेवा कार्यक्रम</strong><em>Service programs in underprivileged communities</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सामुदायिक सहायता केंद्र</strong><em>Community assistance centers</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जरूरतमंदों के लिए जन-सहयोग अभियान</strong><em>Public support campaigns for needy people</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 5. Disability ================= -->
+      <div class="work-card" data-tone="blue">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-wheelchair"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">05 / 16</span>
+            <h3>दिव्यांगजन कल्याण एवं सशक्तिकरण — Disability Welfare</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>दिव्यांगजनों की सहायता</strong><em>Assistance to persons with disabilities</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सहायक उपकरण उपलब्ध कराने में सहयोग</strong><em>Support in providing assistive devices</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>व्हीलचेयर एवं आवश्यक उपकरण सहायता</strong><em>Wheelchair and essential equipment assistance</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>दिव्यांग बच्चों की शिक्षा</strong><em>Education for children with disabilities</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कौशल विकास प्रशिक्षण</strong><em>Skill development training</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>रोजगार एवं स्वरोजगार मार्गदर्शन</strong><em>Employment and self-employment guidance</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सरकारी योजनाओं की जानकारी</strong><em>Awareness of government schemes</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>दिव्यांग अधिकार जागरूकता</strong><em>Disability rights awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>डिजिटल शिक्षा</strong><em>Digital education</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सामाजिक समावेशन</strong><em>Social inclusion</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>प्रतिभा एवं खेल विकास</strong><em>Talent and sports development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>परिवारों को मार्गदर्शन</strong><em>Guidance for families</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वास्थ्य एवं पुनर्वास सेवाओं तक पहुंच में सहयोग</strong><em>Support in accessing healthcare and rehabilitation services</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>रोजगारदाताओं के साथ अवसरों के लिए समन्वय</strong><em>Coordination with employers for opportunities</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>दिव्यांगजनों के लिए जागरूकता अभियान</strong><em>Awareness campaigns for persons with disabilities</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सम्मानजनक एवं आत्मनिर्भर जीवन के लिए सहयोग</strong><em>Support for a dignified and self-reliant life</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 6. Senior Citizens ================= -->
+      <div class="work-card" data-tone="gold">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-person-cane"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">06 / 16</span>
+            <h3>वृद्धजन कल्याण — Senior Citizen Welfare</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जरूरतमंद बुजुर्गों की सहायता</strong><em>Assistance to needy senior citizens</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>भोजन सहायता</strong><em>Food assistance</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कपड़े एवं कंबल सहायता</strong><em>Clothing and blanket assistance</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वास्थ्य जांच शिविर</strong><em>Health check-up camps</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वास्थ्य एवं दवा संबंधी मार्गदर्शन</strong><em>Health and medication guidance</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>अकेले रहने वाले बुजुर्गों की सामुदायिक सहायता</strong><em>Community support for elderly people living alone</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सरकारी पेंशन एवं योजनाओं की जानकारी</strong><em>Awareness of government pensions and schemes</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>वरिष्ठ नागरिक अधिकार जागरूकता</strong><em>Senior citizen rights awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सामाजिक सुरक्षा जागरूकता</strong><em>Social security awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>वृद्धाश्रमों में सहयोग</strong><em>Support to old-age homes</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>मानसिक एवं सामाजिक सहयोग</strong><em>Emotional and social support</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>आवश्यक वस्तुओं की सहायता</strong><em>Assistance with essential items</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>डिजिटल साक्षरता</strong><em>Digital literacy</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>परिवार एवं समुदाय में सम्मान के प्रति जागरूकता</strong><em>Awareness for dignity and respect in family and community</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>वरिष्ठ नागरिक मिलन एवं सामुदायिक कार्यक्रम</strong><em>Senior citizen gatherings and community programs</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>वृद्धजन सहायता एवं जन-जागरूकता अभियान</strong><em>Senior citizen assistance and public awareness campaigns</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 7. Youth ================= -->
+      <div class="work-card" data-tone="blue">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-user-graduate"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">07 / 16</span>
+            <h3>युवा विकास एवं कौशल विकास — Youth &amp; Skill Development</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>युवाओं के लिए कौशल प्रशिक्षण</strong><em>Skill training for youth</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कंप्यूटर एवं डिजिटल शिक्षा</strong><em>Computer and digital education</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>करियर मार्गदर्शन</strong><em>Career guidance</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>रोजगार मार्गदर्शन</strong><em>Employment guidance</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>प्रतियोगी परीक्षा मार्गदर्शन</strong><em>Competitive examination guidance</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>व्यक्तित्व विकास</strong><em>Personality development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>संचार कौशल विकास</strong><em>Communication skill development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>नेतृत्व विकास</strong><em>Leadership development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>उद्यमिता प्रशिक्षण</strong><em>Entrepreneurship training</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वरोजगार मार्गदर्शन</strong><em>Self-employment guidance</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>व्यावसायिक प्रशिक्षण</strong><em>Vocational training</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>खेल एवं प्रतिभा विकास</strong><em>Sports and talent development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>युवा स्वयंसेवक कार्यक्रम</strong><em>Youth volunteer programs</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>वित्तीय एवं डिजिटल साक्षरता</strong><em>Financial and digital literacy</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सामाजिक नेतृत्व एवं जिम्मेदारी</strong><em>Social leadership and responsibility</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>युवा जागरूकता एवं विकास अभियान</strong><em>Youth awareness and development campaigns</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 8. Employment ================= -->
+      <div class="work-card" data-tone="teal">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">08 / 16</span>
+            <h3>रोजगार, स्वरोजगार एवं आजीविका — Employment &amp; Livelihood</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>रोजगार मार्गदर्शन</strong><em>Employment guidance</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कौशल प्रशिक्षण</strong><em>Skill training</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वरोजगार प्रशिक्षण</strong><em>Self-employment training</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>छोटे व्यवसाय के लिए मार्गदर्शन</strong><em>Guidance for small businesses</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>उद्यमिता विकास</strong><em>Entrepreneurship development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>रोजगार मेले एवं अवसरों की जानकारी</strong><em>Job fairs and employment opportunity awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>डिजिटल कौशल प्रशिक्षण</strong><em>Digital skill training</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>वित्तीय साक्षरता</strong><em>Financial literacy</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बैंकिंग एवं डिजिटल भुगतान जागरूकता</strong><em>Banking and digital payment awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वयं सहायता समूहों को सहयोग</strong><em>Support to Self-Help Groups</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>घरेलू उद्योग को बढ़ावा</strong><em>Promotion of home-based industries</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>हस्तशिल्प एवं कुटीर उद्योग प्रशिक्षण</strong><em>Handicraft and cottage industry training</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>ग्रामीण आजीविका विकास</strong><em>Rural livelihood development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>महिला स्वरोजगार कार्यक्रम</strong><em>Women’s self-employment programs</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>युवा उद्यमिता कार्यक्रम</strong><em>Youth entrepreneurship programs</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>रोजगार एवं आत्मनिर्भरता जागरूकता</strong><em>Employment and self-reliance awareness</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 9. Rural ================= -->
+      <div class="work-card" data-tone="gold">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-house-chimney"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">09 / 16</span>
+            <h3>ग्रामीण विकास एवं ग्राम उत्थान — Rural Development</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>ग्रामीण शिक्षा विकास</strong><em>Rural education development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>ग्रामीण स्वास्थ्य कार्यक्रम</strong><em>Rural health programs</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वच्छता अभियान</strong><em>Sanitation campaigns</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पेयजल जागरूकता</strong><em>Drinking water awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>महिला सशक्तिकरण</strong><em>Women empowerment</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>युवा विकास</strong><em>Youth development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कौशल प्रशिक्षण</strong><em>Skill training</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>रोजगार एवं आजीविका विकास</strong><em>Employment and livelihood development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>डिजिटल साक्षरता</strong><em>Digital literacy</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>किसान जागरूकता</strong><em>Farmer awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पर्यावरण संरक्षण</strong><em>Environmental protection</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जल संरक्षण</strong><em>Water conservation</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सरकारी योजनाओं की जानकारी</strong><em>Awareness of government schemes</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सामुदायिक विकास कार्यक्रम</strong><em>Community development programs</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>ग्राम स्तर पर जन-जागरूकता</strong><em>Village-level public awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>ग्रामीण आत्मनिर्भरता को बढ़ावा</strong><em>Promotion of rural self-reliance</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 10. Agriculture ================= -->
+      <div class="work-card" data-tone="teal">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-wheat-awn"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">10 / 16</span>
+            <h3>कृषि एवं किसान कल्याण — Agriculture &amp; Farmer Welfare</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>किसानों को कृषि संबंधी जानकारी</strong><em>Agricultural information for farmers</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>आधुनिक कृषि तकनीक की जानकारी</strong><em>Awareness of modern agricultural techniques</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>प्राकृतिक खेती जागरूकता</strong><em>Natural farming awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जैविक खेती जागरूकता</strong><em>Organic farming awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बीज एवं कृषि सामग्री संबंधी जानकारी</strong><em>Information on seeds and agricultural inputs</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>मृदा स्वास्थ्य जागरूकता</strong><em>Soil health awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जल संरक्षण आधारित कृषि</strong><em>Water-conservation-based agriculture</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बागवानी एवं फल-सब्जी उत्पादन</strong><em>Horticulture and fruit and vegetable production</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पशुपालन संबंधी प्रशिक्षण</strong><em>Livestock management training</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>किसान कौशल विकास</strong><em>Farmer skill development</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>किसान समूहों को सहयोग</strong><em>Support to farmer groups</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कृषि आधारित स्वरोजगार</strong><em>Agriculture-based self-employment</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कृषि बाजार संबंधी जागरूकता</strong><em>Agricultural market awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सरकारी कृषि योजनाओं की जानकारी</strong><em>Awareness of government agricultural schemes</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कृषि नवाचार एवं तकनीकी जागरूकता</strong><em>Agricultural innovation and technology awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>किसान आत्मनिर्भरता एवं आय-विविधीकरण जागरूकता</strong><em>Farmer self-reliance and income diversification awareness</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 11. Environment ================= -->
+      <div class="work-card" data-tone="blue">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-leaf"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">11 / 16</span>
+            <h3>पर्यावरण एवं जल संरक्षण — Environment &amp; Water Conservation</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>वृक्षारोपण अभियान</strong><em>Tree plantation campaigns</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पौध वितरण</strong><em>Distribution of saplings</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>वन संरक्षण जागरूकता</strong><em>Forest conservation awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जल संरक्षण अभियान</strong><em>Water conservation campaigns</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>वर्षा जल संचयन जागरूकता</strong><em>Rainwater harvesting awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>तालाब एवं जल स्रोत संरक्षण</strong><em>Protection of ponds and water sources</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>प्लास्टिक प्रदूषण के विरुद्ध अभियान</strong><em>Campaigns against plastic pollution</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कचरा प्रबंधन जागरूकता</strong><em>Waste management awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जैव विविधता संरक्षण</strong><em>Biodiversity conservation</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जलवायु परिवर्तन जागरूकता</strong><em>Climate change awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>ऊर्जा बचत जागरूकता</strong><em>Energy conservation awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पर्यावरण शिक्षा</strong><em>Environmental education</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्कूल पर्यावरण कार्यक्रम</strong><em>School environmental programs</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>हरित एवं स्वच्छ गांव अभियान</strong><em>Green and clean village campaigns</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जल प्रदूषण रोकथाम जागरूकता</strong><em>Water pollution prevention awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पर्यावरण संरक्षण में जनभागीदारी</strong><em>Public participation in environmental protection</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 12. Sanitation ================= -->
+      <div class="work-card" data-tone="gold">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-faucet-drip"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">12 / 16</span>
+            <h3>स्वच्छता, पेयजल एवं पोषण — Sanitation, Water &amp; Nutrition</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वच्छता जागरूकता अभियान</strong><em>Sanitation awareness campaigns</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वच्छ गांव अभियान</strong><em>Clean village campaigns</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>व्यक्तिगत स्वच्छता शिक्षा</strong><em>Personal hygiene education</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>हाथ धोने की जागरूकता</strong><em>Handwashing awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>शौचालय उपयोग जागरूकता</strong><em>Toilet-use awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वच्छ पेयजल जागरूकता</strong><em>Safe drinking water awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जल स्रोतों की स्वच्छता</strong><em>Cleanliness of water sources</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कचरा पृथक्करण जागरूकता</strong><em>Waste segregation awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>प्लास्टिक कम करने का अभियान</strong><em>Campaigns to reduce plastic use</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बच्चों में स्वच्छता शिक्षा</strong><em>Hygiene education for children</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पोषण जागरूकता</strong><em>Nutrition awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कुपोषण के प्रति जागरूकता</strong><em>Awareness about malnutrition</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>संतुलित आहार संबंधी शिक्षा</strong><em>Education on balanced diets</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बच्चों के पोषण कार्यक्रम</strong><em>Nutrition programs for children</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>महिलाओं एवं माताओं में पोषण जागरूकता</strong><em>Nutrition awareness among women and mothers</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वच्छता एवं पोषण जन-जागरूकता अभियान</strong><em>Public awareness campaigns on sanitation and nutrition</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 13. Animal Welfare ================= -->
+      <div class="work-card" data-tone="teal">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-paw"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">13 / 16</span>
+            <h3>पशु कल्याण एवं संरक्षण — Animal Welfare &amp; Protection</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बेसहारा पशुओं की सहायता</strong><em>Assistance to stray and abandoned animals</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पशु स्वास्थ्य जागरूकता</strong><em>Animal health awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पशु चिकित्सा शिविरों में सहयोग</strong><em>Support for veterinary camps</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पशु संरक्षण अभियान</strong><em>Animal protection campaigns</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पशु क्रूरता के विरुद्ध जागरूकता</strong><em>Awareness against animal cruelty</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पशुपालकों को जागरूक करना</strong><em>Awareness among livestock owners</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पशुओं के लिए भोजन एवं पानी की व्यवस्था में सहयोग</strong><em>Support for providing food and water to animals</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पक्षी संरक्षण</strong><em>Bird conservation</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>घायल पशुओं को सहायता सेवाओं तक पहुंचाने में सहयोग</strong><em>Support in connecting injured animals with appropriate care services</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पशु-पक्षी संरक्षण शिक्षा</strong><em>Animal and bird conservation education</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>ग्रामीण पशुपालन जागरूकता</strong><em>Rural livestock awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पशु टीकाकरण संबंधी जागरूकता</strong><em>Awareness about animal vaccination</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जिम्मेदार पशुपालन के प्रति जागरूकता</strong><em>Awareness of responsible animal care</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>जैव विविधता संरक्षण</strong><em>Biodiversity conservation</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पशु कल्याण स्वयंसेवक कार्यक्रम</strong><em>Animal welfare volunteer programs</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पशु-पक्षी संरक्षण जन-जागरूकता अभियान</strong><em>Public awareness campaigns for animal and bird protection</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 14. Disaster Relief ================= -->
+      <div class="work-card" data-tone="red">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-house-flood-water"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">14 / 16</span>
+            <h3>आपदा राहत एवं पुनर्वास — Disaster Relief &amp; Rehabilitation</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बाढ़ राहत कार्य</strong><em>Flood relief work</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सूखा प्रभावित क्षेत्रों में सहायता</strong><em>Assistance in drought-affected areas</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>चक्रवात एवं तूफान राहत</strong><em>Cyclone and storm relief</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>भूकंप जैसी आपदाओं में सहायता</strong><em>Assistance during disasters such as earthquakes</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>राहत सामग्री वितरण</strong><em>Distribution of relief materials</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>खाद्य सामग्री वितरण</strong><em>Distribution of food supplies</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कपड़े एवं कंबल वितरण</strong><em>Distribution of clothing and blankets</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>आवश्यक वस्तुओं की सहायता</strong><em>Assistance with essential items</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>राहत शिविरों में सहयोग</strong><em>Support at relief camps</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>प्रभावित परिवारों की सहायता</strong><em>Assistance to affected families</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बच्चों एवं बुजुर्गों की विशेष सहायता</strong><em>Special assistance to children and senior citizens</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वास्थ्य एवं स्वच्छता सहायता</strong><em>Health and sanitation assistance</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>आपदा पूर्व जागरूकता</strong><em>Pre-disaster awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>आपदा प्रबंधन प्रशिक्षण</strong><em>Disaster management training</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पुनर्वास एवं पुनर्स्थापन में सहयोग</strong><em>Support for rehabilitation and resettlement</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>आपदा प्रभावित क्षेत्रों में जन-सहयोग अभियान</strong><em>Public support campaigns in disaster-affected areas</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 15. Social Justice ================= -->
+      <div class="work-card" data-tone="gold">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">15 / 16</span>
+            <h3>सामाजिक न्याय, मानव अधिकार एवं कानूनी जागरूकता</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>मानव अधिकार जागरूकता</strong><em>Human rights awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>समानता एवं सामाजिक न्याय</strong><em>Equality and social justice</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>भेदभाव के विरुद्ध अभियान</strong><em>Campaigns against discrimination</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कमजोर वर्गों के अधिकारों की जानकारी</strong><em>Awareness of the rights of vulnerable groups</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>महिला अधिकार जागरूकता</strong><em>Women’s rights awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बाल अधिकार जागरूकता</strong><em>Child rights awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>दिव्यांग अधिकार जागरूकता</strong><em>Disability rights awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>वरिष्ठ नागरिक अधिकार जागरूकता</strong><em>Senior citizen rights awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>श्रमिक अधिकार जागरूकता</strong><em>Workers’ rights awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>नागरिक अधिकारों की जानकारी</strong><em>Awareness of citizens’ rights</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सरकारी योजनाओं की जानकारी</strong><em>Awareness of government schemes</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कानूनी अधिकारों की सामान्य जानकारी</strong><em>General awareness of legal rights</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>उपलब्ध विधिक सहायता सेवाओं तक मार्गदर्शन</strong><em>Guidance on accessing available legal aid services</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सामाजिक कुरीतियों के विरुद्ध अभियान</strong><em>Campaigns against social evils</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>बाल विवाह एवं दहेज के विरुद्ध जागरूकता</strong><em>Awareness against child marriage and dowry</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सामाजिक समानता एवं सद्भाव को बढ़ावा देना</strong><em>Promotion of social equality and harmony</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ================= 16. Digital & Social ================= -->
+      <div class="work-card" data-tone="blue">
+        <div class="work-header">
+          <div class="work-header-icon"><i class="fa-solid fa-laptop"></i></div>
+          <div class="work-header-text">
+            <span class="work-number">16 / 16</span>
+            <h3>डिजिटल शिक्षा, जन-जागरूकता एवं सामाजिक विकास</h3>
+          </div>
+          <div class="work-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="work-body">
+          <ul class="work-list">
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>कंप्यूटर शिक्षा</strong><em>Computer education</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>डिजिटल साक्षरता</strong><em>Digital literacy</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>इंटरनेट के सुरक्षित उपयोग की जागरूकता</strong><em>Awareness of safe internet use</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>साइबर सुरक्षा जागरूकता</strong><em>Cybersecurity awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>ऑनलाइन सरकारी सेवाओं की जानकारी</strong><em>Awareness of online government services</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>डिजिटल भुगतान की जानकारी</strong><em>Digital payment awareness</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>ऑनलाइन आवेदन एवं सेवाओं की जानकारी</strong><em>Awareness of online applications and services</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>डिजिटल दस्तावेज संबंधी जागरूकता</strong><em>Awareness of digital documents</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सोशल मीडिया का जिम्मेदार उपयोग</strong><em>Responsible use of social media</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वास्थ्य जागरूकता अभियान</strong><em>Health awareness campaigns</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>शिक्षा जागरूकता अभियान</strong><em>Education awareness campaigns</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>पर्यावरण जागरूकता अभियान</strong><em>Environmental awareness campaigns</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सामाजिक कुरीतियों के विरुद्ध अभियान</strong><em>Campaigns against social evils</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>नागरिक जिम्मेदारी एवं कर्तव्य जागरूकता</strong><em>Awareness of civic responsibilities and duties</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>स्वयंसेवा एवं सामाजिक भागीदारी</strong><em>Volunteering and social participation</em></div></li>
+            <li><i class="fa-solid fa-circle-check"></i><div><strong>सामाजिक एकता, सद्भाव एवं सामुदायिक विकास</strong><em>Social unity, harmony and community development</em></div></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= CTA ================= -->
+<section class="cta-strip">
+  <div class="container">
+    <div class="cta-badge">
+      <i class="fa-solid fa-hands-holding-heart"></i>
+      Join Our Mission
+    </div>
+
+    <h2>साथ चले हम, <span>बदलाव की ओर</span></h2>
+
+    <p>
+      इन 16 कार्य क्षेत्रों में से किसी भी क्षेत्र में आप हमारा साथ दे सकते हैं —
+      स्वयंसेवक बनकर, दान देकर या जागरूकता फैलाकर।
+    </p>
+
+    <div class="cta-buttons">
+      <a href="donate.html" class="btn btn-red btn-pulse-red">
+        <i class="fa-solid fa-heart"></i> Donate Now
+      </a>
+      <a href="join-us.html" class="btn btn-gold">
+        <i class="fa-solid fa-users"></i> Join as Volunteer
+      </a>
+      <a href="contact.html" class="btn btn-outline">
+        <i class="fa-solid fa-phone"></i> Contact Us
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+
+    <div class="footer-grid">
+
+      <div>
+        <div class="footer-brand-head">
+          <div class="footer-logo-box">
+            <img src="sath_chale_ham_logo_HD-1.png"
+                 alt="Sath Chale Hum Foundation Logo">
+          </div>
+          <div class="footer-brand-text">
+            <h3>साथ चले हम फाउंडेशन</h3>
+            <div class="footer-tagline-text">साथ चले हम, बदलाव की ओर</div>
+          </div>
+        </div>
+
+        <p class="footer-desc">
+          एक सामाजिक संस्था जो शिक्षा, स्वास्थ्य, महिला सशक्तिकरण और
+          समाज के सर्वांगीण विकास के लिए समर्पित है।
+        </p>
+
+        <div class="footer-badge">
+          <i class="fa-solid fa-award"></i>
+          12A &amp; 80G Certified NGO
+        </div>
+
+        <h4 class="footer-social-heading">Our Social Media | हमारे सोशल मीडिया</h4>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1PUUzvUfoo/" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sathchaleham" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com/@sathchaleham" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="YouTube">
+            <i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/917011893028" target="_blank"
+             rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Links | त्वरित लिंक</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home | होम</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us | हमारे बारे में</a></li>
+          <li><a href="work.html"><i class="fa-solid fa-chevron-right"></i> Our Work | हमारे कार्य</a></li>
+          <li><a href="team.html"><i class="fa-solid fa-chevron-right"></i> Our Team | हमारी टीम</a></li>
+          <li><a href="events.html"><i class="fa-solid fa-chevron-right"></i> Events | कार्यक्रम</a></li>
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Downloads | डाउनलोड</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact | संपर्क</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Get Involved | जुड़ें</h4>
+        <ul class="footer-links">
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Volunteer | स्वयंसेवक</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Internship | इंटर्नशिप</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> CSR Partnership | CSR</a></li>
+          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Donate | दान करें</a></li>
+          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Fundraise | फंडरेज़िंग</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Careers | करियर</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Resources | संसाधन</h4>
+        <ul class="footer-links">
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Reports | रिपोर्ट</a></li>
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Certificates | प्रमाण पत्र</a></li>
+          <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery | गैलरी</a></li>
+          <li><a href="videos.html"><i class="fa-solid fa-chevron-right"></i> Videos | वीडियो</a></li>
+          <li><a href="faq.html"><i class="fa-solid fa-chevron-right"></i> FAQ | सामान्य प्रश्न</a></li>
+          <li><a href="sitemap.html"><i class="fa-solid fa-chevron-right"></i> Sitemap | साइटमैप</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Contact Us | संपर्क</h4>
+        <ul class="contact-info">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Address | पता</strong>
+              भारतीय नगर, वार्ड नं. 26/35, सहरसा, बिहार – 852201
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Helpline | हेल्पलाइन</strong>
+              <a href="tel:+917011893028" style="color:#93C5FD;">+91 7011893028</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Email | ईमेल</strong>
+              <a href="mailto:sathchaleham@gmail.com" style="color:#93C5FD;">sathchaleham@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <strong>Office Hours | समय</strong>
+              सोम – शनि · 10:00 AM – 6:00 PM
+            </div>
+          </li>
+        </ul>
+
+        <div class="footer-newsletter">
+          <label>Newsletter | न्यूज़लेटर</label>
+          <form class="newsletter-form"
+                onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
+            <input type="email" placeholder="your@email.com" required>
+            <button type="submit" aria-label="Subscribe">
+              <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+
+        <div class="footer-copy">
+          © 2026 <strong>Sath Chale Hum Foundation</strong> · All Rights Reserved
+        </div>
+
+        <div class="footer-legal">
+          <a href="terms.html">Terms</a><span>·</span>
+          <a href="privacy.html">Privacy</a><span>·</span>
+          <a href="sitemap.html">Sitemap</a><span>·</span>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+
+        <div class="footer-made">
+          Made with <i class="fa-solid fa-heart"></i> in Bihar
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ================= BACK TO TOP ================= -->
+<button class="back-top" id="backTop" aria-label="Back to Top" type="button">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+  /* MOBILE MENU */
+  var menuToggle = document.getElementById("menuToggle");
+  var mobileNav = document.getElementById("mobileNav");
+  if(menuToggle && mobileNav){
+    menuToggle.addEventListener("click", function(){
+      mobileNav.classList.toggle("active");
+      menuToggle.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded",
+        mobileNav.classList.contains("active") ? "true" : "false");
+    });
+    mobileNav.querySelectorAll("a").forEach(function(link){
+      link.addEventListener("click", function(){
+        mobileNav.classList.remove("active");
+        menuToggle.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  /* WORK AREA DROPDOWNS */
+  var workCards = document.querySelectorAll(".work-card");
+
+  workCards.forEach(function(card){
+    var header = card.querySelector(".work-header");
+    if(header){
+      header.addEventListener("click", function(){
+        card.classList.toggle("open");
+      });
+    }
+  });
+
+  /* EXPAND ALL */
+  var expandAllBtn = document.getElementById("expandAll");
+  if(expandAllBtn){
+    expandAllBtn.addEventListener("click", function(){
+      workCards.forEach(function(card){
+        card.classList.add("open");
+      });
+    });
+  }
+
+  /* COLLAPSE ALL */
+  var collapseAllBtn = document.getElementById("collapseAll");
+  if(collapseAllBtn){
+    collapseAllBtn.addEventListener("click", function(){
+      workCards.forEach(function(card){
+        card.classList.remove("open");
+      });
+    });
+  }
+
+  /* BACK TO TOP */
+  var backTop = document.getElementById("backTop");
+  if(backTop){
+    window.addEventListener("scroll", function(){
+      if(window.scrollY > 500){
+        backTop.classList.add("show");
+      } else {
+        backTop.classList.remove("show");
+      }
+    });
+    backTop.addEventListener("click", function(){
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+});
+</script>
+
+</body>
+</html>
