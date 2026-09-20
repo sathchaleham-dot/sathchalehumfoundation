@@ -1,1 +1,2569 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <title>Contact Us | संपर्क करें | Sath Chale Hum Foundation</title>
+  <meta name="description" content="साथ चले हम फाउंडेशन से संपर्क करें — पता, ईमेल, हेल्पलाइन, आपातकालीन नंबर, विभाग अनुसार संपर्क एवं संपर्क फॉर्म।">
+  <meta name="theme-color" content="#0A2540">
+  <link rel="icon" type="image/png" href="sath_chale_ham_logo_HD-1.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <style>
+    *{ margin:0; padding:0; box-sizing:border-box; }
+    html{ scroll-behavior:smooth; overflow-x:hidden; }
+
+    :root{
+      --navy:#0A2540; --navy-2:#0F2E4F;
+      --blue:#1E40AF; --blue-2:#2563EB; --blue-light:#3B82F6;
+      --blue-pale:#EFF6FF; --blue-soft:#DBEAFE;
+      --gold:#FBBF24; --gold-dark:#D97706; --gold-pale:#FEF3C7;
+      --red:#DC2626; --red-dark:#991B1B; --green:#059669;
+      --white:#FFFFFF; --text:#0F172A; --text-soft:#475569;
+      --muted:#64748B; --border:#E2E8F0; --bg:#F8FAFC;
+    }
+
+    body{ font-family:"Poppins","Tiro Devanagari Hindi",sans-serif;
+      background:var(--bg); color:var(--text); overflow-x:hidden; line-height:1.6; }
+    a{ text-decoration:none; color:inherit; }
+    img{ max-width:100%; display:block; }
+    button{ font-family:inherit; cursor:pointer; border:none; }
+
+    .container{ width:min(1240px,92%); margin:auto; }
+    .hindi{ font-family:"Tiro Devanagari Hindi",serif; }
+
+    .section{ padding:90px 0; position:relative; overflow:hidden; }
+    .section-title{ text-align:center; margin-bottom:55px; }
+    .section-title .small-title{
+      display:inline-block; color:var(--blue); font-size:.9rem; font-weight:800;
+      letter-spacing:2.5px; text-transform:uppercase; margin-bottom:12px; }
+    .section-title h2{ font-size:clamp(1.9rem,3.8vw,3rem); line-height:1.2;
+      font-weight:900; color:var(--navy); }
+    .section-title h2 span{ color:var(--blue-2); }
+    .section-title p{ max-width:800px; margin:18px auto 0;
+      color:var(--muted); line-height:1.8; font-size:1rem; }
+
+    /* HEADER */
+    .site-header{
+      position:fixed; left:0; top:0; width:100%; z-index:9999;
+      background:linear-gradient(135deg,#0A2540 0%,#0F2E4F 50%,#0A2540 100%);
+      backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
+      border-bottom:1px solid rgba(59,130,246,.15);
+      box-shadow:0 8px 32px rgba(10,37,64,.18);
+    }
+    .header-inner{ min-height:92px; display:flex; align-items:center;
+      justify-content:space-between; gap:20px; }
+    .brand{ display:flex; align-items:center; gap:14px;
+      min-width:0; flex-shrink:0; }
+    .logo-box{ width:66px; height:66px; border-radius:16px;
+      background:#FFFFFF; display:block; padding:0;
+      box-shadow:0 8px 24px rgba(59,130,246,.35);
+      border:2px solid rgba(251,191,36,.4);
+      transition:.35s ease; flex-shrink:0; overflow:hidden;
+      position:relative; line-height:0; }
+    .logo-box:hover{ transform:translateY(-2px) rotate(-3deg);
+      border-color:var(--gold); }
+    .logo-box img{ width:100%; height:100%;
+      object-fit:cover; object-position:center; }
+    .brand-text{ min-width:0; }
+    .brand-name{ color:#fff;
+      font-size:clamp(1.2rem,2.4vw,1.7rem); font-weight:900;
+      line-height:1.1; white-space:nowrap; letter-spacing:-.5px;
+      font-family:"Tiro Devanagari Hindi",serif; }
+    .brand-name .gold{ color:var(--gold); }
+    .brand-tagline{ color:#93C5FD; font-size:.7rem; font-weight:600;
+      margin-top:3px; white-space:nowrap; letter-spacing:.4px; }
+
+    .desktop-nav{ display:flex; align-items:center; gap:2px; flex-wrap:nowrap; }
+    .desktop-nav > a{ color:#E0F2FE; font-size:.78rem; font-weight:700;
+      padding:11px 10px; border-radius:10px; transition:.25s ease;
+      white-space:nowrap; position:relative; }
+    .desktop-nav > a:hover{ color:var(--gold);
+      background:rgba(59,130,246,.15); }
+    .desktop-nav > a.active{ color:var(--gold);
+      background:rgba(59,130,246,.2); }
+    .desktop-nav > a.active::after{ content:""; position:absolute;
+      bottom:4px; left:50%; transform:translateX(-50%);
+      width:20px; height:2px; border-radius:2px; background:var(--gold); }
+
+    .donate-nav{ display:inline-flex; align-items:center; gap:7px;
+      background:linear-gradient(135deg,#DC2626,#991B1B)!important;
+      padding:11px 17px!important; color:#fff!important;
+      font-weight:900!important; border-radius:11px!important;
+      box-shadow:0 6px 20px rgba(220,38,38,.45);
+      animation:pulseDonate 2s infinite; margin-left:6px; }
+    .donate-nav:hover{ color:#fff!important;
+      background:linear-gradient(135deg,#EF4444,#DC2626)!important;
+      transform:translateY(-2px)!important; }
+    @keyframes pulseDonate{
+      0%,100%{ transform:scale(1); }
+      50%{ transform:scale(1.04); } }
+
+    .menu-toggle{ display:none; width:46px; height:46px;
+      border-radius:12px; background:rgba(59,130,246,.15);
+      border:1px solid rgba(59,130,246,.3); padding:11px; }
+    .menu-toggle span{ display:block; width:100%; height:2.5px;
+      background:#fff; margin:4.5px 0; border-radius:5px;
+      transition:.3s; }
+    .menu-toggle.active span:nth-child(1){
+      transform:rotate(45deg) translate(6px,6px); }
+    .menu-toggle.active span:nth-child(2){ opacity:0; }
+    .menu-toggle.active span:nth-child(3){
+      transform:rotate(-45deg) translate(6px,-6px); }
+
+    .mobile-nav{ display:none;
+      background:linear-gradient(180deg,#0A2540,#0F2E4F);
+      border-top:1px solid rgba(59,130,246,.2);
+      padding:14px 4% 20px; }
+    .mobile-nav a{ display:block; color:#E0F2FE;
+      padding:14px 16px; border-radius:10px; font-weight:700;
+      font-size:.9rem; margin:4px 0; transition:.25s;
+      border:1px solid transparent; }
+    .mobile-nav a:hover, .mobile-nav a.active{
+      background:rgba(59,130,246,.15); color:var(--gold);
+      border-color:rgba(59,130,246,.3); }
+    .mobile-nav .donate-nav{ text-align:center;
+      margin-top:12px; justify-content:center; }
+    .mobile-nav.active{ display:block; }
+
+    /* PAGE HERO */
+    .page-hero{
+      padding:170px 0 80px;
+      background:linear-gradient(135deg,rgba(10,37,64,.94),rgba(30,64,175,.88)),
+        url("https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1800&q=85")
+        center/cover;
+      color:#fff; text-align:center; position:relative;
+    }
+    .page-hero::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
+      background-size:24px 24px; opacity:.5; pointer-events:none;
+    }
+    .page-hero .container{ position:relative; z-index:2; }
+    .breadcrumb{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:8px 18px; border-radius:100px;
+      background:rgba(251,191,36,.12);
+      border:1px solid rgba(251,191,36,.35);
+      color:var(--gold); font-size:.78rem; font-weight:800;
+      letter-spacing:1.5px; text-transform:uppercase;
+      margin-bottom:22px;
+    }
+    .breadcrumb a{ color:#93C5FD; }
+    .breadcrumb a:hover{ color:var(--gold); }
+    .breadcrumb i{ font-size:.6rem; color:var(--gold); }
+    .page-hero h1{
+      font-size:clamp(2rem,5vw,3.5rem);
+      font-weight:900; line-height:1.15;
+      font-family:"Tiro Devanagari Hindi",serif;
+      margin-bottom:18px; letter-spacing:-1px; }
+    .page-hero h1 span{ color:var(--gold); }
+    .page-hero p{
+      max-width:760px; margin:auto;
+      color:#93C5FD; font-size:1rem; line-height:1.85; }
+
+    /* BUTTONS */
+    .btn{ display:inline-flex; align-items:center; justify-content:center;
+      gap:10px; min-height:54px; padding:15px 30px;
+      border-radius:13px; font-size:.9rem; font-weight:800;
+      transition:.3s ease; letter-spacing:.3px;
+      cursor:pointer; font-family:inherit; }
+    .btn:hover{ transform:translateY(-4px); }
+    .btn-red{ color:#fff;
+      background:linear-gradient(135deg,#DC2626,#991B1B);
+      box-shadow:0 12px 32px rgba(220,38,38,.45); }
+    .btn-gold{ color:#0A2540;
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      box-shadow:0 12px 32px rgba(251,191,36,.45); }
+    .btn-blue{ color:#fff;
+      background:linear-gradient(135deg,#2563EB,#1E40AF);
+      box-shadow:0 12px 32px rgba(37,99,235,.45); }
+    .btn-green{ color:#fff;
+      background:linear-gradient(135deg,#059669,#047857);
+      box-shadow:0 12px 32px rgba(5,150,105,.45); }
+    .btn-outline{ color:#fff; background:rgba(255,255,255,.06);
+      border:1.5px solid rgba(255,255,255,.3);
+      backdrop-filter:blur(8px); }
+    .btn-outline:hover{ background:rgba(255,255,255,.14);
+      border-color:var(--gold); color:var(--gold); }
+    .btn-pulse-red{ animation:pulseRed 1.8s infinite; }
+    @keyframes pulseRed{
+      0%,100%{ box-shadow:0 12px 32px rgba(220,38,38,.4); }
+      50%{ box-shadow:0 16px 42px rgba(220,38,38,.75); } }
+
+    /* CONTACT INFO CARDS */
+    .contact-info-section{
+      padding:80px 0;
+      background:linear-gradient(180deg,#FFFFFF,#F8FAFC);
+      position:relative;
+    }
+    .contact-cards-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:22px;
+    }
+    .contact-info-card{
+      padding:32px 24px 28px;
+      border-radius:22px;
+      background:#fff;
+      border:1px solid var(--border);
+      text-align:center;
+      transition:.35s cubic-bezier(.2,.8,.3,1);
+      position:relative;
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      box-shadow:0 10px 28px rgba(15,23,42,.06);
+    }
+    .contact-info-card::before{
+      content:""; position:absolute;
+      top:0; left:0; right:0; height:5px;
+      background:linear-gradient(90deg,#2563EB,#1E40AF);
+    }
+    .contact-info-card:nth-child(2)::before{
+      background:linear-gradient(90deg,#FBBF24,#F59E0B);
+    }
+    .contact-info-card:nth-child(3)::before{
+      background:linear-gradient(90deg,#DC2626,#991B1B);
+    }
+    .contact-info-card:nth-child(4)::before{
+      background:linear-gradient(90deg,#25D366,#128C7E);
+    }
+    .contact-info-card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 22px 55px rgba(37,99,235,.15);
+      border-color:var(--blue-light);
+    }
+    .contact-info-card:nth-child(2):hover{
+      box-shadow:0 22px 55px rgba(251,191,36,.15);
+      border-color:var(--gold);
+    }
+    .contact-info-card:nth-child(3):hover{
+      box-shadow:0 22px 55px rgba(220,38,38,.15);
+      border-color:var(--red);
+    }
+    .contact-info-card:nth-child(4):hover{
+      box-shadow:0 22px 55px rgba(37,211,102,.15);
+      border-color:#25D366;
+    }
+
+    .contact-info-icon{
+      width:70px; height:70px;
+      border-radius:20px;
+      margin:0 auto 20px;
+      display:grid; place-items:center;
+      background:linear-gradient(145deg,#2563EB,#1E40AF);
+      color:#fff;
+      font-size:1.6rem;
+      box-shadow:0 12px 28px rgba(37,99,235,.35);
+    }
+    .contact-info-card:nth-child(2) .contact-info-icon{
+      background:linear-gradient(145deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      box-shadow:0 12px 28px rgba(251,191,36,.4);
+    }
+    .contact-info-card:nth-child(3) .contact-info-icon{
+      background:linear-gradient(145deg,#DC2626,#991B1B);
+      box-shadow:0 12px 28px rgba(220,38,38,.4);
+    }
+    .contact-info-card:nth-child(4) .contact-info-icon{
+      background:linear-gradient(145deg,#25D366,#128C7E);
+      box-shadow:0 12px 28px rgba(37,211,102,.4);
+    }
+
+    .contact-info-card h3{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.1rem;
+      font-weight:900;
+      color:var(--navy);
+      margin-bottom:12px;
+      line-height:1.35;
+    }
+    .contact-info-card p{
+      color:var(--text-soft);
+      font-size:.85rem;
+      line-height:1.75;
+      margin:0 0 12px;
+      flex:1;
+    }
+    .contact-info-card p:last-child{ margin-bottom:0; }
+    .contact-info-card a{
+      color:var(--blue-2);
+      font-weight:800;
+      word-break:break-word;
+      transition:.25s;
+    }
+    .contact-info-card a:hover{ color:var(--blue); }
+    .contact-info-card:nth-child(3) a{ color:var(--red); }
+    .contact-info-card:nth-child(4) a{ color:#25D366; }
+
+    @media(max-width:1000px){
+      .contact-cards-grid{ grid-template-columns:repeat(2,1fr); gap:18px; }
+    }
+    @media(max-width:600px){
+      .contact-cards-grid{ grid-template-columns:1fr; gap:16px; }
+      .contact-info-card{ padding:26px 20px 22px; }
+      .contact-info-section{ padding:60px 0; }
+    }
+
+    /* EMERGENCY NUMBERS */
+    .emergency-section{
+      padding:80px 0;
+      background:linear-gradient(135deg,#7F1D1D,#DC2626 50%,#991B1B);
+      color:#fff;
+      position:relative;
+      overflow:hidden;
+    }
+    .emergency-section::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.06) 1px,transparent 1px);
+      background-size:26px 26px;
+      opacity:.6;
+      pointer-events:none;
+    }
+    .emergency-section .container{ position:relative; z-index:2; }
+
+    .emergency-section .section-title h2{ color:#fff; }
+    .emergency-section .section-title h2 span{ color:var(--gold); }
+    .emergency-section .section-title .small-title{ color:var(--gold); }
+    .emergency-section .section-title p{ color:#FECACA; }
+
+    .emergency-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+    }
+    .emergency-card{
+      padding:24px 20px;
+      border-radius:20px;
+      background:rgba(255,255,255,.12);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,.2);
+      text-align:center;
+      transition:.35s cubic-bezier(.2,.8,.3,1);
+      cursor:pointer;
+    }
+    .emergency-card:hover{
+      transform:translateY(-8px) scale(1.03);
+      background:rgba(255,255,255,.2);
+      border-color:rgba(251,191,36,.5);
+      box-shadow:0 20px 45px rgba(0,0,0,.3);
+    }
+    .emergency-card-icon{
+      width:56px; height:56px;
+      border-radius:16px;
+      margin:0 auto 14px;
+      display:grid; place-items:center;
+      background:linear-gradient(145deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      font-size:1.4rem;
+      box-shadow:0 10px 24px rgba(251,191,36,.4);
+    }
+    .emergency-card h4{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:.95rem;
+      font-weight:900;
+      color:#fff;
+      margin-bottom:8px;
+      line-height:1.35;
+    }
+    .emergency-card-number{
+      display:inline-block;
+      font-family:"Poppins",sans-serif;
+      font-size:1.6rem;
+      font-weight:900;
+      color:var(--gold);
+      letter-spacing:1px;
+      line-height:1;
+      margin-top:6px;
+      text-decoration:none;
+    }
+    .emergency-card-number:hover{ color:#FDE68A; }
+
+    @media(max-width:1000px){
+      .emergency-grid{ grid-template-columns:repeat(2,1fr); gap:16px; }
+    }
+    @media(max-width:500px){
+      .emergency-grid{ grid-template-columns:1fr; gap:14px; }
+      .emergency-card{ padding:20px 16px; }
+    }
+
+    /* CONTACT DIRECTORY */
+    .directory-section{
+      padding:90px 0;
+      background:linear-gradient(180deg,#FFFFFF,#EFF6FF);
+      position:relative;
+      overflow:hidden;
+    }
+    .directory-section::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(37,99,235,.04) 1px,transparent 1px);
+      background-size:28px 28px;
+      pointer-events:none;
+    }
+    .directory-section .container{ position:relative; z-index:2; }
+
+    .directory-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:22px;
+    }
+    .directory-card{
+      padding:30px 26px;
+      border-radius:22px;
+      background:#fff;
+      border:1px solid var(--border);
+      box-shadow:0 12px 34px rgba(15,23,42,.08);
+      transition:.35s cubic-bezier(.2,.8,.3,1);
+      position:relative;
+      overflow:hidden;
+    }
+    .directory-card::before{
+      content:""; position:absolute;
+      top:0; left:0; right:0; height:5px;
+      background:linear-gradient(90deg,#2563EB,#1E40AF);
+    }
+    .directory-card[data-tone="gold"]::before{
+      background:linear-gradient(90deg,#FBBF24,#F59E0B);
+    }
+    .directory-card[data-tone="red"]::before{
+      background:linear-gradient(90deg,#DC2626,#991B1B);
+    }
+    .directory-card[data-tone="teal"]::before{
+      background:linear-gradient(90deg,#059669,#047857);
+    }
+    .directory-card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 22px 55px rgba(37,99,235,.15);
+      border-color:var(--blue-light);
+    }
+
+    .directory-icon{
+      width:60px; height:60px;
+      border-radius:18px;
+      margin-bottom:18px;
+      display:grid; place-items:center;
+      background:linear-gradient(145deg,#2563EB,#1E40AF);
+      color:#fff;
+      font-size:1.4rem;
+      box-shadow:0 10px 24px rgba(37,99,235,.3);
+    }
+    .directory-card[data-tone="gold"] .directory-icon{
+      background:linear-gradient(145deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      box-shadow:0 10px 24px rgba(251,191,36,.35);
+    }
+    .directory-card[data-tone="red"] .directory-icon{
+      background:linear-gradient(145deg,#DC2626,#991B1B);
+      box-shadow:0 10px 24px rgba(220,38,38,.3);
+    }
+    .directory-card[data-tone="teal"] .directory-icon{
+      background:linear-gradient(145deg,#059669,#047857);
+      box-shadow:0 10px 24px rgba(5,150,105,.3);
+    }
+
+    .directory-dept{
+      font-size:.68rem;
+      font-weight:900;
+      letter-spacing:1.5px;
+      text-transform:uppercase;
+      color:var(--blue-2);
+      margin-bottom:6px;
+    }
+    .directory-card[data-tone="gold"] .directory-dept{ color:var(--gold-dark); }
+    .directory-card[data-tone="red"] .directory-dept{ color:var(--red); }
+    .directory-card[data-tone="teal"] .directory-dept{ color:var(--green); }
+
+    .directory-card h4{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.15rem;
+      font-weight:900;
+      color:var(--navy);
+      margin-bottom:6px;
+      line-height:1.35;
+    }
+    .directory-person{
+      color:var(--text-soft);
+      font-size:.85rem;
+      font-weight:700;
+      margin-bottom:14px;
+    }
+    .directory-actions{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+    .directory-action{
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      padding:10px 14px;
+      border-radius:11px;
+      background:var(--blue-pale);
+      color:var(--blue-2);
+      font-size:.82rem;
+      font-weight:800;
+      transition:.25s;
+      word-break:break-all;
+    }
+    .directory-action:hover{
+      background:var(--blue-soft);
+      transform:translateX(4px);
+    }
+    .directory-card[data-tone="gold"] .directory-action{
+      background:var(--gold-pale);
+      color:var(--gold-dark);
+    }
+    .directory-card[data-tone="gold"] .directory-action:hover{
+      background:#FDE68A;
+    }
+    .directory-card[data-tone="red"] .directory-action{
+      background:#FEE2E2;
+      color:var(--red);
+    }
+    .directory-card[data-tone="red"] .directory-action:hover{
+      background:#FECACA;
+    }
+    .directory-card[data-tone="teal"] .directory-action{
+      background:#D1FAE5;
+      color:var(--green);
+    }
+    .directory-card[data-tone="teal"] .directory-action:hover{
+      background:#A7F3D0;
+    }
+    .directory-action i{
+      flex-shrink:0;
+      font-size:.85rem;
+    }
+
+    @media(max-width:1000px){
+      .directory-grid{ grid-template-columns:repeat(2,1fr); gap:18px; }
+    }
+    @media(max-width:600px){
+      .directory-grid{ grid-template-columns:1fr; gap:16px; }
+      .directory-section{ padding:60px 0; }
+      .directory-card{ padding:26px 22px; }
+    }
+
+    /* CONTACT FORM SECTION */
+    .contact-form-section{
+      padding:90px 0;
+      background:
+        radial-gradient(circle at 12% 15%,rgba(251,191,36,.06),transparent 32%),
+        radial-gradient(circle at 88% 85%,rgba(37,99,235,.08),transparent 35%),
+        linear-gradient(160deg,#F8FAFC,#EFF6FF);
+      position:relative; overflow:hidden;
+    }
+    .contact-form-section::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(37,99,235,.05) 1px,transparent 1px);
+      background-size:28px 28px; pointer-events:none;
+    }
+    .contact-form-section .container{ position:relative; z-index:2; }
+
+    .contact-form-wrapper{
+      display:grid;
+      grid-template-columns:1.1fr 1fr;
+      gap:34px;
+      align-items:start;
+    }
+
+    .contact-form-box{
+      background:#fff;
+      border-radius:26px;
+      padding:40px 36px;
+      box-shadow:0 20px 55px rgba(15,23,42,.1);
+      border:1px solid var(--border);
+      position:relative;
+      overflow:hidden;
+    }
+    .contact-form-box::before{
+      content:""; position:absolute;
+      top:0; left:0; right:0; height:5px;
+      background:linear-gradient(90deg,#2563EB,#1E40AF);
+    }
+
+    .contact-form-head{
+      text-align:center;
+      margin-bottom:28px;
+      padding-bottom:22px;
+      border-bottom:1px dashed var(--border);
+    }
+    .contact-form-head .form-icon{
+      width:64px; height:64px;
+      border-radius:18px;
+      margin:0 auto 16px;
+      display:grid; place-items:center;
+      background:linear-gradient(145deg,#2563EB,#1E40AF);
+      color:#fff;
+      font-size:1.5rem;
+      box-shadow:0 12px 28px rgba(37,99,235,.35);
+    }
+    .contact-form-head h3{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.4rem;
+      font-weight:900;
+      color:var(--navy);
+      margin-bottom:8px;
+      line-height:1.35;
+    }
+    .contact-form-head p{
+      color:var(--muted);
+      font-size:.85rem;
+      line-height:1.7;
+      margin:0;
+    }
+
+    /* QUICK BUTTONS */
+    .quick-btn-wrap{
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+      justify-content:center;
+      margin-bottom:22px;
+      padding-bottom:20px;
+      border-bottom:1px dashed var(--border);
+    }
+    .quick-btn{
+      padding:8px 14px;
+      border-radius:100px;
+      background:#F8FAFC;
+      color:var(--text-soft);
+      font-size:.76rem;
+      font-weight:800;
+      border:1.5px solid var(--border);
+      transition:.3s;
+      cursor:pointer;
+    }
+    .quick-btn:hover{
+      border-color:var(--blue-light);
+      color:var(--blue-2);
+      background:var(--blue-pale);
+      transform:translateY(-2px);
+    }
+
+    .form-row{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+      margin-bottom:16px;
+    }
+    .form-row.single{ grid-template-columns:1fr; }
+
+    .form-group{
+      display:flex;
+      flex-direction:column;
+      min-width:0;
+    }
+    .form-group label{
+      font-size:.8rem;
+      font-weight:800;
+      color:var(--navy);
+      margin-bottom:8px;
+      letter-spacing:.2px;
+      display:flex;
+      align-items:center;
+      gap:4px;
+      flex-wrap:wrap;
+    }
+    .form-group label .req{
+      color:var(--red);
+      font-size:.85rem;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea{
+      width:100%;
+      padding:13px 15px;
+      border-radius:12px;
+      border:2px solid var(--border);
+      background:#F8FAFC;
+      font-family:inherit;
+      font-size:.9rem;
+      color:var(--text);
+      transition:.25s;
+      outline:none;
+    }
+    .form-group textarea{
+      resize:vertical;
+      min-height:120px;
+      line-height:1.65;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus{
+      border-color:var(--blue-2);
+      background:#fff;
+      box-shadow:0 0 0 4px rgba(37,99,235,.1);
+    }
+    .form-group select{
+      cursor:pointer;
+      appearance:none;
+      background-image:url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563EB' stroke-width='3' stroke-linecap='round'%3e%3cpolyline points='6 9 12 15 18 9'/%3e%3c/svg%3e");
+      background-repeat:no-repeat;
+      background-position:right 14px center;
+      background-size:13px;
+      padding-right:38px;
+    }
+
+    .form-submit-btn{
+      width:100%;
+      padding:16px 24px;
+      border-radius:14px;
+      font-size:.95rem;
+      font-weight:900;
+      letter-spacing:.5px;
+      color:#fff;
+      background:linear-gradient(135deg,#2563EB,#1E40AF);
+      box-shadow:0 14px 34px rgba(37,99,235,.35);
+      transition:.3s;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      cursor:pointer;
+      border:none;
+      margin-top:10px;
+    }
+    .form-submit-btn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 20px 45px rgba(37,99,235,.5);
+    }
+
+    .contact-side{
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+    }
+
+    .contact-side-box{
+      padding:28px 26px;
+      border-radius:22px;
+      background:#fff;
+      border:1px solid var(--border);
+      box-shadow:0 12px 34px rgba(15,23,42,.08);
+      transition:.3s;
+      position:relative;
+      overflow:hidden;
+    }
+    .contact-side-box::before{
+      content:""; position:absolute;
+      top:0; left:0; bottom:0; width:5px;
+      background:linear-gradient(180deg,#2563EB,#1E40AF);
+    }
+    .contact-side-box:nth-child(2)::before{
+      background:linear-gradient(180deg,#FBBF24,#F59E0B);
+    }
+    .contact-side-box:hover{
+      transform:translateY(-5px);
+      box-shadow:0 20px 50px rgba(37,99,235,.15);
+      border-color:var(--blue-light);
+    }
+
+    .contact-side-icon{
+      width:52px; height:52px;
+      border-radius:15px;
+      display:grid; place-items:center;
+      background:linear-gradient(145deg,#2563EB,#1E40AF);
+      color:#fff;
+      font-size:1.3rem;
+      margin-bottom:16px;
+      box-shadow:0 10px 24px rgba(37,99,235,.3);
+    }
+    .contact-side-box:nth-child(2) .contact-side-icon{
+      background:linear-gradient(145deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      box-shadow:0 10px 24px rgba(251,191,36,.35);
+    }
+
+    .contact-side-box h4{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.05rem;
+      font-weight:900;
+      color:var(--navy);
+      margin-bottom:10px;
+      line-height:1.4;
+    }
+    .contact-side-box p{
+      color:var(--text-soft);
+      font-size:.85rem;
+      line-height:1.75;
+      margin:0 0 10px;
+    }
+    .contact-side-box p:last-child{ margin-bottom:0; }
+
+    @media(max-width:1000px){
+      .contact-form-wrapper{ grid-template-columns:1fr; gap:26px; }
+      .contact-form-box{ padding:32px 26px; }
+    }
+    @media(max-width:600px){
+      .contact-form-section{ padding:60px 0; }
+      .contact-form-box{ padding:26px 20px; border-radius:22px; }
+      .contact-form-head h3{ font-size:1.15rem; }
+      .contact-form-head .form-icon{ width:56px; height:56px; font-size:1.3rem; }
+      .form-row{ grid-template-columns:1fr; gap:0; }
+      .form-row .form-group{ margin-bottom:16px; }
+      .form-submit-btn{ font-size:.88rem; padding:14px 20px; }
+      .contact-side-box{ padding:24px 22px; }
+    }
+
+    /* NEWSLETTER SECTION */
+    .newsletter-section{
+      padding:80px 0;
+      background:
+        radial-gradient(circle at 15% 25%,rgba(251,191,36,.2),transparent 40%),
+        radial-gradient(circle at 85% 75%,rgba(59,130,246,.2),transparent 40%),
+        linear-gradient(135deg,#0A2540 0%,#1E40AF 50%,#0A2540 100%);
+      color:#fff;
+      position:relative;
+      overflow:hidden;
+    }
+    .newsletter-section::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
+      background-size:24px 24px;
+      opacity:.7;
+      pointer-events:none;
+    }
+    .newsletter-section .container{ position:relative; z-index:2; }
+
+    .newsletter-inner{
+      max-width:860px;
+      margin:auto;
+      text-align:center;
+      padding:44px 40px;
+      border-radius:28px;
+      background:rgba(255,255,255,.06);
+      backdrop-filter:blur(14px);
+      border:1.5px solid rgba(255,255,255,.15);
+      box-shadow:0 30px 70px rgba(0,0,0,.3);
+    }
+
+    .newsletter-icon{
+      width:80px; height:80px;
+      border-radius:22px;
+      margin:0 auto 20px;
+      display:grid; place-items:center;
+      background:linear-gradient(145deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      font-size:2rem;
+      box-shadow:0 16px 40px rgba(251,191,36,.5),
+        inset 0 3px 0 rgba(255,255,255,.3);
+    }
+
+    .newsletter-inner h2{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(1.5rem,3.5vw,2.3rem);
+      font-weight:900;
+      line-height:1.3;
+      margin-bottom:12px;
+    }
+    .newsletter-inner h2 span{ color:var(--gold); }
+
+    .newsletter-inner > p{
+      color:#93C5FD;
+      font-size:.95rem;
+      line-height:1.8;
+      max-width:620px;
+      margin:0 auto 28px;
+    }
+
+    .newsletter-form-new{
+      display:flex;
+      gap:10px;
+      max-width:600px;
+      margin:auto;
+      flex-wrap:wrap;
+    }
+    .newsletter-form-new input{
+      flex:1;
+      min-width:200px;
+      padding:15px 18px;
+      border-radius:13px;
+      border:2px solid rgba(255,255,255,.2);
+      background:rgba(255,255,255,.08);
+      color:#fff;
+      font-family:inherit;
+      font-size:.9rem;
+      transition:.25s;
+      outline:none;
+    }
+    .newsletter-form-new input::placeholder{ color:#93C5FD; }
+    .newsletter-form-new input:focus{
+      border-color:var(--gold);
+      background:rgba(255,255,255,.14);
+      box-shadow:0 0 0 4px rgba(251,191,36,.15);
+    }
+    .newsletter-form-new button{
+      padding:15px 28px;
+      border-radius:13px;
+      border:none;
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      font-family:inherit;
+      font-size:.9rem;
+      font-weight:900;
+      cursor:pointer;
+      transition:.3s;
+      display:inline-flex;
+      align-items:center;
+      gap:9px;
+      box-shadow:0 14px 34px rgba(251,191,36,.4);
+      letter-spacing:.3px;
+    }
+    .newsletter-form-new button:hover{
+      transform:translateY(-3px);
+      box-shadow:0 20px 45px rgba(251,191,36,.6);
+    }
+
+    .newsletter-note{
+      margin-top:16px;
+      color:#93C5FD;
+      font-size:.75rem;
+      font-weight:600;
+      display:inline-flex;
+      align-items:center;
+      gap:7px;
+    }
+    .newsletter-note i{ color:var(--gold); }
+
+    @media(max-width:600px){
+      .newsletter-section{ padding:60px 0; }
+      .newsletter-inner{ padding:32px 22px; border-radius:22px; }
+      .newsletter-icon{ width:64px; height:64px; font-size:1.6rem; border-radius:18px; }
+      .newsletter-form-new{ flex-direction:column; }
+      .newsletter-form-new input,
+      .newsletter-form-new button{ width:100%; }
+    }
+
+    /* FEEDBACK SECTION */
+    .feedback-section{
+      padding:90px 0;
+      background:linear-gradient(180deg,#EFF6FF,#F8FAFC);
+      position:relative;
+      overflow:hidden;
+    }
+    .feedback-section::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(251,191,36,.05) 1px,transparent 1px);
+      background-size:30px 30px;
+      pointer-events:none;
+    }
+    .feedback-section .container{ position:relative; z-index:2; }
+
+    .feedback-box{
+      max-width:760px;
+      margin:auto;
+      padding:44px 40px;
+      border-radius:28px;
+      background:#fff;
+      box-shadow:0 30px 70px rgba(15,23,42,.12);
+      border:1px solid var(--border);
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .feedback-box::before{
+      content:""; position:absolute;
+      top:0; left:0; right:0; height:6px;
+      background:linear-gradient(90deg,#FBBF24,#F59E0B,#2563EB,#1E40AF);
+    }
+
+    .feedback-icon{
+      width:72px; height:72px;
+      border-radius:20px;
+      margin:0 auto 20px;
+      display:grid; place-items:center;
+      background:linear-gradient(145deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      font-size:1.8rem;
+      box-shadow:0 16px 38px rgba(251,191,36,.45),
+        inset 0 3px 0 rgba(255,255,255,.4);
+    }
+
+    .feedback-box h3{
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.6rem;
+      font-weight:900;
+      color:var(--navy);
+      margin-bottom:10px;
+      line-height:1.35;
+    }
+    .feedback-box > p{
+      color:var(--text-soft);
+      font-size:.92rem;
+      line-height:1.8;
+      margin-bottom:26px;
+      max-width:520px;
+      margin-left:auto;
+      margin-right:auto;
+    }
+
+    .star-row{
+      display:flex;
+      justify-content:center;
+      gap:10px;
+      margin-bottom:26px;
+    }
+    .star-btn{
+      width:52px; height:52px;
+      border-radius:14px;
+      border:2px solid var(--border);
+      background:#F8FAFC;
+      color:#CBD5E1;
+      font-size:1.4rem;
+      cursor:pointer;
+      transition:.3s;
+      display:grid;
+      place-items:center;
+    }
+    .star-btn:hover,
+    .star-btn.active{
+      border-color:var(--gold);
+      background:linear-gradient(145deg,#FEF3C7,#FDE68A);
+      color:var(--gold-dark);
+      transform:translateY(-3px) scale(1.05);
+      box-shadow:0 10px 24px rgba(251,191,36,.35);
+    }
+
+    .feedback-textarea{
+      width:100%;
+      padding:14px 18px;
+      border-radius:14px;
+      border:2px solid var(--border);
+      background:#F8FAFC;
+      color:var(--text);
+      font-family:inherit;
+      font-size:.9rem;
+      line-height:1.7;
+      resize:vertical;
+      min-height:110px;
+      margin-bottom:20px;
+      outline:none;
+      transition:.25s;
+    }
+    .feedback-textarea:focus{
+      border-color:var(--blue-2);
+      background:#fff;
+      box-shadow:0 0 0 4px rgba(37,99,235,.1);
+    }
+
+    .feedback-submit{
+      padding:15px 40px;
+      border-radius:13px;
+      border:none;
+      background:linear-gradient(135deg,#2563EB,#1E40AF);
+      color:#fff;
+      font-family:inherit;
+      font-size:.92rem;
+      font-weight:900;
+      letter-spacing:.3px;
+      cursor:pointer;
+      transition:.3s;
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      box-shadow:0 14px 34px rgba(37,99,235,.4);
+    }
+    .feedback-submit:hover{
+      transform:translateY(-3px);
+      box-shadow:0 20px 45px rgba(37,99,235,.55);
+    }
+
+    @media(max-width:600px){
+      .feedback-section{ padding:60px 0; }
+      .feedback-box{ padding:32px 22px; border-radius:22px; }
+      .feedback-icon{ width:60px; height:60px; font-size:1.5rem; border-radius:16px; }
+      .feedback-box h3{ font-size:1.3rem; }
+      .star-btn{ width:44px; height:44px; font-size:1.2rem; }
+      .feedback-submit{ width:100%; justify-content:center; }
+    }
+
+    /* FAQ SECTION */
+    .faq-section{
+      padding:90px 0;
+      background:linear-gradient(180deg,#F8FAFC,#EFF6FF);
+      position:relative;
+      overflow:hidden;
+    }
+    .faq-section::before{
+      content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(37,99,235,.04) 1px,transparent 1px);
+      background-size:28px 28px; pointer-events:none;
+    }
+    .faq-section .container{ position:relative; z-index:2; }
+
+    .faq-list{
+      max-width:880px;
+      margin:auto;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    .faq-item{
+      background:#fff;
+      border-radius:18px;
+      border:1px solid var(--border);
+      box-shadow:0 8px 22px rgba(15,23,42,.05);
+      overflow:hidden;
+      transition:.3s;
+    }
+    .faq-item.active{
+      border-color:var(--blue-2);
+      box-shadow:0 14px 36px rgba(37,99,235,.12);
+    }
+
+    .faq-header{
+      padding:20px 24px;
+      display:flex;
+      align-items:center;
+      gap:14px;
+      cursor:pointer;
+      transition:.25s;
+      user-select:none;
+    }
+    .faq-header:hover{
+      background:var(--blue-pale);
+    }
+
+    .faq-num{
+      flex-shrink:0;
+      width:38px; height:38px;
+      border-radius:12px;
+      display:grid; place-items:center;
+      background:linear-gradient(145deg,#2563EB,#1E40AF);
+      color:#fff;
+      font-weight:900;
+      font-size:.9rem;
+      box-shadow:0 6px 16px rgba(37,99,235,.3);
+      transition:.3s;
+    }
+    .faq-item.active .faq-num{
+      background:linear-gradient(145deg,#FBBF24,#F59E0B);
+      color:#0A2540;
+      box-shadow:0 6px 16px rgba(251,191,36,.4);
+    }
+
+    .faq-question{
+      flex:1;
+      font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1rem;
+      font-weight:900;
+      color:var(--navy);
+      line-height:1.45;
+      min-width:0;
+    }
+
+    .faq-chevron{
+      flex-shrink:0;
+      width:34px; height:34px;
+      border-radius:10px;
+      display:grid; place-items:center;
+      background:var(--blue-pale);
+      color:var(--blue-2);
+      font-size:.8rem;
+      transition:.35s;
+    }
+    .faq-item.active .faq-chevron{
+      transform:rotate(180deg);
+      background:linear-gradient(135deg,#2563EB,#1E40AF);
+      color:#fff;
+    }
+
+    .faq-body{
+      max-height:0;
+      overflow:hidden;
+      transition:max-height .5s cubic-bezier(.4,0,.2,1);
+    }
+    .faq-item.active .faq-body{
+      max-height:500px;
+    }
+    .faq-body-inner{
+      padding:14px 24px 22px 76px;
+      color:var(--text-soft);
+      font-size:.9rem;
+      line-height:1.85;
+      border-top:1px dashed var(--border);
+      padding-top:16px;
+    }
+    .faq-body-inner p{ margin:0 0 10px; }
+    .faq-body-inner p:last-child{ margin-bottom:0; }
+    .faq-body-inner a{
+      color:var(--blue-2);
+      font-weight:800;
+    }
+    .faq-body-inner a:hover{ color:var(--blue); }
+
+    @media(max-width:700px){
+      .faq-section{ padding:60px 0; }
+      .faq-header{ padding:16px 18px; gap:12px; }
+      .faq-num{ width:34px; height:34px; font-size:.82rem; }
+      .faq-question{ font-size:.92rem; }
+      .faq-chevron{ width:30px; height:30px; font-size:.75rem; }
+      .faq-body-inner{ padding:14px 18px 18px 18px; font-size:.85rem; }
+    }
+
+    /* CTA STRIP */
+    .cta-strip{ position:relative; padding:85px 0;
+      background:radial-gradient(circle at 15% 20%,rgba(251,191,36,.15),transparent 35%),
+        radial-gradient(circle at 85% 80%,rgba(59,130,246,.2),transparent 40%),
+        linear-gradient(135deg,#0A2540 0%,#1E40AF 50%,#0A2540 100%);
+      color:#fff; overflow:hidden; text-align:center; }
+    .cta-strip::before{ content:""; position:absolute; inset:0;
+      background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
+      background-size:24px 24px; opacity:.7; pointer-events:none; }
+    .cta-strip .container{ position:relative; z-index:2; }
+    .cta-badge{ display:inline-flex; align-items:center; gap:8px;
+      padding:8px 20px; border-radius:100px;
+      background:rgba(251,191,36,.15);
+      border:1px solid rgba(251,191,36,.4); color:var(--gold);
+      font-size:.72rem; font-weight:900; letter-spacing:2.5px;
+      text-transform:uppercase; margin-bottom:22px; }
+    .cta-strip h2{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:clamp(2rem,4.5vw,3.2rem); font-weight:900;
+      line-height:1.25; margin-bottom:16px; letter-spacing:-.5px; }
+    .cta-strip h2 span{ color:var(--gold); }
+    .cta-strip p{ color:#93C5FD; font-size:1.05rem;
+      max-width:640px; margin:0 auto 34px; line-height:1.8; }
+    .cta-buttons{ display:flex; justify-content:center;
+      flex-wrap:wrap; gap:14px; }
+
+    /* FOOTER */
+    footer{ background:radial-gradient(circle at 10% 20%,rgba(59,130,246,.1),transparent 40%),
+        radial-gradient(circle at 90% 80%,rgba(251,191,36,.06),transparent 40%),
+        linear-gradient(160deg,#0A2540 0%,#0F2E4F 60%,#0A2540 100%);
+      color:#fff; padding-top:80px; position:relative; overflow:hidden; }
+    footer::before{ content:""; position:absolute;
+      top:0; left:0; right:0; height:1px;
+      background:linear-gradient(90deg,transparent,rgba(251,191,36,.6),transparent); }
+    .footer-grid{ display:grid;
+      grid-template-columns:repeat(5,1fr);
+      gap:32px; padding-bottom:60px; position:relative; z-index:2; }
+    .footer-brand-head{ display:flex; align-items:center;
+      gap:10px; margin-bottom:20px; }
+    .footer-logo-box{ width:60px; height:60px; border-radius:15px;
+      background:#FFFFFF; display:block; padding:0;
+      border:2px solid rgba(251,191,36,.4);
+      box-shadow:0 8px 22px rgba(59,130,246,.3);
+      flex-shrink:0; overflow:hidden;
+      position:relative; line-height:0; }
+    .footer-logo-box img{ width:100%; height:100%;
+      object-fit:cover; object-position:center; }
+    .footer-brand-text{ min-width:0; }
+    .footer-brand-text h3{ font-family:"Tiro Devanagari Hindi",serif;
+      font-size:1.05rem; font-weight:900; color:#fff;
+      line-height:1.15; margin-bottom:4px; }
+    .footer-tagline-text{ color:#93C5FD; font-size:.66rem;
+      font-weight:600; letter-spacing:.4px;
+      font-family:"Tiro Devanagari Hindi",serif; }
+    .footer-desc{ color:#93C5FD; font-size:.8rem; line-height:1.7;
+      margin-bottom:20px; max-width:100%; }
+    .footer-badge{ display:inline-flex; align-items:center; gap:7px;
+      padding:6px 12px; background:rgba(251,191,36,.1);
+      border:1px solid rgba(251,191,36,.3); border-radius:100px;
+      color:var(--gold); font-size:.68rem; font-weight:900;
+      letter-spacing:.4px; margin-bottom:20px; }
+
+    .footer-heading, .footer-social-heading{
+      font-family:"Tiro Devanagari Hindi",serif; font-size:.92rem;
+      font-weight:900; color:#fff; margin-bottom:22px;
+      padding-bottom:12px; position:relative; }
+    .footer-heading::after, .footer-social-heading::after{
+      content:""; position:absolute; bottom:0; left:0;
+      width:32px; height:2px;
+      background:linear-gradient(90deg,#FBBF24,#F59E0B);
+      border-radius:2px; }
+
+    .social-icons{ display:flex; gap:8px; flex-wrap:wrap; }
+    .social-icon{ width:38px; height:38px; display:grid;
+      place-items:center; border-radius:10px;
+      background:rgba(59,130,246,.12); color:#93C5FD;
+      font-size:.9rem; transition:.3s;
+      border:1px solid rgba(59,130,246,.25); }
+    .social-icon:hover{ transform:translateY(-4px);
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      color:#0A2540; border-color:var(--gold);
+      box-shadow:0 8px 22px rgba(251,191,36,.4); }
+
+    .footer-links{ list-style:none; }
+    .footer-links li{ margin-bottom:10px; }
+    .footer-links a{ color:#93C5FD; font-size:.78rem;
+      font-weight:600; display:inline-flex; align-items:center;
+      gap:7px; transition:.25s; line-height:1.5; }
+    .footer-links a i{ font-size:.56rem; color:#FBBF24; }
+    .footer-links a:hover{ color:var(--gold); transform:translateX(4px); }
+
+    .contact-info{ list-style:none; }
+    .contact-info li{ display:flex; gap:10px;
+      align-items:flex-start; margin-bottom:14px;
+      color:#93C5FD; font-size:.78rem; line-height:1.65; }
+    .contact-info li i{ flex-shrink:0; width:28px; height:28px;
+      display:grid; place-items:center; border-radius:8px;
+      background:rgba(59,130,246,.15);
+      border:1px solid rgba(59,130,246,.25); color:#FBBF24;
+      font-size:.72rem; margin-top:1px; }
+    .contact-info li strong{ display:block; color:#fff;
+      font-size:.7rem; margin-bottom:2px;
+      letter-spacing:.3px; text-transform:uppercase; }
+    .contact-info li a{ color:#93C5FD; }
+    .footer-newsletter{ margin-top:6px; padding-top:16px;
+      border-top:1px solid rgba(59,130,246,.2); }
+    .footer-newsletter label{ display:block; color:#93C5FD;
+      font-size:.68rem; font-weight:800; letter-spacing:.5px;
+      text-transform:uppercase; margin-bottom:10px; }
+    .newsletter-form{ display:flex; gap:6px;
+      background:rgba(255,255,255,.06);
+      border:1px solid rgba(59,130,246,.25);
+      border-radius:12px; padding:5px; }
+    .newsletter-form:focus-within{ border-color:var(--gold);
+      box-shadow:0 0 0 4px rgba(251,191,36,.1); }
+    .newsletter-form input{ flex:1; background:transparent;
+      border:none; outline:none; padding:8px 10px; color:#fff;
+      font-family:inherit; font-size:.76rem; min-width:0; }
+    .newsletter-form input::placeholder{ color:#6B8CAE; }
+    .newsletter-form button{ flex-shrink:0; width:36px; height:36px;
+      border-radius:8px;
+      background:linear-gradient(135deg,#FBBF24,#F59E0B);
+      color:#0A2540; font-size:.82rem; display:grid;
+      place-items:center; }
+
+    .footer-bottom{ border-top:1px solid rgba(59,130,246,.15);
+      padding:22px 0; position:relative; z-index:2; }
+    .footer-bottom-inner{ display:flex; flex-direction:column;
+      align-items:center; justify-content:center;
+      gap:12px; text-align:center; }
+    .footer-copy{ color:#6B8CAE; font-size:.76rem; font-weight:600;
+      order:1; }
+    .footer-copy strong{ color:#93C5FD; font-weight:800; }
+    .footer-legal{ display:flex; gap:4px; flex-wrap:nowrap;
+      align-items:center; justify-content:center; order:2; }
+    .footer-legal a{ color:#93C5FD; font-size:.72rem;
+      font-weight:700; padding:5px 8px; border-radius:8px;
+      transition:.25s; white-space:nowrap; }
+    .footer-legal a:hover{ color:var(--gold);
+      background:rgba(59,130,246,.15); }
+    .footer-legal span{ color:rgba(59,130,246,.5); font-size:.72rem; }
+    .footer-made{ color:#6B8CAE; font-size:.72rem; font-weight:600;
+      display:inline-flex; align-items:center; gap:6px; order:3; }
+    .footer-made i{ color:#DC2626; font-size:.68rem; }
+
+    /* BACK TOP */
+    .back-top{ position:fixed; right:22px; bottom:22px;
+      width:48px; height:48px; border-radius:14px;
+      background:linear-gradient(135deg,#2563EB,#1E40AF);
+      color:#fff; cursor:pointer; z-index:1000;
+      display:grid; place-items:center; opacity:0;
+      visibility:hidden; transition:.3s;
+      box-shadow:0 10px 28px rgba(37,99,235,.45); }
+    .back-top.show{ opacity:1; visibility:visible; }
+    .back-top:hover{ transform:translateY(-4px); }
+
+    /* WHATSAPP FLOAT */
+    .wa-float{
+      position:fixed;
+      right:22px;
+      bottom:82px;
+      width:56px;
+      height:56px;
+      border-radius:50%;
+      background:linear-gradient(135deg,#25D366,#128C7E);
+      color:#fff;
+      display:grid;
+      place-items:center;
+      font-size:1.6rem;
+      z-index:999;
+      box-shadow:0 14px 34px rgba(37,211,102,.5);
+      transition:.3s;
+      animation:waPulse 2.2s infinite;
+    }
+    .wa-float:hover{
+      transform:scale(1.1) translateY(-3px);
+      box-shadow:0 20px 45px rgba(37,211,102,.7);
+      color:#fff;
+    }
+    @keyframes waPulse{
+      0%,100%{ box-shadow:0 14px 34px rgba(37,211,102,.5); }
+      50%{ box-shadow:0 18px 45px rgba(37,211,102,.9); }
+    }
+
+    @media(max-width:500px){
+      .wa-float{ width:50px; height:50px; font-size:1.4rem;
+        right:18px; bottom:76px; }
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:1200px){
+      .desktop-nav > a{ padding:10px 7px; font-size:.72rem; }
+      .donate-nav{ padding:10px 13px!important; }
+      .footer-grid{ grid-template-columns:repeat(3,1fr); gap:32px; }
+    }
+    @media(max-width:1000px){
+      .desktop-nav > a{ padding:10px 6px; font-size:.68rem; }
+      .logo-box{ width:62px; height:62px; }
+    }
+    @media(max-width:900px){
+      .desktop-nav{ display:none; }
+      .menu-toggle{ display:block; }
+      .header-inner{ min-height:78px; }
+      .brand-name{ font-size:clamp(1.1rem,3vw,1.4rem); }
+      .brand-tagline{ font-size:.66rem; }
+      .logo-box{ width:60px; height:60px; }
+      .page-hero{ padding:140px 0 65px; }
+      .footer-grid{ grid-template-columns:1fr 1fr; gap:36px 24px; }
+    }
+    @media(max-width:700px){
+      .section{ padding:70px 0; }
+      .page-hero{ padding:130px 0 55px; }
+      .page-hero h1{ font-size:1.75rem; }
+      .footer-grid{ grid-template-columns:1fr; gap:32px;
+        padding-bottom:40px; }
+      .footer-bottom-inner{ gap:10px; }
+      .footer-legal{ flex-wrap:nowrap; gap:1px; }
+      .footer-legal a{ font-size:.68rem; padding:4px 6px; }
+      .footer-legal span{ font-size:.68rem; }
+      .cta-strip{ padding:65px 0; }
+      .cta-buttons{ flex-direction:column; }
+      .cta-buttons .btn{ width:100%; }
+    }
+    @media(max-width:600px){
+      .brand-name{ font-size:clamp(1rem,4vw,1.15rem);
+        white-space:normal; line-height:1.15; }
+      .brand-tagline{ font-size:.62rem; white-space:normal; }
+      .logo-box{ width:54px; height:54px; border-radius:13px; }
+      .brand{ gap:11px; }
+      .cta-strip h2{ font-size:1.55rem; }
+      .cta-strip p{ font-size:.92rem; }
+      .social-icon{ width:38px; height:38px; font-size:.9rem; }
+      .footer-brand-text h3{ font-size:1rem; }
+    }
+    @media(max-width:420px){
+      .footer-legal a{ font-size:.62rem; padding:3px 4px; }
+      .footer-legal span{ font-size:.62rem; }
+    }
+    @media(max-width:380px){
+      .brand-name{ font-size:1rem; }
+      .brand-tagline{ font-size:.6rem; }
+      .logo-box{ width:50px; height:50px; }
+      .footer-legal a{ font-size:.58rem; padding:3px 3px; }
+      .footer-legal span{ font-size:.58rem; }
+    }
+    @media (prefers-reduced-motion: reduce){
+      *,*::before,*::after{
+        animation-duration:.01ms!important;
+        animation-iteration-count:1!important;
+        transition-duration:.01ms!important; } }
+  </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="index.html" class="brand">
+      <div class="logo-box">
+        <img src="sath_chale_ham_logo_HD-1.png" alt="साथ चले हम फाउंडेशन Logo">
+      </div>
+      <div class="brand-text">
+        <div class="brand-name">साथ चले हम <span class="gold">फाउंडेशन</span></div>
+        <div class="brand-tagline">साथ चले हम, बदलाव की ओर</div>
+      </div>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="work.html">Our Work</a>
+      <a href="team.html">Team</a>
+      <a href="events.html">Events</a>
+      <a href="join-us.html">Join Us</a>
+      <a href="downloads.html">Downloads</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="donate.html" class="donate-nav">
+        <i class="fa-solid fa-heart"></i> Donate Us
+      </a>
+    </nav>
+
+    <button class="menu-toggle" id="menuToggle"
+            aria-label="Open Menu" aria-expanded="false"
+            aria-controls="mobileNav" type="button">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
+    <a href="index.html">Home | होम</a>
+    <a href="about.html">About Us | हमारे बारे में</a>
+    <a href="work.html">Our Work | हमारे कार्य</a>
+    <a href="team.html">Team | हमारी टीम</a>
+    <a href="events.html">Events | कार्यक्रम</a>
+    <a href="join-us.html">Join Us | जुड़ें</a>
+    <a href="downloads.html">Downloads | डाउनलोड</a>
+    <a href="contact.html" class="active">Contact | संपर्क</a>
+    <a href="donate.html" class="donate-nav">
+      <i class="fa-solid fa-heart"></i> Donate Us
+    </a>
+  </nav>
+</header>
+
+
+<!-- ================= PAGE HERO ================= -->
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span>Contact Us</span>
+    </div>
+    <h1>Contact Us | <span>हमसे संपर्क करें</span></h1>
+    <p class="hindi">
+      हम आपकी सहायता के लिए उपलब्ध हैं। किसी भी प्रश्न, सुझाव या सहयोग के लिए
+      नीचे दिए गए किसी भी माध्यम से हमसे संपर्क करें।
+    </p>
+  </div>
+</section>
+
+
+<!-- ================= CONTACT INFO CARDS ================= -->
+<section class="contact-info-section">
+  <div class="container">
+
+    <div class="section-title">
+      <span class="small-title">Get In Touch</span>
+      <h2>संपर्क जानकारी | <span>Contact Information</span></h2>
+      <p class="hindi">
+        हमसे जुड़ने के लिए नीचे दिए गए किसी भी माध्यम का उपयोग करें।
+        हम शीघ्र ही आपसे संपर्क करेंगे।
+      </p>
+    </div>
+
+    <div class="contact-cards-grid">
+
+      <div class="contact-info-card">
+        <div class="contact-info-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+        <h3>पता | Address</h3>
+        <p class="hindi">
+          भारतीय नगर, वार्ड नं. 26/35,<br>
+          नजदीक रेलवे वाशिंग पिट,<br>
+          सिमरी-बख्तियारपुर रोड,<br>
+          सहरसा, बिहार – 852201
+        </p>
+        <a href="https://maps.google.com/?q=Saharsa+Bihar+852201" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-map-location-dot"></i> View on Map
+        </a>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="contact-info-icon">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <h3>ईमेल | Email</h3>
+        <p>
+          किसी भी जानकारी, सहयोग या सुझाव के लिए ईमेल करें। हम 24 घंटे के भीतर जवाब देने का प्रयास करते हैं।
+        </p>
+        <a href="mailto:sathchaleham@gmail.com">
+          <i class="fa-solid fa-paper-plane"></i> sathchaleham@gmail.com
+        </a>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="contact-info-icon">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+        <h3>हेल्पलाइन | Helpline</h3>
+        <p>
+          तत्काल सहायता के लिए हमारी हेल्पलाइन पर कॉल करें। सोम – शनि, सुबह 10 बजे से शाम 6 बजे तक।
+        </p>
+        <a href="tel:+917011893028">
+          <i class="fa-solid fa-phone-volume"></i> +91 7011893028
+        </a>
+      </div>
+
+      <div class="contact-info-card">
+        <div class="contact-info-icon">
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+        <h3>WhatsApp | व्हाट्सएप</h3>
+        <p>
+          WhatsApp पर मैसेज भेजकर भी हमसे संपर्क कर सकते हैं। तुरंत जवाब मिलेगा।
+        </p>
+        <a href="https://wa.me/917011893028" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= EMERGENCY NUMBERS ================= -->
+<section class="emergency-section">
+  <div class="container">
+
+    <div class="section-title">
+      <span class="small-title">Emergency Helplines</span>
+      <h2>आपातकालीन नंबर | <span>Emergency Numbers</span></h2>
+      <p class="hindi">
+        आपात स्थिति में इन सरकारी हेल्पलाइन नंबरों पर तुरंत संपर्क करें।
+        हर नंबर पर क्लिक करके सीधे कॉल कर सकते हैं।
+      </p>
+    </div>
+
+    <div class="emergency-grid">
+
+      <a href="tel:112" class="emergency-card">
+        <div class="emergency-card-icon">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <h4>राष्ट्रीय आपातकाल | National Emergency</h4>
+        <div class="emergency-card-number">112</div>
+      </a>
+
+      <a href="tel:100" class="emergency-card">
+        <div class="emergency-card-icon">
+          <i class="fa-solid fa-user-shield"></i>
+        </div>
+        <h4>पुलिस | Police</h4>
+        <div class="emergency-card-number">100</div>
+      </a>
+
+      <a href="tel:101" class="emergency-card">
+        <div class="emergency-card-icon">
+          <i class="fa-solid fa-fire-extinguisher"></i>
+        </div>
+        <h4>अग्निशमन | Fire</h4>
+        <div class="emergency-card-number">101</div>
+      </a>
+
+      <a href="tel:108" class="emergency-card">
+        <div class="emergency-card-icon">
+          <i class="fa-solid fa-truck-medical"></i>
+        </div>
+        <h4>एम्बुलेंस | Ambulance</h4>
+        <div class="emergency-card-number">108</div>
+      </a>
+
+      <a href="tel:181" class="emergency-card">
+        <div class="emergency-card-icon">
+          <i class="fa-solid fa-person-dress"></i>
+        </div>
+        <h4>महिला हेल्पलाइन | Women Helpline</h4>
+        <div class="emergency-card-number">181</div>
+      </a>
+
+      <a href="tel:1098" class="emergency-card">
+        <div class="emergency-card-icon">
+          <i class="fa-solid fa-child"></i>
+        </div>
+        <h4>चाइल्ड हेल्पलाइन | Child Helpline</h4>
+        <div class="emergency-card-number">1098</div>
+      </a>
+
+      <a href="tel:14567" class="emergency-card">
+        <div class="emergency-card-icon">
+          <i class="fa-solid fa-person-cane"></i>
+        </div>
+        <h4>वरिष्ठ नागरिक | Senior Citizen</h4>
+        <div class="emergency-card-number">14567</div>
+      </a>
+
+      <a href="tel:1070" class="emergency-card">
+        <div class="emergency-card-icon">
+          <i class="fa-solid fa-house-flood-water"></i>
+        </div>
+        <h4>आपदा प्रबंधन | Disaster</h4>
+        <div class="emergency-card-number">1070</div>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= CONTACT DIRECTORY ================= -->
+<section class="directory-section">
+  <div class="container">
+
+    <div class="section-title">
+      <span class="small-title">Direct Contact</span>
+      <h2>विभाग अनुसार संपर्क | <span>Contact Directory</span></h2>
+      <p class="hindi">
+        हर विभाग का अलग संपर्क व्यक्ति — ताकि आप सीधे सही व्यक्ति से
+        बात कर सकें और तुरंत सहायता पाएँ।
+      </p>
+    </div>
+
+    <div class="directory-grid">
+
+      <div class="directory-card" data-tone="blue">
+        <div class="directory-icon">
+          <i class="fa-solid fa-headset"></i>
+        </div>
+        <div class="directory-dept">सामान्य प्रश्न</div>
+        <h4>General Inquiries</h4>
+        <div class="directory-person">सहरसा मुख्य कार्यालय | Main Office</div>
+        <div class="directory-actions">
+          <a href="tel:+917011893028" class="directory-action">
+            <i class="fa-solid fa-phone"></i> +91 7011893028
+          </a>
+          <a href="mailto:sathchaleham@gmail.com" class="directory-action">
+            <i class="fa-solid fa-envelope"></i> sathchaleham@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="directory-card" data-tone="gold">
+        <div class="directory-icon">
+          <i class="fa-solid fa-hand-holding-dollar"></i>
+        </div>
+        <div class="directory-dept">दान एवं 80G</div>
+        <h4>Donation &amp; 80G</h4>
+        <div class="directory-person">Priyam Singh | Treasurer</div>
+        <div class="directory-actions">
+          <a href="mailto:treasurer@sathchaleham.org" class="directory-action">
+            <i class="fa-solid fa-envelope"></i> treasurer@sathchaleham.org
+          </a>
+          <a href="tel:+917011893028" class="directory-action">
+            <i class="fa-solid fa-phone"></i> +91 7011893028
+          </a>
+        </div>
+      </div>
+
+      <div class="directory-card" data-tone="teal">
+        <div class="directory-icon">
+          <i class="fa-solid fa-hands-helping"></i>
+        </div>
+        <div class="directory-dept">स्वयंसेवक</div>
+        <h4>Volunteer Program</h4>
+        <div class="directory-person">P K Prabhakar | Volunteer Coordinator</div>
+        <div class="directory-actions">
+          <a href="mailto:volunteer@sathchaleham.org" class="directory-action">
+            <i class="fa-solid fa-envelope"></i> volunteer@sathchaleham.org
+          </a>
+          <a href="tel:+917011893028" class="directory-action">
+            <i class="fa-solid fa-phone"></i> +91 7011893028
+          </a>
+        </div>
+      </div>
+
+      <div class="directory-card" data-tone="red">
+        <div class="directory-icon">
+          <i class="fa-solid fa-building"></i>
+        </div>
+        <div class="directory-dept">CSR साझेदारी</div>
+        <h4>CSR Partnership</h4>
+        <div class="directory-person">Ajay Kumar | President</div>
+        <div class="directory-actions">
+          <a href="mailto:president@sathchaleham.org" class="directory-action">
+            <i class="fa-solid fa-envelope"></i> president@sathchaleham.org
+          </a>
+          <a href="tel:+917011893028" class="directory-action">
+            <i class="fa-solid fa-phone"></i> +91 7011893028
+          </a>
+        </div>
+      </div>
+
+      <div class="directory-card" data-tone="blue">
+        <div class="directory-icon">
+          <i class="fa-solid fa-calendar-check"></i>
+        </div>
+        <div class="directory-dept">कार्यक्रम</div>
+        <h4>Events &amp; Programs</h4>
+        <div class="directory-person">Kumar Puskar | Program Coordinator</div>
+        <div class="directory-actions">
+          <a href="mailto:program@sathchaleham.org" class="directory-action">
+            <i class="fa-solid fa-envelope"></i> program@sathchaleham.org
+          </a>
+          <a href="tel:+917011893028" class="directory-action">
+            <i class="fa-solid fa-phone"></i> +91 7011893028
+          </a>
+        </div>
+      </div>
+
+      <div class="directory-card" data-tone="teal">
+        <div class="directory-icon">
+          <i class="fa-solid fa-person-dress"></i>
+        </div>
+        <div class="directory-dept">महिला एवं बाल विकास</div>
+        <h4>Women &amp; Child Development</h4>
+        <div class="directory-person">S Kumari | Coordinator</div>
+        <div class="directory-actions">
+          <a href="mailto:womenchild@sathchaleham.org" class="directory-action">
+            <i class="fa-solid fa-envelope"></i> womenchild@sathchaleham.org
+          </a>
+          <a href="tel:+917011893028" class="directory-action">
+            <i class="fa-solid fa-phone"></i> +91 7011893028
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= CONTACT FORM ================= -->
+<section class="contact-form-section">
+  <div class="container">
+
+    <div class="section-title">
+      <span class="small-title">Send Message</span>
+      <h2>संदेश भेजें | <span>Send Us a Message</span></h2>
+      <p class="hindi">
+        नीचे दिया गया फॉर्म भरकर हमें अपना संदेश भेजें। हम शीघ्र ही आपसे संपर्क करेंगे।
+      </p>
+    </div>
+
+    <div class="contact-form-wrapper">
+
+      <div class="contact-form-box">
+
+        <div class="contact-form-head">
+          <div class="form-icon">
+            <i class="fa-solid fa-envelope-open-text"></i>
+          </div>
+          <h3>अपना संदेश भेजें</h3>
+          <p>सभी जानकारी सत्य एवं सही भरें। <strong style="color:#DC2626;">*</strong> वाले फ़ील्ड अनिवार्य हैं।</p>
+        </div>
+
+        <div class="quick-btn-wrap">
+          <button type="button" class="quick-btn" data-subject="Donation">💰 दान</button>
+          <button type="button" class="quick-btn" data-subject="Volunteer">🤝 स्वयंसेवक</button>
+          <button type="button" class="quick-btn" data-subject="Event Registration">📅 कार्यक्रम</button>
+          <button type="button" class="quick-btn" data-subject="CSR Partnership">🏢 CSR</button>
+          <button type="button" class="quick-btn" data-subject="Feedback">💬 सुझाव</button>
+        </div>
+
+        <form action="https://formsubmit.co/sathchaleham@gmail.com" method="POST" id="contactForm" novalidate>
+
+          <input type="hidden" name="_subject" value="New Contact Message — Sath Chale Hum Foundation">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cname">पूरा नाम | Full Name <span class="req">*</span></label>
+              <input type="text" id="cname" name="Full Name" required placeholder="आपका पूरा नाम">
+            </div>
+            <div class="form-group">
+              <label for="cphone">मोबाइल नंबर | Mobile <span class="req">*</span></label>
+              <input type="tel" id="cphone" name="Mobile" required
+                     placeholder="10 अंकों का नंबर" pattern="[6-9][0-9]{9}" maxlength="10" inputmode="numeric">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cemail">ईमेल पता | Email <span class="req">*</span></label>
+              <input type="email" id="cemail" name="Email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="csubject">विषय | Subject <span class="req">*</span></label>
+              <select id="csubject" name="Subject" required>
+                <option value="">-- चुनें | Select --</option>
+                <option value="General Inquiry">सामान्य प्रश्न | General Inquiry</option>
+                <option value="Donation">दान | Donation</option>
+                <option value="Volunteer">स्वयंसेवक | Volunteer</option>
+                <option value="CSR Partnership">CSR साझेदारी | CSR Partnership</option>
+                <option value="Event Registration">कार्यक्रम | Event Registration</option>
+                <option value="Feedback">प्रतिक्रिया | Feedback</option>
+                <option value="Complaint">शिकायत | Complaint</option>
+                <option value="Other">अन्य | Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row single">
+            <div class="form-group">
+              <label for="ccity">शहर / गाँव | City / Village</label>
+              <input type="text" id="ccity" name="City" placeholder="शहर या गाँव">
+            </div>
+          </div>
+
+          <div class="form-row single">
+            <div class="form-group">
+              <label for="cmessage">आपका संदेश | Your Message <span class="req">*</span></label>
+              <textarea id="cmessage" name="Message" required
+                        placeholder="अपना संदेश यहाँ विस्तार से लिखें..."></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="form-submit-btn" id="contactSubmitBtn">
+            <i class="fa-solid fa-paper-plane"></i> संदेश भेजें | Send Message
+          </button>
+
+        </form>
+
+      </div>
+
+      <div class="contact-side">
+
+        <div class="contact-side-box">
+          <div class="contact-side-icon">
+            <i class="fa-solid fa-headset"></i>
+          </div>
+          <h4>तत्काल सहायता | Quick Help</h4>
+          <p>
+            किसी भी आपात स्थिति या तत्काल सहायता के लिए हमारी हेल्पलाइन पर कॉल करें।
+            हम 24 घंटे के भीतर जवाब देने का प्रयास करते हैं।
+          </p>
+          <a href="tel:+917011893028" class="btn btn-red" style="width:100%; min-height:48px; padding:12px 20px; font-size:.85rem; margin-top:6px;">
+            <i class="fa-solid fa-phone"></i> +91 7011893028
+          </a>
+        </div>
+
+        <div class="contact-side-box">
+          <div class="contact-side-icon">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h4>हमारा जवाब देने का समय | Response Time</h4>
+          <p>
+            हम आपके हर संदेश का जवाब देने का पूरा प्रयास करते हैं।
+            हमारी प्रतिक्रिया समय-सीमा:
+          </p>
+          <ul style="list-style:none; padding:0; margin:12px 0 0;">
+            <li style="display:flex; justify-content:space-between; padding:9px 12px; background:#F8FAFC; border-radius:10px; font-size:.83rem; font-weight:700; color:var(--text-soft); margin-bottom:8px;">
+              <span>ईमेल पर जवाब</span>
+              <span style="color:var(--green); font-weight:900;">24 घंटे</span>
+            </li>
+            <li style="display:flex; justify-content:space-between; padding:9px 12px; background:#F8FAFC; border-radius:10px; font-size:.83rem; font-weight:700; color:var(--text-soft); margin-bottom:8px;">
+              <span>WhatsApp पर जवाब</span>
+              <span style="color:var(--green); font-weight:900;">2-4 घंटे</span>
+            </li>
+            <li style="display:flex; justify-content:space-between; padding:9px 12px; background:#F8FAFC; border-radius:10px; font-size:.83rem; font-weight:700; color:var(--text-soft);">
+              <span>हेल्पलाइन कॉल</span>
+              <span style="color:var(--green); font-weight:900;">तुरंत</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-inner">
+
+      <div class="newsletter-icon">
+        <i class="fa-solid fa-envelope-circle-check"></i>
+      </div>
+
+      <h2>हमसे जुड़े रहें | <span>Stay Connected</span></h2>
+
+      <p class="hindi">
+        हर महीने की अपडेट, कार्यक्रमों की जानकारी, सफलता की कहानियाँ एवं
+        संस्था से जुड़ी सभी गतिविधियाँ सीधे आपके inbox में पाएँ।
+      </p>
+
+      <form class="newsletter-form-new" id="newsletterFormBig" onsubmit="handleNewsletter(event)">
+        <input type="text" id="newsName" placeholder="आपका नाम | Your Name" required>
+        <input type="email" id="newsEmail" placeholder="your@email.com" required>
+        <button type="submit">
+          <i class="fa-solid fa-paper-plane"></i> Subscribe
+        </button>
+      </form>
+
+      <div class="newsletter-note">
+        <i class="fa-solid fa-lock"></i>
+        आपकी जानकारी पूर्णतः सुरक्षित है। कभी भी unsubscribe कर सकते हैं।
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= FEEDBACK ================= -->
+<section class="feedback-section">
+  <div class="container">
+
+    <div class="section-title">
+      <span class="small-title">Your Feedback</span>
+      <h2>हमें रेटिंग दें | <span>Give Us a Rating</span></h2>
+      <p class="hindi">
+        आपका feedback हमारे लिए बहुत कीमती है। कृपया हमें बताएँ कि हम कैसे
+        और बेहतर कर सकते हैं।
+      </p>
+    </div>
+
+    <div class="feedback-box">
+
+      <div class="feedback-icon">
+        <i class="fa-solid fa-star"></i>
+      </div>
+
+      <h3>आपकी राय क्या है?</h3>
+      <p>
+        नीचे दिए गए stars पर क्लिक करके हमें रेटिंग दें और कोई भी सुझाव
+        या feedback लिखें।
+      </p>
+
+      <div class="star-row" id="starRow">
+        <button type="button" class="star-btn" data-star="1" aria-label="1 Star">
+          <i class="fa-solid fa-star"></i>
+        </button>
+        <button type="button" class="star-btn" data-star="2" aria-label="2 Stars">
+          <i class="fa-solid fa-star"></i>
+        </button>
+        <button type="button" class="star-btn" data-star="3" aria-label="3 Stars">
+          <i class="fa-solid fa-star"></i>
+        </button>
+        <button type="button" class="star-btn" data-star="4" aria-label="4 Stars">
+          <i class="fa-solid fa-star"></i>
+        </button>
+        <button type="button" class="star-btn" data-star="5" aria-label="5 Stars">
+          <i class="fa-solid fa-star"></i>
+        </button>
+      </div>
+
+      <textarea class="feedback-textarea" id="feedbackText"
+                placeholder="अपना सुझाव या feedback यहाँ लिखें... (वैकल्पिक)"></textarea>
+
+      <button type="button" class="feedback-submit" id="feedbackSubmitBtn">
+        <i class="fa-solid fa-paper-plane"></i> Feedback भेजें | Submit
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= FAQ ================= -->
+<section class="faq-section" id="faq">
+  <div class="container">
+
+    <div class="section-title">
+      <span class="small-title">FAQ</span>
+      <h2>सामान्य प्रश्न | <span>Frequently Asked Questions</span></h2>
+      <p class="hindi">
+        नीचे दिए गए सामान्य प्रश्नों के उत्तर देखें। अगर आपका प्रश्न यहाँ न मिले
+        तो हमसे संपर्क करें।
+      </p>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <div class="faq-num">01</div>
+          <div class="faq-question">साथ चले हम फाउंडेशन क्या है? | What is Sath Chale Hum Foundation?</div>
+          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="faq-body">
+          <div class="faq-body-inner">
+            <p>
+              साथ चले हम फाउंडेशन एक सामाजिक संस्था है, जिसका उद्देश्य शिक्षा,
+              स्वास्थ्य, महिला सशक्तिकरण, गरीब एवं जरूरतमंद लोगों की सहायता,
+              ग्रामीण विकास, कौशल विकास, पर्यावरण संरक्षण और सामाजिक जागरूकता
+              जैसे क्षेत्रों में सकारात्मक बदलाव लाना है।
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <div class="faq-num">02</div>
+          <div class="faq-question">मैं संस्था से कैसे जुड़ सकता/सकती हूँ? | How can I join the organization?</div>
+          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="faq-body">
+          <div class="faq-body-inner">
+            <p>
+              आप स्वयंसेवक, इंटर्न, सदस्य या दानदाता के रूप में हमसे जुड़ सकते हैं।
+              हमारी <a href="join-us.html">Join Us</a> पेज पर जाकर फॉर्म भरें
+              या हमारी हेल्पलाइन <a href="tel:+917011893028">+91 7011893028</a>
+              पर कॉल करें।
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <div class="faq-num">03</div>
+          <div class="faq-question">दान कैसे कर सकते हैं? | How can I donate?</div>
+          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="faq-body">
+          <div class="faq-body-inner">
+            <p>
+              आप हमारी वेबसाइट के <a href="donate.html">Donate</a> पेज पर जाकर
+              ऑनलाइन दान कर सकते हैं। हमारी संस्था 12A एवं 80G प्रमाणित है,
+              जिससे आपको कर लाभ भी प्राप्त होता है।
+            </p>
+            <p>
+              आप Daily ₹1 Supporter अभियान से भी जुड़ सकते हैं और प्रतिदिन
+              सिर्फ ₹1 का योगदान दे सकते हैं।
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <div class="faq-num">04</div>
+          <div class="faq-question">क्या मुझे दान का 80G प्रमाण पत्र मिलेगा? | Will I get 80G certificate for donation?</div>
+          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="faq-body">
+          <div class="faq-body-inner">
+            <p>
+              हाँ, हमारी संस्था 12A एवं 80G के तहत पंजीकृत है। आपके दान पर
+              आपको 80G प्रमाण पत्र प्रदान किया जाएगा, जिससे आप कर लाभ प्राप्त
+              कर सकते हैं।
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <div class="faq-num">05</div>
+          <div class="faq-question">स्वयंसेवक बनने के लिए क्या योग्यता चाहिए? | What qualifications are needed to become a volunteer?</div>
+          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="faq-body">
+          <div class="faq-body-inner">
+            <p>
+              स्वयंसेवक बनने के लिए किसी विशेष योग्यता की आवश्यकता नहीं है।
+              आपके अंदर सेवा भाव, समर्पण और समाज की मदद करने की इच्छा होनी चाहिए।
+              समाज सेवा में रुचि रखने वाले सभी लोग हमसे जुड़ सकते हैं।
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <div class="faq-num">06</div>
+          <div class="faq-question">कार्यक्रमों में पंजीकरण कैसे करें? | How to register for events?</div>
+          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="faq-body">
+          <div class="faq-body-inner">
+            <p>
+              हमारी वेबसाइट के <a href="events.html">Events</a> पेज पर जाएँ।
+              वहाँ किसी भी कार्यक्रम के "Register Now" बटन पर क्लिक करके
+              ऑनलाइन फॉर्म भरें। तुरंत पंजीकरण हो जाएगा।
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <div class="faq-num">07</div>
+          <div class="faq-question">क्या आप CSR साझेदारी करते हैं? | Do you accept CSR partnerships?</div>
+          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="faq-body">
+          <div class="faq-body-inner">
+            <p>
+              हाँ, हम CSR साझेदारी स्वीकार करते हैं। हमारी संस्था के पास CSR-1
+              पंजीकरण है। CSR साझेदारी के लिए हमें
+              <a href="mailto:sathchaleham@gmail.com">sathchaleham@gmail.com</a>
+              पर ईमेल करें या हेल्पलाइन पर कॉल करें।
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-header">
+          <div class="faq-num">08</div>
+          <div class="faq-question">संस्था किन क्षेत्रों में कार्य करती है? | In which areas does the organization work?</div>
+          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+        <div class="faq-body">
+          <div class="faq-body-inner">
+            <p>
+              हम 16 प्रमुख क्षेत्रों में कार्य करते हैं — शिक्षा, स्वास्थ्य,
+              महिला सशक्तिकरण, गरीब कल्याण, दिव्यांगजन कल्याण, वृद्धजन कल्याण,
+              युवा विकास, रोजगार, ग्रामीण विकास, कृषि, पर्यावरण, स्वच्छता,
+              पशु कल्याण, आपदा राहत, सामाजिक न्याय एवं डिजिटल शिक्षा।
+              पूरी जानकारी हमारी <a href="work.html">Our Work</a> पेज पर देखें।
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ================= CTA ================= -->
+<section class="cta-strip">
+  <div class="container">
+    <div class="cta-badge">
+      <i class="fa-solid fa-hands-holding-heart"></i>
+      Be a Part of Change
+    </div>
+
+    <h2>साथ चले हम, <span>बदलाव की ओर</span></h2>
+
+    <p>
+      आज ही जुड़ें — आपका एक छोटा सा कदम किसी की पूरी जिंदगी बदल सकता है।
+      साथ मिलकर एक बेहतर कल का निर्माण करें।
+    </p>
+
+    <div class="cta-buttons">
+      <a href="donate.html" class="btn btn-red btn-pulse-red">
+        <i class="fa-solid fa-heart"></i> Donate Now
+      </a>
+      <a href="join-us.html" class="btn btn-gold">
+        <i class="fa-solid fa-users"></i> Join as Volunteer
+      </a>
+      <a href="events.html" class="btn btn-outline">
+        <i class="fa-solid fa-calendar-days"></i> View Events
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+
+      <div>
+        <div class="footer-brand-head">
+          <div class="footer-logo-box">
+            <img src="sath_chale_ham_logo_HD-1.png" alt="Sath Chale Hum Foundation Logo">
+          </div>
+          <div class="footer-brand-text">
+            <h3>साथ चले हम फाउंडेशन</h3>
+            <div class="footer-tagline-text">साथ चले हम, बदलाव की ओर</div>
+          </div>
+        </div>
+        <p class="footer-desc">
+          एक सामाजिक संस्था जो शिक्षा, स्वास्थ्य, महिला सशक्तिकरण और
+          समाज के सर्वांगीण विकास के लिए समर्पित है।
+        </p>
+        <div class="footer-badge">
+          <i class="fa-solid fa-award"></i> 12A &amp; 80G Certified NGO
+        </div>
+        <h4 class="footer-social-heading">Our Social Media | हमारे सोशल मीडिया</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1PUUzvUfoo/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/sathchaleham" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://youtube.com/@sathchaleham" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://wa.me/917011893028" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Quick Links | त्वरित लिंक</h4>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home | होम</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us | हमारे बारे में</a></li>
+          <li><a href="work.html"><i class="fa-solid fa-chevron-right"></i> Our Work | हमारे कार्य</a></li>
+          <li><a href="team.html"><i class="fa-solid fa-chevron-right"></i> Our Team | हमारी टीम</a></li>
+          <li><a href="events.html"><i class="fa-solid fa-chevron-right"></i> Events | कार्यक्रम</a></li>
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Downloads | डाउनलोड</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact | संपर्क</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Get Involved | जुड़ें</h4>
+        <ul class="footer-links">
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Volunteer | स्वयंसेवक</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Internship | इंटर्नशिप</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> CSR Partnership | CSR</a></li>
+          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Donate | दान करें</a></li>
+          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Fundraise | फंडरेज़िंग</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Careers | करियर</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Resources | संसाधन</h4>
+        <ul class="footer-links">
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Reports | रिपोर्ट</a></li>
+          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Certificates | प्रमाण पत्र</a></li>
+          <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery | गैलरी</a></li>
+          <li><a href="videos.html"><i class="fa-solid fa-chevron-right"></i> Videos | वीडियो</a></li>
+          <li><a href="contact.html#faq"><i class="fa-solid fa-chevron-right"></i> FAQ | सामान्य प्रश्न</a></li>
+          <li><a href="sitemap.html"><i class="fa-solid fa-chevron-right"></i> Sitemap | साइटमैप</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Contact Us | संपर्क</h4>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-location-dot"></i><div><strong>Address | पता</strong>भारतीय नगर, वार्ड नं. 26/35, सहरसा, बिहार – 852201</div></li>
+          <li><i class="fa-solid fa-phone"></i><div><strong>Helpline | हेल्पलाइन</strong><a href="tel:+917011893028" style="color:#93C5FD;">+91 7011893028</a></div></li>
+          <li><i class="fa-solid fa-envelope"></i><div><strong>Email | ईमेल</strong><a href="mailto:sathchaleham@gmail.com" style="color:#93C5FD;">sathchaleham@gmail.com</a></div></li>
+          <li><i class="fa-solid fa-clock"></i><div><strong>Office Hours | समय</strong>सोम – शनि · 10:00 AM – 6:00 PM</div></li>
+        </ul>
+        <div class="footer-newsletter">
+          <label>Newsletter | न्यूज़लेटर</label>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
+            <input type="email" placeholder="your@email.com" required>
+            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <div class="footer-copy">© 2026 <strong>Sath Chale Hum Foundation</strong> · All Rights Reserved</div>
+        <div class="footer-legal">
+          <a href="terms.html">Terms</a><span>·</span>
+          <a href="privacy.html">Privacy</a><span>·</span>
+          <a href="sitemap.html">Sitemap</a><span>·</span>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+        <div class="footer-made">Made with <i class="fa-solid fa-heart"></i> in Bihar</div>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/917011893028" target="_blank" rel="noopener noreferrer"
+   class="wa-float" aria-label="WhatsApp Chat">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+
+<button class="back-top" id="backTop" aria-label="Back to Top" type="button">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+  /* MOBILE MENU */
+  var menuToggle = document.getElementById("menuToggle");
+  var mobileNav = document.getElementById("mobileNav");
+  if(menuToggle && mobileNav){
+    menuToggle.addEventListener("click", function(){
+      mobileNav.classList.toggle("active");
+      menuToggle.classList.toggle("active");
+      menuToggle.setAttribute("aria-expanded",
+        mobileNav.classList.contains("active") ? "true" : "false");
+    });
+    mobileNav.querySelectorAll("a").forEach(function(link){
+      link.addEventListener("click", function(){
+        mobileNav.classList.remove("active");
+        menuToggle.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
+
+  /* FAQ ACCORDION */
+  var faqItems = document.querySelectorAll(".faq-item");
+  faqItems.forEach(function(item){
+    var header = item.querySelector(".faq-header");
+    if(header){
+      header.addEventListener("click", function(){
+        faqItems.forEach(function(other){
+          if(other !== item){ other.classList.remove("active"); }
+        });
+        item.classList.toggle("active");
+      });
+    }
+  });
+
+  /* QUICK BUTTONS */
+  var quickBtns = document.querySelectorAll(".quick-btn");
+  var subjectSelect = document.getElementById("csubject");
+  var messageTextarea = document.getElementById("cmessage");
+
+  quickBtns.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var sub = btn.getAttribute("data-subject");
+      if(subjectSelect){
+        for(var i = 0; i < subjectSelect.options.length; i++){
+          if(subjectSelect.options[i].value === sub){
+            subjectSelect.selectedIndex = i;
+            break;
+          }
+        }
+      }
+      var messages = {
+        "Donation": "मैं दान करना चाहता/चाहती हूँ। कृपया मुझे और जानकारी भेजें।",
+        "Volunteer": "मैं स्वयंसेवक बनना चाहता/चाहती हूँ। कृपया मुझे जानकारी दें।",
+        "Event Registration": "मैं कार्यक्रम में पंजीकरण करना चाहता/चाहती हूँ।",
+        "CSR Partnership": "मैं CSR साझेदारी के बारे में जानकारी चाहता/चाहती हूँ।",
+        "Feedback": "मेरा सुझाव/feedback: "
+      };
+      if(messageTextarea && messages[sub]){
+        messageTextarea.value = messages[sub];
+        messageTextarea.focus();
+      }
+      document.querySelector(".contact-form-box").scrollIntoView({
+        behavior: "smooth", block: "center"
+      });
+    });
+  });
+
+  /* CONTACT FORM */
+  var contactForm = document.getElementById("contactForm");
+  if(contactForm){
+    contactForm.addEventListener("submit", function(e){
+      e.preventDefault();
+
+      var name = document.getElementById("cname").value.trim();
+      var phone = document.getElementById("cphone").value.trim();
+      var email = document.getElementById("cemail").value.trim();
+      var subject = document.getElementById("csubject").value;
+      var message = document.getElementById("cmessage").value.trim();
+
+      if(!name || name.length < 3){
+        alert("कृपया अपना पूरा नाम भरें।");
+        document.getElementById("cname").focus();
+        return;
+      }
+      if(!/^[6-9][0-9]{9}$/.test(phone)){
+        alert("कृपया सही 10 अंकों का मोबाइल नंबर भरें।");
+        document.getElementById("cphone").focus();
+        return;
+      }
+      if(!/^\S+@\S+\.\S+$/.test(email)){
+        alert("कृपया सही ईमेल पता भरें।");
+        document.getElementById("cemail").focus();
+        return;
+      }
+      if(!subject){
+        alert("कृपया विषय चुनें।");
+        document.getElementById("csubject").focus();
+        return;
+      }
+      if(!message || message.length < 10){
+        alert("कृपया अपना संदेश विस्तार से लिखें (कम से कम 10 अक्षर)।");
+        document.getElementById("cmessage").focus();
+        return;
+      }
+
+      alert("धन्यवाद " + name + "! आपका संदेश सफलतापूर्वक भेज दिया गया है। हम शीघ्र ही आपसे संपर्क करेंगे।");
+
+      try { contactForm.submit(); } catch(err){}
+    });
+  }
+
+  /* NEWSLETTER */
+  window.handleNewsletter = function(e){
+    e.preventDefault();
+    var name = document.getElementById("newsName").value.trim();
+    var email = document.getElementById("newsEmail").value.trim();
+
+    if(!name || !email){
+      alert("कृपया नाम और ईमेल दोनों भरें।");
+      return;
+    }
+    if(!/^\S+@\S+\.\S+$/.test(email)){
+      alert("कृपया सही ईमेल पता भरें।");
+      return;
+    }
+
+    alert("धन्यवाद " + name + "! आप हमारे newsletter के subscriber बन गए हैं।");
+
+    var form = document.getElementById("newsletterFormBig");
+    if(form){
+      form.action = "https://formsubmit.co/sathchaleham@gmail.com";
+      form.method = "POST";
+      var subj = document.createElement("input");
+      subj.type = "hidden";
+      subj.name = "_subject";
+      subj.value = "New Newsletter Subscriber — Sath Chale Hum Foundation";
+      form.appendChild(subj);
+
+      setTimeout(function(){
+        try { form.submit(); } catch(err){}
+      }, 1500);
+    }
+  };
+
+  /* FEEDBACK STARS */
+  var starBtns = document.querySelectorAll(".star-btn");
+  var selectedRating = 0;
+
+  starBtns.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      selectedRating = parseInt(btn.getAttribute("data-star"), 10);
+      starBtns.forEach(function(b){
+        var starVal = parseInt(b.getAttribute("data-star"), 10);
+        if(starVal <= selectedRating){
+          b.classList.add("active");
+        } else {
+          b.classList.remove("active");
+        }
+      });
+    });
+  });
+
+  /* FEEDBACK SUBMIT */
+  var feedbackBtn = document.getElementById("feedbackSubmitBtn");
+  if(feedbackBtn){
+    feedbackBtn.addEventListener("click", function(){
+      if(selectedRating === 0){
+        alert("कृपया पहले star rating दें।");
+        return;
+      }
+      var text = document.getElementById("feedbackText").value.trim();
+
+      var waText = "⭐ *Feedback for Sath Chale Hum Foundation*\n\n"
+        + "Rating: " + selectedRating + " / 5 stars\n"
+        + (text ? "Message: " + text + "\n" : "")
+        + "\n— Submitted via website";
+
+      alert("धन्यवाद! आपके feedback के लिए आभार। आपने " + selectedRating + " star दिए।");
+
+      window.open("https://wa.me/917011893028?text=" + encodeURIComponent(waText), "_blank");
+
+      selectedRating = 0;
+      starBtns.forEach(function(b){ b.classList.remove("active"); });
+      document.getElementById("feedbackText").value = "";
+    });
+  }
+
+  /* BACK TO TOP */
+  var backTop = document.getElementById("backTop");
+  if(backTop){
+    window.addEventListener("scroll", function(){
+      if(window.scrollY > 500){ backTop.classList.add("show"); }
+      else { backTop.classList.remove("show"); }
+    });
+    backTop.addEventListener("click", function(){
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
+
+});
+</script>
+
+</body>
+</html>
