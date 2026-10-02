@@ -531,12 +531,10 @@ body .site-header{top:94px;}
 .cta-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;}
 @media(max-width:700px){.cta-strip{padding:65px 0;}.cta-buttons{flex-direction:column;}.cta-buttons .btn{width:100%;}}
 
-/* ================= FOOTER — NEW DESIGN ================= */
+/* ================= FOOTER ================= */
 footer{background:radial-gradient(circle at 10% 20%,rgba(59,130,246,.1),transparent 40%),radial-gradient(circle at 90% 80%,rgba(251,191,36,.06),transparent 40%),linear-gradient(160deg,#0A2540 0%,#0F2E4F 60%,#0A2540 100%);color:#fff;padding-top:80px;position:relative;overflow:hidden;}
 footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(251,191,36,.6),transparent);}
-
-/* TOP SECTION — Center Brand + Social Media */
-.footer-top{text-align:center;padding-bottom:50px;border-bottom:1px solid rgba(59,130,246,.15);margin-bottom:50px;position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:16px;}
+.footer-top{text-align:center;padding-bottom:44px;border-bottom:1px solid rgba(59,130,246,.15);margin-bottom:44px;position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:14px;}
 .footer-brand-head{display:flex;align-items:center;gap:14px;justify-content:center;}
 .footer-logo-box{width:70px;height:70px;border-radius:18px;background:#FFFFFF;display:block;padding:0;border:2px solid rgba(251,191,36,.5);box-shadow:0 8px 22px rgba(59,130,246,.3);flex-shrink:0;overflow:hidden;position:relative;line-height:0;}
 .footer-logo-box img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.02);}
@@ -545,37 +543,35 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 .footer-tagline-text{color:#93C5FD;font-size:.78rem;font-weight:600;letter-spacing:.4px;font-family:"Tiro Devanagari Hindi",serif;line-height:1.35;}
 .footer-desc{color:#93C5FD;font-size:.88rem;line-height:1.75;max-width:600px;margin:0 auto;}
 .footer-badge{display:inline-flex;align-items:center;gap:7px;padding:7px 16px;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.3);border-radius:100px;color:var(--gold);font-size:.72rem;font-weight:900;letter-spacing:.4px;}
-.footer-social-heading{font-family:"Tiro Devanagari Hindi",serif;font-size:.95rem;font-weight:900;color:#fff;margin-top:10px;margin-bottom:8px;letter-spacing:.2px;position:relative;padding-bottom:10px;}
+.footer-social-heading{font-family:"Tiro Devanagari Hindi",serif;font-size:.95rem;font-weight:900;color:#fff;margin-top:8px;margin-bottom:6px;letter-spacing:.2px;position:relative;padding-bottom:10px;}
 .footer-social-heading::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:40px;height:2px;background:linear-gradient(90deg,transparent,#FBBF24,transparent);border-radius:2px;}
 .social-icons{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
 .social-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:rgba(59,130,246,.12);color:#93C5FD;font-size:1rem;transition:.35s;border:1px solid rgba(59,130,246,.25);}
 .social-icon:hover{transform:translateY(-5px) scale(1.08);background:linear-gradient(135deg,#FBBF24,#F59E0B);color:#0A2540;border-color:var(--gold);box-shadow:0 12px 26px rgba(251,191,36,.5);}
-
-/* BOTTOM SECTION — 3 Columns */
-.footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding-bottom:60px;position:relative;z-index:2;}
-.footer-heading{font-family:"Tiro Devanagari Hindi",serif;font-size:.95rem;font-weight:900;color:#fff;margin-bottom:22px;padding-bottom:12px;position:relative;letter-spacing:.2px;padding-top:3px;}
-.footer-heading::after{content:"";position:absolute;bottom:0;left:0;width:32px;height:2px;background:linear-gradient(90deg,#FBBF24,#F59E0B);border-radius:2px;}
-.footer-links{list-style:none;}
-.footer-links li{margin-bottom:11px;}
+.footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding-bottom:36px;position:relative;z-index:2;align-items:start;text-align:center;}
+.footer-col{display:flex;flex-direction:column;align-items:center;text-align:center;}
+.footer-heading{font-family:"Tiro Devanagari Hindi",serif;font-size:.95rem;font-weight:900;color:#fff;margin-bottom:20px;padding-bottom:12px;position:relative;letter-spacing:.2px;padding-top:3px;text-align:center;width:100%;}
+.footer-heading::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:32px;height:2px;background:linear-gradient(90deg,#FBBF24,#F59E0B);border-radius:2px;}
+.footer-links{list-style:none;display:flex;flex-direction:column;align-items:flex-start;}
+.footer-links li{margin-bottom:10px;}
 .footer-links a{color:#93C5FD;font-size:.82rem;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:.25s;line-height:1.5;}
 .footer-links a i{font-size:.58rem;color:#FBBF24;transition:.25s;}
 .footer-links a:hover{color:var(--gold);transform:translateX(4px);}
-.contact-info{list-style:none;}
-.contact-info li{display:flex;gap:10px;align-items:flex-start;margin-bottom:14px;color:#93C5FD;font-size:.82rem;line-height:1.65;}
+.contact-info{list-style:none;display:flex;flex-direction:column;align-items:flex-start;}
+.contact-info li{display:flex;gap:10px;align-items:flex-start;margin-bottom:14px;color:#93C5FD;font-size:.82rem;line-height:1.65;text-align:left;}
 .contact-info li i{flex-shrink:0;width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.25);color:#FBBF24;font-size:.75rem;margin-top:1px;}
 .contact-info li strong{display:block;color:#fff;font-size:.72rem;margin-bottom:2px;letter-spacing:.3px;text-transform:uppercase;}
 .contact-info li a{color:#93C5FD;}
 .contact-info li a:hover{color:var(--gold);}
-.footer-newsletter{margin-top:18px;padding-top:16px;border-top:1px solid rgba(59,130,246,.2);}
-.footer-newsletter label{display:block;color:#93C5FD;font-size:.7rem;font-weight:800;letter-spacing:.5px;text-transform:uppercase;margin-bottom:10px;}
-.newsletter-form{display:flex;gap:6px;background:rgba(255,255,255,.06);border:1px solid rgba(59,130,246,.25);border-radius:12px;padding:5px;transition:.3s;}
-.newsletter-form:focus-within{border-color:var(--gold);box-shadow:0 0 0 4px rgba(251,191,36,.1);}
-.newsletter-form input{flex:1;background:transparent;border:none;outline:none;padding:9px 10px;color:#fff;font-family:inherit;font-size:.78rem;min-width:0;}
+.footer-newsletter-wrap{display:flex;flex-direction:column;align-items:center;padding:32px 0 44px;border-top:1px solid rgba(59,130,246,.15);position:relative;z-index:2;gap:14px;}
+.newsletter-label{font-family:"Tiro Devanagari Hindi",serif;font-size:.95rem;font-weight:900;color:#fff;letter-spacing:.3px;position:relative;padding-bottom:10px;}
+.newsletter-label::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:40px;height:2px;background:linear-gradient(90deg,transparent,#FBBF24,transparent);border-radius:2px;}
+.newsletter-form{display:flex;gap:6px;background:rgba(255,255,255,.06);border:1px solid rgba(59,130,246,.25);border-radius:14px;padding:6px;width:min(480px,90%);transition:.3s;}
+.newsletter-form:focus-within{border-color:var(--gold);box-shadow:0 0 0 4px rgba(251,191,36,.12);}
+.newsletter-form input{flex:1;background:transparent;border:none;outline:none;padding:12px 16px;color:#fff;font-family:inherit;font-size:.85rem;min-width:0;}
 .newsletter-form input::placeholder{color:#6B8CAE;}
-.newsletter-form button{flex-shrink:0;width:38px;height:38px;border-radius:9px;background:linear-gradient(135deg,#FBBF24,#F59E0B);color:#0A2540;font-size:.85rem;display:grid;place-items:center;transition:.3s;}
+.newsletter-form button{flex-shrink:0;width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,#FBBF24,#F59E0B);color:#0A2540;font-size:.9rem;display:grid;place-items:center;transition:.3s;}
 .newsletter-form button:hover{transform:scale(1.08);}
-
-/* Bottom Bar */
 .footer-bottom{border-top:1px solid rgba(59,130,246,.15);padding:22px 0;position:relative;z-index:2;}
 .footer-bottom-inner{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;}
 .footer-copy{color:#6B8CAE;font-size:.78rem;font-weight:600;}
@@ -586,22 +582,24 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 .footer-legal span{color:rgba(59,130,246,.5);font-size:.74rem;}
 .footer-made{color:#6B8CAE;font-size:.74rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;}
 .footer-made i{color:#DC2626;font-size:.68rem;}
-
-/* Footer Responsive */
-@media(max-width:1000px){
-  .footer-grid{grid-template-columns:repeat(2,1fr);gap:36px;}
-}
+@media(max-width:900px){.footer-grid{grid-template-columns:repeat(2,1fr);gap:32px;}}
 @media(max-width:700px){
   footer{padding-top:60px;}
-  .footer-top{padding-bottom:36px;margin-bottom:36px;gap:14px;}
+  .footer-top{padding-bottom:32px;margin-bottom:32px;gap:12px;}
   .footer-brand-head{flex-direction:column;text-align:center;gap:12px;}
   .footer-brand-text{text-align:center;}
   .footer-brand-text h3{font-size:1.15rem;}
   .footer-tagline-text{font-size:.72rem;}
   .footer-logo-box{width:60px;height:60px;border-radius:15px;}
   .footer-desc{font-size:.82rem;}
-  .footer-grid{grid-template-columns:1fr;gap:32px;padding-bottom:40px;}
+  .footer-grid{grid-template-columns:1fr;gap:32px;padding-bottom:32px;text-align:center;}
+  .footer-col{align-items:center;}
+  .footer-links{align-items:center;}
+  .contact-info{align-items:center;}
+  .contact-info li{text-align:center;}
   .footer-heading{font-size:.92rem;}
+  .footer-newsletter-wrap{padding:26px 0 36px;}
+  .newsletter-form{width:100%;}
   .footer-legal a{font-size:.68rem;padding:4px 6px;}
   .footer-legal span{font-size:.68rem;}
 }
@@ -724,7 +722,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 
 <div class="scroll-progress" id="scrollProgress"></div>
 
-<!-- SPLASH -->
 <div class="splash-screen" id="splashScreen">
   <div class="splash-glow"></div>
   <div class="splash-glow ring-1"></div>
@@ -1466,7 +1463,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 <footer>
   <div class="container">
     
-    <!-- TOP: Center Brand + Social -->
+    <!-- TOP: Center Brand + Social Media -->
     <div class="footer-top">
       <div class="footer-brand-head">
         <div class="footer-logo-box">
@@ -1489,9 +1486,9 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       </div>
     </div>
 
-    <!-- BOTTOM: 3 Columns -->
+    <!-- 3 COLUMNS: Quick Links, Get Involved, Contact Us -->
     <div class="footer-grid">
-      <div>
+      <div class="footer-col">
         <h4 class="footer-heading">Quick Links | त्वरित लिंक</h4>
         <ul class="footer-links">
           <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home | होम</a></li>
@@ -1504,7 +1501,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           <li><a href="faq.html"><i class="fa-solid fa-chevron-right"></i> FAQ | सामान्य प्रश्न</a></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-col">
         <h4 class="footer-heading">Get Involved | जुड़ें</h4>
         <ul class="footer-links">
           <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Donate Us | दान करें</a></li>
@@ -1517,7 +1514,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           <li><a href="work.html"><i class="fa-solid fa-chevron-right"></i> Sponsor a Program</a></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-col">
         <h4 class="footer-heading">Contact Us | संपर्क</h4>
         <ul class="contact-info">
           <li><i class="fa-solid fa-location-dot"></i><div><strong>Address | पता:</strong>भारतीय नगर, वार्ड 26/35, सहरसा, बिहार — 852201</div></li>
@@ -1525,16 +1522,19 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           <li><i class="fa-solid fa-envelope"></i><div><strong>Email | ईमेल:</strong><a href="mailto:sathchaleham@gmail.com" style="color:#93C5FD;">sathchaleham@gmail.com</a></div></li>
           <li><i class="fa-solid fa-clock"></i><div><strong>Office Hours:</strong>सोम – शनि · 10:00 AM – 6:00 PM</div></li>
         </ul>
-        <div class="footer-newsletter">
-          <label>Newsletter | न्यूज़लेटर:</label>
-          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
-            <input type="email" placeholder="your@email.com" required>
-            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
-          </form>
-        </div>
       </div>
     </div>
 
+    <!-- NEWSLETTER: Below 3 columns, Center -->
+    <div class="footer-newsletter-wrap">
+      <label class="newsletter-label">Newsletter | न्यूज़लेटर</label>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+
+    <!-- BOTTOM BAR -->
     <div class="footer-bottom">
       <div class="footer-bottom-inner">
         <div class="footer-copy">© 2026 <strong>Sath Chale Hum Foundation</strong> · All Rights Reserved</div>
