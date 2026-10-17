@@ -1,970 +1,545 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Team | साथ चले हम फाउंडेशन</title>
+<meta name="description" content="साथ चले हम फाउंडेशन की टीम — Board of Trustees, Executive Members, Advisory Board और Program Team।">
+<meta name="theme-color" content="#0A2540">
+<link rel="icon" type="image/png" href="sath_chale_ham_logo_HD-1.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Tiro+Devanagari+Hindi:ital@0;1&family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;overflow-x:hidden;}
+:root{
+  --navy:#0A2540;--blue:#1E40AF;--blue-2:#2563EB;--blue-light:#3B82F6;
+  --blue-pale:#EFF6FF;--gold:#FBBF24;--gold-dark:#D97706;--gold-pale:#FEF3C7;
+  --red:#DC2626;--green:#059669;--white:#FFF;--text:#0F172A;--text-soft:#475569;
+  --muted:#64748B;--border:#E2E8F0;--bg:#F8FAFC;
+}
+body{font-family:"Poppins","Tiro Devanagari Hindi",sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+button{font-family:inherit;cursor:pointer;border:none;}
+.container{width:min(1240px,92%);margin:auto;}
+.hindi{font-family:"Tiro Devanagari Hindi",serif;}
+.section{padding:90px 0;position:relative;overflow:hidden;}
+.section-title{text-align:center;margin-bottom:55px;}
+.section-title .small-title{display:inline-block;color:var(--blue);font-size:.9rem;font-weight:800;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:12px;}
+.section-title h2{font-size:clamp(1.9rem,3.8vw,3rem);line-height:1.35;font-weight:900;color:var(--navy);padding-top:6px;font-family:"Tiro Devanagari Hindi",serif;}
+.section-title h2 span{color:var(--blue-2);}
+.section-title p{max-width:800px;margin:18px auto 0;color:var(--muted);line-height:1.8;font-size:1rem;padding-top:4px;}
+.scroll-progress{position:fixed;top:0;left:0;height:4px;width:0;z-index:2147483646;background:linear-gradient(90deg,#2563EB,#FBBF24,#DC2626);box-shadow:0 0 20px rgba(251,191,36,.9);transition:width .15s;pointer-events:none;}
 
-  <title>Our Team | हमारी टीम | Sath Chale Hum Foundation</title>
-  <meta name="description" content="साथ चले हम फाउंडेशन की टीम — Board of Trustees, Advisory Board, Program Team के समर्पित सदस्य।">
-  <meta name="theme-color" content="#0A2540">
-  <link rel="icon" type="image/png" href="sath_chale_ham_logo_HD-1.png">
+/* ═══════ TOP FIXED BAR (SAME AS HOME) ═══════ */
+.top-fixed{position:fixed;top:0;left:0;right:0;z-index:9998;}
+.top-ticker{height:42px;display:flex;align-items:center;background:linear-gradient(90deg,#0A2540,#1E40AF,#0A2540);color:#fff;overflow:hidden;border-bottom:1px solid rgba(251,191,36,.25);}
+.ticker-label{flex:0 0 auto;display:flex;align-items:center;gap:7px;padding:0 16px;height:100%;background:linear-gradient(135deg,var(--gold),#F59E0B);color:#0A2540;font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;position:relative;z-index:3;}
+.ticker-label::after{content:"";position:absolute;right:-10px;top:0;bottom:0;width:20px;background:linear-gradient(90deg,var(--gold),transparent);}
+.ticker-label i{font-size:10px;animation:tickerPulse 1.6s infinite;}
+@keyframes tickerPulse{50%{transform:scale(1.2);}}
+.ticker-scroll{flex:1;overflow:hidden;height:100%;display:flex;align-items:center;min-width:0;}
+.ticker-track{display:flex;align-items:center;gap:55px;padding-left:25px;white-space:nowrap;animation:tickerMove 40s linear infinite;font-size:12px;font-weight:700;}
+@keyframes tickerMove{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.ticker-item{display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,.92);cursor:pointer;transition:.25s;}
+.ticker-item:hover{color:var(--gold);}
+.ticker-item i{color:var(--gold);font-size:11px;}
+.ticker-item strong{color:#fff;}
+.ticker-item:hover strong{color:var(--gold);}
+.ticker-item a{color:var(--gold);text-decoration:underline;text-underline-offset:3px;font-weight:800;}
+.top-buttons{height:52px;display:flex;align-items:center;justify-content:center;gap:12px;background:rgba(10,37,64,.98);backdrop-filter:blur(20px);border-bottom:1px solid rgba(251,191,36,.18);padding:0 16px;}
+.top-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 22px;border-radius:50px;font-size:12.5px;font-weight:900;letter-spacing:.03em;transition:.35s;white-space:nowrap;text-decoration:none;box-shadow:0 8px 22px rgba(0,0,0,.3);}
+.top-btn.donate{background:linear-gradient(135deg,#DC2626,#991B1B);color:#fff;}
+.top-btn.donate:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(220,38,38,.6);}
+.top-btn.member{background:linear-gradient(135deg,#FBBF24,#F59E0B);color:#0A2540;}
+.top-btn.member:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(251,191,36,.6);}
+@media(max-width:900px){
+  .top-ticker{height:38px;}
+  .ticker-label{padding:0 12px;font-size:9px;gap:5px;}
+  .ticker-track{gap:38px;font-size:10.5px;padding-left:15px;animation-duration:55s;}
+  .top-buttons{height:auto;padding:8px;gap:8px;}
+  .top-btn{padding:9px 14px;font-size:11px;gap:5px;flex:1;justify-content:center;}
+}
+body .site-header{top:94px;}
+@media(max-width:900px){body .site-header{top:98px;}}
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+/* ═══════ SITE HEADER (SAME AS HOME) ═══════ */
+.site-header{position:fixed;left:0;top:94px;width:100%;z-index:9999;background:linear-gradient(135deg,#0A2540 0%,#0F2E4F 50%,#0A2540 100%);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(59,130,246,.15);box-shadow:0 8px 32px rgba(10,37,64,.18);}
+.header-inner{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:20px;}
+.brand{display:flex;align-items:center;gap:14px;flex-shrink:0;}
+.logo-box{width:66px;height:66px;border-radius:16px;background:#FFFFFF;box-shadow:0 8px 24px rgba(59,130,246,.35);border:2px solid rgba(251,191,36,.4);transition:.35s ease;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.logo-box:hover{transform:translateY(-2px) rotate(-3deg);box-shadow:0 14px 34px rgba(59,130,246,.5);border-color:var(--gold);}
+.logo-box img{width:100%;height:100%;object-fit:cover;}
+.brand-name{color:#fff;font-size:clamp(1.2rem,2.4vw,1.7rem);font-weight:900;line-height:1.35;white-space:nowrap;font-family:"Tiro Devanagari Hindi",serif;text-shadow:0 2px 10px rgba(0,0,0,.3);padding-top:4px;}
+.brand-name .gold{color:var(--gold);font-weight:900;}
+.brand-tagline{color:#93C5FD;font-size:.7rem;font-weight:600;margin-top:3px;white-space:nowrap;}
+.desktop-nav{display:flex;align-items:center;gap:2px;flex-wrap:nowrap;}
+.desktop-nav > a{color:#E0F2FE;font-size:.78rem;font-weight:700;padding:11px 10px;border-radius:10px;transition:.25s ease;white-space:nowrap;position:relative;}
+.desktop-nav > a:hover{color:var(--gold);background:rgba(59,130,246,.15);}
+.desktop-nav > a.active{color:var(--gold);background:rgba(59,130,246,.2);}
+.desktop-nav > a.active::after{content:"";position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:20px;height:2px;border-radius:2px;background:var(--gold);}
+.donate-nav{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,#DC2626,#991B1B)!important;padding:11px 17px!important;color:#fff!important;font-weight:900!important;border-radius:11px!important;box-shadow:0 6px 20px rgba(220,38,38,.45),inset 0 1px 0 rgba(255,255,255,.2);animation:pulseDonate 2s infinite;margin-left:6px;letter-spacing:.3px;}
+.donate-nav:hover{color:#fff!important;background:linear-gradient(135deg,#EF4444,#DC2626)!important;transform:translateY(-2px)!important;}
+@keyframes pulseDonate{0%,100%{transform:scale(1);box-shadow:0 6px 20px rgba(220,38,38,.4);}50%{transform:scale(1.04);box-shadow:0 10px 30px rgba(220,38,38,.7);}}
+.menu-toggle{display:none;width:46px;height:46px;border-radius:12px;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.3);padding:11px;transition:.3s;}
+.menu-toggle span{display:block;width:100%;height:2.5px;background:#fff;margin:4.5px 0;border-radius:5px;transition:.3s;}
+.menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(6px,6px);}
+.menu-toggle.active span:nth-child(2){opacity:0;}
+.menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px);}
+.mobile-nav{display:none;background:linear-gradient(180deg,#0A2540,#0F2E4F);border-top:1px solid rgba(59,130,246,.2);padding:14px 4% 20px;box-shadow:0 20px 40px rgba(0,0,0,.3);}
+.mobile-nav a{display:block;color:#E0F2FE;padding:14px 16px;border-radius:10px;font-weight:700;font-size:.9rem;margin:4px 0;transition:.25s;border:1px solid transparent;}
+.mobile-nav a:hover,.mobile-nav a.active{background:rgba(59,130,246,.15);color:var(--gold);border-color:rgba(59,130,246,.3);}
+.mobile-nav .donate-nav{text-align:center;margin-top:12px;justify-content:center;display:flex;}
+.mobile-nav.active{display:block;}
+@media(max-width:900px){
+  .desktop-nav{display:none;}.menu-toggle{display:block;}.header-inner{min-height:78px;}
+  .brand-name{font-size:clamp(1.1rem,3vw,1.4rem);}.brand-tagline{font-size:.66rem;}.logo-box{width:60px;height:60px;}
+}
+@media(max-width:600px){
+  .brand-name{font-size:clamp(1rem,4vw,1.15rem);white-space:normal;line-height:1.3;}
+  .brand-tagline{font-size:.62rem;white-space:normal;}.logo-box{width:54px;height:54px;border-radius:13px;}.brand{gap:11px;}
+}
 
-  <style>
-    *{ margin:0; padding:0; box-sizing:border-box; }
-    html{ scroll-behavior:smooth; overflow-x:hidden; }
+/* ═══════ BUTTONS ═══════ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:15px 30px;border-radius:13px;font-size:.9rem;font-weight:800;transition:.3s;border:none;cursor:pointer;font-family:inherit;}
+.btn:hover{transform:translateY(-4px);}
+.btn-red{color:#fff;background:linear-gradient(135deg,#DC2626,#991B1B);box-shadow:0 12px 32px rgba(220,38,38,.45);}
+.btn-red:hover{box-shadow:0 18px 42px rgba(220,38,38,.65);}
+.btn-gold{color:#0A2540;background:linear-gradient(135deg,#FBBF24,#F59E0B);box-shadow:0 12px 32px rgba(251,191,36,.45);}
+.btn-gold:hover{box-shadow:0 18px 42px rgba(251,191,36,.65);}
+.btn-outline{color:#fff;background:rgba(255,255,255,.06);border:1.5px solid rgba(255,255,255,.3);backdrop-filter:blur(8px);}
+.btn-outline:hover{background:rgba(255,255,255,.14);border-color:var(--gold);color:var(--gold);}
+.btn-pulse-red{animation:pulseRed 1.8s infinite;}
+@keyframes pulseRed{0%,100%{box-shadow:0 12px 32px rgba(220,38,38,.4);}50%{box-shadow:0 16px 42px rgba(220,38,38,.75);}}
 
-    :root{
-      --navy:#0A2540; --navy-2:#0F2E4F;
-      --blue:#1E40AF; --blue-2:#2563EB; --blue-light:#3B82F6;
-      --blue-pale:#EFF6FF; --blue-soft:#DBEAFE;
-      --gold:#FBBF24; --gold-dark:#D97706; --gold-pale:#FEF3C7;
-      --red:#DC2626; --red-dark:#991B1B; --green:#059669;
-      --white:#FFFFFF; --text:#0F172A; --text-soft:#475569;
-      --muted:#64748B; --border:#E2E8F0; --bg:#F8FAFC;
-    }
+/* ═══════ FOOTER (SAME AS HOME) ═══════ */
+footer{background:radial-gradient(circle at 10% 20%,rgba(59,130,246,.1),transparent 40%),radial-gradient(circle at 90% 80%,rgba(251,191,36,.06),transparent 40%),linear-gradient(160deg,#0A2540 0%,#0F2E4F 60%,#0A2540 100%);color:#fff;padding-top:80px;position:relative;overflow:hidden;}
+footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(251,191,36,.6),transparent);}
+.footer-top{text-align:center;padding-bottom:44px;border-bottom:1px solid rgba(59,130,246,.15);margin-bottom:44px;position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:14px;}
+.footer-brand-head{display:flex;align-items:center;gap:14px;justify-content:center;}
+.footer-logo-box{width:70px;height:70px;border-radius:18px;background:#FFFFFF;border:2px solid rgba(251,191,36,.5);box-shadow:0 8px 22px rgba(59,130,246,.3);flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.footer-logo-box img{width:100%;height:100%;object-fit:cover;}
+.footer-brand-text{text-align:left;}
+.footer-brand-text h3{font-family:"Tiro Devanagari Hindi",serif;font-size:1.3rem;font-weight:900;color:#fff;line-height:1.35;margin-bottom:4px;}
+.footer-tagline-text{color:#93C5FD;font-size:.78rem;font-weight:600;font-family:"Tiro Devanagari Hindi",serif;}
+.footer-desc{color:#93C5FD;font-size:.88rem;line-height:1.75;max-width:600px;margin:0 auto;}
+.footer-badge{display:inline-flex;align-items:center;gap:7px;padding:7px 16px;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.3);border-radius:100px;color:var(--gold);font-size:.72rem;font-weight:900;}
+.footer-social-heading{font-family:"Tiro Devanagari Hindi",serif;font-size:.95rem;font-weight:900;color:#fff;margin-top:8px;margin-bottom:6px;padding-bottom:10px;position:relative;}
+.footer-social-heading::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:40px;height:2px;background:linear-gradient(90deg,transparent,#FBBF24,transparent);}
+.social-icons{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
+.social-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:rgba(59,130,246,.12);color:#93C5FD;font-size:1rem;transition:.35s;border:1px solid rgba(59,130,246,.25);}
+.social-icon:hover{transform:translateY(-5px) scale(1.08);background:linear-gradient(135deg,#FBBF24,#F59E0B);color:#0A2540;border-color:var(--gold);}
+.footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding-bottom:36px;text-align:center;}
+.footer-col{display:flex;flex-direction:column;align-items:center;text-align:center;}
+.footer-heading{font-family:"Tiro Devanagari Hindi",serif;font-size:.95rem;font-weight:900;color:#fff;margin-bottom:20px;padding-bottom:12px;position:relative;width:100%;}
+.footer-heading::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:32px;height:2px;background:linear-gradient(90deg,#FBBF24,#F59E0B);border-radius:2px;}
+.footer-links{list-style:none;display:flex;flex-direction:column;align-items:flex-start;}
+.footer-links li{margin-bottom:10px;}
+.footer-links a{color:#93C5FD;font-size:.82rem;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:.25s;}
+.footer-links a i{font-size:.58rem;color:#FBBF24;transition:.25s;}
+.footer-links a:hover{color:var(--gold);transform:translateX(4px);}
+.contact-info{list-style:none;display:flex;flex-direction:column;align-items:flex-start;}
+.contact-info li{display:flex;gap:10px;align-items:flex-start;margin-bottom:14px;color:#93C5FD;font-size:.82rem;line-height:1.65;text-align:left;}
+.contact-info li i{flex-shrink:0;width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.25);color:#FBBF24;font-size:.75rem;margin-top:1px;}
+.contact-info li strong{display:block;color:#fff;font-size:.72rem;margin-bottom:2px;text-transform:uppercase;}
+.contact-info li a{color:#93C5FD;}
+.contact-info li a:hover{color:var(--gold);}
+.footer-newsletter-wrap{display:flex;flex-direction:column;align-items:center;padding:32px 0 44px;border-top:1px solid rgba(59,130,246,.15);gap:14px;}
+.newsletter-label{font-family:"Tiro Devanagari Hindi",serif;font-size:.95rem;font-weight:900;color:#fff;padding-bottom:10px;position:relative;}
+.newsletter-label::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:40px;height:2px;background:linear-gradient(90deg,transparent,#FBBF24,transparent);}
+.newsletter-form{display:flex;gap:6px;background:rgba(255,255,255,.06);border:1px solid rgba(59,130,246,.25);border-radius:14px;padding:6px;width:min(480px,90%);transition:.3s;}
+.newsletter-form:focus-within{border-color:var(--gold);box-shadow:0 0 0 4px rgba(251,191,36,.12);}
+.newsletter-form input{flex:1;background:transparent;border:none;outline:none;padding:12px 16px;color:#fff;font-family:inherit;font-size:.85rem;min-width:0;}
+.newsletter-form input::placeholder{color:#6B8CAE;}
+.newsletter-form button{flex-shrink:0;width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,#FBBF24,#F59E0B);color:#0A2540;font-size:.9rem;display:grid;place-items:center;transition:.3s;}
+.newsletter-form button:hover{transform:scale(1.08);}
+.footer-bottom{border-top:1px solid rgba(59,130,246,.15);padding:22px 0;}
+.footer-bottom-inner{display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center;}
+.footer-copy{color:#6B8CAE;font-size:.78rem;font-weight:600;}
+.footer-copy strong{color:#93C5FD;font-weight:800;}
+.footer-legal{display:flex;gap:4px;flex-wrap:wrap;justify-content:center;}
+.footer-legal a{color:#93C5FD;font-size:.74rem;font-weight:700;padding:5px 8px;border-radius:8px;transition:.25s;}
+.footer-legal a:hover{color:var(--gold);background:rgba(59,130,246,.15);}
+.footer-legal span{color:rgba(59,130,246,.5);}
+.footer-made{color:#6B8CAE;font-size:.74rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;}
+.footer-made i{color:#DC2626;font-size:.68rem;}
+@media(max-width:900px){.footer-grid{grid-template-columns:repeat(2,1fr);gap:32px;}}
+@media(max-width:700px){
+  footer{padding-top:60px;}.footer-top{padding-bottom:32px;margin-bottom:32px;gap:12px;}
+  .footer-brand-head{flex-direction:column;text-align:center;gap:12px;}.footer-brand-text{text-align:center;}
+  .footer-brand-text h3{font-size:1.15rem;}.footer-logo-box{width:60px;height:60px;}
+  .footer-grid{grid-template-columns:1fr;gap:32px;}.footer-links{align-items:center;}.contact-info{align-items:center;}
+  .contact-info li{text-align:center;}.newsletter-form{width:100%;}
+}
 
-    body{ font-family:"Poppins","Tiro Devanagari Hindi",sans-serif;
-      background:var(--bg); color:var(--text); overflow-x:hidden; line-height:1.6; }
-    a{ text-decoration:none; color:inherit; }
-    img{ max-width:100%; display:block; }
-    button{ font-family:inherit; cursor:pointer; border:none; }
+/* ═══════ FLOATING ═══════ */
+.wa-float{position:fixed;left:20px;bottom:20px;z-index:8000;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;border-radius:50%;font-size:26px;box-shadow:0 12px 30px rgba(37,211,102,.4);}
+.back-top{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#2563EB,#1E40AF);color:#fff;cursor:pointer;z-index:1000;display:grid;place-items:center;opacity:0;visibility:hidden;transition:.3s;box-shadow:0 10px 28px rgba(37,99,235,.45);}
+.back-top.show{opacity:1;visibility:visible;}
 
-    .container{ width:min(1240px,92%); margin:auto; }
-    .hindi{ font-family:"Tiro Devanagari Hindi",serif; }
+/* ═══════════════════════════════════════════════════════════
+   TEAM PAGE
+   ═══════════════════════════════════════════════════════════ */
 
-    .section{ padding:90px 0; position:relative; overflow:hidden; }
-    .section-title{ text-align:center; margin-bottom:55px; }
-    .section-title .small-title{
-      display:inline-block; color:var(--blue); font-size:.9rem; font-weight:800;
-      letter-spacing:2.5px; text-transform:uppercase; margin-bottom:12px; }
-    .section-title h2{ font-size:clamp(1.9rem,3.8vw,3rem); line-height:1.2;
-      font-weight:900; color:var(--navy); }
-    .section-title h2 span{ color:var(--blue-2); }
+/* Banner */
+.team-banner{
+  padding:240px 0 100px;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(251,191,36,.12), transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(37,99,235,.25), transparent 40%),
+    linear-gradient(135deg, #061a45 0%, #0a2463 45%, #1d4ed8 100%);
+  color:#fff;text-align:center;position:relative;overflow:hidden;
+}
+.team-banner::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);background-size:28px 28px;opacity:.6;pointer-events:none;}
+.team-banner-inner{position:relative;z-index:2;max-width:900px;margin:auto;}
+.team-breadcrumb{display:inline-flex;align-items:center;gap:8px;padding:8px 18px;border-radius:100px;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.35);color:var(--gold);font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:26px;}
+.team-breadcrumb a{color:#93C5FD;transition:.25s;}
+.team-breadcrumb a:hover{color:var(--gold);}
+.team-breadcrumb i{font-size:.55rem;opacity:.6;}
+.team-banner h1{font-family:"Tiro Devanagari Hindi",serif;font-size:clamp(2.4rem,5.5vw,4rem);font-weight:900;line-height:1.25;letter-spacing:-.5px;margin-bottom:20px;text-shadow:0 8px 30px rgba(0,0,0,.3);}
+.team-banner h1 .gold{color:var(--gold);}
+.team-banner .team-subtitle{color:#93C5FD;font-size:clamp(.95rem,1.6vw,1.05rem);font-weight:600;max-width:720px;margin:0 auto;line-height:1.85;}
+.team-banner-stats{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:32px;}
+.team-banner-stat{padding:12px 22px;border-radius:14px;background:rgba(255,255,255,.08);border:1px solid rgba(251,191,36,.25);backdrop-filter:blur(10px);color:#fff;font-size:.82rem;font-weight:800;}
+.team-banner-stat strong{color:var(--gold);font-size:1.15rem;margin-right:5px;font-family:"Poppins",sans-serif;}
 
-    /* HEADER */
-    .site-header{
-      position:fixed; left:0; top:0; width:100%; z-index:9999;
-      background:linear-gradient(135deg,#0A2540 0%,#0F2E4F 50%,#0A2540 100%);
-      backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
-      border-bottom:1px solid rgba(59,130,246,.15);
-      box-shadow:0 8px 32px rgba(10,37,64,.18);
-    }
-    .header-inner{ min-height:92px; display:flex; align-items:center;
-      justify-content:space-between; gap:20px; }
-    .brand{ display:flex; align-items:center; gap:14px;
-      min-width:0; flex-shrink:0; }
-    .logo-box{ width:66px; height:66px; border-radius:16px;
-      background:#FFFFFF; display:block; padding:0;
-      box-shadow:0 8px 24px rgba(59,130,246,.35);
-      border:2px solid rgba(251,191,36,.4);
-      transition:.35s ease; flex-shrink:0; overflow:hidden;
-      position:relative; line-height:0; }
-    .logo-box:hover{ transform:translateY(-2px) rotate(-3deg);
-      border-color:var(--gold); }
-    .logo-box img{ width:100%; height:100%;
-      object-fit:cover; object-position:center; }
-    .brand-text{ min-width:0; }
-    .brand-name{ color:#fff;
-      font-size:clamp(1.2rem,2.4vw,1.7rem); font-weight:900;
-      line-height:1.1; white-space:nowrap; letter-spacing:-.5px;
-      font-family:"Tiro Devanagari Hindi",serif; }
-    .brand-name .gold{ color:var(--gold); }
-    .brand-tagline{ color:#93C5FD; font-size:.7rem; font-weight:600;
-      margin-top:3px; white-space:nowrap; letter-spacing:.4px; }
+/* Section wrapper */
+.team-group{padding:80px 0;background:#fff;position:relative;overflow:hidden;scroll-margin-top:200px;}
+.team-group:nth-child(even){background:#F8FAFC;}
 
-    .desktop-nav{ display:flex; align-items:center; gap:2px; flex-wrap:nowrap; }
-    .desktop-nav > a{ color:#E0F2FE; font-size:.78rem; font-weight:700;
-      padding:11px 10px; border-radius:10px; transition:.25s ease;
-      white-space:nowrap; position:relative; }
-    .desktop-nav > a:hover{ color:var(--gold);
-      background:rgba(59,130,246,.15); }
-    .desktop-nav > a.active{ color:var(--gold);
-      background:rgba(59,130,246,.2); }
-    .desktop-nav > a.active::after{ content:""; position:absolute;
-      bottom:4px; left:50%; transform:translateX(-50%);
-      width:20px; height:2px; border-radius:2px; background:var(--gold); }
+.team-group-head{
+  text-align:center;margin-bottom:50px;
+  position:relative;
+}
+.team-group-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:10px 22px;border-radius:100px;
+  background:linear-gradient(135deg,var(--tg-color,#2563EB),var(--tg-color-2,#1E40AF));
+  color:#fff;
+  font-family:"Tiro Devanagari Hindi",serif;
+  font-size:.82rem;font-weight:900;
+  letter-spacing:.05em;
+  margin-bottom:20px;
+  box-shadow:0 12px 30px rgba(var(--tg-rgb,37,99,235), .4);
+}
+.team-group-badge i{font-size:.9rem;}
+.team-group-head h2{
+  font-family:"Tiro Devanagari Hindi",serif;
+  font-size:clamp(1.8rem,3.4vw,2.6rem);
+  font-weight:900;
+  color:var(--navy);
+  line-height:1.3;
+  margin-bottom:10px;
+}
+.team-group-head h2 span{color:var(--tg-color,#2563EB);}
+.team-group-head p{
+  color:var(--muted);
+  font-size:.95rem;
+  max-width:640px;
+  margin:0 auto;
+  line-height:1.75;
+}
 
-    .donate-nav{ display:inline-flex; align-items:center; gap:7px;
-      background:linear-gradient(135deg,#DC2626,#991B1B)!important;
-      padding:11px 17px!important; color:#fff!important;
-      font-weight:900!important; border-radius:11px!important;
-      box-shadow:0 6px 20px rgba(220,38,38,.45);
-      animation:pulseDonate 2s infinite; margin-left:6px; }
-    .donate-nav:hover{ color:#fff!important;
-      background:linear-gradient(135deg,#EF4444,#DC2626)!important;
-      transform:translateY(-2px)!important; }
-    @keyframes pulseDonate{
-      0%,100%{ transform:scale(1); }
-      50%{ transform:scale(1.04); } }
+/* Member card */
+.team-cards{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+  max-width:1150px;
+  margin:auto;
+}
+@media(max-width:800px){.team-cards{grid-template-columns:1fr;gap:20px;}}
 
-    .menu-toggle{ display:none; width:46px; height:46px;
-      border-radius:12px; background:rgba(59,130,246,.15);
-      border:1px solid rgba(59,130,246,.3); padding:11px; }
-    .menu-toggle span{ display:block; width:100%; height:2.5px;
-      background:#fff; margin:4.5px 0; border-radius:5px;
-      transition:.3s; }
-    .menu-toggle.active span:nth-child(1){
-      transform:rotate(45deg) translate(6px,6px); }
-    .menu-toggle.active span:nth-child(2){ opacity:0; }
-    .menu-toggle.active span:nth-child(3){
-      transform:rotate(-45deg) translate(6px,-6px); }
+.team-member{
+  position:relative;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:24px;
+  overflow:hidden;
+  transition:.4s;
+  display:flex;
+  flex-direction:column;
+}
+.team-member:hover{
+  transform:translateY(-4px);
+  border-color:var(--tg-color, #2563EB);
+  box-shadow:0 25px 60px -20px rgba(var(--tg-rgb, 37,99,235), .35);
+}
 
-    .mobile-nav{ display:none;
-      background:linear-gradient(180deg,#0A2540,#0F2E4F);
-      border-top:1px solid rgba(59,130,246,.2);
-      padding:14px 4% 20px; }
-    .mobile-nav a{ display:block; color:#E0F2FE;
-      padding:14px 16px; border-radius:10px; font-weight:700;
-      font-size:.9rem; margin:4px 0; transition:.25s;
-      border:1px solid transparent; }
-    .mobile-nav a:hover, .mobile-nav a.active{
-      background:rgba(59,130,246,.15); color:var(--gold);
-      border-color:rgba(59,130,246,.3); }
-    .mobile-nav .donate-nav{ text-align:center;
-      margin-top:12px; justify-content:center; }
-    .mobile-nav.active{ display:block; }
+/* Top strip */
+.team-member-top{
+  padding:28px 26px 22px;
+  background:linear-gradient(135deg, rgba(var(--tg-rgb,37,99,235),.08), rgba(var(--tg-rgb,37,99,235),.02));
+  border-bottom:1px solid var(--border);
+  position:relative;
+}
+.team-member-top::after{
+  content:attr(data-num);
+  position:absolute;
+  top:8px;right:16px;
+  font-family:"Poppins",sans-serif;
+  font-size:3.2rem;font-weight:900;
+  color:rgba(var(--tg-rgb,37,99,235), .1);
+  line-height:1;
+}
 
-    /* PAGE HERO */
-    .page-hero{
-      padding:170px 0 80px;
-      background:linear-gradient(135deg,rgba(10,37,64,.94),rgba(30,64,175,.88)),
-        url("https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1800&q=85")
-        center/cover;
-      color:#fff; text-align:center; position:relative;
-    }
-    .page-hero::before{
-      content:""; position:absolute; inset:0;
-      background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
-      background-size:24px 24px; opacity:.5; pointer-events:none;
-    }
-    .page-hero .container{ position:relative; z-index:2; }
-    .breadcrumb{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:8px 18px; border-radius:100px;
-      background:rgba(251,191,36,.12);
-      border:1px solid rgba(251,191,36,.35);
-      color:var(--gold); font-size:.78rem; font-weight:800;
-      letter-spacing:1.5px; text-transform:uppercase;
-      margin-bottom:22px;
-    }
-    .breadcrumb a{ color:#93C5FD; }
-    .breadcrumb a:hover{ color:var(--gold); }
-    .breadcrumb i{ font-size:.6rem; color:var(--gold); }
-    .page-hero h1{
-      font-size:clamp(2rem,5vw,3.5rem);
-      font-weight:900; line-height:1.15;
-      font-family:"Tiro Devanagari Hindi",serif;
-      margin-bottom:18px; letter-spacing:-1px; }
-    .page-hero h1 span{ color:var(--gold); }
-    .page-hero p{
-      max-width:760px; margin:auto;
-      color:#93C5FD; font-size:1rem; line-height:1.85; }
+.team-avatar{
+  display:flex;align-items:center;justify-content:center;
+  width:88px;height:88px;
+  border-radius:50%;
+  background:linear-gradient(135deg, var(--tg-color, #2563EB), var(--tg-color-2, #1E40AF));
+  color:#fff;
+  font-family:"Poppins",sans-serif;
+  font-size:1.85rem;
+  font-weight:900;
+  margin-bottom:16px;
+  box-shadow:0 12px 30px rgba(var(--tg-rgb,37,99,235), .4), inset 0 2px 8px rgba(255,255,255,.25);
+  position:relative;
+  letter-spacing:.02em;
+  flex-shrink:0;
+}
+.team-avatar::after{
+  content:"";
+  position:absolute;
+  inset:-6px;
+  border-radius:50%;
+  border:2px dashed rgba(var(--tg-rgb,37,99,235), .35);
+  animation:avatarSpin 12s linear infinite;
+  pointer-events:none;
+}
+@keyframes avatarSpin{to{transform:rotate(360deg);}}
 
-    /* BUTTONS */
-    .btn{ display:inline-flex; align-items:center; justify-content:center;
-      gap:10px; min-height:54px; padding:15px 30px;
-      border-radius:13px; font-size:.9rem; font-weight:800;
-      transition:.3s ease; letter-spacing:.3px;
-      cursor:pointer; font-family:inherit; }
-    .btn:hover{ transform:translateY(-4px); }
-    .btn-red{ color:#fff;
-      background:linear-gradient(135deg,#DC2626,#991B1B);
-      box-shadow:0 12px 32px rgba(220,38,38,.45); }
-    .btn-gold{ color:#0A2540;
-      background:linear-gradient(135deg,#FBBF24,#F59E0B);
-      box-shadow:0 12px 32px rgba(251,191,36,.45); }
-    .btn-outline{ color:#fff; background:rgba(255,255,255,.06);
-      border:1.5px solid rgba(255,255,255,.3);
-      backdrop-filter:blur(8px); }
-    .btn-outline:hover{ background:rgba(255,255,255,.14);
-      border-color:var(--gold); color:var(--gold); }
-    .btn-pulse-red{ animation:pulseRed 1.8s infinite; }
-    @keyframes pulseRed{
-      0%,100%{ box-shadow:0 12px 32px rgba(220,38,38,.4); }
-      50%{ box-shadow:0 16px 42px rgba(220,38,38,.75); } }
+.team-name-en{
+  font-family:"Poppins",sans-serif;
+  font-size:1.15rem;
+  font-weight:900;
+  color:var(--navy);
+  line-height:1.3;
+  margin-bottom:2px;
+  letter-spacing:-.01em;
+}
+.team-name-hi{
+  font-family:"Tiro Devanagari Hindi",serif;
+  font-size:1rem;
+  font-weight:700;
+  color:var(--text-soft);
+  line-height:1.4;
+  margin-bottom:14px;
+}
 
-    /* TEAM GROUP SECTION */
-    .team-group-section{
-      background:
-        radial-gradient(circle at 12% 15%,rgba(251,191,36,.06),transparent 32%),
-        radial-gradient(circle at 88% 85%,rgba(37,99,235,.08),transparent 35%),
-        linear-gradient(160deg,#F8FAFC,#EFF6FF);
-      position:relative; overflow:hidden; padding:80px 0;
-    }
-    .team-group-section.alt{
-      background:linear-gradient(160deg,#EFF6FF,#F8FAFC);
-    }
-    .team-group-section::before{
-      content:""; position:absolute; inset:0;
-      background-image:radial-gradient(circle,rgba(37,99,235,.05) 1px,transparent 1px);
-      background-size:28px 28px; pointer-events:none;
-    }
-    .team-group-section .container{ position:relative; z-index:2; }
+.team-role-pill{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:7px 14px;
+  border-radius:100px;
+  background:linear-gradient(135deg, var(--tg-color, #2563EB), var(--tg-color-2, #1E40AF));
+  color:#fff;
+  font-family:"Tiro Devanagari Hindi",serif;
+  font-size:.78rem;
+  font-weight:900;
+  box-shadow:0 6px 16px rgba(var(--tg-rgb,37,99,235), .35);
+}
+.team-role-pill i{font-size:.75rem;}
 
-    .group-header{
-      display:flex; align-items:center; gap:18px;
-      margin-bottom:45px; padding:22px 28px;
-      border-radius:22px;
-      background:linear-gradient(135deg,#0A2540,#1E40AF);
-      color:#fff;
-      box-shadow:0 20px 50px rgba(30,64,175,.35);
-      position:relative; overflow:hidden;
-    }
-    .group-header::before{
-      content:""; position:absolute; inset:0;
-      background-image:radial-gradient(circle,rgba(255,255,255,.08) 1px,transparent 1px);
-      background-size:20px 20px; opacity:.5; pointer-events:none;
-    }
-    .group-header-icon{
-      position:relative; z-index:2; flex-shrink:0;
-      width:64px; height:64px; border-radius:18px;
-      display:grid; place-items:center;
-      background:linear-gradient(145deg,#FBBF24,#F59E0B);
-      color:#0A2540; font-size:1.6rem;
-      box-shadow:0 12px 28px rgba(251,191,36,.45);
-    }
-    .group-header-text{ position:relative; z-index:2; min-width:0; }
-    .group-header-text h2{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-size:clamp(1.25rem,2.6vw,1.7rem);
-      font-weight:900; line-height:1.3;
-      margin:0 0 4px; }
-    .group-header-text p{
-      color:#93C5FD; font-size:.85rem; margin:0; line-height:1.5; }
-    .group-header-count{
-      position:relative; z-index:2; margin-left:auto;
-      flex-shrink:0; padding:8px 16px;
-      border-radius:100px;
-      background:rgba(251,191,36,.15);
-      border:1px solid rgba(251,191,36,.4);
-      color:var(--gold); font-size:.72rem; font-weight:900;
-      letter-spacing:1.5px; text-transform:uppercase;
-      white-space:nowrap; }
+/* Meta info */
+.team-meta{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:10px;
+  padding:18px 26px;
+  border-bottom:1px solid var(--border);
+}
+.team-meta-item{
+  display:flex;align-items:flex-start;gap:8px;
+  font-size:.78rem;
+  color:var(--text-soft);
+  line-height:1.4;
+}
+.team-meta-item i{
+  flex-shrink:0;
+  width:24px;height:24px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:6px;
+  background:rgba(var(--tg-rgb,37,99,235), .1);
+  color:var(--tg-color, #2563EB);
+  font-size:.72rem;
+  margin-top:1px;
+}
+.team-meta-item div{min-width:0;word-break:break-word;}
+.team-meta-item strong{
+  display:block;
+  color:var(--navy);
+  font-size:.66rem;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+  margin-bottom:1px;
+}
 
-    /* MEMBER GRID */
-    .member-grid{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-      gap:24px;
-    }
+/* Expand toggle */
+.team-expand-btn{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:16px 26px;
+  background:transparent;
+  border:0;
+  cursor:pointer;
+  color:var(--tg-color, #2563EB);
+  font-family:"Tiro Devanagari Hindi",serif;
+  font-size:.85rem;
+  font-weight:900;
+  transition:.3s;
+  border-bottom:1px solid var(--border);
+}
+.team-expand-btn:hover{background:rgba(var(--tg-rgb,37,99,235), .04);}
+.team-expand-btn i{transition:transform .35s;font-size:.85rem;}
+.team-member.open .team-expand-btn i{transform:rotate(180deg);}
 
-    /* ============ PREMIUM MEMBER CARD ============ */
-    .member-card{
-      background:#fff;
-      border-radius:26px;
-      overflow:hidden;
-      border:1px solid var(--border);
-      box-shadow:0 14px 40px rgba(15,23,42,.08);
-      transition:.45s cubic-bezier(.2,.8,.3,1);
-      cursor:pointer;
-      position:relative;
-    }
-    .member-card:hover{
-      transform:translateY(-10px);
-      box-shadow:0 30px 70px rgba(37,99,235,.22);
-      border-color:var(--blue-light);
-    }
+/* Expandable details */
+.team-details{
+  max-height:0;
+  overflow:hidden;
+  opacity:0;
+  transition:max-height .55s cubic-bezier(.2,.8,.3,1), opacity .35s, padding .35s;
+  padding:0 26px;
+  background:#fff;
+}
+.team-member.open .team-details{
+  opacity:1;
+  padding:24px 26px;
+}
 
-    /* ===== CARD TOP BANNER (Premium Graphic) ===== */
-    .member-banner{
-      height:120px;
-      position:relative;
-      overflow:hidden;
-      background:
-        radial-gradient(circle at 20% 30%,rgba(255,255,255,.25),transparent 40%),
-        linear-gradient(135deg,#0A2540,#1E40AF 60%,#2563EB);
-    }
-    .member-card[data-tone="gold"] .member-banner{
-      background:
-        radial-gradient(circle at 20% 30%,rgba(255,255,255,.3),transparent 40%),
-        linear-gradient(135deg,#B45309,#F59E0B 60%,#FBBF24);
-    }
-    .member-card[data-tone="red"] .member-banner{
-      background:
-        radial-gradient(circle at 20% 30%,rgba(255,255,255,.25),transparent 40%),
-        linear-gradient(135deg,#7F1D1D,#DC2626 60%,#EF4444);
-    }
-    .member-card[data-tone="teal"] .member-banner{
-      background:
-        radial-gradient(circle at 20% 30%,rgba(255,255,255,.25),transparent 40%),
-        linear-gradient(135deg,#065F46,#059669 60%,#10B981);
-    }
+.team-detail-block{margin-bottom:18px;}
+.team-detail-block:last-child{margin-bottom:0;}
 
-    /* Decorative pattern on banner */
-    .member-banner::before{
-      content:"";
-      position:absolute; inset:0;
-      background-image:
-        radial-gradient(circle,rgba(255,255,255,.14) 1.5px,transparent 1.5px);
-      background-size:22px 22px;
-      opacity:.65;
-    }
-    /* Decorative circle */
-    .member-banner::after{
-      content:"";
-      position:absolute;
-      top:-40px; right:-40px;
-      width:140px; height:140px;
-      border-radius:50%;
-      background:rgba(255,255,255,.1);
-      border:1px solid rgba(255,255,255,.15);
-    }
+.team-detail-label{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:5px 12px;
+  border-radius:100px;
+  background:rgba(var(--tg-rgb,37,99,235), .1);
+  color:var(--tg-color, #2563EB);
+  font-family:"Tiro Devanagari Hindi",serif;
+  font-size:.7rem;
+  font-weight:900;
+  letter-spacing:.04em;
+  margin-bottom:10px;
+}
+.team-detail-label i{font-size:.72rem;}
 
-    /* ===== PHOTO ===== */
-    .member-photo-wrap{
-      position:absolute;
-      left:50%;
-      bottom:-46px;
-      transform:translateX(-50%);
-      z-index:3;
-    }
-    .member-photo{
-      width:92px; height:92px;
-      border-radius:50%;
-      display:grid;
-      place-items:center;
-      background:linear-gradient(145deg,#2563EB,#1E40AF);
-      color:#fff;
-      font-family:"Poppins",sans-serif;
-      font-size:1.9rem;
-      font-weight:900;
-      letter-spacing:1px;
-      border:4px solid #fff;
-      box-shadow:
-        0 12px 30px rgba(37,99,235,.4),
-        0 4px 10px rgba(15,23,42,.15);
-      transition:.4s;
-      position:relative;
-      overflow:hidden;
-      background-size:cover;
-      background-position:center;
-    }
-    .member-card[data-tone="gold"] .member-photo{
-      background:linear-gradient(145deg,#FBBF24,#F59E0B);
-      color:#0A2540;
-      box-shadow:
-        0 12px 30px rgba(251,191,36,.45),
-        0 4px 10px rgba(15,23,42,.15);
-    }
-    .member-card[data-tone="red"] .member-photo{
-      background:linear-gradient(145deg,#DC2626,#991B1B);
-      box-shadow:
-        0 12px 30px rgba(220,38,38,.4),
-        0 4px 10px rgba(15,23,42,.15);
-    }
-    .member-card[data-tone="teal"] .member-photo{
-      background:linear-gradient(145deg,#059669,#047857);
-      box-shadow:
-        0 12px 30px rgba(5,150,105,.4),
-        0 4px 10px rgba(15,23,42,.15);
-    }
-    /* Ring animation on hover */
-    .member-card:hover .member-photo{
-      transform:scale(1.08) rotate(-3deg);
-    }
-    .member-photo::after{
-      content:"";
-      position:absolute;
-      inset:-5px;
-      border-radius:50%;
-      border:2px dashed rgba(255,255,255,.6);
-      opacity:0;
-      transition:.4s;
-    }
-    .member-card:hover .member-photo::after{
-      opacity:1;
-      animation:photoSpin 12s linear infinite;
-    }
-    @keyframes photoSpin{ to{ transform:rotate(360deg); } }
+.team-detail-text-hi{
+  font-family:"Tiro Devanagari Hindi",serif;
+  font-size:.88rem;
+  color:var(--text);
+  line-height:1.85;
+  margin-bottom:8px;
+}
+.team-detail-text-en{
+  font-size:.78rem;
+  font-style:italic;
+  color:var(--muted);
+  line-height:1.7;
+}
 
-    /* ===== CARD BODY ===== */
-    .member-content{
-      padding:60px 22px 24px;
-      text-align:center;
-    }
+.team-responsibilities{
+  list-style:none;
+  padding:0;
+  margin-top:8px;
+}
+.team-responsibilities li{
+  position:relative;
+  padding:9px 0 9px 30px;
+  border-bottom:1px dashed rgba(var(--tg-rgb,37,99,235), .12);
+  font-family:"Tiro Devanagari Hindi",serif;
+  font-size:.85rem;
+  color:var(--text-soft);
+  line-height:1.7;
+}
+.team-responsibilities li:last-child{border-bottom:0;padding-bottom:0;}
+.team-responsibilities li::before{
+  content:"\f00c";
+  font-family:"Font Awesome 6 Free";
+  font-weight:900;
+  position:absolute;
+  left:0;top:11px;
+  width:20px;height:20px;
+  display:flex;align-items:center;justify-content:center;
+  border-radius:50%;
+  background:rgba(var(--tg-rgb,37,99,235), .12);
+  color:var(--tg-color, #2563EB);
+  font-size:.6rem;
+}
+.team-responsibilities li span.en{
+  display:block;
+  font-family:"Poppins",sans-serif;
+  font-style:italic;
+  font-size:.74rem;
+  color:var(--muted);
+  margin-top:2px;
+  font-weight:500;
+}
 
-    .member-role-tag{
-      display:inline-flex;
-      align-items:center;
-      gap:6px;
-      padding:5px 13px;
-      border-radius:100px;
-      background:var(--blue-pale);
-      border:1px solid #BFDBFE;
-      color:var(--blue);
-      font-size:.64rem;
-      font-weight:900;
-      letter-spacing:1.4px;
-      text-transform:uppercase;
-      margin-bottom:10px;
-    }
-    .member-card[data-tone="gold"] .member-role-tag{
-      background:var(--gold-pale); border-color:#FDE68A;
-      color:var(--gold-dark);
-    }
-    .member-card[data-tone="red"] .member-role-tag{
-      background:#FEE2E2; border-color:#FECACA;
-      color:var(--red);
-    }
-    .member-card[data-tone="teal"] .member-role-tag{
-      background:#D1FAE5; border-color:#A7F3D0;
-      color:#047857;
-    }
-
-    .member-name{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-size:1.15rem;
-      font-weight:900;
-      color:var(--navy);
-      line-height:1.3;
-      margin-bottom:6px;
-    }
-    .member-name-small{
-      font-size:.78rem;
-      color:var(--muted);
-      font-weight:600;
-      margin-bottom:14px;
-    }
-
-    .member-view-btn{
-      display:inline-flex;
-      align-items:center;
-      gap:7px;
-      padding:9px 18px;
-      border-radius:100px;
-      background:linear-gradient(135deg,#0A2540,#1E40AF);
-      color:#fff;
-      font-size:.72rem;
-      font-weight:900;
-      letter-spacing:.6px;
-      transition:.35s;
-      border:none;
-    }
-    .member-card:hover .member-view-btn{
-      background:linear-gradient(135deg,#1E40AF,#2563EB);
-      transform:translateY(-2px);
-      box-shadow:0 10px 24px rgba(37,99,235,.4);
-    }
-    .member-card[data-tone="gold"]:hover .member-view-btn{
-      background:linear-gradient(135deg,#FBBF24,#F59E0B);
-      color:#0A2540;
-      box-shadow:0 10px 24px rgba(251,191,36,.5);
-    }
-    .member-card[data-tone="red"]:hover .member-view-btn{
-      background:linear-gradient(135deg,#DC2626,#EF4444);
-      box-shadow:0 10px 24px rgba(220,38,38,.5);
-    }
-    .member-card[data-tone="teal"]:hover .member-view-btn{
-      background:linear-gradient(135deg,#059669,#10B981);
-      box-shadow:0 10px 24px rgba(5,150,105,.5);
-    }
-
-    /* ===== MODAL ===== */
-    .modal-overlay{
-      position:fixed; inset:0;
-      background:rgba(10,37,64,.88);
-      backdrop-filter:blur(10px);
-      -webkit-backdrop-filter:blur(10px);
-      z-index:10000;
-      display:none;
-      align-items:center; justify-content:center;
-      padding:24px;
-      opacity:0;
-      transition:opacity .35s;
-    }
-    .modal-overlay.active{
-      display:flex; opacity:1;
-    }
-    .modal-box{
-      background:#fff;
-      border-radius:30px;
-      max-width:640px;
-      width:100%;
-      max-height:92vh;
-      overflow-y:auto;
-      box-shadow:0 40px 120px rgba(0,0,0,.7);
-      transform:scale(.9) translateY(30px);
-      transition:transform .4s cubic-bezier(.2,.8,.3,1);
-      position:relative;
-    }
-    .modal-overlay.active .modal-box{
-      transform:scale(1) translateY(0);
-    }
-
-    .modal-close{
-      position:absolute;
-      top:16px; right:16px;
-      width:44px; height:44px;
-      border-radius:12px;
-      background:rgba(255,255,255,.18);
-      backdrop-filter:blur(10px);
-      color:#fff;
-      display:grid; place-items:center;
-      font-size:1.05rem;
-      z-index:20;
-      transition:.3s;
-      cursor:pointer;
-      border:1px solid rgba(255,255,255,.25);
-    }
-    .modal-close:hover{
-      background:#DC2626;
-      transform:rotate(90deg) scale(1.1);
-    }
-
-    /* ===== MODAL HEADER ===== */
-    .modal-header{
-      padding:48px 32px 60px;
-      color:#fff;
-      text-align:center;
-      position:relative;
-      overflow:hidden;
-      background:
-        radial-gradient(circle at 20% 30%,rgba(255,255,255,.2),transparent 45%),
-        linear-gradient(135deg,#0A2540,#1E40AF 60%,#2563EB);
-    }
-    .modal-header[data-tone="gold"]{
-      background:
-        radial-gradient(circle at 20% 30%,rgba(255,255,255,.3),transparent 45%),
-        linear-gradient(135deg,#B45309,#F59E0B 60%,#FBBF24);
-    }
-    .modal-header[data-tone="red"]{
-      background:
-        radial-gradient(circle at 20% 30%,rgba(255,255,255,.2),transparent 45%),
-        linear-gradient(135deg,#7F1D1D,#DC2626 60%,#EF4444);
-    }
-    .modal-header[data-tone="teal"]{
-      background:
-        radial-gradient(circle at 20% 30%,rgba(255,255,255,.2),transparent 45%),
-        linear-gradient(135deg,#065F46,#059669 60%,#10B981);
-    }
-    .modal-header::before{
-      content:"";
-      position:absolute; inset:0;
-      background-image:
-        radial-gradient(circle,rgba(255,255,255,.14) 1.5px,transparent 1.5px);
-      background-size:22px 22px;
-      opacity:.6;
-      pointer-events:none;
-    }
-    .modal-header::after{
-      content:"";
-      position:absolute;
-      top:-60px; right:-60px;
-      width:220px; height:220px;
-      border-radius:50%;
-      background:rgba(255,255,255,.08);
-      border:1px solid rgba(255,255,255,.12);
-    }
-
-    .modal-header-content{ position:relative; z-index:2; }
-
-    .modal-photo{
-      width:130px; height:130px;
-      border-radius:50%;
-      margin:0 auto 20px;
-      display:grid; place-items:center;
-      background:linear-gradient(145deg,#2563EB,#1E40AF);
-      color:#fff;
-      font-family:"Poppins",sans-serif;
-      font-size:2.6rem;
-      font-weight:900;
-      letter-spacing:2px;
-      border:5px solid rgba(255,255,255,.9);
-      box-shadow:
-        0 20px 50px rgba(0,0,0,.35),
-        0 6px 20px rgba(0,0,0,.2);
-      background-size:cover;
-      background-position:center;
-      position:relative;
-      overflow:hidden;
-    }
-    .modal-photo::after{
-      content:"";
-      position:absolute;
-      inset:-6px;
-      border-radius:50%;
-      border:2px dashed rgba(255,255,255,.55);
-      animation:photoSpin 18s linear infinite;
-    }
-
-    .modal-header h3{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-size:clamp(1.4rem,3vw,1.9rem);
-      font-weight:900;
-      line-height:1.3;
-      margin-bottom:6px;
-      color:#fff;
-      text-shadow:0 3px 20px rgba(0,0,0,.4);
-    }
-    .modal-header .modal-subname{
-      color:rgba(255,255,255,.85);
-      font-size:.9rem;
-      font-weight:600;
-      margin-bottom:14px;
-    }
-
-    .modal-role-badge{
-      display:inline-flex;
-      align-items:center;
-      gap:8px;
-      padding:9px 20px;
-      border-radius:100px;
-      background:rgba(255,255,255,.16);
-      backdrop-filter:blur(10px);
-      border:1px solid rgba(255,255,255,.35);
-      color:#fff;
-      font-size:.72rem;
-      font-weight:900;
-      letter-spacing:1.8px;
-      text-transform:uppercase;
-    }
-
-    /* ===== MODAL BODY ===== */
-    .modal-body{ padding:36px 32px 40px; }
-
-    .modal-detail-list{
-      list-style:none;
-      display:flex; flex-direction:column; gap:12px;
-    }
-    .modal-detail-list li{
-      display:flex; align-items:flex-start; gap:14px;
-      padding:15px 17px;
-      border-radius:14px;
-      background:#F8FAFC;
-      border:1px solid var(--border);
-      transition:.25s;
-    }
-    .modal-detail-list li:hover{
-      background:var(--blue-pale);
-      border-color:var(--blue-light);
-      transform:translateX(4px);
-    }
-    .modal-detail-list li i{
-      flex-shrink:0;
-      width:38px; height:38px;
-      display:grid; place-items:center;
-      border-radius:11px;
-      background:linear-gradient(145deg,#2563EB,#1E40AF);
-      color:#fff;
-      font-size:.9rem;
-    }
-    .modal-detail-list li > div{ flex:1; min-width:0; }
-    .modal-detail-list li strong{
-      display:block;
-      color:var(--navy);
-      font-size:.68rem;
-      font-weight:900;
-      letter-spacing:1.2px;
-      text-transform:uppercase;
-      margin-bottom:4px;
-    }
-    .modal-detail-list li span{
-      color:var(--text);
-      font-size:.92rem;
-      line-height:1.6;
-      word-wrap:break-word;
-      overflow-wrap:break-word;
-    }
-    .modal-detail-list li span.hindi{
-      font-family:"Tiro Devanagari Hindi",serif;
-      font-size:1rem;
-    }
-
-    .modal-about{
-      margin-top:22px;
-      padding:22px 24px;
-      border-radius:18px;
-      background:linear-gradient(135deg,#EFF6FF,#DBEAFE);
-      border-left:5px solid var(--blue-2);
-    }
-    .modal-about strong{
-      display:flex;
-      align-items:center;
-      gap:8px;
-      margin-bottom:10px;
-      color:var(--blue-2);
-      font-size:.72rem;
-      font-weight:900;
-      letter-spacing:1.5px;
-      text-transform:uppercase;
-    }
-    .modal-about p{
-      margin:0;
-      color:var(--text-soft);
-      font-size:.94rem;
-      line-height:1.85;
-    }
-
-    /* CTA STRIP */
-    .cta-strip{ position:relative; padding:85px 0;
-      background:radial-gradient(circle at 15% 20%,rgba(251,191,36,.15),transparent 35%),
-        radial-gradient(circle at 85% 80%,rgba(59,130,246,.2),transparent 40%),
-        linear-gradient(135deg,#0A2540 0%,#1E40AF 50%,#0A2540 100%);
-      color:#fff; overflow:hidden; text-align:center; }
-    .cta-strip::before{ content:""; position:absolute; inset:0;
-      background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);
-      background-size:24px 24px; opacity:.7; pointer-events:none; }
-    .cta-strip .container{ position:relative; z-index:2; }
-    .cta-badge{ display:inline-flex; align-items:center; gap:8px;
-      padding:8px 20px; border-radius:100px;
-      background:rgba(251,191,36,.15);
-      border:1px solid rgba(251,191,36,.4); color:var(--gold);
-      font-size:.72rem; font-weight:900; letter-spacing:2.5px;
-      text-transform:uppercase; margin-bottom:22px; }
-    .cta-strip h2{ font-family:"Tiro Devanagari Hindi",serif;
-      font-size:clamp(2rem,4.5vw,3.2rem); font-weight:900;
-      line-height:1.25; margin-bottom:16px; letter-spacing:-.5px; }
-    .cta-strip h2 span{ color:var(--gold); }
-    .cta-strip p{ color:#93C5FD; font-size:1.05rem;
-      max-width:640px; margin:0 auto 34px; line-height:1.8; }
-    .cta-buttons{ display:flex; justify-content:center;
-      flex-wrap:wrap; gap:14px; }
-
-    /* FOOTER */
-    footer{ background:radial-gradient(circle at 10% 20%,rgba(59,130,246,.1),transparent 40%),
-        radial-gradient(circle at 90% 80%,rgba(251,191,36,.06),transparent 40%),
-        linear-gradient(160deg,#0A2540 0%,#0F2E4F 60%,#0A2540 100%);
-      color:#fff; padding-top:80px; position:relative; overflow:hidden; }
-    footer::before{ content:""; position:absolute;
-      top:0; left:0; right:0; height:1px;
-      background:linear-gradient(90deg,transparent,rgba(251,191,36,.6),transparent); }
-    .footer-grid{ display:grid;
-      grid-template-columns:repeat(5,1fr);
-      gap:32px; padding-bottom:60px; position:relative; z-index:2; }
-    .footer-brand-head{ display:flex; align-items:center;
-      gap:10px; margin-bottom:20px; }
-    .footer-logo-box{ width:60px; height:60px; border-radius:15px;
-      background:#FFFFFF; display:block; padding:0;
-      border:2px solid rgba(251,191,36,.4);
-      box-shadow:0 8px 22px rgba(59,130,246,.3);
-      flex-shrink:0; overflow:hidden;
-      position:relative; line-height:0; }
-    .footer-logo-box img{ width:100%; height:100%;
-      object-fit:cover; object-position:center; }
-    .footer-brand-text{ min-width:0; }
-    .footer-brand-text h3{ font-family:"Tiro Devanagari Hindi",serif;
-      font-size:1.05rem; font-weight:900; color:#fff;
-      line-height:1.15; margin-bottom:4px; }
-    .footer-tagline-text{ color:#93C5FD; font-size:.66rem;
-      font-weight:600; letter-spacing:.4px;
-      font-family:"Tiro Devanagari Hindi",serif; }
-    .footer-desc{ color:#93C5FD; font-size:.8rem; line-height:1.7;
-      margin-bottom:20px; max-width:100%; }
-    .footer-badge{ display:inline-flex; align-items:center; gap:7px;
-      padding:6px 12px; background:rgba(251,191,36,.1);
-      border:1px solid rgba(251,191,36,.3); border-radius:100px;
-      color:var(--gold); font-size:.68rem; font-weight:900;
-      letter-spacing:.4px; margin-bottom:20px; }
-
-    .footer-heading, .footer-social-heading{
-      font-family:"Tiro Devanagari Hindi",serif; font-size:.92rem;
-      font-weight:900; color:#fff; margin-bottom:22px;
-      padding-bottom:12px; position:relative; }
-    .footer-heading::after, .footer-social-heading::after{
-      content:""; position:absolute; bottom:0; left:0;
-      width:32px; height:2px;
-      background:linear-gradient(90deg,#FBBF24,#F59E0B);
-      border-radius:2px; }
-
-    .social-icons{ display:flex; gap:8px; flex-wrap:wrap; }
-    .social-icon{ width:38px; height:38px; display:grid;
-      place-items:center; border-radius:10px;
-      background:rgba(59,130,246,.12); color:#93C5FD;
-      font-size:.9rem; transition:.3s;
-      border:1px solid rgba(59,130,246,.25); }
-    .social-icon:hover{ transform:translateY(-4px);
-      background:linear-gradient(135deg,#FBBF24,#F59E0B);
-      color:#0A2540; border-color:var(--gold);
-      box-shadow:0 8px 22px rgba(251,191,36,.4); }
-
-    .footer-links{ list-style:none; }
-    .footer-links li{ margin-bottom:10px; }
-    .footer-links a{ color:#93C5FD; font-size:.78rem;
-      font-weight:600; display:inline-flex; align-items:center;
-      gap:7px; transition:.25s; line-height:1.5; }
-    .footer-links a i{ font-size:.56rem; color:#FBBF24; }
-    .footer-links a:hover{ color:var(--gold); transform:translateX(4px); }
-
-    .contact-info{ list-style:none; }
-    .contact-info li{ display:flex; gap:10px;
-      align-items:flex-start; margin-bottom:14px;
-      color:#93C5FD; font-size:.78rem; line-height:1.65; }
-    .contact-info li i{ flex-shrink:0; width:28px; height:28px;
-      display:grid; place-items:center; border-radius:8px;
-      background:rgba(59,130,246,.15);
-      border:1px solid rgba(59,130,246,.25); color:#FBBF24;
-      font-size:.72rem; margin-top:1px; }
-    .contact-info li strong{ display:block; color:#fff;
-      font-size:.7rem; margin-bottom:2px;
-      letter-spacing:.3px; text-transform:uppercase; }
-    .contact-info li a{ color:#93C5FD; }
-    .footer-newsletter{ margin-top:6px; padding-top:16px;
-      border-top:1px solid rgba(59,130,246,.2); }
-    .footer-newsletter label{ display:block; color:#93C5FD;
-      font-size:.68rem; font-weight:800; letter-spacing:.5px;
-      text-transform:uppercase; margin-bottom:10px; }
-    .newsletter-form{ display:flex; gap:6px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(59,130,246,.25);
-      border-radius:12px; padding:5px; }
-    .newsletter-form:focus-within{ border-color:var(--gold);
-      box-shadow:0 0 0 4px rgba(251,191,36,.1); }
-    .newsletter-form input{ flex:1; background:transparent;
-      border:none; outline:none; padding:8px 10px; color:#fff;
-      font-family:inherit; font-size:.76rem; min-width:0; }
-    .newsletter-form input::placeholder{ color:#6B8CAE; }
-    .newsletter-form button{ flex-shrink:0; width:36px; height:36px;
-      border-radius:8px;
-      background:linear-gradient(135deg,#FBBF24,#F59E0B);
-      color:#0A2540; font-size:.82rem; display:grid;
-      place-items:center; }
-
-    .footer-bottom{ border-top:1px solid rgba(59,130,246,.15);
-      padding:22px 0; position:relative; z-index:2; }
-    .footer-bottom-inner{ display:flex; flex-direction:column;
-      align-items:center; justify-content:center;
-      gap:12px; text-align:center; }
-    .footer-copy{ color:#6B8CAE; font-size:.76rem; font-weight:600;
-      order:1; }
-    .footer-copy strong{ color:#93C5FD; font-weight:800; }
-    .footer-legal{ display:flex; gap:4px; flex-wrap:nowrap;
-      align-items:center; justify-content:center; order:2; }
-    .footer-legal a{ color:#93C5FD; font-size:.72rem;
-      font-weight:700; padding:5px 8px; border-radius:8px;
-      transition:.25s; white-space:nowrap; }
-    .footer-legal a:hover{ color:var(--gold);
-      background:rgba(59,130,246,.15); }
-    .footer-legal span{ color:rgba(59,130,246,.5); font-size:.72rem; }
-    .footer-made{ color:#6B8CAE; font-size:.72rem; font-weight:600;
-      display:inline-flex; align-items:center; gap:6px; order:3; }
-    .footer-made i{ color:#DC2626; font-size:.68rem; }
-
-    /* BACK TOP */
-    .back-top{ position:fixed; right:22px; bottom:22px;
-      width:48px; height:48px; border-radius:14px;
-      background:linear-gradient(135deg,#2563EB,#1E40AF);
-      color:#fff; cursor:pointer; z-index:1000;
-      display:grid; place-items:center; opacity:0;
-      visibility:hidden; transition:.3s;
-      box-shadow:0 10px 28px rgba(37,99,235,.45); }
-    .back-top.show{ opacity:1; visibility:visible; }
-    .back-top:hover{ transform:translateY(-4px); }
-
-    /* RESPONSIVE */
-    @media(max-width:1200px){
-      .desktop-nav > a{ padding:10px 7px; font-size:.72rem; }
-      .donate-nav{ padding:10px 13px!important; }
-      .footer-grid{ grid-template-columns:repeat(3,1fr); gap:32px; }
-    }
-    @media(max-width:1000px){
-      .desktop-nav > a{ padding:10px 6px; font-size:.68rem; }
-      .logo-box{ width:62px; height:62px; }
-    }
-    @media(max-width:900px){
-      .desktop-nav{ display:none; }
-      .menu-toggle{ display:block; }
-      .header-inner{ min-height:78px; }
-      .brand-name{ font-size:clamp(1.1rem,3vw,1.4rem); }
-      .brand-tagline{ font-size:.66rem; }
-      .logo-box{ width:60px; height:60px; }
-      .page-hero{ padding:140px 0 65px; }
-      .footer-grid{ grid-template-columns:1fr 1fr; gap:36px 24px; }
-      .group-header{ padding:18px 22px; gap:14px; }
-      .group-header-icon{ width:54px; height:54px; font-size:1.35rem; }
-    }
-    @media(max-width:700px){
-      .section{ padding:70px 0; }
-      .page-hero{ padding:130px 0 55px; }
-      .page-hero h1{ font-size:1.75rem; }
-      .footer-grid{ grid-template-columns:1fr; gap:32px;
-        padding-bottom:40px; }
-      .footer-bottom-inner{ gap:10px; }
-      .footer-legal{ flex-wrap:nowrap; gap:1px; }
-      .footer-legal a{ font-size:.68rem; padding:4px 6px; }
-      .footer-legal span{ font-size:.68rem; }
-      .cta-strip{ padding:65px 0; }
-      .cta-buttons{ flex-direction:column; }
-      .cta-buttons .btn{ width:100%; }
-      .member-grid{ grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; }
-      .member-banner{ height:100px; }
-      .member-photo{ width:80px; height:80px; font-size:1.6rem; }
-      .member-photo-wrap{ bottom:-40px; }
-      .member-content{ padding:54px 18px 22px; }
-      .member-name{ font-size:1rem; }
-      .modal-header{ padding:38px 22px 50px; }
-      .modal-photo{ width:110px; height:110px; font-size:2.2rem; }
-      .modal-body{ padding:26px 22px 30px; }
-      .modal-detail-list li{ padding:13px 14px; gap:12px; }
-      .modal-detail-list li i{ width:34px; height:34px; font-size:.82rem; }
-      .group-header{ flex-wrap:wrap; }
-      .group-header-count{ margin-left:0; margin-top:8px; width:100%; text-align:center; }
-    }
-    @media(max-width:600px){
-      .brand-name{ font-size:clamp(1rem,4vw,1.15rem);
-        white-space:normal; line-height:1.15; }
-      .brand-tagline{ font-size:.62rem; white-space:normal; }
-      .logo-box{ width:54px; height:54px; border-radius:13px; }
-      .brand{ gap:11px; }
-      .cta-strip h2{ font-size:1.55rem; }
-      .cta-strip p{ font-size:.92rem; }
-      .social-icon{ width:38px; height:38px; font-size:.9rem; }
-      .footer-brand-text h3{ font-size:1rem; }
-      .member-grid{ grid-template-columns:repeat(2,1fr); gap:14px; }
-      .member-banner{ height:88px; }
-      .member-photo{ width:70px; height:70px; font-size:1.4rem; border-width:3px; }
-      .member-photo-wrap{ bottom:-36px; }
-      .member-content{ padding:48px 14px 20px; }
-      .member-name{ font-size:.95rem; }
-      .member-name-small{ font-size:.72rem; }
-      .member-role-tag{ font-size:.58rem; padding:4px 10px; letter-spacing:1px; }
-      .member-view-btn{ font-size:.66rem; padding:7px 14px; }
-    }
-    @media(max-width:420px){
-      .footer-legal a{ font-size:.62rem; padding:3px 4px; }
-      .footer-legal span{ font-size:.62rem; }
-      .member-grid{ grid-template-columns:1fr; }
-      .member-banner{ height:110px; }
-      .member-photo{ width:88px; height:88px; font-size:1.7rem; }
-      .member-photo-wrap{ bottom:-44px; }
-      .member-content{ padding:58px 20px 22px; }
-      .member-name{ font-size:1.05rem; }
-    }
-    @media(max-width:380px){
-      .brand-name{ font-size:1rem; }
-      .brand-tagline{ font-size:.6rem; }
-      .logo-box{ width:50px; height:50px; }
-      .footer-legal a{ font-size:.58rem; padding:3px 3px; }
-      .footer-legal span{ font-size:.58rem; }
-    }
-    @media (prefers-reduced-motion: reduce){
-      *,*::before,*::after{
-        animation-duration:.01ms!important;
-        animation-iteration-count:1!important;
-        transition-duration:.01ms!important; } }
-  </style>
+/* CTA */
+.cta-strip{
+  padding:85px 0;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(251,191,36,.15), transparent 35%),
+    radial-gradient(circle at 85% 80%, rgba(59,130,246,.2), transparent 40%),
+    linear-gradient(135deg,#0A2540 0%,#1E40AF 50%,#0A2540 100%);
+  color:#fff;text-align:center;position:relative;overflow:hidden;
+}
+.cta-strip::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);background-size:24px 24px;opacity:.7;pointer-events:none;}
+.cta-strip .container{position:relative;z-index:2;}
+.cta-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 20px;border-radius:100px;background:rgba(251,191,36,.15);border:1px solid rgba(251,191,36,.4);color:var(--gold);font-size:.72rem;font-weight:900;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:22px;}
+.cta-strip h2{font-family:"Tiro Devanagari Hindi",serif;font-size:clamp(2rem,4.5vw,3.2rem);font-weight:900;line-height:1.35;margin-bottom:16px;}
+.cta-strip h2 span{color:var(--gold);}
+.cta-strip p{color:#93C5FD;font-size:1.05rem;max-width:640px;margin:0 auto 34px;line-height:1.8;}
+.cta-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;}
+@media(max-width:700px){.cta-strip{padding:65px 0;}.cta-buttons{flex-direction:column;}.cta-buttons .btn{width:100%;}}
+@media(max-width:700px){.section{padding:70px 0;}.team-group{padding:60px 0;}}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+</style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ═══════════ TOP FIXED BAR — SAME AS HOME ═══════════ -->
+<div class="top-fixed" id="topFixed">
+  <div class="top-ticker">
+    <div class="ticker-label"><i class="fa-solid fa-bullhorn"></i> Latest</div>
+    <div class="ticker-scroll">
+      <div class="ticker-track">
+        <span class="ticker-item" onclick="location.href='events.html'"><i class="fa-solid fa-calendar-check"></i><strong>नया शिविर:</strong> शैक्षणिक सामग्री वितरण — 03 जनवरी 2027, पटना <a href="events.html">Register Now</a></span>
+        <span class="ticker-item" onclick="location.href='donate.html'"><i class="fa-solid fa-heart"></i>आपका <strong>₹1</strong> किसी की मुस्कान बन सकता है <a href="donate.html">Donate Now</a></span>
+        <span class="ticker-item" onclick="location.href='events.html'"><i class="fa-solid fa-person-dress"></i>महिला कौशल विकास शिविर — 10 जनवरी 2027, मुज़फ़्फ़रपुर <a href="join-us.html">Join Us</a></span>
+        <span class="ticker-item" onclick="location.href='events.html'"><i class="fa-solid fa-heart-pulse"></i>निःशुल्क स्वास्थ्य जाँच शिविर — 17 जनवरी 2027, गया <a href="events.html">Details</a></span>
+        <span class="ticker-item" onclick="location.href='events.html'"><i class="fa-solid fa-calendar-check"></i><strong>नया शिविर:</strong> शैक्षणिक सामग्री वितरण — 03 जनवरी 2027, पटना <a href="events.html">Register Now</a></span>
+        <span class="ticker-item" onclick="location.href='donate.html'"><i class="fa-solid fa-heart"></i>आपका <strong>₹1</strong> किसी की मुस्कान बन सकता है <a href="donate.html">Donate Now</a></span>
+        <span class="ticker-item" onclick="location.href='events.html'"><i class="fa-solid fa-person-dress"></i>महिला कौशल विकास शिविर — 10 जनवरी 2027, मुज़फ़्फ़रपुर <a href="join-us.html">Join Us</a></span>
+        <span class="ticker-item" onclick="location.href='events.html'"><i class="fa-solid fa-heart-pulse"></i>निःशुल्क स्वास्थ्य जाँच शिविर — 17 जनवरी 2027, गया <a href="events.html">Details</a></span>
+      </div>
+    </div>
+  </div>
+  <div class="top-buttons">
+    <a href="donate.html" class="top-btn donate"><i class="fa-solid fa-heart"></i> Donate Us</a>
+    <a href="join-us.html?type=member" class="top-btn member"><i class="fa-solid fa-users"></i> Member & Volunteer</a>
+  </div>
+</div>
+
+<!-- ═══════════ SITE HEADER — SAME AS HOME ═══════════ -->
 <header class="site-header">
   <div class="container header-inner">
-
     <a href="index.html" class="brand">
-      <div class="logo-box">
-        <img src="sath_chale_ham_logo_HD-1.png" alt="साथ चले हम फाउंडेशन Logo">
-      </div>
+      <div class="logo-box"><img src="https://raw.githubusercontent.com/sathchaleham-dot/sathchalehumfoundation/main/sath_chale_ham_logo_HD-1.png" alt="साथ चले हम फाउंडेशन Logo"></div>
       <div class="brand-text">
         <div class="brand-name">साथ चले हम <span class="gold">फाउंडेशन</span></div>
         <div class="brand-tagline">साथ चले हम, बदलाव की ओर</div>
       </div>
     </a>
-
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
@@ -973,19 +548,14 @@
       <a href="events.html">Events</a>
       <a href="join-us.html">Join Us</a>
       <a href="downloads.html">Downloads</a>
+      <a href="faq.html">FAQ</a>
       <a href="contact.html">Contact</a>
-      <a href="donate.html" class="donate-nav">
-        <i class="fa-solid fa-heart"></i> Donate Us
-      </a>
+      <a href="donate.html" class="donate-nav"><i class="fa-solid fa-heart"></i> Donate Us</a>
     </nav>
-
-    <button class="menu-toggle" id="menuToggle"
-            aria-label="Open Menu" aria-expanded="false"
-            aria-controls="mobileNav" type="button">
+    <button class="menu-toggle" id="menuToggle" aria-label="Open Menu" aria-expanded="false" aria-controls="mobileNav" type="button">
       <span></span><span></span><span></span>
     </button>
   </div>
-
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
     <a href="index.html">Home | होम</a>
     <a href="about.html">About Us | हमारे बारे में</a>
@@ -994,465 +564,73 @@
     <a href="events.html">Events | कार्यक्रम</a>
     <a href="join-us.html">Join Us | जुड़ें</a>
     <a href="downloads.html">Downloads | डाउनलोड</a>
+    <a href="faq.html">FAQ | सामान्य प्रश्न</a>
     <a href="contact.html">Contact | संपर्क</a>
-    <a href="donate.html" class="donate-nav">
-      <i class="fa-solid fa-heart"></i> Donate Us
-    </a>
+    <a href="donate.html" class="donate-nav"><i class="fa-solid fa-heart"></i> Donate Us</a>
   </nav>
 </header>
 
-
-<!-- ================= PAGE HERO ================= -->
-<section class="page-hero">
-  <div class="container">
-    <div class="breadcrumb">
-      <a href="index.html">Home</a>
+<!-- ═══════════ BANNER ═══════════ -->
+<section class="team-banner">
+  <div class="container team-banner-inner">
+    <div class="team-breadcrumb">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
       <i class="fa-solid fa-chevron-right"></i>
       <span>Our Team</span>
     </div>
-    <h1>Our Team | <span>हमारी टीम</span></h1>
-    <p class="hindi">
-      समर्पित सदस्यों की एक टीम जो समाज सेवा के प्रति पूरी निष्ठा के साथ
-      कार्यरत है — न्यास मंडल, सलाहकार मंडल एवं कार्यक्रम संचालन टीम।
+    <h1>Our Team | <span class="gold">हमारी टीम</span></h1>
+    <p class="team-subtitle">
+      समर्पित नेतृत्व, अनुभवी सलाहकार और मेहनती कार्यक्रम टीम — जो मिलकर बदलाव की दिशा में काम कर रहे हैं।
     </p>
+    <div class="team-banner-stats">
+      <div class="team-banner-stat"><strong>22</strong> Members</div>
+      <div class="team-banner-stat"><strong>4</strong> Teams</div>
+      <div class="team-banner-stat"><strong>100%</strong> Dedication</div>
+    </div>
   </div>
 </section>
 
+<!-- ═══════════ TEAM SECTIONS WILL BE RENDERED HERE ═══════════ -->
+<main id="teamGroups"></main>
 
-<!-- ================= BOARD OF TRUSTEES ================= -->
-<section class="section team-group-section">
-  <div class="container">
-
-    <div class="group-header">
-      <div class="group-header-icon"><i class="fa-solid fa-landmark"></i></div>
-      <div class="group-header-text">
-        <h2>Board of Trustees | न्यास मंडल</h2>
-        <p>संस्था का मार्गदर्शन एवं नेतृत्व करने वाला मंडल</p>
-      </div>
-      <div class="group-header-count">5 Members</div>
-    </div>
-
-    <div class="member-grid">
-
-      <div class="member-card" data-tone="blue"
-           data-name="Ajay Kumar Prajapati"
-           data-name-hindi="अजय कुमार प्रजापति"
-           data-role="President | अध्यक्ष"
-           data-email="president@sathchaleham.org"
-           data-phone="+91 XXXXXXXXXX"
-           data-location="सहरसा, बिहार"
-           data-joined="Founding Member"
-           data-about="संस्था के संस्थापक एवं अध्यक्ष के रूप में श्री अजय कुमार प्रजापति जी संस्था की समग्र दिशा, नीतियों एवं दीर्घकालिक रणनीति का निर्धारण करते हैं। वे संस्था के प्रत्येक कार्यक्रम में सक्रिय भागीदारी सुनिश्चित करते हैं।">
-        <div class="member-banner">
-          <div class="member-photo-wrap">
-            <div class="member-photo">AK</div>
-          </div>
-        </div>
-        <div class="member-content">
-          <span class="member-role-tag"><i class="fa-solid fa-star"></i> President</span>
-          <div class="member-name">Ajay Kumar Prajapati</div>
-          <div class="member-name-small hindi">अजय कुमार प्रजापति</div>
-          <button class="member-view-btn" type="button">
-            <i class="fa-solid fa-id-card"></i> View Profile
-          </button>
-        </div>
-      </div>
-
-      <div class="member-card" data-tone="gold"
-           data-name="S K Yadav"
-           data-name-hindi="एस के यादव"
-           data-role="Vice President | उपाध्यक्ष"
-           data-email="vp@sathchaleham.org"
-           data-phone="+91 XXXXXXXXXX"
-           data-location="पटना, बिहार"
-           data-joined="Founding Member"
-           data-about="श्री एस के यादव जी उपाध्यक्ष के रूप में संस्था के प्रशासनिक कार्यों, कार्यक्रमों के संचालन एवं अध्यक्ष के साथ मिलकर निर्णय लेने की प्रक्रिया में महत्वपूर्ण भूमिका निभाते हैं।">
-        <div class="member-banner">
-          <div class="member-photo-wrap">
-            <div class="member-photo">SK</div>
-          </div>
-        </div>
-        <div class="member-content">
-          <span class="member-role-tag"><i class="fa-solid fa-star"></i> Vice President</span>
-          <div class="member-name">S K Yadav</div>
-          <div class="member-name-small hindi">एस के यादव</div>
-          <button class="member-view-btn" type="button">
-            <i class="fa-solid fa-id-card"></i> View Profile
-          </button>
-        </div>
-      </div>
-
-      <div class="member-card" data-tone="red"
-           data-name="M R Ojha"
-           data-name-hindi="एम आर ओझा"
-           data-role="Secretary | सचिव"
-           data-email="secretary@sathchaleham.org"
-           data-phone="+91 XXXXXXXXXX"
-           data-location="मुज़फ़्फ़रपुर, बिहार"
-           data-joined="Founding Member"
-           data-about="श्री एम आर ओझा जी सचिव के रूप में संस्था की बैठकों, रिकॉर्ड, दस्तावेज़ एवं सरकारी पत्राचार की जिम्मेदारी निभाते हैं।">
-        <div class="member-banner">
-          <div class="member-photo-wrap">
-            <div class="member-photo">MO</div>
-          </div>
-        </div>
-        <div class="member-content">
-          <span class="member-role-tag"><i class="fa-solid fa-star"></i> Secretary</span>
-          <div class="member-name">M R Ojha</div>
-          <div class="member-name-small hindi">एम आर ओझा</div>
-          <button class="member-view-btn" type="button">
-            <i class="fa-solid fa-id-card"></i> View Profile
-          </button>
-        </div>
-      </div>
-
-      <div class="member-card" data-tone="teal"
-           data-name="D K Soren"
-           data-name-hindi="डी के सोरेन"
-           data-role="Joint Secretary | संयुक्त सचिव"
-           data-email="js@sathchaleham.org"
-           data-phone="+91 XXXXXXXXXX"
-           data-location="गया, बिहार"
-           data-joined="Founding Member"
-           data-about="श्री डी के सोरेन जी संयुक्त सचिव के रूप में सचिव के कार्यों में सहयोग एवं कार्यक्रम स्थलों पर समन्वय की भूमिका निभाते हैं।">
-        <div class="member-banner">
-          <div class="member-photo-wrap">
-            <div class="member-photo">DS</div>
-          </div>
-        </div>
-        <div class="member-content">
-          <span class="member-role-tag"><i class="fa-solid fa-star"></i> Joint Secretary</span>
-          <div class="member-name">D K Soren</div>
-          <div class="member-name-small hindi">डी के सोरेन</div>
-          <button class="member-view-btn" type="button">
-            <i class="fa-solid fa-id-card"></i> View Profile
-          </button>
-        </div>
-      </div>
-
-      <div class="member-card" data-tone="gold"
-           data-name="Priyam Singh"
-           data-name-hindi="प्रियम सिंह"
-           data-role="Treasurer | कोषाध्यक्ष"
-           data-email="treasurer@sathchaleham.org"
-           data-phone="+91 XXXXXXXXXX"
-           data-location="भागलपुर, बिहार"
-           data-joined="Founding Member"
-           data-about="श्रीमती प्रियम सिंह जी कोषाध्यक्ष के रूप में संस्था की आर्थिक गतिविधियों, दान राशि के उचित उपयोग एवं वित्तीय पारदर्शिता की जिम्मेदारी निभाती हैं।">
-        <div class="member-banner">
-          <div class="member-photo-wrap">
-            <div class="member-photo">PS</div>
-          </div>
-        </div>
-        <div class="member-content">
-          <span class="member-role-tag"><i class="fa-solid fa-star"></i> Treasurer</span>
-          <div class="member-name">Priyam Singh</div>
-          <div class="member-name-small hindi">प्रियम सिंह</div>
-          <button class="member-view-btn" type="button">
-            <i class="fa-solid fa-id-card"></i> View Profile
-          </button>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ================= ADVISORY BOARD ================= -->
-<section class="section team-group-section alt">
-  <div class="container">
-
-    <div class="group-header">
-      <div class="group-header-icon"><i class="fa-solid fa-user-tie"></i></div>
-      <div class="group-header-text">
-        <h2>Advisory Board | सलाहकार मंडल</h2>
-        <p>विशेषज्ञ मार्गदर्शन एवं सलाह प्रदान करने वाला मंडल</p>
-      </div>
-      <div class="group-header-count">4 Members</div>
-    </div>
-
-    <div class="member-grid">
-
-      <div class="member-card" data-tone="blue"
-           data-name="Dr. Chandan Kumar"
-           data-name-hindi="डॉ. चंदन कुमार"
-           data-role="Senior Member | वरिष्ठ सदस्य"
-           data-email="chandan@sathchaleham.org"
-           data-phone="+91 XXXXXXXXXX"
-           data-location="सहरसा, बिहार"
-           data-joined="Advisory Member"
-           data-about="डॉ. चंदन कुमार जी वरिष्ठ सदस्य के रूप में संस्था को चिकित्सा, स्वास्थ्य एवं शैक्षणिक क्षेत्रों में मार्गदर्शन प्रदान करते हैं।">
-        <div class="member-banner">
-          <div class="member-photo-wrap">
-            <div class="member-photo">CK</div>
-          </div>
-        </div>
-        <div class="member-content">
-          <span class="member-role-tag"><i class="fa-solid fa-user-tie"></i> Senior Member</span>
-          <div class="member-name">Dr. Chandan Kumar</div>
-          <div class="member-name-small hindi">डॉ. चंदन कुमार</div>
-          <button class="member-view-btn" type="button">
-            <i class="fa-solid fa-id-card"></i> View Profile
-          </button>
-        </div>
-      </div>
-
-      <div class="member-card" data-tone="gold"
-           data-name="Jitendra Mistri"
-           data-name-hindi="जितेंद्र मिस्त्री"
-           data-role="Executive Member | कार्यकारी सदस्य"
-           data-email="jitendra@sathchaleham.org"
-           data-phone="+91 XXXXXXXXXX"
-           data-location="पटना, बिहार"
-           data-joined="Advisory Member"
-           data-about="श्री जितेंद्र मिस्त्री जी कार्यकारी सदस्य के रूप में संस्था की कार्यकारी गतिविधियों के संचालन में सक्रिय सहयोग प्रदान करते हैं।">
-        <div class="member-banner">
-          <div class="member-photo-wrap">
-            <div class="member-photo">JM</div>
-          </div>
-        </div>
-        <div class="member-content">
-          <span class="member-role-tag"><i class="fa-solid fa-user-tie"></i> Executive Member</span>
-          <div class="member-name">Jitendra Mistri</div>
-          <div class="member-name-small hindi">जितेंद्र मिस्त्री</div>
-          <button class="member-view-btn" type="button">
-            <i class="fa-solid fa-id-card"></i> View Profile
-          </button>
-        </div>
-      </div>
-
-      <div class="member-card" data-tone="teal"
-           data-name="Afsar Amin"
-           data-name-hindi="अफ़सर अमीन"
-           data-role="Advisory Member | सलाहकार सदस्य"
-           data-email="afsar@sathchaleham.org"
-           data-phone="+91 XXXXXXXXXX"
-           data-location="भागलपुर, बिहार"
-           data-joined="Advisory Member"
-           data-about="श्री अफ़सर अमीन जी सलाहकार सदस्य के रूप में संस्था की विभिन्न परियोजनाओं एवं कार्यक्रमों पर विशेषज्ञ सलाह प्रदान करते हैं।">
-        <div class="member-banner">
-          <div class="member-photo-wrap">
-            <div class="member-photo">AA</div>
-          </div>
-        </div>
-        <div class="member-content">
-          <span class="member-role-tag"><i class="fa-solid fa-user-tie"></i> Advisory Member</span>
-          <div class="member-name">Afsar Amin</div>
-          <div class="member-name-small hindi">अफ़सर अमीन</div>
-          <button class="member-view-btn" type="button">
-            <i class="fa-solid fa-id-card"></i> View Profile
-          </button>
-        </div>
-      </div>
-
-      <div class="member-card" data-tone="red"
-           data-name="Sumit Singh"
-           data-name-hindi="सुमित सिंह"
-           data-role="Legal &amp; Compliance Advisor | कानूनी सलाहकार"
-           data-email="legal@sathchaleham.org"
-           data-phone="+91 XXXXXXXXXX"
-           data-location="गया, बिहार"
-           data-joined="Advisory Member"
-           data-about="श्री सुमित सिंह जी कानूनी एवं अनुपालन सलाहकार के रूप में संस्था को कानूनी मामलों, दस्तावेज़ीकरण एवं सरकारी अनुपालन में सहयोग प्रदान करते हैं।">
-        <div class="member-banner">
-          <div class="member-photo-wrap">
-            <div class="member-photo">SS</div>
-          </div>
-        </div>
-        <div class="member-content">
-          <span class="member-role-tag"><i class="fa-solid fa-scale-balanced"></i> Legal Advisor</span>
-          <div class="member-name">Sumit Singh</div>
-          <div class="member-name-small hindi">सुमित सिंह</div>
-          <button class="member-view-btn" type="button">
-            <i class="fa-solid fa-id-card"></i> View Profile
-          </button>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ================= PROGRAM TEAM ================= -->
-<section class="section team-group-section">
-  <div class="container">
-
-    <div class="group-header">
-      <div class="group-header-icon"><i class="fa-solid fa-people-group"></i></div>
-      <div class="group-header-text">
-        <h2>Program Team | कार्यक्रम संचालन टीम</h2>
-        <p>जमीनी स्तर पर कार्यक्रमों के संचालन का दायित्व निभाने वाली टीम</p>
-      </div>
-      <div class="group-header-count">4 Members</div>
-    </div>
-
-    <div class="member-grid">
-
-      <div class="member-card" data-tone="blue"
-           data-name="Kumar Puskar"
-           data-name-hindi="कुमार पुष्कर"
-           data-role="Program Coordinator | कार्यक्रम समन्वयक"
-           data-email="program@sathchaleham.org"
-           data-phone="+91 XXXXXXXXXX"
-           data-location="सहरसा, बिहार"
-           data-joined="Program Team"
-           data-about="श्री कुमार पुष्कर जी कार्यक्रम समन्वयक के रूप में संस्था के सभी कार्यक्रमों की योजना, संचालन एवं समन्वय की जिम्मेदारी निभाते हैं।">
-        <div class="member-banner">
-          <div class="member-photo-wrap">
-            <div class="member-photo">KP</div>
-          </div>
-        </div>
-        <div class="member-content">
-          <span class="member-role-tag"><i class="fa-solid fa-diagram-project"></i> Program Coordinator</span>
-          <div class="member-name">Kumar Puskar</div>
-          <div class="member-name-small hindi">कुमार पुष्कर</div>
-          <button class="member-view-btn" type="button">
-            <i class="fa-solid fa-id-card"></i> View Profile
-          </button>
-        </div>
-      </div>
-
-      <div class="member-card" data-tone="gold"
-           data-name="Sujeet Suman"
-           data-name-hindi="सुजीत सुमन"
-           data-role="Youth Coordinator | युवा समन्वयक"
-           data-email="youth@sathchaleham.org"
-           data-phone="+91 XXXXXXXXXX"
-           data-location="मुज़फ़्फ़रपुर, बिहार"
-           data-joined="Program Team"
-           data-about="श्री सुजीत सुमन जी युवा समन्वयक के रूप में संस्था के युवा विकास एवं कौशल विकास कार्यक्रमों की जिम्मेदारी निभाते हैं।">
-        <div class="member-banner">
-          <div class="member-photo-wrap">
-            <div class="member-photo">SS</div>
-          </div>
-        </div>
-        <div class="member-content">
-          <span class="member-role-tag"><i class="fa-solid fa-person-running"></i> Youth Coordinator</span>
-          <div class="member-name">Sujeet Suman</div>
-          <div class="member-name-small hindi">सुजीत सुमन</div>
-          <button class="member-view-btn" type="button">
-            <i class="fa-solid fa-id-card"></i> View Profile
-          </button>
-        </div>
-      </div>
-
-      <div class="member-card" data-tone="red"
-           data-name="S Kumari"
-           data-name-hindi="एस कुमारी"
-           data-role="Women &amp; Child Development Coordinator"
-           data-email="womenchild@sathchaleham.org"
-           data-phone="+91 XXXXXXXXXX"
-           data-location="भागलपुर, बिहार"
-           data-joined="Program Team"
-           data-about="श्रीमती एस कुमारी जी महिला एवं बाल विकास समन्वयक के रूप में महिला सशक्तिकरण एवं बाल विकास से जुड़े सभी कार्यक्रमों की जिम्मेदारी निभाती हैं।">
-        <div class="member-banner">
-          <div class="member-photo-wrap">
-            <div class="member-photo">SK</div>
-          </div>
-        </div>
-        <div class="member-content">
-          <span class="member-role-tag"><i class="fa-solid fa-person-dress"></i> Women &amp; Child</span>
-          <div class="member-name">S Kumari</div>
-          <div class="member-name-small hindi">एस कुमारी</div>
-          <button class="member-view-btn" type="button">
-            <i class="fa-solid fa-id-card"></i> View Profile
-          </button>
-        </div>
-      </div>
-
-      <div class="member-card" data-tone="teal"
-           data-name="P K Prabhkar"
-           data-name-hindi="पी के प्रभाकर"
-           data-role="Volunteer Coordinator | स्वयंसेवक समन्वयक"
-           data-email="volunteer@sathchaleham.org"
-           data-phone="+91 XXXXXXXXXX"
-           data-location="गया, बिहार"
-           data-joined="Program Team"
-           data-about="श्री पी के प्रभाकर जी स्वयंसेवक समन्वयक के रूप में संस्था से जुड़े सभी स्वयंसेवकों के प्रबंधन, प्रशिक्षण एवं कार्यक्रमों में उनकी भागीदारी सुनिश्चित करते हैं।">
-        <div class="member-banner">
-          <div class="member-photo-wrap">
-            <div class="member-photo">PP</div>
-          </div>
-        </div>
-        <div class="member-content">
-          <span class="member-role-tag"><i class="fa-solid fa-hands-helping"></i> Volunteer Coordinator</span>
-          <div class="member-name">P K Prabhkar</div>
-          <div class="member-name-small hindi">पी के प्रभाकर</div>
-          <button class="member-view-btn" type="button">
-            <i class="fa-solid fa-id-card"></i> View Profile
-          </button>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-<!-- ================= CTA ================= -->
+<!-- ═══════════ CTA ═══════════ -->
 <section class="cta-strip">
   <div class="container">
-    <div class="cta-badge">
-      <i class="fa-solid fa-hands-holding-heart"></i>
-      Join Our Mission
-    </div>
+    <div class="cta-badge"><i class="fa-solid fa-hands-holding-heart"></i> Join Our Mission</div>
     <h2>साथ चले हम, <span>बदलाव की ओर</span></h2>
-    <p>
-      आप भी हमारी टीम का हिस्सा बन सकते हैं — स्वयंसेवक, इंटर्न या सहयोगी
-      के रूप में जुड़कर समाज सेवा की इस यात्रा में योगदान दें।
-    </p>
+    <p>हमारी टीम का हिस्सा बनें और सामाजिक बदलाव में अपनी भूमिका निभाएँ।</p>
     <div class="cta-buttons">
-      <a href="join-us.html" class="btn btn-gold btn-pulse-red">
-        <i class="fa-solid fa-users"></i> Join as Volunteer
-      </a>
-      <a href="donate.html" class="btn btn-red">
-        <i class="fa-solid fa-heart"></i> Donate Now
-      </a>
-      <a href="contact.html" class="btn btn-outline">
-        <i class="fa-solid fa-phone"></i> Contact Us
-      </a>
+      <a href="join-us.html" class="btn btn-gold"><i class="fa-solid fa-users"></i> Join as Member / Volunteer</a>
+      <a href="donate.html" class="btn btn-red btn-pulse-red"><i class="fa-solid fa-heart"></i> Donate Now</a>
+      <a href="contact.html" class="btn btn-outline"><i class="fa-solid fa-phone"></i> Contact Us</a>
     </div>
   </div>
 </section>
 
-
-<!-- ================= FOOTER ================= -->
+<!-- ═══════════ FOOTER — SAME AS HOME ═══════════ -->
 <footer>
   <div class="container">
-    <div class="footer-grid">
-
-      <div>
-        <div class="footer-brand-head">
-          <div class="footer-logo-box">
-            <img src="sath_chale_ham_logo_HD-1.png" alt="Sath Chale Hum Foundation Logo">
-          </div>
-          <div class="footer-brand-text">
-            <h3>साथ चले हम फाउंडेशन</h3>
-            <div class="footer-tagline-text">साथ चले हम, बदलाव की ओर</div>
-          </div>
-        </div>
-        <p class="footer-desc">
-          एक सामाजिक संस्था जो शिक्षा, स्वास्थ्य, महिला सशक्तिकरण और
-          समाज के सर्वांगीण विकास के लिए समर्पित है।
-        </p>
-        <div class="footer-badge">
-          <i class="fa-solid fa-award"></i> 12A &amp; 80G Certified NGO
-        </div>
-        <h4 class="footer-social-heading">Our Social Media | हमारे सोशल मीडिया</h4>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/share/1PUUzvUfoo/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/sathchaleham" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://youtube.com/@sathchaleham" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://wa.me/917011893028" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+    <div class="footer-top">
+      <div class="footer-brand-head">
+        <div class="footer-logo-box"><img src="https://raw.githubusercontent.com/sathchaleham-dot/sathchalehumfoundation/main/sath_chale_ham_logo_HD-1.png" alt="Logo"></div>
+        <div class="footer-brand-text">
+          <h3>साथ चले हम फाउंडेशन</h3>
+          <div class="footer-tagline-text">साथ चले हम, बदलाव की ओर</div>
         </div>
       </div>
+      <p class="footer-desc">एक सामाजिक संस्था जो शिक्षा, स्वास्थ्य, महिला सशक्तिकरण और समाज के सर्वांगीण विकास के लिए समर्पित है।</p>
+      <div class="footer-badge"><i class="fa-solid fa-award"></i> 12A &amp; 80G Certified NGO</div>
+      <h4 class="footer-social-heading">Our Social Media | हमारे सोशल मीडिया</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1PUUzvUfoo/" target="_blank" rel="noopener" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sathchaleham" target="_blank" rel="noopener" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com/@sathchaleham" target="_blank" rel="noopener" class="social-icon"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://wa.me/917011893028" target="_blank" rel="noopener" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
 
-      <div>
+    <div class="footer-grid">
+      <div class="footer-col">
         <h4 class="footer-heading">Quick Links | त्वरित लिंक</h4>
         <ul class="footer-links">
           <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home | होम</a></li>
@@ -1460,52 +638,41 @@
           <li><a href="work.html"><i class="fa-solid fa-chevron-right"></i> Our Work | हमारे कार्य</a></li>
           <li><a href="team.html"><i class="fa-solid fa-chevron-right"></i> Our Team | हमारी टीम</a></li>
           <li><a href="events.html"><i class="fa-solid fa-chevron-right"></i> Events | कार्यक्रम</a></li>
+          <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery | गैलरी</a></li>
           <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Downloads | डाउनलोड</a></li>
-          <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact | संपर्क</a></li>
+          <li><a href="faq.html"><i class="fa-solid fa-chevron-right"></i> FAQ | सामान्य प्रश्न</a></li>
         </ul>
       </div>
-
-      <div>
+      <div class="footer-col">
         <h4 class="footer-heading">Get Involved | जुड़ें</h4>
         <ul class="footer-links">
-          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Volunteer | स्वयंसेवक</a></li>
-          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Internship | इंटर्नशिप</a></li>
-          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> CSR Partnership | CSR</a></li>
-          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Donate | दान करें</a></li>
-          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Fundraise | फंडरेज़िंग</a></li>
+          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Donate Us | दान करें</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Join Us | जुड़ें</a></li>
           <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Careers | करियर</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Internship | इंटर्नशिप</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Member &amp; Volunteer</a></li>
+          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> CSR Partnership</a></li>
+          <li><a href="calculator.html"><i class="fa-solid fa-chevron-right"></i> Impact Calculator</a></li>
+          <li><a href="work.html"><i class="fa-solid fa-chevron-right"></i> Sponsor a Program</a></li>
         </ul>
       </div>
-
-      <div>
-        <h4 class="footer-heading">Resources | संसाधन</h4>
-        <ul class="footer-links">
-          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Reports | रिपोर्ट</a></li>
-          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Certificates | प्रमाण पत्र</a></li>
-          <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery | गैलरी</a></li>
-          <li><a href="videos.html"><i class="fa-solid fa-chevron-right"></i> Videos | वीडियो</a></li>
-          <li><a href="faq.html"><i class="fa-solid fa-chevron-right"></i> FAQ | सामान्य प्रश्न</a></li>
-          <li><a href="sitemap.html"><i class="fa-solid fa-chevron-right"></i> Sitemap | साइटमैप</a></li>
-        </ul>
-      </div>
-
-      <div>
+      <div class="footer-col">
         <h4 class="footer-heading">Contact Us | संपर्क</h4>
         <ul class="contact-info">
-          <li><i class="fa-solid fa-location-dot"></i><div><strong>Address | पता</strong>भारतीय नगर, वार्ड नं. 26/35, सहरसा, बिहार – 852201</div></li>
-          <li><i class="fa-solid fa-phone"></i><div><strong>Helpline | हेल्पलाइन</strong><a href="tel:+917011893028" style="color:#93C5FD;">+91 7011893028</a></div></li>
-          <li><i class="fa-solid fa-envelope"></i><div><strong>Email | ईमेल</strong><a href="mailto:sathchaleham@gmail.com" style="color:#93C5FD;">sathchaleham@gmail.com</a></div></li>
-          <li><i class="fa-solid fa-clock"></i><div><strong>Office Hours | समय</strong>सोम – शनि · 10:00 AM – 6:00 PM</div></li>
+          <li><i class="fa-solid fa-location-dot"></i><div><strong>Address | पता:</strong>भारतीय नगर, वार्ड 26/35, सहरसा, बिहार — 852201</div></li>
+          <li><i class="fa-solid fa-phone"></i><div><strong>Helpline | हेल्पलाइन:</strong><a href="tel:+917011893028" style="color:#93C5FD;">+91 70118 93028</a></div></li>
+          <li><i class="fa-solid fa-envelope"></i><div><strong>Email | ईमेल:</strong><a href="mailto:sathchaleham@gmail.com" style="color:#93C5FD;">sathchaleham@gmail.com</a></div></li>
+          <li><i class="fa-solid fa-clock"></i><div><strong>Office Hours:</strong>सोम – शनि · 10:00 AM – 6:00 PM</div></li>
         </ul>
-        <div class="footer-newsletter">
-          <label>Newsletter | न्यूज़लेटर</label>
-          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
-            <input type="email" placeholder="your@email.com" required>
-            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
-          </form>
-        </div>
       </div>
+    </div>
 
+    <div class="footer-newsletter-wrap">
+      <label class="newsletter-label">Newsletter | न्यूज़लेटर</label>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
+      </form>
     </div>
 
     <div class="footer-bottom">
@@ -1520,208 +687,538 @@
         <div class="footer-made">Made with <i class="fa-solid fa-heart"></i> in Bihar</div>
       </div>
     </div>
-
   </div>
 </footer>
 
+<a href="https://wa.me/917011893028?text=नमस्ते" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+<button class="back-top" id="backTop" aria-label="Back to Top" type="button"><i class="fa-solid fa-arrow-up"></i></button>
 
-<!-- ================= MODAL ================= -->
-<div class="modal-overlay" id="memberModal">
-  <div class="modal-box">
-
-    <button class="modal-close" id="modalClose" aria-label="Close" type="button">
-      <i class="fa-solid fa-xmark"></i>
-    </button>
-
-    <div class="modal-header" id="modalHeader" data-tone="blue">
-      <div class="modal-header-content">
-
-        <div class="modal-photo" id="modalPhoto">AK</div>
-
-        <h3 id="modalName">Member Name</h3>
-        <div class="modal-subname hindi" id="modalNameHindi">—</div>
-
-        <span class="modal-role-badge">
-          <i class="fa-solid fa-briefcase"></i>
-          <span id="modalRole">Role</span>
-        </span>
-
-      </div>
-    </div>
-
-    <div class="modal-body">
-
-      <ul class="modal-detail-list">
-        <li>
-          <i class="fa-solid fa-user"></i>
-          <div>
-            <strong>Full Name | पूरा नाम</strong>
-            <span class="hindi" id="modalNameHindi2">—</span>
-          </div>
-        </li>
-        <li>
-          <i class="fa-solid fa-briefcase"></i>
-          <div>
-            <strong>Position | पद</strong>
-            <span id="modalRoleDetail">—</span>
-          </div>
-        </li>
-        <li>
-          <i class="fa-solid fa-envelope"></i>
-          <div>
-            <strong>Email | ईमेल</strong>
-            <span id="modalEmail">—</span>
-          </div>
-        </li>
-        <li>
-          <i class="fa-solid fa-phone"></i>
-          <div>
-            <strong>Contact | संपर्क</strong>
-            <span id="modalPhone">—</span>
-          </div>
-        </li>
-        <li>
-          <i class="fa-solid fa-location-dot"></i>
-          <div>
-            <strong>Location | स्थान</strong>
-            <span class="hindi" id="modalLocation">—</span>
-          </div>
-        </li>
-        <li>
-          <i class="fa-solid fa-calendar-check"></i>
-          <div>
-            <strong>Association | संबद्धता</strong>
-            <span id="modalJoined">—</span>
-          </div>
-        </li>
-      </ul>
-
-      <div class="modal-about">
-        <strong><i class="fa-solid fa-circle-info"></i> About | परिचय</strong>
-        <p class="hindi" id="modalAbout">—</p>
-      </div>
-
-    </div>
-
-  </div>
-</div>
-
-
-<button class="back-top" id="backTop" aria-label="Back to Top" type="button">
-  <i class="fa-solid fa-arrow-up"></i>
-</button>
-
-
-<!-- ================= JAVASCRIPT ================= -->
 <script>
-document.addEventListener("DOMContentLoaded", function(){
+/* ═══════════════════════════════════════════════════════════
+   TEAM DATA
+   ═══════════════════════════════════════════════════════════ */
+const TEAM_GROUPS = [
+  {
+    id: "board",
+    label: "Board of Trustees",
+    labelHi: "न्यास मंडल",
+    icon: "fa-building-columns",
+    color: "#2563EB", color2: "#1E40AF", rgb: "37, 99, 235",
+    desc: "संस्था की दिशा, प्रशासन और नीतिगत निर्णयों का मार्गदर्शन करने वाला न्यास मंडल।",
+    members: [
+      {
+        nameEn: "Mr. Ajay Kumar Prajapati", nameHi: "श्री अजय कुमार प्रजापति",
+        roleEn: "President", roleHi: "अध्यक्ष",
+        address: "Saharsa, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री अजय कुमार प्रजापति Sath Chale Hum Foundation के अध्यक्ष के रूप में संस्था को नेतृत्व एवं रणनीतिक दिशा प्रदान करते हैं। वे संस्थागत योजना, प्रशासन, सामुदायिक सहभागिता तथा सामाजिक कल्याण से जुड़ी पहलों के विकास में महत्वपूर्ण योगदान देते हैं।",
+        aboutEn: "Mr. Ajay Kumar Prajapati serves as the President of Sath Chale Hum Foundation and provides leadership and strategic direction to the organization. He contributes to institutional planning, governance, community engagement and the development of social welfare initiatives.",
+        roleDescHi: "संस्था के समग्र नेतृत्व, दिशा-निर्देशन और प्रशासनिक निगरानी की जिम्मेदारी।",
+        roleDescEn: "Responsible for providing overall leadership, strategic direction and administrative oversight to the organization.",
+        responsibilities: [
+          ["संस्था के vision, mission एवं मूल उद्देश्यों के अनुरूप कार्यों का मार्गदर्शन करना।", "Guide the organization in accordance with its vision, mission and core objectives."],
+          ["संस्था की प्रगति एवं विकास के लिए रणनीतिक दिशा प्रदान करना।", "Provide strategic direction for organizational growth and development."],
+          ["प्रभावी प्रशासन, योजना निर्माण एवं निर्णय लेने की प्रक्रिया में सहयोग करना।", "Support effective governance, planning and decision-making."],
+          ["सामुदायिक सहभागिता एवं सामाजिक कल्याण की पहलों को प्रोत्साहित करना।", "Encourage community participation and social welfare initiatives."]
+        ]
+      },
+      {
+        nameEn: "Mr. S K Yadav", nameHi: "श्री एस. के. यादव",
+        roleEn: "Vice President", roleHi: "उपाध्यक्ष",
+        address: "Madhepura, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री एस. के. यादव Sath Chale Hum Foundation के उपाध्यक्ष के रूप में नेतृत्व टीम को संगठनात्मक योजना, समन्वय एवं संस्थागत विकास में सहयोग प्रदान करते हैं। वे टीमवर्क को मजबूत करने तथा संस्था की पहलों के प्रभावी क्रियान्वयन में योगदान देते हैं।",
+        aboutEn: "Mr. S K Yadav serves as the Vice President of Sath Chale Hum Foundation and supports the leadership team in organizational planning, coordination and institutional development. He contributes to strengthening teamwork and maintaining effective implementation of organizational initiatives.",
+        roleDescHi: "अध्यक्ष एवं नेतृत्व टीम को प्रशासन, योजना एवं समन्वय से जुड़े कार्यों में सहयोग प्रदान करना।",
+        roleDescEn: "Supports the President and leadership team in organizational administration, planning and coordination.",
+        responsibilities: [
+          ["संगठनात्मक योजना एवं निर्णय लेने की प्रक्रिया में सहयोग करना।", "Assist in organizational planning and decision-making."],
+          ["विभिन्न टीमों एवं सदस्यों के बीच समन्वय स्थापित करना।", "Support coordination among different teams and members."],
+          ["संस्थागत विकास से जुड़ी गतिविधियों में भाग लेना।", "Participate in institutional development activities."],
+          ["संस्था के उद्देश्यों के प्रभावी क्रियान्वयन में सहयोग करना।", "Support the implementation of organizational objectives."]
+        ]
+      },
+      {
+        nameEn: "Mr. M R Ojha", nameHi: "श्री एम. आर. ओझा",
+        roleEn: "Secretary", roleHi: "सचिव",
+        address: "Buxar, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री एम. आर. ओझा Sath Chale Hum Foundation के सचिव के रूप में संस्था की प्रशासनिक एवं दस्तावेजी प्रक्रियाओं में महत्वपूर्ण भूमिका निभाते हैं। वे संचार, समन्वय, अभिलेख प्रबंधन तथा संस्थागत निर्णयों के क्रियान्वयन में सहयोग करते हैं।",
+        aboutEn: "Mr. M R Ojha serves as the Secretary of Sath Chale Hum Foundation and contributes to the organization's administrative and documentation processes. He supports communication, coordination, record management and the implementation of institutional decisions.",
+        roleDescHi: "प्रशासनिक समन्वय, आधिकारिक दस्तावेजीकरण एवं संगठनात्मक संचार की जिम्मेदारी।",
+        roleDescEn: "Responsible for administrative coordination, official documentation and organizational communication.",
+        responsibilities: [
+          ["संस्था के महत्वपूर्ण अभिलेख एवं दस्तावेजों का रख-रखाव करना।", "Maintain important organizational records and documentation."],
+          ["आधिकारिक संचार एवं बैठकों का समन्वय करना।", "Coordinate official communication and meetings."],
+          ["संस्था द्वारा लिए गए निर्णयों के क्रियान्वयन में सहयोग करना।", "Support implementation of decisions taken by the organization."],
+          ["उचित प्रशासनिक प्रक्रियाओं को बनाए रखने में सहयोग करना।", "Assist in maintaining proper administrative procedures."]
+        ]
+      },
+      {
+        nameEn: "Mr. D K Soren", nameHi: "श्री डी. के. सोरेन",
+        roleEn: "Joint Secretary", roleHi: "संयुक्त सचिव",
+        address: "Saharsa, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री डी. के. सोरेन Sath Chale Hum Foundation के संयुक्त सचिव के रूप में सचिव एवं संस्था के नेतृत्व को प्रशासनिक समन्वय तथा कार्यक्रम संबंधी संचार में सहयोग प्रदान करते हैं। वे विभिन्न टीमों के बीच सुचारु समन्वय बनाए रखने में योगदान देते हैं।",
+        aboutEn: "Mr. D K Soren serves as the Joint Secretary of Sath Chale Hum Foundation and supports the Secretary and organizational leadership in administrative coordination and program-related communication. He contributes to maintaining smooth coordination between organizational teams.",
+        roleDescHi: "सचिवीय कार्यों, समन्वय एवं संस्था की प्रशासनिक गतिविधियों में सहयोग प्रदान करना।",
+        roleDescEn: "Supports secretarial functions, coordination and administrative activities of the organization.",
+        responsibilities: [
+          ["प्रशासनिक एवं सचिवीय कार्यों में सहयोग करना।", "Assist in administrative and secretarial activities."],
+          ["संस्था की विभिन्न इकाइयों के बीच संचार में सहयोग करना।", "Support communication between different organizational units."],
+          ["कार्यक्रम समन्वय एवं दस्तावेजीकरण में सहयोग करना।", "Assist in program coordination and documentation."],
+          ["संगठनात्मक बैठकों एवं उनके बाद की कार्यवाही में सहयोग करना।", "Support organizational meetings and follow-up activities."]
+        ]
+      },
+      {
+        nameEn: "Mr. Priyam Singh", nameHi: "श्री प्रियम सिंह",
+        roleEn: "Treasurer", roleHi: "कोषाध्यक्ष",
+        address: "Madhepura, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री प्रियम सिंह Sath Chale Hum Foundation के कोषाध्यक्ष के रूप में संस्था के वित्तीय प्रशासन में महत्वपूर्ण भूमिका निभाते हैं। वे वित्तीय अभिलेख, बजट, दस्तावेजीकरण तथा संस्था के धन के पारदर्शी प्रबंधन में योगदान देते हैं।",
+        aboutEn: "Mr. Priyam Singh serves as the Treasurer of Sath Chale Hum Foundation and supports responsible financial administration of the organization. He contributes to financial record management, budgeting, documentation and transparent handling of organizational funds.",
+        roleDescHi: "वित्तीय प्रबंधन, बजट निर्माण एवं वित्तीय अभिलेखों के रख-रखाव में सहयोग की जिम्मेदारी।",
+        roleDescEn: "Responsible for supporting financial management, budgeting and financial record keeping.",
+        responsibilities: [
+          ["वित्तीय अभिलेख एवं संबंधित दस्तावेजों का रख-रखाव करना।", "Maintain financial records and supporting documents."],
+          ["संस्था के बजट के निर्माण एवं निगरानी में सहयोग करना।", "Support preparation and monitoring of organizational budgets."],
+          ["पारदर्शी वित्तीय प्रक्रियाओं को बढ़ावा देना।", "Promote transparent financial practices."],
+          ["वित्तीय रिपोर्टिंग एवं दस्तावेजीकरण में सहयोग करना।", "Support financial reporting and documentation."]
+        ]
+      }
+    ]
+  },
+  {
+    id: "executive",
+    label: "Senior & Executive Members",
+    labelHi: "वरिष्ठ एवं कार्यकारी सदस्य",
+    icon: "fa-star",
+    color: "#F59E0B", color2: "#B45309", rgb: "245, 158, 11",
+    desc: "अनुभव, मार्गदर्शन और व्यावहारिक सहयोग के माध्यम से संस्था की गतिविधियों को मजबूत करने वाले सदस्य।",
+    members: [
+      {
+        nameEn: "Er. Rahul Jaiswal", nameHi: "श्री राहुल जायसवाल",
+        roleEn: "Senior Member", roleHi: "वरिष्ठ सदस्य",
+        address: "Madhepura, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री राहुल जायसवाल Sath Chale Hum Foundation के वरिष्ठ सदस्य के रूप में संस्था की गतिविधियों में अनुभव, मार्गदर्शन एवं व्यावहारिक सहयोग प्रदान करते हैं। वे योजना निर्माण, सामुदायिक सहभागिता तथा सामाजिक पहलों के विकास में योगदान देते हैं।",
+        aboutEn: "Er. Rahul Jaiswal serves as a Senior Member of Sath Chale Hum Foundation and contributes experience, guidance and practical support to organizational activities. He supports planning, community engagement and the development of meaningful social initiatives.",
+        roleDescHi: "अनुभव आधारित मार्गदर्शन प्रदान करना तथा संगठनात्मक विकास एवं सामुदायिक पहलों में सहयोग करना।",
+        roleDescEn: "Provides experience-based guidance and supports organizational development and community initiatives.",
+        responsibilities: [
+          ["संगठन की गतिविधियों में मार्गदर्शन प्रदान करना।", "Provide guidance on organizational activities."],
+          ["सामुदायिक सहभागिता की पहलों में सहयोग करना।", "Support community engagement initiatives."],
+          ["योजना एवं विकास संबंधी कार्यों में योगदान देना।", "Contribute to planning and development activities."],
+          ["टीमवर्क एवं जिम्मेदार सहभागिता को प्रोत्साहित करना।", "Encourage teamwork and responsible participation."]
+        ]
+      },
+      {
+        nameEn: "Mr. Manik Yadav", nameHi: "श्री माणिक यादव",
+        roleEn: "Executive Member", roleHi: "कार्यकारी सदस्य",
+        address: "Madhepura, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री माणिक यादव Sath Chale Hum Foundation के कार्यकारी सदस्य के रूप में संस्था की गतिविधियों के व्यावहारिक क्रियान्वयन में योगदान देते हैं। वे समन्वय, क्षेत्रीय सहभागिता तथा सामाजिक कल्याण की पहलों को लागू करने में सहयोग करते हैं।",
+        aboutEn: "Mr. Manik Yadav serves as an Executive Member of Sath Chale Hum Foundation and contributes to the practical implementation of organizational activities. He supports coordination, field-level participation and execution of social welfare initiatives.",
+        roleDescHi: "संस्था के कार्यक्रमों एवं गतिविधियों के क्रियान्वयन, समन्वय एवं संचालन में सहयोग करना।",
+        roleDescEn: "Supports execution, coordination and implementation of organizational programs and activities.",
+        responsibilities: [
+          ["संस्था के कार्यक्रमों के क्रियान्वयन में सहयोग करना।", "Support implementation of organizational programs."],
+          ["गतिविधियों के दौरान टीम सदस्यों के साथ समन्वय करना।", "Coordinate with team members during activities."],
+          ["सामुदायिक स्तर की पहलों में भाग लेना।", "Participate in community-level initiatives."],
+          ["क्षेत्रीय गतिविधियों की निगरानी में सहयोग करना।", "Assist in monitoring field activities."]
+        ]
+      }
+    ]
+  },
+  {
+    id: "advisory",
+    label: "Advisory Board",
+    labelHi: "सलाहकार मंडल",
+    icon: "fa-lightbulb",
+    color: "#7C3AED", color2: "#5B21B6", rgb: "124, 58, 237",
+    desc: "विभिन्न क्षेत्रों में अनुभवी पेशेवर जो संस्था को रणनीतिक, कानूनी, वित्तीय और कार्यक्रम संबंधी मार्गदर्शन देते हैं।",
+    members: [
+      {
+        nameEn: "Dr. Chandan Kumar", nameHi: "डॉ. चंदन कुमार",
+        roleEn: "Chief Advisor", roleHi: "मुख्य सलाहकार",
+        address: "Saharsa, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "डॉ. चंदन कुमार Sath Chale Hum Foundation के मुख्य सलाहकार के रूप में संस्था को रणनीतिक एवं पेशेवर मार्गदर्शन प्रदान करते हैं। वे संस्थागत योजना, कार्यक्रम विकास तथा संस्था के सामाजिक उद्देश्यों से संबंधित सलाहकारी चर्चाओं में योगदान देते हैं।",
+        aboutEn: "Dr. Chandan Kumar serves as the Chief Advisor of Sath Chale Hum Foundation and provides strategic and professional guidance to the organization. He contributes to institutional planning, program development and advisory discussions related to the Foundation's social objectives.",
+        roleDescHi: "रणनीतिक सलाह प्रदान करना तथा संस्था की दीर्घकालिक योजना में सहयोग करना।",
+        roleDescEn: "Provides strategic advice and supports long-term organizational planning.",
+        responsibilities: [
+          ["नेतृत्व टीम को रणनीतिक मार्गदर्शन प्रदान करना।", "Provide strategic guidance to the leadership team."],
+          ["संगठनात्मक कार्यक्रमों के विकास में सहयोग करना।", "Support development of organizational programs."],
+          ["प्रमुख पहलों की सलाहकारी दृष्टिकोण से समीक्षा करना।", "Review major initiatives from an advisory perspective."],
+          ["सतत संस्थागत विकास को प्रोत्साहित करना।", "Encourage sustainable institutional development."]
+        ]
+      },
+      {
+        nameEn: "Mr. Sumit Singh", nameHi: "श्री सुमित सिंह",
+        roleEn: "Legal Advisor", roleHi: "विधिक सलाहकार",
+        address: "Madhepura, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री सुमित सिंह Sath Chale Hum Foundation के विधिक सलाहकार के रूप में संस्था को कानूनी एवं अनुपालन संबंधी मार्गदर्शन प्रदान करते हैं। वे लागू कानूनी आवश्यकताओं को समझने तथा उचित दस्तावेजीकरण एवं प्रक्रियाओं को बनाए रखने में संस्था का सहयोग करते हैं।",
+        aboutEn: "Mr. Sumit Singh serves as the Legal Advisor of Sath Chale Hum Foundation and provides legal and compliance-related guidance to the organization. He supports the Foundation in understanding applicable legal requirements and maintaining appropriate documentation and procedures.",
+        roleDescHi: "विधिक मार्गदर्शन प्रदान करना तथा संस्था के अनुपालन संबंधी कार्यों में सहयोग करना।",
+        roleDescEn: "Provides legal guidance and supports organizational compliance.",
+        responsibilities: [
+          ["लागू कानूनी आवश्यकताओं के संबंध में मार्गदर्शन प्रदान करना।", "Provide guidance on applicable legal requirements."],
+          ["कानूनी दस्तावेजीकरण एवं अनुपालन प्रक्रियाओं में सहयोग करना।", "Support legal documentation and compliance processes."],
+          ["संगठनात्मक मामलों की कानूनी दृष्टिकोण से समीक्षा करना।", "Review organizational matters from a legal perspective."],
+          ["जिम्मेदार संस्थागत प्रक्रियाओं को बढ़ावा देना।", "Promote responsible institutional practices."]
+        ]
+      },
+      {
+        nameEn: "Md. Afsar Amin", nameHi: "श्री एम.डी. अफसर अमीन",
+        roleEn: "Finance Advisor", roleHi: "वित्तीय सलाहकार",
+        address: "Darbhanga, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री एम.डी. अफसर अमीन Sath Chale Hum Foundation के वित्तीय सलाहकार के रूप में वित्तीय योजना, बजट एवं संसाधनों के जिम्मेदार प्रबंधन से संबंधित मार्गदर्शन प्रदान करते हैं। वे वित्तीय व्यवस्था एवं दस्तावेजीकरण को मजबूत करने में संस्था का सहयोग करते हैं।",
+        aboutEn: "Md. Afsar Amin serves as the Finance Advisor of Sath Chale Hum Foundation and provides guidance on financial planning, budgeting and responsible resource management. He supports the organization in strengthening financial systems and documentation.",
+        roleDescHi: "वित्तीय योजना एवं संसाधन प्रबंधन से संबंधित मार्गदर्शन प्रदान करना।",
+        roleDescEn: "Provides financial planning and resource-management guidance.",
+        responsibilities: [
+          ["वित्तीय योजना एवं बजट के संबंध में सलाह देना।", "Advise on financial planning and budgeting."],
+          ["जिम्मेदार वित्तीय प्रबंधन में सहयोग करना।", "Support responsible financial management."],
+          ["वित्तीय दस्तावेजीकरण को मजबूत करने में सहयोग करना।", "Assist in strengthening financial documentation."],
+          ["वित्तीय प्रक्रियाओं में पारदर्शिता को प्रोत्साहित करना।", "Encourage transparency in financial processes."]
+        ]
+      },
+      {
+        nameEn: "Mr. Nitesh Pandit", nameHi: "श्री नितेश पंडित",
+        roleEn: "Education Advisor", roleHi: "शिक्षा सलाहकार",
+        address: "Saharsa, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री नितेश पंडित Sath Chale Hum Foundation के शिक्षा सलाहकार के रूप में शिक्षा केंद्रित पहलों के लिए मार्गदर्शन प्रदान करते हैं। वे सीखने के कार्यक्रमों, शैक्षणिक पहुंच तथा शिक्षा के अवसरों को बढ़ाने वाली पहलों के विकास में सहयोग करते हैं।",
+        aboutEn: "Mr. Nitesh Pandit serves as the Education Advisor of Sath Chale Hum Foundation and contributes guidance for education-focused initiatives. He supports the development of learning programs, educational outreach and initiatives aimed at improving access to educational opportunities.",
+        roleDescHi: "शिक्षा कार्यक्रमों एवं सीखने से जुड़ी पहलों के लिए सलाहकारी सहयोग प्रदान करना।",
+        roleDescEn: "Provides advisory support for education programs and learning initiatives.",
+        responsibilities: [
+          ["शिक्षा संबंधी पहलों के विकास में सहयोग करना।", "Support development of education initiatives."],
+          ["सामुदायिक स्तर के शिक्षा कार्यक्रमों में सलाह देना।", "Advise on community-based learning programs."],
+          ["शिक्षा के अवसरों तक पहुंच को प्रोत्साहित करना।", "Encourage access to educational opportunities."],
+          ["शैक्षणिक जागरूकता गतिविधियों में सहयोग करना।", "Support educational awareness activities."]
+        ]
+      },
+      {
+        nameEn: "Mr. Abhishek Singh", nameHi: "श्री अभिषेक सिंह",
+        roleEn: "Health Advisor", roleHi: "स्वास्थ्य सलाहकार",
+        address: "Madhepura, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री अभिषेक सिंह Sath Chale Hum Foundation के स्वास्थ्य सलाहकार के रूप में स्वास्थ्य एवं सामुदायिक कल्याण से जुड़ी पहलों में मार्गदर्शन प्रदान करते हैं। वे स्वास्थ्य जागरूकता गतिविधियों तथा समुदाय केंद्रित कल्याण कार्यक्रमों की योजना में सहयोग करते हैं।",
+        aboutEn: "Mr. Abhishek Singh serves as the Health Advisor of Sath Chale Hum Foundation and contributes guidance to health and community well-being initiatives. He supports the planning of health awareness activities and community-oriented welfare programs.",
+        roleDescHi: "स्वास्थ्य जागरूकता एवं सामुदायिक कल्याण कार्यक्रमों के लिए सलाहकारी सहयोग प्रदान करना।",
+        roleDescEn: "Provides advisory support for health awareness and community well-being programs.",
+        responsibilities: [
+          ["स्वास्थ्य जागरूकता की पहलों में सहयोग करना।", "Support health awareness initiatives."],
+          ["सामुदायिक स्वास्थ्य कार्यक्रमों के लिए मार्गदर्शन प्रदान करना।", "Provide guidance for community health programs."],
+          ["निवारक स्वास्थ्य जागरूकता को बढ़ावा देना।", "Encourage preventive health awareness."],
+          ["सामुदायिक कल्याण गतिविधियों के विकास में सहयोग करना।", "Support development of community welfare activities."]
+        ]
+      },
+      {
+        nameEn: "Mr. Jitendra Mistri", nameHi: "श्री जितेंद्र मिस्त्री",
+        roleEn: "Social Development Advisor", roleHi: "सामाजिक विकास सलाहकार",
+        address: "Saharsa, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री जितेंद्र मिस्त्री Sath Chale Hum Foundation के सामाजिक विकास सलाहकार के रूप में सामुदायिक विकास एवं सामाजिक कल्याण की पहलों में योगदान देते हैं। वे सामुदायिक सहभागिता, समावेशन तथा सतत सामाजिक विकास पर केंद्रित प्रयासों में सहयोग करते हैं।",
+        aboutEn: "Jitendra Mistri serves as the Social Development Advisor of Sath Chale Hum Foundation and contributes to community development and social welfare initiatives. He supports efforts focused on community participation, inclusion and sustainable social development.",
+        roleDescHi: "सामुदायिक विकास एवं सामाजिक कल्याण की पहलों के लिए मार्गदर्शन प्रदान करना।",
+        roleDescEn: "Provides guidance for community development and social welfare initiatives.",
+        responsibilities: [
+          ["सामुदायिक विकास कार्यक्रमों में सहयोग करना।", "Support community development programs."],
+          ["समावेशी सामुदायिक सहभागिता को प्रोत्साहित करना।", "Encourage inclusive community participation."],
+          ["सामाजिक जागरूकता गतिविधियों में सहयोग करना।", "Support social awareness activities."],
+          ["सतत सामुदायिक पहलों में योगदान देना।", "Contribute to sustainable community initiatives."]
+        ]
+      },
+      {
+        nameEn: "Mr. Manish Singh", nameHi: "श्री मनीष सिंह",
+        roleEn: "Media & Communication Advisor", roleHi: "मीडिया एवं संचार सलाहकार",
+        address: "Sasaram, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री मनीष सिंह Sath Chale Hum Foundation के मीडिया एवं संचार सलाहकार के रूप में संस्था के संचार, जनसंपर्क एवं डिजिटल उपस्थिति में सहयोग करते हैं। वे संस्था की गतिविधियों, पहलों एवं सामाजिक प्रभाव को स्पष्ट एवं जिम्मेदार तरीके से प्रस्तुत करने में योगदान देते हैं।",
+        aboutEn: "Mr. Manish Singh serves as the Media & Communication Advisor of Sath Chale Hum Foundation and supports the organization's communication, public outreach and digital presence. He contributes to presenting the Foundation's activities, initiatives and social impact in a clear and responsible manner.",
+        roleDescHi: "मीडिया संचार, जनसंपर्क एवं डिजिटल संचार से संबंधित मार्गदर्शन प्रदान करना।",
+        roleDescEn: "Provides guidance on media communication, public outreach and digital communication.",
+        responsibilities: [
+          ["संगठनात्मक संचार एवं जनसंपर्क में सहयोग करना।", "Support organizational communication and public outreach."],
+          ["संस्था की गतिविधियों की जिम्मेदार प्रस्तुति में सहयोग करना।", "Support responsible presentation of organizational activities."],
+          ["डिजिटल संचार संबंधी पहलों में सहयोग करना।", "Assist with digital communication initiatives."],
+          ["स्पष्ट एवं निरंतर संगठनात्मक संदेश को बढ़ावा देना।", "Promote clear and consistent organizational messaging."]
+        ]
+      }
+    ]
+  },
+  {
+    id: "program",
+    label: "Program Team",
+    labelHi: "कार्यक्रम संचालन टीम",
+    icon: "fa-rocket",
+    color: "#059669", color2: "#047857", rgb: "5, 150, 105",
+    desc: "ज़मीनी स्तर पर कार्यक्रमों की योजना, समन्वय और क्रियान्वयन करने वाली समर्पित टीम।",
+    members: [
+      {
+        nameEn: "Mr. Kumar Puskar", nameHi: "श्री कुमार पुष्कर",
+        roleEn: "Program Director", roleHi: "कार्यक्रम निदेशक",
+        address: "Madhepura, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री कुमार पुष्कर Sath Chale Hum Foundation के कार्यक्रम निदेशक के रूप में संस्था के कार्यक्रमों की योजना, समन्वय एवं क्रियान्वयन में महत्वपूर्ण भूमिका निभाते हैं। वे विभिन्न टीमों के साथ मिलकर कार्यक्रमों को व्यवस्थित रूप से संचालित करने तथा संस्था के उद्देश्यों के अनुरूप कार्य सुनिश्चित करने में सहयोग करते हैं।",
+        aboutEn: "Mr. Kumar Puskar serves as the Program Director of Sath Chale Hum Foundation and supports the planning, coordination and implementation of organizational programs. He works with different teams to ensure that program activities are properly organized and aligned with the Foundation's objectives.",
+        roleDescHi: "कार्यक्रमों की समग्र योजना, समन्वय एवं क्रियान्वयन की जिम्मेदारी।",
+        roleDescEn: "Responsible for overall program planning, coordination and implementation.",
+        responsibilities: [
+          ["संस्था के कार्यक्रमों की योजना एवं समन्वय करना।", "Plan and coordinate organizational programs."],
+          ["कार्यक्रमों के क्रियान्वयन एवं प्रगति की निगरानी करना।", "Monitor program implementation and progress."],
+          ["कार्यक्रम समन्वयकों एवं क्षेत्रीय टीमों के साथ समन्वय करना।", "Coordinate with program coordinators and field teams."],
+          ["सामाजिक पहलों के प्रभावी संचालन में सहयोग करना।", "Support effective delivery of social initiatives."]
+        ]
+      },
+      {
+        nameEn: "Mr. Vinit Saraf", nameHi: "श्री विनीत सराफ",
+        roleEn: "Program Coordinator", roleHi: "कार्यक्रम समन्वयक",
+        address: "Madhepura, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री विनीत सराफ Sath Chale Hum Foundation के कार्यक्रम समन्वयक के रूप में संस्था के कार्यक्रमों के दैनिक समन्वय में सहयोग करते हैं। वे कार्यक्रम टीमों, स्वयंसेवकों एवं क्षेत्रीय गतिविधियों के बीच समन्वय स्थापित करने में महत्वपूर्ण भूमिका निभाते हैं।",
+        aboutEn: "Mr. Vinit Saraf serves as the Program Coordinator of Sath Chale Hum Foundation and supports day-to-day coordination of organizational programs. He helps connect program teams, volunteers and field-level activities for smooth implementation.",
+        roleDescHi: "कार्यक्रम गतिविधियों, टीमों एवं क्रियान्वयन प्रक्रियाओं का समन्वय करना।",
+        roleDescEn: "Coordinates program activities, teams and implementation processes.",
+        responsibilities: [
+          ["दैनिक कार्यक्रम गतिविधियों का समन्वय करना।", "Coordinate daily program activities."],
+          ["कार्यक्रम टीमों एवं स्वयंसेवकों के साथ संचार बनाए रखना।", "Communicate with program teams and volunteers."],
+          ["गतिविधियों की योजना एवं समय-सारणी में सहयोग करना।", "Support activity planning and scheduling."],
+          ["कार्यक्रम संबंधी अपडेट एवं अभिलेख बनाए रखना।", "Maintain program-related updates and records."]
+        ]
+      },
+      {
+        nameEn: "Mr. Alok Paswan", nameHi: "श्री आलोक पासवान",
+        roleEn: "Education Coordinator", roleHi: "शिक्षा कार्यक्रम समन्वयक",
+        address: "Supaul, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री आलोक पासवान Sath Chale Hum Foundation के शिक्षा कार्यक्रम समन्वयक के रूप में शिक्षा केंद्रित कार्यक्रमों के क्रियान्वयन में सहयोग करते हैं। वे सीखने की गतिविधियों, शैक्षणिक पहुंच तथा स्वयंसेवकों एवं समुदायों के साथ समन्वय में योगदान देते हैं।",
+        aboutEn: "Mr. Alok Paswan serves as the Education Coordinator of Sath Chale Hum Foundation and supports the implementation of education-focused programs. He contributes to learning activities, educational outreach and coordination with volunteers and communities.",
+        roleDescHi: "शिक्षा कार्यक्रमों एवं सीखने से जुड़ी गतिविधियों का समन्वय करना।",
+        roleDescEn: "Coordinates education programs and learning activities.",
+        responsibilities: [
+          ["शिक्षा एवं सीखने की गतिविधियों का समन्वय करना।", "Coordinate education and learning activities."],
+          ["शैक्षणिक पहुंच कार्यक्रमों में सहयोग करना।", "Support educational outreach programs."],
+          ["शिक्षा गतिविधियों से जुड़े स्वयंसेवकों के साथ समन्वय करना।", "Coordinate with volunteers involved in education activities."],
+          ["शिक्षा संबंधी पहलों के क्रियान्वयन की निगरानी करना।", "Monitor implementation of education initiatives."]
+        ]
+      },
+      {
+        nameEn: "Er. Chandan Yadav", nameHi: "श्री चंदन यादव",
+        roleEn: "Health Coordinator", roleHi: "स्वास्थ्य कार्यक्रम समन्वयक",
+        address: "Madhepura, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री चंदन यादव Sath Chale Hum Foundation के स्वास्थ्य कार्यक्रम समन्वयक के रूप में स्वास्थ्य संबंधी कार्यक्रमों एवं जागरूकता गतिविधियों के समन्वय में सहयोग करते हैं। वे स्वयंसेवकों एवं सामुदायिक टीमों के साथ मिलकर स्वास्थ्य पहलों के व्यवस्थित क्रियान्वयन में योगदान देते हैं।",
+        aboutEn: "Er. Chandan Yadav serves as the Health Coordinator of Sath Chale Hum Foundation and supports the coordination of health-related programs and awareness activities. He works with volunteers and community teams to facilitate organized implementation of health initiatives.",
+        roleDescHi: "स्वास्थ्य जागरूकता कार्यक्रमों एवं सामुदायिक स्वास्थ्य गतिविधियों का समन्वय करना।",
+        roleDescEn: "Coordinates health awareness programs and community health activities.",
+        responsibilities: [
+          ["स्वास्थ्य जागरूकता गतिविधियों का समन्वय करना।", "Coordinate health awareness activities."],
+          ["सामुदायिक स्वास्थ्य पहलों में सहयोग करना।", "Support community health initiatives."],
+          ["स्वास्थ्य कार्यक्रमों के दौरान स्वयंसेवकों का समन्वय करना।", "Coordinate volunteers during health programs."],
+          ["गतिविधियों के अपडेट एवं क्रियान्वयन संबंधी अभिलेख बनाए रखना।", "Maintain activity updates and implementation records."]
+        ]
+      },
+      {
+        nameEn: "Mrs. S Kumari", nameHi: "श्रीमती एस. कुमारी",
+        roleEn: "Women & Child Development Coordinator", roleHi: "महिला एवं बाल विकास समन्वयक",
+        address: "Saharsa, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्रीमती एस. कुमारी Sath Chale Hum Foundation में महिला एवं बाल विकास समन्वयक के रूप में महिलाओं, बच्चों एवं सामुदायिक कल्याण से जुड़ी पहलों में सहयोग करती हैं। वे महिला एवं बाल विकास से संबंधित जागरूकता, जनसंपर्क तथा कार्यक्रम समन्वय में योगदान देती हैं।",
+        aboutEn: "Mrs. S Kumari serves as the Women & Child Development Coordinator of Sath Chale Hum Foundation and supports initiatives focused on women, children and community welfare. She contributes to awareness, outreach and program coordination related to women and child development.",
+        roleDescHi: "महिला एवं बाल विकास कार्यक्रमों तथा सामुदायिक पहलों का समन्वय करना।",
+        roleDescEn: "Coordinates women and child development programs and community initiatives.",
+        responsibilities: [
+          ["महिला एवं बाल कल्याण गतिविधियों का समन्वय करना।", "Coordinate women and child welfare activities."],
+          ["महिलाओं एवं बच्चों के लिए जागरूकता कार्यक्रमों में सहयोग करना।", "Support awareness programs for women and children."],
+          ["विकास संबंधी पहलों में सामुदायिक सहभागिता को प्रोत्साहित करना।", "Encourage community participation in development initiatives."],
+          ["स्वयंसेवकों एवं सामुदायिक प्रतिनिधियों के साथ समन्वय करना।", "Coordinate with volunteers and community representatives."]
+        ]
+      },
+      {
+        nameEn: "Mr. Sujeet Suman", nameHi: "श्री सुजीत सुमन",
+        roleEn: "Youth Coordinator", roleHi: "युवा समन्वयक",
+        address: "Madhepura, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री सुजीत सुमन Sath Chale Hum Foundation के युवा समन्वयक के रूप में युवाओं की सहभागिता एवं सामाजिक पहलों से जुड़ाव को बढ़ावा देते हैं। वे युवा केंद्रित गतिविधियों, जागरूकता कार्यक्रमों एवं स्वयंसेवी सहभागिता के आयोजन में योगदान देते हैं।",
+        aboutEn: "Mr. Sujeet Suman serves as the Youth Coordinator of Sath Chale Hum Foundation and supports youth engagement and participation in social initiatives. He contributes to organizing youth-focused activities, awareness programs and volunteer participation.",
+        roleDescHi: "युवा सहभागिता, जुड़ाव एवं युवा केंद्रित पहलों का समन्वय करना।",
+        roleDescEn: "Coordinates youth engagement, participation and youth-focused initiatives.",
+        responsibilities: [
+          ["युवा सहभागिता गतिविधियों का समन्वय करना।", "Coordinate youth engagement activities."],
+          ["युवाओं को सामाजिक पहलों में भाग लेने के लिए प्रोत्साहित करना।", "Encourage young people to participate in social initiatives."],
+          ["युवा जागरूकता एवं विकास कार्यक्रमों में सहयोग करना।", "Support youth awareness and development programs."],
+          ["गतिविधियों के दौरान युवा स्वयंसेवकों का समन्वय करना।", "Coordinate youth volunteers during activities."]
+        ]
+      },
+      {
+        nameEn: "Mr. P K Prabhakar", nameHi: "श्री पी. के. प्रभाकर",
+        roleEn: "Volunteer & Community Coordinator", roleHi: "स्वयंसेवक एवं सामुदायिक समन्वयक",
+        address: "Madhepura, Bihar, India",
+        email: "Official Contact",
+        aboutHi: "श्री पी. के. प्रभाकर Sath Chale Hum Foundation के स्वयंसेवक एवं सामुदायिक समन्वयक के रूप में स्वयंसेवकों की सहभागिता एवं सामुदायिक स्तर के समन्वय में सहयोग करते हैं। वे स्वयंसेवकों को संस्था के कार्यक्रमों से जोड़ने तथा सामुदायिक पहलों में सहभागिता सुनिश्चित करने में योगदान देते हैं।",
+        aboutEn: "Mr. P K Prabhakar serves as the Volunteer & Community Coordinator of Sath Chale Hum Foundation and supports volunteer engagement and community-level coordination. He helps connect volunteers with organizational programs and facilitates participation in community initiatives.",
+        roleDescHi: "स्वयंसेवकों का समन्वय करना तथा सामुदायिक स्तर पर सहभागिता को बढ़ावा देना।",
+        roleDescEn: "Coordinates volunteers and supports community-level engagement.",
+        responsibilities: [
+          ["संस्था की गतिविधियों में स्वयंसेवकों की सहभागिता का समन्वय करना।", "Coordinate volunteer participation in organizational activities."],
+          ["स्वयंसेवकों के साथ संचार एवं सहभागिता में सहयोग करना।", "Support volunteer communication and engagement."],
+          ["स्वयंसेवकों को सामुदायिक पहलों से जोड़ना।", "Connect volunteers with community initiatives."],
+          ["क्षेत्रीय स्तर पर समन्वय एवं गतिविधि प्रबंधन में सहयोग करना।", "Support field-level coordination and activity management."]
+        ]
+      }
+    ]
+  }
+];
 
-  /* MOBILE MENU */
+/* ═══════════════════════════════════════════════════════════
+   RENDER
+   ═══════════════════════════════════════════════════════════ */
+(function renderTeam(){
+  var main = document.getElementById("teamGroups");
+  if(!main) return;
+
+  var html = "";
+
+  TEAM_GROUPS.forEach(function(group, gIdx){
+    var cards = "";
+
+    group.members.forEach(function(m, i){
+      var initials = m.nameEn
+        .replace(/^(Mr\.|Mrs\.|Ms\.|Dr\.|Er\.|Md\.)\s*/, "")
+        .split(/\s+/)
+        .map(function(w){ return w.charAt(0); })
+        .join("")
+        .substring(0, 2)
+        .toUpperCase();
+
+      var num = String(i + 1).padStart(2, "0");
+
+      var respHtml = m.responsibilities.map(function(r){
+        return '<li>' + r[0] + '<span class="en">' + r[1] + '</span></li>';
+      }).join("");
+
+      cards +=
+        '<article class="team-member" data-num="' + num + '">' +
+          '<div class="team-member-top">' +
+            '<div class="team-avatar">' + initials + '</div>' +
+            '<h3 class="team-name-en">' + m.nameEn + '</h3>' +
+            '<div class="team-name-hi">' + m.nameHi + '</div>' +
+            '<div class="team-role-pill"><i class="fa-solid fa-user-tie"></i> ' + m.roleHi + ' | ' + m.roleEn + '</div>' +
+          '</div>' +
+
+          '<div class="team-meta">' +
+            '<div class="team-meta-item">' +
+              '<i class="fa-solid fa-location-dot"></i>' +
+              '<div><strong>Address | पता</strong>' + m.address + '</div>' +
+            '</div>' +
+            '<div class="team-meta-item">' +
+              '<i class="fa-solid fa-envelope"></i>' +
+              '<div><strong>Email | ईमेल</strong>' + m.email + '</div>' +
+            '</div>' +
+          '</div>' +
+
+          '<button class="team-expand-btn" type="button" aria-expanded="false">' +
+            '<span><i class="fa-solid fa-circle-info"></i> View Full Details | पूरी जानकारी</span>' +
+            '<i class="fa-solid fa-chevron-down"></i>' +
+          '</button>' +
+
+          '<div class="team-details">' +
+            '<div class="team-detail-block">' +
+              '<span class="team-detail-label"><i class="fa-solid fa-user"></i> About Us | परिचय</span>' +
+              '<p class="team-detail-text-hi">' + m.aboutHi + '</p>' +
+              '<p class="team-detail-text-en">' + m.aboutEn + '</p>' +
+            '</div>' +
+            '<div class="team-detail-block">' +
+              '<span class="team-detail-label"><i class="fa-solid fa-briefcase"></i> Role | भूमिका</span>' +
+              '<p class="team-detail-text-hi">' + m.roleDescHi + '</p>' +
+              '<p class="team-detail-text-en">' + m.roleDescEn + '</p>' +
+            '</div>' +
+            '<div class="team-detail-block">' +
+              '<span class="team-detail-label"><i class="fa-solid fa-list-check"></i> Key Responsibilities | मुख्य दायित्व</span>' +
+              '<ul class="team-responsibilities">' + respHtml + '</ul>' +
+            '</div>' +
+          '</div>' +
+        '</article>';
+    });
+
+    html +=
+      '<section class="team-group" id="group-' + group.id + '" style="--tg-color:' + group.color + '; --tg-color-2:' + group.color2 + '; --tg-rgb:' + group.rgb + ';">' +
+        '<div class="container">' +
+          '<div class="team-group-head">' +
+            '<div class="team-group-badge"><i class="fa-solid ' + group.icon + '"></i> ' + (gIdx + 1) + '. ' + group.labelHi + '</div>' +
+            '<h2>' + group.labelHi + ' | <span>' + group.label + '</span></h2>' +
+            '<p>' + group.desc + '</p>' +
+          '</div>' +
+          '<div class="team-cards">' + cards + '</div>' +
+        '</div>' +
+      '</section>';
+  });
+
+  main.innerHTML = html;
+})();
+
+/* ═══════════════════════════════════════════════════════════
+   EVENT HANDLERS
+   ═══════════════════════════════════════════════════════════ */
+document.addEventListener("DOMContentLoaded", function(){
+  var sp = document.getElementById("scrollProgress");
+  window.addEventListener("scroll", function(){
+    var st = window.scrollY, dh = document.documentElement.scrollHeight - window.innerHeight;
+    if(sp) sp.style.width = (dh > 0 ? (st/dh)*100 : 0) + "%";
+  }, {passive:true});
+
+  // Mobile menu
   var menuToggle = document.getElementById("menuToggle");
   var mobileNav = document.getElementById("mobileNav");
   if(menuToggle && mobileNav){
     menuToggle.addEventListener("click", function(){
       mobileNav.classList.toggle("active");
       menuToggle.classList.toggle("active");
-      menuToggle.setAttribute("aria-expanded",
-        mobileNav.classList.contains("active") ? "true" : "false");
+      menuToggle.setAttribute("aria-expanded", mobileNav.classList.contains("active") ? "true" : "false");
     });
     mobileNav.querySelectorAll("a").forEach(function(link){
       link.addEventListener("click", function(){
         mobileNav.classList.remove("active");
         menuToggle.classList.remove("active");
-        menuToggle.setAttribute("aria-expanded", "false");
       });
     });
   }
 
-  /* MEMBER MODAL */
-  var memberCards = document.querySelectorAll(".member-card");
-  var modalOverlay = document.getElementById("memberModal");
-  var modalClose = document.getElementById("modalClose");
-  var modalHeader = document.getElementById("modalHeader");
+  // Back to top
+  var bt = document.getElementById("backTop");
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 500) bt.classList.add("show");
+    else bt.classList.remove("show");
+  }, {passive:true});
+  if(bt) bt.addEventListener("click", function(){ window.scrollTo({top:0, behavior:"smooth"}); });
 
-  var modalPhoto = document.getElementById("modalPhoto");
-  var modalName = document.getElementById("modalName");
-  var modalNameHindi = document.getElementById("modalNameHindi");
-  var modalNameHindi2 = document.getElementById("modalNameHindi2");
-  var modalRole = document.getElementById("modalRole");
-  var modalRoleDetail = document.getElementById("modalRoleDetail");
-  var modalEmail = document.getElementById("modalEmail");
-  var modalPhone = document.getElementById("modalPhone");
-  var modalLocation = document.getElementById("modalLocation");
-  var modalJoined = document.getElementById("modalJoined");
-  var modalAbout = document.getElementById("modalAbout");
+  // Expand/collapse member cards
+  document.querySelectorAll(".team-member").forEach(function(member){
+    var btn = member.querySelector(".team-expand-btn");
+    var details = member.querySelector(".team-details");
+    if(!btn || !details) return;
 
-  function getInitials(name){
-    var parts = name.trim().split(/\s+/);
-    var initials = "";
-    parts.forEach(function(p){
-      if(p.length > 0) initials += p[0].toUpperCase();
-    });
-    return initials.slice(0,2);
-  }
-
-  memberCards.forEach(function(card){
-    card.addEventListener("click", function(){
-      var name = card.getAttribute("data-name") || "";
-      var nameHindi = card.getAttribute("data-name-hindi") || "";
-      var role = card.getAttribute("data-role") || "";
-      var email = card.getAttribute("data-email") || "—";
-      var phone = card.getAttribute("data-phone") || "—";
-      var location = card.getAttribute("data-location") || "—";
-      var joined = card.getAttribute("data-joined") || "—";
-      var about = card.getAttribute("data-about") || "—";
-      var tone = card.getAttribute("data-tone") || "blue";
-
-      modalPhoto.textContent = getInitials(name);
-      modalName.textContent = name;
-      modalNameHindi.textContent = nameHindi || name;
-      modalNameHindi2.textContent = nameHindi || name;
-      modalRole.textContent = role.split("|")[0].trim() || role;
-      modalRoleDetail.textContent = role;
-      modalEmail.textContent = email;
-      modalPhone.textContent = phone;
-      modalLocation.textContent = location;
-      modalJoined.textContent = joined;
-      modalAbout.textContent = about;
-
-      modalHeader.setAttribute("data-tone", tone);
-
-      modalOverlay.classList.add("active");
-      document.body.style.overflow = "hidden";
+    btn.addEventListener("click", function(){
+      var isOpen = member.classList.contains("open");
+      if(isOpen){
+        member.classList.remove("open");
+        details.style.maxHeight = "0px";
+        btn.setAttribute("aria-expanded", "false");
+      } else {
+        member.classList.add("open");
+        details.style.maxHeight = details.scrollHeight + "px";
+        btn.setAttribute("aria-expanded", "true");
+      }
     });
   });
 
-  function closeModal(){
-    modalOverlay.classList.remove("active");
-    document.body.style.overflow = "";
-  }
-
-  if(modalClose){ modalClose.addEventListener("click", closeModal); }
-
-  modalOverlay.addEventListener("click", function(e){
-    if(e.target === modalOverlay){ closeModal(); }
-  });
-
-  document.addEventListener("keydown", function(e){
-    if(e.key === "Escape" && modalOverlay.classList.contains("active")){
-      closeModal();
-    }
-  });
-
-  /* BACK TO TOP */
-  var backTop = document.getElementById("backTop");
-  if(backTop){
-    window.addEventListener("scroll", function(){
-      if(window.scrollY > 500){ backTop.classList.add("show"); }
-      else { backTop.classList.remove("show"); }
-    });
-    backTop.addEventListener("click", function(){
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-  }
-
+  console.log("%c🔵 Team Page Loaded — 22 members, 4 groups", "color:#2563EB;font-weight:900;font-size:14px;");
 });
 </script>
 
