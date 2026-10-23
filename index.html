@@ -713,75 +713,107 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 @media(max-width:380px){.brand-name{font-size:1rem;}.brand-tagline{font-size:.6rem;}.logo-box{width:50px;height:50px;}}
 
 /* ═══════════════════════════════════════════════════════════
-   BIRTHDAY DONATION CALCULATOR (REMOVED)
-   ═══════════════════════════════════════════════════════════ */
-
-/* ═══════════════════════════════════════════════════════════
    PANCH DAAN SECTION
    ═══════════════════════════════════════════════════════════ */
-.pd-section { background: #fff; padding: 80px 0; }
-.pd-banner { background: linear-gradient(135deg, #0A2540, #1E40AF); padding: 40px 20px; text-align: center; color: #fff; border-radius: 0 0 40px 40px; box-shadow: 0 20px 40px rgba(10,37,64,0.2); position: relative; overflow: hidden; margin-bottom: 40px; }
-.pd-banner::before { content: "✨"; position: absolute; top: -10px; left: 10%; font-size: 60px; opacity: 0.1; }
-.pd-banner h1 { font-family: "Tiro Devanagari Hindi", serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; color: var(--gold); margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.3); }
-.pd-banner p { color: #93C5FD; font-size: 1.05rem; font-weight: 600; }
+.pd-section { background: #F8FAFC; padding: 60px 0 100px; position: relative; }
+.pd-banner { background: linear-gradient(135deg, #0A2540, #1E40AF); padding: 50px 20px; text-align: center; color: #fff; border-radius: 0 0 40px 40px; box-shadow: 0 20px 40px rgba(10,37,64,0.15); position: relative; overflow: hidden; margin-bottom: 50px; }
+.pd-banner::before { content: "✨"; position: absolute; top: -10px; left: 10%; font-size: 80px; opacity: 0.1; }
+.pd-banner::after { content: "✨"; position: absolute; bottom: -10px; right: 10%; font-size: 60px; opacity: 0.1; }
+.pd-banner h1 { font-family: "Tiro Devanagari Hindi", serif; font-size: clamp(2.2rem, 5vw, 3.2rem); font-weight: 900; color: var(--gold); margin-bottom: 12px; text-shadow: 0 4px 15px rgba(0,0,0,0.3); letter-spacing: 1px; }
+.pd-banner p { color: #93C5FD; font-size: 1.1rem; font-weight: 600; letter-spacing: 0.5px; }
+
 .pd-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 10; }
-.pd-tabs-wrapper { display: grid; grid-template-columns: repeat(5, 1fr); gap: 15px; margin-bottom: 40px; }
-.pd-tab-btn { background: #fff; border: 2px solid transparent; border-radius: 20px; padding: 20px 10px; text-align: center; cursor: pointer; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s cubic-bezier(0.2, 0.8, 0.3, 1.2); display: flex; flex-direction: column; align-items: center; gap: 10px; }
-.pd-tab-btn i { font-size: 2rem; color: var(--text-muted); transition: all 0.3s; }
-.pd-tab-btn span { font-family: "Tiro Devanagari Hindi", serif; font-size: 1.1rem; font-weight: 900; color: var(--navy); }
-.pd-tab-btn:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
-.pd-tab-btn.active { background: linear-gradient(135deg, #0A2540, #1E40AF); border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 20px 40px rgba(37,99,235,0.3); }
+
+.pd-tabs-wrapper { display: flex; justify-content: center; gap: 12px; margin-bottom: 45px; flex-wrap: wrap; }
+.pd-tab-btn { background: #fff; border: 2px solid transparent; border-radius: 100px; padding: 14px 28px; text-align: center; cursor: pointer; box-shadow: 0 8px 20px rgba(0,0,0,0.04); transition: all 0.3s cubic-bezier(0.2, 0.8, 0.3, 1); display: flex; align-items: center; gap: 10px; }
+.pd-tab-btn i { font-size: 1.3rem; color: var(--text-muted); transition: all 0.3s; }
+.pd-tab-btn span { font-family: "Tiro Devanagari Hindi", serif; font-size: 1.05rem; font-weight: 900; color: var(--navy); }
+.pd-tab-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 25px rgba(0,0,0,0.08); }
+.pd-tab-btn.active { background: linear-gradient(135deg, #0A2540, #1E40AF); border-color: var(--gold); transform: translateY(-3px); box-shadow: 0 15px 30px rgba(37,99,235,0.25); }
 .pd-tab-btn.active i { color: var(--gold); }
 .pd-tab-btn.active span { color: #fff; }
-.pd-content-area { display: none; animation: fadeIn 0.5s ease-out; }
+
+.pd-content-area { display: none; animation: slideUpFade 0.5s cubic-bezier(0.2, 0.8, 0.3, 1) forwards; }
 .pd-content-area.active { display: block; }
-@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-.pd-section-title { font-family: "Tiro Devanagari Hindi", serif; font-size: 1.8rem; font-weight: 900; color: var(--navy); margin-bottom: 25px; display: flex; align-items: center; gap: 12px; }
-.pd-section-title i { color: var(--gold-dark); font-size: 1.5rem; }
-.pd-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-.pd-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-.pd-card { background: #fff; border: 2px solid var(--border); border-radius: 24px; padding: 24px; cursor: pointer; transition: all 0.3s; position: relative; overflow: hidden; }
-.pd-card:hover { border-color: var(--blue-2); box-shadow: 0 15px 35px rgba(37,99,235,0.1); transform: translateY(-3px); }
-.pd-card.selected { border-color: var(--blue-2); background: #EFF6FF; box-shadow: 0 15px 35px rgba(37,99,235,0.15); }
-.pd-card.selected::after { content: "\f058"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; top: 15px; right: 15px; color: var(--blue-2); font-size: 1.5rem; }
-.pd-card-icon { width: 55px; height: 55px; border-radius: 16px; background: #F1F5F9; color: var(--navy); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 16px; transition: all 0.3s; }
-.pd-card.selected .pd-card-icon { background: var(--blue-2); color: #fff; }
-.pd-card h3 { font-family: "Tiro Devanagari Hindi", serif; font-size: 1.15rem; font-weight: 900; color: var(--navy); margin-bottom: 5px; }
-.pd-card p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px; font-weight: 600; }
-.pd-card .price { font-family: "Poppins", sans-serif; font-size: 1.3rem; font-weight: 900; color: var(--gold-dark); }
-.pd-menu-breakdown { background: #F8FAFC; border-radius: 16px; padding: 15px; margin-top: 15px; display: none; border: 1px dashed #CBD5E1; }
-.pd-card.selected .pd-menu-breakdown { display: block; animation: fadeIn 0.3s; }
-.pd-menu-breakdown ul { list-style: none; font-size: 0.8rem; color: var(--text-muted); font-weight: 600; line-height: 1.8; }
-.pd-menu-breakdown ul li { display: flex; justify-content: space-between; border-bottom: 1px dashed #E2E8F0; padding: 4px 0; }
+@keyframes slideUpFade { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
+.pd-section-title { font-family: "Tiro Devanagari Hindi", serif; font-size: 1.8rem; font-weight: 900; color: var(--navy); margin-bottom: 10px; text-align: center; }
+.pd-section-subtitle { color: var(--text-muted); font-weight: 600; text-align: center; margin-bottom: 35px; font-size: 0.95rem; }
+
+.pd-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.pd-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+
+.pd-card { background: #fff; border: 2px solid #F1F5F9; border-radius: 24px; padding: 28px; cursor: pointer; transition: all 0.3s ease; position: relative; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+.pd-card:hover { border-color: #DBEAFE; box-shadow: 0 15px 35px rgba(37,99,235,0.08); transform: translateY(-5px); }
+.pd-card.selected { border-color: var(--blue); background: #F0F7FF; box-shadow: 0 15px 35px rgba(37,99,235,0.15); transform: translateY(-5px); }
+.pd-card.selected::after { content: "\f058"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; top: 20px; right: 20px; color: var(--blue); font-size: 1.6rem; animation: popIn 0.3s cubic-bezier(0.2, 0.8, 0.3, 1.4); }
+@keyframes popIn { 0% { transform: scale(0); } 100% { transform: scale(1); } }
+
+.pd-card-icon { width: 60px; height: 60px; border-radius: 18px; background: #F8FAFC; color: var(--navy); display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin-bottom: 20px; transition: all 0.3s; }
+.pd-card.selected .pd-card-icon { background: var(--blue); color: #fff; box-shadow: 0 8px 20px rgba(37,99,235,0.3); }
+.pd-card h3 { font-family: "Tiro Devanagari Hindi", serif; font-size: 1.2rem; font-weight: 900; color: var(--navy); margin-bottom: 6px; line-height: 1.3; }
+.pd-card p { font-size: 0.88rem; color: var(--text-muted); margin-bottom: 20px; font-weight: 600; line-height: 1.5; }
+.pd-card .price { display: inline-block; font-family: "Poppins", sans-serif; font-size: 1.2rem; font-weight: 900; color: var(--gold-dark); background: var(--gold-pale); padding: 6px 14px; border-radius: 100px; }
+
+.pd-menu-breakdown { background: #F8FAFC; border-radius: 16px; padding: 18px; margin-top: 18px; display: none; border: 1px dashed #CBD5E1; }
+.pd-card.selected .pd-menu-breakdown { display: block; animation: slideUpFade 0.3s; }
+.pd-menu-breakdown strong { display: block; margin-bottom: 10px; font-size: 0.85rem; color: var(--navy); }
+.pd-menu-breakdown ul { list-style: none; font-size: 0.82rem; color: var(--text-muted); font-weight: 600; line-height: 1.9; }
+.pd-menu-breakdown ul li { display: flex; justify-content: space-between; border-bottom: 1px dashed #E2E8F0; padding: 6px 0; }
 .pd-menu-breakdown ul li:last-child { border-bottom: none; }
-.pd-qty-selector { display: flex; gap: 8px; margin-top: 15px; flex-wrap: wrap; }
-.pd-qty-btn { background: #F1F5F9; border: 1px solid var(--border); padding: 8px 14px; border-radius: 10px; font-family: "Poppins", sans-serif; font-size: 0.85rem; font-weight: 800; color: var(--navy); cursor: pointer; transition: all 0.2s; }
-.pd-qty-btn:hover, .pd-qty-btn.active { background: var(--blue-2); color: #fff; border-color: var(--blue-2); }
-.pd-summary-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; box-shadow: 0 -10px 40px rgba(10,37,64,0.1); padding: 15px 20px; z-index: 100; display: flex; justify-content: center; border-top: 1px solid var(--border); transform: translateY(100%); transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.3, 1); }
+
+.pd-qty-selector { display: flex; gap: 8px; margin-top: 18px; flex-wrap: wrap; }
+.pd-qty-btn { background: #fff; border: 2px solid var(--border); padding: 8px 16px; border-radius: 100px; font-family: "Poppins", sans-serif; font-size: 0.85rem; font-weight: 800; color: var(--navy); cursor: pointer; transition: all 0.2s; }
+.pd-qty-btn:hover { border-color: var(--blue); color: var(--blue); }
+.pd-qty-btn.active { background: var(--blue); color: #fff; border-color: var(--blue); box-shadow: 0 4px 12px rgba(37,99,235,0.3); }
+
+.pd-summary-bar { position: fixed; bottom: 0; left: 0; right: 0; background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); box-shadow: 0 -10px 40px rgba(10,37,64,0.15); padding: 16px 20px; z-index: 9999; display: flex; justify-content: center; border-top: 1px solid rgba(0,0,0,0.05); transform: translateY(100%); transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.3, 1); }
 .pd-summary-bar.show { transform: translateY(0); }
 .pd-summary-content { max-width: 1100px; width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
-.pd-summary-text h4 { font-family: "Tiro Devanagari Hindi", serif; font-size: 0.9rem; color: var(--text-muted); font-weight: 700; }
-.pd-summary-text .total-amount { font-family: "Poppins", sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--navy); line-height: 1.1; }
+.pd-summary-text h4 { font-family: "Tiro Devanagari Hindi", serif; font-size: 0.95rem; color: var(--text-muted); font-weight: 700; margin-bottom: 4px; }
+.pd-summary-text .total-amount { font-family: "Poppins", sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--navy); line-height: 1; }
 .pd-summary-text .total-amount span { color: var(--gold-dark); }
 .pd-donate-btn { background: linear-gradient(135deg, #DC2626, #991B1B); color: #fff; border: none; border-radius: 100px; padding: 16px 40px; font-family: "Tiro Devanagari Hindi", serif; font-size: 1.2rem; font-weight: 900; cursor: pointer; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 30px rgba(220,38,38,0.4); transition: all 0.3s; }
 .pd-donate-btn:hover { transform: scale(1.02); box-shadow: 0 15px 40px rgba(220,38,38,0.6); }
 .pd-donate-btn i { animation: heartBeat 1.5s infinite; }
-@media (max-width: 800px) {
-  .pd-tabs-wrapper { grid-template-columns: repeat(3, 1fr); }
-  .pd-grid-2, .pd-grid-3 { grid-template-columns: 1fr; }
+@keyframes heartBeat { 0%, 100% { transform: scale(1); } 15% { transform: scale(1.2); } 30% { transform: scale(1); } 45% { transform: scale(1.15); } }
+
+.pd-form-modal { position: fixed; inset: 0; z-index: 999999; background: rgba(10,37,64,0.85); backdrop-filter: blur(10px); display: flex; align-items: center; justify-content: center; padding: 20px; opacity: 0; visibility: hidden; transition: 0.4s; }
+.pd-form-modal.show { opacity: 1; visibility: visible; }
+.pd-form-box { position: relative; width: min(650px, 100%); background: #fff; border-radius: 24px; padding: 35px; max-height: 90vh; overflow-y: auto; box-shadow: 0 40px 100px rgba(0,0,0,0.5); transform: scale(0.9); transition: 0.4s cubic-bezier(0.2, 0.8, 0.3, 1); }
+.pd-form-modal.show .pd-form-box { transform: scale(1); }
+.pd-form-close { position: absolute; top: 20px; right: 20px; width: 36px; height: 36px; border-radius: 50%; background: #F1F5F9; color: var(--text-muted); font-size: 1.1rem; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: 0.3s; border: none; }
+.pd-form-close:hover { background: var(--red); color: #fff; transform: rotate(90deg); }
+.pd-form-box h3 { font-family: "Tiro Devanagari Hindi", serif; font-size: 1.6rem; font-weight: 900; color: var(--navy); margin-bottom: 25px; text-align: center; border-bottom: 2px dashed var(--border); padding-bottom: 15px; }
+.pd-form-box h3 i { color: var(--gold-dark); margin-right: 8px; }
+
+.form-section-title { font-size: 0.85rem; font-weight: 800; color: var(--blue); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+.form-section-title::after { content: ""; flex: 1; height: 1px; background: var(--border); }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 15px; position: relative; }
+.form-group label { font-size: 0.85rem; font-weight: 700; color: var(--text-soft); }
+.form-group input, .form-group select, .form-group textarea { padding: 14px 16px; border: 2px solid var(--border); border-radius: 12px; font-family: inherit; font-size: 0.95rem; outline: none; transition: all 0.3s; background: #F8FAFC; color: var(--navy); font-weight: 600; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--blue); background: #fff; box-shadow: 0 0 0 4px rgba(37,99,235,0.1); }
+.form-group input[readonly] { background: #E2E8F0; color: var(--blue); cursor: not-allowed; font-weight: 800; }
+.form-group select { cursor: pointer; appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%2364748b' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; padding-right: 40px; }
+
+.pd-form-submit { width: 100%; padding: 18px; border-radius: 14px; background: linear-gradient(135deg, #059669, #047857); color: #fff; font-family: "Tiro Devanagari Hindi", serif; font-size: 1.2rem; font-weight: 900; cursor: pointer; border: none; margin-top: 15px; box-shadow: 0 10px 30px rgba(5,150,105,0.4); transition: 0.3s; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.pd-form-submit:hover { transform: translateY(-3px); box-shadow: 0 15px 40px rgba(5,150,105,0.6); }
+
+@media (max-width: 900px) {
+  .pd-tabs-wrapper { gap: 8px; }
+  .pd-tab-btn { padding: 10px 18px; }
+  .pd-grid-2, .pd-grid-3 { grid-template-columns: 1fr; gap: 16px; }
+}
+@media (max-width: 600px) {
+  .pd-tab-btn span { font-size: 0.9rem; }
+  .pd-tab-btn i { font-size: 1rem; }
   .pd-summary-content { flex-direction: column; text-align: center; gap: 15px; }
   .pd-donate-btn { width: 100%; justify-content: center; }
-}
-@media (max-width: 500px) {
-  .pd-tabs-wrapper { grid-template-columns: repeat(2, 1fr); }
-  .pd-tab-btn { padding: 15px 5px; }
-  .pd-tab-btn i { font-size: 1.5rem; }
-  .pd-tab-btn span { font-size: 0.95rem; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .pd-form-box { padding: 25px 20px; }
 }
 
-/* ═══════════════════════════════════════════════════════════
-   DAILY SUPPORT PULSE RED BUTTON
-   ═══════════════════════════════════════════════════════════ */
 .pulse-red-daily {
     background: linear-gradient(135deg, #DC2626, #991B1B) !important;
     color: #fff !important;
@@ -792,60 +824,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
     0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
     70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(220, 38, 38, 0); }
     100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
-}
-
-/* ═══════════════════════════════════════════════════════════
-   PANCH DAAN DONOR FORM MODAL
-   ═══════════════════════════════════════════════════════════ */
-.pd-form-modal {
-    position: fixed; inset: 0; z-index: 9999999;
-    background: rgba(10,37,64,0.85); backdrop-filter: blur(10px);
-    display: flex; align-items: center; justify-content: center;
-    padding: 20px; opacity: 0; visibility: hidden; transition: 0.4s;
-}
-.pd-form-modal.show { opacity: 1; visibility: visible; }
-.pd-form-box {
-    position: relative; width: min(600px, 100%);
-    background: #fff; border-radius: 24px;
-    padding: 30px; max-height: 90vh; overflow-y: auto;
-    box-shadow: 0 40px 100px rgba(0,0,0,0.5); transform: scale(0.9);
-    transition: 0.4s cubic-bezier(0.2, 0.8, 0.3, 1);
-}
-.pd-form-modal.show .pd-form-box { transform: scale(1); }
-.pd-form-close {
-    position: absolute; top: 15px; right: 15px; width: 36px; height: 36px;
-    border-radius: 50%; background: #F1F5F9; color: var(--text-muted);
-    font-size: 1rem; display: flex; align-items: center; justify-content: center;
-    cursor: pointer; transition: 0.3s; border: none;
-}
-.pd-form-close:hover { background: #DC2626; color: #fff; transform: rotate(90deg); }
-.pd-form-box h3 {
-    font-family: "Tiro Devanagari Hindi", serif; font-size: 1.5rem;
-    font-weight: 900; color: var(--navy); margin-bottom: 20px;
-    text-align: center; border-bottom: 2px dashed var(--border); padding-bottom: 15px;
-}
-.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px; }
-.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 15px; }
-.form-group label { font-size: 0.85rem; font-weight: 700; color: var(--text); }
-.form-group input, .form-group select, .form-group textarea {
-    padding: 12px 15px; border: 2px solid var(--border); border-radius: 10px;
-    font-family: inherit; font-size: 0.95rem; outline: none; transition: 0.3s;
-    background: #F8FAFC; color: var(--navy); font-weight: 600;
-}
-.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
-    border-color: var(--blue-2); background: #fff; box-shadow: 0 0 0 4px rgba(37,99,235,0.1);
-}
-.pd-form-submit {
-    width: 100%; padding: 16px; border-radius: 12px;
-    background: linear-gradient(135deg, #059669, #047857); color: #fff;
-    font-family: "Tiro Devanagari Hindi", serif; font-size: 1.15rem;
-    font-weight: 900; cursor: pointer; border: none; margin-top: 10px;
-    box-shadow: 0 10px 30px rgba(5,150,105,0.4); transition: 0.3s;
-    display: flex; align-items: center; justify-content: center; gap: 10px;
-}
-.pd-form-submit:hover { transform: translateY(-2px); box-shadow: 0 15px 40px rgba(5,150,105,0.6); }
-@media(max-width: 600px) {
-    .form-row { grid-template-columns: 1fr; gap: 0; }
 }
 </style>
 </head>
@@ -1077,8 +1055,8 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 
     <!-- 1. EDUCATION TAB -->
     <div id="pd-tab-education" class="pd-content-area active">
-      <div class="pd-section-title"><i class="fa-solid fa-book"></i> शिक्षा दान (Education Donation)</div>
-      <p style="margin-bottom: 20px; color: var(--text-muted); font-weight: 600;">स्लेट, पेंसिल, कॉपी, कलम, किताब - बच्चों की शिक्षा में सहयोग करें।</p>
+      <div class="pd-section-title">शिक्षा दान (Education Donation)</div>
+      <p class="pd-section-subtitle">स्लेट, पेंसिल, कॉपी, कलम, किताब - बच्चों की शिक्षा में सहयोग करें।</p>
       
       <div class="pd-grid-3">
         <div class="pd-card" onclick="selectPdDonation(this, 'शिक्षा किट (1 बच्चे के लिए)', 100)">
@@ -1101,23 +1079,45 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           <p>10 बच्चों को पूरी स्टेशनरी</p>
           <div class="price">₹1,000</div>
         </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'शिक्षा किट (15 बच्चों के लिए)', 1500)">
+          <div class="pd-card-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>15 बच्चों की शिक्षा किट</h3>
+          <p>15 बच्चों को पूरी स्टेशनरी</p>
+          <div class="price">₹1,500</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'शिक्षा किट (20 बच्चों के लिए)', 2000)">
+          <div class="pd-card-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>20 बच्चों की शिक्षा किट</h3>
+          <p>20 बच्चों को पूरी स्टेशनरी</p>
+          <div class="price">₹2,000</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'शिक्षा किट (25 बच्चों के लिए)', 2500)">
+          <div class="pd-card-icon"><i class="fa-solid fa-users"></i></div>
+          <h3>25 बच्चों की शिक्षा किट</h3>
+          <p>25 बच्चों को पूरी स्टेशनरी</p>
+          <div class="price">₹2,500</div>
+        </div>
       </div>
     </div>
 
     <!-- 2. FOOD TAB -->
     <div id="pd-tab-food" class="pd-content-area">
-      <div class="pd-section-title"><i class="fa-solid fa-utensils"></i> अन्न दान (Food Donation)</div>
-      <p style="margin-bottom: 20px; color: var(--text-muted); font-weight: 600;">अपने खास मौकों को बच्चों और जरूरतमंदों के साथ मिलकर यादगार बनाएं।</p>
+      <div class="pd-section-title">अन्न दान (Food Donation)</div>
+      <p class="pd-section-subtitle">अपने खास मौकों को बच्चों और जरूरतमंदों के साथ मिलकर यादगार बनाएं।</p>
 
       <div class="pd-grid-2">
-        <!-- Birthday -->
-        <div class="pd-card" onclick="selectPdFood(this, 'जन्मदिन भोजन', 250)">
+        
+        <!-- Birthday: Nasta -->
+        <div class="pd-card" onclick="selectPdFood(this, 'जन्मदिन भोजन (नास्ता)', 250)">
           <div class="pd-card-icon"><i class="fa-solid fa-cake-candles"></i></div>
-          <h3>जन्मदिन भोजन</h3>
+          <h3>जन्मदिन भोजन (नास्ता)</h3>
           <p>आपका जन्मदिन, किसी बच्चे की मुस्कान।</p>
           <div class="price">₹250 / बच्चा</div>
           <div class="pd-menu-breakdown">
-            <strong style="display:block; margin-bottom:8px; font-size:0.85rem; color:var(--navy);">मेन्यू (₹250 में):</strong>
+            <strong>मेन्यू (₹250 में):</strong>
             <ul>
               <li><span>केक & चॉकलेट</span> <span>₹70</span></li>
               <li><span>फल 200g</span> <span>₹50</span></li>
@@ -1133,6 +1133,52 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           </div>
         </div>
 
+        <!-- Birthday: Full Meal -->
+        <div class="pd-card" onclick="selectPdFood(this, 'जन्मदिन भोजन (फुल मील)', 300)">
+          <div class="pd-card-icon"><i class="fa-solid fa-utensils"></i></div>
+          <h3>जन्मदिन भोजन (फुल मील)</h3>
+          <p>आपका जन्मदिन, पूरे भोजन के साथ।</p>
+          <div class="price">₹300 / बच्चा</div>
+          <div class="pd-menu-breakdown">
+            <strong>मेन्यू (₹300 में):</strong>
+            <ul>
+              <li><span>पूरी 4 पीस (120g)</span> <span>₹30</span></li>
+              <li><span>मटर पनीर सब्जी 120g</span> <span>₹50</span></li>
+              <li><span>चावल 100g</span> <span>₹30</span></li>
+              <li><span>दाल 100ml</span> <span>₹30</span></li>
+              <li><span>मिठाई 2 पीस (40g)</span> <span>₹40</span></li>
+              <li><span>सलाद 50g</span> <span>₹10</span></li>
+              <li><span>पानी 500ml</span> <span>₹10</span></li>
+              <li><span>उपहार</span> <span>₹20</span></li>
+              <li><span>केक और चॉकलेट</span> <span>₹70</span></li>
+              <li><span>पैकिंग</span> <span>₹10</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Orphan Children (Only 300) -->
+        <div class="pd-card" onclick="selectPdFood(this, 'अनाथ बच्चे भोजन', 300)">
+          <div class="pd-card-icon"><i class="fa-solid fa-child-reaching"></i></div>
+          <h3>अनाथ बच्चे भोजन</h3>
+          <p>अनाथ बच्चों के साथ भोजन का आनंद।</p>
+          <div class="price">₹300 / बच्चा</div>
+          <div class="pd-menu-breakdown">
+            <strong>मेन्यू (₹300 में):</strong>
+            <ul>
+              <li><span>पूरी 4 पीस (120g)</span> <span>₹30</span></li>
+              <li><span>मटर पनीर सब्जी 120g</span> <span>₹50</span></li>
+              <li><span>चावल 100g</span> <span>₹30</span></li>
+              <li><span>दाल 100ml</span> <span>₹30</span></li>
+              <li><span>मिठाई 2 पीस (40g)</span> <span>₹40</span></li>
+              <li><span>सलाद 50g</span> <span>₹10</span></li>
+              <li><span>पानी 500ml</span> <span>₹10</span></li>
+              <li><span>उपहार</span> <span>₹20</span></li>
+              <li><span>केक और चॉकलेट</span> <span>₹70</span></li>
+              <li><span>पैकिंग</span> <span>₹10</span></li>
+            </ul>
+          </div>
+        </div>
+
         <!-- Anniversary -->
         <div class="pd-card" onclick="selectPdFood(this, 'शादी सालगिरह भोजन', 300)">
           <div class="pd-card-icon"><i class="fa-solid fa-heart"></i></div>
@@ -1140,7 +1186,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           <p>आपका शादी सालगिरह, किसी बच्चे की मुस्कान।</p>
           <div class="price">₹300 / बच्चा</div>
           <div class="pd-menu-breakdown">
-            <strong style="display:block; margin-bottom:8px; font-size:0.85rem; color:var(--navy);">मेन्यू (₹300 में):</strong>
+            <strong>मेन्यू (₹300 में):</strong>
             <ul>
               <li><span>पूरी 4 पीस (120g)</span> <span>₹30</span></li>
               <li><span>मटर पनीर सब्जी 120g</span> <span>₹50</span></li>
@@ -1163,7 +1209,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           <p>आपका गृहप्रवेश, किसी बच्चे की मुस्कान।</p>
           <div class="price">₹300 / बच्चा</div>
           <div class="pd-menu-breakdown">
-            <strong style="display:block; margin-bottom:8px; font-size:0.85rem; color:var(--navy);">मेन्यू (₹300 में):</strong>
+            <strong>मेन्यू (₹300 में):</strong>
             <ul>
               <li><span>पूरी 4 पीस (120g)</span> <span>₹30</span></li>
               <li><span>मटर पनीर सब्जी 120g</span> <span>₹50</span></li>
@@ -1186,7 +1232,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           <p>किसी वृद्ध की मुस्कान बनें।</p>
           <div class="price">₹350 / व्यक्ति</div>
           <div class="pd-menu-breakdown">
-            <strong style="display:block; margin-bottom:8px; font-size:0.85rem; color:var(--navy);">मेन्यू (₹350 में):</strong>
+            <strong>मेन्यू (₹350 में):</strong>
             <ul>
               <li><span>पूरी 4 पीस (120g)</span> <span>₹30</span></li>
               <li><span>मटर पनीर सब्जी 120g</span> <span>₹50</span></li>
@@ -1209,7 +1255,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           <p>किसी दिव्यांग की मुस्कान बनें।</p>
           <div class="price">₹350 / व्यक्ति</div>
           <div class="pd-menu-breakdown">
-            <strong style="display:block; margin-bottom:8px; font-size:0.85rem; color:var(--navy);">मेन्यू (₹350 में):</strong>
+            <strong>मेन्यू (₹350 में):</strong>
             <ul>
               <li><span>पूरी 4 पीस (120g)</span> <span>₹30</span></li>
               <li><span>मटर पनीर सब्जी 120g</span> <span>₹50</span></li>
@@ -1229,94 +1275,133 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 
     <!-- 3. CLOTHES TAB -->
     <div id="pd-tab-clothes" class="pd-content-area">
-      <div class="pd-section-title"><i class="fa-solid fa-shirt"></i> वस्त्र दान (Clothing Donation)</div>
-      <p style="margin-bottom: 20px; color: var(--text-muted); font-weight: 600;">जरूरतमंदों को सम्मानजनक वस्त्र प्रदान करें।</p>
+      <div class="pd-section-title">वस्त्र दान (Clothing Donation)</div>
+      <p class="pd-section-subtitle">जरूरतमंदों को सम्मानजनक वस्त्र प्रदान करें।</p>
       
       <div class="pd-grid-2">
-        <div class="pd-card" onclick="selectPdDonation(this, 'बच्चों के वस्त्र (1 सेट)', 300)">
+        <div class="pd-card" onclick="selectPdDonation(this, 'बच्चों के वस्त्र (1 सेट)', 500)">
           <div class="pd-card-icon"><i class="fa-solid fa-child"></i></div>
           <h3>बच्चों के वस्त्र</h3>
           <p>1 बच्चे के लिए नए कपड़े</p>
-          <div class="price">₹300 / सेट</div>
-        </div>
-
-        <div class="pd-card" onclick="selectPdDonation(this, 'विधवा / वृद्ध महिला वस्त्र (1 सेट)', 500)">
-          <div class="pd-card-icon"><i class="fa-solid fa-person-dress"></i></div>
-          <h3>विधवा / वृद्ध महिला वस्त्र</h3>
-          <p>1 महिला के लिए साड़ी/सूट</p>
           <div class="price">₹500 / सेट</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'वरिष्ठ पुरुष वस्त्र (1 सेट)', 500)">
+        <div class="pd-card" onclick="selectPdDonation(this, 'अनाथ बच्चों के वस्त्र (1 सेट)', 500)">
+          <div class="pd-card-icon"><i class="fa-solid fa-child-reaching"></i></div>
+          <h3>अनाथ बच्चों के वस्त्र</h3>
+          <p>1 अनाथ बच्चे के लिए नए कपड़े</p>
+          <div class="price">₹500 / सेट</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'दिव्यांग / बच्चे / महिला / पुरूष वस्त्र (1 सेट)', 800)">
+          <div class="pd-card-icon"><i class="fa-solid fa-wheelchair"></i></div>
+          <h3>दिव्यांग / बच्चे / महिला / पुरूष वस्त्र</h3>
+          <p>1 जरूरतमंद के लिए कपड़े</p>
+          <div class="price">₹800 / सेट</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'विधवा / विदुर वस्त्र (1 सेट)', 800)">
+          <div class="pd-card-icon"><i class="fa-solid fa-person-dress"></i></div>
+          <h3>विधवा / विदुर वस्त्र</h3>
+          <p>1 जरूरतमंद के लिए कपड़े</p>
+          <div class="price">₹800 / सेट</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'वरिष्ठ महिला / पुरुष वस्त्र (1 सेट)', 800)">
           <div class="pd-card-icon"><i class="fa-solid fa-user-tie"></i></div>
           <h3>वरिष्ठ महिला / पुरुष वस्त्र</h3>
           <p>1 वरिष्ठ नागरिक के लिए कपड़े</p>
-          <div class="price">₹500 / सेट</div>
+          <div class="price">₹800 / सेट</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'दिव्यांगजन वस्त्र (1 सेट)', 400)">
-          <div class="pd-card-icon"><i class="fa-solid fa-wheelchair"></i></div>
-          <h3>दिव्यांग महिला / पुरुष / बच्चे</h3>
-          <p>1 दिव्यांगजन के लिए कपड़े</p>
-          <div class="price">₹400 / सेट</div>
+        <!-- Needy Family -->
+        <div class="pd-card" onclick="selectPdDonation(this, 'जरूरतमंद परिवार वस्त्र (1 परिवार)', 2600)">
+          <div class="pd-card-icon"><i class="fa-solid fa-people-roof"></i></div>
+          <h3>जरूरतमंद परिवार वस्त्र</h3>
+          <p>1 पूरे परिवार के लिए कपड़े</p>
+          <div class="price">₹2,600 / परिवार</div>
+          <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 8px; font-weight: 600;">
+            <b>Note:</b> पति, पत्नी और 2 बच्चों के कपड़े
+          </div>
         </div>
       </div>
     </div>
 
     <!-- 4. WATER TAB -->
     <div id="pd-tab-water" class="pd-content-area">
-      <div class="pd-section-title"><i class="fa-solid fa-droplet"></i> जल दान (Water Donation)</div>
-      <p style="margin-bottom: 20px; color: var(--text-muted); font-weight: 600;">प्यासे को पानी पिलाना सबसे बड़ा पुण्य है।</p>
+      <div class="pd-section-title">जल दान (Water Donation)</div>
+      <p class="pd-section-subtitle">प्यासे को पानी पिलाना सबसे बड़ा पुण्य है।</p>
       
       <div class="pd-grid-3">
-        <div class="pd-card" onclick="selectPdDonation(this, '10 पानी की बोतलें', 100)">
+        <div class="pd-card" onclick="selectPdDonation(this, '100 पानी की बोतलें', 1000)">
           <div class="pd-card-icon"><i class="fa-solid fa-bottle-water"></i></div>
-          <h3>10 पानी की बोतलें</h3>
+          <h3>100 पानी की बोतलें</h3>
           <p>500ml पैकेज्ड ड्रिंकिंग वाटर</p>
-          <div class="price">₹100</div>
+          <div class="price">₹1,000</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, '50 पानी की बोतलें', 500)">
+        <div class="pd-card" onclick="selectPdDonation(this, '200 पानी की बोतलें', 2000)">
           <div class="pd-card-icon"><i class="fa-solid fa-glass-water"></i></div>
-          <h3>50 पानी की बोतलें</h3>
+          <h3>200 पानी की बोतलें</h3>
           <p>स्टेशन या सार्वजनिक स्थल पर वितरण</p>
-          <div class="price">₹500</div>
+          <div class="price">₹2,000</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'वाटर फिल्टर (1 नग)', 2500)">
+        <div class="pd-card" onclick="selectPdDonation(this, '500 पानी की बोतलें', 5000)">
           <div class="pd-card-icon"><i class="fa-solid fa-filter"></i></div>
-          <h3>वाटर फिल्टर (1 नग)</h3>
-          <p>किसी स्कूल या गाँव में लगाने के लिए</p>
-          <div class="price">₹2,500</div>
+          <h3>500 पानी की बोतलें</h3>
+          <p>बड़े आयोजन या गाँव में वितरण</p>
+          <div class="price">₹5,000</div>
         </div>
       </div>
     </div>
 
     <!-- 5. HEALTH TAB -->
     <div id="pd-tab-health" class="pd-content-area">
-      <div class="pd-section-title"><i class="fa-solid fa-heart-pulse"></i> स्वास्थ्य दान (Health Donation)</div>
-      <p style="margin-bottom: 20px; color: var(--text-muted); font-weight: 600;">जरूरतमंदों को बेहतर स्वास्थ्य सुविधा प्रदान करें।</p>
+      <div class="pd-section-title">स्वास्थ्य दान (Health Donation)</div>
+      <p class="pd-section-subtitle">जरूरतमंदों को बेहतर स्वास्थ्य सुविधा प्रदान करें।</p>
       
       <div class="pd-grid-3">
-        <div class="pd-card" onclick="selectPdDonation(this, 'फर्स्ट एड किट (1 नग)', 250)">
+        <div class="pd-card" onclick="selectPdDonation(this, 'फर्स्ट एड किट (1 व्यक्ति)', 250)">
           <div class="pd-card-icon"><i class="fa-solid fa-kit-medical"></i></div>
           <h3>फर्स्ट एड किट</h3>
-          <p>बेसिक दवाएं और पट्टियां</p>
+          <p>1 व्यक्ति के लिए बेसिक दवाएं</p>
           <div class="price">₹250</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'स्वास्थ्य शिविर (10 मरीज)', 1500)">
+        <div class="pd-card" onclick="selectPdDonation(this, 'स्वास्थ्य जाँच (10 व्यक्ति)', 2000)">
           <div class="pd-card-icon"><i class="fa-solid fa-stethoscope"></i></div>
-          <h3>स्वास्थ्य जांच (10 लोग)</h3>
+          <h3>स्वास्थ्य जाँच (10 व्यक्ति)</h3>
           <p>डॉक्टर की फीस और दवाएं</p>
-          <div class="price">₹1,500</div>
+          <div class="price">₹2,000</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'पूरा स्वास्थ्य शिविर', 5000)">
-          <div class="pd-card-icon"><i class="fa-solid fa-hospital"></i></div>
-          <h3>पूरा स्वास्थ्य शिविर</h3>
-          <p>गाँव में निःशुल्क जांच शिविर</p>
+        <div class="pd-card" onclick="selectPdDonation(this, 'स्वास्थ्य जाँच (25 व्यक्ति)', 5000)">
+          <div class="pd-card-icon"><i class="fa-solid fa-user-doctor"></i></div>
+          <h3>स्वास्थ्य जाँच (25 व्यक्ति)</h3>
+          <p>डॉक्टर की फीस और दवाएं</p>
           <div class="price">₹5,000</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'खून जांच (25 व्यक्ति)', 2500)">
+          <div class="pd-card-icon"><i class="fa-solid fa-vial"></i></div>
+          <h3>खून जांच (25 व्यक्ति)</h3>
+          <p>ब्लड टेस्ट और रिपोर्ट</p>
+          <div class="price">₹2,500</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'खून जांच (50 व्यक्ति)', 5000)">
+          <div class="pd-card-icon"><i class="fa-solid fa-vials"></i></div>
+          <h3>खून जांच (50 व्यक्ति)</h3>
+          <p>ब्लड टेस्ट और रिपोर्ट</p>
+          <div class="price">₹5,000</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'ग्राम स्वास्थ्य शिविर', 11000)">
+          <div class="pd-card-icon"><i class="fa-solid fa-hospital"></i></div>
+          <h3>ग्राम स्वास्थ्य शिविर</h3>
+          <p>पूरे गाँव में निःशुल्क जांच शिविर</p>
+          <div class="price">₹11,000</div>
         </div>
       </div>
     </div>
@@ -1337,56 +1422,53 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- PAYMENT MODAL -->
-<div class="payment-modal" id="paymentModal">
-  <div class="payment-box">
-    <button class="payment-close" type="button" id="paymentClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-    <div class="payment-icon"><i class="fa-solid fa-shield-heart"></i></div>
-    <h3>आपका सहयोग की पुष्टि करें</h3>
-    <p>Confirm Your Donation</p>
-    <div class="payment-amt" id="paymentAmt"><span>₹1</span><small id="paymentPeriod">/ दिन</small></div>
-    <button class="payment-btn" type="button" id="paymentProceedBtn"><i class="fa-solid fa-lock"></i> Proceed to Pay</button>
-    <div class="payment-trust"><i class="fa-solid fa-shield-halved"></i> 100% Secure Payment · Razorpay</div>
-  </div>
-</div>
-
 <!-- PANCH DAAN DONOR FORM MODAL -->
 <div class="pd-form-modal" id="pdFormModal">
   <div class="pd-form-box">
     <button class="pd-form-close" id="pdFormClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-    <h3>दान विवरण (Donation Details)</h3>
+    <h3><i class="fa-solid fa-file-invoice"></i> दान विवरण (Donation Details)</h3>
+    
     <form id="pdDonorForm">
+      
+      <!-- Section 1: Personal Info -->
+      <div class="form-section-title">1. व्यक्तिगत जानकारी (Personal Info)</div>
       <div class="form-row">
         <div class="form-group">
           <label>दानदाता का नाम (Donor Name) *</label>
-          <input type="text" id="pdDonorName" required>
+          <input type="text" id="pdDonorName" placeholder="अपना नाम लिखें" required>
         </div>
         <div class="form-group">
           <label>मोबाइल नंबर (Mobile) *</label>
-          <input type="tel" id="pdMobile" required>
+          <input type="tel" id="pdMobile" placeholder="10 अंकों का नंबर" required>
         </div>
       </div>
       <div class="form-row">
         <div class="form-group">
           <label>माता का नाम (Mother Name)</label>
-          <input type="text" id="pdMotherName">
+          <input type="text" id="pdMotherName" placeholder="माता का नाम">
         </div>
         <div class="form-group">
           <label>पिता का नाम (Father Name)</label>
-          <input type="text" id="pdFatherName">
+          <input type="text" id="pdFatherName" placeholder="पिता का नाम">
         </div>
       </div>
+      
+      <!-- Section 2: Contact Info -->
+      <div class="form-section-title">2. संपर्क जानकारी (Contact Info)</div>
       <div class="form-group">
         <label>ई-मेल (Email)</label>
-        <input type="email" id="pdEmail">
+        <input type="email" id="pdEmail" placeholder="your@email.com">
       </div>
       <div class="form-group">
         <label>स्थायी पता (Permanent Address) *</label>
-        <textarea id="pdAddress" rows="2" required></textarea>
+        <textarea id="pdAddress" rows="2" placeholder="अपना पूरा पता लिखें" required></textarea>
       </div>
+      
+      <!-- Section 3: Donation & Location -->
+      <div class="form-section-title">3. दान एवं स्थान (Donation & Location)</div>
       <div class="form-group">
         <label>मैं दान करना चाहता हूँ (I want To Donate)</label>
-        <input type="text" id="pdDonationItem" readonly style="background:#f1f5f9; font-weight:bold; color:var(--blue);">
+        <input type="text" id="pdDonationItem" readonly>
       </div>
       
       <div class="form-row">
@@ -1408,11 +1490,11 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       <div class="form-row" id="pdOtherStateWrap" style="display:none;">
         <div class="form-group">
           <label>राज्य का नाम (State Name) *</label>
-          <input type="text" id="pdOtherStateName">
+          <input type="text" id="pdOtherStateName" placeholder="राज्य का नाम">
         </div>
         <div class="form-group">
           <label>जिले का नाम (District Name) *</label>
-          <input type="text" id="pdOtherDistrictName">
+          <input type="text" id="pdOtherDistrictName" placeholder="जिले का नाम">
         </div>
       </div>
 
@@ -1420,6 +1502,19 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
         <i class="fa-solid fa-lock"></i> Proceed to Pay ₹<span id="pdFormAmount">0</span>
       </button>
     </form>
+  </div>
+</div>
+
+<!-- PAYMENT MODAL (For Daily) -->
+<div class="payment-modal" id="paymentModal">
+  <div class="payment-box">
+    <button class="payment-close" type="button" id="paymentClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="payment-icon"><i class="fa-solid fa-shield-heart"></i></div>
+    <h3>आपका सहयोग की पुष्टि करें</h3>
+    <p>Confirm Your Donation</p>
+    <div class="payment-amt" id="paymentAmt"><span>₹1</span><small id="paymentPeriod">/ दिन</small></div>
+    <button class="payment-btn" type="button" id="paymentProceedBtn"><i class="fa-solid fa-lock"></i> Proceed to Pay</button>
+    <div class="payment-trust"><i class="fa-solid fa-shield-halved"></i> 100% Secure Payment · Razorpay</div>
   </div>
 </div>
 
@@ -2844,7 +2939,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     var options = {
-      key: "rzp_test_XXXXXXXXXXXXXX",
+      key: "rzp_test_XXXXXXXXXXXXXX", // Replace with your Razorpay Key
       amount: totalAmount * 100, 
       currency: "INR",
       name: "Sath Chale Hum Foundation",
