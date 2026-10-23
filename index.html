@@ -530,8 +530,6 @@ body .site-header{top:94px;}
 .cta-strip p{color:#93C5FD;font-size:1.05rem;max-width:640px;margin:0 auto 34px;line-height:1.8;padding-top:4px;}
 .cta-buttons{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;}
 @media(max-width:700px){.cta-strip{padding:65px 0;}.cta-buttons{flex-direction:column;}.cta-buttons .btn{width:100%;}}
-
-/* ================= FOOTER ================= */
 footer{background:radial-gradient(circle at 10% 20%,rgba(59,130,246,.1),transparent 40%),radial-gradient(circle at 90% 80%,rgba(251,191,36,.06),transparent 40%),linear-gradient(160deg,#0A2540 0%,#0F2E4F 60%,#0A2540 100%);color:#fff;padding-top:80px;position:relative;overflow:hidden;}
 footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(251,191,36,.6),transparent);}
 .footer-top{text-align:center;padding-bottom:44px;border-bottom:1px solid rgba(59,130,246,.15);margin-bottom:44px;position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:14px;}
@@ -611,8 +609,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   .footer-legal a{font-size:.58rem;padding:3px 3px;}
   .footer-legal span{font-size:.58rem;}
 }
-
-/* FLOATING / POPUP */
 .wa-float{position:fixed;left:20px;bottom:20px;z-index:8000;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;border-radius:50%;font-size:26px;box-shadow:0 12px 30px rgba(37,211,102,.4);}
 .back-top{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#2563EB,#1E40AF);color:#fff;cursor:pointer;z-index:1000;display:grid;place-items:center;opacity:0;visibility:hidden;transition:.3s;box-shadow:0 10px 28px rgba(37,99,235,.45);}
 .back-top.show{opacity:1;visibility:visible;}
@@ -715,6 +711,142 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 @media(max-width:700px){.section{padding:70px 0;}.smile-strip{padding:55px 0;}}
 @media(max-width:600px){.brand-name{font-size:clamp(1rem,4vw,1.15rem);white-space:normal;line-height:1.3;}.brand-tagline{font-size:.62rem;white-space:normal;}.logo-box{width:54px;height:54px;}}
 @media(max-width:380px){.brand-name{font-size:1rem;}.brand-tagline{font-size:.6rem;}.logo-box{width:50px;height:50px;}}
+
+/* ═══════════════════════════════════════════════════════════
+   BIRTHDAY DONATION CALCULATOR (REMOVED)
+   ═══════════════════════════════════════════════════════════ */
+
+/* ═══════════════════════════════════════════════════════════
+   PANCH DAAN SECTION
+   ═══════════════════════════════════════════════════════════ */
+.pd-section { background: #fff; padding: 80px 0; }
+.pd-banner { background: linear-gradient(135deg, #0A2540, #1E40AF); padding: 40px 20px; text-align: center; color: #fff; border-radius: 0 0 40px 40px; box-shadow: 0 20px 40px rgba(10,37,64,0.2); position: relative; overflow: hidden; margin-bottom: 40px; }
+.pd-banner::before { content: "✨"; position: absolute; top: -10px; left: 10%; font-size: 60px; opacity: 0.1; }
+.pd-banner h1 { font-family: "Tiro Devanagari Hindi", serif; font-size: clamp(2rem, 5vw, 3rem); font-weight: 900; color: var(--gold); margin-bottom: 10px; text-shadow: 0 4px 15px rgba(0,0,0,0.3); }
+.pd-banner p { color: #93C5FD; font-size: 1.05rem; font-weight: 600; }
+.pd-container { max-width: 1100px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 10; }
+.pd-tabs-wrapper { display: grid; grid-template-columns: repeat(5, 1fr); gap: 15px; margin-bottom: 40px; }
+.pd-tab-btn { background: #fff; border: 2px solid transparent; border-radius: 20px; padding: 20px 10px; text-align: center; cursor: pointer; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s cubic-bezier(0.2, 0.8, 0.3, 1.2); display: flex; flex-direction: column; align-items: center; gap: 10px; }
+.pd-tab-btn i { font-size: 2rem; color: var(--text-muted); transition: all 0.3s; }
+.pd-tab-btn span { font-family: "Tiro Devanagari Hindi", serif; font-size: 1.1rem; font-weight: 900; color: var(--navy); }
+.pd-tab-btn:hover { transform: translateY(-5px); box-shadow: 0 15px 35px rgba(0,0,0,0.1); }
+.pd-tab-btn.active { background: linear-gradient(135deg, #0A2540, #1E40AF); border-color: var(--gold); transform: translateY(-5px); box-shadow: 0 20px 40px rgba(37,99,235,0.3); }
+.pd-tab-btn.active i { color: var(--gold); }
+.pd-tab-btn.active span { color: #fff; }
+.pd-content-area { display: none; animation: fadeIn 0.5s ease-out; }
+.pd-content-area.active { display: block; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.pd-section-title { font-family: "Tiro Devanagari Hindi", serif; font-size: 1.8rem; font-weight: 900; color: var(--navy); margin-bottom: 25px; display: flex; align-items: center; gap: 12px; }
+.pd-section-title i { color: var(--gold-dark); font-size: 1.5rem; }
+.pd-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.pd-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.pd-card { background: #fff; border: 2px solid var(--border); border-radius: 24px; padding: 24px; cursor: pointer; transition: all 0.3s; position: relative; overflow: hidden; }
+.pd-card:hover { border-color: var(--blue-2); box-shadow: 0 15px 35px rgba(37,99,235,0.1); transform: translateY(-3px); }
+.pd-card.selected { border-color: var(--blue-2); background: #EFF6FF; box-shadow: 0 15px 35px rgba(37,99,235,0.15); }
+.pd-card.selected::after { content: "\f058"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; top: 15px; right: 15px; color: var(--blue-2); font-size: 1.5rem; }
+.pd-card-icon { width: 55px; height: 55px; border-radius: 16px; background: #F1F5F9; color: var(--navy); display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 16px; transition: all 0.3s; }
+.pd-card.selected .pd-card-icon { background: var(--blue-2); color: #fff; }
+.pd-card h3 { font-family: "Tiro Devanagari Hindi", serif; font-size: 1.15rem; font-weight: 900; color: var(--navy); margin-bottom: 5px; }
+.pd-card p { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 15px; font-weight: 600; }
+.pd-card .price { font-family: "Poppins", sans-serif; font-size: 1.3rem; font-weight: 900; color: var(--gold-dark); }
+.pd-menu-breakdown { background: #F8FAFC; border-radius: 16px; padding: 15px; margin-top: 15px; display: none; border: 1px dashed #CBD5E1; }
+.pd-card.selected .pd-menu-breakdown { display: block; animation: fadeIn 0.3s; }
+.pd-menu-breakdown ul { list-style: none; font-size: 0.8rem; color: var(--text-muted); font-weight: 600; line-height: 1.8; }
+.pd-menu-breakdown ul li { display: flex; justify-content: space-between; border-bottom: 1px dashed #E2E8F0; padding: 4px 0; }
+.pd-menu-breakdown ul li:last-child { border-bottom: none; }
+.pd-qty-selector { display: flex; gap: 8px; margin-top: 15px; flex-wrap: wrap; }
+.pd-qty-btn { background: #F1F5F9; border: 1px solid var(--border); padding: 8px 14px; border-radius: 10px; font-family: "Poppins", sans-serif; font-size: 0.85rem; font-weight: 800; color: var(--navy); cursor: pointer; transition: all 0.2s; }
+.pd-qty-btn:hover, .pd-qty-btn.active { background: var(--blue-2); color: #fff; border-color: var(--blue-2); }
+.pd-summary-bar { position: fixed; bottom: 0; left: 0; right: 0; background: #fff; box-shadow: 0 -10px 40px rgba(10,37,64,0.1); padding: 15px 20px; z-index: 100; display: flex; justify-content: center; border-top: 1px solid var(--border); transform: translateY(100%); transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.3, 1); }
+.pd-summary-bar.show { transform: translateY(0); }
+.pd-summary-content { max-width: 1100px; width: 100%; display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.pd-summary-text h4 { font-family: "Tiro Devanagari Hindi", serif; font-size: 0.9rem; color: var(--text-muted); font-weight: 700; }
+.pd-summary-text .total-amount { font-family: "Poppins", sans-serif; font-size: 1.8rem; font-weight: 900; color: var(--navy); line-height: 1.1; }
+.pd-summary-text .total-amount span { color: var(--gold-dark); }
+.pd-donate-btn { background: linear-gradient(135deg, #DC2626, #991B1B); color: #fff; border: none; border-radius: 100px; padding: 16px 40px; font-family: "Tiro Devanagari Hindi", serif; font-size: 1.2rem; font-weight: 900; cursor: pointer; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 30px rgba(220,38,38,0.4); transition: all 0.3s; }
+.pd-donate-btn:hover { transform: scale(1.02); box-shadow: 0 15px 40px rgba(220,38,38,0.6); }
+.pd-donate-btn i { animation: heartBeat 1.5s infinite; }
+@media (max-width: 800px) {
+  .pd-tabs-wrapper { grid-template-columns: repeat(3, 1fr); }
+  .pd-grid-2, .pd-grid-3 { grid-template-columns: 1fr; }
+  .pd-summary-content { flex-direction: column; text-align: center; gap: 15px; }
+  .pd-donate-btn { width: 100%; justify-content: center; }
+}
+@media (max-width: 500px) {
+  .pd-tabs-wrapper { grid-template-columns: repeat(2, 1fr); }
+  .pd-tab-btn { padding: 15px 5px; }
+  .pd-tab-btn i { font-size: 1.5rem; }
+  .pd-tab-btn span { font-size: 0.95rem; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   DAILY SUPPORT PULSE RED BUTTON
+   ═══════════════════════════════════════════════════════════ */
+.pulse-red-daily {
+    background: linear-gradient(135deg, #DC2626, #991B1B) !important;
+    color: #fff !important;
+    animation: pulseRedBlink 1.5s infinite;
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7);
+}
+@keyframes pulseRedBlink {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(220, 38, 38, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   PANCH DAAN DONOR FORM MODAL
+   ═══════════════════════════════════════════════════════════ */
+.pd-form-modal {
+    position: fixed; inset: 0; z-index: 9999999;
+    background: rgba(10,37,64,0.85); backdrop-filter: blur(10px);
+    display: flex; align-items: center; justify-content: center;
+    padding: 20px; opacity: 0; visibility: hidden; transition: 0.4s;
+}
+.pd-form-modal.show { opacity: 1; visibility: visible; }
+.pd-form-box {
+    position: relative; width: min(600px, 100%);
+    background: #fff; border-radius: 24px;
+    padding: 30px; max-height: 90vh; overflow-y: auto;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.5); transform: scale(0.9);
+    transition: 0.4s cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+.pd-form-modal.show .pd-form-box { transform: scale(1); }
+.pd-form-close {
+    position: absolute; top: 15px; right: 15px; width: 36px; height: 36px;
+    border-radius: 50%; background: #F1F5F9; color: var(--text-muted);
+    font-size: 1rem; display: flex; align-items: center; justify-content: center;
+    cursor: pointer; transition: 0.3s; border: none;
+}
+.pd-form-close:hover { background: #DC2626; color: #fff; transform: rotate(90deg); }
+.pd-form-box h3 {
+    font-family: "Tiro Devanagari Hindi", serif; font-size: 1.5rem;
+    font-weight: 900; color: var(--navy); margin-bottom: 20px;
+    text-align: center; border-bottom: 2px dashed var(--border); padding-bottom: 15px;
+}
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; margin-bottom: 15px; }
+.form-group label { font-size: 0.85rem; font-weight: 700; color: var(--text); }
+.form-group input, .form-group select, .form-group textarea {
+    padding: 12px 15px; border: 2px solid var(--border); border-radius: 10px;
+    font-family: inherit; font-size: 0.95rem; outline: none; transition: 0.3s;
+    background: #F8FAFC; color: var(--navy); font-weight: 600;
+}
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--blue-2); background: #fff; box-shadow: 0 0 0 4px rgba(37,99,235,0.1);
+}
+.pd-form-submit {
+    width: 100%; padding: 16px; border-radius: 12px;
+    background: linear-gradient(135deg, #059669, #047857); color: #fff;
+    font-family: "Tiro Devanagari Hindi", serif; font-size: 1.15rem;
+    font-weight: 900; cursor: pointer; border: none; margin-top: 10px;
+    box-shadow: 0 10px 30px rgba(5,150,105,0.4); transition: 0.3s;
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+}
+.pd-form-submit:hover { transform: translateY(-2px); box-shadow: 0 15px 40px rgba(5,150,105,0.6); }
+@media(max-width: 600px) {
+    .form-row { grid-template-columns: 1fr; gap: 0; }
+}
 </style>
 </head>
 
@@ -904,9 +1036,303 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           <strong id="selAmt">₹1</strong>
           <span id="selSub">प्रतिदिन · लगभग ₹30/माह</span>
         </div>
-        <button class="btn btn-saffron btn-xl pulse" id="dailyDonate" type="button"><i data-lucide="heart-handshake"></i> DONATE NOW</button>
+        <button class="btn btn-red btn-xl pulse-red-daily" id="dailyDonate" type="button"><i data-lucide="heart-handshake"></i> DONATE NOW</button>
       </div>
       <p class="daily-foot">आपका हर दिन का छोटा सा सहयोग — किसी की बड़ी मुस्कान 😊</p>
+    </div>
+  </div>
+</section>
+
+<!-- PANCH DAAN SECTION -->
+<section class="pd-section" id="panch-daan">
+  <div class="pd-banner">
+    <h1>पंच दान, महा दान अभियान</h1>
+    <p>साथ चले हम फाउंडेशन के साथ मिलकर बदलाव का हिस्सा बनें</p>
+  </div>
+
+  <div class="pd-container">
+    <!-- TABS -->
+    <div class="pd-tabs-wrapper">
+      <div class="pd-tab-btn active" onclick="switchPdTab('education', this)">
+        <i class="fa-solid fa-book-open-reader"></i>
+        <span>शिक्षा दान</span>
+      </div>
+      <div class="pd-tab-btn" onclick="switchPdTab('food', this)">
+        <i class="fa-solid fa-bowl-food"></i>
+        <span>अन्न दान</span>
+      </div>
+      <div class="pd-tab-btn" onclick="switchPdTab('clothes', this)">
+        <i class="fa-solid fa-shirt"></i>
+        <span>वस्त्र दान</span>
+      </div>
+      <div class="pd-tab-btn" onclick="switchPdTab('water', this)">
+        <i class="fa-solid fa-droplet"></i>
+        <span>जल दान</span>
+      </div>
+      <div class="pd-tab-btn" onclick="switchPdTab('health', this)">
+        <i class="fa-solid fa-heart-pulse"></i>
+        <span>स्वास्थ्य दान</span>
+      </div>
+    </div>
+
+    <!-- 1. EDUCATION TAB -->
+    <div id="pd-tab-education" class="pd-content-area active">
+      <div class="pd-section-title"><i class="fa-solid fa-book"></i> शिक्षा दान (Education Donation)</div>
+      <p style="margin-bottom: 20px; color: var(--text-muted); font-weight: 600;">स्लेट, पेंसिल, कॉपी, कलम, किताब - बच्चों की शिक्षा में सहयोग करें।</p>
+      
+      <div class="pd-grid-3">
+        <div class="pd-card" onclick="selectPdDonation(this, 'शिक्षा किट (1 बच्चे के लिए)', 100)">
+          <div class="pd-card-icon"><i class="fa-solid fa-pencil"></i></div>
+          <h3>1 बच्चे की शिक्षा किट</h3>
+          <p>स्लेट, पेंसिल, कॉपी, कलम, किताब</p>
+          <div class="price">₹100</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'शिक्षा किट (5 बच्चों के लिए)', 500)">
+          <div class="pd-card-icon"><i class="fa-solid fa-box-open"></i></div>
+          <h3>5 बच्चों की शिक्षा किट</h3>
+          <p>5 बच्चों को पूरी स्टेशनरी</p>
+          <div class="price">₹500</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'शिक्षा किट (10 बच्चों के लिए)', 1000)">
+          <div class="pd-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3>10 बच्चों की शिक्षा किट</h3>
+          <p>10 बच्चों को पूरी स्टेशनरी</p>
+          <div class="price">₹1,000</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. FOOD TAB -->
+    <div id="pd-tab-food" class="pd-content-area">
+      <div class="pd-section-title"><i class="fa-solid fa-utensils"></i> अन्न दान (Food Donation)</div>
+      <p style="margin-bottom: 20px; color: var(--text-muted); font-weight: 600;">अपने खास मौकों को बच्चों और जरूरतमंदों के साथ मिलकर यादगार बनाएं।</p>
+
+      <div class="pd-grid-2">
+        <!-- Birthday -->
+        <div class="pd-card" onclick="selectPdFood(this, 'जन्मदिन भोजन', 250)">
+          <div class="pd-card-icon"><i class="fa-solid fa-cake-candles"></i></div>
+          <h3>जन्मदिन भोजन</h3>
+          <p>आपका जन्मदिन, किसी बच्चे की मुस्कान।</p>
+          <div class="price">₹250 / बच्चा</div>
+          <div class="pd-menu-breakdown">
+            <strong style="display:block; margin-bottom:8px; font-size:0.85rem; color:var(--navy);">मेन्यू (₹250 में):</strong>
+            <ul>
+              <li><span>केक & चॉकलेट</span> <span>₹70</span></li>
+              <li><span>फल 200g</span> <span>₹50</span></li>
+              <li><span>समोसा 2 पीस</span> <span>₹30</span></li>
+              <li><span>मिठाई 2 पीस</span> <span>₹30</span></li>
+              <li><span>पानी 500ml</span> <span>₹10</span></li>
+              <li><span>बर्थडे टोपी</span> <span>₹20</span></li>
+              <li><span>जलेबी 1 पीस</span> <span>₹10</span></li>
+              <li><span>नमकीन 30g</span> <span>₹10</span></li>
+              <li><span>प्लेट 1 पीस</span> <span>₹10</span></li>
+              <li><span>गुब्बारा 1 पीस</span> <span>₹10</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Anniversary -->
+        <div class="pd-card" onclick="selectPdFood(this, 'शादी सालगिरह भोजन', 300)">
+          <div class="pd-card-icon"><i class="fa-solid fa-heart"></i></div>
+          <h3>शादी सालगिरह भोजन</h3>
+          <p>आपका शादी सालगिरह, किसी बच्चे की मुस्कान।</p>
+          <div class="price">₹300 / बच्चा</div>
+          <div class="pd-menu-breakdown">
+            <strong style="display:block; margin-bottom:8px; font-size:0.85rem; color:var(--navy);">मेन्यू (₹300 में):</strong>
+            <ul>
+              <li><span>पूरी 4 पीस (120g)</span> <span>₹30</span></li>
+              <li><span>मटर पनीर सब्जी 120g</span> <span>₹50</span></li>
+              <li><span>चावल 100g</span> <span>₹30</span></li>
+              <li><span>दाल 100ml</span> <span>₹30</span></li>
+              <li><span>मिठाई 2 पीस (40g)</span> <span>₹40</span></li>
+              <li><span>सलाद 50g</span> <span>₹10</span></li>
+              <li><span>पानी 500ml</span> <span>₹10</span></li>
+              <li><span>उपहार</span> <span>₹20</span></li>
+              <li><span>केक और चॉकलेट</span> <span>₹70</span></li>
+              <li><span>पैकिंग</span> <span>₹10</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Housewarming -->
+        <div class="pd-card" onclick="selectPdFood(this, 'गृहप्रवेश भोजन', 300)">
+          <div class="pd-card-icon"><i class="fa-solid fa-house-chimney"></i></div>
+          <h3>गृहप्रवेश भोजन</h3>
+          <p>आपका गृहप्रवेश, किसी बच्चे की मुस्कान।</p>
+          <div class="price">₹300 / बच्चा</div>
+          <div class="pd-menu-breakdown">
+            <strong style="display:block; margin-bottom:8px; font-size:0.85rem; color:var(--navy);">मेन्यू (₹300 में):</strong>
+            <ul>
+              <li><span>पूरी 4 पीस (120g)</span> <span>₹30</span></li>
+              <li><span>मटर पनीर सब्जी 120g</span> <span>₹50</span></li>
+              <li><span>चावल 100g</span> <span>₹30</span></li>
+              <li><span>दाल 100ml</span> <span>₹30</span></li>
+              <li><span>मिठाई 2 पीस (40g)</span> <span>₹40</span></li>
+              <li><span>सलाद 50g</span> <span>₹10</span></li>
+              <li><span>पानी 500ml</span> <span>₹10</span></li>
+              <li><span>उपहार</span> <span>₹20</span></li>
+              <li><span>केक और चॉकलेट</span> <span>₹70</span></li>
+              <li><span>पैकिंग</span> <span>₹10</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Old Age Home -->
+        <div class="pd-card" onclick="selectPdFood(this, 'वृद्धजन आश्रम भोजन', 350)">
+          <div class="pd-card-icon"><i class="fa-solid fa-person-cane"></i></div>
+          <h3>वृद्ध महिला / पुरुष आश्रम भोजन</h3>
+          <p>किसी वृद्ध की मुस्कान बनें।</p>
+          <div class="price">₹350 / व्यक्ति</div>
+          <div class="pd-menu-breakdown">
+            <strong style="display:block; margin-bottom:8px; font-size:0.85rem; color:var(--navy);">मेन्यू (₹350 में):</strong>
+            <ul>
+              <li><span>पूरी 4 पीस (120g)</span> <span>₹30</span></li>
+              <li><span>मटर पनीर सब्जी 120g</span> <span>₹50</span></li>
+              <li><span>चावल 100g</span> <span>₹30</span></li>
+              <li><span>दाल 100ml</span> <span>₹30</span></li>
+              <li><span>मिठाई 2 पीस (40g)</span> <span>₹40</span></li>
+              <li><span>सलाद 50g</span> <span>₹10</span></li>
+              <li><span>पानी 500ml</span> <span>₹10</span></li>
+              <li><span>उपहार</span> <span>₹70</span></li>
+              <li><span>केक और चॉकलेट</span> <span>₹70</span></li>
+              <li><span>पैकिंग</span> <span>₹10</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Disabled -->
+        <div class="pd-card" onclick="selectPdFood(this, 'दिव्यांगजन भोजन', 350)">
+          <div class="pd-card-icon"><i class="fa-solid fa-wheelchair"></i></div>
+          <h3>दिव्यांग महिला / पुरुष / बच्चे भोजन</h3>
+          <p>किसी दिव्यांग की मुस्कान बनें।</p>
+          <div class="price">₹350 / व्यक्ति</div>
+          <div class="pd-menu-breakdown">
+            <strong style="display:block; margin-bottom:8px; font-size:0.85rem; color:var(--navy);">मेन्यू (₹350 में):</strong>
+            <ul>
+              <li><span>पूरी 4 पीस (120g)</span> <span>₹30</span></li>
+              <li><span>मटर पनीर सब्जी 120g</span> <span>₹50</span></li>
+              <li><span>चावल 100g</span> <span>₹30</span></li>
+              <li><span>दाल 100ml</span> <span>₹30</span></li>
+              <li><span>मिठाई 2 पीस (40g)</span> <span>₹40</span></li>
+              <li><span>सलाद 50g</span> <span>₹10</span></li>
+              <li><span>पानी 500ml</span> <span>₹10</span></li>
+              <li><span>उपहार</span> <span>₹70</span></li>
+              <li><span>केक और चॉकलेट</span> <span>₹70</span></li>
+              <li><span>पैकिंग</span> <span>₹10</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. CLOTHES TAB -->
+    <div id="pd-tab-clothes" class="pd-content-area">
+      <div class="pd-section-title"><i class="fa-solid fa-shirt"></i> वस्त्र दान (Clothing Donation)</div>
+      <p style="margin-bottom: 20px; color: var(--text-muted); font-weight: 600;">जरूरतमंदों को सम्मानजनक वस्त्र प्रदान करें।</p>
+      
+      <div class="pd-grid-2">
+        <div class="pd-card" onclick="selectPdDonation(this, 'बच्चों के वस्त्र (1 सेट)', 300)">
+          <div class="pd-card-icon"><i class="fa-solid fa-child"></i></div>
+          <h3>बच्चों के वस्त्र</h3>
+          <p>1 बच्चे के लिए नए कपड़े</p>
+          <div class="price">₹300 / सेट</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'विधवा / वृद्ध महिला वस्त्र (1 सेट)', 500)">
+          <div class="pd-card-icon"><i class="fa-solid fa-person-dress"></i></div>
+          <h3>विधवा / वृद्ध महिला वस्त्र</h3>
+          <p>1 महिला के लिए साड़ी/सूट</p>
+          <div class="price">₹500 / सेट</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'वरिष्ठ पुरुष वस्त्र (1 सेट)', 500)">
+          <div class="pd-card-icon"><i class="fa-solid fa-user-tie"></i></div>
+          <h3>वरिष्ठ महिला / पुरुष वस्त्र</h3>
+          <p>1 वरिष्ठ नागरिक के लिए कपड़े</p>
+          <div class="price">₹500 / सेट</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'दिव्यांगजन वस्त्र (1 सेट)', 400)">
+          <div class="pd-card-icon"><i class="fa-solid fa-wheelchair"></i></div>
+          <h3>दिव्यांग महिला / पुरुष / बच्चे</h3>
+          <p>1 दिव्यांगजन के लिए कपड़े</p>
+          <div class="price">₹400 / सेट</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. WATER TAB -->
+    <div id="pd-tab-water" class="pd-content-area">
+      <div class="pd-section-title"><i class="fa-solid fa-droplet"></i> जल दान (Water Donation)</div>
+      <p style="margin-bottom: 20px; color: var(--text-muted); font-weight: 600;">प्यासे को पानी पिलाना सबसे बड़ा पुण्य है।</p>
+      
+      <div class="pd-grid-3">
+        <div class="pd-card" onclick="selectPdDonation(this, '10 पानी की बोतलें', 100)">
+          <div class="pd-card-icon"><i class="fa-solid fa-bottle-water"></i></div>
+          <h3>10 पानी की बोतलें</h3>
+          <p>500ml पैकेज्ड ड्रिंकिंग वाटर</p>
+          <div class="price">₹100</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, '50 पानी की बोतलें', 500)">
+          <div class="pd-card-icon"><i class="fa-solid fa-glass-water"></i></div>
+          <h3>50 पानी की बोतलें</h3>
+          <p>स्टेशन या सार्वजनिक स्थल पर वितरण</p>
+          <div class="price">₹500</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'वाटर फिल्टर (1 नग)', 2500)">
+          <div class="pd-card-icon"><i class="fa-solid fa-filter"></i></div>
+          <h3>वाटर फिल्टर (1 नग)</h3>
+          <p>किसी स्कूल या गाँव में लगाने के लिए</p>
+          <div class="price">₹2,500</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. HEALTH TAB -->
+    <div id="pd-tab-health" class="pd-content-area">
+      <div class="pd-section-title"><i class="fa-solid fa-heart-pulse"></i> स्वास्थ्य दान (Health Donation)</div>
+      <p style="margin-bottom: 20px; color: var(--text-muted); font-weight: 600;">जरूरतमंदों को बेहतर स्वास्थ्य सुविधा प्रदान करें।</p>
+      
+      <div class="pd-grid-3">
+        <div class="pd-card" onclick="selectPdDonation(this, 'फर्स्ट एड किट (1 नग)', 250)">
+          <div class="pd-card-icon"><i class="fa-solid fa-kit-medical"></i></div>
+          <h3>फर्स्ट एड किट</h3>
+          <p>बेसिक दवाएं और पट्टियां</p>
+          <div class="price">₹250</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'स्वास्थ्य शिविर (10 मरीज)', 1500)">
+          <div class="pd-card-icon"><i class="fa-solid fa-stethoscope"></i></div>
+          <h3>स्वास्थ्य जांच (10 लोग)</h3>
+          <p>डॉक्टर की फीस और दवाएं</p>
+          <div class="price">₹1,500</div>
+        </div>
+
+        <div class="pd-card" onclick="selectPdDonation(this, 'पूरा स्वास्थ्य शिविर', 5000)">
+          <div class="pd-card-icon"><i class="fa-solid fa-hospital"></i></div>
+          <h3>पूरा स्वास्थ्य शिविर</h3>
+          <p>गाँव में निःशुल्क जांच शिविर</p>
+          <div class="price">₹5,000</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- STICKY SUMMARY BAR -->
+  <div class="pd-summary-bar" id="pdSummaryBar">
+    <div class="pd-summary-content">
+      <div class="pd-summary-text">
+        <h4 id="pdSummaryTitle">चयनित दान: कुछ नहीं</h4>
+        <div class="total-amount">कुल राशि: <span id="pdTotalAmount">₹0</span></div>
+      </div>
+      <button class="pd-donate-btn" onclick="proceedToPdDonate()">
+        <i class="fa-solid fa-heart"></i> दान करें (Donate)
+      </button>
     </div>
   </div>
 </section>
@@ -924,6 +1350,79 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </div>
 
+<!-- PANCH DAAN DONOR FORM MODAL -->
+<div class="pd-form-modal" id="pdFormModal">
+  <div class="pd-form-box">
+    <button class="pd-form-close" id="pdFormClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <h3>दान विवरण (Donation Details)</h3>
+    <form id="pdDonorForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label>दानदाता का नाम (Donor Name) *</label>
+          <input type="text" id="pdDonorName" required>
+        </div>
+        <div class="form-group">
+          <label>मोबाइल नंबर (Mobile) *</label>
+          <input type="tel" id="pdMobile" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>माता का नाम (Mother Name)</label>
+          <input type="text" id="pdMotherName">
+        </div>
+        <div class="form-group">
+          <label>पिता का नाम (Father Name)</label>
+          <input type="text" id="pdFatherName">
+        </div>
+      </div>
+      <div class="form-group">
+        <label>ई-मेल (Email)</label>
+        <input type="email" id="pdEmail">
+      </div>
+      <div class="form-group">
+        <label>स्थायी पता (Permanent Address) *</label>
+        <textarea id="pdAddress" rows="2" required></textarea>
+      </div>
+      <div class="form-group">
+        <label>मैं दान करना चाहता हूँ (I want To Donate)</label>
+        <input type="text" id="pdDonationItem" readonly style="background:#f1f5f9; font-weight:bold; color:var(--blue);">
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label>राज्य (State) *</label>
+          <select id="pdStateSelect" required>
+            <option value="Bihar">बिहार (Bihar)</option>
+            <option value="Other">अन्य राज्य (Other State)</option>
+          </select>
+        </div>
+        <div class="form-group" id="pdBiharDistrictWrap">
+          <label>जिला (District) *</label>
+          <select id="pdBiharDistrictSelect" required>
+            <!-- Populated via JS -->
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row" id="pdOtherStateWrap" style="display:none;">
+        <div class="form-group">
+          <label>राज्य का नाम (State Name) *</label>
+          <input type="text" id="pdOtherStateName">
+        </div>
+        <div class="form-group">
+          <label>जिले का नाम (District Name) *</label>
+          <input type="text" id="pdOtherDistrictName">
+        </div>
+      </div>
+
+      <button type="submit" class="pd-form-submit">
+        <i class="fa-solid fa-lock"></i> Proceed to Pay ₹<span id="pdFormAmount">0</span>
+      </button>
+    </form>
+  </div>
+</div>
+
 <!-- ABOUT / MISSION -->
 <section class="section about-section" id="about">
   <div class="container">
@@ -935,7 +1434,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       <p class="hindi">साथ चले हम फाउंडेशन एक सामाजिक संस्था है, जिसका उद्देश्य शिक्षा, स्वास्थ्य, महिला सशक्तिकरण, गरीब एवं जरूरतमंद लोगों की सहायता, ग्रामीण विकास, कौशल विकास, पर्यावरण संरक्षण और सामाजिक जागरूकता जैसे क्षेत्रों में सकारात्मक बदलाव लाना है।</p>
       <p>Sath Chale Hum Foundation is a social organization committed to bringing positive change in areas such as education, healthcare, women empowerment, support for poor and needy people, rural development, skill development, environmental protection, and social awareness.</p>
     </div>
-    <div class="center" style="margin-top:30px;">
+    <div class="center" style="margin-top:30px;text-align:center;">
       <a href="about.html" class="btn btn-blue btn-lg"><i class="fa-solid fa-arrow-right-circle"></i> View Details | विस्तार से देखें</a>
     </div>
     <div class="section-title" style="margin-top:70px;margin-bottom:35px;">
@@ -955,7 +1454,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
         <p class="en-desc">Our vision is to build an inclusive, aware, self-reliant, and empowered society where every person has the right to dignity, opportunities, and the chance to move forward.</p>
       </div>
     </div>
-    <div class="center" style="margin-top:40px;">
+    <div class="center" style="margin-top:40px;text-align:center;">
       <a href="about.html#mission" class="btn btn-blue btn-lg"><i class="fa-solid fa-arrow-right-circle"></i> View Details | विस्तार से देखें</a>
     </div>
   </div>
@@ -986,7 +1485,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       </div>
       <div class="slider-dots" id="valuesDots"></div>
     </div>
-    <div class="center"><a href="about.html#values" class="btn btn-blue btn-lg"><i class="fa-solid fa-arrow-right-circle"></i> View Details | विस्तार से देखें</a></div>
+    <div style="text-align:center;"><a href="about.html#values" class="btn btn-blue btn-lg"><i class="fa-solid fa-arrow-right-circle"></i> View Details | विस्तार से देखें</a></div>
   </div>
 </section>
 
@@ -1000,22 +1499,22 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
     <div class="premium-slider-wrap reveal">
       <div class="slider-window">
         <div class="slider-track" id="workTrack">
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1E40AF,#2563EB)"><div class="card-icon"><i class="fa-solid fa-book-open-reader"></i></div><h3>01. शिक्षा एवं बाल विकास</h3><p>Education & Child Development — जरूरतमंद बच्चों को किताबें, बैग, छात्रवृत्ति।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#513c0c,#806514)"><div class="card-icon"><i class="fa-solid fa-person-dress"></i></div><h3>02. महिला सशक्तिकरण एवं विकास</h3><p>Women Empowerment & Development — सिलाई, कढ़ाई, उद्यमिता।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1e3a8a,#2563EB)"><div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div><h3>03. स्वास्थ्य एवं चिकित्सा</h3><p>Health & Medical Care — निःशुल्क जाँच, दवाएँ और शिविर।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#4b291b,#8a4e26)"><div class="card-icon"><i class="fa-solid fa-hand-holding-heart"></i></div><h3>04. गरीब एवं जरूरतमंद कल्याण</h3><p>Welfare of Poor & Needy — राशन, कपड़े और आवश्यक सामग्री।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1e293b,#3B82F6)"><div class="card-icon"><i class="fa-solid fa-wheelchair"></i></div><h3>05. दिव्यांगजन कल्याण एवं सशक्तिकरण</h3><p>Disability Welfare & Empowerment — व्हीलचेयर, सहायक उपकरण और सहयोग।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1E40AF,#2563EB)"><div class="card-icon"><i class="fa-solid fa-book-open-reader"></i></div><h3>01. शिक्षा एवं बाल विकास</h3><p>Education &amp; Child Development — जरूरतमंद बच्चों को किताबें, बैग, छात्रवृत्ति।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#513c0c,#806514)"><div class="card-icon"><i class="fa-solid fa-person-dress"></i></div><h3>02. महिला सशक्तिकरण एवं विकास</h3><p>Women Empowerment &amp; Development — सिलाई, कढ़ाई, उद्यमिता।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1e3a8a,#2563EB)"><div class="card-icon"><i class="fa-solid fa-heart-pulse"></i></div><h3>03. स्वास्थ्य एवं चिकित्सा</h3><p>Health &amp; Medical Care — निःशुल्क जाँच, दवाएँ और शिविर।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#4b291b,#8a4e26)"><div class="card-icon"><i class="fa-solid fa-hand-holding-heart"></i></div><h3>04. गरीब एवं जरूरतमंद कल्याण</h3><p>Welfare of Poor &amp; Needy — राशन, कपड़े और आवश्यक सामग्री।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1e293b,#3B82F6)"><div class="card-icon"><i class="fa-solid fa-wheelchair"></i></div><h3>05. दिव्यांगजन कल्याण एवं सशक्तिकरण</h3><p>Disability Welfare &amp; Empowerment — व्हीलचेयर, सहायक उपकरण और सहयोग।</p></article>
           <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#3d3210,#756016)"><div class="card-icon"><i class="fa-solid fa-person-cane"></i></div><h3>06. वृद्धजन कल्याण</h3><p>Senior Citizen Welfare — दवा, राशन और देखभाल।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#0c2e6b,#2563EB)"><div class="card-icon"><i class="fa-solid fa-user-graduate"></i></div><h3>07. युवा विकास एवं कौशल विकास</h3><p>Youth Development & Skill Development — करियर गाइडेंस और कौशल प्रशिक्षण।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1e3a5f,#2563EB)"><div class="card-icon"><i class="fa-solid fa-briefcase"></i></div><h3>08. रोजगार, स्वरोजगार एवं आजीविका</h3><p>Employment, Self-Employment & Livelihood — रोजगार पंजीकरण और स्वरोजगार।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#0A2540,#2563EB)"><div class="card-icon"><i class="fa-solid fa-house-chimney"></i></div><h3>09. ग्रामीण विकास एवं ग्राम उत्थान</h3><p>Rural Development & Village Upliftment — गाँव के विकास में योगदान।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#43500d,#768b17)"><div class="card-icon"><i class="fa-solid fa-wheat-awn"></i></div><h3>10. कृषि एवं किसान कल्याण</h3><p>Agriculture & Farmer Welfare — बीज, खाद और कृषि सहायता।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1E40AF,#2563EB)"><div class="card-icon"><i class="fa-solid fa-leaf"></i></div><h3>11. पर्यावरण एवं जल संरक्षण</h3><p>Environment & Water Conservation — वृक्षारोपण और जल संरक्षण।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1e3a8a,#2563EB)"><div class="card-icon"><i class="fa-solid fa-droplet"></i></div><h3>12. स्वच्छता, पेयजल एवं पोषण</h3><p>Sanitation, Drinking Water & Nutrition — स्वच्छता किट और पोषण जागरूकता।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#3b3010,#705c19)"><div class="card-icon"><i class="fa-solid fa-paw"></i></div><h3>13. पशु कल्याण एवं संरक्षण</h3><p>Animal Welfare & Protection — बेज़ुबान जानवरों की देखभाल।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#4c291e,#80503b)"><div class="card-icon"><i class="fa-solid fa-house-flood-water"></i></div><h3>14. आपदा राहत एवं पुनर्वास</h3><p>Disaster Relief & Rehabilitation — राहत किट और पुनर्वास सहायता।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1e3a5f,#2563EB)"><div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div><h3>15. सामाजिक न्याय, मानव अधिकार एवं कानूनी जागरूकता</h3><p>Social Justice, Human Rights & Legal Awareness — कानूनी सहायता और जागरूकता।</p></article>
-          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#0A2540,#2563EB)"><div class="card-icon"><i class="fa-solid fa-laptop"></i></div><h3>16. डिजिटल शिक्षा, जन-जागरूकता एवं सामाजिक विकास</h3><p>Digital Education, Public Awareness & Social Development — डिजिटल साक्षरता और तकनीकी शिक्षा।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#0c2e6b,#2563EB)"><div class="card-icon"><i class="fa-solid fa-user-graduate"></i></div><h3>07. युवा विकास एवं कौशल विकास</h3><p>Youth Development &amp; Skill Development — करियर गाइडेंस और कौशल प्रशिक्षण।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1e3a5f,#2563EB)"><div class="card-icon"><i class="fa-solid fa-briefcase"></i></div><h3>08. रोजगार, स्वरोजगार एवं आजीविका</h3><p>Employment, Self-Employment &amp; Livelihood — रोजगार पंजीकरण और स्वरोजगार।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#0A2540,#2563EB)"><div class="card-icon"><i class="fa-solid fa-house-chimney"></i></div><h3>09. ग्रामीण विकास एवं ग्राम उत्थान</h3><p>Rural Development &amp; Village Upliftment — गाँव के विकास में योगदान।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#43500d,#768b17)"><div class="card-icon"><i class="fa-solid fa-wheat-awn"></i></div><h3>10. कृषि एवं किसान कल्याण</h3><p>Agriculture &amp; Farmer Welfare — बीज, खाद और कृषि सहायता।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1E40AF,#2563EB)"><div class="card-icon"><i class="fa-solid fa-leaf"></i></div><h3>11. पर्यावरण एवं जल संरक्षण</h3><p>Environment &amp; Water Conservation — वृक्षारोपण और जल संरक्षण।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1e3a8a,#2563EB)"><div class="card-icon"><i class="fa-solid fa-droplet"></i></div><h3>12. स्वच्छता, पेयजल एवं पोषण</h3><p>Sanitation, Drinking Water &amp; Nutrition — स्वच्छता किट और पोषण जागरूकता।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#3b3010,#705c19)"><div class="card-icon"><i class="fa-solid fa-paw"></i></div><h3>13. पशु कल्याण एवं संरक्षण</h3><p>Animal Welfare &amp; Protection — बेज़ुबान जानवरों की देखभाल।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#4c291e,#80503b)"><div class="card-icon"><i class="fa-solid fa-house-flood-water"></i></div><h3>14. आपदा राहत एवं पुनर्वास</h3><p>Disaster Relief &amp; Rehabilitation — राहत किट और पुनर्वास सहायता।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#1e3a5f,#2563EB)"><div class="card-icon"><i class="fa-solid fa-scale-balanced"></i></div><h3>15. सामाजिक न्याय, मानव अधिकार एवं कानूनी जागरूकता</h3><p>Social Justice, Human Rights &amp; Legal Awareness — कानूनी सहायता और जागरूकता।</p></article>
+          <article class="slider-slide" data-link="donate.html" style="background:linear-gradient(135deg,#0A2540,#2563EB)"><div class="card-icon"><i class="fa-solid fa-laptop"></i></div><h3>16. डिजिटल शिक्षा, जन-जागरूकता एवं सामाजिक विकास</h3><p>Digital Education, Public Awareness &amp; Social Development — डिजिटल साक्षरता और तकनीकी शिक्षा।</p></article>
         </div>
       </div>
       <div class="slider-controls">
@@ -1024,7 +1523,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       </div>
       <div class="slider-dots" id="workDots"></div>
     </div>
-    <div class="center"><a href="work.html" class="btn btn-blue btn-lg"><i class="fa-solid fa-layout-grid"></i> View All Our Work | सभी कार्य देखें</a></div>
+    <div style="text-align:center;"><a href="work.html" class="btn btn-blue btn-lg"><i class="fa-solid fa-layout-grid"></i> View All Our Work | सभी कार्य देखें</a></div>
   </div>
 </section>
 
@@ -1050,7 +1549,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       </div>
       <div class="slider-dots" id="teamDots"></div>
     </div>
-    <div class="center"><a href="team.html" class="btn btn-blue btn-lg"><i class="fa-solid fa-users-round"></i> View All Our Team | सभी टीम देखें</a></div>
+    <div style="text-align:center;"><a href="team.html" class="btn btn-blue btn-lg"><i class="fa-solid fa-users-round"></i> View All Our Team | सभी टीम देखें</a></div>
   </div>
 </section>
 
@@ -1462,8 +1961,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 <!-- FOOTER -->
 <footer>
   <div class="container">
-    
-    <!-- TOP: Center Brand + Social Media -->
     <div class="footer-top">
       <div class="footer-brand-head">
         <div class="footer-logo-box">
@@ -1476,7 +1973,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       </div>
       <p class="footer-desc">एक सामाजिक संस्था जो शिक्षा, स्वास्थ्य, महिला सशक्तिकरण और समाज के सर्वांगीण विकास के लिए समर्पित है।</p>
       <div class="footer-badge"><i class="fa-solid fa-award"></i> 12A &amp; 80G Certified NGO</div>
-      
       <h4 class="footer-social-heading">Our Social Media | हमारे सोशल मीडिया</h4>
       <div class="social-icons">
         <a href="https://www.facebook.com/share/1PUUzvUfoo/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
@@ -1486,7 +1982,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       </div>
     </div>
 
-    <!-- 3 COLUMNS: Quick Links, Get Involved, Contact Us -->
     <div class="footer-grid">
       <div class="footer-col">
         <h4 class="footer-heading">Quick Links | त्वरित लिंक</h4>
@@ -1525,7 +2020,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       </div>
     </div>
 
-    <!-- NEWSLETTER: Below 3 columns, Center -->
     <div class="footer-newsletter-wrap">
       <label class="newsletter-label">Newsletter | न्यूज़लेटर</label>
       <form class="newsletter-form" onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
@@ -1534,7 +2028,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       </form>
     </div>
 
-    <!-- BOTTOM BAR -->
     <div class="footer-bottom">
       <div class="footer-bottom-inner">
         <div class="footer-copy">© 2026 <strong>Sath Chale Hum Foundation</strong> · All Rights Reserved</div>
@@ -1547,7 +2040,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
         <div class="footer-made">Made with <i class="fa-solid fa-heart"></i> in Bihar</div>
       </div>
     </div>
-    
   </div>
 </footer>
 
@@ -2164,8 +2656,237 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   if (window.lucide) lucide.createIcons();
-
   console.log("%c🔵 Sath Chale Hum — Final Loaded", "color:#2563EB;font-weight:900;font-size:14px;");
+});
+
+/* ═══════════════════════════════════════════════════════════
+   PANCH DAAN JS
+   ═══════════════════════════════════════════════════════════ */
+let pdCurrentSelection = {
+  title: "",
+  amount: 0
+};
+
+function switchPdTab(tabId, btn) {
+  document.querySelectorAll('.pd-content-area').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.pd-tab-btn').forEach(el => el.classList.remove('active'));
+  document.getElementById('pd-tab-' + tabId).classList.add('active');
+  btn.classList.add('active');
+  resetPdSelection();
+}
+
+function selectPdDonation(cardElement, title, amount) {
+  const parent = cardElement.parentElement;
+  parent.querySelectorAll('.pd-card').forEach(el => {
+    el.classList.remove('selected');
+    const qty = el.querySelector('.pd-qty-selector');
+    if(qty) qty.remove();
+  });
+  cardElement.classList.add('selected');
+  pdCurrentSelection.title = title;
+  pdCurrentSelection.amount = amount;
+  updatePdSummary();
+}
+
+function selectPdFood(cardElement, title, baseAmount) {
+  const parent = cardElement.parentElement;
+  parent.querySelectorAll('.pd-card').forEach(el => {
+    el.classList.remove('selected');
+    const qty = el.querySelector('.pd-qty-selector');
+    if(qty) qty.remove();
+  });
+  cardElement.classList.add('selected');
+
+  const qtyDiv = document.createElement('div');
+  qtyDiv.className = 'pd-qty-selector';
+  let selectedQty = 10;
+  const quantities = [5, 10, 15, 20, 25];
+  
+  quantities.forEach(q => {
+    const btn = document.createElement('button');
+    btn.className = 'pd-qty-btn' + (q === 10 ? ' active' : '');
+    btn.innerText = q + ' लोग';
+    btn.onclick = (e) => {
+      e.stopPropagation();
+      qtyDiv.querySelectorAll('.pd-qty-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      selectedQty = q;
+      updatePdFoodTotal(title, baseAmount, selectedQty);
+    };
+    qtyDiv.appendChild(btn);
+  });
+  cardElement.appendChild(qtyDiv);
+  updatePdFoodTotal(title, baseAmount, selectedQty);
+}
+
+function updatePdFoodTotal(title, baseAmount, qty) {
+  const total = baseAmount * qty;
+  pdCurrentSelection.title = `${title} (${qty} लोग)`;
+  pdCurrentSelection.amount = total;
+  updatePdSummary();
+}
+
+function updatePdSummary() {
+  const bar = document.getElementById('pdSummaryBar');
+  const titleEl = document.getElementById('pdSummaryTitle');
+  const amountEl = document.getElementById('pdTotalAmount');
+  if (pdCurrentSelection.amount > 0) {
+    bar.classList.add('show');
+    titleEl.innerText = "चयनित दान: " + pdCurrentSelection.title;
+    amountEl.innerText = "₹" + pdCurrentSelection.amount.toLocaleString('en-IN');
+  } else {
+    bar.classList.remove('show');
+  }
+}
+
+function resetPdSelection() {
+  pdCurrentSelection.title = "";
+  pdCurrentSelection.amount = 0;
+  document.querySelectorAll('.pd-card').forEach(el => el.classList.remove('selected'));
+  document.querySelectorAll('.pd-qty-selector').forEach(el => el.remove());
+  document.getElementById('pdSummaryBar').classList.remove('show');
+}
+
+function proceedToPdDonate() {
+  if(pdCurrentSelection.amount === 0) return;
+  
+  // Populate Modal with selected item
+  document.getElementById('pdDonationItem').value = pdCurrentSelection.title;
+  document.getElementById('pdFormAmount').innerText = pdCurrentSelection.amount.toLocaleString('en-IN');
+  
+  // Show Modal
+  document.getElementById('pdFormModal').classList.add('show');
+  document.body.style.overflow = 'hidden';
+}
+
+// Close Form Modal
+document.getElementById('pdFormClose').addEventListener('click', function(){
+  document.getElementById('pdFormModal').classList.remove('show');
+  document.body.style.overflow = '';
+});
+
+// State / District Selection Logic
+const biharDistricts = [
+  "Araria", "Arwal", "Aurangabad", "Banka", "Begusarai", "Bhagalpur", 
+  "Bhojpur", "Buxar", "Darbhanga", "East Champaran (Motihari)", "Gaya", 
+  "Gopalganj", "Jamui", "Jehanabad", "Kaimur (Bhabua)", "Katihar", 
+  "Khagaria", "Kishanganj", "Lakhisarai", "Madhepura", "Madhubani", 
+  "Munger", "Muzaffarpur", "Nalanda", "Nawada", "Patna", "Purnia", 
+  "Rohtas", "Saharsa", "Samastipur", "Saran", "Sheikhpura", "Sheohar", 
+  "Sitamarhi", "Siwan", "Supaul", "Vaishali", "West Champaran (Bettiah)"
+];
+
+document.addEventListener('DOMContentLoaded', () => {
+  const pdStateSelect = document.getElementById('pdStateSelect');
+  const pdBiharDistrictSelect = document.getElementById('pdBiharDistrictSelect');
+  const pdBiharDistrictWrap = document.getElementById('pdBiharDistrictWrap');
+  const pdOtherStateWrap = document.getElementById('pdOtherStateWrap');
+  const pdOtherStateName = document.getElementById('pdOtherStateName');
+  const pdOtherDistrictName = document.getElementById('pdOtherDistrictName');
+  
+  // Populate Bihar Districts
+  biharDistricts.forEach(d => {
+    const opt = document.createElement('option');
+    opt.value = d;
+    opt.textContent = d;
+    pdBiharDistrictSelect.appendChild(opt);
+  });
+
+  // State Change Logic
+  pdStateSelect.addEventListener('change', function() {
+    if (this.value === 'Bihar') {
+      pdBiharDistrictWrap.style.display = 'flex';
+      pdBiharDistrictSelect.required = true;
+      pdOtherStateWrap.style.display = 'none';
+      pdOtherStateName.required = false;
+      pdOtherDistrictName.required = false;
+    } else {
+      pdBiharDistrictWrap.style.display = 'none';
+      pdBiharDistrictSelect.required = false;
+      pdOtherStateWrap.style.display = 'flex';
+      pdOtherStateName.required = true;
+      pdOtherDistrictName.required = true;
+    }
+  });
+
+  // Form Submission
+  document.getElementById('pdDonorForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const donorName = document.getElementById('pdDonorName').value;
+    const motherName = document.getElementById('pdMotherName').value;
+    const fatherName = document.getElementById('pdFatherName').value;
+    const mobile = document.getElementById('pdMobile').value;
+    const email = document.getElementById('pdEmail').value;
+    const address = document.getElementById('pdAddress').value;
+    const donationItem = document.getElementById('pdDonationItem').value;
+    const state = pdStateSelect.value;
+    
+    let district = "";
+    let fullState = "";
+    
+    if (state === 'Bihar') {
+      district = pdBiharDistrictSelect.value;
+      fullState = "Bihar";
+    } else {
+      fullState = pdOtherStateName.value;
+      district = pdOtherDistrictName.value;
+    }
+    
+    const totalAmount = pdCurrentSelection.amount;
+
+    if(typeof Razorpay === "undefined"){
+      alert(`🙏 धन्यवाद, ${donorName}!\n\nआपका दान विवरण:\n👉 ${donationItem}\n💰 राशि: ₹${totalAmount.toLocaleString('en-IN')}\n📍 स्थान: ${fullState}, ${district}\n\n(पेमेंट गेटवे यहाँ खुलेगा)`);
+      document.getElementById('pdFormModal').classList.remove('show');
+      document.body.style.overflow = '';
+      resetPdSelection();
+      return;
+    }
+
+    var options = {
+      key: "rzp_test_XXXXXXXXXXXXXX",
+      amount: totalAmount * 100, 
+      currency: "INR",
+      name: "Sath Chale Hum Foundation",
+      description: donationItem,
+      image: "https://raw.githubusercontent.com/sathchaleham-dot/sathchalehumfoundation/main/sath_chale_ham_logo_HD-1.png",
+      handler: function(response){
+        if(typeof confetti !== "undefined"){
+          confetti({ particleCount: 200, spread: 100, origin: { y: .6 }, colors: ["#FBBF24","#F59E0B","#2563EB","#fff"] });
+        }
+        alert(`🎉 धन्यवाद, ${donorName}!\n\nआपका दान सफल हुआ।\n\nPayment ID: ${response.razorpay_payment_id}\nAmount: ₹${totalAmount.toLocaleString('en-IN')}`);
+        document.getElementById('pdFormModal').classList.remove('show');
+        document.body.style.overflow = '';
+        resetPdSelection();
+      },
+      prefill: { 
+        name: donorName, 
+        email: email, 
+        contact: mobile 
+      },
+      notes: { 
+        type: "panch_daan", 
+        donation_item: donationItem,
+        mother_name: motherName,
+        father_name: fatherName,
+        address: address,
+        state: fullState,
+        district: district
+      },
+      theme: { color: "#FBBF24" }
+    };
+    
+    try {
+      var rzp = new Razorpay(options);
+      rzp.on('payment.failed', function(resp){
+        alert('❌ Payment failed: ' + (resp.error && resp.error.description ? resp.error.description : 'Unknown error'));
+      });
+      rzp.open();
+    } catch(err){
+      console.error(err);
+      alert('Payment start नहीं हो पाया। कृपया दोबारा प्रयास करें।');
+    }
+  });
 });
 </script>
 
