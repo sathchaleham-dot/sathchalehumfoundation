@@ -8,19 +8,20 @@
 <meta name="theme-color" content="#0A2540">
 <meta property="og:title" content="साथ चले हम फाउंडेशन">
 <meta property="og:description" content="शिक्षा, स्वास्थ्य, महिला सशक्तिकरण एवं समाज कल्याण हेतु कार्यरत सामाजिक संस्था।">
-<meta property="og:image" content="sath_chale_ham_logo_HD-1.png">
+<meta property="og:image" content="https://sathchaleham.org/sath_chale_ham_logo_HD-1.png">
 <link rel="canonical" href="https://sathchaleham.org/">
 <link rel="icon" type="image/png" href="sath_chale_ham_logo_HD-1.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Tiro+Devanagari+Hindi:ital@0;1&family=Yatra+One&family=Rozha+One&family=Mukta:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Tiro+Devanagari+Hindi:ital@0;1&family=Yatra+One&family=Rozha+One&family=Mukta:wght@400;500;600;700;800&family=Bebas+Neue&family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js" defer></script>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;overflow-x:hidden;}
+html{scroll-behavior:smooth;overflow-x:hidden;scroll-padding-top:195px;}
+@media(max-width:900px){html{scroll-padding-top:190px;}}
 :root{
   --navy:#0A2540;--navy-2:#0F2E4F;
   --blue:#1E40AF;--blue-2:#2563EB;--blue-light:#3B82F6;
@@ -331,106 +332,387 @@ body .site-header{top:94px;}
 .centered-slider.dark .section-title h2 span{color:var(--gold);}
 .centered-slider.dark .section-title .small-title{color:var(--gold);}
 .centered-slider.gold-bg{background:linear-gradient(135deg,#FEF3C7,#FFF7DD);}
-.calc-section{background:linear-gradient(135deg,#0A2540 0%,#1E40AF 55%,#0A2540 100%);color:#fff;padding:100px 0;position:relative;overflow:hidden;}
-.calc-section .section-title h2{color:#fff;}
-.calc-section .section-title h2 span{color:var(--gold);}
-.calc-section .section-title .small-title{color:var(--gold);}
-.calc-box{position:relative;max-width:960px;margin:auto;padding:55px 48px 48px;border-radius:36px;background:linear-gradient(135deg,rgba(255,255,255,.09),rgba(255,255,255,.03));border:1px solid rgba(251,191,36,.25);backdrop-filter:blur(24px);box-shadow:0 45px 110px rgba(0,0,0,.45);overflow:hidden;}
-.calc-badge{position:absolute;top:24px;right:26px;display:inline-flex;align-items:center;gap:7px;padding:8px 15px;border-radius:50px;background:rgba(251,191,36,.15);border:1px solid rgba(251,191,36,.35);color:var(--gold);font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;z-index:5;}
-.calc-badge i{font-size:9px;animation:calcBadgeBlink 1.6s infinite;}
-@keyframes calcBadgeBlink{50%{opacity:.4;}}
-.calc-work-select{margin-bottom:32px;text-align:center;}
-.calc-work-select label{display:block;margin-bottom:12px;font-family:"Tiro Devanagari Hindi",serif;font-size:clamp(1rem,1.9vw,1.15rem);font-weight:900;color:var(--gold);}
-.calc-work-dropdown{position:relative;max-width:520px;margin:auto;}
-.calc-work-dropdown select{width:100%;appearance:none;padding:17px 55px 17px 22px;border-radius:18px;background:linear-gradient(135deg,rgba(255,255,255,.1),rgba(255,255,255,.04));border:1.5px solid rgba(251,191,36,.35);color:#fff;font-family:inherit;font-size:14.5px;font-weight:700;cursor:pointer;outline:none;}
-.calc-work-dropdown select option{background:#1E40AF;color:#fff;}
-.calc-work-dropdown i{position:absolute;right:22px;top:50%;transform:translateY(-50%);color:var(--gold);pointer-events:none;}
-.calc-amount{text-align:center;margin-bottom:20px;}
-.calc-amount-label{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:50px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);font-size:11px;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:rgba(255,255,255,.72);margin-bottom:24px;}
-.calc-amount-label i{color:var(--gold);}
-.calc-amount-value{display:block;font-family:"Poppins",sans-serif;font-size:clamp(60px,10vw,110px);font-weight:900;line-height:1;letter-spacing:-.05em;color:var(--gold);text-shadow:0 12px 60px rgba(251,191,36,.5);}
-.calc-slider-wrap{margin:48px 0 30px;}
-.calc-slider{-webkit-appearance:none;width:100%;height:10px;border-radius:10px;background:linear-gradient(90deg,rgba(251,191,36,.15) 0%,rgba(251,191,36,.4) 50%,rgba(251,191,36,.15) 100%);outline:none;cursor:pointer;}
-.calc-slider::-webkit-slider-thumb{-webkit-appearance:none;width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#F59E0B);border:6px solid #fff;box-shadow:0 0 0 5px rgba(251,191,36,.3),0 14px 32px rgba(251,191,36,.6);cursor:pointer;}
-.calc-marks{display:flex;justify-content:space-between;margin-top:18px;font-size:11.5px;font-weight:800;color:rgba(255,255,255,.6);flex-wrap:wrap;gap:6px;}
-.calc-marks span.active{color:var(--gold);}
-.calc-result{position:relative;padding:32px 26px;border-radius:26px;background:linear-gradient(135deg,rgba(251,191,36,.13),rgba(37,99,235,.18));border:1px dashed rgba(251,191,36,.42);text-align:center;overflow:hidden;}
-.calc-result-icon{position:relative;width:72px;height:72px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;border-radius:50%;background:linear-gradient(135deg,var(--gold),#F59E0B);color:#0A2540;font-size:30px;animation:calcIconBounce 2.5s ease-in-out infinite;}
-@keyframes calcIconBounce{0%,100%{transform:translateY(0) rotate(0);}50%{transform:translateY(-9px) rotate(-8deg);}}
-.calc-result-text{font-family:"Tiro Devanagari Hindi",serif;font-size:clamp(1.05rem,2.6vw,1.5rem);font-weight:900;line-height:1.55;color:#fff;padding-top:4px;}
-.calc-result-text strong{color:var(--gold);}
-.calc-result-en{display:block;margin-top:11px;font-size:12.5px;color:rgba(255,255,255,.68);font-style:italic;}
-.calc-level{margin-top:24px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);}
-.calc-level-label{display:flex;justify-content:space-between;margin-bottom:11px;font-size:11px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.62);}
-.calc-level-name{color:var(--gold);font-weight:900;font-size:13px;}
-.calc-level-track{width:100%;height:9px;border-radius:10px;background:rgba(255,255,255,.08);overflow:hidden;}
-.calc-level-fill{height:100%;width:2%;border-radius:10px;background:linear-gradient(90deg,#2563EB,var(--gold),#F59E0B);transition:width .35s;}
-.calc-cta{display:flex;justify-content:center;gap:14px;margin-top:34px;flex-wrap:wrap;}
-@media(max-width:640px){.calc-box{padding:60px 20px 28px;}.calc-badge{top:14px;left:50%;right:auto;transform:translateX(-50%);font-size:9px;padding:6px 12px;}.calc-amount-value{font-size:70px;}}
-.impact-section{background:linear-gradient(135deg,#0A2540 0%,#1E40AF 55%,#0A2540 100%);color:#fff;padding:100px 0;position:relative;overflow:hidden;}
-.impact-section::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle,rgba(255,255,255,.05) 1px,transparent 1px);background-size:28px 28px;opacity:.5;pointer-events:none;}
-.impact-section .section-title h2{color:#fff;}
-.impact-section .section-title h2 span{color:var(--gold);}
-.impact-section .section-title .small-title{color:var(--gold);}
-.impact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;position:relative;z-index:2;}
-.impact-ring-card{padding:30px 20px;border-radius:24px;background:rgba(255,255,255,.05);backdrop-filter:blur(10px);border:1.5px solid rgba(255,255,255,.15);text-align:center;transition:.5s;cursor:pointer;}
-.impact-ring-card:hover{transform:translateY(-10px);border-color:var(--gold);box-shadow:0 25px 60px rgba(251,191,36,.3);}
-.ring-wrap{position:relative;width:140px;height:140px;margin:0 auto 18px;}
-.ring-wrap svg{width:100%;height:100%;transform:rotate(-90deg);}
-.ring-bg{fill:none;stroke:rgba(255,255,255,.1);stroke-width:8;}
-.ring-fill{fill:none;stroke:url(#ringGradient);stroke-width:8;stroke-linecap:round;stroke-dasharray:326.7;stroke-dashoffset:326.7;transition:stroke-dashoffset 4s ease-in-out;filter:drop-shadow(0 0 8px rgba(251,191,36,.6));}
-.ring-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
-.ring-center i{font-size:1.5rem;color:var(--gold);margin-bottom:6px;}
-.ring-center strong{font-family:"Poppins",sans-serif;font-size:1.5rem;font-weight:900;color:#fff;line-height:1;}
-.ring-card-title{font-family:"Tiro Devanagari Hindi",serif;font-size:.95rem;font-weight:900;color:#fff;margin-bottom:4px;padding-top:4px;}
-.ring-card-sub{font-size:.68rem;color:rgba(255,255,255,.6);font-weight:700;text-transform:uppercase;letter-spacing:.08em;}
-@media(max-width:1100px){.impact-grid{grid-template-columns:repeat(2,1fr);}}
-@media(max-width:800px){.impact-grid{grid-template-columns:1fr;}}
-.goal-section{padding:80px 0;background:radial-gradient(circle at 20% 10%,rgba(30,91,204,.06),transparent 30%),radial-gradient(circle at 80% 90%,rgba(251,191,36,.08),transparent 30%),#F8FAFC;}
-.goal-box{max-width:1000px;margin:auto;padding:48px 42px;border-radius:32px;background:#fff;border:2px solid rgba(30,91,204,.12);box-shadow:0 30px 75px rgba(10,37,64,.1);position:relative;overflow:hidden;}
-.goal-box::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:linear-gradient(90deg,#2563EB,#FBBF24,#2563EB);}
-.goal-head{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:24px;padding-bottom:22px;border-bottom:1px dashed rgba(30,91,204,.15);}
-.goal-head-left{display:flex;align-items:center;gap:16px;flex:1;}
-.goal-head-icon{width:64px;height:64px;flex:0 0 64px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(145deg,#2563EB,#1E40AF);color:var(--gold);font-size:1.6rem;box-shadow:0 12px 28px rgba(37,99,235,.4);}
-.goal-head-text h3{font-family:"Tiro Devanagari Hindi",serif;font-size:clamp(1.1rem,2.5vw,1.5rem);font-weight:900;color:var(--navy);line-height:1.3;margin-bottom:4px;padding-top:3px;}
-.goal-head-text p{font-size:.85rem;color:var(--muted);font-weight:700;}
-.goal-circle-percent{position:relative;width:110px;height:110px;flex:0 0 110px;}
-.goal-circle-percent svg{width:100%;height:100%;transform:rotate(-90deg);}
-.goal-circle-bg{fill:none;stroke:rgba(30,91,204,.1);stroke-width:8;}
-.goal-circle-fill{fill:none;stroke:url(#goalGrad);stroke-width:8;stroke-linecap:round;stroke-dasharray:326.7;stroke-dashoffset:326.7;transition:stroke-dashoffset 1.5s ease;filter:drop-shadow(0 0 10px rgba(251,191,36,.7));}
-.goal-circle-text{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:"Poppins",sans-serif;font-size:1.7rem;font-weight:900;color:var(--blue-2);}
-.goal-work-select{margin-bottom:26px;}
-.goal-work-select label{display:block;margin-bottom:10px;font-family:"Tiro Devanagari Hindi",serif;font-size:14px;font-weight:900;color:var(--navy);}
-.goal-work-dropdown{position:relative;}
-.goal-work-dropdown select{width:100%;appearance:none;padding:15px 55px 15px 20px;border-radius:16px;background:#F8FAFC;border:2px solid rgba(30,91,204,.15);color:var(--navy);font-family:inherit;font-size:14.5px;font-weight:800;cursor:pointer;outline:none;}
-.goal-work-dropdown i{position:absolute;right:20px;top:50%;transform:translateY(-50%);color:var(--blue-2);pointer-events:none;}
-.goal-progress-wrap{margin-bottom:22px;}
-.goal-progress{height:22px;background:#EFF4FB;border-radius:100px;overflow:hidden;box-shadow:inset 0 2px 6px rgba(15,23,42,.06);}
-.goal-progress-fill{height:100%;width:0%;background:linear-gradient(90deg,#2563EB,#FBBF24);border-radius:100px;transition:width 1.5s cubic-bezier(.2,.8,.3,1);position:relative;}
-.goal-progress-fill::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.5),transparent);animation:goalShimmer 2s infinite;border-radius:100px;}
-@keyframes goalShimmer{0%{transform:translateX(-100%);}100%{transform:translateX(100%);}}
-.goal-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
-.goal-stat{padding:18px;border-radius:16px;background:#F8FAFC;border:1px solid rgba(30,91,204,.12);text-align:center;}
-.goal-stat strong{display:block;font-family:"Poppins",sans-serif;font-size:1.3rem;font-weight:900;color:var(--navy);margin-bottom:6px;}
-.goal-stat span{font-size:.7rem;color:var(--muted);font-weight:800;text-transform:uppercase;}
-.goal-stat.raised strong{color:var(--blue-2);}
-.goal-stat.target strong{color:var(--gold-dark);}
-.total-section{padding:80px 0;background:linear-gradient(135deg,#0A2540 0%,#1E40AF 55%,#0A2540 100%);color:#fff;}
-.total-section .section-title h2{color:#fff;}
-.total-section .section-title h2 span{color:var(--gold);}
-.total-section .section-title .small-title{color:var(--gold);}
-.total-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:auto;}
-.total-box{position:relative;padding:36px 28px 32px;border-radius:28px;background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.03));border:1.5px solid rgba(251,191,36,.2);backdrop-filter:blur(20px);text-align:center;transition:.45s;display:flex;flex-direction:column;align-items:center;gap:14px;}
-.total-box:hover{transform:translateY(-10px);border-color:var(--gold);box-shadow:0 30px 65px rgba(251,191,36,.25);}
-.total-circle{position:relative;width:120px;height:120px;}
-.total-circle svg{width:100%;height:100%;transform:rotate(-90deg);}
-.total-circle-bg{fill:none;stroke:rgba(255,255,255,.12);stroke-width:8;}
-.total-circle-fill{fill:none;stroke:url(#totalGrad);stroke-width:8;stroke-linecap:round;stroke-dasharray:326.7;stroke-dashoffset:326.7;transition:stroke-dashoffset 1.8s ease;filter:drop-shadow(0 0 10px rgba(251,191,36,.7));}
-.total-circle-text{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:"Poppins",sans-serif;font-size:1.8rem;font-weight:900;color:var(--gold);}
-.total-value{font-family:"Poppins",sans-serif;font-size:clamp(1.6rem,3.6vw,2.5rem);font-weight:900;color:var(--gold);line-height:1;}
-.total-label{font-family:"Tiro Devanagari Hindi",serif;font-size:15px;font-weight:900;color:#fff;padding-top:4px;}
-.total-label-en{font-size:11px;color:rgba(255,255,255,.6);font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
-@media(max-width:800px){.total-grid{grid-template-columns:1fr;}}
+
+/* ═══════════════════════════════════════════════════════════
+   PREMIUM IMPACT DASHBOARD — 4 Sections (Dark Theme, Scoped)
+   ═══════════════════════════════════════════════════════════ */
+.impact-dashboard{
+  --bg-dark:#050B14;
+  --bg-card:rgba(15,23,42,0.6);
+  --border-glass:rgba(255,255,255,0.08);
+  --gold:#FBBF24;
+  --gold-light:#FCD34D;
+  --gold-dark:#D97706;
+  --emerald:#10B981;
+  --text-main:#F8FAFC;
+  --text-muted:#94A3B8;
+  --glow-gold:0 0 30px rgba(251,191,36,0.3);
+  --dash-font-display:'Playfair Display',serif;
+  --dash-font-body:'Plus Jakarta Sans',sans-serif;
+  --dash-font-hindi:'Tiro Devanagari Hindi',serif;
+  --dash-font-num:'Bebas Neue',sans-serif;
+  background:var(--bg-dark);
+  color:var(--text-main);
+  padding:80px 20px;
+  position:relative;
+  overflow:hidden;
+  font-family:var(--dash-font-body);
+  line-height:1.6;
+}
+.impact-dashboard::before{
+  content:"";position:absolute;top:-20%;left:-10%;width:60vw;height:60vw;
+  background:radial-gradient(circle,rgba(251,191,36,0.08) 0%,transparent 60%);
+  border-radius:50%;pointer-events:none;
+}
+.impact-dashboard::after{
+  content:"";position:absolute;bottom:-20%;right:-10%;width:70vw;height:70vw;
+  background:radial-gradient(circle,rgba(16,185,129,0.05) 0%,transparent 60%);
+  border-radius:50%;pointer-events:none;
+}
+.impact-dashboard > .container{
+  display:flex;flex-direction:column;gap:100px;position:relative;z-index:1;
+  width:min(1240px,92%);margin:0 auto;
+}
+.impact-dashboard .sec-header{text-align:center;margin-bottom:50px;}
+.impact-dashboard .sec-header .badge{
+  display:inline-flex;align-items:center;gap:8px;padding:8px 20px;
+  background:rgba(251,191,36,0.1);border:1px solid rgba(251,191,36,0.3);
+  border-radius:100px;color:var(--gold);font-size:0.75rem;font-weight:800;
+  letter-spacing:2px;text-transform:uppercase;margin-bottom:16px;
+  box-shadow:var(--glow-gold);
+}
+.impact-dashboard .sec-header h2{
+  font-family:var(--dash-font-display);font-size:clamp(2rem,4vw,3rem);
+  font-weight:700;color:#fff;letter-spacing:-0.5px;
+}
+.impact-dashboard .sec-header h2 em{
+  font-style:normal;font-family:var(--dash-font-hindi);color:var(--gold);
+  display:block;margin-top:8px;font-size:clamp(1.5rem,3vw,2rem);
+}
+.impact-dashboard .calc-wrapper{
+  background:var(--bg-card);border:1px solid var(--border-glass);
+  border-radius:32px;backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  box-shadow:0 40px 80px rgba(0,0,0,0.6),inset 0 1px 0 rgba(255,255,255,0.1);
+  display:grid;grid-template-columns:1fr 1fr;overflow:hidden;
+}
+.impact-dashboard .calc-controls{
+  padding:50px;border-right:1px solid var(--border-glass);
+  display:flex;flex-direction:column;gap:40px;
+}
+.impact-dashboard .premium-select-box{position:relative;}
+.impact-dashboard .premium-select-box label{
+  display:block;font-size:0.75rem;font-weight:800;color:var(--text-muted);
+  letter-spacing:1.5px;text-transform:uppercase;margin-bottom:12px;
+}
+.impact-dashboard .custom-select{
+  width:100%;appearance:none;padding:18px 24px;border-radius:16px;
+  background:rgba(255,255,255,0.03);border:1px solid var(--border-glass);
+  color:#fff;font-family:var(--dash-font-hindi);font-size:1.05rem;font-weight:700;
+  cursor:pointer;outline:none;transition:all 0.3s;
+  box-shadow:inset 0 2px 4px rgba(0,0,0,0.2);
+}
+.impact-dashboard .custom-select:focus{
+  border-color:var(--gold);box-shadow:0 0 0 4px rgba(251,191,36,0.15);
+}
+.impact-dashboard .custom-select option{background:#0F172A;color:#fff;padding:10px;}
+.impact-dashboard .select-icon{
+  position:absolute;right:24px;top:55px;color:var(--gold);
+  pointer-events:none;font-size:1.2rem;
+}
+.impact-dashboard .slider-header{
+  display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:20px;
+}
+.impact-dashboard .slider-header p{
+  font-size:0.75rem;font-weight:800;color:var(--text-muted);
+  letter-spacing:1.5px;text-transform:uppercase;
+}
+.impact-dashboard .amount-display{
+  font-family:var(--dash-font-num);font-size:4.5rem;line-height:1;
+  letter-spacing:1px;color:var(--gold);text-shadow:var(--glow-gold);
+  transition:transform 0.2s cubic-bezier(0.2,0.8,0.3,1.4);
+  display:flex;align-items:baseline;
+}
+.impact-dashboard .amount-display.pulse-amt{transform:scale(1.1);}
+.impact-dashboard .trust-badge{
+  display:inline-flex;align-items:center;gap:6px;margin-top:10px;
+  font-size:0.7rem;font-weight:700;color:var(--emerald);
+  background:rgba(16,185,129,0.1);padding:4px 12px;border-radius:100px;
+  border:1px solid rgba(16,185,129,0.2);
+}
+.impact-dashboard .slider-track-wrapper{
+  position:relative;height:8px;margin:25px 0 15px;border-radius:10px;
+  background:rgba(255,255,255,0.08);
+}
+.impact-dashboard .slider-fill{
+  position:absolute;top:0;left:0;height:100%;width:0%;border-radius:10px;
+  background:linear-gradient(90deg,var(--gold-dark),var(--gold),var(--gold-light));
+  box-shadow:0 0 15px rgba(251,191,36,0.6);pointer-events:none;transition:width 0.1s;
+}
+.impact-dashboard .custom-slider{
+  -webkit-appearance:none;position:absolute;top:-12px;left:0;
+  width:100%;height:32px;background:transparent;outline:none;
+  cursor:pointer;z-index:2;
+}
+.impact-dashboard .custom-slider::-webkit-slider-thumb{
+  -webkit-appearance:none;width:32px;height:32px;border-radius:50%;
+  background:linear-gradient(135deg,#fff,#E2E8F0);border:4px solid var(--gold);
+  box-shadow:0 0 20px rgba(251,191,36,0.8),0 10px 20px rgba(0,0,0,0.4);
+  cursor:grab;transition:transform 0.2s,box-shadow 0.2s;
+}
+.impact-dashboard .custom-slider::-webkit-slider-thumb:hover{
+  transform:scale(1.15);
+  box-shadow:0 0 30px rgba(251,191,36,1),0 10px 20px rgba(0,0,0,0.5);
+}
+.impact-dashboard .custom-slider::-moz-range-track{
+  background:transparent;height:32px;border:none;
+}
+.impact-dashboard .custom-slider::-moz-range-thumb{
+  width:24px;height:24px;border-radius:50%;background:#fff;
+  border:4px solid var(--gold);cursor:grab;
+}
+.impact-dashboard .quick-chips{
+  display:flex;gap:10px;flex-wrap:wrap;margin-bottom:15px;
+}
+.impact-dashboard .chip{
+  padding:8px 16px;background:rgba(255,255,255,0.03);
+  border:1px solid var(--border-glass);border-radius:100px;
+  color:var(--text-main);font-family:var(--dash-font-num);font-size:1rem;
+  letter-spacing:1px;cursor:pointer;transition:all 0.3s;
+}
+.impact-dashboard .chip:hover{
+  background:rgba(251,191,36,0.1);border-color:var(--gold);color:var(--gold);
+}
+.impact-dashboard .chip.active{
+  background:var(--gold);color:#000;border-color:var(--gold);
+  box-shadow:0 0 15px rgba(251,191,36,0.5);
+}
+.impact-dashboard .slider-ticks{
+  display:flex;justify-content:space-between;font-family:var(--dash-font-num);
+  font-size:1rem;letter-spacing:1px;color:var(--text-muted);
+}
+.impact-dashboard .slider-ticks span.active{color:var(--gold);}
+.impact-dashboard .calc-preview{
+  padding:50px;display:flex;flex-direction:column;justify-content:center;
+  align-items:center;text-align:center;
+  background:radial-gradient(circle at center,rgba(251,191,36,0.05),transparent 70%);
+  position:relative;
+}
+.impact-dashboard .preview-icon{
+  width:90px;height:90px;border-radius:50%;background:rgba(251,191,36,0.1);
+  border:1px solid rgba(251,191,36,0.3);display:grid;place-items:center;
+  font-size:2.5rem;color:var(--gold);margin-bottom:30px;
+  box-shadow:0 0 40px rgba(251,191,36,0.2),inset 0 0 20px rgba(251,191,36,0.1);
+  animation:dash-floatIcon 3s ease-in-out infinite;
+}
+@keyframes dash-floatIcon{
+  0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}
+}
+.impact-dashboard .preview-text-hi{
+  font-family:var(--dash-font-hindi);font-size:1.5rem;font-weight:700;
+  line-height:1.6;color:#fff;margin-bottom:12px;
+}
+.impact-dashboard .preview-text-hi strong{color:var(--gold);font-size:1.6rem;}
+.impact-dashboard .preview-text-en{
+  font-size:0.95rem;color:var(--text-muted);font-style:italic;
+  max-width:80%;margin:0 auto;
+}
+.impact-dashboard .impact-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+}
+.impact-dashboard .impact-card{
+  background:var(--bg-card);border:1px solid var(--border-glass);
+  border-radius:24px;padding:40px 20px 30px;text-align:center;
+  transition:all 0.4s cubic-bezier(0.2,0.8,0.3,1);
+  backdrop-filter:blur(10px);position:relative;overflow:hidden;
+}
+.impact-dashboard .impact-card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.2),transparent);
+}
+.impact-dashboard .impact-card:hover{
+  transform:translateY(-12px);border-color:rgba(251,191,36,0.4);
+  box-shadow:0 30px 60px rgba(0,0,0,0.5),var(--glow-gold);
+}
+.impact-dashboard .ring-container{
+  position:relative;width:140px;height:140px;margin:0 auto 24px;
+}
+.impact-dashboard .ring-container svg{
+  width:100%;height:100%;transform:rotate(-90deg);
+}
+.impact-dashboard .ring-bg{
+  fill:none;stroke:rgba(255,255,255,0.05);stroke-width:6;
+}
+.impact-dashboard .ring-fill{
+  fill:none;stroke:url(#goldGradient);stroke-width:6;stroke-linecap:round;
+  stroke-dasharray:326.7;stroke-dashoffset:326.7;
+  transition:stroke-dashoffset 2.5s cubic-bezier(0.2,0.8,0.3,1);
+  filter:drop-shadow(0 0 8px rgba(251,191,36,0.8));
+}
+.impact-dashboard .ring-content{
+  position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;
+}
+.impact-dashboard .ring-content i{
+  font-size:1.2rem;color:var(--gold);margin-bottom:6px;
+}
+.impact-dashboard .ring-content .val{
+  font-family:var(--dash-font-num);font-size:2rem;letter-spacing:1px;color:#fff;
+}
+.impact-dashboard .impact-card h3{
+  font-family:var(--dash-font-hindi);font-size:1.1rem;font-weight:700;
+  color:#fff;margin-bottom:6px;
+}
+.impact-dashboard .impact-card p{
+  font-size:0.75rem;font-weight:700;color:var(--text-muted);
+  text-transform:uppercase;letter-spacing:1px;
+}
+.impact-dashboard .goal-wrapper{
+  background:var(--bg-card);border:1px solid var(--border-glass);
+  border-radius:32px;padding:50px;backdrop-filter:blur(24px);
+  box-shadow:0 40px 80px rgba(0,0,0,0.6);max-width:900px;margin:0 auto;
+  display:flex;gap:50px;align-items:center;
+}
+.impact-dashboard .goal-left{flex:1;}
+.impact-dashboard .goal-left .badge-sm{
+  display:inline-block;font-size:0.7rem;font-weight:800;color:var(--gold);
+  letter-spacing:1.5px;text-transform:uppercase;margin-bottom:10px;
+}
+.impact-dashboard .goal-left h3{
+  font-family:var(--dash-font-hindi);font-size:1.8rem;font-weight:900;
+  color:#fff;margin-bottom:30px;
+}
+.impact-dashboard .goal-left select{
+  width:100%;padding:16px 20px;border-radius:12px;
+  background:rgba(0,0,0,0.3);border:1px solid var(--border-glass);
+  color:#fff;font-family:var(--dash-font-hindi);font-size:1rem;font-weight:600;
+  outline:none;margin-bottom:30px;cursor:pointer;appearance:none;
+}
+.impact-dashboard .goal-progress-track{
+  height:16px;background:rgba(0,0,0,0.4);border-radius:10px;overflow:hidden;
+  margin-bottom:20px;box-shadow:inset 0 2px 4px rgba(0,0,0,0.3);
+  border:1px solid rgba(255,255,255,0.05);
+}
+.impact-dashboard .goal-progress-fill{
+  height:100%;width:0%;background:linear-gradient(90deg,var(--emerald),var(--gold));
+  border-radius:10px;transition:width 1.5s cubic-bezier(0.2,0.8,0.3,1);
+  box-shadow:0 0 15px rgba(16,185,129,0.5);position:relative;
+}
+.impact-dashboard .goal-progress-fill::after{
+  content:"";position:absolute;top:0;left:0;right:0;bottom:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,0.3),transparent);
+  animation:dash-shimmer 2s infinite;
+}
+@keyframes dash-shimmer{
+  0%{transform:translateX(-100%);}100%{transform:translateX(100%);}
+}
+.impact-dashboard .goal-stats-row{
+  display:flex;justify-content:space-between;gap:15px;
+}
+.impact-dashboard .g-stat{text-align:center;}
+.impact-dashboard .g-stat h4{
+  font-family:var(--dash-font-num);font-size:1.6rem;letter-spacing:1px;
+  color:#fff;margin-bottom:4px;
+}
+.impact-dashboard .g-stat.raised h4{color:var(--gold);}
+.impact-dashboard .g-stat span{
+  font-size:0.7rem;font-weight:700;color:var(--text-muted);
+  text-transform:uppercase;
+}
+.impact-dashboard .goal-right{
+  flex:0 0 200px;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;position:relative;
+}
+.impact-dashboard .big-circle{
+  width:160px;height:160px;position:relative;
+}
+.impact-dashboard .big-circle svg{
+  width:100%;height:100%;transform:rotate(-90deg);
+}
+.impact-dashboard .big-circle-bg{
+  fill:none;stroke:rgba(255,255,255,0.05);stroke-width:12;
+}
+.impact-dashboard .big-circle-fill{
+  fill:none;stroke:url(#goldGradient);stroke-width:12;stroke-linecap:round;
+  stroke-dasharray:326.7;stroke-dashoffset:326.7;
+  transition:stroke-dashoffset 1.5s ease-out;
+  filter:drop-shadow(0 0 10px rgba(251,191,36,0.6));
+}
+.impact-dashboard .big-circle-text{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:var(--dash-font-num);font-size:2.5rem;letter-spacing:1px;
+  color:var(--gold);
+}
+.impact-dashboard .total-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:30px;
+  max-width:1000px;margin:0 auto;
+}
+.impact-dashboard .total-card{
+  background:linear-gradient(180deg,rgba(255,255,255,0.05),transparent);
+  border:1px solid var(--border-glass);border-radius:24px;padding:40px 30px;
+  text-align:center;position:relative;overflow:hidden;transition:0.4s;
+}
+.impact-dashboard .total-card::after{
+  content:"";position:absolute;bottom:0;left:0;right:0;height:3px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  opacity:0.5;
+}
+.impact-dashboard .total-card:hover{
+  transform:translateY(-8px);
+  background:linear-gradient(180deg,rgba(255,255,255,0.08),transparent);
+}
+.impact-dashboard .total-circle{
+  width:120px;height:120px;margin:0 auto 25px;position:relative;
+}
+.impact-dashboard .total-circle svg{
+  width:100%;height:100%;transform:rotate(-90deg);
+}
+.impact-dashboard .total-ring-bg{
+  fill:none;stroke:rgba(255,255,255,0.08);stroke-width:8;
+}
+.impact-dashboard .total-ring-fill{
+  fill:none;stroke:url(#goldGradient);stroke-width:8;stroke-linecap:round;
+  stroke-dasharray:326.7;stroke-dashoffset:326.7;
+  transition:stroke-dashoffset 2s ease-out;
+}
+.impact-dashboard .total-ring-text{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  font-family:var(--dash-font-num);font-size:2rem;letter-spacing:1px;
+  color:var(--gold);
+}
+.impact-dashboard .total-value{
+  font-family:var(--dash-font-num);font-size:2.8rem;letter-spacing:1px;
+  color:var(--gold);line-height:1;margin-bottom:8px;
+}
+.impact-dashboard .total-label{
+  font-family:var(--dash-font-hindi);font-size:1.1rem;font-weight:700;
+  color:#fff;margin-bottom:4px;
+}
+.impact-dashboard .total-sub{
+  font-size:0.75rem;color:var(--text-muted);font-weight:600;
+  text-transform:uppercase;letter-spacing:1px;
+}
+@media (max-width:992px){
+  .impact-dashboard .calc-wrapper{grid-template-columns:1fr;}
+  .impact-dashboard .calc-controls{
+    border-right:none;border-bottom:1px solid var(--border-glass);padding:30px;
+  }
+  .impact-dashboard .calc-preview{padding:40px 30px;}
+  .impact-dashboard .impact-grid{grid-template-columns:repeat(2,1fr);}
+  .impact-dashboard .goal-wrapper{
+    flex-direction:column;text-align:center;padding:30px;gap:30px;
+  }
+  .impact-dashboard .goal-stats-row{justify-content:center;gap:30px;}
+}
+@media (max-width:768px){
+  .impact-dashboard{padding:60px 15px;}
+  .impact-dashboard .impact-grid{grid-template-columns:1fr;}
+  .impact-dashboard .total-grid{grid-template-columns:1fr;}
+  .impact-dashboard .amount-display{font-size:3.5rem;}
+  .impact-dashboard .preview-text-hi{font-size:1.2rem;}
+  .impact-dashboard .preview-text-hi strong{font-size:1.3rem;}
+  .impact-dashboard > .container{gap:60px;}
+}
+
 .upcoming-section{background:radial-gradient(circle at 12% 15%,rgba(251,191,36,.07),transparent 28%),#F8FAFC;padding:100px 0;overflow:hidden;}
 .upcoming-marquee-wrap{position:relative;overflow:hidden;padding:20px 0;mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 5%,#000 95%,transparent);}
 .upcoming-marquee-track{display:flex;gap:22px;animation:upcomingScroll 90s linear infinite;width:max-content;}
@@ -609,10 +891,12 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   .footer-legal a{font-size:.58rem;padding:3px 3px;}
   .footer-legal span{font-size:.58rem;}
 }
-.wa-float{position:fixed;left:20px;bottom:20px;z-index:8000;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;border-radius:50%;font-size:26px;box-shadow:0 12px 30px rgba(37,211,102,.4);}
-.back-top{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#2563EB,#1E40AF);color:#fff;cursor:pointer;z-index:1000;display:grid;place-items:center;opacity:0;visibility:hidden;transition:.3s;box-shadow:0 10px 28px rgba(37,99,235,.45);}
+.wa-float{position:fixed;left:20px;bottom:20px;z-index:8000;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;border-radius:50%;font-size:26px;box-shadow:0 12px 30px rgba(37,211,102,.4);transition:bottom .3s;}
+.back-top{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#2563EB,#1E40AF);color:#fff;cursor:pointer;z-index:1000;display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s,transform .3s,bottom .3s;box-shadow:0 10px 28px rgba(37,99,235,.45);}
 .back-top.show{opacity:1;visibility:visible;}
 .back-top:hover{transform:translateY(-4px);}
+body.pd-bar-open .wa-float{bottom:130px;}
+body.pd-bar-open .back-top{bottom:130px;}
 .donate-popup{position:fixed;inset:0;z-index:99990;background:rgba(10,37,64,.9);backdrop-filter:blur(15px);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:.4s;}
 .donate-popup.show{opacity:1;visibility:visible;}
 .donate-popup-box{position:relative;width:min(480px,100%);padding:44px 32px 36px;background:linear-gradient(135deg,#fffdf5,#fff5d4);border-radius:30px;text-align:center;box-shadow:0 40px 100px rgba(0,0,0,.5),0 0 0 4px rgba(251,191,36,.3);transform:scale(.85);transition:.45s cubic-bezier(.2,.8,.2,1);}
@@ -646,11 +930,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 @keyframes popupOrbitCounter{from{transform:translate(-50%,-50%) rotate(calc(-1 * var(--a))) rotate(0);}to{transform:translate(-50%,-50%) rotate(calc(-1 * var(--a))) rotate(-360deg);}}
 .popup-rupee-core{position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;width:130px;height:130px;border-radius:50%;z-index:8;perspective:800px;}
 .popup-coin{position:absolute;inset:0;transform-style:preserve-3d;animation:popupCoinFlip 4s ease-in-out infinite;}
-@keyframes popupCoinFlip{
-  0%,40%   { transform:rotateY(0deg); }
-  50%,90%  { transform:rotateY(180deg); }
-  100%     { transform:rotateY(360deg); }
-}
+@keyframes popupCoinFlip{0%,40%{transform:rotateY(0deg);}50%,90%{transform:rotateY(180deg);}100%{transform:rotateY(360deg);}}
 .popup-coin-face{position:absolute;inset:0;border-radius:50%;display:flex;align-items:center;justify-content:center;text-align:center;backface-visibility:hidden;-webkit-backface-visibility:hidden;}
 .popup-coin-front{background:radial-gradient(circle at 35% 28%,#fffbe0 0%,#ffd83d 35%,#e5b432 70%,#a87c17 100%);border:6px solid #f4c542;box-shadow:0 0 0 3px #8b6312,0 25px 60px rgba(139,99,18,.45),0 0 60px rgba(244,197,66,.5),inset 0 -10px 25px rgba(0,0,0,.18),inset 0 8px 20px rgba(255,255,255,.55);}
 .popup-coin-front::before{content:"";position:absolute;top:8%;left:14%;width:42%;height:28%;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.9),transparent 70%);filter:blur(8px);pointer-events:none;}
@@ -712,9 +992,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 @media(max-width:600px){.brand-name{font-size:clamp(1rem,4vw,1.15rem);white-space:normal;line-height:1.3;}.brand-tagline{font-size:.62rem;white-space:normal;}.logo-box{width:54px;height:54px;}}
 @media(max-width:380px){.brand-name{font-size:1rem;}.brand-tagline{font-size:.6rem;}.logo-box{width:50px;height:50px;}}
 
-/* ═══════════════════════════════════════════════════════════
-   PANCH DAAN SECTION
-   ═══════════════════════════════════════════════════════════ */
 .pd-section { background: #F8FAFC; padding: 60px 0 100px; position: relative; }
 .pd-banner { background: linear-gradient(135deg, #0A2540, #1E40AF); padding: 50px 20px; text-align: center; color: #fff; border-radius: 0 0 40px 40px; box-shadow: 0 20px 40px rgba(10,37,64,0.15); position: relative; overflow: hidden; margin-bottom: 50px; }
 .pd-banner::before { content: "✨"; position: absolute; top: -10px; left: 10%; font-size: 80px; opacity: 0.1; }
@@ -726,6 +1003,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 
 .pd-tabs-wrapper { display: flex; justify-content: center; gap: 12px; margin-bottom: 45px; flex-wrap: wrap; }
 .pd-tab-btn { background: #fff; border: 2px solid transparent; border-radius: 100px; padding: 14px 28px; text-align: center; cursor: pointer; box-shadow: 0 8px 20px rgba(0,0,0,0.04); transition: all 0.3s cubic-bezier(0.2, 0.8, 0.3, 1); display: flex; align-items: center; gap: 10px; }
+.pd-tab-btn:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
 .pd-tab-btn i { font-size: 1.3rem; color: var(--text-muted); transition: all 0.3s; }
 .pd-tab-btn span { font-family: "Tiro Devanagari Hindi", serif; font-size: 1.05rem; font-weight: 900; color: var(--navy); }
 .pd-tab-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 25px rgba(0,0,0,0.08); }
@@ -744,6 +1022,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 .pd-grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
 
 .pd-card { background: #fff; border: 2px solid #F1F5F9; border-radius: 24px; padding: 28px; cursor: pointer; transition: all 0.3s ease; position: relative; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.02); }
+.pd-card:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
 .pd-card:hover { border-color: #DBEAFE; box-shadow: 0 15px 35px rgba(37,99,235,0.08); transform: translateY(-5px); }
 .pd-card.selected { border-color: var(--blue); background: #F0F7FF; box-shadow: 0 15px 35px rgba(37,99,235,0.15); transform: translateY(-5px); }
 .pd-card.selected::after { content: "\f058"; font-family: "Font Awesome 6 Free"; font-weight: 900; position: absolute; top: 20px; right: 20px; color: var(--blue); font-size: 1.6rem; animation: popIn 0.3s cubic-bezier(0.2, 0.8, 0.3, 1.4); }
@@ -825,6 +1104,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
     70% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(220, 38, 38, 0); }
     100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
 }
+.auto-note { font-size: 0.72rem; color: var(--muted); margin-top: 10px; text-align: center; font-weight: 600; }
 </style>
 </head>
 
@@ -917,7 +1197,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </nav>
 </header>
 
-<!-- HERO -->
 <section class="hero" id="home">
   <div class="hero-slide active" style="background-image:url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=2000&q=85');"></div>
   <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1524069290683-0457abfe42c3?auto=format&fit=crop&w=2000&q=85');"></div>
@@ -946,7 +1225,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- ORBIT -->
 <section class="orbit-section" id="rupee">
   <div class="orbit reveal">
     <div class="orbit-ring r1"></div>
@@ -968,7 +1246,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- SMILE STRIP -->
 <section class="smile-strip">
   <div class="container">
     <div class="banner">
@@ -985,7 +1262,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- DAILY -->
 <section class="daily-section" id="daily">
   <div class="container">
     <div class="section-title">
@@ -1017,11 +1293,11 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
         <button class="btn btn-red btn-xl pulse-red-daily" id="dailyDonate" type="button"><i data-lucide="heart-handshake"></i> DONATE NOW</button>
       </div>
       <p class="daily-foot">आपका हर दिन का छोटा सा सहयोग — किसी की बड़ी मुस्कान 😊</p>
+      <p class="auto-note">ℹ️ पहले महीने का charge अभी होगा · Auto-renew नहीं · दोबारा आपकी सहमति से</p>
     </div>
   </div>
 </section>
 
-<!-- PANCH DAAN SECTION -->
 <section class="pd-section" id="panch-daan">
   <div class="pd-banner">
     <h1>पंच दान, महा दान अभियान</h1>
@@ -1029,72 +1305,70 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 
   <div class="pd-container">
-    <!-- TABS -->
     <div class="pd-tabs-wrapper">
-      <div class="pd-tab-btn active" onclick="switchPdTab('education', this)">
+      <div class="pd-tab-btn active" role="button" tabindex="0" onclick="switchPdTab('education', this)">
         <i class="fa-solid fa-book-open-reader"></i>
         <span>शिक्षा दान</span>
       </div>
-      <div class="pd-tab-btn" onclick="switchPdTab('food', this)">
+      <div class="pd-tab-btn" role="button" tabindex="0" onclick="switchPdTab('food', this)">
         <i class="fa-solid fa-bowl-food"></i>
         <span>अन्न दान</span>
       </div>
-      <div class="pd-tab-btn" onclick="switchPdTab('clothes', this)">
+      <div class="pd-tab-btn" role="button" tabindex="0" onclick="switchPdTab('clothes', this)">
         <i class="fa-solid fa-shirt"></i>
         <span>वस्त्र दान</span>
       </div>
-      <div class="pd-tab-btn" onclick="switchPdTab('water', this)">
+      <div class="pd-tab-btn" role="button" tabindex="0" onclick="switchPdTab('water', this)">
         <i class="fa-solid fa-droplet"></i>
         <span>जल दान</span>
       </div>
-      <div class="pd-tab-btn" onclick="switchPdTab('health', this)">
+      <div class="pd-tab-btn" role="button" tabindex="0" onclick="switchPdTab('health', this)">
         <i class="fa-solid fa-heart-pulse"></i>
         <span>स्वास्थ्य दान</span>
       </div>
     </div>
 
-    <!-- 1. EDUCATION TAB -->
     <div id="pd-tab-education" class="pd-content-area active">
       <div class="pd-section-title">शिक्षा दान (Education Donation)</div>
       <p class="pd-section-subtitle">स्लेट, पेंसिल, कॉपी, कलम, किताब - बच्चों की शिक्षा में सहयोग करें।</p>
       
       <div class="pd-grid-3">
-        <div class="pd-card" onclick="selectPdDonation(this, 'शिक्षा किट (1 बच्चे के लिए)', 100)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'शिक्षा किट (1 बच्चे के लिए)', 100)">
           <div class="pd-card-icon"><i class="fa-solid fa-pencil"></i></div>
           <h3>1 बच्चे की शिक्षा किट</h3>
           <p>स्लेट, पेंसिल, कॉपी, कलम, किताब</p>
           <div class="price">₹100</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'शिक्षा किट (5 बच्चों के लिए)', 500)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'शिक्षा किट (5 बच्चों के लिए)', 500)">
           <div class="pd-card-icon"><i class="fa-solid fa-box-open"></i></div>
           <h3>5 बच्चों की शिक्षा किट</h3>
           <p>5 बच्चों को पूरी स्टेशनरी</p>
           <div class="price">₹500</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'शिक्षा किट (10 बच्चों के लिए)', 1000)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'शिक्षा किट (10 बच्चों के लिए)', 1000)">
           <div class="pd-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
           <h3>10 बच्चों की शिक्षा किट</h3>
           <p>10 बच्चों को पूरी स्टेशनरी</p>
           <div class="price">₹1,000</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'शिक्षा किट (15 बच्चों के लिए)', 1500)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'शिक्षा किट (15 बच्चों के लिए)', 1500)">
           <div class="pd-card-icon"><i class="fa-solid fa-users"></i></div>
           <h3>15 बच्चों की शिक्षा किट</h3>
           <p>15 बच्चों को पूरी स्टेशनरी</p>
           <div class="price">₹1,500</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'शिक्षा किट (20 बच्चों के लिए)', 2000)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'शिक्षा किट (20 बच्चों के लिए)', 2000)">
           <div class="pd-card-icon"><i class="fa-solid fa-users"></i></div>
           <h3>20 बच्चों की शिक्षा किट</h3>
           <p>20 बच्चों को पूरी स्टेशनरी</p>
           <div class="price">₹2,000</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'शिक्षा किट (25 बच्चों के लिए)', 2500)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'शिक्षा किट (25 बच्चों के लिए)', 2500)">
           <div class="pd-card-icon"><i class="fa-solid fa-users"></i></div>
           <h3>25 बच्चों की शिक्षा किट</h3>
           <p>25 बच्चों को पूरी स्टेशनरी</p>
@@ -1103,15 +1377,12 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       </div>
     </div>
 
-    <!-- 2. FOOD TAB -->
     <div id="pd-tab-food" class="pd-content-area">
       <div class="pd-section-title">अन्न दान (Food Donation)</div>
       <p class="pd-section-subtitle">अपने खास मौकों को बच्चों और जरूरतमंदों के साथ मिलकर यादगार बनाएं।</p>
 
       <div class="pd-grid-2">
-        
-        <!-- Birthday: Nasta -->
-        <div class="pd-card" onclick="selectPdFood(this, 'जन्मदिन भोजन (नास्ता)', 250)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdFood(this, 'जन्मदिन भोजन (नास्ता)', 250)">
           <div class="pd-card-icon"><i class="fa-solid fa-cake-candles"></i></div>
           <h3>जन्मदिन भोजन (नास्ता)</h3>
           <p>आपका जन्मदिन, किसी बच्चे की मुस्कान।</p>
@@ -1133,8 +1404,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           </div>
         </div>
 
-        <!-- Birthday: Full Meal -->
-        <div class="pd-card" onclick="selectPdFood(this, 'जन्मदिन भोजन (फुल मील)', 300)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdFood(this, 'जन्मदिन भोजन (फुल मील)', 300)">
           <div class="pd-card-icon"><i class="fa-solid fa-utensils"></i></div>
           <h3>जन्मदिन भोजन (फुल मील)</h3>
           <p>आपका जन्मदिन, पूरे भोजन के साथ।</p>
@@ -1156,8 +1426,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           </div>
         </div>
 
-        <!-- Orphan Children (Only 300) -->
-        <div class="pd-card" onclick="selectPdFood(this, 'अनाथ बच्चे भोजन', 300)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdFood(this, 'अनाथ बच्चे भोजन', 300)">
           <div class="pd-card-icon"><i class="fa-solid fa-child-reaching"></i></div>
           <h3>अनाथ बच्चे भोजन</h3>
           <p>अनाथ बच्चों के साथ भोजन का आनंद।</p>
@@ -1179,8 +1448,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           </div>
         </div>
 
-        <!-- Anniversary -->
-        <div class="pd-card" onclick="selectPdFood(this, 'शादी सालगिरह भोजन', 300)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdFood(this, 'शादी सालगिरह भोजन', 300)">
           <div class="pd-card-icon"><i class="fa-solid fa-heart"></i></div>
           <h3>शादी सालगिरह भोजन</h3>
           <p>आपका शादी सालगिरह, किसी बच्चे की मुस्कान।</p>
@@ -1202,8 +1470,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           </div>
         </div>
 
-        <!-- Housewarming -->
-        <div class="pd-card" onclick="selectPdFood(this, 'गृहप्रवेश भोजन', 300)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdFood(this, 'गृहप्रवेश भोजन', 300)">
           <div class="pd-card-icon"><i class="fa-solid fa-house-chimney"></i></div>
           <h3>गृहप्रवेश भोजन</h3>
           <p>आपका गृहप्रवेश, किसी बच्चे की मुस्कान।</p>
@@ -1225,8 +1492,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           </div>
         </div>
 
-        <!-- Old Age Home -->
-        <div class="pd-card" onclick="selectPdFood(this, 'वृद्धजन आश्रम भोजन', 350)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdFood(this, 'वृद्धजन आश्रम भोजन', 350)">
           <div class="pd-card-icon"><i class="fa-solid fa-person-cane"></i></div>
           <h3>वृद्ध महिला / पुरुष आश्रम भोजन</h3>
           <p>किसी वृद्ध की मुस्कान बनें।</p>
@@ -1248,8 +1514,7 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           </div>
         </div>
 
-        <!-- Disabled -->
-        <div class="pd-card" onclick="selectPdFood(this, 'दिव्यांगजन भोजन', 350)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdFood(this, 'दिव्यांगजन भोजन', 350)">
           <div class="pd-card-icon"><i class="fa-solid fa-wheelchair"></i></div>
           <h3>दिव्यांग महिला / पुरुष / बच्चे भोजन</h3>
           <p>किसी दिव्यांग की मुस्कान बनें।</p>
@@ -1273,49 +1538,47 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       </div>
     </div>
 
-    <!-- 3. CLOTHES TAB -->
     <div id="pd-tab-clothes" class="pd-content-area">
       <div class="pd-section-title">वस्त्र दान (Clothing Donation)</div>
       <p class="pd-section-subtitle">जरूरतमंदों को सम्मानजनक वस्त्र प्रदान करें।</p>
       
       <div class="pd-grid-2">
-        <div class="pd-card" onclick="selectPdDonation(this, 'बच्चों के वस्त्र (1 सेट)', 500)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'बच्चों के वस्त्र (1 सेट)', 500)">
           <div class="pd-card-icon"><i class="fa-solid fa-child"></i></div>
           <h3>बच्चों के वस्त्र</h3>
           <p>1 बच्चे के लिए नए कपड़े</p>
           <div class="price">₹500 / सेट</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'अनाथ बच्चों के वस्त्र (1 सेट)', 500)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'अनाथ बच्चों के वस्त्र (1 सेट)', 500)">
           <div class="pd-card-icon"><i class="fa-solid fa-child-reaching"></i></div>
           <h3>अनाथ बच्चों के वस्त्र</h3>
           <p>1 अनाथ बच्चे के लिए नए कपड़े</p>
           <div class="price">₹500 / सेट</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'दिव्यांग / बच्चे / महिला / पुरूष वस्त्र (1 सेट)', 800)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'दिव्यांग / बच्चे / महिला / पुरूष वस्त्र (1 सेट)', 800)">
           <div class="pd-card-icon"><i class="fa-solid fa-wheelchair"></i></div>
           <h3>दिव्यांग / बच्चे / महिला / पुरूष वस्त्र</h3>
           <p>1 जरूरतमंद के लिए कपड़े</p>
           <div class="price">₹800 / सेट</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'विधवा / विदुर वस्त्र (1 सेट)', 800)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'विधवा / विदुर वस्त्र (1 सेट)', 800)">
           <div class="pd-card-icon"><i class="fa-solid fa-person-dress"></i></div>
           <h3>विधवा / विदुर वस्त्र</h3>
           <p>1 जरूरतमंद के लिए कपड़े</p>
           <div class="price">₹800 / सेट</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'वरिष्ठ महिला / पुरुष वस्त्र (1 सेट)', 800)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'वरिष्ठ महिला / पुरुष वस्त्र (1 सेट)', 800)">
           <div class="pd-card-icon"><i class="fa-solid fa-user-tie"></i></div>
           <h3>वरिष्ठ महिला / पुरुष वस्त्र</h3>
           <p>1 वरिष्ठ नागरिक के लिए कपड़े</p>
           <div class="price">₹800 / सेट</div>
         </div>
 
-        <!-- Needy Family -->
-        <div class="pd-card" onclick="selectPdDonation(this, 'जरूरतमंद परिवार वस्त्र (1 परिवार)', 2600)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'जरूरतमंद परिवार वस्त्र (1 परिवार)', 2600)">
           <div class="pd-card-icon"><i class="fa-solid fa-people-roof"></i></div>
           <h3>जरूरतमंद परिवार वस्त्र</h3>
           <p>1 पूरे परिवार के लिए कपड़े</p>
@@ -1327,27 +1590,26 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       </div>
     </div>
 
-    <!-- 4. WATER TAB -->
     <div id="pd-tab-water" class="pd-content-area">
       <div class="pd-section-title">जल दान (Water Donation)</div>
       <p class="pd-section-subtitle">प्यासे को पानी पिलाना सबसे बड़ा पुण्य है।</p>
       
       <div class="pd-grid-3">
-        <div class="pd-card" onclick="selectPdDonation(this, '100 पानी की बोतलें', 1000)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, '100 पानी की बोतलें', 1000)">
           <div class="pd-card-icon"><i class="fa-solid fa-bottle-water"></i></div>
           <h3>100 पानी की बोतलें</h3>
           <p>500ml पैकेज्ड ड्रिंकिंग वाटर</p>
           <div class="price">₹1,000</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, '200 पानी की बोतलें', 2000)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, '200 पानी की बोतलें', 2000)">
           <div class="pd-card-icon"><i class="fa-solid fa-glass-water"></i></div>
           <h3>200 पानी की बोतलें</h3>
           <p>स्टेशन या सार्वजनिक स्थल पर वितरण</p>
           <div class="price">₹2,000</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, '500 पानी की बोतलें', 5000)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, '500 पानी की बोतलें', 5000)">
           <div class="pd-card-icon"><i class="fa-solid fa-filter"></i></div>
           <h3>500 पानी की बोतलें</h3>
           <p>बड़े आयोजन या गाँव में वितरण</p>
@@ -1356,48 +1618,47 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
       </div>
     </div>
 
-    <!-- 5. HEALTH TAB -->
     <div id="pd-tab-health" class="pd-content-area">
       <div class="pd-section-title">स्वास्थ्य दान (Health Donation)</div>
       <p class="pd-section-subtitle">जरूरतमंदों को बेहतर स्वास्थ्य सुविधा प्रदान करें।</p>
       
       <div class="pd-grid-3">
-        <div class="pd-card" onclick="selectPdDonation(this, 'फर्स्ट एड किट (1 व्यक्ति)', 250)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'फर्स्ट एड किट (1 व्यक्ति)', 250)">
           <div class="pd-card-icon"><i class="fa-solid fa-kit-medical"></i></div>
           <h3>फर्स्ट एड किट</h3>
           <p>1 व्यक्ति के लिए बेसिक दवाएं</p>
           <div class="price">₹250</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'स्वास्थ्य जाँच (10 व्यक्ति)', 2000)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'स्वास्थ्य जाँच (10 व्यक्ति)', 2000)">
           <div class="pd-card-icon"><i class="fa-solid fa-stethoscope"></i></div>
           <h3>स्वास्थ्य जाँच (10 व्यक्ति)</h3>
           <p>डॉक्टर की फीस और दवाएं</p>
           <div class="price">₹2,000</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'स्वास्थ्य जाँच (25 व्यक्ति)', 5000)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'स्वास्थ्य जाँच (25 व्यक्ति)', 5000)">
           <div class="pd-card-icon"><i class="fa-solid fa-user-doctor"></i></div>
           <h3>स्वास्थ्य जाँच (25 व्यक्ति)</h3>
           <p>डॉक्टर की फीस और दवाएं</p>
           <div class="price">₹5,000</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'खून जांच (25 व्यक्ति)', 2500)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'खून जांच (25 व्यक्ति)', 2500)">
           <div class="pd-card-icon"><i class="fa-solid fa-vial"></i></div>
           <h3>खून जांच (25 व्यक्ति)</h3>
           <p>ब्लड टेस्ट और रिपोर्ट</p>
           <div class="price">₹2,500</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'खून जांच (50 व्यक्ति)', 5000)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'खून जांच (50 व्यक्ति)', 5000)">
           <div class="pd-card-icon"><i class="fa-solid fa-vials"></i></div>
           <h3>खून जांच (50 व्यक्ति)</h3>
           <p>ब्लड टेस्ट और रिपोर्ट</p>
           <div class="price">₹5,000</div>
         </div>
 
-        <div class="pd-card" onclick="selectPdDonation(this, 'ग्राम स्वास्थ्य शिविर', 11000)">
+        <div class="pd-card" role="button" tabindex="0" onclick="selectPdDonation(this, 'ग्राम स्वास्थ्य शिविर', 11000)">
           <div class="pd-card-icon"><i class="fa-solid fa-hospital"></i></div>
           <h3>ग्राम स्वास्थ्य शिविर</h3>
           <p>पूरे गाँव में निःशुल्क जांच शिविर</p>
@@ -1408,7 +1669,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 
   </div>
 
-  <!-- STICKY SUMMARY BAR -->
   <div class="pd-summary-bar" id="pdSummaryBar">
     <div class="pd-summary-content">
       <div class="pd-summary-text">
@@ -1422,15 +1682,12 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- PANCH DAAN DONOR FORM MODAL -->
-<div class="pd-form-modal" id="pdFormModal">
+<div class="pd-form-modal" id="pdFormModal" role="dialog" aria-modal="true" aria-labelledby="pdFormTitle">
   <div class="pd-form-box">
     <button class="pd-form-close" id="pdFormClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-    <h3><i class="fa-solid fa-file-invoice"></i> दान विवरण (Donation Details)</h3>
+    <h3 id="pdFormTitle"><i class="fa-solid fa-file-invoice"></i> दान विवरण (Donation Details)</h3>
     
     <form id="pdDonorForm">
-      
-      <!-- Section 1: Personal Info -->
       <div class="form-section-title">1. व्यक्तिगत जानकारी (Personal Info)</div>
       <div class="form-row">
         <div class="form-group">
@@ -1453,7 +1710,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
         </div>
       </div>
       
-      <!-- Section 2: Contact Info -->
       <div class="form-section-title">2. संपर्क जानकारी (Contact Info)</div>
       <div class="form-group">
         <label>ई-मेल (Email)</label>
@@ -1464,7 +1720,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
         <textarea id="pdAddress" rows="2" placeholder="अपना पूरा पता लिखें" required></textarea>
       </div>
       
-      <!-- Section 3: Donation & Location -->
       <div class="form-section-title">3. दान एवं स्थान (Donation & Location)</div>
       <div class="form-group">
         <label>मैं दान करना चाहता हूँ (I want To Donate)</label>
@@ -1482,7 +1737,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
         <div class="form-group" id="pdBiharDistrictWrap">
           <label>जिला (District) *</label>
           <select id="pdBiharDistrictSelect" required>
-            <!-- Populated via JS -->
           </select>
         </div>
       </div>
@@ -1505,7 +1759,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </div>
 
-<!-- PAYMENT MODAL (For Daily) -->
 <div class="payment-modal" id="paymentModal">
   <div class="payment-box">
     <button class="payment-close" type="button" id="paymentClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
@@ -1518,7 +1771,257 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </div>
 
-<!-- ABOUT / MISSION -->
+<!-- ═══════════════════════════════════════════════════════════
+     PREMIUM IMPACT DASHBOARD — 4 Sections
+     ═══════════════════════════════════════════════════════════ -->
+<div class="impact-dashboard">
+  <div class="container">
+
+    <section id="impact-calculator">
+      <div class="sec-header">
+        <div class="badge"><i class="fa-solid fa-bolt"></i> Live Impact</div>
+        <h2>Calculate Your Impact <em>आपके सहयोग का असर</em></h2>
+      </div>
+      
+      <div class="calc-wrapper">
+        <div class="calc-controls">
+          <div class="premium-select-box">
+            <label>Select Work Area / कार्यक्षेत्र चुनें</label>
+            <select class="custom-select" id="calcWork">
+              <option value="1">📚 1. शिक्षा एवं बाल विकास</option>
+              <option value="2">👩 2. महिला सशक्तिकरण</option>
+              <option value="3">🏥 3. स्वास्थ्य एवं चिकित्सा</option>
+              <option value="4">🤝 4. गरीब एवं जरूरतमंद कल्याण</option>
+              <option value="5">♿ 5. दिव्यांगजन कल्याण</option>
+              <option value="6">👴 6. वृद्धजन कल्याण</option>
+              <option value="7">🎓 7. युवा विकास</option>
+              <option value="8">💼 8. रोजगार एवं आजीविका</option>
+              <option value="9">🏘️ 9. ग्रामीण विकास</option>
+              <option value="10">🌾 10. कृषि एवं किसान कल्याण</option>
+              <option value="11">🌱 11. पर्यावरण संरक्षण</option>
+              <option value="12">💧 12. स्वच्छता एवं पोषण</option>
+              <option value="13">🐾 13. पशु कल्याण</option>
+              <option value="14">🌊 14. आपदा राहत</option>
+              <option value="15">⚖️ 15. सामाजिक न्याय</option>
+              <option value="16">💻 16. डिजिटल शिक्षा</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-icon"></i>
+          </div>
+
+          <div class="premium-slider-box">
+            <div class="slider-header">
+              <div>
+                <p>Your Contribution / आपका सहयोग</p>
+                <div class="trust-badge"><i class="fa-solid fa-shield-check"></i> 80G Tax Exemption</div>
+              </div>
+              <div class="amount-display" id="calcAmount">₹1</div>
+            </div>
+            
+            <div class="quick-chips" id="quickChips">
+              <button class="chip" data-amt="500">₹500</button>
+              <button class="chip" data-amt="1000">₹1K</button>
+              <button class="chip" data-amt="5000">₹5K</button>
+              <button class="chip" data-amt="10000">₹10K</button>
+            </div>
+
+            <div class="slider-track-wrapper">
+              <div class="slider-fill" id="sliderFill"></div>
+              <input type="range" class="custom-slider" id="calcSlider" min="1" max="15000" value="1" step="1">
+            </div>
+            
+            <div class="slider-ticks" id="calcMarks">
+              <span data-val="1" class="active">₹1</span>
+              <span data-val="5000">₹5K</span>
+              <span data-val="10000">₹10K</span>
+              <span data-val="15000">₹15K</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-preview">
+          <div class="preview-icon" id="calcIcon">
+            <i class="fa-solid fa-book-open-reader"></i>
+          </div>
+          <div class="preview-text-hi" id="calcText">
+            आपके <strong>₹1</strong> से किसी बच्चे को <strong>एक पेन</strong> मिल सकती है।
+          </div>
+          <div class="preview-text-en" id="calcTextEn">
+            Your ₹1 can provide a pen to a child.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-impact">
+      <div class="sec-header">
+        <div class="badge"><i class="fa-solid fa-chart-pie"></i> Our Impact</div>
+        <h2>Impact in Numbers <em>आँकड़ों में हमारा काम</em></h2>
+      </div>
+      
+      <div class="impact-grid">
+        <div class="impact-card">
+          <div class="ring-container">
+            <svg viewBox="0 0 120 120">
+              <circle class="ring-bg" cx="60" cy="60" r="52"/>
+              <circle class="ring-fill" cx="60" cy="60" r="52" data-percent="95"/>
+            </svg>
+            <div class="ring-content">
+              <i class="fa-solid fa-users"></i>
+              <span class="val counter" data-target="10000" data-suffix="+">0</span>
+            </div>
+          </div>
+          <h3>लोगों की मदद</h3>
+          <p>People Helped</p>
+        </div>
+
+        <div class="impact-card">
+          <div class="ring-container">
+            <svg viewBox="0 0 120 120">
+              <circle class="ring-bg" cx="60" cy="60" r="52"/>
+              <circle class="ring-fill" cx="60" cy="60" r="52" data-percent="85"/>
+            </svg>
+            <div class="ring-content">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span class="val counter" data-target="2500" data-suffix="+">0</span>
+            </div>
+          </div>
+          <h3>बच्चों को शिक्षा</h3>
+          <p>Children Educated</p>
+        </div>
+
+        <div class="impact-card">
+          <div class="ring-container">
+            <svg viewBox="0 0 120 120">
+              <circle class="ring-bg" cx="60" cy="60" r="52"/>
+              <circle class="ring-fill" cx="60" cy="60" r="52" data-percent="92"/>
+            </svg>
+            <div class="ring-content">
+              <i class="fa-solid fa-utensils"></i>
+              <span class="val counter" data-target="50000" data-suffix="+">0</span>
+            </div>
+          </div>
+          <h3>भोजन वितरित</h3>
+          <p>Meals Served</p>
+        </div>
+
+        <div class="impact-card">
+          <div class="ring-container">
+            <svg viewBox="0 0 120 120">
+              <circle class="ring-bg" cx="60" cy="60" r="52"/>
+              <circle class="ring-fill" cx="60" cy="60" r="52" data-percent="78"/>
+            </svg>
+            <div class="ring-content">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span class="val counter" data-target="50" data-suffix="+">0</span>
+            </div>
+          </div>
+          <h3>गाँव और शहर</h3>
+          <p>Villages & Cities</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="month-goal">
+      <div class="sec-header">
+        <div class="badge"><i class="fa-solid fa-bullseye"></i> Monthly Goal</div>
+        <h2>This Month's Goal <em>इस महीने का लक्ष्य</em></h2>
+      </div>
+      
+      <div class="goal-wrapper">
+        <div class="goal-left">
+          <span class="badge-sm">Support Needed</span>
+          <h3>इस महीने का लक्ष्य</h3>
+          
+          <select id="goalWork">
+            <option value="education">📚 शिक्षा एवं बाल विकास के लिए</option>
+            <option value="women">👩 महिला सशक्तिकरण के लिए</option>
+            <option value="health">🏥 स्वास्थ्य एवं चिकित्सा के लिए</option>
+            <option value="poor">🤝 गरीब एवं जरूरतमंद कल्याण के लिए</option>
+          </select>
+
+          <div class="goal-progress-track">
+            <div class="goal-progress-fill" id="goalFill"></div>
+          </div>
+
+          <div class="goal-stats-row">
+            <div class="g-stat raised">
+              <h4 id="goalRaised">₹0</h4>
+              <span>Raised / एकत्रित</span>
+            </div>
+            <div class="g-stat">
+              <h4 id="goalTarget">₹0</h4>
+              <span>Target / लक्ष्य</span>
+            </div>
+            <div class="g-stat">
+              <h4 id="goalDonors">0</h4>
+              <span>Donors / दानदाता</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="goal-right">
+          <div class="big-circle">
+            <svg viewBox="0 0 120 120">
+              <circle class="big-circle-bg" cx="60" cy="60" r="52"/>
+              <circle class="big-circle-fill" id="goalCircleFill" cx="60" cy="60" r="52"/>
+            </svg>
+            <div class="big-circle-text" id="goalPercent">0%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="overall-achievement">
+      <div class="sec-header">
+        <div class="badge"><i class="fa-solid fa-trophy"></i> Overall Achievement</div>
+        <h2>Total Achievements <em>कुल योगदान</em></h2>
+      </div>
+      
+      <div class="total-grid">
+        <div class="total-card">
+          <div class="total-circle">
+            <svg viewBox="0 0 120 120">
+              <circle class="total-ring-bg" cx="60" cy="60" r="52"/>
+              <circle class="total-ring-fill" cx="60" cy="60" r="52" data-percent="50"/>
+            </svg>
+            <div class="total-ring-text">50%</div>
+          </div>
+          <div class="total-value counter" data-target="2500000" data-prefix="₹">₹0</div>
+          <div class="total-label">कुल एकत्रित राशि</div>
+          <div class="total-sub">Total Raised</div>
+        </div>
+
+        <div class="total-card">
+          <div class="total-circle">
+            <svg viewBox="0 0 120 120">
+              <circle class="total-ring-bg" cx="60" cy="60" r="52"/>
+              <circle class="total-ring-fill" cx="60" cy="60" r="52" data-percent="100"/>
+            </svg>
+            <div class="total-ring-text">100%</div>
+          </div>
+          <div class="total-value counter" data-target="5000000" data-prefix="₹">₹0</div>
+          <div class="total-label">कुल लक्ष्य</div>
+          <div class="total-sub">Total Targeted</div>
+        </div>
+
+        <div class="total-card">
+          <div class="total-circle">
+            <svg viewBox="0 0 120 120">
+              <circle class="total-ring-bg" cx="60" cy="60" r="52"/>
+              <circle class="total-ring-fill" cx="60" cy="60" r="52" data-percent="75"/>
+            </svg>
+            <div class="total-ring-text">75%</div>
+          </div>
+          <div class="total-value counter" data-target="3500" data-suffix="+">0</div>
+          <div class="total-label">कुल दानदाता</div>
+          <div class="total-sub">Total Donors</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</div>
+
 <section class="section about-section" id="about">
   <div class="container">
     <div class="section-title">
@@ -1555,7 +2058,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- VALUES -->
 <section class="centered-slider">
   <div class="container">
     <div class="section-title">
@@ -1584,7 +2086,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- WORK -->
 <section class="centered-slider alt" id="work">
   <div class="container">
     <div class="section-title">
@@ -1622,7 +2123,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- TEAM -->
 <section class="centered-slider" id="team">
   <div class="container">
     <div class="section-title">
@@ -1648,7 +2148,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- WAY -->
 <section class="centered-slider dark">
   <div class="container">
     <div class="section-title">
@@ -1674,7 +2173,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- HELP -->
 <section class="centered-slider gold-bg">
   <div class="container">
     <div class="section-title">
@@ -1700,153 +2198,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- CALC -->
-<section class="calc-section" id="calculator">
-  <div class="container">
-    <div class="section-title">
-      <span class="small-title">Impact Calculator</span>
-      <h2>आपके सहयोग का <span>असली असर</span></h2>
-    </div>
-    <div class="calc-box reveal">
-      <div class="calc-badge"><i class="fa-solid fa-circle"></i> Live Impact</div>
-      <div class="calc-work-select">
-        <label for="calcWork"><i class="fa-solid fa-hand-pointer"></i> आप कहाँ सहयोग करना चाहते हैं?</label>
-        <div class="calc-work-dropdown">
-          <select id="calcWork">
-            <option value="education">📚 शिक्षा एवं बाल विकास</option>
-            <option value="women">👩 महिला सशक्तिकरण</option>
-            <option value="health">🏥 स्वास्थ्य एवं चिकित्सा</option>
-            <option value="poor">🤝 गरीब एवं जरूरतमंद कल्याण</option>
-            <option value="disability">♿ दिव्यांगजन कल्याण</option>
-            <option value="senior">👴 वृद्धजन कल्याण</option>
-            <option value="youth">🎓 युवा विकास</option>
-            <option value="employment">💼 रोजगार एवं आजीविका</option>
-            <option value="rural">🏘️ ग्रामीण विकास</option>
-            <option value="farmer">🌾 कृषि एवं किसान कल्याण</option>
-            <option value="environment">🌱 पर्यावरण संरक्षण</option>
-            <option value="sanitation">💧 स्वच्छता एवं पोषण</option>
-            <option value="animal">🐾 पशु कल्याण</option>
-            <option value="disaster">🌊 आपदा राहत</option>
-            <option value="justice">⚖️ सामाजिक न्याय</option>
-            <option value="digital">💻 डिजिटल शिक्षा</option>
-          </select>
-          <i class="fa-solid fa-chevron-down"></i>
-        </div>
-      </div>
-      <div class="calc-amount">
-        <div class="calc-amount-label"><i class="fa-solid fa-indian-rupee-sign"></i> आपका सहयोग</div>
-        <span class="calc-amount-value" id="calcAmount">₹1</span>
-      </div>
-      <div class="calc-slider-wrap">
-        <input type="range" class="calc-slider" id="calcSlider" min="1" max="15000" value="1" step="1">
-      </div>
-      <div class="calc-marks" id="calcMarks">
-        <span data-val="1">₹1</span><span data-val="500">₹500</span><span data-val="2000">₹2K</span><span data-val="5000">₹5K</span><span data-val="10000">₹10K</span><span data-val="15000">₹15K</span>
-      </div>
-      <div class="calc-result">
-        <div class="calc-result-icon" id="calcIcon"><i class="fa-solid fa-pencil"></i></div>
-        <div class="calc-result-text" id="calcText">आपके <strong>₹1</strong> से किसी बच्चे को <strong>एक पेन</strong> मिल सकती है।</div>
-        <span class="calc-result-en" id="calcTextEn">Your ₹1 can provide a pen to a child.</span>
-      </div>
-      <div class="calc-level">
-        <div class="calc-level-label"><span>Impact Level</span><span class="calc-level-name" id="calcLevelName">Well-wisher</span></div>
-        <div class="calc-level-track"><div class="calc-level-fill" id="calcLevelFill"></div></div>
-      </div>
-      <div class="calc-cta">
-        <a href="donate.html" class="btn btn-red"><i class="fa-solid fa-heart"></i> Donate Now</a>
-        <a href="join-us.html" class="btn btn-outline"><i class="fa-solid fa-user-plus"></i> Join Us</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- IMPACT -->
-<section class="impact-section" id="impact">
-  <svg width="0" height="0" style="position:absolute">
-    <defs>
-      <linearGradient id="ringGradient" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#F59E0B"/></linearGradient>
-      <linearGradient id="goalGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#2563EB"/><stop offset="100%" stop-color="#FBBF24"/></linearGradient>
-      <linearGradient id="totalGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#F59E0B"/></linearGradient>
-    </defs>
-  </svg>
-  <div class="container">
-    <div class="section-title">
-      <span class="small-title">Our Impact</span>
-      <h2>आँकड़ों में हमारा काम | <span>Impact in Numbers</span></h2>
-    </div>
-    <div class="impact-grid">
-      <div class="impact-ring-card reveal" data-link="donate.html"><div class="ring-wrap"><svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fill" cx="60" cy="60" r="52" data-percent="95"/></svg><div class="ring-center"><i class="fa-solid fa-users"></i><strong data-count="10000" data-suffix="+">0</strong></div></div><h4 class="ring-card-title">लोगों की मदद</h4><span class="ring-card-sub">People Helped</span></div>
-      <div class="impact-ring-card reveal" data-link="donate.html"><div class="ring-wrap"><svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fill" cx="60" cy="60" r="52" data-percent="85"/></svg><div class="ring-center"><i class="fa-solid fa-graduation-cap"></i><strong data-count="2500" data-suffix="+">0</strong></div></div><h4 class="ring-card-title">बच्चों को शिक्षा</h4><span class="ring-card-sub">Children Educated</span></div>
-      <div class="impact-ring-card reveal" data-link="donate.html"><div class="ring-wrap"><svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fill" cx="60" cy="60" r="52" data-percent="92"/></svg><div class="ring-center"><i class="fa-solid fa-utensils"></i><strong data-count="50000" data-suffix="+">0</strong></div></div><h4 class="ring-card-title">भोजन वितरित</h4><span class="ring-card-sub">Meals Served</span></div>
-      <div class="impact-ring-card reveal" data-link="donate.html"><div class="ring-wrap"><svg viewBox="0 0 120 120"><circle class="ring-bg" cx="60" cy="60" r="52"/><circle class="ring-fill" cx="60" cy="60" r="52" data-percent="78"/></svg><div class="ring-center"><i class="fa-solid fa-map-location-dot"></i><strong data-count="50" data-suffix="+">0</strong></div></div><h4 class="ring-card-title">गाँव और शहर</h4><span class="ring-card-sub">Villages & Cities</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- GOAL -->
-<section class="goal-section" id="goal">
-  <div class="container">
-    <div class="goal-box reveal">
-      <div class="goal-head">
-        <div class="goal-head-left">
-          <div class="goal-head-icon"><i class="fa-solid fa-bullseye"></i></div>
-          <div class="goal-head-text"><h3>इस महीने का लक्ष्य | This Month's Goal</h3><p id="goalDesc">शिक्षा एवं बाल विकास के लिए</p></div>
-        </div>
-        <div class="goal-circle-percent">
-          <svg viewBox="0 0 120 120"><circle class="goal-circle-bg" cx="60" cy="60" r="52"/><circle class="goal-circle-fill" id="goalCircleFill" cx="60" cy="60" r="52"/></svg>
-          <div class="goal-circle-text" id="goalPercent">0%</div>
-        </div>
-      </div>
-      <div class="goal-work-select">
-        <label for="goalWork"><i class="fa-solid fa-hand-pointer"></i> कार्यक्षेत्र चुनें</label>
-        <div class="goal-work-dropdown">
-          <select id="goalWork">
-            <option value="education">📚 शिक्षा एवं बाल विकास</option>
-            <option value="women">👩 महिला सशक्तिकरण एवं विकास</option>
-            <option value="health">🏥 स्वास्थ्य एवं चिकित्सा</option>
-            <option value="poor">🤝 गरीब एवं जरूरतमंद कल्याण</option>
-            <option value="disability">♿ दिव्यांगजन कल्याण एवं सशक्तिकरण</option>
-            <option value="senior">👴 वृद्धजन कल्याण</option>
-            <option value="youth">🎓 युवा विकास एवं कौशल विकास</option>
-            <option value="employment">💼 रोजगार एवं आजीविका</option>
-            <option value="rural">🏘️ ग्रामीण विकास</option>
-            <option value="farmer">🌾 कृषि एवं किसान कल्याण</option>
-            <option value="environment">🌱 पर्यावरण संरक्षण</option>
-            <option value="sanitation">💧 स्वच्छता एवं पोषण</option>
-            <option value="animal">🐾 पशु कल्याण</option>
-            <option value="disaster">🌊 आपदा राहत</option>
-            <option value="justice">⚖️ सामाजिक न्याय</option>
-            <option value="digital">💻 डिजिटल शिक्षा</option>
-          </select>
-          <i class="fa-solid fa-chevron-down"></i>
-        </div>
-      </div>
-      <div class="goal-progress-wrap"><div class="goal-progress"><div class="goal-progress-fill" id="goalFill"></div></div></div>
-      <div class="goal-stats">
-        <div class="goal-stat raised"><strong id="goalRaised">₹0</strong><span>Raised / एकत्रित</span></div>
-        <div class="goal-stat target"><strong id="goalTarget">₹0</strong><span>Target / लक्ष्य</span></div>
-        <div class="goal-stat"><strong id="goalDonors">0</strong><span>Donors / दानदाता</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TOTAL -->
-<section class="total-section" id="total">
-  <div class="container">
-    <div class="section-title">
-      <span class="small-title">Overall Achievement</span>
-      <h2>कुल योगदान | <span>Total Achievements</span></h2>
-    </div>
-    <div class="total-grid">
-      <div class="total-box reveal"><div class="total-circle"><svg viewBox="0 0 120 120"><circle class="total-circle-bg" cx="60" cy="60" r="52"/><circle class="total-circle-fill" cx="60" cy="60" r="52" data-percent="50"/></svg><div class="total-circle-text">50%</div></div><div class="total-value" data-count="2500000" data-prefix="₹">₹0</div><div class="total-label">कुल एकत्रित राशि</div><div class="total-label-en">Total Raised</div></div>
-      <div class="total-box reveal"><div class="total-circle"><svg viewBox="0 0 120 120"><circle class="total-circle-bg" cx="60" cy="60" r="52"/><circle class="total-circle-fill" cx="60" cy="60" r="52" data-percent="100"/></svg><div class="total-circle-text">100%</div></div><div class="total-value" data-count="5000000" data-prefix="₹">₹0</div><div class="total-label">कुल लक्ष्य</div><div class="total-label-en">Total Targeted</div></div>
-      <div class="total-box reveal"><div class="total-circle"><svg viewBox="0 0 120 120"><circle class="total-circle-bg" cx="60" cy="60" r="52"/><circle class="total-circle-fill" cx="60" cy="60" r="52" data-percent="75"/></svg><div class="total-circle-text">75%</div></div><div class="total-value" data-count="3500" data-suffix="+">0</div><div class="total-label">कुल दानदाता</div><div class="total-label-en">Total Donors</div></div>
-    </div>
-  </div>
-</section>
-
-<!-- UPCOMING -->
 <section class="upcoming-section" id="upcoming">
   <div class="container">
     <div class="section-title">
@@ -1910,7 +2261,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
 <section class="testimonial-section">
   <div class="container">
     <div class="section-title">
@@ -1923,7 +2273,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- GALLERY -->
 <section class="gallery-section" id="gallery">
   <div class="container">
     <div class="section-title">
@@ -1943,7 +2292,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- EVENTS -->
 <section class="section events-section" id="events">
   <div class="container">
     <div class="section-title">
@@ -1961,7 +2309,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- DOWNLOADS -->
 <section class="section downloads-home-section">
   <div class="container">
     <div class="section-title">
@@ -1996,7 +2343,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- JOIN -->
 <section class="section join-section" id="join">
   <div class="container">
     <div class="join-content">
@@ -2012,7 +2358,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- CONTACT -->
 <section class="section contact-section" id="contact">
   <div class="container">
     <div class="section-title">
@@ -2039,7 +2384,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- CTA -->
 <section class="cta-strip">
   <div class="container">
     <div class="cta-badge"><i class="fa-solid fa-hands-holding-heart"></i> Join Our Mission</div>
@@ -2053,7 +2397,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </section>
 
-<!-- FOOTER -->
 <footer>
   <div class="container">
     <div class="footer-top">
@@ -2100,7 +2443,6 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
           <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Internship | इंटर्नशिप</a></li>
           <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Member &amp; Volunteer</a></li>
           <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> CSR Partnership</a></li>
-          <li><a href="calculator.html"><i class="fa-solid fa-chevron-right"></i> Impact Calculator</a></li>
           <li><a href="work.html"><i class="fa-solid fa-chevron-right"></i> Sponsor a Program</a></li>
         </ul>
       </div>
@@ -2138,12 +2480,11 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
   </div>
 </footer>
 
-</div><!-- END PAGE WRAPPER -->
+</div>
 
 <a href="https://wa.me/917011893028?text=नमस्ते" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 <button class="back-top" id="backTop" aria-label="Back to Top" type="button"><i class="fa-solid fa-arrow-up"></i></button>
 
-<!-- POPUP -->
 <div class="donate-popup" id="donatePopup">
   <div class="donate-popup-box">
     <button class="donate-popup-close" id="donatePopupClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
@@ -2187,17 +2528,19 @@ document.addEventListener("DOMContentLoaded", function(){
     if(sp) sp.style.width = (dh > 0 ? (st/dh)*100 : 0) + "%";
   }, {passive:true});
 
+  var reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+
   var splashScreen = document.getElementById("splashScreen");
   var pageWrapper = document.getElementById("pageWrapper");
   var percentEl = document.getElementById("splashPercent");
-  var SPLASH_DURATION = 10000;
+  var SPLASH_DURATION = reduceMotion ? 300 : 3500;
   var splashStartTime = Date.now();
   var percentTimer = setInterval(function(){
     var elapsed = Date.now() - splashStartTime;
     var percent = Math.min(Math.floor((elapsed / SPLASH_DURATION) * 100), 100);
     if(percentEl) percentEl.textContent = percent + "%";
     if(percent >= 100) clearInterval(percentTimer);
-  }, 80);
+  }, 60);
   setTimeout(function(){
     if(splashScreen){
       splashScreen.classList.add("hide");
@@ -2205,7 +2548,7 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     if(pageWrapper) pageWrapper.classList.add("visible");
     document.body.classList.remove("splash-active");
-    if(window.scrollTo) window.scrollTo(0, 0);
+    if(window.scrollTo && !location.hash) window.scrollTo(0, 0);
   }, SPLASH_DURATION);
   setTimeout(function(){
     if(splashScreen && splashScreen.style.display !== "none"){
@@ -2214,8 +2557,8 @@ document.addEventListener("DOMContentLoaded", function(){
       if(pageWrapper) pageWrapper.classList.add("visible");
       document.body.classList.remove("splash-active");
     }
-  }, 13000);
-  if(splashScreen){
+  }, SPLASH_DURATION + 3000);
+  if(splashScreen && !reduceMotion){
     for(var i = 0; i < 22; i++){
       var dot = document.createElement("div");
       dot.className = "splash-dot";
@@ -2247,6 +2590,10 @@ document.addEventListener("DOMContentLoaded", function(){
     });
   }
 
+  document.querySelectorAll('.ticker-item a').forEach(function(a){
+    a.addEventListener('click', function(e){ e.stopPropagation(); });
+  });
+
   var heroSlides = document.querySelectorAll(".hero-slide");
   var heroDots = document.querySelectorAll(".hero-dot");
   var heroIndex = 0, heroTimer = null;
@@ -2274,7 +2621,6 @@ document.addEventListener("DOMContentLoaded", function(){
   });
   startHeroTimer();
 
-  var reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
   document.querySelectorAll(".orbit").forEach(function(o){
     var tags = o.querySelectorAll(".otag");
     if(!tags.length) return;
@@ -2304,23 +2650,25 @@ document.addEventListener("DOMContentLoaded", function(){
   var amWrap = document.getElementById('amounts');
   function inr(n){ return '₹' + Math.round(n).toLocaleString('en-IN'); }
 
-  amWrap.innerHTML = DAILY.map(function(item, i){
-    var a = item[0], l = item[1];
-    return '<button class="amt' + (i === 0 ? ' sel' : '') + '" data-amt="' + a + '" aria-label="₹' + a + '">' +
-      '<div class="amt-inner">' +
-        '<div class="amt-face front">' +
-          '<em>' + l + '</em>' +
-          '<b>₹' + a + ' <small>/दिन</small></b>' +
-          '<span>लगभग ' + inr(a * 30) + '/माह</span>' +
+  if(amWrap){
+    amWrap.innerHTML = DAILY.map(function(item, i){
+      var a = item[0], l = item[1];
+      return '<button class="amt' + (i === 0 ? ' sel' : '') + '" data-amt="' + a + '" aria-label="₹' + a + '">' +
+        '<div class="amt-inner">' +
+          '<div class="amt-face front">' +
+            '<em>' + l + '</em>' +
+            '<b>₹' + a + ' <small>/दिन</small></b>' +
+            '<span>लगभग ' + inr(a * 30) + '/माह</span>' +
+          '</div>' +
+          '<div class="amt-face back">' +
+            '<em>Monthly</em>' +
+            '<b>' + inr(a * 30) + ' <small>/माह</small></b>' +
+            '<span>≈ ₹' + a + '/दिन</span>' +
+          '</div>' +
         '</div>' +
-        '<div class="amt-face back">' +
-          '<em>Monthly</em>' +
-          '<b>' + inr(a * 30) + ' <small>/माह</small></b>' +
-          '<span>≈ ₹' + a + '/दिन</span>' +
-        '</div>' +
-      '</div>' +
-    '</button>';
-  }).join('');
+      '</button>';
+    }).join('');
+  }
 
   var freq = 'daily', dailyBase = 1, custom = null;
 
@@ -2336,9 +2684,11 @@ document.addEventListener("DOMContentLoaded", function(){
       amt = dailyBase * 30;
       sub = 'प्रति माह · ≈ ₹' + dailyBase + '/दिन';
     }
-    document.getElementById('selAmt').textContent = inr(amt);
-    document.getElementById('selSub').textContent = sub;
-    if(!reduceMotion) document.getElementById('selAmt').animate([{transform:'scale(1.15)'},{transform:'scale(1)'}], {duration:300});
+    var selAmtEl = document.getElementById('selAmt');
+    var selSubEl = document.getElementById('selSub');
+    if(selAmtEl) selAmtEl.textContent = inr(amt);
+    if(selSubEl) selSubEl.textContent = sub;
+    if(!reduceMotion && selAmtEl) selAmtEl.animate([{transform:'scale(1.15)'},{transform:'scale(1)'}], {duration:300});
     return amt;
   }
 
@@ -2348,7 +2698,8 @@ document.addEventListener("DOMContentLoaded", function(){
       b.classList.add('sel');
       dailyBase = +b.dataset.amt;
       custom = null;
-      document.getElementById('manualAmt').value = '';
+      var mi = document.getElementById('manualAmt');
+      if(mi) mi.value = '';
       renderSel();
     };
   });
@@ -2358,14 +2709,15 @@ document.addEventListener("DOMContentLoaded", function(){
       freq = b.dataset.freq;
       document.querySelectorAll('#freqToggle button').forEach(function(x){ x.classList.toggle('active', x === b); });
       document.getElementById('freqToggle').classList.toggle('monthly', freq === 'monthly');
-      amWrap.classList.toggle('monthly', freq === 'monthly');
-      if(custom !== null){ custom = null; document.getElementById('manualAmt').value = ''; }
+      if(amWrap) amWrap.classList.toggle('monthly', freq === 'monthly');
+      if(custom !== null){ custom = null; var mi = document.getElementById('manualAmt'); if(mi) mi.value = ''; }
       renderSel();
     };
   });
 
   function applyManual(){
     var input = document.getElementById('manualAmt');
+    if(!input) return;
     var v = Math.floor(+input.value);
     if(!v || v < 1){
       input.focus();
@@ -2379,26 +2731,38 @@ document.addEventListener("DOMContentLoaded", function(){
     renderSel();
     input.value = '';
   }
-  document.getElementById('applyAmt').onclick = applyManual;
-  document.getElementById('manualAmt').addEventListener('keydown', function(e){
-    if(e.key === 'Enter'){ e.preventDefault(); applyManual(); }
-  });
+  var applyBtn = document.getElementById('applyAmt');
+  if(applyBtn) applyBtn.onclick = applyManual;
+  var manualAmt = document.getElementById('manualAmt');
+  if(manualAmt){
+    manualAmt.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); applyManual(); }
+    });
+  }
 
   var paymentModal = document.getElementById('paymentModal');
   var paymentAmtEl = document.getElementById('paymentAmt');
   var paymentProceedBtn = document.getElementById('paymentProceedBtn');
   var paymentClose = document.getElementById('paymentClose');
+
+  function closeDonatePopup(){
+    var popup = document.getElementById('donatePopup');
+    if(popup){ popup.classList.remove("show"); document.body.classList.remove("popup-active"); }
+  }
+
   function openPaymentModal(){
     var amt = renderSel();
     if(paymentAmtEl){
       paymentAmtEl.innerHTML = '<span>' + inr(amt) + '</span><small>' + (freq === 'daily' ? '/ दिन' : '/ माह') + '</small>';
     }
+    closeDonatePopup();
     if(paymentModal){ paymentModal.classList.add('show'); document.body.style.overflow = 'hidden'; }
   }
   function closePaymentModal(){
     if(paymentModal){ paymentModal.classList.remove('show'); document.body.style.overflow = ''; }
   }
-  document.getElementById('dailyDonate').onclick = openPaymentModal;
+  var dailyDonateBtn = document.getElementById('dailyDonate');
+  if(dailyDonateBtn) dailyDonateBtn.onclick = openPaymentModal;
   if(paymentClose) paymentClose.addEventListener('click', closePaymentModal);
   if(paymentModal){
     paymentModal.addEventListener('click', function(e){ if(e.target === paymentModal) closePaymentModal(); });
@@ -2495,181 +2859,204 @@ document.addEventListener("DOMContentLoaded", function(){
     });
   });
 
-  var cs = document.getElementById("calcSlider");
-  var ca = document.getElementById("calcAmount");
-  var ct = document.getElementById("calcText");
-  var cte = document.getElementById("calcTextEn");
-  var ci = document.getElementById("calcIcon");
-  var clf = document.getElementById("calcLevelFill");
-  var cln = document.getElementById("calcLevelName");
-  var cw = document.getElementById("calcWork");
-  var cm = document.querySelectorAll("#calcMarks span");
-  var workImpacts = {
-    education:{icon:"fa-book-open-reader",tiers:[
-      {max:50,hi:'आपके <strong>₹{amt}</strong> से एक बच्चे को <strong>नई कॉपी और पेन</strong>।',en:"A new notebook and pen for one child."},
-      {max:500,hi:'आपके <strong>₹{amt}</strong> से <strong>{n} बच्चों की स्कूल-किट</strong>।',en:"School kits for {n} children."},
-      {max:2000,hi:'आपके <strong>₹{amt}</strong> से <strong>{n} बच्चों की 1 महीने की कोचिंग</strong>।',en:"One month coaching for {n} children."},
-      {max:5000,hi:'आपके <strong>₹{amt}</strong> से <strong>{n} बच्चों की वार्षिक छात्रवृत्ति</strong>।',en:"Annual scholarship for {n} children."},
-      {max:15000,hi:'आपके <strong>₹{amt}</strong> से <strong>{n} बच्चों के लिए पूरी डिजिटल क्लास</strong>।',en:"Full digital classroom for {n} children."}
-    ]},
-    women:{icon:"fa-person-dress",tiers:[{max:200,hi:'आपके <strong>₹{amt}</strong> से एक महिला को <strong>सिलाई किट</strong>।',en:"Sewing kit."},{max:1000,hi:'आपके <strong>₹{amt}</strong> से <strong>{n} महिलाओं का कौशल प्रशिक्षण</strong>।',en:"Skill training."},{max:3000,hi:'आपके <strong>₹{amt}</strong> से <strong>{n} महिलाओं को स्वरोजगार किट</strong>।',en:"Self-employment kits."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से <strong>एक SHG को पूरी मदद</strong>।',en:"Complete support for one SHG."}]},
-    health:{icon:"fa-heart-pulse",tiers:[{max:200,hi:'आपके <strong>₹{amt}</strong> से एक व्यक्ति की <strong>निःशुल्क जाँच</strong>।',en:"Free check-up."},{max:800,hi:'आपके <strong>₹{amt}</strong> से <strong>{n} लोगों को दवाएँ</strong>।',en:"Medicines for {n}."},{max:3000,hi:'आपके <strong>₹{amt}</strong> से <strong>{n} लोगों का पूरा इलाज</strong>।',en:"Full treatment."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से <strong>पूरा स्वास्थ्य शिविर</strong>।',en:"A complete health camp."}]},
-    poor:{icon:"fa-hand-holding-heart",tiers:[{max:200,hi:'आपके <strong>₹{amt}</strong> से एक परिवार को <strong>हफ्ते का राशन</strong>।',en:"One week of meals."},{max:800,hi:'आपके <strong>₹{amt}</strong> से <strong>{n} परिवारों को राशन किट</strong>।',en:"Ration kits."},{max:3000,hi:'आपके <strong>₹{amt}</strong> से <strong>{n} परिवारों की पूरी मदद</strong>।',en:"Full support."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से <strong>20+ परिवारों की मदद</strong>।',en:"20+ families."}]},
-    disability:{icon:"fa-wheelchair",tiers:[{max:500,hi:'आपके <strong>₹{amt}</strong> से दिव्यांगजन को सहायक सामग्री।',en:"Assistive aid."},{max:3000,hi:'आपके <strong>₹{amt}</strong> से व्हीलचेयर।',en:"Wheelchair."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से {n} दिव्यांगजनों की मदद।',en:"Support for {n}."}]},
-    senior:{icon:"fa-person-cane",tiers:[{max:500,hi:'आपके <strong>₹{amt}</strong> से वृद्धजन की दवा।',en:"Medicines."},{max:3000,hi:'आपके <strong>₹{amt}</strong> से वृद्धाश्रम में मदद।',en:"Old-age home support."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से {n} वृद्धजनों का महीना।',en:"One month for {n}."}]},
-    youth:{icon:"fa-user-graduate",tiers:[{max:500,hi:'आपके <strong>₹{amt}</strong> से युवा के लिए स्टेशनरी।',en:"Stationery."},{max:2000,hi:'आपके <strong>₹{amt}</strong> से {n} युवाओं का कौशल प्रशिक्षण।',en:"Skill training."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से एक पूरा प्रशिक्षण शिविर।',en:"Training camp."}]},
-    employment:{icon:"fa-briefcase",tiers:[{max:500,hi:'आपके <strong>₹{amt}</strong> से रोजगार पंजीकरण सहायता।',en:"Employment registration."},{max:2000,hi:'आपके <strong>₹{amt}</strong> से {n} युवाओं को इंटरव्यू किट।',en:"Interview kit."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से {n} युवाओं को रोजगार।',en:"Employment."}]},
-    rural:{icon:"fa-house-chimney",tiers:[{max:1000,hi:'आपके <strong>₹{amt}</strong> से गाँव में स्वच्छता सामग्री।',en:"Sanitation material."},{max:5000,hi:'आपके <strong>₹{amt}</strong> से ग्राम विकास में योगदान।',en:"Rural development."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से पूरे गाँव का उत्थान।',en:"Village upliftment."}]},
-    farmer:{icon:"fa-wheat-awn",tiers:[{max:500,hi:'आपके <strong>₹{amt}</strong> से किसान को बीज।',en:"Seeds."},{max:3000,hi:'आपके <strong>₹{amt}</strong> से {n} किसानों को खाद।',en:"Fertilizer."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से {n} किसानों की मदद।',en:"Support for {n}."}]},
-    environment:{icon:"fa-leaf",tiers:[{max:500,hi:'आपके <strong>₹{amt}</strong> से {n} पौधे।',en:"{n} saplings."},{max:3000,hi:'आपके <strong>₹{amt}</strong> से वृक्षारोपण अभियान।',en:"Tree plantation."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से मियावाकी वन।',en:"A Miyawaki forest."}]},
-    sanitation:{icon:"fa-droplet",tiers:[{max:500,hi:'आपके <strong>₹{amt}</strong> से स्वच्छता किट।',en:"Hygiene kits."},{max:3000,hi:'आपके <strong>₹{amt}</strong> से {n} परिवारों को किट।',en:"Hygiene kits."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से पूरे मोहल्ले को सामग्री।',en:"Community supplies."}]},
-    animal:{icon:"fa-paw",tiers:[{max:500,hi:'आपके <strong>₹{amt}</strong> से पशु आहार।',en:"Animal food."},{max:3000,hi:'आपके <strong>₹{amt}</strong> से {n} जानवरों की देखभाल।',en:"Care for {n}."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से पशु शेल्टर को सहयोग।',en:"Animal shelter support."}]},
-    disaster:{icon:"fa-house-flood-water",tiers:[{max:500,hi:'आपके <strong>₹{amt}</strong> से राहत किट।',en:"Relief kit."},{max:3000,hi:'आपके <strong>₹{amt}</strong> से {n} परिवारों को राहत।',en:"Relief for {n}."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से एक पूरा राहत शिविर।',en:"Relief camp."}]},
-    justice:{icon:"fa-scale-balanced",tiers:[{max:500,hi:'आपके <strong>₹{amt}</strong> से कानूनी जानकारी।',en:"Legal awareness."},{max:3000,hi:'आपके <strong>₹{amt}</strong> से {n} लोगों को कानूनी सहायता।',en:"Legal aid."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से जागरूकता शिविर।',en:"Awareness camp."}]},
-    digital:{icon:"fa-laptop",tiers:[{max:500,hi:'आपके <strong>₹{amt}</strong> से डिजिटल साक्षरता सामग्री।',en:"Digital literacy."},{max:3000,hi:'आपके <strong>₹{amt}</strong> से {n} युवाओं को कंप्यूटर प्रशिक्षण।',en:"Computer training."},{max:15000,hi:'आपके <strong>₹{amt}</strong> से एक डिजिटल शिक्षा शिविर।',en:"Digital education camp."}]}
-  };
-  function getLevel(v){
-    if(v >= 10000) return "🌟 Legend of Change";
-    if(v >= 5000) return "🏆 Champion";
-    if(v >= 2000) return "💎 Hero";
-    if(v >= 1000) return "⭐ Friend";
-    if(v >= 500) return "🤝 Helper";
-    if(v >= 100) return "💚 Supporter";
-    if(v >= 50) return "🌱 Well-wisher";
-    return "✨ New Soul";
-  }
-  function updateCalc(){
+  /* ═══ Premium Impact Dashboard JS ═══ */
+  (function(){
+    var cs = document.getElementById("calcSlider");
+    var ca = document.getElementById("calcAmount");
+    var ct = document.getElementById("calcText");
+    var cte = document.getElementById("calcTextEn");
+    var ci = document.getElementById("calcIcon");
+    var cw = document.getElementById("calcWork");
+    var cm = document.querySelectorAll("#calcMarks span");
+    var sliderFill = document.getElementById("sliderFill");
+    var chips = document.querySelectorAll("#quickChips .chip");
+
     if(!cs) return;
-    var v = parseInt(cs.value, 10);
-    var wk = cw ? cw.value : "education";
-    var wd = workImpacts[wk] || workImpacts.education;
-    ca.textContent = "₹" + v.toLocaleString("en-IN");
-    var found = wd.tiers[wd.tiers.length - 1];
-    for(var i = 0; i < wd.tiers.length; i++){
-      if(v <= wd.tiers[i].max){ found = wd.tiers[i]; break; }
-    }
-    var n = Math.max(1, Math.floor(v / 20));
-    if(ci) ci.innerHTML = '<i class="fa-solid ' + wd.icon + '"></i>';
-    if(ct) ct.innerHTML = found.hi.replace(/\{amt\}/g, v.toLocaleString("en-IN")).replace(/\{n\}/g, n);
-    if(cte) cte.textContent = found.en.replace(/\{n\}/g, n);
-    var pct = ((v - 1) / (15000 - 1)) * 100;
-    if(clf) clf.style.width = Math.max(2, pct) + "%";
-    if(cln) cln.textContent = getLevel(v);
-    cm.forEach(function(m){ m.classList.toggle("active", parseInt(m.dataset.val, 10) === v); });
-  }
-  if(cs) cs.addEventListener("input", updateCalc);
-  if(cw) cw.addEventListener("change", updateCalc);
-  updateCalc();
 
-  var goalData = {
-    education:{raised:340000,target:500000,donors:482,desc:"शिक्षा एवं बाल विकास के लिए"},
-    women:{raised:220000,target:400000,donors:298,desc:"महिला सशक्तिकरण के लिए"},
-    health:{raised:410000,target:600000,donors:612,desc:"स्वास्थ्य के लिए"},
-    poor:{raised:280000,target:450000,donors:355,desc:"गरीब कल्याण के लिए"},
-    disability:{raised:180000,target:350000,donors:215,desc:"दिव्यांगजन कल्याण के लिए"},
-    senior:{raised:150000,target:300000,donors:198,desc:"वृद्धजन कल्याण के लिए"},
-    youth:{raised:240000,target:400000,donors:320,desc:"युवा विकास के लिए"},
-    employment:{raised:195000,target:350000,donors:265,desc:"रोजगार के लिए"},
-    rural:{raised:310000,target:500000,donors:420,desc:"ग्रामीण विकास के लिए"},
-    farmer:{raised:260000,target:450000,donors:340,desc:"कृषि कल्याण के लिए"},
-    environment:{raised:170000,target:300000,donors:245,desc:"पर्यावरण के लिए"},
-    sanitation:{raised:210000,target:400000,donors:290,desc:"स्वच्छता के लिए"},
-    animal:{raised:130000,target:250000,donors:175,desc:"पशु कल्याण के लिए"},
-    disaster:{raised:290000,target:500000,donors:365,desc:"आपदा राहत के लिए"},
-    justice:{raised:140000,target:300000,donors:185,desc:"सामाजिक न्याय के लिए"},
-    digital:{raised:230000,target:400000,donors:310,desc:"डिजिटल शिक्षा के लिए"}
-  };
-  var gw = document.getElementById("goalWork");
-  var gf = document.getElementById("goalFill");
-  var gcf = document.getElementById("goalCircleFill");
-  var gp = document.getElementById("goalPercent");
-  var gr = document.getElementById("goalRaised");
-  var gt = document.getElementById("goalTarget");
-  var gd = document.getElementById("goalDonors");
-  var gdesc = document.getElementById("goalDesc");
-  function fmt(n){ return "₹" + n.toLocaleString("en-IN"); }
-  function updateGoal(){
-    var k = gw ? gw.value : "education";
-    var d = goalData[k] || goalData.education;
-    var pct = Math.round((d.raised / d.target) * 100);
-    if(gdesc) gdesc.textContent = d.desc;
-    if(gr) gr.textContent = fmt(d.raised);
-    if(gt) gt.textContent = fmt(d.target);
-    if(gd) gd.textContent = d.donors.toLocaleString("en-IN");
-    if(gf) gf.style.width = pct + "%";
-    var C = 2 * Math.PI * 52;
-    if(gcf) gcf.style.strokeDashoffset = C - (pct / 100) * C;
-    if(gp){
-      var c = 0;
-      clearInterval(gp._t);
-      gp._t = setInterval(function(){
-        c++;
-        if(c >= pct){ c = pct; clearInterval(gp._t); }
-        gp.textContent = c + "%";
-      }, 20);
-    }
-  }
-  if(gw) gw.addEventListener("change", updateGoal);
-  updateGoal();
+    var UNIT_COST = 300;
+    var workImpacts = {
+      1: { icon: "fa-book-open-reader", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} बच्चों</strong> को स्कूल किट मिल सकती है।', en: "School kits for {n} children." },
+      2: { icon: "fa-person-dress", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} महिलाओं</strong> को सिलाई किट मिल सकती है।', en: "Sewing kits for {n} women." },
+      3: { icon: "fa-heart-pulse", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} लोगों</strong> का स्वास्थ्य जाँच हो सकता है।', en: "Health check-ups for {n} people." },
+      4: { icon: "fa-hand-holding-heart", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} परिवारों</strong> को राशन किट मिल सकती है।', en: "Ration kits for {n} families." },
+      5: { icon: "fa-wheelchair", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} दिव्यांगजनों</strong> को सहायक सामग्री मिल सकती है।', en: "Assistive aids for {n} persons." },
+      6: { icon: "fa-person-cane", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} वृद्धजनों</strong> को दवा व देखभाल मिल सकती है।', en: "Medicines & care for {n} seniors." },
+      7: { icon: "fa-user-graduate", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} युवाओं</strong> को कौशल प्रशिक्षण सामग्री मिल सकती है।', en: "Skill training material for {n} youth." },
+      8: { icon: "fa-briefcase", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} युवाओं</strong> को रोजगार पंजीकरण और इंटरव्यू किट मिल सकती है।', en: "Job registration & interview kits for {n} youth." },
+      9: { icon: "fa-house-chimney", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} ग्रामीण गतिविधियों</strong> को सहयोग मिल सकता है।', en: "Support for {n} rural activities." },
+      10: { icon: "fa-wheat-awn", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} किसानों</strong> को बीज और खाद सहायता मिल सकती है।', en: "Seeds & fertilizer for {n} farmers." },
+      11: { icon: "fa-leaf", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} पौधारोपण किट</strong> लगाए जा सकते हैं।', en: "{n} plantation kits can be planted." },
+      12: { icon: "fa-droplet", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} परिवारों</strong> को स्वच्छता किट मिल सकती है।', en: "Hygiene kits for {n} families." },
+      13: { icon: "fa-paw", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} पशुओं</strong> का भोजन और देखभाल हो सकती है।', en: "Food & care for {n} animals." },
+      14: { icon: "fa-house-flood-water", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} परिवारों</strong> को राहत किट मिल सकती है।', en: "Relief kits for {n} families." },
+      15: { icon: "fa-scale-balanced", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} लोगों</strong> को कानूनी सहायता मिल सकती है।', en: "Legal aid for {n} people." },
+      16: { icon: "fa-laptop", hi: 'आपके <strong>₹{amt}</strong> से <strong>{n} युवाओं</strong> को डिजिटल प्रशिक्षण किट मिल सकती है।', en: "Digital training kits for {n} youth." }
+    };
 
-  function animCount(el){
-    var t = parseInt(el.dataset.count, 10);
-    var p = el.dataset.prefix || "";
-    var s = el.dataset.suffix || "";
-    var st = performance.now();
-    function step(now){
-      var pr = Math.min((now - st) / 4000, 1);
-      var e = 1 - Math.pow(1 - pr, 3);
-      el.textContent = p + Math.floor(e * t).toLocaleString("en-IN") + s;
-      if(pr < 1) requestAnimationFrame(step);
-      else el.textContent = p + t.toLocaleString("en-IN") + s;
+    function updateCalc(val) {
+      var v = parseInt(val, 10);
+      if(isNaN(v)) v = 1;
+      var wk = cw.value;
+      var data = workImpacts[wk] || workImpacts[1];
+      
+      ca.textContent = "₹" + v.toLocaleString("en-IN");
+      ca.classList.remove("pulse-amt");
+      void ca.offsetWidth;
+      ca.classList.add("pulse-amt");
+
+      var pct = ((v - 1) / (15000 - 1)) * 100;
+      sliderFill.style.width = pct + "%";
+      
+      cm.forEach(function(m) {
+        m.classList.toggle("active", v >= parseInt(m.dataset.val, 10));
+      });
+
+      chips.forEach(function(c) {
+        c.classList.toggle("active", parseInt(c.dataset.amt, 10) === v);
+      });
+      
+      var n = Math.floor(v / UNIT_COST);
+      var displayHi = "";
+      var displayEn = "";
+      
+      if (n < 1) {
+        displayHi = 'आपका सहयोग जरूरतमंद लोगों की मदद में लगेगा।';
+        displayEn = 'Your contribution will help people in need.';
+      } else {
+        displayHi = data.hi.replace(/\{amt\}/g, v.toLocaleString("en-IN")).replace(/\{n\}/g, n);
+        displayEn = data.en.replace(/\{n\}/g, n);
+      }
+
+      ct.innerHTML = displayHi;
+      cte.textContent = displayEn;
+      ci.innerHTML = '<i class="fa-solid ' + data.icon + '"></i>';
     }
-    requestAnimationFrame(step);
-  }
-  var totalVals = document.querySelectorAll(".total-value[data-count]");
-  var impactVals = document.querySelectorAll(".ring-center strong[data-count]");
-  var ringFills = document.querySelectorAll(".ring-fill");
-  var totalCircles = document.querySelectorAll(".total-circle-fill");
-  var countersDone = false, ringsDone = false;
-  function checkVis(){
-    if(!countersDone && totalVals.length){
-      var rect = totalVals[0].getBoundingClientRect();
-      if(rect.top < window.innerHeight * 0.9){
-        countersDone = true;
-        totalVals.forEach(animCount);
-        impactVals.forEach(animCount);
+
+    cs.addEventListener("input", function(e) { updateCalc(e.target.value); });
+    cw.addEventListener("change", function() { updateCalc(cs.value); });
+    
+    chips.forEach(function(chip) {
+      chip.addEventListener("click", function() {
+        var amt = parseInt(chip.dataset.amt, 10);
+        cs.value = amt;
+        updateCalc(amt);
+      });
+    });
+
+    updateCalc(1);
+
+    var goalData = {
+      education: { raised: 340000, target: 500000, donors: 482, desc: "शिक्षा एवं बाल विकास के लिए" },
+      women: { raised: 220000, target: 400000, donors: 298, desc: "महिला सशक्तिकरण के लिए" },
+      health: { raised: 410000, target: 600000, donors: 612, desc: "स्वास्थ्य के लिए" },
+      poor: { raised: 280000, target: 450000, donors: 355, desc: "गरीब कल्याण के लिए" }
+    };
+
+    var gw = document.getElementById("goalWork");
+    var gf = document.getElementById("goalFill");
+    var gcf = document.getElementById("goalCircleFill");
+    var gp = document.getElementById("goalPercent");
+    var gr = document.getElementById("goalRaised");
+    var gt = document.getElementById("goalTarget");
+    var gd = document.getElementById("goalDonors");
+    
+    function fmt(n) { return "₹" + n.toLocaleString("en-IN"); }
+
+    function updateGoal() {
+      if(!gw) return;
+      var k = gw.value || "education";
+      var d = goalData[k] || goalData.education;
+      var pct = Math.round((d.raised / d.target) * 100);
+
+      if(gr) gr.textContent = fmt(d.raised);
+      if(gt) gt.textContent = fmt(d.target);
+      if(gd) gd.textContent = d.donors.toLocaleString("en-IN");
+      if(gf) gf.style.width = pct + "%";
+      
+      var C = 326.7;
+      if(gcf) gcf.style.strokeDashoffset = C - (pct / 100) * C;
+
+      if(gp) {
+        var c = 0;
+        clearInterval(gp._t);
+        gp._t = setInterval(function() {
+          c++;
+          if (c >= pct) { c = pct; clearInterval(gp._t); }
+          gp.textContent = c + "%";
+        }, 20);
       }
     }
-    if(!ringsDone && ringFills.length){
-      var r = ringFills[0].getBoundingClientRect();
-      if(r.top < window.innerHeight * 0.9){
-        ringsDone = true;
-        var C = 2 * Math.PI * 52;
-        ringFills.forEach(function(el){
-          var p = parseInt(el.dataset.percent, 10);
-          el.style.strokeDashoffset = C - (p / 100) * C;
-        });
-        totalCircles.forEach(function(el){
-          var p = parseInt(el.dataset.percent, 10);
-          el.style.strokeDashoffset = C - (p / 100) * C;
-        });
-      }
-    }
-  }
-  window.addEventListener("scroll", checkVis, {passive:true});
-  setTimeout(checkVis, 500);
+    if(gw) gw.addEventListener("change", updateGoal);
+    updateGoal();
 
-  document.querySelectorAll(".up-toggle").forEach(function(btn){
-    btn.addEventListener("click", function(){
+    var counters = document.querySelectorAll('.impact-dashboard .counter');
+    var rings = document.querySelectorAll('.impact-dashboard .ring-fill, .impact-dashboard .total-ring-fill');
+    
+    if("IntersectionObserver" in window){
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            if (entry.target.classList.contains('counter')) {
+              var el = entry.target;
+              var target = +el.dataset.target;
+              var prefix = el.dataset.prefix || "";
+              var suffix = el.dataset.suffix || "";
+              var start = performance.now();
+              
+              var step = function(now) {
+                var p = Math.min((now - start) / 2500, 1);
+                var ease = 1 - Math.pow(1 - p, 3);
+                el.textContent = prefix + Math.floor(ease * target).toLocaleString("en-IN") + suffix;
+                if (p < 1) requestAnimationFrame(step);
+              };
+              requestAnimationFrame(step);
+              observer.unobserve(el);
+            }
+
+            if (entry.target.classList.contains('ring-fill') || entry.target.classList.contains('total-ring-fill')) {
+              var elr = entry.target;
+              var pct2 = parseInt(elr.dataset.percent, 10);
+              elr.style.strokeDashoffset = 326.7 - (pct2 / 100) * 326.7;
+              observer.unobserve(elr);
+            }
+          }
+        });
+      }, { threshold: 0.5 });
+
+      counters.forEach(function(c) { observer.observe(c); });
+      rings.forEach(function(r) { observer.observe(r); });
+    } else {
+      counters.forEach(function(el){
+        var t = +el.dataset.target;
+        var p = el.dataset.prefix || "";
+        var s = el.dataset.suffix || "";
+        el.textContent = p + t.toLocaleString("en-IN") + s;
+      });
+      rings.forEach(function(el){
+        var pct3 = parseInt(el.dataset.percent, 10);
+        el.style.strokeDashoffset = 326.7 - (pct3 / 100) * 326.7;
+      });
+    }
+  })();
+
+  var upTrack = document.getElementById("upcomingTrack");
+  if(upTrack){
+    upTrack.innerHTML = upTrack.innerHTML + upTrack.innerHTML;
+    upTrack.addEventListener("click", function(e){
+      var btn = e.target.closest(".up-toggle");
+      if(!btn) return;
       var panel = btn.nextElementSibling;
       if(!panel) return;
       var o = btn.classList.toggle("open");
       if(o){ panel.classList.add("open"); panel.style.maxHeight = panel.scrollHeight + "px"; }
       else{ panel.classList.remove("open"); panel.style.maxHeight = "0px"; }
     });
-  });
-  var upTrack = document.getElementById("upcomingTrack");
-  if(upTrack) upTrack.innerHTML = upTrack.innerHTML + upTrack.innerHTML;
+    window.addEventListener("resize", function(){
+      document.querySelectorAll(".up-activities.open").forEach(function(panel){
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      });
+    });
+  }
 
   var tests = [
     {name:"सुनीता देवी",role:"लाभार्थी · पटना",text:"मेरी बेटी को निःशुल्क किताबें और स्कूल बैग मिला। अब वह रोज़ स्कूल जाती है।"},
@@ -2737,9 +3124,14 @@ document.addEventListener("DOMContentLoaded", function(){
   var popupClose = document.getElementById("donatePopupClose");
   if(popup){
     setTimeout(function(){
+      if(!popup){ return; }
+      var pf = document.getElementById('pdFormModal');
+      var pm = document.getElementById('paymentModal');
+      if(pf && pf.classList.contains('show')) return;
+      if(pm && pm.classList.contains('show')) return;
       popup.classList.add("show");
       document.body.classList.add("popup-active");
-    }, 7000);
+    }, SPLASH_DURATION + 1500);
     var closePopup = function(){
       popup.classList.remove("show");
       document.body.classList.remove("popup-active");
@@ -2751,16 +3143,9 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   if (window.lucide) lucide.createIcons();
-  console.log("%c🔵 Sath Chale Hum — Final Loaded", "color:#2563EB;font-weight:900;font-size:14px;");
 });
 
-/* ═══════════════════════════════════════════════════════════
-   PANCH DAAN JS
-   ═══════════════════════════════════════════════════════════ */
-let pdCurrentSelection = {
-  title: "",
-  amount: 0
-};
+let pdCurrentSelection = { title: "", amount: 0 };
 
 function switchPdTab(tabId, btn) {
   document.querySelectorAll('.pd-content-area').forEach(el => el.classList.remove('active'));
@@ -2827,10 +3212,12 @@ function updatePdSummary() {
   const amountEl = document.getElementById('pdTotalAmount');
   if (pdCurrentSelection.amount > 0) {
     bar.classList.add('show');
+    document.body.classList.add('pd-bar-open');
     titleEl.innerText = "चयनित दान: " + pdCurrentSelection.title;
     amountEl.innerText = "₹" + pdCurrentSelection.amount.toLocaleString('en-IN');
   } else {
     bar.classList.remove('show');
+    document.body.classList.remove('pd-bar-open');
   }
 }
 
@@ -2840,27 +3227,33 @@ function resetPdSelection() {
   document.querySelectorAll('.pd-card').forEach(el => el.classList.remove('selected'));
   document.querySelectorAll('.pd-qty-selector').forEach(el => el.remove());
   document.getElementById('pdSummaryBar').classList.remove('show');
+  document.body.classList.remove('pd-bar-open');
 }
 
 function proceedToPdDonate() {
   if(pdCurrentSelection.amount === 0) return;
-  
-  // Populate Modal with selected item
+  var popupEl = document.getElementById('donatePopup');
+  if(popupEl){ popupEl.classList.remove('show'); document.body.classList.remove('popup-active'); }
   document.getElementById('pdDonationItem').value = pdCurrentSelection.title;
   document.getElementById('pdFormAmount').innerText = pdCurrentSelection.amount.toLocaleString('en-IN');
-  
-  // Show Modal
   document.getElementById('pdFormModal').classList.add('show');
   document.body.style.overflow = 'hidden';
 }
 
-// Close Form Modal
 document.getElementById('pdFormClose').addEventListener('click', function(){
   document.getElementById('pdFormModal').classList.remove('show');
   document.body.style.overflow = '';
 });
 
-// State / District Selection Logic
+document.addEventListener('keydown', function(e){
+  if (e.key !== 'Escape') return;
+  var m = document.getElementById('pdFormModal');
+  if (m && m.classList.contains('show')) {
+    m.classList.remove('show');
+    document.body.style.overflow = '';
+  }
+});
+
 const biharDistricts = [
   "Araria", "Arwal", "Aurangabad", "Banka", "Begusarai", "Bhagalpur", 
   "Bhojpur", "Buxar", "Darbhanga", "East Champaran (Motihari)", "Gaya", 
@@ -2879,7 +3272,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const pdOtherStateName = document.getElementById('pdOtherStateName');
   const pdOtherDistrictName = document.getElementById('pdOtherDistrictName');
   
-  // Populate Bihar Districts
   biharDistricts.forEach(d => {
     const opt = document.createElement('option');
     opt.value = d;
@@ -2887,7 +3279,6 @@ document.addEventListener('DOMContentLoaded', () => {
     pdBiharDistrictSelect.appendChild(opt);
   });
 
-  // State Change Logic
   pdStateSelect.addEventListener('change', function() {
     if (this.value === 'Bihar') {
       pdBiharDistrictWrap.style.display = 'flex';
@@ -2898,13 +3289,21 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       pdBiharDistrictWrap.style.display = 'none';
       pdBiharDistrictSelect.required = false;
-      pdOtherStateWrap.style.display = 'flex';
+      pdOtherStateWrap.style.display = 'grid';
       pdOtherStateName.required = true;
       pdOtherDistrictName.required = true;
     }
   });
 
-  // Form Submission
+  document.querySelectorAll('.pd-card, .pd-tab-btn').forEach(function(el) {
+    el.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        el.click();
+      }
+    });
+  });
+
   document.getElementById('pdDonorForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
@@ -2939,7 +3338,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     var options = {
-      key: "rzp_test_XXXXXXXXXXXXXX", // Replace with your Razorpay Key
+      key: "rzp_test_XXXXXXXXXXXXXX",
       amount: totalAmount * 100, 
       currency: "INR",
       name: "Sath Chale Hum Foundation",
