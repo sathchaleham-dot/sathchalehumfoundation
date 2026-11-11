@@ -11,12 +11,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Tiro+Devanagari+Hindi:ital@0;1&family=Yatra+One&family=Rozha+One&family=Mukta:wght@400;500;600;700;800&family=Bebas+Neue&family=Playfair+Display:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
   <style>
     *{ margin:0; padding:0; box-sizing:border-box; }
-    html{ scroll-behavior:smooth; overflow-x:hidden; }
+    html{ scroll-behavior:smooth; overflow-x:hidden; scroll-padding-top:195px; }
+    @media(max-width:900px){ html{ scroll-padding-top:190px; } }
 
     :root{
       --navy:#0A2540; --navy-2:#0F2E4F;
@@ -48,92 +49,89 @@
     .section-title p{ max-width:800px; margin:18px auto 0;
       color:var(--muted); line-height:1.8; font-size:1rem; }
 
-    /* HEADER */
-    .site-header{
-      position:fixed; left:0; top:0; width:100%; z-index:9999;
-      background:linear-gradient(135deg,#0A2540 0%,#0F2E4F 50%,#0A2540 100%);
-      backdrop-filter:blur(20px); -webkit-backdrop-filter:blur(20px);
-      border-bottom:1px solid rgba(59,130,246,.15);
-      box-shadow:0 8px 32px rgba(10,37,64,.18);
+    /* ========================================== */
+    /* HEADER & TOP BAR CSS (Index Page Same)     */
+    /* ========================================== */
+    .scroll-progress{position:fixed;top:0;left:0;height:4px;width:0;z-index:2147483646;background:linear-gradient(90deg,#2563EB,#FBBF24,#DC2626);box-shadow:0 0 20px rgba(251,191,36,.9);transition:width .15s;pointer-events:none;}
+    .top-fixed{position:fixed;top:0;left:0;right:0;z-index:9998;}
+    .top-ticker{height:42px;display:flex;align-items:center;background:linear-gradient(90deg,#0A2540,#1E40AF,#0A2540);color:#fff;overflow:hidden;border-bottom:1px solid rgba(251,191,36,.25);}
+    .ticker-label{flex:0 0 auto;display:flex;align-items:center;gap:7px;padding:0 16px;height:100%;background:linear-gradient(135deg,var(--gold),#F59E0B);color:#0A2540;font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;position:relative;z-index:3;}
+    .ticker-label::after{content:"";position:absolute;right:-10px;top:0;bottom:0;width:20px;background:linear-gradient(90deg,var(--gold),transparent);}
+    .ticker-label i{font-size:10px;animation:tickerPulse 1.6s infinite;}
+    @keyframes tickerPulse{50%{transform:scale(1.2);}}
+    .ticker-scroll{flex:1;overflow:hidden;height:100%;display:flex;align-items:center;min-width:0;}
+    .ticker-track{display:flex;align-items:center;gap:55px;padding-left:25px;white-space:nowrap;animation:tickerMove 40s linear infinite;font-size:12px;font-weight:700;}
+    @keyframes tickerMove{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+    .ticker-item{display:inline-flex;align-items:center;gap:8px;color:rgba(255,255,255,.92);cursor:pointer;transition:.25s;}
+    .ticker-item:hover{color:var(--gold);}
+    .ticker-item i{color:var(--gold);font-size:11px;}
+    .ticker-item strong{color:#fff;}
+    .ticker-item:hover strong{color:var(--gold);}
+    .ticker-item a{color:var(--gold);text-decoration:underline;text-underline-offset:3px;font-weight:800;}
+    .top-buttons{height:52px;display:flex;align-items:center;justify-content:center;gap:12px;background:rgba(10,37,64,.98);backdrop-filter:blur(20px);border-bottom:1px solid rgba(251,191,36,.18);padding:0 16px;}
+    .top-btn{display:inline-flex;align-items:center;gap:8px;padding:10px 22px;border-radius:50px;font-size:12.5px;font-weight:900;letter-spacing:.03em;transition:.35s;white-space:nowrap;text-decoration:none;box-shadow:0 8px 22px rgba(0,0,0,.3);}
+    .top-btn.donate{background:linear-gradient(135deg,#DC2626,#991B1B);color:#fff;}
+    .top-btn.donate:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(220,38,38,.6);}
+    .top-btn.member{background:linear-gradient(135deg,#FBBF24,#F59E0B);color:#0A2540;}
+    .top-btn.member:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(251,191,36,.6);}
+    @media(max-width:900px){
+      .top-ticker{height:38px;}
+      .ticker-label{padding:0 12px;font-size:9px;gap:5px;}
+      .ticker-track{gap:38px;font-size:10.5px;padding-left:15px;animation-duration:55s;}
+      .top-buttons{height:auto;padding:8px;gap:8px;}
+      .top-btn{padding:9px 14px;font-size:11px;gap:5px;flex:1;justify-content:center;}
     }
-    .header-inner{ min-height:92px; display:flex; align-items:center;
-      justify-content:space-between; gap:20px; }
-    .brand{ display:flex; align-items:center; gap:14px;
-      min-width:0; flex-shrink:0; }
-    .logo-box{ width:66px; height:66px; border-radius:16px;
-      background:#FFFFFF; display:block; padding:0;
-      box-shadow:0 8px 24px rgba(59,130,246,.35);
-      border:2px solid rgba(251,191,36,.4);
-      transition:.35s ease; flex-shrink:0; overflow:hidden;
-      position:relative; line-height:0; }
-    .logo-box:hover{ transform:translateY(-2px) rotate(-3deg);
-      border-color:var(--gold); }
-    .logo-box img{ width:100%; height:100%;
-      object-fit:cover; object-position:center; }
-    .brand-text{ min-width:0; }
-    .brand-name{ color:#fff;
-      font-size:clamp(1.2rem,2.4vw,1.7rem); font-weight:900;
-      line-height:1.1; white-space:nowrap; letter-spacing:-.5px;
-      font-family:"Tiro Devanagari Hindi",serif; }
-    .brand-name .gold{ color:var(--gold); }
-    .brand-tagline{ color:#93C5FD; font-size:.7rem; font-weight:600;
-      margin-top:3px; white-space:nowrap; letter-spacing:.4px; }
-
-    .desktop-nav{ display:flex; align-items:center; gap:2px; flex-wrap:nowrap; }
-    .desktop-nav > a{ color:#E0F2FE; font-size:.78rem; font-weight:700;
-      padding:11px 10px; border-radius:10px; transition:.25s ease;
-      white-space:nowrap; position:relative; }
-    .desktop-nav > a:hover{ color:var(--gold);
-      background:rgba(59,130,246,.15); }
-    .desktop-nav > a.active{ color:var(--gold);
-      background:rgba(59,130,246,.2); }
-    .desktop-nav > a.active::after{ content:""; position:absolute;
-      bottom:4px; left:50%; transform:translateX(-50%);
-      width:20px; height:2px; border-radius:2px; background:var(--gold); }
-
-    .donate-nav{ display:inline-flex; align-items:center; gap:7px;
-      background:linear-gradient(135deg,#DC2626,#991B1B)!important;
-      padding:11px 17px!important; color:#fff!important;
-      font-weight:900!important; border-radius:11px!important;
-      box-shadow:0 6px 20px rgba(220,38,38,.45);
-      animation:pulseDonate 2s infinite; margin-left:6px; }
-    .donate-nav:hover{ color:#fff!important;
-      background:linear-gradient(135deg,#EF4444,#DC2626)!important;
-      transform:translateY(-2px)!important; }
-    @keyframes pulseDonate{
-      0%,100%{ transform:scale(1); }
-      50%{ transform:scale(1.04); } }
-
-    .menu-toggle{ display:none; width:46px; height:46px;
-      border-radius:12px; background:rgba(59,130,246,.15);
-      border:1px solid rgba(59,130,246,.3); padding:11px; }
-    .menu-toggle span{ display:block; width:100%; height:2.5px;
-      background:#fff; margin:4.5px 0; border-radius:5px;
-      transition:.3s; }
-    .menu-toggle.active span:nth-child(1){
-      transform:rotate(45deg) translate(6px,6px); }
-    .menu-toggle.active span:nth-child(2){ opacity:0; }
-    .menu-toggle.active span:nth-child(3){
-      transform:rotate(-45deg) translate(6px,-6px); }
-
-    .mobile-nav{ display:none;
-      background:linear-gradient(180deg,#0A2540,#0F2E4F);
-      border-top:1px solid rgba(59,130,246,.2);
-      padding:14px 4% 20px; }
-    .mobile-nav a{ display:block; color:#E0F2FE;
-      padding:14px 16px; border-radius:10px; font-weight:700;
-      font-size:.9rem; margin:4px 0; transition:.25s;
-      border:1px solid transparent; }
-    .mobile-nav a:hover, .mobile-nav a.active{
-      background:rgba(59,130,246,.15); color:var(--gold);
-      border-color:rgba(59,130,246,.3); }
-    .mobile-nav .donate-nav{ text-align:center;
-      margin-top:12px; justify-content:center; }
-    .mobile-nav.active{ display:block; }
+    body .site-header{top:94px;}
+    @media(max-width:900px){body .site-header{top:98px;}}
+    .site-header{position:fixed;left:0;top:94px;width:100%;z-index:9999;background:linear-gradient(135deg,#0A2540 0%,#0F2E4F 50%,#0A2540 100%);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-bottom:1px solid rgba(59,130,246,.15);box-shadow:0 8px 32px rgba(10,37,64,.18);}
+    @media(max-width:900px){.site-header{top:98px;}}
+    .header-inner{min-height:92px;display:flex;align-items:center;justify-content:space-between;gap:20px;}
+    .brand{display:flex;align-items:center;gap:14px;min-width:0;flex-shrink:0;}
+    .logo-box{width:66px;height:66px;border-radius:16px;background:#FFFFFF;display:block;padding:0;box-shadow:0 8px 24px rgba(59,130,246,.35);border:2px solid rgba(251,191,36,.4);transition:.35s ease;flex-shrink:0;overflow:hidden;position:relative;line-height:0;}
+    .logo-box:hover{transform:translateY(-2px) rotate(-3deg);box-shadow:0 14px 34px rgba(59,130,246,.5);border-color:var(--gold);}
+    .logo-box img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.02);}
+    .brand-text{min-width:0;}
+    .brand-name{color:#fff;font-size:clamp(1.2rem,2.4vw,1.7rem);font-weight:900;line-height:1.35;white-space:nowrap;letter-spacing:-.5px;font-family:"Tiro Devanagari Hindi",serif;text-shadow:0 2px 10px rgba(0,0,0,.3);padding-top:4px;}
+    .brand-name .gold{color:var(--gold);font-weight:900;}
+    .brand-tagline{color:#93C5FD;font-size:.7rem;font-weight:600;margin-top:3px;white-space:nowrap;letter-spacing:.4px;}
+    .desktop-nav{display:flex;align-items:center;gap:2px;flex-wrap:nowrap;}
+    .desktop-nav > a{color:#E0F2FE;font-size:.78rem;font-weight:700;padding:11px 10px;border-radius:10px;transition:.25s ease;white-space:nowrap;position:relative;}
+    .desktop-nav > a:hover{color:var(--gold);background:rgba(59,130,246,.15);transform:translateY(-1px);}
+    .desktop-nav > a.active{color:var(--gold);background:rgba(59,130,246,.2);}
+    .desktop-nav > a.active::after{content:"";position:absolute;bottom:4px;left:50%;transform:translateX(-50%);width:20px;height:2px;border-radius:2px;background:var(--gold);}
+    .donate-nav{display:inline-flex;align-items:center;gap:7px;background:linear-gradient(135deg,#DC2626,#991B1B)!important;padding:11px 17px!important;color:#fff!important;font-weight:900!important;border-radius:11px!important;box-shadow:0 6px 20px rgba(220,38,38,.45),inset 0 1px 0 rgba(255,255,255,.2);animation:pulseDonate 2s infinite;margin-left:6px;letter-spacing:.3px;}
+    .donate-nav:hover{color:#fff!important;background:linear-gradient(135deg,#EF4444,#DC2626)!important;transform:translateY(-2px)!important;}
+    @keyframes pulseDonate{0%,100%{transform:scale(1);box-shadow:0 6px 20px rgba(220,38,38,.4),inset 0 1px 0 rgba(255,255,255,.2);}50%{transform:scale(1.04);box-shadow:0 10px 30px rgba(220,38,38,.7),inset 0 1px 0 rgba(255,255,255,.2);}}
+    .menu-toggle{display:none;width:46px;height:46px;border-radius:12px;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.3);padding:11px;transition:.3s;}
+    .menu-toggle span{display:block;width:100%;height:2.5px;background:#fff;margin:4.5px 0;border-radius:5px;transition:.3s;}
+    .menu-toggle.active span:nth-child(1){transform:rotate(45deg) translate(6px,6px);}
+    .menu-toggle.active span:nth-child(2){opacity:0;}
+    .menu-toggle.active span:nth-child(3){transform:rotate(-45deg) translate(6px,-6px);}
+    .mobile-nav{display:none;background:linear-gradient(180deg,#0A2540,#0F2E4F);border-top:1px solid rgba(59,130,246,.2);padding:14px 4% 20px;box-shadow:0 20px 40px rgba(0,0,0,.3);}
+    .mobile-nav a{display:block;color:#E0F2FE;padding:14px 16px;border-radius:10px;font-weight:700;font-size:.9rem;margin:4px 0;transition:.25s;border:1px solid transparent;}
+    .mobile-nav a:hover, .mobile-nav a.active{background:rgba(59,130,246,.15);color:var(--gold);border-color:rgba(59,130,246,.3);}
+    .mobile-nav .donate-nav{text-align:center;margin-top:12px;justify-content:center;}
+    .mobile-nav.active{display:block;}
+    @media(max-width:900px){
+      .desktop-nav{display:none;}
+      .menu-toggle{display:block;}
+      .header-inner{min-height:78px;}
+      .brand-name{font-size:clamp(1.1rem,3vw,1.4rem);}
+      .brand-tagline{font-size:.66rem;}
+      .logo-box{width:60px;height:60px;}
+    }
+    @media(max-width:600px){
+      .brand-name{font-size:clamp(1rem,4vw,1.15rem);white-space:normal;line-height:1.3;}
+      .brand-tagline{font-size:.62rem;white-space:normal;}
+      .logo-box{width:54px;height:54px;border-radius:13px;}
+      .brand{gap:11px;}
+    }
+    .header-spacer{height:190px;}
+    @media(max-width:900px){.header-spacer{height:185px;}}
 
     /* PAGE HERO */
     .page-hero{
-      padding:170px 0 80px;
+      padding:60px 0 80px;
       background:linear-gradient(135deg,rgba(10,37,64,.94),rgba(30,64,175,.88)),
         url("https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1800&q=85")
         center/cover;
@@ -1235,249 +1233,108 @@
     .cta-buttons{ display:flex; justify-content:center;
       flex-wrap:wrap; gap:14px; }
 
-    /* FOOTER */
-    footer{ background:radial-gradient(circle at 10% 20%,rgba(59,130,246,.1),transparent 40%),
-        radial-gradient(circle at 90% 80%,rgba(251,191,36,.06),transparent 40%),
-        linear-gradient(160deg,#0A2540 0%,#0F2E4F 60%,#0A2540 100%);
-      color:#fff; padding-top:80px; position:relative; overflow:hidden; }
-    footer::before{ content:""; position:absolute;
-      top:0; left:0; right:0; height:1px;
-      background:linear-gradient(90deg,transparent,rgba(251,191,36,.6),transparent); }
-    .footer-grid{ display:grid;
-      grid-template-columns:repeat(5,1fr);
-      gap:32px; padding-bottom:60px; position:relative; z-index:2; }
-    .footer-brand-head{ display:flex; align-items:center;
-      gap:10px; margin-bottom:20px; }
-    .footer-logo-box{ width:60px; height:60px; border-radius:15px;
-      background:#FFFFFF; display:block; padding:0;
-      border:2px solid rgba(251,191,36,.4);
-      box-shadow:0 8px 22px rgba(59,130,246,.3);
-      flex-shrink:0; overflow:hidden;
-      position:relative; line-height:0; }
-    .footer-logo-box img{ width:100%; height:100%;
-      object-fit:cover; object-position:center; }
-    .footer-brand-text{ min-width:0; }
-    .footer-brand-text h3{ font-family:"Tiro Devanagari Hindi",serif;
-      font-size:1.05rem; font-weight:900; color:#fff;
-      line-height:1.15; margin-bottom:4px; }
-    .footer-tagline-text{ color:#93C5FD; font-size:.66rem;
-      font-weight:600; letter-spacing:.4px;
-      font-family:"Tiro Devanagari Hindi",serif; }
-    .footer-desc{ color:#93C5FD; font-size:.8rem; line-height:1.7;
-      margin-bottom:20px; max-width:100%; }
-    .footer-badge{ display:inline-flex; align-items:center; gap:7px;
-      padding:6px 12px; background:rgba(251,191,36,.1);
-      border:1px solid rgba(251,191,36,.3); border-radius:100px;
-      color:var(--gold); font-size:.68rem; font-weight:900;
-      letter-spacing:.4px; margin-bottom:20px; }
+    /* ========================================== */
+    /* FOOTER CSS (Index Page Same)               */
+    /* ========================================== */
+    footer{background:radial-gradient(circle at 10% 20%,rgba(59,130,246,.1),transparent 40%),radial-gradient(circle at 90% 80%,rgba(251,191,36,.06),transparent 40%),linear-gradient(160deg,#0A2540 0%,#0F2E4F 60%,#0A2540 100%);color:#fff;padding-top:80px;position:relative;overflow:hidden;}
+    footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(251,191,36,.6),transparent);}
+    .footer-top{text-align:center;padding-bottom:44px;border-bottom:1px solid rgba(59,130,246,.15);margin-bottom:44px;position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:14px;}
+    .footer-brand-head{display:flex;align-items:center;gap:14px;justify-content:center;}
+    .footer-logo-box{width:70px;height:70px;border-radius:18px;background:#FFFFFF;display:block;padding:0;border:2px solid rgba(251,191,36,.5);box-shadow:0 8px 22px rgba(59,130,246,.3);flex-shrink:0;overflow:hidden;position:relative;line-height:0;}
+    .footer-logo-box img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.02);}
+    .footer-brand-text{text-align:left;}
+    .footer-brand-text h3{font-family:"Tiro Devanagari Hindi",serif;font-size:1.3rem;font-weight:900;color:#fff;line-height:1.35;margin-bottom:4px;padding-top:3px;}
+    .footer-tagline-text{color:#93C5FD;font-size:.78rem;font-weight:600;letter-spacing:.4px;font-family:"Tiro Devanagari Hindi",serif;line-height:1.35;}
+    .footer-desc{color:#93C5FD;font-size:.88rem;line-height:1.75;max-width:600px;margin:0 auto;}
+    .footer-badge{display:inline-flex;align-items:center;gap:7px;padding:7px 16px;background:rgba(251,191,36,.1);border:1px solid rgba(251,191,36,.3);border-radius:100px;color:var(--gold);font-size:.72rem;font-weight:900;letter-spacing:.4px;}
+    .footer-social-heading{font-family:"Tiro Devanagari Hindi",serif;font-size:.95rem;font-weight:900;color:#fff;margin-top:8px;margin-bottom:6px;letter-spacing:.2px;position:relative;padding-bottom:10px;}
+    .footer-social-heading::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:40px;height:2px;background:linear-gradient(90deg,transparent,#FBBF24,transparent);border-radius:2px;}
+    .social-icons{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
+    .social-icon{width:44px;height:44px;display:grid;place-items:center;border-radius:12px;background:rgba(59,130,246,.12);color:#93C5FD;font-size:1rem;transition:.35s;border:1px solid rgba(59,130,246,.25);}
+    .social-icon:hover{transform:translateY(-5px) scale(1.08);background:linear-gradient(135deg,#FBBF24,#F59E0B);color:#0A2540;border-color:var(--gold);box-shadow:0 12px 26px rgba(251,191,36,.5);}
+    .footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding-bottom:36px;position:relative;z-index:2;align-items:start;text-align:center;}
+    .footer-col{display:flex;flex-direction:column;align-items:center;text-align:center;}
+    .footer-heading{font-family:"Tiro Devanagari Hindi",serif;font-size:.95rem;font-weight:900;color:#fff;margin-bottom:20px;padding-bottom:12px;position:relative;letter-spacing:.2px;padding-top:3px;text-align:center;width:100%;}
+    .footer-heading::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:32px;height:2px;background:linear-gradient(90deg,#FBBF24,#F59E0B);border-radius:2px;}
+    .footer-links{list-style:none;display:flex;flex-direction:column;align-items:flex-start;}
+    .footer-links li{margin-bottom:10px;}
+    .footer-links a{color:#93C5FD;font-size:.82rem;font-weight:600;display:inline-flex;align-items:center;gap:8px;transition:.25s;line-height:1.5;}
+    .footer-links a i{font-size:.58rem;color:#FBBF24;transition:.25s;}
+    .footer-links a:hover{color:var(--gold);transform:translateX(4px);}
+    .contact-info{list-style:none;display:flex;flex-direction:column;align-items:flex-start;}
+    .contact-info li{display:flex;gap:10px;align-items:flex-start;margin-bottom:14px;color:#93C5FD;font-size:.82rem;line-height:1.65;text-align:left;}
+    .contact-info li i{flex-shrink:0;width:30px;height:30px;display:grid;place-items:center;border-radius:9px;background:rgba(59,130,246,.15);border:1px solid rgba(59,130,246,.25);color:#FBBF24;font-size:.75rem;margin-top:1px;}
+    .contact-info li strong{display:block;color:#fff;font-size:.72rem;margin-bottom:2px;letter-spacing:.3px;text-transform:uppercase;}
+    .contact-info li a{color:#93C5FD;}
+    .contact-info li a:hover{color:var(--gold);}
+    .footer-newsletter-wrap{display:flex;flex-direction:column;align-items:center;padding:32px 0 44px;border-top:1px solid rgba(59,130,246,.15);position:relative;z-index:2;gap:14px;}
+    .newsletter-label{font-family:"Tiro Devanagari Hindi",serif;font-size:.95rem;font-weight:900;color:#fff;letter-spacing:.3px;position:relative;padding-bottom:10px;}
+    .newsletter-label::after{content:"";position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:40px;height:2px;background:linear-gradient(90deg,transparent,#FBBF24,transparent);border-radius:2px;}
+    .newsletter-form{display:flex;gap:6px;background:rgba(255,255,255,.06);border:1px solid rgba(59,130,246,.25);border-radius:14px;padding:6px;width:min(480px,90%);transition:.3s;}
+    .newsletter-form:focus-within{border-color:var(--gold);box-shadow:0 0 0 4px rgba(251,191,36,.12);}
+    .newsletter-form input{flex:1;background:transparent;border:none;outline:none;padding:12px 16px;color:#fff;font-family:inherit;font-size:.85rem;min-width:0;}
+    .newsletter-form input::placeholder{color:#6B8CAE;}
+    .newsletter-form button{flex-shrink:0;width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,#FBBF24,#F59E0B);color:#0A2540;font-size:.9rem;display:grid;place-items:center;transition:.3s;}
+    .newsletter-form button:hover{transform:scale(1.08);}
+    .footer-bottom{border-top:1px solid rgba(59,130,246,.15);padding:22px 0;position:relative;z-index:2;}
+    .footer-bottom-inner{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;}
+    .footer-copy{color:#6B8CAE;font-size:.78rem;font-weight:600;}
+    .footer-copy strong{color:#93C5FD;font-weight:800;}
+    .footer-legal{display:flex;gap:4px;flex-wrap:nowrap;align-items:center;justify-content:center;}
+    .footer-legal a{color:#93C5FD;font-size:.74rem;font-weight:700;padding:5px 8px;border-radius:8px;transition:.25s;white-space:nowrap;}
+    .footer-legal a:hover{color:var(--gold);background:rgba(59,130,246,.15);}
+    .footer-legal span{color:rgba(59,130,246,.5);font-size:.74rem;}
+    .footer-made{color:#6B8CAE;font-size:.74rem;font-weight:600;display:inline-flex;align-items:center;gap:6px;}
+    .footer-made i{color:#DC2626;font-size:.68rem;}
+    @media(max-width:900px){.footer-grid{grid-template-columns:repeat(2,1fr);gap:32px;}}
+    @media(max-width:700px){footer{padding-top:60px;}.footer-top{padding-bottom:32px;margin-bottom:32px;gap:12px;}.footer-brand-head{flex-direction:column;text-align:center;gap:12px;}.footer-brand-text{text-align:center;}.footer-brand-text h3{font-size:1.15rem;}.footer-tagline-text{font-size:.72rem;}.footer-logo-box{width:60px;height:60px;border-radius:15px;}.footer-desc{font-size:.82rem;}.footer-grid{grid-template-columns:1fr;gap:32px;padding-bottom:32px;text-align:center;}.footer-col{align-items:center;}.footer-links{align-items:center;}.contact-info{align-items:center;}.contact-info li{text-align:center;}.footer-heading{font-size:.92rem;}.footer-newsletter-wrap{padding:26px 0 36px;}.newsletter-form{width:100%;}.footer-legal a{font-size:.68rem;padding:4px 6px;}.footer-legal span{font-size:.68rem;}}
+    @media(max-width:420px){.footer-legal a{font-size:.62rem;padding:3px 4px;}.footer-legal span{font-size:.62rem;}}
+    @media(max-width:380px){.footer-legal a{font-size:.58rem;padding:3px 3px;}.footer-legal span{font-size:.58rem;}}
+    .wa-float{position:fixed;left:20px;bottom:20px;z-index:8000;width:54px;height:54px;display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;border-radius:50%;font-size:26px;box-shadow:0 12px 30px rgba(37,211,102,.4);transition:bottom .3s;}
+    .back-top{position:fixed;right:22px;bottom:22px;width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,#2563EB,#1E40AF);color:#fff;cursor:pointer;z-index:1000;display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .3s,visibility .3s,transform .3s,bottom .3s;box-shadow:0 10px 28px rgba(37,99,235,.45);}
+    .back-top.show{opacity:1;visibility:visible;}
+    .back-top:hover{transform:translateY(-4px);}
+    body.pd-bar-open .wa-float{bottom:130px;}
+    body.pd-bar-open .back-top{bottom:130px;}
 
-    .footer-heading, .footer-social-heading{
-      font-family:"Tiro Devanagari Hindi",serif; font-size:.92rem;
-      font-weight:900; color:#fff; margin-bottom:22px;
-      padding-bottom:12px; position:relative; }
-    .footer-heading::after, .footer-social-heading::after{
-      content:""; position:absolute; bottom:0; left:0;
-      width:32px; height:2px;
-      background:linear-gradient(90deg,#FBBF24,#F59E0B);
-      border-radius:2px; }
-
-    .social-icons{ display:flex; gap:8px; flex-wrap:wrap; }
-    .social-icon{ width:38px; height:38px; display:grid;
-      place-items:center; border-radius:10px;
-      background:rgba(59,130,246,.12); color:#93C5FD;
-      font-size:.9rem; transition:.3s;
-      border:1px solid rgba(59,130,246,.25); }
-    .social-icon:hover{ transform:translateY(-4px);
-      background:linear-gradient(135deg,#FBBF24,#F59E0B);
-      color:#0A2540; border-color:var(--gold);
-      box-shadow:0 8px 22px rgba(251,191,36,.4); }
-
-    .footer-links{ list-style:none; }
-    .footer-links li{ margin-bottom:10px; }
-    .footer-links a{ color:#93C5FD; font-size:.78rem;
-      font-weight:600; display:inline-flex; align-items:center;
-      gap:7px; transition:.25s; line-height:1.5; }
-    .footer-links a i{ font-size:.56rem; color:#FBBF24; }
-    .footer-links a:hover{ color:var(--gold); transform:translateX(4px); }
-
-    .contact-info{ list-style:none; }
-    .contact-info li{ display:flex; gap:10px;
-      align-items:flex-start; margin-bottom:14px;
-      color:#93C5FD; font-size:.78rem; line-height:1.65; }
-    .contact-info li i{ flex-shrink:0; width:28px; height:28px;
-      display:grid; place-items:center; border-radius:8px;
-      background:rgba(59,130,246,.15);
-      border:1px solid rgba(59,130,246,.25); color:#FBBF24;
-      font-size:.72rem; margin-top:1px; }
-    .contact-info li strong{ display:block; color:#fff;
-      font-size:.7rem; margin-bottom:2px;
-      letter-spacing:.3px; text-transform:uppercase; }
-    .contact-info li a{ color:#93C5FD; }
-    .footer-newsletter{ margin-top:6px; padding-top:16px;
-      border-top:1px solid rgba(59,130,246,.2); }
-    .footer-newsletter label{ display:block; color:#93C5FD;
-      font-size:.68rem; font-weight:800; letter-spacing:.5px;
-      text-transform:uppercase; margin-bottom:10px; }
-    .newsletter-form{ display:flex; gap:6px;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(59,130,246,.25);
-      border-radius:12px; padding:5px; }
-    .newsletter-form:focus-within{ border-color:var(--gold);
-      box-shadow:0 0 0 4px rgba(251,191,36,.1); }
-    .newsletter-form input{ flex:1; background:transparent;
-      border:none; outline:none; padding:8px 10px; color:#fff;
-      font-family:inherit; font-size:.76rem; min-width:0; }
-    .newsletter-form input::placeholder{ color:#6B8CAE; }
-    .newsletter-form button{ flex-shrink:0; width:36px; height:36px;
-      border-radius:8px;
-      background:linear-gradient(135deg,#FBBF24,#F59E0B);
-      color:#0A2540; font-size:.82rem; display:grid;
-      place-items:center; }
-
-    .footer-bottom{ border-top:1px solid rgba(59,130,246,.15);
-      padding:22px 0; position:relative; z-index:2; }
-    .footer-bottom-inner{ display:flex; flex-direction:column;
-      align-items:center; justify-content:center;
-      gap:12px; text-align:center; }
-    .footer-copy{ color:#6B8CAE; font-size:.76rem; font-weight:600;
-      order:1; }
-    .footer-copy strong{ color:#93C5FD; font-weight:800; }
-    .footer-legal{ display:flex; gap:4px; flex-wrap:nowrap;
-      align-items:center; justify-content:center; order:2; }
-    .footer-legal a{ color:#93C5FD; font-size:.72rem;
-      font-weight:700; padding:5px 8px; border-radius:8px;
-      transition:.25s; white-space:nowrap; }
-    .footer-legal a:hover{ color:var(--gold);
-      background:rgba(59,130,246,.15); }
-    .footer-legal span{ color:rgba(59,130,246,.5); font-size:.72rem; }
-    .footer-made{ color:#6B8CAE; font-size:.72rem; font-weight:600;
-      display:inline-flex; align-items:center; gap:6px; order:3; }
-    .footer-made i{ color:#DC2626; font-size:.68rem; }
-
-    /* BACK TOP */
-    .back-top{ position:fixed; right:22px; bottom:22px;
-      width:48px; height:48px; border-radius:14px;
-      background:linear-gradient(135deg,#2563EB,#1E40AF);
-      color:#fff; cursor:pointer; z-index:1000;
-      display:grid; place-items:center; opacity:0;
-      visibility:hidden; transition:.3s;
-      box-shadow:0 10px 28px rgba(37,99,235,.45); }
-    .back-top.show{ opacity:1; visibility:visible; }
-    .back-top:hover{ transform:translateY(-4px); }
-
-    /* WHATSAPP FLOAT */
-    .wa-float{
-      position:fixed;
-      right:22px;
-      bottom:82px;
-      width:56px;
-      height:56px;
-      border-radius:50%;
-      background:linear-gradient(135deg,#25D366,#128C7E);
-      color:#fff;
-      display:grid;
-      place-items:center;
-      font-size:1.6rem;
-      z-index:999;
-      box-shadow:0 14px 34px rgba(37,211,102,.5);
-      transition:.3s;
-      animation:waPulse 2.2s infinite;
-    }
-    .wa-float:hover{
-      transform:scale(1.1) translateY(-3px);
-      box-shadow:0 20px 45px rgba(37,211,102,.7);
-      color:#fff;
-    }
-    @keyframes waPulse{
-      0%,100%{ box-shadow:0 14px 34px rgba(37,211,102,.5); }
-      50%{ box-shadow:0 18px 45px rgba(37,211,102,.9); }
-    }
-
-    @media(max-width:500px){
-      .wa-float{ width:50px; height:50px; font-size:1.4rem;
-        right:18px; bottom:76px; }
-    }
-
-    /* RESPONSIVE */
-    @media(max-width:1200px){
-      .desktop-nav > a{ padding:10px 7px; font-size:.72rem; }
-      .donate-nav{ padding:10px 13px!important; }
-      .footer-grid{ grid-template-columns:repeat(3,1fr); gap:32px; }
-    }
-    @media(max-width:1000px){
-      .desktop-nav > a{ padding:10px 6px; font-size:.68rem; }
-      .logo-box{ width:62px; height:62px; }
-    }
-    @media(max-width:900px){
-      .desktop-nav{ display:none; }
-      .menu-toggle{ display:block; }
-      .header-inner{ min-height:78px; }
-      .brand-name{ font-size:clamp(1.1rem,3vw,1.4rem); }
-      .brand-tagline{ font-size:.66rem; }
-      .logo-box{ width:60px; height:60px; }
-      .page-hero{ padding:140px 0 65px; }
-      .footer-grid{ grid-template-columns:1fr 1fr; gap:36px 24px; }
-    }
-    @media(max-width:700px){
-      .section{ padding:70px 0; }
-      .page-hero{ padding:130px 0 55px; }
-      .page-hero h1{ font-size:1.75rem; }
-      .footer-grid{ grid-template-columns:1fr; gap:32px;
-        padding-bottom:40px; }
-      .footer-bottom-inner{ gap:10px; }
-      .footer-legal{ flex-wrap:nowrap; gap:1px; }
-      .footer-legal a{ font-size:.68rem; padding:4px 6px; }
-      .footer-legal span{ font-size:.68rem; }
-      .cta-strip{ padding:65px 0; }
-      .cta-buttons{ flex-direction:column; }
-      .cta-buttons .btn{ width:100%; }
-    }
-    @media(max-width:600px){
-      .brand-name{ font-size:clamp(1rem,4vw,1.15rem);
-        white-space:normal; line-height:1.15; }
-      .brand-tagline{ font-size:.62rem; white-space:normal; }
-      .logo-box{ width:54px; height:54px; border-radius:13px; }
-      .brand{ gap:11px; }
-      .cta-strip h2{ font-size:1.55rem; }
-      .cta-strip p{ font-size:.92rem; }
-      .social-icon{ width:38px; height:38px; font-size:.9rem; }
-      .footer-brand-text h3{ font-size:1rem; }
-    }
-    @media(max-width:420px){
-      .footer-legal a{ font-size:.62rem; padding:3px 4px; }
-      .footer-legal span{ font-size:.62rem; }
-    }
-    @media(max-width:380px){
-      .brand-name{ font-size:1rem; }
-      .brand-tagline{ font-size:.6rem; }
-      .logo-box{ width:50px; height:50px; }
-      .footer-legal a{ font-size:.58rem; padding:3px 3px; }
-      .footer-legal span{ font-size:.58rem; }
-    }
-    @media (prefers-reduced-motion: reduce){
-      *,*::before,*::after{
-        animation-duration:.01ms!important;
-        animation-iteration-count:1!important;
-        transition-duration:.01ms!important; } }
   </style>
 </head>
 
 <body>
 
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ================= TOP FIXED BAR ================= -->
+<div class="top-fixed" id="topFixed">
+  <div class="top-ticker">
+    <div class="ticker-label"><i class="fa-solid fa-bullhorn"></i> Latest</div>
+    <div class="ticker-scroll"><div class="ticker-track">
+      <span class="ticker-item" onclick="location.href='events.html'"><i class="fa-solid fa-calendar-check"></i><strong>नया शिविर:</strong> शैक्षणिक सामग्री वितरण — 03 जनवरी 2027, पटना <a href="events.html">Register Now</a></span>
+      <span class="ticker-item" onclick="location.href='donate.html'"><i class="fa-solid fa-heart"></i>आपका <strong>₹1</strong> किसी की मुस्कान बन सकता है <a href="donate.html">Donate Now</a></span>
+      <span class="ticker-item" onclick="location.href='events.html'"><i class="fa-solid fa-person-dress"></i>महिला कौशल विकास शिविर — 10 जनवरी 2027, मुज़फ़्फ़रपुर <a href="join-us.html">Join Us</a></span>
+      <span class="ticker-item" onclick="location.href='events.html'"><i class="fa-solid fa-heart-pulse"></i>निःशुल्क स्वास्थ्य जाँच शिविर — 17 जनवरी 2027, गया <a href="events.html">Details</a></span>
+      <span class="ticker-item" onclick="location.href='events.html'"><i class="fa-solid fa-calendar-check"></i><strong>नया शिविर:</strong> शैक्षणिक सामग्री वितरण — 03 जनवरी 2027, पटना <a href="events.html">Register Now</a></span>
+      <span class="ticker-item" onclick="location.href='donate.html'"><i class="fa-solid fa-heart"></i>आपका <strong>₹1</strong> किसी की मुस्कान बन सकता है <a href="donate.html">Donate Now</a></span>
+      <span class="ticker-item" onclick="location.href='events.html'"><i class="fa-solid fa-person-dress"></i>महिला कौशल विकास शिविर — 10 जनवरी 2027, मुज़फ़्फ़रपुर <a href="join-us.html">Join Us</a></span>
+      <span class="ticker-item" onclick="location.href='events.html'"><i class="fa-solid fa-heart-pulse"></i>निःशुल्क स्वास्थ्य जाँच शिविर — 17 जनवरी 2027, गया <a href="events.html">Details</a></span>
+    </div></div>
+  </div>
+  <div class="top-buttons">
+    <a href="donate.html" class="top-btn donate"><i class="fa-solid fa-heart"></i> Donate Us</a>
+    <a href="join-us.html?type=member" class="top-btn member"><i class="fa-solid fa-users"></i> Member & Volunteer</a>
+  </div>
+</div>
+
 <!-- ================= HEADER ================= -->
 <header class="site-header">
   <div class="container header-inner">
-
     <a href="index.html" class="brand">
-      <div class="logo-box">
-        <img src="sath_chale_ham_logo_HD-1.png" alt="साथ चले हम फाउंडेशन Logo">
-      </div>
+      <div class="logo-box"><img src="https://raw.githubusercontent.com/sathchaleham-dot/sathchalehumfoundation/main/sath_chale_ham_logo_HD-1.png" alt="साथ चले हम फाउंडेशन Logo"></div>
       <div class="brand-text">
         <div class="brand-name">साथ चले हम <span class="gold">फाउंडेशन</span></div>
         <div class="brand-tagline">साथ चले हम, बदलाव की ओर</div>
       </div>
     </a>
-
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
@@ -1486,19 +1343,12 @@
       <a href="events.html">Events</a>
       <a href="join-us.html">Join Us</a>
       <a href="downloads.html">Downloads</a>
+      <a href="faq.html">FAQ</a>
       <a href="contact.html" class="active">Contact</a>
-      <a href="donate.html" class="donate-nav">
-        <i class="fa-solid fa-heart"></i> Donate Us
-      </a>
+      <a href="donate.html" class="donate-nav"><i class="fa-solid fa-heart"></i> Donate Us</a>
     </nav>
-
-    <button class="menu-toggle" id="menuToggle"
-            aria-label="Open Menu" aria-expanded="false"
-            aria-controls="mobileNav" type="button">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open Menu" aria-expanded="false" aria-controls="mobileNav" type="button"><span></span><span></span><span></span></button>
   </div>
-
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation">
     <a href="index.html">Home | होम</a>
     <a href="about.html">About Us | हमारे बारे में</a>
@@ -1507,13 +1357,14 @@
     <a href="events.html">Events | कार्यक्रम</a>
     <a href="join-us.html">Join Us | जुड़ें</a>
     <a href="downloads.html">Downloads | डाउनलोड</a>
+    <a href="faq.html">FAQ | सामान्य प्रश्न</a>
     <a href="contact.html" class="active">Contact | संपर्क</a>
-    <a href="donate.html" class="donate-nav">
-      <i class="fa-solid fa-heart"></i> Donate Us
-    </a>
+    <a href="donate.html" class="donate-nav"><i class="fa-solid fa-heart"></i> Donate Us</a>
   </nav>
 </header>
 
+<!-- HEADER SPACER -->
+<div class="header-spacer"></div>
 
 <!-- ================= PAGE HERO ================= -->
 <section class="page-hero">
@@ -1531,11 +1382,9 @@
   </div>
 </section>
 
-
 <!-- ================= CONTACT INFO CARDS ================= -->
 <section class="contact-info-section">
   <div class="container">
-
     <div class="section-title">
       <span class="small-title">Get In Touch</span>
       <h2>संपर्क जानकारी | <span>Contact Information</span></h2>
@@ -1544,302 +1393,144 @@
         हम शीघ्र ही आपसे संपर्क करेंगे।
       </p>
     </div>
-
     <div class="contact-cards-grid">
-
       <div class="contact-info-card">
-        <div class="contact-info-icon">
-          <i class="fa-solid fa-location-dot"></i>
-        </div>
+        <div class="contact-info-icon"><i class="fa-solid fa-location-dot"></i></div>
         <h3>पता | Address</h3>
-        <p class="hindi">
-          भारतीय नगर, वार्ड नं. 26/35,<br>
-          नजदीक रेलवे वाशिंग पिट,<br>
-          सिमरी-बख्तियारपुर रोड,<br>
-          सहरसा, बिहार – 852201
-        </p>
-        <a href="https://maps.google.com/?q=Saharsa+Bihar+852201" target="_blank" rel="noopener noreferrer">
-          <i class="fa-solid fa-map-location-dot"></i> View on Map
-        </a>
+        <p class="hindi">भारतीय नगर, वार्ड नं. 26/35,<br>नजदीक रेलवे वाशिंग पिट,<br>सिमरी-बख्तियारपुर रोड,<br>सहरसा, बिहार – 852201</p>
+        <a href="https://maps.google.com/?q=Saharsa+Bihar+852201" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-map-location-dot"></i> View on Map</a>
       </div>
-
       <div class="contact-info-card">
-        <div class="contact-info-icon">
-          <i class="fa-solid fa-envelope"></i>
-        </div>
+        <div class="contact-info-icon"><i class="fa-solid fa-envelope"></i></div>
         <h3>ईमेल | Email</h3>
-        <p>
-          किसी भी जानकारी, सहयोग या सुझाव के लिए ईमेल करें। हम 24 घंटे के भीतर जवाब देने का प्रयास करते हैं।
-        </p>
-        <a href="mailto:sathchaleham@gmail.com">
-          <i class="fa-solid fa-paper-plane"></i> sathchaleham@gmail.com
-        </a>
+        <p>किसी भी जानकारी, सहयोग या सुझाव के लिए ईमेल करें। हम 24 घंटे के भीतर जवाब देने का प्रयास करते हैं।</p>
+        <a href="mailto:sathchaleham@gmail.com"><i class="fa-solid fa-paper-plane"></i> sathchaleham@gmail.com</a>
       </div>
-
       <div class="contact-info-card">
-        <div class="contact-info-icon">
-          <i class="fa-solid fa-phone"></i>
-        </div>
+        <div class="contact-info-icon"><i class="fa-solid fa-phone"></i></div>
         <h3>हेल्पलाइन | Helpline</h3>
-        <p>
-          तत्काल सहायता के लिए हमारी हेल्पलाइन पर कॉल करें। सोम – शनि, सुबह 10 बजे से शाम 6 बजे तक।
-        </p>
-        <a href="tel:+917011893028">
-          <i class="fa-solid fa-phone-volume"></i> +91 7011893028
-        </a>
+        <p>तत्काल सहायता के लिए हमारी हेल्पलाइन पर कॉल करें। सोम – शनि, सुबह 10 बजे से शाम 6 बजे तक।</p>
+        <a href="tel:+917011893028"><i class="fa-solid fa-phone-volume"></i> +91 7011893028</a>
       </div>
-
       <div class="contact-info-card">
-        <div class="contact-info-icon">
-          <i class="fa-brands fa-whatsapp"></i>
-        </div>
+        <div class="contact-info-icon"><i class="fa-brands fa-whatsapp"></i></div>
         <h3>WhatsApp | व्हाट्सएप</h3>
-        <p>
-          WhatsApp पर मैसेज भेजकर भी हमसे संपर्क कर सकते हैं। तुरंत जवाब मिलेगा।
-        </p>
-        <a href="https://wa.me/917011893028" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
-        </a>
+        <p>WhatsApp पर मैसेज भेजकर भी हमसे संपर्क कर सकते हैं। तुरंत जवाब मिलेगा।</p>
+        <a href="https://wa.me/917011893028" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
       </div>
-
     </div>
-
   </div>
 </section>
-
 
 <!-- ================= EMERGENCY NUMBERS ================= -->
 <section class="emergency-section">
   <div class="container">
-
     <div class="section-title">
       <span class="small-title">Emergency Helplines</span>
       <h2>आपातकालीन नंबर | <span>Emergency Numbers</span></h2>
-      <p class="hindi">
-        आपात स्थिति में इन सरकारी हेल्पलाइन नंबरों पर तुरंत संपर्क करें।
-        हर नंबर पर क्लिक करके सीधे कॉल कर सकते हैं।
-      </p>
+      <p class="hindi">आपात स्थिति में इन सरकारी हेल्पलाइन नंबरों पर तुरंत संपर्क करें। हर नंबर पर क्लिक करके सीधे कॉल कर सकते हैं।</p>
     </div>
-
     <div class="emergency-grid">
-
-      <a href="tel:112" class="emergency-card">
-        <div class="emergency-card-icon">
-          <i class="fa-solid fa-shield-halved"></i>
-        </div>
-        <h4>राष्ट्रीय आपातकाल | National Emergency</h4>
-        <div class="emergency-card-number">112</div>
-      </a>
-
-      <a href="tel:100" class="emergency-card">
-        <div class="emergency-card-icon">
-          <i class="fa-solid fa-user-shield"></i>
-        </div>
-        <h4>पुलिस | Police</h4>
-        <div class="emergency-card-number">100</div>
-      </a>
-
-      <a href="tel:101" class="emergency-card">
-        <div class="emergency-card-icon">
-          <i class="fa-solid fa-fire-extinguisher"></i>
-        </div>
-        <h4>अग्निशमन | Fire</h4>
-        <div class="emergency-card-number">101</div>
-      </a>
-
-      <a href="tel:108" class="emergency-card">
-        <div class="emergency-card-icon">
-          <i class="fa-solid fa-truck-medical"></i>
-        </div>
-        <h4>एम्बुलेंस | Ambulance</h4>
-        <div class="emergency-card-number">108</div>
-      </a>
-
-      <a href="tel:181" class="emergency-card">
-        <div class="emergency-card-icon">
-          <i class="fa-solid fa-person-dress"></i>
-        </div>
-        <h4>महिला हेल्पलाइन | Women Helpline</h4>
-        <div class="emergency-card-number">181</div>
-      </a>
-
-      <a href="tel:1098" class="emergency-card">
-        <div class="emergency-card-icon">
-          <i class="fa-solid fa-child"></i>
-        </div>
-        <h4>चाइल्ड हेल्पलाइन | Child Helpline</h4>
-        <div class="emergency-card-number">1098</div>
-      </a>
-
-      <a href="tel:14567" class="emergency-card">
-        <div class="emergency-card-icon">
-          <i class="fa-solid fa-person-cane"></i>
-        </div>
-        <h4>वरिष्ठ नागरिक | Senior Citizen</h4>
-        <div class="emergency-card-number">14567</div>
-      </a>
-
-      <a href="tel:1070" class="emergency-card">
-        <div class="emergency-card-icon">
-          <i class="fa-solid fa-house-flood-water"></i>
-        </div>
-        <h4>आपदा प्रबंधन | Disaster</h4>
-        <div class="emergency-card-number">1070</div>
-      </a>
-
+      <a href="tel:112" class="emergency-card"><div class="emergency-card-icon"><i class="fa-solid fa-shield-halved"></i></div><h4>राष्ट्रीय आपातकाल | National Emergency</h4><div class="emergency-card-number">112</div></a>
+      <a href="tel:100" class="emergency-card"><div class="emergency-card-icon"><i class="fa-solid fa-user-shield"></i></div><h4>पुलिस | Police</h4><div class="emergency-card-number">100</div></a>
+      <a href="tel:101" class="emergency-card"><div class="emergency-card-icon"><i class="fa-solid fa-fire-extinguisher"></i></div><h4>अग्निशमन | Fire</h4><div class="emergency-card-number">101</div></a>
+      <a href="tel:108" class="emergency-card"><div class="emergency-card-icon"><i class="fa-solid fa-truck-medical"></i></div><h4>एम्बुलेंस | Ambulance</h4><div class="emergency-card-number">108</div></a>
+      <a href="tel:181" class="emergency-card"><div class="emergency-card-icon"><i class="fa-solid fa-person-dress"></i></div><h4>महिला हेल्पलाइन | Women Helpline</h4><div class="emergency-card-number">181</div></a>
+      <a href="tel:1098" class="emergency-card"><div class="emergency-card-icon"><i class="fa-solid fa-child"></i></div><h4>चाइल्ड हेल्पलाइन | Child Helpline</h4><div class="emergency-card-number">1098</div></a>
+      <a href="tel:14567" class="emergency-card"><div class="emergency-card-icon"><i class="fa-solid fa-person-cane"></i></div><h4>वरिष्ठ नागरिक | Senior Citizen</h4><div class="emergency-card-number">14567</div></a>
+      <a href="tel:1070" class="emergency-card"><div class="emergency-card-icon"><i class="fa-solid fa-house-flood-water"></i></div><h4>आपदा प्रबंधन | Disaster</h4><div class="emergency-card-number">1070</div></a>
     </div>
-
   </div>
 </section>
-
 
 <!-- ================= CONTACT DIRECTORY ================= -->
 <section class="directory-section">
   <div class="container">
-
     <div class="section-title">
       <span class="small-title">Direct Contact</span>
       <h2>विभाग अनुसार संपर्क | <span>Contact Directory</span></h2>
-      <p class="hindi">
-        हर विभाग का अलग संपर्क व्यक्ति — ताकि आप सीधे सही व्यक्ति से
-        बात कर सकें और तुरंत सहायता पाएँ।
-      </p>
+      <p class="hindi">हर विभाग का अलग संपर्क व्यक्ति — ताकि आप सीधे सही व्यक्ति से बात कर सकें और तुरंत सहायता पाएँ।</p>
     </div>
-
     <div class="directory-grid">
-
       <div class="directory-card" data-tone="blue">
-        <div class="directory-icon">
-          <i class="fa-solid fa-headset"></i>
-        </div>
+        <div class="directory-icon"><i class="fa-solid fa-headset"></i></div>
         <div class="directory-dept">सामान्य प्रश्न</div>
         <h4>General Inquiries</h4>
         <div class="directory-person">सहरसा मुख्य कार्यालय | Main Office</div>
         <div class="directory-actions">
-          <a href="tel:+917011893028" class="directory-action">
-            <i class="fa-solid fa-phone"></i> +91 7011893028
-          </a>
-          <a href="mailto:sathchaleham@gmail.com" class="directory-action">
-            <i class="fa-solid fa-envelope"></i> sathchaleham@gmail.com
-          </a>
+          <a href="tel:+917011893028" class="directory-action"><i class="fa-solid fa-phone"></i> +91 7011893028</a>
+          <a href="mailto:sathchaleham@gmail.com" class="directory-action"><i class="fa-solid fa-envelope"></i> sathchaleham@gmail.com</a>
         </div>
       </div>
-
       <div class="directory-card" data-tone="gold">
-        <div class="directory-icon">
-          <i class="fa-solid fa-hand-holding-dollar"></i>
-        </div>
+        <div class="directory-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
         <div class="directory-dept">दान एवं 80G</div>
         <h4>Donation &amp; 80G</h4>
         <div class="directory-person">Priyam Singh | Treasurer</div>
         <div class="directory-actions">
-          <a href="mailto:treasurer@sathchaleham.org" class="directory-action">
-            <i class="fa-solid fa-envelope"></i> treasurer@sathchaleham.org
-          </a>
-          <a href="tel:+917011893028" class="directory-action">
-            <i class="fa-solid fa-phone"></i> +91 7011893028
-          </a>
+          <a href="mailto:treasurer@sathchaleham.org" class="directory-action"><i class="fa-solid fa-envelope"></i> treasurer@sathchaleham.org</a>
+          <a href="tel:+917011893028" class="directory-action"><i class="fa-solid fa-phone"></i> +91 7011893028</a>
         </div>
       </div>
-
       <div class="directory-card" data-tone="teal">
-        <div class="directory-icon">
-          <i class="fa-solid fa-hands-helping"></i>
-        </div>
+        <div class="directory-icon"><i class="fa-solid fa-hands-helping"></i></div>
         <div class="directory-dept">स्वयंसेवक</div>
         <h4>Volunteer Program</h4>
         <div class="directory-person">P K Prabhakar | Volunteer Coordinator</div>
         <div class="directory-actions">
-          <a href="mailto:volunteer@sathchaleham.org" class="directory-action">
-            <i class="fa-solid fa-envelope"></i> volunteer@sathchaleham.org
-          </a>
-          <a href="tel:+917011893028" class="directory-action">
-            <i class="fa-solid fa-phone"></i> +91 7011893028
-          </a>
+          <a href="mailto:volunteer@sathchaleham.org" class="directory-action"><i class="fa-solid fa-envelope"></i> volunteer@sathchaleham.org</a>
+          <a href="tel:+917011893028" class="directory-action"><i class="fa-solid fa-phone"></i> +91 7011893028</a>
         </div>
       </div>
-
       <div class="directory-card" data-tone="red">
-        <div class="directory-icon">
-          <i class="fa-solid fa-building"></i>
-        </div>
+        <div class="directory-icon"><i class="fa-solid fa-building"></i></div>
         <div class="directory-dept">CSR साझेदारी</div>
         <h4>CSR Partnership</h4>
         <div class="directory-person">Ajay Kumar | President</div>
         <div class="directory-actions">
-          <a href="mailto:president@sathchaleham.org" class="directory-action">
-            <i class="fa-solid fa-envelope"></i> president@sathchaleham.org
-          </a>
-          <a href="tel:+917011893028" class="directory-action">
-            <i class="fa-solid fa-phone"></i> +91 7011893028
-          </a>
+          <a href="mailto:president@sathchaleham.org" class="directory-action"><i class="fa-solid fa-envelope"></i> president@sathchaleham.org</a>
+          <a href="tel:+917011893028" class="directory-action"><i class="fa-solid fa-phone"></i> +91 7011893028</a>
         </div>
       </div>
-
       <div class="directory-card" data-tone="blue">
-        <div class="directory-icon">
-          <i class="fa-solid fa-calendar-check"></i>
-        </div>
+        <div class="directory-icon"><i class="fa-solid fa-calendar-check"></i></div>
         <div class="directory-dept">कार्यक्रम</div>
         <h4>Events &amp; Programs</h4>
         <div class="directory-person">Kumar Puskar | Program Coordinator</div>
         <div class="directory-actions">
-          <a href="mailto:program@sathchaleham.org" class="directory-action">
-            <i class="fa-solid fa-envelope"></i> program@sathchaleham.org
-          </a>
-          <a href="tel:+917011893028" class="directory-action">
-            <i class="fa-solid fa-phone"></i> +91 7011893028
-          </a>
+          <a href="mailto:program@sathchaleham.org" class="directory-action"><i class="fa-solid fa-envelope"></i> program@sathchaleham.org</a>
+          <a href="tel:+917011893028" class="directory-action"><i class="fa-solid fa-phone"></i> +91 7011893028</a>
         </div>
       </div>
-
       <div class="directory-card" data-tone="teal">
-        <div class="directory-icon">
-          <i class="fa-solid fa-person-dress"></i>
-        </div>
+        <div class="directory-icon"><i class="fa-solid fa-person-dress"></i></div>
         <div class="directory-dept">महिला एवं बाल विकास</div>
         <h4>Women &amp; Child Development</h4>
         <div class="directory-person">S Kumari | Coordinator</div>
         <div class="directory-actions">
-          <a href="mailto:womenchild@sathchaleham.org" class="directory-action">
-            <i class="fa-solid fa-envelope"></i> womenchild@sathchaleham.org
-          </a>
-          <a href="tel:+917011893028" class="directory-action">
-            <i class="fa-solid fa-phone"></i> +91 7011893028
-          </a>
+          <a href="mailto:womenchild@sathchaleham.org" class="directory-action"><i class="fa-solid fa-envelope"></i> womenchild@sathchaleham.org</a>
+          <a href="tel:+917011893028" class="directory-action"><i class="fa-solid fa-phone"></i> +91 7011893028</a>
         </div>
       </div>
-
     </div>
-
   </div>
 </section>
-
 
 <!-- ================= CONTACT FORM ================= -->
 <section class="contact-form-section">
   <div class="container">
-
     <div class="section-title">
       <span class="small-title">Send Message</span>
       <h2>संदेश भेजें | <span>Send Us a Message</span></h2>
-      <p class="hindi">
-        नीचे दिया गया फॉर्म भरकर हमें अपना संदेश भेजें। हम शीघ्र ही आपसे संपर्क करेंगे।
-      </p>
+      <p class="hindi">नीचे दिया गया फॉर्म भरकर हमें अपना संदेश भेजें। हम शीघ्र ही आपसे संपर्क करेंगे।</p>
     </div>
-
     <div class="contact-form-wrapper">
-
       <div class="contact-form-box">
-
         <div class="contact-form-head">
-          <div class="form-icon">
-            <i class="fa-solid fa-envelope-open-text"></i>
-          </div>
+          <div class="form-icon"><i class="fa-solid fa-envelope-open-text"></i></div>
           <h3>अपना संदेश भेजें</h3>
           <p>सभी जानकारी सत्य एवं सही भरें। <strong style="color:#DC2626;">*</strong> वाले फ़ील्ड अनिवार्य हैं।</p>
         </div>
-
         <div class="quick-btn-wrap">
           <button type="button" class="quick-btn" data-subject="Donation">💰 दान</button>
           <button type="button" class="quick-btn" data-subject="Volunteer">🤝 स्वयंसेवक</button>
@@ -1847,13 +1538,10 @@
           <button type="button" class="quick-btn" data-subject="CSR Partnership">🏢 CSR</button>
           <button type="button" class="quick-btn" data-subject="Feedback">💬 सुझाव</button>
         </div>
-
         <form action="https://formsubmit.co/sathchaleham@gmail.com" method="POST" id="contactForm" novalidate>
-
           <input type="hidden" name="_subject" value="New Contact Message — Sath Chale Hum Foundation">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_template" value="table">
-
           <div class="form-row">
             <div class="form-group">
               <label for="cname">पूरा नाम | Full Name <span class="req">*</span></label>
@@ -1861,11 +1549,9 @@
             </div>
             <div class="form-group">
               <label for="cphone">मोबाइल नंबर | Mobile <span class="req">*</span></label>
-              <input type="tel" id="cphone" name="Mobile" required
-                     placeholder="10 अंकों का नंबर" pattern="[6-9][0-9]{9}" maxlength="10" inputmode="numeric">
+              <input type="tel" id="cphone" name="Mobile" required placeholder="10 अंकों का नंबर" pattern="[6-9][0-9]{9}" maxlength="10" inputmode="numeric">
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
               <label for="cemail">ईमेल पता | Email <span class="req">*</span></label>
@@ -1886,483 +1572,194 @@
               </select>
             </div>
           </div>
-
           <div class="form-row single">
             <div class="form-group">
               <label for="ccity">शहर / गाँव | City / Village</label>
               <input type="text" id="ccity" name="City" placeholder="शहर या गाँव">
             </div>
           </div>
-
           <div class="form-row single">
             <div class="form-group">
               <label for="cmessage">आपका संदेश | Your Message <span class="req">*</span></label>
-              <textarea id="cmessage" name="Message" required
-                        placeholder="अपना संदेश यहाँ विस्तार से लिखें..."></textarea>
+              <textarea id="cmessage" name="Message" required placeholder="अपना संदेश यहाँ विस्तार से लिखें..."></textarea>
             </div>
           </div>
-
-          <button type="submit" class="form-submit-btn" id="contactSubmitBtn">
-            <i class="fa-solid fa-paper-plane"></i> संदेश भेजें | Send Message
-          </button>
-
+          <button type="submit" class="form-submit-btn" id="contactSubmitBtn"><i class="fa-solid fa-paper-plane"></i> संदेश भेजें | Send Message</button>
         </form>
-
       </div>
-
       <div class="contact-side">
-
         <div class="contact-side-box">
-          <div class="contact-side-icon">
-            <i class="fa-solid fa-headset"></i>
-          </div>
+          <div class="contact-side-icon"><i class="fa-solid fa-headset"></i></div>
           <h4>तत्काल सहायता | Quick Help</h4>
-          <p>
-            किसी भी आपात स्थिति या तत्काल सहायता के लिए हमारी हेल्पलाइन पर कॉल करें।
-            हम 24 घंटे के भीतर जवाब देने का प्रयास करते हैं।
-          </p>
-          <a href="tel:+917011893028" class="btn btn-red" style="width:100%; min-height:48px; padding:12px 20px; font-size:.85rem; margin-top:6px;">
-            <i class="fa-solid fa-phone"></i> +91 7011893028
-          </a>
+          <p>किसी भी आपात स्थिति या तत्काल सहायता के लिए हमारी हेल्पलाइन पर कॉल करें। हम 24 घंटे के भीतर जवाब देने का प्रयास करते हैं।</p>
+          <a href="tel:+917011893028" class="btn btn-red" style="width:100%; min-height:48px; padding:12px 20px; font-size:.85rem; margin-top:6px;"><i class="fa-solid fa-phone"></i> +91 7011893028</a>
         </div>
-
         <div class="contact-side-box">
-          <div class="contact-side-icon">
-            <i class="fa-solid fa-bolt"></i>
-          </div>
+          <div class="contact-side-icon"><i class="fa-solid fa-bolt"></i></div>
           <h4>हमारा जवाब देने का समय | Response Time</h4>
-          <p>
-            हम आपके हर संदेश का जवाब देने का पूरा प्रयास करते हैं।
-            हमारी प्रतिक्रिया समय-सीमा:
-          </p>
+          <p>हम आपके हर संदेश का जवाब देने का पूरा प्रयास करते हैं। हमारी प्रतिक्रिया समय-सीमा:</p>
           <ul style="list-style:none; padding:0; margin:12px 0 0;">
-            <li style="display:flex; justify-content:space-between; padding:9px 12px; background:#F8FAFC; border-radius:10px; font-size:.83rem; font-weight:700; color:var(--text-soft); margin-bottom:8px;">
-              <span>ईमेल पर जवाब</span>
-              <span style="color:var(--green); font-weight:900;">24 घंटे</span>
-            </li>
-            <li style="display:flex; justify-content:space-between; padding:9px 12px; background:#F8FAFC; border-radius:10px; font-size:.83rem; font-weight:700; color:var(--text-soft); margin-bottom:8px;">
-              <span>WhatsApp पर जवाब</span>
-              <span style="color:var(--green); font-weight:900;">2-4 घंटे</span>
-            </li>
-            <li style="display:flex; justify-content:space-between; padding:9px 12px; background:#F8FAFC; border-radius:10px; font-size:.83rem; font-weight:700; color:var(--text-soft);">
-              <span>हेल्पलाइन कॉल</span>
-              <span style="color:var(--green); font-weight:900;">तुरंत</span>
-            </li>
+            <li style="display:flex; justify-content:space-between; padding:9px 12px; background:#F8FAFC; border-radius:10px; font-size:.83rem; font-weight:700; color:var(--text-soft); margin-bottom:8px;"><span>ईमेल पर जवाब</span><span style="color:var(--green); font-weight:900;">24 घंटे</span></li>
+            <li style="display:flex; justify-content:space-between; padding:9px 12px; background:#F8FAFC; border-radius:10px; font-size:.83rem; font-weight:700; color:var(--text-soft); margin-bottom:8px;"><span>WhatsApp पर जवाब</span><span style="color:var(--green); font-weight:900;">2-4 घंटे</span></li>
+            <li style="display:flex; justify-content:space-between; padding:9px 12px; background:#F8FAFC; border-radius:10px; font-size:.83rem; font-weight:700; color:var(--text-soft);"><span>हेल्पलाइन कॉल</span><span style="color:var(--green); font-weight:900;">तुरंत</span></li>
           </ul>
         </div>
-
       </div>
-
     </div>
-
   </div>
 </section>
-
 
 <!-- ================= NEWSLETTER ================= -->
 <section class="newsletter-section">
   <div class="container">
     <div class="newsletter-inner">
-
-      <div class="newsletter-icon">
-        <i class="fa-solid fa-envelope-circle-check"></i>
-      </div>
-
+      <div class="newsletter-icon"><i class="fa-solid fa-envelope-circle-check"></i></div>
       <h2>हमसे जुड़े रहें | <span>Stay Connected</span></h2>
-
-      <p class="hindi">
-        हर महीने की अपडेट, कार्यक्रमों की जानकारी, सफलता की कहानियाँ एवं
-        संस्था से जुड़ी सभी गतिविधियाँ सीधे आपके inbox में पाएँ।
-      </p>
-
+      <p class="hindi">हर महीने की अपडेट, कार्यक्रमों की जानकारी, सफलता की कहानियाँ एवं संस्था से जुड़ी सभी गतिविधियाँ सीधे आपके inbox में पाएँ।</p>
       <form class="newsletter-form-new" id="newsletterFormBig" onsubmit="handleNewsletter(event)">
         <input type="text" id="newsName" placeholder="आपका नाम | Your Name" required>
         <input type="email" id="newsEmail" placeholder="your@email.com" required>
-        <button type="submit">
-          <i class="fa-solid fa-paper-plane"></i> Subscribe
-        </button>
+        <button type="submit"><i class="fa-solid fa-paper-plane"></i> Subscribe</button>
       </form>
-
-      <div class="newsletter-note">
-        <i class="fa-solid fa-lock"></i>
-        आपकी जानकारी पूर्णतः सुरक्षित है। कभी भी unsubscribe कर सकते हैं।
-      </div>
-
+      <div class="newsletter-note"><i class="fa-solid fa-lock"></i> आपकी जानकारी पूर्णतः सुरक्षित है। कभी भी unsubscribe कर सकते हैं।</div>
     </div>
   </div>
 </section>
-
 
 <!-- ================= FEEDBACK ================= -->
 <section class="feedback-section">
   <div class="container">
-
     <div class="section-title">
       <span class="small-title">Your Feedback</span>
       <h2>हमें रेटिंग दें | <span>Give Us a Rating</span></h2>
-      <p class="hindi">
-        आपका feedback हमारे लिए बहुत कीमती है। कृपया हमें बताएँ कि हम कैसे
-        और बेहतर कर सकते हैं।
-      </p>
+      <p class="hindi">आपका feedback हमारे लिए बहुत कीमती है। कृपया हमें बताएँ कि हम कैसे और बेहतर कर सकते हैं।</p>
     </div>
-
     <div class="feedback-box">
-
-      <div class="feedback-icon">
-        <i class="fa-solid fa-star"></i>
-      </div>
-
+      <div class="feedback-icon"><i class="fa-solid fa-star"></i></div>
       <h3>आपकी राय क्या है?</h3>
-      <p>
-        नीचे दिए गए stars पर क्लिक करके हमें रेटिंग दें और कोई भी सुझाव
-        या feedback लिखें।
-      </p>
-
+      <p>नीचे दिए गए stars पर क्लिक करके हमें रेटिंग दें और कोई भी सुझाव या feedback लिखें।</p>
       <div class="star-row" id="starRow">
-        <button type="button" class="star-btn" data-star="1" aria-label="1 Star">
-          <i class="fa-solid fa-star"></i>
-        </button>
-        <button type="button" class="star-btn" data-star="2" aria-label="2 Stars">
-          <i class="fa-solid fa-star"></i>
-        </button>
-        <button type="button" class="star-btn" data-star="3" aria-label="3 Stars">
-          <i class="fa-solid fa-star"></i>
-        </button>
-        <button type="button" class="star-btn" data-star="4" aria-label="4 Stars">
-          <i class="fa-solid fa-star"></i>
-        </button>
-        <button type="button" class="star-btn" data-star="5" aria-label="5 Stars">
-          <i class="fa-solid fa-star"></i>
-        </button>
+        <button type="button" class="star-btn" data-star="1" aria-label="1 Star"><i class="fa-solid fa-star"></i></button>
+        <button type="button" class="star-btn" data-star="2" aria-label="2 Stars"><i class="fa-solid fa-star"></i></button>
+        <button type="button" class="star-btn" data-star="3" aria-label="3 Stars"><i class="fa-solid fa-star"></i></button>
+        <button type="button" class="star-btn" data-star="4" aria-label="4 Stars"><i class="fa-solid fa-star"></i></button>
+        <button type="button" class="star-btn" data-star="5" aria-label="5 Stars"><i class="fa-solid fa-star"></i></button>
       </div>
-
-      <textarea class="feedback-textarea" id="feedbackText"
-                placeholder="अपना सुझाव या feedback यहाँ लिखें... (वैकल्पिक)"></textarea>
-
-      <button type="button" class="feedback-submit" id="feedbackSubmitBtn">
-        <i class="fa-solid fa-paper-plane"></i> Feedback भेजें | Submit
-      </button>
-
+      <textarea class="feedback-textarea" id="feedbackText" placeholder="अपना सुझाव या feedback यहाँ लिखें... (वैकल्पिक)"></textarea>
+      <button type="button" class="feedback-submit" id="feedbackSubmitBtn"><i class="fa-solid fa-paper-plane"></i> Feedback भेजें | Submit</button>
     </div>
-
   </div>
 </section>
-
 
 <!-- ================= FAQ ================= -->
 <section class="faq-section" id="faq">
   <div class="container">
-
     <div class="section-title">
       <span class="small-title">FAQ</span>
       <h2>सामान्य प्रश्न | <span>Frequently Asked Questions</span></h2>
-      <p class="hindi">
-        नीचे दिए गए सामान्य प्रश्नों के उत्तर देखें। अगर आपका प्रश्न यहाँ न मिले
-        तो हमसे संपर्क करें।
-      </p>
+      <p class="hindi">नीचे दिए गए सामान्य प्रश्नों के उत्तर देखें। अगर आपका प्रश्न यहाँ न मिले तो हमसे संपर्क करें।</p>
     </div>
-
     <div class="faq-list">
-
       <div class="faq-item">
-        <div class="faq-header">
-          <div class="faq-num">01</div>
-          <div class="faq-question">साथ चले हम फाउंडेशन क्या है? | What is Sath Chale Hum Foundation?</div>
-          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-        <div class="faq-body">
-          <div class="faq-body-inner">
-            <p>
-              साथ चले हम फाउंडेशन एक सामाजिक संस्था है, जिसका उद्देश्य शिक्षा,
-              स्वास्थ्य, महिला सशक्तिकरण, गरीब एवं जरूरतमंद लोगों की सहायता,
-              ग्रामीण विकास, कौशल विकास, पर्यावरण संरक्षण और सामाजिक जागरूकता
-              जैसे क्षेत्रों में सकारात्मक बदलाव लाना है।
-            </p>
-          </div>
-        </div>
+        <div class="faq-header"><div class="faq-num">01</div><div class="faq-question">साथ चले हम फाउंडेशन क्या है? | What is Sath Chale Hum Foundation?</div><div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-body"><div class="faq-body-inner"><p>साथ चले हम फाउंडेशन एक सामाजिक संस्था है, जिसका उद्देश्य शिक्षा, स्वास्थ्य, महिला सशक्तिकरण, गरीब एवं जरूरतमंद लोगों की सहायता, ग्रामीण विकास, कौशल विकास, पर्यावरण संरक्षण और सामाजिक जागरूकता जैसे क्षेत्रों में सकारात्मक बदलाव लाना है।</p></div></div>
       </div>
-
       <div class="faq-item">
-        <div class="faq-header">
-          <div class="faq-num">02</div>
-          <div class="faq-question">मैं संस्था से कैसे जुड़ सकता/सकती हूँ? | How can I join the organization?</div>
-          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-        <div class="faq-body">
-          <div class="faq-body-inner">
-            <p>
-              आप स्वयंसेवक, इंटर्न, सदस्य या दानदाता के रूप में हमसे जुड़ सकते हैं।
-              हमारी <a href="join-us.html">Join Us</a> पेज पर जाकर फॉर्म भरें
-              या हमारी हेल्पलाइन <a href="tel:+917011893028">+91 7011893028</a>
-              पर कॉल करें।
-            </p>
-          </div>
-        </div>
+        <div class="faq-header"><div class="faq-num">02</div><div class="faq-question">मैं संस्था से कैसे जुड़ सकता/सकती हूँ? | How can I join the organization?</div><div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-body"><div class="faq-body-inner"><p>आप स्वयंसेवक, इंटर्न, सदस्य या दानदाता के रूप में हमसे जुड़ सकते हैं। हमारी <a href="join-us.html">Join Us</a> पेज पर जाकर फॉर्म भरें या हमारी हेल्पलाइन <a href="tel:+917011893028">+91 7011893028</a> पर कॉल करें।</p></div></div>
       </div>
-
       <div class="faq-item">
-        <div class="faq-header">
-          <div class="faq-num">03</div>
-          <div class="faq-question">दान कैसे कर सकते हैं? | How can I donate?</div>
-          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-        <div class="faq-body">
-          <div class="faq-body-inner">
-            <p>
-              आप हमारी वेबसाइट के <a href="donate.html">Donate</a> पेज पर जाकर
-              ऑनलाइन दान कर सकते हैं। हमारी संस्था 12A एवं 80G प्रमाणित है,
-              जिससे आपको कर लाभ भी प्राप्त होता है।
-            </p>
-            <p>
-              आप Daily ₹1 Supporter अभियान से भी जुड़ सकते हैं और प्रतिदिन
-              सिर्फ ₹1 का योगदान दे सकते हैं।
-            </p>
-          </div>
-        </div>
+        <div class="faq-header"><div class="faq-num">03</div><div class="faq-question">दान कैसे कर सकते हैं? | How can I donate?</div><div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-body"><div class="faq-body-inner"><p>आप हमारी वेबसाइट के <a href="donate.html">Donate</a> पेज पर जाकर ऑनलाइन दान कर सकते हैं। हमारी संस्था 12A एवं 80G प्रमाणित है, जिससे आपको कर लाभ भी प्राप्त होता है।</p><p>आप Daily ₹1 Supporter अभियान से भी जुड़ सकते हैं और प्रतिदिन सिर्फ ₹1 का योगदान दे सकते हैं।</p></div></div>
       </div>
-
       <div class="faq-item">
-        <div class="faq-header">
-          <div class="faq-num">04</div>
-          <div class="faq-question">क्या मुझे दान का 80G प्रमाण पत्र मिलेगा? | Will I get 80G certificate for donation?</div>
-          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-        <div class="faq-body">
-          <div class="faq-body-inner">
-            <p>
-              हाँ, हमारी संस्था 12A एवं 80G के तहत पंजीकृत है। आपके दान पर
-              आपको 80G प्रमाण पत्र प्रदान किया जाएगा, जिससे आप कर लाभ प्राप्त
-              कर सकते हैं।
-            </p>
-          </div>
-        </div>
+        <div class="faq-header"><div class="faq-num">04</div><div class="faq-question">क्या मुझे दान का 80G प्रमाण पत्र मिलेगा? | Will I get 80G certificate for donation?</div><div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-body"><div class="faq-body-inner"><p>हाँ, हमारी संस्था 12A एवं 80G के तहत पंजीकृत है। आपके दान पर आपको 80G प्रमाण पत्र प्रदान किया जाएगा, जिससे आप कर लाभ प्राप्त कर सकते हैं।</p></div></div>
       </div>
-
       <div class="faq-item">
-        <div class="faq-header">
-          <div class="faq-num">05</div>
-          <div class="faq-question">स्वयंसेवक बनने के लिए क्या योग्यता चाहिए? | What qualifications are needed to become a volunteer?</div>
-          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-        <div class="faq-body">
-          <div class="faq-body-inner">
-            <p>
-              स्वयंसेवक बनने के लिए किसी विशेष योग्यता की आवश्यकता नहीं है।
-              आपके अंदर सेवा भाव, समर्पण और समाज की मदद करने की इच्छा होनी चाहिए।
-              समाज सेवा में रुचि रखने वाले सभी लोग हमसे जुड़ सकते हैं।
-            </p>
-          </div>
-        </div>
+        <div class="faq-header"><div class="faq-num">05</div><div class="faq-question">स्वयंसेवक बनने के लिए क्या योग्यता चाहिए? | What qualifications are needed to become a volunteer?</div><div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-body"><div class="faq-body-inner"><p>स्वयंसेवक बनने के लिए किसी विशेष योग्यता की आवश्यकता नहीं है। आपके अंदर सेवा भाव, समर्पण और समाज की मदद करने की इच्छा होनी चाहिए। समाज सेवा में रुचि रखने वाले सभी लोग हमसे जुड़ सकते हैं।</p></div></div>
       </div>
-
       <div class="faq-item">
-        <div class="faq-header">
-          <div class="faq-num">06</div>
-          <div class="faq-question">कार्यक्रमों में पंजीकरण कैसे करें? | How to register for events?</div>
-          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-        <div class="faq-body">
-          <div class="faq-body-inner">
-            <p>
-              हमारी वेबसाइट के <a href="events.html">Events</a> पेज पर जाएँ।
-              वहाँ किसी भी कार्यक्रम के "Register Now" बटन पर क्लिक करके
-              ऑनलाइन फॉर्म भरें। तुरंत पंजीकरण हो जाएगा।
-            </p>
-          </div>
-        </div>
+        <div class="faq-header"><div class="faq-num">06</div><div class="faq-question">कार्यक्रमों में पंजीकरण कैसे करें? | How to register for events?</div><div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-body"><div class="faq-body-inner"><p>हमारी वेबसाइट के <a href="events.html">Events</a> पेज पर जाएँ। वहाँ किसी भी कार्यक्रम के "Register Now" बटन पर क्लिक करके ऑनलाइन फॉर्म भरें। तुरंत पंजीकरण हो जाएगा।</p></div></div>
       </div>
-
       <div class="faq-item">
-        <div class="faq-header">
-          <div class="faq-num">07</div>
-          <div class="faq-question">क्या आप CSR साझेदारी करते हैं? | Do you accept CSR partnerships?</div>
-          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-        <div class="faq-body">
-          <div class="faq-body-inner">
-            <p>
-              हाँ, हम CSR साझेदारी स्वीकार करते हैं। हमारी संस्था के पास CSR-1
-              पंजीकरण है। CSR साझेदारी के लिए हमें
-              <a href="mailto:sathchaleham@gmail.com">sathchaleham@gmail.com</a>
-              पर ईमेल करें या हेल्पलाइन पर कॉल करें।
-            </p>
-          </div>
-        </div>
+        <div class="faq-header"><div class="faq-num">07</div><div class="faq-question">क्या आप CSR साझेदारी करते हैं? | Do you accept CSR partnerships?</div><div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-body"><div class="faq-body-inner"><p>हाँ, हम CSR साझेदारी स्वीकार करते हैं। हमारी संस्था के पास CSR-1 पंजीकरण है। CSR साझेदारी के लिए हमें <a href="mailto:sathchaleham@gmail.com">sathchaleham@gmail.com</a> पर ईमेल करें या हेल्पलाइन पर कॉल करें।</p></div></div>
       </div>
-
       <div class="faq-item">
-        <div class="faq-header">
-          <div class="faq-num">08</div>
-          <div class="faq-question">संस्था किन क्षेत्रों में कार्य करती है? | In which areas does the organization work?</div>
-          <div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div>
-        </div>
-        <div class="faq-body">
-          <div class="faq-body-inner">
-            <p>
-              हम 16 प्रमुख क्षेत्रों में कार्य करते हैं — शिक्षा, स्वास्थ्य,
-              महिला सशक्तिकरण, गरीब कल्याण, दिव्यांगजन कल्याण, वृद्धजन कल्याण,
-              युवा विकास, रोजगार, ग्रामीण विकास, कृषि, पर्यावरण, स्वच्छता,
-              पशु कल्याण, आपदा राहत, सामाजिक न्याय एवं डिजिटल शिक्षा।
-              पूरी जानकारी हमारी <a href="work.html">Our Work</a> पेज पर देखें।
-            </p>
-          </div>
-        </div>
+        <div class="faq-header"><div class="faq-num">08</div><div class="faq-question">संस्था किन क्षेत्रों में कार्य करती है? | In which areas does the organization work?</div><div class="faq-chevron"><i class="fa-solid fa-chevron-down"></i></div></div>
+        <div class="faq-body"><div class="faq-body-inner"><p>हम 16 प्रमुख क्षेत्रों में कार्य करते हैं — शिक्षा, स्वास्थ्य, महिला सशक्तिकरण, गरीब कल्याण, दिव्यांगजन कल्याण, वृद्धजन कल्याण, युवा विकास, रोजगार, ग्रामीण विकास, कृषि, पर्यावरण, स्वच्छता, पशु कल्याण, आपदा राहत, सामाजिक न्याय एवं डिजिटल शिक्षा। पूरी जानकारी हमारी <a href="work.html">Our Work</a> पेज पर देखें।</p></div></div>
       </div>
-
     </div>
-
   </div>
 </section>
-
 
 <!-- ================= CTA ================= -->
 <section class="cta-strip">
   <div class="container">
-    <div class="cta-badge">
-      <i class="fa-solid fa-hands-holding-heart"></i>
-      Be a Part of Change
-    </div>
-
+    <div class="cta-badge"><i class="fa-solid fa-hands-holding-heart"></i> Be a Part of Change</div>
     <h2>साथ चले हम, <span>बदलाव की ओर</span></h2>
-
-    <p>
-      आज ही जुड़ें — आपका एक छोटा सा कदम किसी की पूरी जिंदगी बदल सकता है।
-      साथ मिलकर एक बेहतर कल का निर्माण करें।
-    </p>
-
+    <p>आज ही जुड़ें — आपका एक छोटा सा कदम किसी की पूरी जिंदगी बदल सकता है। साथ मिलकर एक बेहतर कल का निर्माण करें।</p>
     <div class="cta-buttons">
-      <a href="donate.html" class="btn btn-red btn-pulse-red">
-        <i class="fa-solid fa-heart"></i> Donate Now
-      </a>
-      <a href="join-us.html" class="btn btn-gold">
-        <i class="fa-solid fa-users"></i> Join as Volunteer
-      </a>
-      <a href="events.html" class="btn btn-outline">
-        <i class="fa-solid fa-calendar-days"></i> View Events
-      </a>
+      <a href="donate.html" class="btn btn-red btn-pulse-red"><i class="fa-solid fa-heart"></i> Donate Now</a>
+      <a href="join-us.html" class="btn btn-gold"><i class="fa-solid fa-users"></i> Join as Volunteer</a>
+      <a href="events.html" class="btn btn-outline"><i class="fa-solid fa-calendar-days"></i> View Events</a>
     </div>
   </div>
 </section>
 
-
 <!-- ================= FOOTER ================= -->
 <footer>
   <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand-head">
+        <div class="footer-logo-box"><img src="https://raw.githubusercontent.com/sathchaleham-dot/sathchalehumfoundation/main/sath_chale_ham_logo_HD-1.png" alt="Logo"></div>
+        <div class="footer-brand-text"><h3>साथ चले हम फाउंडेशन</h3><div class="footer-tagline-text">साथ चले हम, बदलाव की ओर</div></div>
+      </div>
+      <p class="footer-desc">एक सामाजिक संस्था जो शिक्षा, स्वास्थ्य, महिला सशक्तिकरण और समाज के सर्वांगीण विकास के लिए समर्पित है।</p>
+      <div class="footer-badge"><i class="fa-solid fa-award"></i> 12A &amp; 80G Certified NGO</div>
+      <h4 class="footer-social-heading">Our Social Media | हमारे सोशल मीडिया</h4>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/1PUUzvUfoo/" target="_blank" rel="noopener" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/sathchaleham" target="_blank" rel="noopener" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com/@sathchaleham" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://wa.me/917011893028" target="_blank" rel="noopener" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
     <div class="footer-grid">
-
-      <div>
-        <div class="footer-brand-head">
-          <div class="footer-logo-box">
-            <img src="sath_chale_ham_logo_HD-1.png" alt="Sath Chale Hum Foundation Logo">
-          </div>
-          <div class="footer-brand-text">
-            <h3>साथ चले हम फाउंडेशन</h3>
-            <div class="footer-tagline-text">साथ चले हम, बदलाव की ओर</div>
-          </div>
-        </div>
-        <p class="footer-desc">
-          एक सामाजिक संस्था जो शिक्षा, स्वास्थ्य, महिला सशक्तिकरण और
-          समाज के सर्वांगीण विकास के लिए समर्पित है।
-        </p>
-        <div class="footer-badge">
-          <i class="fa-solid fa-award"></i> 12A &amp; 80G Certified NGO
-        </div>
-        <h4 class="footer-social-heading">Our Social Media | हमारे सोशल मीडिया</h4>
-        <div class="social-icons">
-          <a href="https://www.facebook.com/share/1PUUzvUfoo/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="https://www.instagram.com/sathchaleham" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://youtube.com/@sathchaleham" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
-          <a href="https://wa.me/917011893028" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-        </div>
-      </div>
-
-      <div>
-        <h4 class="footer-heading">Quick Links | त्वरित लिंक</h4>
-        <ul class="footer-links">
-          <li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home | होम</a></li>
-          <li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us | हमारे बारे में</a></li>
-          <li><a href="work.html"><i class="fa-solid fa-chevron-right"></i> Our Work | हमारे कार्य</a></li>
-          <li><a href="team.html"><i class="fa-solid fa-chevron-right"></i> Our Team | हमारी टीम</a></li>
-          <li><a href="events.html"><i class="fa-solid fa-chevron-right"></i> Events | कार्यक्रम</a></li>
-          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Downloads | डाउनलोड</a></li>
-          <li><a href="contact.html"><i class="fa-solid fa-chevron-right"></i> Contact | संपर्क</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="footer-heading">Get Involved | जुड़ें</h4>
-        <ul class="footer-links">
-          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Volunteer | स्वयंसेवक</a></li>
-          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Internship | इंटर्नशिप</a></li>
-          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> CSR Partnership | CSR</a></li>
-          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Donate | दान करें</a></li>
-          <li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Fundraise | फंडरेज़िंग</a></li>
-          <li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Careers | करियर</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="footer-heading">Resources | संसाधन</h4>
-        <ul class="footer-links">
-          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Reports | रिपोर्ट</a></li>
-          <li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Certificates | प्रमाण पत्र</a></li>
-          <li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery | गैलरी</a></li>
-          <li><a href="videos.html"><i class="fa-solid fa-chevron-right"></i> Videos | वीडियो</a></li>
-          <li><a href="contact.html#faq"><i class="fa-solid fa-chevron-right"></i> FAQ | सामान्य प्रश्न</a></li>
-          <li><a href="sitemap.html"><i class="fa-solid fa-chevron-right"></i> Sitemap | साइटमैप</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4 class="footer-heading">Contact Us | संपर्क</h4>
-        <ul class="contact-info">
-          <li><i class="fa-solid fa-location-dot"></i><div><strong>Address | पता</strong>भारतीय नगर, वार्ड नं. 26/35, सहरसा, बिहार – 852201</div></li>
-          <li><i class="fa-solid fa-phone"></i><div><strong>Helpline | हेल्पलाइन</strong><a href="tel:+917011893028" style="color:#93C5FD;">+91 7011893028</a></div></li>
-          <li><i class="fa-solid fa-envelope"></i><div><strong>Email | ईमेल</strong><a href="mailto:sathchaleham@gmail.com" style="color:#93C5FD;">sathchaleham@gmail.com</a></div></li>
-          <li><i class="fa-solid fa-clock"></i><div><strong>Office Hours | समय</strong>सोम – शनि · 10:00 AM – 6:00 PM</div></li>
-        </ul>
-        <div class="footer-newsletter">
-          <label>Newsletter | न्यूज़लेटर</label>
-          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');">
-            <input type="email" placeholder="your@email.com" required>
-            <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
-          </form>
-        </div>
-      </div>
-
+      <div class="footer-col"><h4 class="footer-heading">Quick Links | त्वरित लिंक</h4><ul class="footer-links"><li><a href="index.html"><i class="fa-solid fa-chevron-right"></i> Home | होम</a></li><li><a href="about.html"><i class="fa-solid fa-chevron-right"></i> About Us | हमारे बारे में</a></li><li><a href="work.html"><i class="fa-solid fa-chevron-right"></i> Our Work | हमारे कार्य</a></li><li><a href="team.html"><i class="fa-solid fa-chevron-right"></i> Our Team | हमारी टीम</a></li><li><a href="events.html"><i class="fa-solid fa-chevron-right"></i> Events | कार्यक्रम</a></li><li><a href="gallery.html"><i class="fa-solid fa-chevron-right"></i> Gallery | गैलरी</a></li><li><a href="downloads.html"><i class="fa-solid fa-chevron-right"></i> Downloads | डाउनलोड</a></li><li><a href="faq.html"><i class="fa-solid fa-chevron-right"></i> FAQ | सामान्य प्रश्न</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-heading">Get Involved | जुड़ें</h4><ul class="footer-links"><li><a href="donate.html"><i class="fa-solid fa-chevron-right"></i> Donate Us | दान करें</a></li><li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Join Us | जुड़ें</a></li><li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Careers | करियर</a></li><li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Internship | इंटर्नशिप</a></li><li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> Member &amp; Volunteer</a></li><li><a href="join-us.html"><i class="fa-solid fa-chevron-right"></i> CSR Partnership</a></li><li><a href="work.html"><i class="fa-solid fa-chevron-right"></i> Sponsor a Program</a></li></ul></div>
+      <div class="footer-col"><h4 class="footer-heading">Contact Us | संपर्क</h4><ul class="contact-info"><li><i class="fa-solid fa-location-dot"></i><div><strong>Address | पता:</strong>भारतीय नगर, वार्ड 26/35, सहरसा, बिहार — 852201</div></li><li><i class="fa-solid fa-phone"></i><div><strong>Helpline | हेल्पलाइन:</strong><a href="tel:+917011893028" style="color:#93C5FD;">+91 70118 93028</a></div></li><li><i class="fa-solid fa-envelope"></i><div><strong>Email | ईमेल:</strong><a href="mailto:sathchaleham@gmail.com" style="color:#93C5FD;">sathchaleham@gmail.com</a></div></li><li><i class="fa-solid fa-clock"></i><div><strong>Office Hours:</strong>सोम – शनि · 10:00 AM – 6:00 PM</div></li></ul></div>
     </div>
-
-    <div class="footer-bottom">
-      <div class="footer-bottom-inner">
-        <div class="footer-copy">© 2026 <strong>Sath Chale Hum Foundation</strong> · All Rights Reserved</div>
-        <div class="footer-legal">
-          <a href="terms.html">Terms</a><span>·</span>
-          <a href="privacy.html">Privacy</a><span>·</span>
-          <a href="sitemap.html">Sitemap</a><span>·</span>
-          <a href="disclaimer.html">Disclaimer</a>
-        </div>
-        <div class="footer-made">Made with <i class="fa-solid fa-heart"></i> in Bihar</div>
-      </div>
+    <div class="footer-newsletter-wrap">
+      <label class="newsletter-label">Newsletter | न्यूज़लेटर</label>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('धन्यवाद! आप subscribe हो गए हैं।');"><input type="email" placeholder="your@email.com" required><button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button></form>
     </div>
-
+    <div class="footer-bottom"><div class="footer-bottom-inner">
+      <div class="footer-copy">© 2026 <strong>Sath Chale Hum Foundation</strong> · All Rights Reserved</div>
+      <div class="footer-legal"><a href="terms.html">Terms</a><span>·</span><a href="privacy.html">Privacy</a><span>·</span><a href="sitemap.html">Sitemap</a><span>·</span><a href="disclaimer.html">Disclaimer</a></div>
+      <div class="footer-made">Made with <i class="fa-solid fa-heart"></i> in Bihar</div>
+    </div></div>
   </div>
 </footer>
 
-
 <!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/917011893028" target="_blank" rel="noopener noreferrer"
-   class="wa-float" aria-label="WhatsApp Chat">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+<a href="https://wa.me/917011893028?text=नमस्ते" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
 
-
-<button class="back-top" id="backTop" aria-label="Back to Top" type="button">
-  <i class="fa-solid fa-arrow-up"></i>
-</button>
-
+<!-- BACK TO TOP -->
+<button class="back-top" id="backTop" aria-label="Back to Top" type="button"><i class="fa-solid fa-arrow-up"></i></button>
 
 <script>
 document.addEventListener("DOMContentLoaded", function(){
+
+  /* SCROLL PROGRESS */
+  var sp = document.getElementById("scrollProgress");
+  window.addEventListener("scroll", function(){
+    var st = window.scrollY, dh = document.documentElement.scrollHeight - window.innerHeight;
+    if(sp) sp.style.width = (dh > 0 ? (st/dh)*100 : 0) + "%";
+  }, {passive:true});
 
   /* MOBILE MENU */
   var menuToggle = document.getElementById("menuToggle");
